@@ -343,7 +343,18 @@
     "subtitle": "每天为电商从业者精选的行业热点",
     "tagline": "平台动态、运营增长与营销实战，每天 06:00 一期日报。",
     "timezone": "Asia/Shanghai",
-    "tips": [],
+    "tips": [
+      {
+        "label": "USDT · Solana（小额打赏，手续费不到 1 美分）",
+        "image": "assets/tip-usdt-solana.png",
+        "address": "7pitxN5xECR2NH2qdhFiSRC3fDdMsmVczqFSY4Zz4v5H"
+      },
+      {
+        "label": "USDT · TRC20（大额 / 交易所提币，最通用）",
+        "image": "assets/tip-usdt-trc20.png",
+        "address": "TBH8fAi6Vbr9G4VW3PDm3DugZU6fknr6na"
+      }
+    ],
     "title": "电商HOT",
     "url": "https://staroltest.github.io/ecommerce-hot"
   }
