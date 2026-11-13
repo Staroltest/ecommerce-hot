@@ -2,11 +2,11 @@
  "kind": "weekly",
  "key": "2026-W46",
  "label": "2026年第46周",
- "date": "2026年11月13日",
- "date_iso": "2026-11-13",
+ "date": "2026年11月14日",
+ "date_iso": "2026-11-14",
  "issue": 1,
- "generated_at": "2026-11-13T05:52:04.510315+00:00",
- "summary": "过去 7 天共收录 289 条动态，精选 10 条（运营增长 4 条、平台动态 5 条、工具技术 1 条）。头条：做Wayfair怎么选品？成熟畅销品vs高增长蓝海品类丨Wayfair运营干货③。",
+ "generated_at": "2026-11-13T22:50:34.570763+00:00",
+ "summary": "过去 7 天共收录 438 条动态，精选 10 条（运营增长 6 条、平台动态 4 条）。头条：做Wayfair怎么选品？成熟畅销品vs高增长蓝海品类丨Wayfair运营干货③。",
  "items": [
   {
    "id": "de8a6f51810b792e84deb188654fbaf635a45fa5",
@@ -25,13 +25,13 @@
     "运营",
     "增长"
    ],
-   "score": 90,
-   "reason": "涉及选品与运营 · 6 小时内发布",
-   "is_new": true,
+   "score": 85,
+   "reason": "涉及选品与运营 · 24 小时内发布",
+   "is_new": false,
    "trend": "same",
-   "hot_score": 90.0,
-   "prev_rank": 1,
-   "prev_hot_score": 90.0
+   "hot_score": 72.6,
+   "prev_rank": 6,
+   "prev_hot_score": 72.6
   },
   {
    "id": "248e62e8dcdf3e387de1efc8bdcae474cf447516",
@@ -50,13 +50,13 @@
     "选品",
     "运营"
    ],
-   "score": 90,
-   "reason": "涉及指南与选品 · 6 小时内发布",
-   "is_new": true,
+   "score": 85,
+   "reason": "涉及指南与选品 · 24 小时内发布",
+   "is_new": false,
    "trend": "same",
-   "hot_score": 90.0,
-   "prev_rank": 2,
-   "prev_hot_score": 90.0
+   "hot_score": 72.6,
+   "prev_rank": 7,
+   "prev_hot_score": 72.6
   },
   {
    "id": "7d4121226faf17ba879d1f469fb45700f311ed6e",
@@ -74,13 +74,13 @@
     "指南",
     "运营"
    ],
-   "score": 85,
-   "reason": "涉及指南与运营 · 6 小时内发布",
-   "is_new": true,
+   "score": 80,
+   "reason": "涉及指南与运营 · 24 小时内发布",
+   "is_new": false,
    "trend": "same",
-   "hot_score": 85.0,
-   "prev_rank": 3,
-   "prev_hot_score": 85.0
+   "hot_score": 68.3,
+   "prev_rank": null,
+   "prev_hot_score": null
   },
   {
    "id": "18c1ac0c2232afc216978564fa94907fc3d29df6",
@@ -98,11 +98,11 @@
     "增长",
     "GMV"
    ],
-   "score": 85,
-   "reason": "涉及增长与GMV · 6 小时内发布",
-   "is_new": true,
+   "score": 80,
+   "reason": "涉及增长与GMV · 24 小时内发布",
+   "is_new": false,
    "trend": "same",
-   "hot_score": 82.4,
+   "hot_score": 66.2,
    "prev_rank": null,
    "prev_hot_score": null
   },
@@ -122,13 +122,13 @@
     "增长",
     "直播"
    ],
-   "score": 85,
-   "reason": "涉及增长与直播 · 6 小时内发布",
-   "is_new": true,
+   "score": 80,
+   "reason": "涉及增长与直播 · 24 小时内发布",
+   "is_new": false,
    "trend": "same",
-   "hot_score": 82.0,
-   "prev_rank": 5,
-   "prev_hot_score": 82.0
+   "hot_score": 65.9,
+   "prev_rank": null,
+   "prev_hot_score": null
   },
   {
    "id": "9f2efbb339efc102c75af3a1bc9c50748a35cadc",
@@ -146,105 +146,109 @@
     "物流",
     "跨境"
    ],
-   "score": 85,
-   "reason": "涉及物流与跨境 · 6 小时内发布",
-   "is_new": true,
+   "score": 80,
+   "reason": "涉及物流与跨境 · 24 小时内发布",
+   "is_new": false,
    "trend": "same",
-   "hot_score": 81.8,
-   "prev_rank": 6,
-   "prev_hot_score": 81.8
+   "hot_score": 65.7,
+   "prev_rank": null,
+   "prev_hot_score": null
   },
   {
-   "id": "0705869fa6f95f4da71c305d7a932309ff95e69a",
-   "title": "TikTok Shop英国直播购物报告：61%商家单场直播抵常规渠道一周营收",
-   "link": "https://www.ebrun.com/20261113/720033.shtml",
-   "source": "亿邦动力（抓取）",
-   "source_id": "ebrun-scrape",
-   "published": "2026-11-13T04:00:00+00:00",
+   "id": "167d91c7760ba91f0b5c154ceb93af5190eac040",
+   "title": "从做亏本买卖到年入10亿，欧美巨头垄断的高价地盘，被深圳企业踹开了",
+   "link": "http://www.baijing.cn/article/57366",
+   "source": "白鲸出海",
+   "source_id": "baijing-rss",
+   "published": "2026-11-13T06:23:59+00:00",
+   "zh_title": "",
+   "zh_oneliner": "",
+   "category": "ops",
+   "category_label": "运营增长",
+   "tier": "T2",
+   "tags": [
+    "选品",
+    "物流"
+   ],
+   "score": 80,
+   "reason": "涉及选品与物流 · 24 小时内发布",
+   "is_new": false,
+   "trend": "same",
+   "hot_score": 68.7,
+   "prev_rank": 20,
+   "prev_hot_score": 68.7
+  },
+  {
+   "id": "aab5a28421ee380707e017d99e18275887201532",
+   "title": "泰国定下30%跨境重税，爆款类目全按顶格收？",
+   "link": "http://www.baijing.cn/article/57367",
+   "source": "白鲸出海",
+   "source_id": "baijing-rss",
+   "published": "2026-11-13T07:03:22+00:00",
    "zh_title": "",
    "zh_oneliner": "",
    "category": "platform",
    "category_label": "平台动态",
    "tier": "T2",
    "tags": [
-    "直播"
+    "跨境",
+    "爆款"
    ],
    "score": 80,
-   "reason": "涉及直播 · 6 小时内发布",
-   "is_new": true,
+   "reason": "涉及跨境与爆款 · 24 小时内发布",
+   "is_new": false,
    "trend": "same",
-   "hot_score": 78.6,
-   "prev_rank": 19,
-   "prev_hot_score": 78.6
+   "hot_score": 69.1,
+   "prev_rank": 17,
+   "prev_hot_score": 69.1
   },
   {
-   "id": "b85dee8220fc603c548711a37e8cd6e1c4a1a224",
-   "title": "跨境大卖的AI三年节奏：2019信息化、2022数字化、2025 AI底座",
-   "link": "https://www.cifnews.com/article/189644",
-   "source": "雨果网（抓取）",
-   "source_id": "cifnews-scrape",
-   "published": "2026-11-13T05:50:13.550827+00:00",
-   "zh_title": "",
-   "zh_oneliner": "",
-   "category": "tools",
-   "category_label": "工具技术",
-   "tier": "T2",
-   "tags": [
-    "跨境"
-   ],
-   "score": 80,
-   "reason": "涉及跨境 · 6 小时内发布",
-   "is_new": true,
-   "trend": "same",
-   "hot_score": 80.0,
-   "prev_rank": 7,
-   "prev_hot_score": 80.0
-  },
-  {
-   "id": "94a80dca8807e6aa87d0feb3bc9fadc3ed69510a",
-   "title": "海关数据平台哪家专业？先说你要拿它干什么，答案才作数",
-   "link": "https://www.cifnews.com/article/190055",
-   "source": "雨果网（抓取）",
-   "source_id": "cifnews-scrape",
-   "published": "2026-11-13T05:50:13.550827+00:00",
+   "id": "d59e717242513fcf4be80f0ac64172ad423810be",
+   "title": "10月新游数据丨《我叫MT：崛起》国内收入登顶；Kakao新游上线当月收入超2.19亿元；腾讯怪物猎人IP新游海外表现亮眼",
+   "link": "http://www.baijing.cn/article/57368",
+   "source": "白鲸出海",
+   "source_id": "baijing-rss",
+   "published": "2026-11-13T07:38:15+00:00",
    "zh_title": "",
    "zh_oneliner": "",
    "category": "platform",
    "category_label": "平台动态",
    "tier": "T2",
    "tags": [
-    "数据"
+    "数据",
+    "营收"
    ],
    "score": 80,
-   "reason": "涉及数据 · 6 小时内发布",
-   "is_new": true,
+   "reason": "涉及数据与营收 · 24 小时内发布",
+   "is_new": false,
    "trend": "same",
-   "hot_score": 80.0,
-   "prev_rank": 8,
-   "prev_hot_score": 80.0
+   "hot_score": 69.5,
+   "prev_rank": 15,
+   "prev_hot_score": 69.5
   },
   {
-   "id": "7a11513fd97823856659818afe20c5594121d1b8",
-   "title": "跨境灰色服务曝光！一批亚马逊卖家被骗",
-   "link": "https://www.cifnews.com/article/190082",
-   "source": "雨果网（抓取）",
-   "source_id": "cifnews-scrape",
-   "published": "2026-11-13T05:50:13.550827+00:00",
+   "id": "ffe812dae424875cbeee997be4ae54cb5cd73491",
+   "title": "品星双11案例精选第1期｜TA们借势种草内容，跑出生意新增长",
+   "link": "https://www.dsb.cn/p/01m79yqvbaptkycenmkcv77e09",
+   "source": "电商报（抓取）",
+   "source_id": "dsb-scrape",
+   "published": "2026-11-13T08:04:01+00:00",
    "zh_title": "",
    "zh_oneliner": "",
-   "category": "platform",
-   "category_label": "平台动态",
+   "category": "ops",
+   "category_label": "运营增长",
    "tier": "T2",
    "tags": [
-    "跨境"
+    "案例",
+    "增长"
    ],
    "score": 80,
-   "reason": "涉及跨境 · 6 小时内发布",
-   "is_new": true,
+   "reason": "涉及案例与增长 · 24 小时内发布",
+   "is_new": false,
    "trend": "same",
-   "hot_score": 80.0,
-   "prev_rank": 9,
-   "prev_hot_score": 80.0
+   "hot_score": 69.7,
+   "prev_rank": 14,
+   "prev_hot_score": 69.8
   }
  ]
 }
