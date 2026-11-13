@@ -1310,5 +1310,9 @@
  "https://www.paymentsdive.com/news/stripe-awaits-payoff-on-tempo-chain/874618": {
   "zh_title": "Stripe 静待 Tempo 链带来回报",
   "zh_oneliner": "Stripe 把自家 Tempo 区块链视为稳定币交易增长的关键基础设施，正在等待这项布局见效。"
+ },
+ "https://www.digitalcommerce360.com/2026/11/13/grubmarket-ai-agent": {
+  "zh_title": "GrubMarket 推出 AI 代理，把发票自动转成采购订单",
+  "zh_oneliner": "这家生鲜供应链 SaaS 用 AI 代理自动把发票转成采购订单，帮食品批发商和零售商省掉手工对账。"
  }
 }
