@@ -3080,7 +3080,13 @@ def main():
             print("zh_draft.json skipped (%s)" % e, file=sys.stderr)
     for src in sources:
         try:
-            body = fetch(src["url"])
+            # local: 前缀：读 tools/scrape_cn.py 生成的本地 RSS 文件
+            # （data/feeds/<id>.xml），用于没有可用 RSS 的中文站。
+            if src["url"].startswith("local:"):
+                with open(os.path.join(root, src["url"][len("local:"):]), "rb") as f:
+                    body = f.read()
+            else:
+                body = fetch(src["url"])
             new_items = parse_feed(body, src)
         except Exception as e:  # noqa: BLE001 - 单个信源失败不中断整轮
             failed.append((src["id"], str(e)[:80]))
