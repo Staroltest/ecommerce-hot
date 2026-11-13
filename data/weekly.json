@@ -5,8 +5,8 @@
  "date": "2026年11月14日",
  "date_iso": "2026-11-14",
  "issue": 1,
- "generated_at": "2026-11-13T22:50:34.570763+00:00",
- "summary": "过去 7 天共收录 438 条动态，精选 10 条（运营增长 6 条、平台动态 4 条）。头条：做Wayfair怎么选品？成熟畅销品vs高增长蓝海品类丨Wayfair运营干货③。",
+ "generated_at": "2026-11-13T23:52:42.656218+00:00",
+ "summary": "过去 7 天共收录 435 条动态，精选 10 条（运营增长 6 条、平台动态 3 条、营销推广 1 条）。头条：做Wayfair怎么选品？成熟畅销品vs高增长蓝海品类丨Wayfair运营干货③。",
  "items": [
   {
    "id": "de8a6f51810b792e84deb188654fbaf635a45fa5",
@@ -29,9 +29,9 @@
    "reason": "涉及选品与运营 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 72.6,
+   "hot_score": 71.9,
    "prev_rank": 6,
-   "prev_hot_score": 72.6
+   "prev_hot_score": 71.9
   },
   {
    "id": "248e62e8dcdf3e387de1efc8bdcae474cf447516",
@@ -54,9 +54,9 @@
    "reason": "涉及指南与选品 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 72.6,
+   "hot_score": 71.9,
    "prev_rank": 7,
-   "prev_hot_score": 72.6
+   "prev_hot_score": 71.9
   },
   {
    "id": "7d4121226faf17ba879d1f469fb45700f311ed6e",
@@ -78,7 +78,7 @@
    "reason": "涉及指南与运营 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 68.3,
+   "hot_score": 67.6,
    "prev_rank": null,
    "prev_hot_score": null
   },
@@ -102,7 +102,7 @@
    "reason": "涉及增长与GMV · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 66.2,
+   "hot_score": 65.6,
    "prev_rank": null,
    "prev_hot_score": null
   },
@@ -126,7 +126,7 @@
    "reason": "涉及增长与直播 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 65.9,
+   "hot_score": 65.3,
    "prev_rank": null,
    "prev_hot_score": null
   },
@@ -150,7 +150,7 @@
    "reason": "涉及物流与跨境 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 65.7,
+   "hot_score": 65.1,
    "prev_rank": null,
    "prev_hot_score": null
   },
@@ -174,9 +174,9 @@
    "reason": "涉及选品与物流 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 68.7,
-   "prev_rank": 20,
-   "prev_hot_score": 68.7
+   "hot_score": 68.0,
+   "prev_rank": 19,
+   "prev_hot_score": 68.0
   },
   {
    "id": "aab5a28421ee380707e017d99e18275887201532",
@@ -198,33 +198,9 @@
    "reason": "涉及跨境与爆款 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 69.1,
-   "prev_rank": 17,
-   "prev_hot_score": 69.1
-  },
-  {
-   "id": "d59e717242513fcf4be80f0ac64172ad423810be",
-   "title": "10月新游数据丨《我叫MT：崛起》国内收入登顶；Kakao新游上线当月收入超2.19亿元；腾讯怪物猎人IP新游海外表现亮眼",
-   "link": "http://www.baijing.cn/article/57368",
-   "source": "白鲸出海",
-   "source_id": "baijing-rss",
-   "published": "2026-11-13T07:38:15+00:00",
-   "zh_title": "",
-   "zh_oneliner": "",
-   "category": "platform",
-   "category_label": "平台动态",
-   "tier": "T2",
-   "tags": [
-    "数据",
-    "营收"
-   ],
-   "score": 80,
-   "reason": "涉及数据与营收 · 24 小时内发布",
-   "is_new": false,
-   "trend": "same",
-   "hot_score": 69.5,
-   "prev_rank": 15,
-   "prev_hot_score": 69.5
+   "hot_score": 68.4,
+   "prev_rank": 16,
+   "prev_hot_score": 68.4
   },
   {
    "id": "ffe812dae424875cbeee997be4ae54cb5cd73491",
@@ -246,9 +222,33 @@
    "reason": "涉及案例与增长 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 69.7,
+   "hot_score": 69.1,
    "prev_rank": 14,
-   "prev_hot_score": 69.8
+   "prev_hot_score": 69.1
+  },
+  {
+   "id": "1a6e4341f763b32676a266b31d06fdbcbc1be932",
+   "title": "李佳琦直播间双11：旅游产品占虚拟类销量的70%",
+   "link": "https://www.dsb.cn/p/01m7a0f2k8rycqmd4jv0g0hddr",
+   "source": "电商报（抓取）",
+   "source_id": "dsb-scrape",
+   "published": "2026-11-13T08:59:59+00:00",
+   "zh_title": "",
+   "zh_oneliner": "",
+   "category": "marketing",
+   "category_label": "营销推广",
+   "tier": "T2",
+   "tags": [
+    "直播",
+    "销量"
+   ],
+   "score": 80,
+   "reason": "涉及直播与销量 · 24 小时内发布",
+   "is_new": false,
+   "trend": "same",
+   "hot_score": 69.7,
+   "prev_rank": 13,
+   "prev_hot_score": 69.7
   }
  ]
 }

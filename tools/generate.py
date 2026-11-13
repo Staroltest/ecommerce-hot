@@ -3332,6 +3332,10 @@ def main():
                     "daily/archive.html", "feed.xml"]
     sitemap_urls += ["topics/" + slug + ".html" for _l, slug, _n in tag_counts]
     sitemap_urls += ["items/" + it_id + ".html" for it_id in history]
+    # 存档页（daily/weekly/monthly）：每轮都补，避免非日报轮次丢链接
+    for _kind in ("daily", "weekly", "monthly"):
+        for _rep in load_period_archive(os.path.join(data_dir, _kind)):
+            sitemap_urls.append(f"{_kind}/{_rep['key']}.html")
     today_iso = now_cst.strftime("%Y-%m-%d")
     sm = ["<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
           "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">"]
@@ -3457,16 +3461,7 @@ def main():
         os.makedirs(os.path.join(root, "daily"), exist_ok=True)
         with open(os.path.join(root, "daily", "archive.html"), "w", encoding="utf-8") as f:
             f.write(render_archive(site, d_entries, w_entries, m_entries))
-        # sitemap 补上存档页（日报页在 daily/ 下）
-        sm_extra = [f"<url><loc>{site_url}/daily/{r['key']}.html</loc>"
-                    f"<lastmod>{today_iso}</lastmod></url>" for r in daily_reports]
-        sm_extra += [f"<url><loc>{site_url}/weekly/{r['key']}.html</loc>"
-                     f"<lastmod>{today_iso}</lastmod></url>" for r in weekly_reports]
-        sm_extra += [f"<url><loc>{site_url}/monthly/{r['key']}.html</loc>"
-                     f"<lastmod>{today_iso}</lastmod></url>" for r in monthly_reports]
-        sm_all = sm[:-1] + sm_extra + ["</urlset>"]
-        with open(os.path.join(root, "sitemap.xml"), "w", encoding="utf-8") as f:
-            f.write("\n".join(sm_all) + "\n")
+        # sitemap 存档页已在每轮主 sitemap 里补（见上），此处不再重复写
         print(f"archive: daily {len(d_entries)}, weekly {len(w_entries)}, monthly {len(m_entries)}")
 
     # --- 文章详情页（items/<id>.html）：30 天库里的每条内容各一页；
