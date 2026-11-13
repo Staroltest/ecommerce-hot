@@ -1,5 +1,5 @@
 {
- "comment": "格式：每条 {id, name, tier, url, category_hint}。tier: T1 官方一手，T2 媒体/社区，T3 综合媒体（降权，见 config.json tier_bonus）。实测日期 2026-11-13（北京时间）：以下 25 条全部 HTTP 200 且能解析出条目（标题+链接+时间）才收录。淘汰：Shopify 博客 feed 404；BigCommerce 404；Alizila 403；Etsy 403；Retail TouchPoints 403；虎嗅/Helium 10 超时；亿邦动力/雨果网/ChannelX/EcommerceBytes/Printify 解析失败；eBay/速卖通/卖家之家/跨境知道/TikTok Shop 卖家中心 404；Shopify Changelog 虽 200 但一次返回 811 条，量太大未收；ShipStation/Rithum 返回 0 条未收；RetailWire 429 限流未收；36kr 用 www.36kr.com/feed（不带 www 的解析失败）。 2026-11-13 首轮生成后复核：PYMNTS、36氪、钛媒体三条为综合财经/科技大 feed，与电商相关度低却因时效分高挤进热点榜，已剔除；剩余 22 条均为电商/零售/营销垂直信源。 About Amazon 新闻也是综合企业 feed（数据中心、社区、图书榜单等非电商内容占多数），同轮剔除；剩余 21 条。",
+ "comment": "格式：每条 {id, name, tier, url, category_hint}。tier: T1 官方一手，T2 媒体/社区，T3 综合媒体（降权，见 config.json tier_bonus）。实测日期 2026-11-13（北京时间）：本轮共测约 85 个候选源，每个都用 HOTBot UA 真实抓取并解析 RSS/Atom，要求 HTTP 200 且至少 3 条可解析条目（标题+链接+时间）、近 30 天内有更新，才收录。新增 11 条：EcomCrew、SellerApp、Ordoro、CedCommerce、Supply Chain Dive、Payments Dive、美国贸易代表办公室（USTR）、Internet Retailing、WooCommerce 开发者博客（T1）、My Amazon Guy、增长黑盒（唯一可用的中文源，10 条中仅 3 条在 30 天内，低频）。剔除 4 条通用 SEO/营销源：Search Engine Journal、Neil Patel、HubSpot Marketing、Ahrefs（内容以泛 SEO/营销为主，电商相关度低）。中文源实测结论：亿邦动力分类 feed 为 GBK 编码（生成器 XML 解析器不支持）、且多数分类已停更（policy/mec/o2o/retail 最新多为 2025-05 或更早，排序混乱），仅 news_data 新鲜但全是双11战报，未收；雨果网 YuGuo.xml 直接 405；派代网/刀法研究所连接被关闭；见实/数英 403；卖家之家/跨境知道/DNY123/AMZ123 404；虎嗅/Helium 10 超时；钛媒体 feed 虽 200 但为泛科技内容（与已剔除的 36氪同类问题），未收；白鲸出海虽 200 且 20 条全在 30 天内，但约一半是手游/短剧/AI 应用买量内容，会污染精选，未收；跨境日报 AltoSea feed 虽 200 但标题全是“跨境日报 YYYY-MM-DD”重复日报，未收。英文淘汰：Shopify 博客/News feed 404 或最新 2023-12；BigCommerce/Klaviyo/Attentive/Adyen/Walmart/eBay/SHEIN/Mirakl/VTEX/commercetools/ChannelEngine/Easyship/Flexport/Triple Whale 404；Etsy 403；Retail TouchPoints/Full-Time FBA/Ecommerce Fastlane/DTC 403；RetailWire/Reddit 429；SellerEngine/RepricerExpress/DSers/EcommerceFuel/Gorgias/Recharge 停更或近 30 天仅 0-1 条；ZonBase 混入赌场内容；Shopify Changelog 与 shopify.dev/changelog 均一次返回 811 条，量太大未收；ShipStation/Rithum/Sellbrite/ecommercenews.com 返回 0 条；EcommerceBytes/Yotpo/AfterShip/PayPal 响应为 HTML 解析失败；Salesforce 博客/新闻、Marketing Dive、Retail Gazette 为泛 AI/品牌广告/线下零售内容，未收；Reddit r/ecommerce 与 r/FulfillmentByAmazon 429，仅 r/shopify 可用但为社区问答质量低，未收。旧淘汰（2026-11-13 首轮，仍有效）：Shopify 博客 feed 404；Alizila 403；虎嗅/Helium 10 超时；亿邦动力/雨果网/ChannelX/EcommerceBytes/Printify 解析失败；eBay/速卖通/卖家之家/跨境知道/TikTok Shop 卖家中心 404；PYMNTS、36氪、钛媒体、About Amazon 为综合财经/科技/企业 feed，已剔除。 2026-11-13 第二轮：Supply Chain Dive、Payments Dive、USTR、Internet Retailing 降为 T3（内容只有部分与电商相关：关税/物流/支付/英国线下零售，降权后不易挤进精选）。",
  "sources": [
   {
    "id": "shopify-news",
@@ -86,13 +86,6 @@
    "category_hint": "data"
   },
   {
-   "id": "searchenginejournal",
-   "name": "Search Engine Journal",
-   "tier": "T2",
-   "url": "https://www.searchenginejournal.com/feed/",
-   "category_hint": "marketing"
-  },
-  {
    "id": "modernretail",
    "name": "Modern Retail",
    "tier": "T2",
@@ -121,20 +114,6 @@
    "category_hint": "marketing"
   },
   {
-   "id": "neilpatel",
-   "name": "Neil Patel 博客",
-   "tier": "T2",
-   "url": "https://neilpatel.com/blog/feed/",
-   "category_hint": "marketing"
-  },
-  {
-   "id": "hubspot-mktg",
-   "name": "HubSpot Marketing 博客",
-   "tier": "T2",
-   "url": "https://blog.hubspot.com/marketing/rss.xml",
-   "category_hint": "marketing"
-  },
-  {
    "id": "stripe-blog",
    "name": "Stripe 博客",
    "tier": "T2",
@@ -142,11 +121,81 @@
    "category_hint": "tools"
   },
   {
-   "id": "ahrefs",
-   "name": "Ahrefs 博客",
+   "id": "ecomcrew",
+   "name": "EcomCrew",
    "tier": "T2",
-   "url": "https://ahrefs.com/blog/feed/",
+   "url": "https://www.ecomcrew.com/feed/",
+   "category_hint": "ops"
+  },
+  {
+   "id": "sellerapp",
+   "name": "SellerApp 博客",
+   "tier": "T2",
+   "url": "https://sellerapp.com/blog/feed",
+   "category_hint": "ops"
+  },
+  {
+   "id": "ordoro",
+   "name": "Ordoro 博客",
+   "tier": "T2",
+   "url": "https://blog.ordoro.com/feed/",
+   "category_hint": "ops"
+  },
+  {
+   "id": "cedcommerce",
+   "name": "CedCommerce 博客",
+   "tier": "T2",
+   "url": "https://cedcommerce.com/blog/feed/",
+   "category_hint": "platform"
+  },
+  {
+   "id": "supplychaindive",
+   "name": "Supply Chain Dive",
+   "tier": "T3",
+   "url": "https://www.supplychaindive.com/feeds/news/",
+   "category_hint": "policy"
+  },
+  {
+   "id": "paymentsdive",
+   "name": "Payments Dive",
+   "tier": "T3",
+   "url": "https://www.paymentsdive.com/feeds/news/",
+   "category_hint": "policy"
+  },
+  {
+   "id": "ustr",
+   "name": "美国贸易代表办公室",
+   "tier": "T3",
+   "url": "https://ustr.gov/rss.xml",
+   "category_hint": "policy"
+  },
+  {
+   "id": "internetretailing",
+   "name": "Internet Retailing",
+   "tier": "T3",
+   "url": "https://internetretailing.net/feed/",
+   "category_hint": "data"
+  },
+  {
+   "id": "woocommerce-dev",
+   "name": "WooCommerce 开发者博客",
+   "tier": "T1",
+   "url": "https://developer.woocommerce.com/feed/",
    "category_hint": "tools"
+  },
+  {
+   "id": "myamazonguy",
+   "name": "My Amazon Guy 博客",
+   "tier": "T2",
+   "url": "https://myamazonguy.com/feed/",
+   "category_hint": "ops"
+  },
+  {
+   "id": "growthbox",
+   "name": "增长黑盒",
+   "tier": "T2",
+   "url": "https://growthbox.net/feed",
+   "category_hint": "ops"
   }
  ]
 }

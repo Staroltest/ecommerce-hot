@@ -5,33 +5,9 @@
  "date": "2026年11月13日",
  "date_iso": "2026-11-13",
  "issue": 1,
- "generated_at": "2026-11-13T03:09:19.586173+00:00",
- "summary": "过去 30 天共收录 202 条动态，精选 10 条（行业数据 4 条、运营增长 1 条、营销推广 3 条、工具技术 1 条、平台动态 1 条）。头条：别让工具主导 AI 搜索策略，先守住自己的数据。",
+ "generated_at": "2026-11-13T04:19:29.312679+00:00",
+ "summary": "过去 30 天共收录 228 条动态，精选 10 条（运营增长 2 条、营销推广 3 条、工具技术 1 条、行业数据 3 条、平台动态 1 条）。头条：订阅流失：把留存洞察变成持续收入增长。",
  "items": [
-  {
-   "id": "e86588239dc7aac27b087db307cf1b95d3c6b8ef",
-   "title": "Don’t Let A Tool Lead Your AI Search Strategy – Own Your Data Instead via @sejournal, @TaylorDanRW",
-   "link": "https://www.searchenginejournal.com/dont-let-a-tool-lead-your-ai-search-strategy-own-your-data-instead/596538",
-   "source": "Search Engine Journal",
-   "source_id": "searchenginejournal",
-   "published": "2026-11-12T13:00:43+00:00",
-   "zh_title": "别让工具主导 AI 搜索策略，先守住自己的数据",
-   "zh_oneliner": "AI 搜索时代，自己的商品与用户数据才是长期资产。",
-   "category": "data",
-   "category_label": "行业数据",
-   "tier": "T2",
-   "tags": [
-    "工具",
-    "数据"
-   ],
-   "score": 80,
-   "reason": "涉及工具与数据 · 24 小时内发布",
-   "is_new": true,
-   "trend": "same",
-   "hot_score": 70.1,
-   "prev_rank": 1,
-   "prev_hot_score": 70.2
-  },
   {
    "id": "50abb4534b221cee28688d7465b73c36938252b5",
    "title": "Subscription churn: Turn retention insights into recurring revenue growth",
@@ -76,9 +52,9 @@
    "reason": "涉及live · 24 小时内发布",
    "is_new": true,
    "trend": "same",
-   "hot_score": 68.1,
-   "prev_rank": 4,
-   "prev_hot_score": 68.1
+   "hot_score": 67.4,
+   "prev_rank": 2,
+   "prev_hot_score": 67.4
   },
   {
    "id": "fa2852dad3b82081efcfe65a0ed1ac5dadcaaad7",
@@ -99,9 +75,9 @@
    "reason": "涉及工具 · 24 小时内发布",
    "is_new": true,
    "trend": "same",
-   "hot_score": 69.9,
-   "prev_rank": 2,
-   "prev_hot_score": 69.9
+   "hot_score": 69.1,
+   "prev_rank": 1,
+   "prev_hot_score": 69.1
   },
   {
    "id": "816be5787110fc51c166dd151ff7d8f272adfe3e",
@@ -122,9 +98,9 @@
    "reason": "涉及销量 · 24 小时内发布",
    "is_new": true,
    "trend": "same",
-   "hot_score": 66.6,
-   "prev_rank": 6,
-   "prev_hot_score": 66.6
+   "hot_score": 65.8,
+   "prev_rank": 4,
+   "prev_hot_score": 65.8
   },
   {
    "id": "1f025e606b421a3a71b866f8f58daa501c653fba",
@@ -145,32 +121,9 @@
    "reason": "涉及operation · 24 小时内发布",
    "is_new": true,
    "trend": "same",
-   "hot_score": 65.9,
-   "prev_rank": 8,
-   "prev_hot_score": 65.9
-  },
-  {
-   "id": "aaefa253456a0a18970f2da38727846c20aecc4f",
-   "title": "Visits To The Top Million Websites Fell 12%, Data Shows via @sejournal, @MattGSouthern",
-   "link": "https://www.searchenginejournal.com/visits-to-the-top-million-websites-fell-12-data-shows/597085",
-   "source": "Search Engine Journal",
-   "source_id": "searchenginejournal",
-   "published": "2026-11-12T18:43:03+00:00",
-   "zh_title": "数据：头部百万网站访问量下滑 12%",
-   "zh_oneliner": "流量正在向少数平台集中，店铺不能只靠自然搜索等客上门。",
-   "category": "data",
-   "category_label": "行业数据",
-   "tier": "T2",
-   "tags": [
-    "数据"
-   ],
-   "score": 75,
-   "reason": "涉及数据 · 24 小时内发布",
-   "is_new": true,
-   "trend": "same",
-   "hot_score": 69.3,
-   "prev_rank": 3,
-   "prev_hot_score": 69.4
+   "hot_score": 65.2,
+   "prev_rank": 5,
+   "prev_hot_score": 65.2
   },
   {
    "id": "f5843461bcb342388db6d1a8719b3d8d25fb3784",
@@ -191,9 +144,9 @@
    "reason": "涉及指南 · 24 小时内发布",
    "is_new": true,
    "trend": "same",
-   "hot_score": 61.0,
-   "prev_rank": 17,
-   "prev_hot_score": 61.1
+   "hot_score": 60.4,
+   "prev_rank": 14,
+   "prev_hot_score": 60.4
   },
   {
    "id": "b7a881d36687ff8b179156a4910e5618d062bd98",
@@ -214,9 +167,9 @@
    "reason": "涉及live · 24 小时内发布",
    "is_new": true,
    "trend": "same",
-   "hot_score": 67.9,
-   "prev_rank": 5,
-   "prev_hot_score": 67.9
+   "hot_score": 67.2,
+   "prev_rank": 3,
+   "prev_hot_score": 67.2
   },
   {
    "id": "0bb6f5f8ca9a2a0ab9a00ff233fc3aff1a95f7f0",
@@ -237,9 +190,57 @@
    "reason": "涉及销量 · 24 小时内发布",
    "is_new": true,
    "trend": "same",
-   "hot_score": 61.0,
-   "prev_rank": 18,
-   "prev_hot_score": 61.1
+   "hot_score": 60.4,
+   "prev_rank": 15,
+   "prev_hot_score": 60.4
+  },
+  {
+   "id": "5f697ff4e779f09e6dee31e23059ebc896f05a8e",
+   "title": "Top 5 Rainforest API Alternatives for Developers in the Current Market",
+   "link": "https://www.sellerapp.com/blog/rainforest-api-alternatives-for-developers",
+   "source": "SellerApp 博客",
+   "source_id": "sellerapp",
+   "published": "2026-11-12T05:40:03+00:00",
+   "zh_title": "Rainforest API 的 5 个替代工具",
+   "zh_oneliner": "做商品数据抓取的卖家如果被 Rainforest API 的延迟拖累，可以看看这几个替代方案。",
+   "category": "data",
+   "category_label": "行业数据",
+   "tier": "T2",
+   "tags": [
+    "数据"
+   ],
+   "score": 75,
+   "reason": "涉及数据 · 24 小时内发布",
+   "is_new": true,
+   "trend": "same",
+   "hot_score": 60.8,
+   "prev_rank": 13,
+   "prev_hot_score": 60.8
+  },
+  {
+   "id": "9e0ea08c1232a3643b5437585a034a5b01a67ead",
+   "title": "深挖15万网站流量数据，我们找到了三个海外用户增长的新策略！",
+   "link": "https://growthbox.net/overseas-ai-search-traffic-geo-plugin-growth-strategies",
+   "source": "增长黑盒",
+   "source_id": "growthbox",
+   "published": "2026-11-10T05:59:00+00:00",
+   "zh_title": "深挖 15 万网站流量数据，找到三个海外用户增长新策略",
+   "zh_oneliner": "AI 推荐改写了获客路径，增长要围绕访问、注册和转化三个环节重新设计。",
+   "category": "ops",
+   "category_label": "运营增长",
+   "tier": "T2",
+   "tags": [
+    "数据",
+    "增长",
+    "流量"
+   ],
+   "score": 75,
+   "reason": "涉及数据与增长 · 与本主题相关",
+   "is_new": false,
+   "trend": "same",
+   "hot_score": 39.0,
+   "prev_rank": null,
+   "prev_hot_score": null
   }
  ]
 }
