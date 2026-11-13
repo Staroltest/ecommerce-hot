@@ -336,7 +336,7 @@
     "edition_time_cst": "06:00",
     "footer_note": "本站由 HOT 流水线模板生成，代码按 MIT 协议开源。",
     "launch_date": "2026-11-13",
-    "mcp_url": "",
+    "mcp_url": "https://ecommerce-hot.pages.dev/mcp",
     "name": "电商HOT",
     "repo": "https://github.com/Staroltest/ecommerce-hot",
     "slug": "ecommerce-hot",
@@ -356,6 +356,7 @@
       }
     ],
     "title": "电商HOT",
-    "url": "https://staroltest.github.io/ecommerce-hot"
+    "url": "https://staroltest.github.io/ecommerce-hot",
+    "web_analytics_token": "46c2a12f36ff46db9855a9b47f051b3a"
   }
 }
