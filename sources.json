@@ -1,0 +1,152 @@
+{
+ "comment": "格式：每条 {id, name, tier, url, category_hint}。tier: T1 官方一手，T2 媒体/社区，T3 综合媒体（降权，见 config.json tier_bonus）。实测日期 2026-11-13（北京时间）：以下 25 条全部 HTTP 200 且能解析出条目（标题+链接+时间）才收录。淘汰：Shopify 博客 feed 404；BigCommerce 404；Alizila 403；Etsy 403；Retail TouchPoints 403；虎嗅/Helium 10 超时；亿邦动力/雨果网/ChannelX/EcommerceBytes/Printify 解析失败；eBay/速卖通/卖家之家/跨境知道/TikTok Shop 卖家中心 404；Shopify Changelog 虽 200 但一次返回 811 条，量太大未收；ShipStation/Rithum 返回 0 条未收；RetailWire 429 限流未收；36kr 用 www.36kr.com/feed（不带 www 的解析失败）。 2026-11-13 首轮生成后复核：PYMNTS、36氪、钛媒体三条为综合财经/科技大 feed，与电商相关度低却因时效分高挤进热点榜，已剔除；剩余 22 条均为电商/零售/营销垂直信源。 About Amazon 新闻也是综合企业 feed（数据中心、社区、图书榜单等非电商内容占多数），同轮剔除；剩余 21 条。",
+ "sources": [
+  {
+   "id": "shopify-news",
+   "name": "Shopify Newsroom",
+   "tier": "T1",
+   "url": "https://news.shopify.com/feed",
+   "category_hint": "platform"
+  },
+  {
+   "id": "google-shopping",
+   "name": "Google Shopping 博客",
+   "tier": "T1",
+   "url": "https://blog.google/products/shopping/rss/",
+   "category_hint": "platform"
+  },
+  {
+   "id": "woocommerce-blog",
+   "name": "WooCommerce 博客",
+   "tier": "T1",
+   "url": "https://woocommerce.com/blog/feed/",
+   "category_hint": "tools"
+  },
+  {
+   "id": "practical-ecom",
+   "name": "Practical Ecommerce",
+   "tier": "T2",
+   "url": "https://www.practicalecommerce.com/feed",
+   "category_hint": "ops"
+  },
+  {
+   "id": "sellerlabs",
+   "name": "Seller Labs",
+   "tier": "T2",
+   "url": "https://www.sellerlabs.com/feed/",
+   "category_hint": "ops"
+  },
+  {
+   "id": "junglescout",
+   "name": "Jungle Scout 博客",
+   "tier": "T2",
+   "url": "https://www.junglescout.com/blog/feed/",
+   "category_hint": "ops"
+  },
+  {
+   "id": "shipbob",
+   "name": "ShipBob 博客",
+   "tier": "T2",
+   "url": "https://www.shipbob.com/blog/feed/",
+   "category_hint": "ops"
+  },
+  {
+   "id": "printful",
+   "name": "Printful 博客",
+   "tier": "T2",
+   "url": "https://www.printful.com/blog/feed",
+   "category_hint": "ops"
+  },
+  {
+   "id": "retaildive",
+   "name": "Retail Dive",
+   "tier": "T2",
+   "url": "https://www.retaildive.com/feeds/news/",
+   "category_hint": "data"
+  },
+  {
+   "id": "dc360",
+   "name": "Digital Commerce 360",
+   "tier": "T2",
+   "url": "https://www.digitalcommerce360.com/feed/",
+   "category_hint": "data"
+  },
+  {
+   "id": "ecomnews-eu",
+   "name": "Ecommerce News Europe",
+   "tier": "T2",
+   "url": "https://ecommercenews.eu/feed/",
+   "category_hint": "data"
+  },
+  {
+   "id": "ecommercetimes",
+   "name": "E-Commerce Times",
+   "tier": "T2",
+   "url": "https://www.ecommercetimes.com/feed",
+   "category_hint": "data"
+  },
+  {
+   "id": "searchenginejournal",
+   "name": "Search Engine Journal",
+   "tier": "T2",
+   "url": "https://www.searchenginejournal.com/feed/",
+   "category_hint": "marketing"
+  },
+  {
+   "id": "modernretail",
+   "name": "Modern Retail",
+   "tier": "T2",
+   "url": "https://www.modernretail.co/feed/",
+   "category_hint": "marketing"
+  },
+  {
+   "id": "glossy",
+   "name": "Glossy",
+   "tier": "T2",
+   "url": "https://www.glossy.co/feed/",
+   "category_hint": "marketing"
+  },
+  {
+   "id": "econsultancy",
+   "name": "Econsultancy",
+   "tier": "T2",
+   "url": "https://econsultancy.com/feed/",
+   "category_hint": "marketing"
+  },
+  {
+   "id": "smartinsights",
+   "name": "Smart Insights",
+   "tier": "T2",
+   "url": "https://www.smartinsights.com/feed/",
+   "category_hint": "marketing"
+  },
+  {
+   "id": "neilpatel",
+   "name": "Neil Patel 博客",
+   "tier": "T2",
+   "url": "https://neilpatel.com/blog/feed/",
+   "category_hint": "marketing"
+  },
+  {
+   "id": "hubspot-mktg",
+   "name": "HubSpot Marketing 博客",
+   "tier": "T2",
+   "url": "https://blog.hubspot.com/marketing/rss.xml",
+   "category_hint": "marketing"
+  },
+  {
+   "id": "stripe-blog",
+   "name": "Stripe 博客",
+   "tier": "T2",
+   "url": "https://stripe.com/blog/feed.rss",
+   "category_hint": "tools"
+  },
+  {
+   "id": "ahrefs",
+   "name": "Ahrefs 博客",
+   "tier": "T2",
+   "url": "https://ahrefs.com/blog/feed/",
+   "category_hint": "tools"
+  }
+ ]
+}

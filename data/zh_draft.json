@@ -1,0 +1,810 @@
+{
+ "https://www.searchenginejournal.com/google-ads-rolls-out-new-invalid-traffic-overview-card/597098": {
+  "zh_title": "Google Ads 上线无效流量总览卡片",
+  "zh_oneliner": "广告主可以在一个入口里查看无效流量情况，排查点击质量问题。"
+ },
+ "https://www.searchenginejournal.com/google-gemini-4-hydrogen-default-ai-mode/597096": {
+  "zh_title": "Google 把 Gemini 4 Hydrogen 设为 AI Mode 默认模型",
+  "zh_oneliner": "AI 搜索的默认模型换代，商家要留意回答里品牌与商品的呈现方式。"
+ },
+ "https://www.searchenginejournal.com/does-the-affiliate-model-survive-checkout-inside-ai-mode-and-gemini-ask-an-seo/585080": {
+  "zh_title": "AI Mode 与 Gemini 内置结账后，联盟营销还能活吗",
+  "zh_oneliner": "AI 直接帮用户下单，联盟佣金的归属与追踪方式面临重构。"
+ },
+ "https://www.digitalcommerce360.com/2026/11/12/j-crew-claude-style-advisor": {
+  "zh_title": "J. Crew 用 Claude 打造新款穿搭顾问工具",
+  "zh_oneliner": "服装品牌把 AI 对话做成导购助手，帮顾客搭配并推荐商品。"
+ },
+ "https://www.searchenginejournal.com/visits-to-the-top-million-websites-fell-12-data-shows/597085": {
+  "zh_title": "数据：头部百万网站访问量下滑 12%",
+  "zh_oneliner": "流量正在向少数平台集中，店铺不能只靠自然搜索等客上门。"
+ },
+ "https://www.searchenginejournal.com/microsoft-advertising-updates-ui-following-advertiser-feedback/597078": {
+  "zh_title": "微软广告根据广告主反馈更新界面",
+  "zh_oneliner": "投放后台的界面调整以操作反馈为依据，投手要重新熟悉入口位置。"
+ },
+ "https://www.retaildive.com/news/bnpl-bolsters-holiday-budgets/874425": {
+  "zh_title": "先买后付撑起假日购物预算",
+  "zh_oneliner": "分期付款让消费者在旺季敢花更多，商家可把它当作转化工具。"
+ },
+ "https://www.retaildive.com/news/michaels-holiday-black-friday-cyber-monday/874500": {
+  "zh_title": "Michaels 鼓励过一个无屏幕的假日季",
+  "zh_oneliner": "手工艺零售商反其道而行之，用线下体验带动节日消费。"
+ },
+ "https://www.retaildive.com/news/walmart-more-than-doubles-planned-drone-delivery-sites-zipline/874378": {
+  "zh_title": "沃尔玛无人机配送站点计划翻倍还多",
+  "zh_oneliner": "无人机配送从试点走向规模化，履约速度成为零售竞争的新维度。"
+ },
+ "https://www.glossy.co/beauty/the-holiday-playbook-how-brands-are-banking-on-live-shopping-this-holiday-season": {
+  "zh_title": "品牌押注直播带货过这个假日季",
+  "zh_oneliner": "直播购物成为节日营销的主战场，内容与转化要一起抓。"
+ },
+ "https://www.retaildive.com/news/tiktok-shop-plus-paid-membership/874451": {
+  "zh_title": "TikTok Shop 试点付费会员",
+  "zh_oneliner": "平台用会员权益锁定高价值买家，商家要想好会员专属的玩法。"
+ },
+ "https://www.retaildive.com/news/calvin-klein-tommy-hilfiger-owner-to-cut-4-of-workforce/874492": {
+  "zh_title": "Calvin Klein 与 Tommy Hilfiger 母公司裁员 4%",
+  "zh_oneliner": "服装集团通过裁员控制成本，品牌投入会更看重投入产出。"
+ },
+ "https://www.searchenginejournal.com/the-traffic-pool-is-shrinking-and-which-channel-fills-it-matters-less-than-we-think/596346": {
+  "zh_title": "流量池在缩小，哪个渠道补位没那么重要",
+  "zh_oneliner": "与其纠结渠道归属，不如把有限流量高效转化成订单。"
+ },
+ "https://www.sellerlabs.com/blog/amazon-review-requests-ads": {
+  "zh_title": "要不要花钱让亚马逊帮你向买家要评价",
+  "zh_oneliner": "官方邀评服务值不值，关键看评价增长能不能带来真实转化。"
+ },
+ "https://ecommercenews.eu/eu-targets-online-sales-tricks-with-digital-fairness-act": {
+  "zh_title": "欧盟以《数字公平法案》打击网购套路",
+  "zh_oneliner": "误导性定价与暗黑设计将被重点监管，跨境卖家要提前合规。"
+ },
+ "https://www.practicalecommerce.com/usps-service-cuts-could-impact-merchants": {
+  "zh_title": "美国邮政削减服务或影响商家",
+  "zh_oneliner": "邮政服务收紧会抬高小商家的配送成本与时效风险。"
+ },
+ "https://ecommercenews.eu/sheins-total-investment-in-poland-reaches-1-billion-euros": {
+  "zh_title": "Shein 在波兰累计投资达 10 亿欧元",
+  "zh_oneliner": "快时尚巨头加码欧洲本地布局，供应链与合规都要跟上。"
+ },
+ "https://www.searchenginejournal.com/submit-website-chatgpt/596785": {
+  "zh_title": "如何把网站提交到 ChatGPT Business Hub",
+  "zh_oneliner": "想在 AI 对话里被推荐，商家要先完成商业信息的收录。"
+ },
+ "https://www.searchenginejournal.com/dont-let-a-tool-lead-your-ai-search-strategy-own-your-data-instead/596538": {
+  "zh_title": "别让工具主导 AI 搜索策略，先守住自己的数据",
+  "zh_oneliner": "AI 搜索时代，自己的商品与用户数据才是长期资产。"
+ },
+ "https://www.searchenginejournal.com/fix-ai-shopping-errors-writesonic-spa/595790": {
+  "zh_title": "AI 购物出错怎么办：先修好这些问题",
+  "zh_oneliner": "AI 推荐商品时信息错了会直接丢单，先把商品数据做准确。"
+ },
+ "https://www.printful.com/blog/design-trends": {
+  "zh_title": "2026 年值得印的 15 个 T 恤设计趋势",
+  "zh_oneliner": "按需打印卖家可以按这份趋势清单提前备设计。"
+ },
+ "https://www.modernretail.co/marketing/modern-retail-research-2026-creator-marketing-index-a-brand-guide-to-effective-social-media-campaigns": {
+  "zh_title": "2026 创作者营销指数：品牌社媒投放指南",
+  "zh_oneliner": "这份研究总结了创作者合作怎么做才有效，品牌方可照着排预算。"
+ },
+ "https://www.modernretail.co/operations/hims-hers-benefits-program-gruns-tonal-viome-medjet": {
+  "zh_title": "Hims & Hers 扩大 GLP-1 支持福利计划",
+  "zh_oneliner": "健康品牌把减重支持做成会员权益，联名品牌一起分摊成本。"
+ },
+ "https://www.glossy.co/podcasts/pov-beautys-mikayla-nogueira-unpacks-her-creator-brand-playbook-with-ceo-and-co-founder-ani-hadjinian": {
+  "zh_title": "美妆博主 Mikayla Nogueira 拆解创作者品牌打法",
+  "zh_oneliner": "头部博主聊自己的品牌怎么做，创作者转型卖货值得参考。"
+ },
+ "https://www.glossy.co/fashion/fashion-briefing-how-zara-larsson-charli-xcx-and-burning-suitcases-drove-a-boom-in-aways-aluminum-luggage-business": {
+  "zh_title": "时尚简报：明星效应如何带火 Away 铝制行李箱",
+  "zh_oneliner": "一场行李箱着火的事件反而成了品牌热度，明星联动功不可没。"
+ },
+ "https://www.digitalcommerce360.com/2026/11/11/lowes-partners-with-bilt-to-expand-loyalty-rewards-ai-powered-commerce": {
+  "zh_title": "Lowe’s 与 Bilt 合作扩大忠诚奖励与 AI 购物",
+  "zh_oneliner": "家居零售把忠诚计划与 AI 结合，让老客更愿意回购。"
+ },
+ "https://www.digitalcommerce360.com/2026/11/11/ebay-visual-identification-magical-listing-tool": {
+  "zh_title": "eBay 上架工具新增视觉识别功能",
+  "zh_oneliner": "拍张照片就能生成刊登信息，卖家上架的速度会更快。"
+ },
+ "https://www.retaildive.com/news/dicks-sporting-goods-foot-locker-signs-caitlin-clark/874141": {
+  "zh_title": "Dick’s 体育用品签下 Caitlin Clark",
+  "zh_oneliner": "体育零售商押注明星运动员带货，门店与线上一起造势。"
+ },
+ "https://neilpatel.com/blog/the-definitive-guide-to-lead-generation-form-optimization": {
+  "zh_title": "如何提高表单转化率并获得更多线索",
+  "zh_oneliner": "表单每少一步、每清晰一分，留下的潜在客户就多一分。"
+ },
+ "https://www.retaildive.com/news/capri-holdings-michael-kors-jimmy-choo-new-ceo-justin-boxford/874377": {
+  "zh_title": "Michael Kors 与 Jimmy Choo 母公司任命新 CEO",
+  "zh_oneliner": "奢侈品集团换帅，品牌与渠道策略可能随之调整。"
+ },
+ "https://www.retaildive.com/news/amazon-black-friday-cyber-monday-holiday-deals/874359": {
+  "zh_title": "亚马逊黑五与网一独家优惠创纪录",
+  "zh_oneliner": "大促的独家商品越来越多，卖家要提前抢好活动坑位。"
+ },
+ "https://www.retaildive.com/news/bed-bath-beyond-parent-to-close-maryland-distribution-center/874363": {
+  "zh_title": "Bed Bath & Beyond 母公司关闭马里兰配送中心",
+  "zh_oneliner": "家居零售收缩仓储网络，履约成本与速度要重新算账。"
+ },
+ "https://www.practicalecommerce.com/new-ecommerce-tools-november-11-2026": {
+  "zh_title": "新电商工具速览：2026 年 11 月 11 日",
+  "zh_oneliner": "每周一次的新工具盘点，帮商家快速发现提效的工具。"
+ },
+ "https://www.searchenginejournal.com/visibility-gets-you-on-the-list-evidence-helps-you-stay-there/592127": {
+  "zh_title": "曝光让你上榜，证据让你留下来",
+  "zh_oneliner": "在 AI 搜索里被提到只是第一步，真实口碑才能留住位置。"
+ },
+ "https://www.searchenginejournal.com/google-discovers-unexpected-patterns-in-ai-image-generation/596745": {
+  "zh_title": "Google 发现 AI 图片生成的意外规律",
+  "zh_oneliner": "AI 生成图片的规律会影响商品图的制作方式，值得留意。"
+ },
+ "https://www.ecommercetimes.com/story/why-blocking-ai-chatbots-can-leave-smbs-more-exposed-178718.html?rss=1": {
+  "zh_title": "屏蔽 AI 聊天机器人可能让中小商家更被动",
+  "zh_oneliner": "把 AI 爬虫挡在门外，也等于把 AI 带来的流量挡在门外。"
+ },
+ "https://ahrefs.com/blog/most-mentioned-brands-chatgpt": {
+  "zh_title": "ChatGPT 里被提到最多的 100 个品牌（2026 年 11 月）",
+  "zh_oneliner": "这份榜单能看出哪些品牌在 AI 对话里最有存在感。"
+ },
+ "https://www.searchenginejournal.com/google-ads-gives-you-more-channel-control-but-not-as-much-as-you-think/596266": {
+  "zh_title": "Google Ads 渠道优先级有上限：PMax 仍不让拆分的那些事",
+  "zh_oneliner": "最高效果广告的拆分限制还在，投手要按它的规则排预算。"
+ },
+ "https://www.printful.com/blog/best-quality-tshirts-for-printing": {
+  "zh_title": "2026 年最适合印花的 9 款优质 T 恤",
+  "zh_oneliner": "选对底衫是印花质量的第一步，这份清单可直接对照选品。"
+ },
+ "https://www.printful.com/blog/what-is-jacquard-knitting": {
+  "zh_title": "什么是提花针织：提花面料与毛衣指南",
+  "zh_oneliner": "想做针织品类的卖家，先搞懂提花工艺与成本。"
+ },
+ "https://www.printful.com/blog/sublimation-design-software": {
+  "zh_title": "热升华设计软件：10 款免费与付费选择",
+  "zh_oneliner": "做热升华定制，先挑一款顺手的设计软件。"
+ },
+ "https://www.printful.com/blog/t-shirt-design-software": {
+  "zh_title": "2026 年 12 款最佳 T 恤设计软件",
+  "zh_oneliner": "从设计到打样，选对工具能省下大量返工时间。"
+ },
+ "https://www.modernretail.co/operations/mattel-brings-barbie-hot-wheels-to-tiktok-shop": {
+  "zh_title": "美泰把芭比与风火轮带进 TikTok Shop",
+  "zh_oneliner": "玩具大牌正式入驻短视频电商，直播与短视频是主阵地。"
+ },
+ "https://www.glossy.co/beauty/maybelline-love-island-usa-lifter-gel": {
+  "zh_title": "美宝莲第三年入驻《爱情岛》别墅内幕",
+  "zh_oneliner": "美妆品牌把综艺场景做成长期种草阵地。"
+ },
+ "https://www.glossy.co/beauty/wellness/wellness-briefing-why-ulta-beauty-is-racing-toward-wearables-plus-news": {
+  "zh_title": "健康简报：Ulta Beauty 为何急着布局可穿戴设备",
+  "zh_oneliner": "美妆零售向健康赛道延伸，可穿戴成为新的增长点。"
+ },
+ "https://www.searchenginejournal.com/meta-paused-its-new-business-terms-and-businesses-should-plan-as-if-it-never-gets-better/596343": {
+  "zh_title": "Meta 暂停新商务条款，商家要按最坏情况做打算",
+  "zh_oneliner": "平台条款说变就变，依赖单一渠道的商家要留好后路。"
+ },
+ "https://www.retaildive.com/news/cybersecurity-grocery-refrigeration-attacks/874270": {
+  "zh_title": "美国政府着手防范制冷系统网络攻击",
+  "zh_oneliner": "零售冷链也成了网络安全议题，相关商家要关注合规要求。"
+ },
+ "https://www.searchenginejournal.com/google-november-2026-core-update/596614": {
+  "zh_title": "Google 2026 年 11 月核心更新开始推送",
+  "zh_oneliner": "搜索排名要波动一阵子，商家先别急着大改页面。"
+ },
+ "https://www.searchenginejournal.com/google-expands-ads-in-ai-mode-multiturn-ads/596540": {
+  "zh_title": "Google Ads 在 AI Mode 新增覆盖 10 个国家",
+  "zh_oneliner": "AI 搜索里的广告位继续扩大，出海商家要跟上。"
+ },
+ "https://www.searchenginejournal.com/forget-keywords-well-what-are-you-replacing-them-with/596349": {
+  "zh_title": "“关键词已死”，那你用什么替代它",
+  "zh_oneliner": "关键词思维过时了，取而代之的是意图与内容质量。"
+ },
+ "https://www.modernretail.co/announcement/awards/the-next-gen-store-awards-how-anthropologie-diptyque-and-others-are-transforming-the-in-store-experience": {
+  "zh_title": "新一代门店奖：Anthropologie 等如何改造线下体验",
+  "zh_oneliner": "线下门店的体验升级有了可抄的作业。"
+ },
+ "https://www.digitalcommerce360.com/2026/11/10/e-l-f-beauty-q2-sales-grow-51-as-it-embraces-digital-platforms": {
+  "zh_title": "e.l.f. 美妆二季度销售额增长 51%，数字化是关键",
+  "zh_oneliner": "平价美妆靠数字渠道拉动增长，值得同行参考。"
+ },
+ "https://www.searchenginejournal.com/google-releases-modern-web-guidance-1-0-for-ai-coding-agents/596495": {
+  "zh_title": "Google 发布面向 AI 编程智能体的现代网络指南 1.0",
+  "zh_oneliner": "网站要按新规范来写，AI 智能体才能顺利抓取与操作。"
+ },
+ "https://ahrefs.com/blog/where-does-chatgpt-get-its-information": {
+  "zh_title": "ChatGPT 的信息从哪来：4 个来源解析",
+  "zh_oneliner": "搞清 AI 的信息来源，才能让自家品牌被它引用。"
+ },
+ "https://ecommercenews.eu/european-council-approves-vat-simplification-for-online-sales": {
+  "zh_title": "欧洲理事会批准网售增值税简化方案",
+  "zh_oneliner": "跨境卖家报税的流程有望简化，合规成本可能下降。"
+ },
+ "https://www.searchenginejournal.com/good-vs-bad-pseo-learnings-from-a-decade-of-building-scalable-content-engines/594204": {
+  "zh_title": "好的与坏的程序化 SEO：十年搭建经验",
+  "zh_oneliner": "批量做内容页面，质量把控才是能不能起量的分水岭。"
+ },
+ "https://www.modernretail.co/operations/brands-briefing-dr-martens-revamps-stores-to-kickstart-growth-and-recontextualize-the-brand": {
+  "zh_title": "品牌简报：Dr. Martens 翻新门店重启增长",
+  "zh_oneliner": "老牌通过门店改造重新讲品牌故事。"
+ },
+ "https://blog.hubspot.com/marketing/aeo-benchmarking": {
+  "zh_title": "AEO 对标：市场数据揭示 AI 搜索真相",
+  "zh_oneliner": "拿自家品牌在 AI 搜索里的表现跟同行比一比。"
+ },
+ "https://www.sellerlabs.com/blog/posting-daily-no-leads-linkedin-ai-content": {
+  "zh_title": "天天发帖却没线索：我的领英数据怎么说",
+  "zh_oneliner": "AI 生成的内容发得多不等于有效，数据会说实话。"
+ },
+ "https://blog.hubspot.com/marketing/how-to-use-ai-to-write-a-blog-post": {
+  "zh_title": "如何用 AI 写出不水的博客文章",
+  "zh_oneliner": "AI 写作要有人把关，写出真正有用的内容才行。"
+ },
+ "https://www.practicalecommerce.com/optimize-youtube-videos-for-chatgpt": {
+  "zh_title": "为 ChatGPT 优化 YouTube 视频",
+  "zh_oneliner": "视频内容也要考虑被 AI 引用，标题与描述要写清楚。"
+ },
+ "https://www.searchenginejournal.com/jon-miller-ai-marketing-automation/596446": {
+  "zh_title": "Jon Miller 谈 AI 与营销自动化的未来",
+  "zh_oneliner": "营销自动化正在被 AI 重写，流程设计要跟着变。"
+ },
+ "https://www.searchenginejournal.com/meta-pauses-updated-business-ad-terms/596493": {
+  "zh_title": "Meta 暂缓原定 11 月 20 日生效的新商务与广告条款",
+  "zh_oneliner": "条款暂缓执行，商家仍要按原计划准备合规材料。"
+ },
+ "https://www.glossy.co/beauty/beauty-briefing-how-sephora-is-banking-on-expertise": {
+  "zh_title": "美妆简报：丝芙兰如何押注专业服务",
+  "zh_oneliner": "美妆零售靠专业顾问留住顾客，服务本身就是卖点。"
+ },
+ "https://www.glossy.co/beauty/k-beauty-brand-laneige-bets-on-experiential-retail-with-new-lip-mask-station": {
+  "zh_title": "韩妆品牌兰芝押注体验零售，推出唇膜体验站",
+  "zh_oneliner": "线下体验站把试用变成购买理由。"
+ },
+ "https://www.digitalcommerce360.com/2026/11/09/under-armour-sales-q2-2027": {
+  "zh_title": "安德玛二季度销售额下滑，CEO 仍看好 AI",
+  "zh_oneliner": "运动品牌业绩承压，把希望寄托在 AI 带来的效率上。"
+ },
+ "https://www.glossy.co/sponsored/brands-are-putting-youtube-front-and-center-in-their-holiday-marketing-strategies": {
+  "zh_title": "品牌把 YouTube 放在假日营销的中心位置",
+  "zh_oneliner": "长视频成为节日营销的主力渠道，预算正在向它倾斜。"
+ },
+ "https://www.digitalcommerce360.com/2026/11/09/the-childrens-place-bankruptcy-filing-sets-bidding-in-december": {
+  "zh_title": "The Children’s Place 破产申请，12 月启动竞拍",
+  "zh_oneliner": "童装零售商进入破产程序，品牌与门店资产将易主。"
+ },
+ "https://neilpatel.com/blog/ubersuggest-vs-moz": {
+  "zh_title": "Ubersuggest 与 MOZ：SEO 工具对比",
+  "zh_oneliner": "两款 SEO 工具各有侧重，按团队需求选就行。"
+ },
+ "https://www.modernretail.co/operations/exclusive-tiktok-shop-launches-a-paid-premium-tier-for-1m-of-its-top-us-shoppers": {
+  "zh_title": "独家：TikTok Shop 为百万美国头部用户推出付费高级会员",
+  "zh_oneliner": "平台用付费会员绑定高消费用户，商家可借势做专属活动。"
+ },
+ "https://www.practicalecommerce.com/google-ads-loosens-channel-restrictions": {
+  "zh_title": "Google Ads 放宽渠道限制",
+  "zh_oneliner": "广告渠道的限制松了，投放组合可以更灵活。"
+ },
+ "https://woocommerce.com/posts/woo-latest-security": {
+  "zh_title": "我们去查了：Woo 自 6 月以来在安全上做了什么",
+  "zh_oneliner": "电商建站平台的安全改进，店主升级前值得一看。"
+ },
+ "https://www.digitalcommerce360.com/2026/11/09/on-balancing-speed-and-security-for-smarter-payments": {
+  "zh_title": "更快与更安全之间：如何做好智能支付",
+  "zh_oneliner": "支付既要快又要防欺诈，平衡点在风控设计上。"
+ },
+ "https://www.digitalcommerce360.com/2026/11/09/card-not-present-fraud-is-evolving-is-payment-security-keeping-up": {
+  "zh_title": "无卡支付欺诈在进化，支付安全跟得上吗",
+  "zh_oneliner": "远程支付欺诈手法在变，商家的风控也要升级。"
+ },
+ "https://www.modernretail.co/operations/how-azunas-strong-supply-chain-fuels-its-9-figure-sales": {
+  "zh_title": "Azuna 靠强大的供应链撑起九位数销售额",
+  "zh_oneliner": "供应链稳定是规模化的底气，值得中小品牌学习。"
+ },
+ "https://www.sellerlabs.com/blog/perfect-takes-forever-amazon-listing-images": {
+  "zh_title": "完美没有尽头：亚马逊刊登图片的 100 件法则",
+  "zh_oneliner": "上架图片不必追求完美，先按规则跑起来再优化。"
+ },
+ "https://ecommercenews.eu/almost-half-of-eu-online-spending-abroad-goes-to-fashion": {
+  "zh_title": "欧盟近半跨境网购支出流向时尚品类",
+  "zh_oneliner": "时尚仍是欧洲跨境电商的主力，选品可优先考虑。"
+ },
+ "https://blog.hubspot.com/marketing/branded-vs-unbranded-prompt-tracking": {
+  "zh_title": "AI 搜索里的品牌词与非品牌词：如何追踪",
+  "zh_oneliner": "在 AI 回答里，品牌词与品类词的曝光要分开看。"
+ },
+ "https://ecommercenews.eu/partner-sales-on-bol-continue-growing": {
+  "zh_title": "Bol 平台第三方卖家销售额持续增长",
+  "zh_oneliner": "荷兰电商平台的第三方生态在扩大，入驻窗口值得关注。"
+ },
+ "https://blog.google/products-and-platforms/products/shopping/holiday-100-gift-guide-2026": {
+  "zh_title": "假日百大礼物指南：今年最热门的礼物",
+  "zh_oneliner": "按这份榜单备货，假日季的选品方向更明确。"
+ },
+ "https://www.glossy.co/beauty/wellness/ulta-beauty-oura-ring-health-tracking": {
+  "zh_title": "独家：Ulta Beauty 在 1000 家门店押注 Oura 健康追踪",
+  "zh_oneliner": "美妆零售把健康追踪设备搬进门店，跨界合作在加速。"
+ },
+ "https://www.shipbob.com/blog/shipbob-flexible-fulfillment": {
+  "zh_title": "ShipBob 对复杂履约是不是太死板？商家如何定制",
+  "zh_oneliner": "履约服务要能按商家需求定制，否则规模上去了也难用。"
+ },
+ "https://www.modernretail.co/operations/poppi-founder-allison-ellsworth-on-launching-jetty-a-new-hydration-brand": {
+  "zh_title": "Poppi 创始人谈推出新补水品牌 Jetty",
+  "zh_oneliner": "成功创始人再创业，品牌打法仍值得借鉴。"
+ },
+ "https://www.practicalecommerce.com/who-owns-an-ai-agents-mistakes": {
+  "zh_title": "AI 智能体犯了错，责任算谁的",
+  "zh_oneliner": "商家用 AI 智能体做客服与运营，出问题后的责任边界要先想清楚。"
+ },
+ "https://www.glossy.co/fashion/inside-oner-actives-tequila-scented-new-flagship-in-nyc": {
+  "zh_title": "走进 Oner Active 纽约新旗舰店：龙舌兰香氛体验",
+  "zh_oneliner": "运动品牌用气味与场景做旗舰店，线下体验越来越讲究。"
+ },
+ "https://www.sellerlabs.com/blog/amazon-dsp-explained-drive-more-traffic-mike-begg": {
+  "zh_title": "亚马逊 DSP 详解：如何带来更多流量",
+  "zh_oneliner": "站外广告投放是亚马逊卖家拉新流量的常用手段。"
+ },
+ "https://www.modernretail.co/podcasts/how-delivery-apps-came-to-be-discovery-platforms": {
+  "zh_title": "外卖应用如何变成“发现平台”",
+  "zh_oneliner": "配送应用不只是送货，也成了用户发现新品牌的地方。"
+ },
+ "https://www.digitalcommerce360.com/2026/11/06/gme-acquires-regional-rival-commercial-supply-co": {
+  "zh_title": "GME 收购地区竞争对手 Commercial Supply Co.",
+  "zh_oneliner": "分销商通过并购扩大区域覆盖，行业整合在继续。"
+ },
+ "https://neilpatel.com/blog/answerthepublic-trending-keywords": {
+  "zh_title": "AnswerThePublic 热门关键词：谷歌与 YouTube 上正在涨什么",
+  "zh_oneliner": "用趋势关键词工具找选题，内容与选品都能沾光。"
+ },
+ "https://woocommerce.com/posts/ecommerce-analytics-tools": {
+  "zh_title": "选电商分析工具，先看问题再看功能",
+  "zh_oneliner": "工具不在多，能回答经营问题的才是好工具。"
+ },
+ "https://blog.hubspot.com/marketing/marketing-automation-challenges": {
+  "zh_title": "营销自动化的障碍及修复方法（2026）",
+  "zh_oneliner": "自动化流程跑不顺，多半是数据与规则没理清。"
+ },
+ "https://blog.hubspot.com/marketing/scrunch-vs-ahrefs": {
+  "zh_title": "Scrunch 与 Ahrefs：AI 可见度追踪对比",
+  "zh_oneliner": "两款工具都测品牌在 AI 回答里的曝光，侧重点不同。"
+ },
+ "https://www.practicalecommerce.com/my-ai-bots-for-email-seo-reports-more": {
+  "zh_title": "我的 AI 机器人：邮件、SEO、报表全包",
+  "zh_oneliner": "把重复工作交给 AI 机器人，人只做判断与决策。"
+ },
+ "https://www.sellerlabs.com/blog/amazon-demographic-data-fix-your-listing-ruben-alikhanyan": {
+  "zh_title": "用亚马逊人群数据修好你的刊登",
+  "zh_oneliner": "看懂买家人群画像，再回头改标题与图片。"
+ },
+ "https://www.modernretail.co/marketing/foot-locker-puts-employees-front-and-center-in-its-holiday-campaign": {
+  "zh_title": "Foot Locker 让员工站到假日营销前台",
+  "zh_oneliner": "让一线员工出镜，品牌故事更真实可信。"
+ },
+ "https://ecommercenews.eu/eu-commission-approves-takeover-ceconomy-by-jd-com": {
+  "zh_title": "欧盟批准京东收购 Ceconomy",
+  "zh_oneliner": "京东的欧洲布局再进一步，跨境卖家要关注新渠道。"
+ },
+ "https://www.glossy.co/podcasts/glossy-podcast-after-his-12th-cfda-award-what-makes-ralph-lauren-such-an-icon-of-american-fashion": {
+  "zh_title": "播客：拿下第 12 个 CFDA 奖后，Ralph Lauren 为何仍是美式时尚标杆",
+  "zh_oneliner": "老牌的设计与品牌经营，值得时尚从业者反复琢磨。"
+ },
+ "https://www.glossy.co/fashion/luxury/luxury-briefing-ralph-lauren-marketing-coach-black-friday": {
+  "zh_title": "奢侈品简报：Ralph Lauren 卖“营销梦”不设上限",
+  "zh_oneliner": "奢侈品牌卖的不只是产品，还有生活方式的想象。"
+ },
+ "https://www.glossy.co/pop/glossy-pop-newsletter-depop-is-hosting-over-2000-campus-events-this-fall": {
+  "zh_title": "Depop 今秋在校园举办超 2000 场活动",
+  "zh_oneliner": "二手平台深入校园做活动，年轻用户是增长关键。"
+ },
+ "https://www.digitalcommerce360.com/2026/11/05/bark-revenue-falls-despite-commerce-growth-resuming-in-q2": {
+  "zh_title": "Bark 营收下滑，尽管电商业务二季度恢复增长",
+  "zh_oneliner": "宠物品牌营收与电商增长不同步，渠道结构值得细看。"
+ },
+ "https://www.shipbob.com/blog/bondiboost": {
+  "zh_title": "BondiBoost 如何用 ShipBob 保持 98% 准时履约",
+  "zh_oneliner": "准时率与准确的送达预估，是复购率的隐形推手。"
+ },
+ "https://www.glossy.co/beauty/interparfums-inc-to-launch-new-off-white-longchamp-fragrances-in-2027": {
+  "zh_title": "Interparfums 将于 2027 年推出 Off-White 与 Longchamp 新香水",
+  "zh_oneliner": "授权香水业务继续扩品，品牌联名仍是增长点。"
+ },
+ "https://blog.hubspot.com/marketing/rag-in-ai": {
+  "zh_title": "AI 里的 RAG 是什么：给营销人的通俗指南",
+  "zh_oneliner": "搞懂检索增强生成，营销人才能用好 AI 工具。"
+ },
+ "https://ecommercenews.eu/zalando-sees-new-revenue-potential-in-external-shops": {
+  "zh_title": "Zalando 看到外部店铺的新收入潜力",
+  "zh_oneliner": "欧洲时尚平台把自家能力开放给外部商家，生态在扩大。"
+ },
+ "https://www.sellerlabs.com/blog/most-people-think-ai-is-a-chatbot": {
+  "zh_title": "多数人以为 AI 就是聊天机器人，这是个昂贵的误解",
+  "zh_oneliner": "把 AI 只当客服用，会错过它在运营上的更大价值。"
+ },
+ "https://www.ecommercetimes.com/story/what-ai-search-tells-customers-about-your-brand-178715.html?rss=1": {
+  "zh_title": "AI 搜索会向顾客透露你品牌的哪些信息",
+  "zh_oneliner": "AI 回答里的品牌形象，正在变成新的门面。"
+ },
+ "https://www.practicalecommerce.com/5-content-marketing-ideas-for-december-2026": {
+  "zh_title": "2026 年 12 月的 5 个内容营销点子",
+  "zh_oneliner": "年底的内容日历可以照着这几个方向排。"
+ },
+ "https://www.glossy.co/podcasts/how-is-cvs-sneaking-brands-into-its-stores-without-brand-approval": {
+  "zh_title": "CVS 如何在未获品牌许可的情况下把品牌放进门店",
+  "zh_oneliner": "零售渠道与品牌授权之间的灰色地带值得警惕。"
+ },
+ "https://www.glossy.co/fashion/fashion-briefing-as-ai-content-takes-over-brands-embrace-hand-drawn-animation-for-holiday": {
+  "zh_title": "时尚简报：AI 内容泛滥之际，品牌拥抱手绘动画过节",
+  "zh_oneliner": "越是 AI 内容多，手绘的温度越显得稀缺。"
+ },
+ "https://stripe.com/blog/analyze-your-stripe-data-directly-with-your-agent": {
+  "zh_title": "直接用智能体分析你的 Stripe 数据",
+  "zh_oneliner": "支付数据不用导出表格，问智能体就能得到结论。"
+ },
+ "https://www.glossy.co/beauty/rhodes-european-summer-fuels-51-sales-spike-for-e-l-f-beauty": {
+  "zh_title": "Rhode 的欧洲夏季推动 e.l.f. 美妆销售额激增 51%",
+  "zh_oneliner": "品牌出海欧洲见效，区域市场值得投入。"
+ },
+ "https://www.glossy.co/beauty/revolve-cardi-b-grow-good-beauty-earnings": {
+  "zh_title": "Cardi B 的护发品牌为 Revolve 带来新客",
+  "zh_oneliner": "明星品牌入驻平台，能直接带来增量用户。"
+ },
+ "https://neilpatel.com/blog/xml-sitemap": {
+  "zh_title": "XML 网站地图优化：如何提升可抓取性",
+  "zh_oneliner": "地图做对了，搜索引擎才能顺利收录商品页。"
+ },
+ "https://www.practicalecommerce.com/new-ecommerce-tools-november-4-2026": {
+  "zh_title": "新电商工具速览：2026 年 11 月 4 日",
+  "zh_oneliner": "每周一次的新工具盘点，帮商家快速发现提效的工具。"
+ },
+ "https://www.sellerlabs.com/blog/amazon-mcp-ai-inventory-tools-guide": {
+  "zh_title": "什么是亚马逊 MCP？卖家 AI 库存工具指南",
+  "zh_oneliner": "亚马逊的 MCP 接口让 AI 工具能直接操作库存数据。"
+ },
+ "https://blog.hubspot.com/marketing/aeo-keyword-gap-analysis": {
+  "zh_title": "如何找到并补上 AEO 关键词缺口",
+  "zh_oneliner": "AI 搜索时代，关键词缺口就是流量缺口。"
+ },
+ "https://blog.hubspot.com/marketing/ai-search-industry-benchmarks": {
+  "zh_title": "如何把 AI 搜索表现与同行对标",
+  "zh_oneliner": "先找到行业基准，再判断自家品牌处在什么位置。"
+ },
+ "https://www.glossy.co/research/glossy-research-marketers-express-revenue-optimism-for-2026-holiday-season-despite-economic-pressures": {
+  "zh_title": "调研：尽管经济承压，营销人仍看好 2026 假日季营收",
+  "zh_oneliner": "假日季的预算没有缩水，品牌方普遍乐观。"
+ },
+ "https://www.glossy.co/beauty/wellness/the-5-consumer-archetypes-driving-the-2-7-trillion-wellness-industry-today-plus-news": {
+  "zh_title": "驱动 2.7 万亿美元健康产业的 5 类消费者",
+  "zh_oneliner": "搞清健康消费者的画像，选品与营销才有方向。"
+ },
+ "https://ahrefs.com/blog/openai-publisher-partnerships": {
+  "zh_title": "OpenAI 的每个出版商合作，以及 ChatGPT 引用它们的频率",
+  "zh_oneliner": "内容合作方在 AI 回答里的引用率差别很大。"
+ },
+ "https://www.practicalecommerce.com/find-site-errors-with-ai-before-ads-run": {
+  "zh_title": "投广告前，先用 AI 找出网站错误",
+  "zh_oneliner": "落地页有错再投广告，钱就白花了。"
+ },
+ "https://ahrefs.com/blog/aeo-geo-experts": {
+  "zh_title": "2026 年值得关注的 25 位 AEO/GEO 专家",
+  "zh_oneliner": "想跟上 AI 搜索，先关注这批一线专家。"
+ },
+ "https://blog.hubspot.com/marketing/claude-integrations": {
+  "zh_title": "值得加入 GTM 技术栈的 Claude 集成",
+  "zh_oneliner": "把 Claude 接进营销工具链，执行效率会明显提升。"
+ },
+ "https://www.sellerlabs.com/blog/chatbot-diy-agent-or-personal-agent": {
+  "zh_title": "聊天机器人、自建智能体还是个人助理：亚马逊卖家该用哪种 AI",
+  "zh_oneliner": "不同阶段的卖家，适合的 AI 助手类型也不同。"
+ },
+ "https://ahrefs.com/blog/mention-types-ai-visibility": {
+  "zh_title": "哪种提及与 AI 可见度相关性最强（分析 2.6 亿条 AI 提示）",
+  "zh_oneliner": "数据告诉你，什么样的品牌提及最能换来 AI 曝光。"
+ },
+ "https://ahrefs.com/blog/clearscope-alternatives": {
+  "zh_title": "10 款 Clearscope 替代品（价格、API 与 MCP 对比）",
+  "zh_oneliner": "内容优化工具不止一家，按预算与接入方式选。"
+ },
+ "https://ecommercenews.eu/dhl-introduces-fee-for-second-delivery-attempt": {
+  "zh_title": "DHL 对第二次派送尝试开始收费",
+  "zh_oneliner": "跨境物流成本又多一项，商家要算进定价里。"
+ },
+ "https://www.shipbob.com/blog/fall-26-release": {
+  "zh_title": "ShipBob 2026 秋季更新：机器人、退货与 Bobby 等旺季功能",
+  "zh_oneliner": "履约商在旺季前集中上新，机器人与退货是重点。"
+ },
+ "https://www.shipbob.com/blog/ai-fulfillment-strategies-from-tuft-paw": {
+  "zh_title": "Tuft & Paw 的 3 个 AI 履约策略（基于 ShipBob MCP）",
+  "zh_oneliner": "把 AI 接进履约系统，补货与发货都能更主动。"
+ },
+ "https://blog.hubspot.com/marketing/ai-maturity": {
+  "zh_title": "营销 AI 成熟度：研究揭示了什么",
+  "zh_oneliner": "多数团队的 AI 应用还停在初级阶段，差距就是机会。"
+ },
+ "https://blog.hubspot.com/marketing/scrunch-vs-semrush": {
+  "zh_title": "Scrunch 与 Semrush：谁更擅长追踪 AI 可见度",
+  "zh_oneliner": "两款工具测 AI 曝光的方式不同，按需求选。"
+ },
+ "https://www.practicalecommerce.com/html-vs-xml-sitemaps-for-ecommerce": {
+  "zh_title": "电商网站该用 HTML 还是 XML 网站地图",
+  "zh_oneliner": "两种地图各有用途，商品站最好两个都做。"
+ },
+ "https://woocommerce.com/posts/strategies-how-use-coupons-discounts-without-sacrificing-profits": {
+  "zh_title": "设计能自我回本的折扣，守住利润率",
+  "zh_oneliner": "折扣不是越狠越好，算好账再降价。"
+ },
+ "https://www.ecommercetimes.com/story/ai-shopping-agents-put-retailers-data-to-the-test-178711.html?rss=1": {
+  "zh_title": "AI 购物智能体正在考验零售商的数据",
+  "zh_oneliner": "商品数据不规范，AI 智能体就推不动你的货。"
+ },
+ "https://ecommercenews.eu/brussels-approves-temus-action-plan": {
+  "zh_title": "布鲁塞尔批准 Temu 的整改行动计划",
+  "zh_oneliner": "Temu 的合规整改过关，欧洲业务可以继续推进。"
+ },
+ "https://www.practicalecommerce.com/chatgpt-sends-1-in-5-orders-to-florist": {
+  "zh_title": "花店每 5 单就有 1 单来自 ChatGPT",
+  "zh_oneliner": "AI 对话已经成为实实在在的订单来源。"
+ },
+ "https://www.sellerlabs.com/blog/amazon-risk-check-most-sellers-skip-lesley-hensell": {
+  "zh_title": "多数卖家跳过的亚马逊风险检查",
+  "zh_oneliner": "账号风险平时不查，出事时再补救就晚了。"
+ },
+ "https://woocommerce.com/posts/peak-season-conversions": {
+  "zh_title": "回答好购物者的问题，旺季转化率自然涨",
+  "zh_oneliner": "问答内容做扎实，犹豫的顾客更容易下单。"
+ },
+ "https://ahrefs.com/blog/bluf": {
+  "zh_title": "什么是 BLUF？如何先写结论（附免费改写工具）",
+  "zh_oneliner": "内容先给结论，读者与 AI 都更喜欢。"
+ },
+ "https://www.practicalecommerce.com/i-built-a-voice-bot-for-customer-calls": {
+  "zh_title": "我做了一个接客户电话的语音机器人",
+  "zh_oneliner": "语音机器人接电话的实战记录，值得想降本的商家看。"
+ },
+ "https://ecommercenews.eu/winners-becom-awards-2026-announced": {
+  "zh_title": "Becom Awards 2026 获奖名单公布",
+  "zh_oneliner": "欧洲电商奖项揭晓，获奖打法可作参考。"
+ },
+ "https://www.sellerlabs.com/blog/blind-spots-costing-amazon-sellers-money-aaron-conant": {
+  "zh_title": "让亚马逊卖家亏钱的盲点",
+  "zh_oneliner": "费用与库存里的隐形亏损，多数卖家平时注意不到。"
+ },
+ "https://neilpatel.com/blog/answer-engine-optimization": {
+  "zh_title": "答案引擎优化：如何提升 AI 可见度",
+  "zh_oneliner": "想在 AI 回答里出现，内容结构要先改。"
+ },
+ "https://stripe.com/blog/stripe-on-stripe-what-we-learned-moving-1b-in-vendor-payments-to-global-payouts": {
+  "zh_title": "Stripe 自己的经验：把 10 亿美元供应商付款迁到 Global Payouts 学到了什么",
+  "zh_oneliner": "大额跨境付款的迁移经验，对平台型商家有参考价值。"
+ },
+ "https://ahrefs.com/blog/how-stable-are-ai-citations": {
+  "zh_title": "AI 引用有多稳定？追踪 37500 条引用学到的 10 件事",
+  "zh_oneliner": "AI 引用并不稳定，品牌曝光要持续维护。"
+ },
+ "https://www.practicalecommerce.com/marketers-guide-to-late-bfcm-email": {
+  "zh_title": "黑五网一后期邮件营销指南",
+  "zh_oneliner": "大促后半程的邮件还能再捞一波订单。"
+ },
+ "https://blog.hubspot.com/marketing/chatgpt-ads-vs-google-search-ads": {
+  "zh_title": "ChatGPT 广告与谷歌搜索广告：策略上要考虑的 5 点不同",
+  "zh_oneliner": "两种广告的投放逻辑不同，预算要分开算。"
+ },
+ "https://blog.hubspot.com/marketing/claude-marketing-plugin": {
+  "zh_title": "2026 年值得加入营销工具栈的 Claude 插件",
+  "zh_oneliner": "把 Claude 插件接进日常流程，内容与投放都能提速。"
+ },
+ "https://neilpatel.com/blog/teach-content-strategy-to-stakeholders": {
+  "zh_title": "如何向不懂营销的利益相关方讲清内容策略",
+  "zh_oneliner": "内容策略要讲业务结果，而不是营销术语。"
+ },
+ "https://blog.hubspot.com/marketing/how-often-to-run-prompt-tracking": {
+  "zh_title": "AEO 提示追踪多久跑一次：频率指南",
+  "zh_oneliner": "AI 搜索的追踪频率要跟得上模型更新节奏。"
+ },
+ "https://blog.hubspot.com/marketing/profound-vs-peec-ai": {
+  "zh_title": "Profound 与 Peec AI：哪个适合你的团队",
+  "zh_oneliner": "两款 AI 可见度工具定位不同，按团队规模选。"
+ },
+ "https://www.practicalecommerce.com/new-ecommerce-tools-october-28-2026": {
+  "zh_title": "新电商工具速览：2026 年 10 月 28 日",
+  "zh_oneliner": "每周一次的新工具盘点，帮商家快速发现提效的工具。"
+ },
+ "https://ahrefs.com/blog/google-ai-mode": {
+  "zh_title": "Google AI Mode：你需要知道的一切",
+  "zh_oneliner": "AI 模式正在改变搜索流量，商家要提前适应。"
+ },
+ "https://ahrefs.com/blog/new-features-september-2026": {
+  "zh_title": "AI 可发现性、页面类型等（2026 年 9 月）",
+  "zh_oneliner": "哪些页面类型最容易被 AI 发现，这份总结讲清楚了。"
+ },
+ "https://blog.hubspot.com/marketing/profound-vs-semrush": {
+  "zh_title": "Profound 与 Semrush 的 AEO 对比：专精还是套件",
+  "zh_oneliner": "做 AEO 是选专精工具还是全能套件，看团队现状。"
+ },
+ "https://blog.hubspot.com/marketing/aeo-analysis-tools": {
+  "zh_title": "AEO 分析工具测评：2026 年真正好用的是哪些",
+  "zh_oneliner": "市面上的 AEO 工具测了一圈，好用的就那么几款。"
+ },
+ "https://www.practicalecommerce.com/color-works-only-through-contrast": {
+  "zh_title": "色彩只有靠对比才有效",
+  "zh_oneliner": "商品页配色讲对比，视觉层次比颜色本身重要。"
+ },
+ "https://woocommerce.com/posts/subscription-churn-strategies": {
+  "zh_title": "订阅流失：把留存洞察变成持续收入增长",
+  "zh_oneliner": "订阅业务的增长关键在留存，不在拉新。"
+ },
+ "https://stripe.com/blog/how-the-fastest-growing-enterprises-on-stripe-scale-globally": {
+  "zh_title": "Stripe 上增长最快的企业如何全球扩张",
+  "zh_oneliner": "增长快的企业在支付与合规上都有共性打法。"
+ },
+ "https://neilpatel.com/blog/ubersuggest-inside-claude": {
+  "zh_title": "Ubersuggest 已接入 Claude，它到底能做什么",
+  "zh_oneliner": "SEO 工具住进 AI 对话里，查数据的方式变了。"
+ },
+ "https://www.practicalecommerce.com/seo-vs-geo-which-to-prioritize": {
+  "zh_title": "SEO 与 GEO：优先做哪个",
+  "zh_oneliner": "传统搜索与 AI 搜索的优化，预算分配要想清楚。"
+ },
+ "https://woocommerce.com/posts/how-to-scale-small-business": {
+  "zh_title": "电商规模化：增长销量而不丢利润",
+  "zh_oneliner": "规模做大容易亏，利润率要跟着算。"
+ },
+ "https://blog.hubspot.com/marketing/create-claude-skills": {
+  "zh_title": "如何创建 Claude Skills：团队真正需要的是什么",
+  "zh_oneliner": "给 AI 写技能要从团队的实际工作流出发。"
+ },
+ "https://www.shipbob.com/blog/annas-wild-yam-cream": {
+  "zh_title": "ANNA’S 野生山药霜如何靠拓展美国市场提升转化 36%、缩短发货时间 71%",
+  "zh_oneliner": "品牌出海美国，转化与物流可以同时改善。"
+ },
+ "https://www.practicalecommerce.com/usps-can-bill-sellers-for-foreign-duties": {
+  "zh_title": "美国邮政可向卖家收取外国关税",
+  "zh_oneliner": "跨境卖家的关税成本可能多一笔，要提前核算。"
+ },
+ "https://blog.hubspot.com/marketing/profound-vs-bluefish": {
+  "zh_title": "Profound 与 Bluefish AI 的 AEO 对比：营销人选哪个",
+  "zh_oneliner": "两款 AEO 工具的打法不同，按营销目标选。"
+ },
+ "https://neilpatel.com/blog/4-ps-of-marketing": {
+  "zh_title": "营销 4P：产品、价格、渠道与推广",
+  "zh_oneliner": "经典框架不过时，新手做营销先从这里入门。"
+ },
+ "https://blog.hubspot.com/marketing/ai-content-gaps": {
+  "zh_title": "如何找到影响 AI 可见度的内容缺口",
+  "zh_oneliner": "内容缺口找出来，AI 曝光才有提升空间。"
+ },
+ "https://blog.hubspot.com/marketing/which-prompts-to-track": {
+  "zh_title": "该追踪哪些 AI 提示：实用指南",
+  "zh_oneliner": "不是所有提示都值得追踪，先挑与业务相关的。"
+ },
+ "https://blog.hubspot.com/marketing/ahrefs-vs-profound": {
+  "zh_title": "Ahrefs Brand Radar 与 Profound：哪个适合你的团队",
+  "zh_oneliner": "品牌在 AI 里的曝光，两款工具测的角度不同。"
+ },
+ "https://blog.hubspot.com/marketing/llm-visibility-tools": {
+  "zh_title": "8 款 LLM 可见度工具，追踪品牌在答案引擎里的表现",
+  "zh_oneliner": "想知道品牌在 AI 回答里出现多少次，用这批工具。"
+ },
+ "https://www.practicalecommerce.com/agency-founder-touts-youtube-tv-ads": {
+  "zh_title": "代理公司创始人看好 YouTube 电视广告",
+  "zh_oneliner": "大屏广告正在成为品牌投放的新选择。"
+ },
+ "https://blog.hubspot.com/marketing/profound-vs-scrunch": {
+  "zh_title": "Profound 与 Scrunch：哪款 AEO 工具适合你的团队",
+  "zh_oneliner": "AEO 工具选型要看团队规模与预算。"
+ },
+ "https://blog.hubspot.com/marketing/build-ai-agent": {
+  "zh_title": "如何搭建 AI 智能体：从目标到上线",
+  "zh_oneliner": "做智能体要先定目标，再谈技术实现。"
+ },
+ "https://www.practicalecommerce.com/ai-shopping-metrics-considered": {
+  "zh_title": "AI 购物指标怎么看",
+  "zh_oneliner": "AI 带来的流量与订单，要用新的指标衡量。"
+ },
+ "https://stripe.com/blog/trends-from-money20-20-2026-the-rise-of-hidden-financial-services": {
+  "zh_title": "Money20/20 2026 趋势：“隐形”金融服务崛起",
+  "zh_oneliner": "支付正在藏进购物流程里，商家要跟上这股趋势。"
+ },
+ "https://www.shipbob.com/blog/welleco": {
+  "zh_title": "WelleCo 两人运营团队如何用 ShipBob 跑全球履约",
+  "zh_oneliner": "小团队也能做全球履约，关键在系统与外包。"
+ },
+ "https://woocommerce.com/posts/woocommerce-multiple-stores": {
+  "zh_title": "一个 WordPress 安装搭建多个 WooCommerce 店铺",
+  "zh_oneliner": "多店铺共用一套系统，管理成本可以降下来。"
+ },
+ "https://neilpatel.com/blog/an-eye-opening-guide-create-grow-facebook-group": {
+  "zh_title": "如何用 Facebook 小组做营销",
+  "zh_oneliner": "社群营销的老办法，至今仍然有效。"
+ },
+ "https://www.practicalecommerce.com/new-ecommerce-tools-october-21-2026": {
+  "zh_title": "新电商工具速览：2026 年 10 月 21 日",
+  "zh_oneliner": "每周一次的新工具盘点，帮商家快速发现提效的工具。"
+ },
+ "https://www.practicalecommerce.com/shopify-vercel-arm-stores-for-ai-agents": {
+  "zh_title": "Shopify 与 Vercel 联手让店铺为 AI 智能体做好准备",
+  "zh_oneliner": "店铺要能被 AI 智能体顺利访问与下单，基建要先到位。"
+ },
+ "https://blog.hubspot.com/marketing/aeo-for-small-teams": {
+  "zh_title": "没有大团队怎么做 AEO：有哪些选择",
+  "zh_oneliner": "小团队做 AI 搜索优化，工具与外包是两条路。"
+ },
+ "https://www.ecommercetimes.com/story/how-smbs-can-keep-ai-website-agents-under-control-178693.html?rss=1": {
+  "zh_title": "中小企业如何管住 AI 网站智能体",
+  "zh_oneliner": "AI 智能体访问网站要设边界，别让它乱跑。"
+ },
+ "https://www.shipbob.com/blog/shipbob-fulfillment-technology": {
+  "zh_title": "ShipBob 的技术落后了吗？深入看它的全套履约系统",
+  "zh_oneliner": "履约商的技术栈决定了它能帮商家走多远。"
+ },
+ "https://neilpatel.com/blog/seo-templates": {
+  "zh_title": "SEO 模板、指南与清单，让策略更顺畅",
+  "zh_oneliner": "用现成的模板搭 SEO 流程，省下从零摸索的时间。"
+ },
+ "https://www.practicalecommerce.com/beware-of-ai-content-for-seo": {
+  "zh_title": "警惕 AI 内容做 SEO 的风险",
+  "zh_oneliner": "AI 内容用不好，反而会拖累搜索排名。"
+ },
+ "https://blog.hubspot.com/marketing/how-ai-changed-our-editorial-process": {
+  "zh_title": "我们的博客全面转向 AI 后到底发生了什么：一位经理的记录",
+  "zh_oneliner": "博客 AI 化的真实过程，有收获也有教训。"
+ },
+ "https://blog.hubspot.com/marketing/best-claude-skills": {
+  "zh_title": "最适合营销与销售团队的 Claude Skills",
+  "zh_oneliner": "给 Claude 配好技能，营销与销售工作能提速。"
+ },
+ "https://stripe.com/blog/saas-platform-trends-in-AI-era": {
+  "zh_title": "Stripe 调研：AI 时代重塑 SaaS 平台竞争的四大趋势",
+  "zh_oneliner": "SaaS 平台的竞争逻辑在变，支付是其中一环。"
+ },
+ "https://www.ecommercetimes.com/story/hanso-expands-online-apex-pergola-catalog-with-4-new-sizes-and-accessories-178690.html?rss=1": {
+  "zh_title": "Hansø 凉棚目录新增 4 种尺寸与配件",
+  "zh_oneliner": "户外品类靠扩品拉动线上销售。"
+ },
+ "https://blog.hubspot.com/marketing/marketing-automation-secondary-market-playbook": {
+  "zh_title": "营销自动化模型如何让次级市场的合格线索增长 9 倍",
+  "zh_oneliner": "自动化流程跑通后，线索增长可以非常快。"
+ },
+ "https://www.practicalecommerce.com/ai-platforms-attract-a-growing-ecosystem": {
+  "zh_title": "AI 平台正在吸引越来越大的生态",
+  "zh_oneliner": "围绕 AI 平台的工具与服务越来越多，商家可选的更多。"
+ },
+ "https://stripe.com/blog/new-ways-for-fintechs-to-move-money-and-expand-globally": {
+  "zh_title": "金融科技公司转移资金与全球扩张的新方式",
+  "zh_oneliner": "跨境收款的路子在变多，出海商家可以比较着选。"
+ },
+ "https://www.shipbob.com/blog/supplement-fulfillment-requirements": {
+  "zh_title": "履约伙伴能发保健品吗？发货前要知道的事",
+  "zh_oneliner": "保健品的仓储与配送有特殊要求，发货前先确认。"
+ },
+ "https://blog.hubspot.com/marketing/best-transactional-email-platforms": {
+  "zh_title": "交易邮件：是什么、怎么运作",
+  "zh_oneliner": "订单确认与物流通知这类邮件，转化率其实很高。"
+ },
+ "https://blog.google/products-and-platforms/products/shopping/universal-cart-launch": {
+  "zh_title": "一款智能的新购物车",
+  "zh_oneliner": "Google 给购物车加了智能功能，购物体验在变。"
+ },
+ "https://blog.google/products-and-platforms/products/shopping/holiday-shopping-when-to-buy-guide": {
+  "zh_title": "数据支撑的假日购物秘诀",
+  "zh_oneliner": "按数据备货与定价，假日季少走弯路。"
+ },
+ "https://www.practicalecommerce.com/commerce-data-as-credit-data": {
+  "zh_title": "电商数据正在变成信用数据",
+  "zh_oneliner": "商家的交易数据可能影响融资，经营记录要重视。"
+ },
+ "https://stripe.com/blog/real-time-stripe-data-postgres": {
+  "zh_title": "用 Stripe Data Pipeline 把实时数据同步到 Postgres",
+  "zh_oneliner": "支付数据实时入库，分析与对账都更方便。"
+ },
+ "https://blog.hubspot.com/marketing/tracking-ai-overviews": {
+  "zh_title": "追踪 AI 概览：数据到底显示了什么",
+  "zh_oneliner": "AI 概览的实际影响，要看数据而不是感觉。"
+ },
+ "https://blog.hubspot.com/marketing/claude-skills-plugins-mcp": {
+  "zh_title": "Claude Skills、插件与 MCP 连接器：简单指南",
+  "zh_oneliner": "三种接入方式各有用途，选错会白费力气。"
+ },
+ "https://www.practicalecommerce.com/new-ecommerce-tools-october-14-2026": {
+  "zh_title": "新电商工具速览：2026 年 10 月 14 日",
+  "zh_oneliner": "每周一次的新工具盘点，帮商家快速发现提效的工具。"
+ }
+}

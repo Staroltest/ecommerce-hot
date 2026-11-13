@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.DS_Store
+# 本机增量库，绝不推送（见 BOOTSTRAP.md 数据结构一节）
+data/store.json
