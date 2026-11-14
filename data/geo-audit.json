@@ -1,0 +1,67 @@
+{
+  "generated_at": "2026-11-14T01:20:32.534447+00:00",
+  "generated_at_cst": "2026-11-14T01:20:32.534447+00:00",
+  "site": "https://staroltest.github.io/ecommerce-hot",
+  "site_name": "跨境电商选品HOT",
+  "summary": {
+    "pass": 5,
+    "fail": 4,
+    "unknown": 0
+  },
+  "checks": [
+    {
+      "id": "robots",
+      "name": "robots.txt 点名放行 AI 爬虫",
+      "status": "pass",
+      "detail": "已点名 15/15 个 AI 爬虫；Bytespider 已屏蔽；已声明 Sitemap。"
+    },
+    {
+      "id": "sitemap",
+      "name": "sitemap.xml 完整且 lastmod 可信",
+      "status": "fail",
+      "detail": "629 条 URL；lastmod 共 1 个不同日期；磁盘 HTML 636 页，漏 9 页。漏页：geo-audit.html、items/3276293b5d262103868b2b2b2a54aa5fa00221ad.html、items/749c250882a001ef074439cc98bd4d7f63e10b35.html、items/76df0ac37b5f752a3c91fd4df928f27db184a17d.html、items/804cd60ed18698e4e0539c82ed2f58d1a6269669.html、items/9d3e38673afba4637af62c7211f293691c1a88e9.html、items/d59e717242513fcf4be80f0ac64172ad423810be.html、topics/optimization.html 等"
+    },
+    {
+      "id": "llms",
+      "name": "llms.txt 存在",
+      "status": "pass",
+      "detail": "llms.txt 存在（1199 字符），含 MCP 接入点说明。"
+    },
+    {
+      "id": "head",
+      "name": "抽查页面 canonical / hreflang 齐全",
+      "status": "fail",
+      "detail": "index.html 缺 canonical,hreflang zh-CN,hreflang x-default,robots meta,RSS 发现链接；all.html 缺 canonical,hreflang zh-CN,hreflang x-default,robots meta,RSS 发现链接；daily.html 缺 canonical,hreflang zh-CN,hreflang x-default,robots meta,RSS 发现链接；items/00720ebad5c7fdad7590353af8ec9d7db8e1637d.html 缺 canonical,hreflang zh-CN,hreflang x-default,robots meta,RSS 发现链接；items/00ec78fe28dd4940c38fae9e728dd03838958437.html 缺 canonical,hreflang zh-CN,hreflang x-default,robots meta,RSS 发现链接；items/017da98da3961362c10ee8812cae82cc2b3e4d04.html 缺 canonical,hreflang zh-CN,hreflang x-default,robots meta,RSS 发现链接"
+    },
+    {
+      "id": "jsonld",
+      "name": "抽查页面结构化数据有效",
+      "status": "pass",
+      "detail": "抽查 6 页 JSON-LD 均可解析；出现过的类型：Article、BreadcrumbList、ItemList、WebSite。"
+    },
+    {
+      "id": "article",
+      "name": "详情页 Article 结构化数据完整",
+      "status": "fail",
+      "detail": "items/00720ebad5c7fdad7590353af8ec9d7db8e1637d.html 缺 dateModified,inLanguage,isBasedOn,author 不是本站（Payments Dive）,og:type 不是 article；items/00ec78fe28dd4940c38fae9e728dd03838958437.html 缺 dateModified,inLanguage,isBasedOn,author 不是本站（Digital Commerce 360）,og:type 不是 article；items/017da98da3961362c10ee8812cae82cc2b3e4d04.html 缺 dateModified,inLanguage,isBasedOn,author 不是本站（Google 新闻·跨境电商）,og:type 不是 article"
+    },
+    {
+      "id": "mcp",
+      "name": "MCP 端点可达",
+      "status": "pass",
+      "detail": "GET https://ecommerce-hot.pages.dev/mcp 返回 HTTP 405，端点可达。"
+    },
+    {
+      "id": "pages",
+      "name": "Cloudflare Pages 镜像已部署新版",
+      "status": "fail",
+      "detail": "https://ecommerce-hot.pages.dev/robots.txt 仍是旧版（无 AI 爬虫名单），镜像需重新部署。"
+    },
+    {
+      "id": "feed",
+      "name": "feed.xml 可解析",
+      "status": "pass",
+      "detail": "feed.xml 可解析，20 条，language=zh-CN。其中 19 条 description 为空（建议后续补简介）。"
+    }
+  ]
+}
