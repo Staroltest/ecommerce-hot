@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-14T09:17:52.901918+00:00",
-  "generated_at_cst": "2026-11-14T09:17:52.901918+00:00",
+  "generated_at": "2026-11-14T09:20:16.801605+00:00",
+  "generated_at_cst": "2026-11-14T09:20:16.801605+00:00",
   "site": "https://staroltest.github.io/ecommerce-hot",
   "site_name": "跨境电商选品HOT",
   "summary": {
-    "pass": 7,
+    "pass": 8,
     "fail": 1,
-    "unknown": 1
+    "unknown": 0
   },
   "checks": [
     {
@@ -48,8 +48,8 @@
     {
       "id": "mcp",
       "name": "MCP 端点可达",
-      "status": "unknown",
-      "detail": "无法访问 https://ecommerce-hot.pages.dev/mcp（网络异常）。"
+      "status": "pass",
+      "detail": "GET https://ecommerce-hot.pages.dev/mcp 返回 HTTP 405，端点可达。"
     },
     {
       "id": "pages",
@@ -61,7 +61,7 @@
       "id": "feed",
       "name": "feed.xml 可解析",
       "status": "pass",
-      "detail": "feed.xml 可解析，20 条，language=zh-CN。其中 7 条 description 为空（建议后续补简介）。"
+      "detail": "feed.xml 可解析，20 条，language=zh-CN。其中 6 条 description 为空（建议后续补简介）。"
     }
   ]
 }
