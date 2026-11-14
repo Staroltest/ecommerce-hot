@@ -2100,12 +2100,13 @@ def footer_html(site, base=""):
 
 
 def page_open(site, active, title, description, prefix="", base="", canonical="",
-              ld_items=None, page_cls="", ld_blocks=None):
+              ld_items=None, page_cls="", ld_blocks=None, og_type="website",
+              article_published=""):
     site_url = site.get("url", "")
     canon = canonical or site_url + "/"
     og = (f'<meta property="og:title" content="{esc(title)}">\n'
           f'<meta property="og:description" content="{esc(description)}">\n'
-          f'<meta property="og:type" content="website">\n'
+          f'<meta property="og:type" content="{esc(og_type)}">\n'
           f'<meta property="og:url" content="{esc(canon)}">\n'
           f'<meta property="og:image" content="{site_url}/favicon.svg">\n'
           f'<meta name="twitter:card" content="summary">\n'
@@ -2114,6 +2115,7 @@ def page_open(site, active, title, description, prefix="", base="", canonical=""
           f'<meta name="twitter:image" content="{site_url}/favicon.svg">\n')
     ld = {"@context": "https://schema.org", "@type": "WebSite",
           "name": site["name"], "url": site_url,
+          "inLanguage": "zh-CN",
           "description": site.get("description", "")}
     ld_parts = [json.dumps(ld, ensure_ascii=False)]
     if ld_items:
@@ -2128,12 +2130,20 @@ def page_open(site, active, title, description, prefix="", base="", canonical=""
         ld_parts.append(json.dumps(block, ensure_ascii=False))
     ld_html = "".join(
         f'<script type="application/ld+json">{part}</script>\n' for part in ld_parts)
+    article_meta = (f'<meta property="article:published_time" '
+                    f'content="{esc(article_published)}">\n') if article_published else ""
     return (f"<!DOCTYPE html>\n<html lang=\"zh-CN\"><head><meta charset=\"utf-8\">\n"
             f"<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n"
             f"<title>{esc(title)}</title>\n"
             f"<meta name=\"description\" content=\"{esc(description)}\">\n"
+            f'<link rel="canonical" href="{esc(canon)}">\n'
+            f'<meta name="robots" content="index, follow, max-image-preview:large">\n'
+            f'<link rel="alternate" type="application/rss+xml" title="{esc(site["name"])}" href="{site_url}/feed.xml">\n'
+            f'<link rel="alternate" hreflang="zh-CN" href="{esc(canon)}">\n'
+            f'<link rel="alternate" hreflang="x-default" href="{esc(canon)}">\n'
             f'<link rel="icon" type="image/svg+xml" href="{base}favicon.svg">\n'
             f"{og}"
+            f"{article_meta}"
             f'{ld_html}'
             f"{theme_boot(site)}<link rel=\"stylesheet\" href=\"{base}assets/site.css\"></head>\n<body>"
             f'<div class="shell">{sidebar_html(site, active, prefix, base)}{rail_html(site, active, prefix, base)}'
@@ -2515,6 +2525,12 @@ def render_period(site, kind, report, base="", prev=None, next_=None, canonical=
     items_html = "".join(feed_item(it, rank=i + 1, base=base)
                          for i, it in enumerate(report["items"])) \
         or f"<p>{window}没有达到精选门槛的条目。</p>"
+    # 日报/周报/月报的 description 用当期导读 summary，不用全站通用文案
+    period_desc = (report.get("summary") or "").strip()
+    if len(period_desc) > 160:
+        period_desc = period_desc[:157].rstrip() + "…"
+    if not period_desc:
+        period_desc = site["description"]
     try:
         wd = WEEKDAYS[datetime.strptime(report["date"], "%Y年%m月%d日").weekday()]
     except ValueError:
@@ -2529,7 +2545,7 @@ def render_period(site, kind, report, base="", prev=None, next_=None, canonical=
         f'<a href="{base}daily.html">日报</a> · <a href="{base}weekly.html">周报</a> · '
         f'<a href="{base}monthly.html">月报</a> · <a href="{base}daily/archive.html">往期存档</a></p>')
     return (page_open(site, kind, f'{site["name"]}{name} · {report["date"]}',
-                      site["description"], prefix="index.html", base=base,
+                      period_desc, prefix="index.html", base=base,
                       canonical=canonical, ld_items=report["items"], page_cls=" page-reading")
             + f'<div class="m-title">{name}</div>'
             + f'<div class="report-shell"><div class="masthead"><div class="mp-brand">'
@@ -2797,12 +2813,17 @@ def render_item(site, it, related, is_selected, daily_issue):
     canonical = f"{site_url}/items/{it['id']}.html"
     mid_name = "精选" if is_selected else "全部动态"
     mid_href = "/" if is_selected else "/all.html"
+    pub_iso = pub.astimezone(timezone.utc).isoformat()
     ld_blocks = [
         {"@context": "https://schema.org", "@type": "Article",
          "headline": title, "description": desc,
-         "datePublished": pub.astimezone(timezone.utc).isoformat(),
-         "author": {"@type": "Organization", "name": it["source"]},
+         "inLanguage": "zh-CN",
+         "datePublished": pub_iso,
+         "dateModified": pub_iso,
+         "author": {"@type": "Organization", "name": site["name"], "url": site_url},
          "publisher": {"@type": "Organization", "name": site["name"]},
+         "isBasedOn": it["link"],
+         "image": site_url + "/favicon.svg",
          "mainEntityOfPage": canonical},
         {"@context": "https://schema.org", "@type": "BreadcrumbList",
          "itemListElement": [
@@ -2841,7 +2862,8 @@ def render_item(site, it, related, is_selected, daily_issue):
                         f'<div class="item-related-list">{cards}</div></section>')
     return (page_open(site, "all", f"{title} · {site['name']}", desc,
                       prefix="index.html", base="../", canonical=canonical,
-                      page_cls=" page-reading", ld_blocks=ld_blocks)
+                      page_cls=" page-reading", ld_blocks=ld_blocks,
+                      og_type="article", article_published=pub_iso)
             + f'<article class="item-page" data-item-id="{esc(it["id"])}">'
             + f'<button type="button" class="item-back" id="backBtn" data-home="../index.html">← 返回</button>'
             + f'<div class="item-meta">{meta}</div>'
@@ -2951,6 +2973,60 @@ def render_hot(site, hot, generated_at, counts, cfg):
 
 def rss_date(dt):
     return dt.astimezone(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S GMT")
+
+
+def build_llms_txt(site, cats, site_url):
+    """llms.txt：给 AI 爬虫/助手看的站点说明（C5 修复新增）。
+    内容来自 config.json（站名/描述/分类/mcp_url），不写死中文站名以外的常量。"""
+    name = site["name"]
+    mcp_url = site.get("mcp_url", "")
+    mirror = mcp_url[:-len("/mcp")] if mcp_url.endswith("/mcp") else ""
+    cat_labels = "、".join(c["label"] for c in cats)
+    lines = [
+        f"# {name}",
+        "",
+        f"> {site.get('description', '')}",
+        "",
+        f"- 站点：{site_url}/",
+    ]
+    if mirror:
+        lines.append(f"- 镜像：{mirror}/")
+    lines += [
+        "- 语言：中文（zh-CN）",
+        "- 更新：每日 06:00 CST；热点榜实时按规则打分排序",
+    ]
+    if site.get("repo"):
+        lines.append(f"- 源码：{site['repo']}")
+    lines += [
+        "",
+        "## 关键页面",
+        "",
+        f"- [首页 / 今日精选]({site_url}/)",
+        f"- [全部动态]({site_url}/all.html)",
+        f"- [热点榜]({site_url}/hot.html)",
+        f"- [日报]({site_url}/daily.html)",
+        f"- [主题浏览]({site_url}/topics.html)",
+        f"- [关于本站：定位、采集与打分规则]({site_url}/about.html)",
+        f"- [站点地图]({site_url}/sitemap.xml)",
+        f"- [RSS]({site_url}/feed.xml)",
+        "",
+        "## 内容结构",
+        "",
+        f"- 分类：{cat_labels}。",
+        "- 每条内容只有三要素：中文标题、一句话简介、原文链接；详情页会注明来源与发布时间，并给出相关条目。",
+        "- 机器可读数据：`/data/hot.json`（热点榜）、`/data/daily.json`（最新日报）、`/data/days/index.json`（按天索引）。",
+    ]
+    if mcp_url:
+        lines.append(f"- AI / MCP 接入点：`{mcp_url}`，工具为 `get_hot`、`get_daily`、`search_items`，只返回标题、简介、原文链接、来源与评分。")
+    lines += [
+        "",
+        "## 引用规范",
+        "",
+        f"- 引用时请标注来源为{name}，并保留原文链接；不要把本站的一句话简介说成是原文摘要。",
+        "- 本站不转载全文，详情请访问原文链接。",
+        "",
+    ]
+    return "\n".join(lines)
 
 
 def build_feed_xml(site, items):
@@ -3322,28 +3398,86 @@ def main():
     feed_items = sorted(recent_48h, key=lambda x: x["score"], reverse=True)[:20]
     with open(os.path.join(root, "feed.xml"), "w", encoding="utf-8") as f:
         f.write(build_feed_xml(site, [pub_item(it) for it in feed_items]))
+    # robots.txt（C5 修复）：明确放行各家 AI 爬虫，屏蔽抓取激进的 Bytespider；
+    # llms.txt 为静态文件，生成器只写 robots/sitemap/feed/favicon/HTML，不覆盖它。
+    ai_bots = ["GPTBot", "ChatGPT-User", "OAI-SearchBot", "ClaudeBot", "Claude-Web",
+               "anthropic-ai", "PerplexityBot", "Perplexity-User", "Google-Extended",
+               "Applebot-Extended", "Meta-ExternalAgent", "Meta-ExternalFetcher",
+               "DuckAssistBot", "YouBot", "CCBot"]
+    robots_lines = ["# " + site["name"] + " robots.txt — 允许搜索引擎与 AI 爬虫抓取公开内容",
+                    "# 本站只展示标题 + 一句话简介 + 原文链接，不转载全文；抓取请遵守本文件。",
+                    "",
+                    "User-agent: Bytespider",
+                    "Disallow: /",
+                    ""]
+    for _bot in ai_bots:
+        robots_lines += ["User-agent: " + _bot, "Allow: /", ""]
+    robots_lines += ["User-agent: *", "Allow: /", "",
+                     f"Sitemap: {site_url}/sitemap.xml"]
     with open(os.path.join(root, "robots.txt"), "w", encoding="utf-8") as f:
-        f.write(f"User-agent: *\nAllow: /\nSitemap: {site_url}/sitemap.xml\n")
+        f.write("\n".join(robots_lines) + "\n")
     with open(os.path.join(root, "favicon.svg"), "w", encoding="utf-8") as f:
         f.write(LOGO_SVG)
-    sitemap_urls = ["", "all.html", "hot.html", "daily.html", "weekly.html", "monthly.html",
-                    "starred.html", "more.html", "changelog.html", "about.html",
-                    "terms.html", "privacy.html", "topics.html",
-                    "daily/archive.html", "feed.xml"]
-    sitemap_urls += ["topics/" + slug + ".html" for _l, slug, _n in tag_counts]
-    sitemap_urls += ["items/" + it_id + ".html" for it_id in history]
+    today_iso = now_cst.strftime("%Y-%m-%d")
+    # sitemap（C5 修复）：lastmod 按页面真实日期写，不再全用当天；
+    # 磁盘上有、但已不在 history/分类里的孤儿页也补进 sitemap（404/index 除外）。
+
+    def _lm_from_iso(iso_str, default=today_iso):
+        try:
+            _d = datetime.fromisoformat(iso_str)
+            if _d.tzinfo is None:
+                _d = _d.replace(tzinfo=timezone.utc)
+            return _d.astimezone(CST).strftime("%Y-%m-%d")
+        except (ValueError, TypeError):
+            return default
+
+    def _lm_from_mtime(path, default=today_iso):
+        try:
+            return datetime.fromtimestamp(os.path.getmtime(path), tz=CST).strftime("%Y-%m-%d")
+        except OSError:
+            return default
+
+    sitemap_entries = []
+    for _p in ["", "all.html", "hot.html", "daily.html", "weekly.html", "monthly.html",
+               "starred.html", "more.html", "changelog.html", "about.html",
+               "terms.html", "privacy.html", "topics.html",
+               "daily/archive.html", "feed.xml"]:
+        sitemap_entries.append((_p, today_iso))
+    for _l, _slug, _n in tag_counts:
+        sitemap_entries.append(("topics/" + _slug + ".html", today_iso))
+    for _it_id, _it in history.items():
+        sitemap_entries.append(("items/" + _it_id + ".html",
+                                _lm_from_iso(_it.get("published", ""))))
     # 存档页（daily/weekly/monthly）：每轮都补，避免非日报轮次丢链接
     for _kind in ("daily", "weekly", "monthly"):
         for _rep in load_period_archive(os.path.join(data_dir, _kind)):
-            sitemap_urls.append(f"{_kind}/{_rep['key']}.html")
-    today_iso = now_cst.strftime("%Y-%m-%d")
+            sitemap_entries.append((f"{_kind}/{_rep['key']}.html",
+                                    _rep.get("date_iso") or today_iso))
+    # 孤儿页自检：磁盘上有、上面没列出的 HTML 也补进 sitemap，lastmod 取文件修改日期
+    _seen = {p for p, _lm in sitemap_entries}
+    for _dir in ("", "topics", "items", "daily", "weekly", "monthly"):
+        _d = os.path.join(root, _dir) if _dir else root
+        if not os.path.isdir(_d):
+            continue
+        for _fn in sorted(os.listdir(_d)):
+            if not _fn.endswith(".html"):
+                continue
+            _rel = (_dir + "/" + _fn) if _dir else _fn
+            if _rel in ("404.html", "index.html") or _rel in _seen:
+                continue
+            sitemap_entries.append((_rel, _lm_from_mtime(os.path.join(_d, _fn))))
+            _seen.add(_rel)
     sm = ["<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
           "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">"]
-    for p in sitemap_urls:
-        sm.append(f"<url><loc>{site_url}/{p}</loc><lastmod>{today_iso}</lastmod></url>")
+    for _p, _lm in sitemap_entries:
+        sm.append(f"<url><loc>{site_url}/{_p}</loc><lastmod>{_lm}</lastmod></url>")
     sm.append("</urlset>")
+    print(f"sitemap: {len(sitemap_entries)} urls")
     with open(os.path.join(root, "sitemap.xml"), "w", encoding="utf-8") as f:
         f.write("\n".join(sm) + "\n")
+    # llms.txt（C5 修复）：每轮生成，给 AI 看的站点说明
+    with open(os.path.join(root, "llms.txt"), "w", encoding="utf-8") as f:
+        f.write(build_llms_txt(site, cats, site_url))
     print(f"fetch: {fetched} items parsed from {len(sources) - len(failed)}/{len(sources)} sources"
           + (f"; failed: {failed}" if failed else ""))
     print(f"history: {len(history)} items; 7d: {len(last_7d)}; "
@@ -3505,6 +3639,18 @@ def main():
                                 daily_issue.get(it["id"])))
         n_items += 1
     print(f"items: {n_items} detail pages")
+
+    # SEO/GEO 自检（C6）：每轮生成后输出 geo-audit.html + data/geo-audit.json；
+    # 自检失败不中断主流程。
+    try:
+        import importlib.util
+        _ga_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "geo_audit.py")
+        _ga_spec = importlib.util.spec_from_file_location("geo_audit", _ga_path)
+        _ga_mod = importlib.util.module_from_spec(_ga_spec)
+        _ga_spec.loader.exec_module(_ga_mod)
+        _ga_mod.run(root, site_url)
+    except Exception as e:  # noqa: BLE001 - 自检失败不影响正文生成
+        print(f"geo-audit skipped: {e}", file=sys.stderr)
 
 
 if __name__ == "__main__":
