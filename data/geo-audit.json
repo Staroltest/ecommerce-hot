@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-14T03:47:06.311015+00:00",
-  "generated_at_cst": "2026-11-14T03:47:06.311015+00:00",
+  "generated_at": "2026-11-14T04:17:23.334090+00:00",
+  "generated_at_cst": "2026-11-14T04:17:23.334090+00:00",
   "site": "https://staroltest.github.io/ecommerce-hot",
   "site_name": "跨境电商选品HOT",
   "summary": {
@@ -19,7 +19,7 @@
       "id": "sitemap",
       "name": "sitemap.xml 完整且 lastmod 可信",
       "status": "pass",
-      "detail": "651 条 URL；lastmod 共 30 个不同日期；磁盘 HTML 649 页，漏 0 页。"
+      "detail": "656 条 URL；lastmod 共 30 个不同日期；磁盘 HTML 654 页，漏 0 页。"
     },
     {
       "id": "llms",
@@ -48,14 +48,14 @@
     {
       "id": "mcp",
       "name": "MCP 端点可达",
-      "status": "unknown",
-      "detail": "无法访问 https://ecommerce-hot.pages.dev/mcp（网络异常）。"
+      "status": "pass",
+      "detail": "GET https://ecommerce-hot.pages.dev/mcp 返回 HTTP 405，端点可达。"
     },
     {
       "id": "pages",
       "name": "Cloudflare Pages 镜像已部署新版",
-      "status": "pass",
-      "detail": "https://ecommerce-hot.pages.dev/robots.txt 已含 AI 爬虫名单，镜像与 GitHub 同步。"
+      "status": "unknown",
+      "detail": "无法访问 https://ecommerce-hot.pages.dev（网络异常）。"
     },
     {
       "id": "feed",
