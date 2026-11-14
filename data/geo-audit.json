@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-14T16:48:15.198207+00:00",
-  "generated_at_cst": "2026-11-14T16:48:15.198207+00:00",
+  "generated_at": "2026-11-14T17:47:20.564806+00:00",
+  "generated_at_cst": "2026-11-14T17:47:20.564806+00:00",
   "site": "https://staroltest.github.io/ecommerce-hot",
   "site_name": "跨境电商选品HOT",
   "summary": {
-    "pass": 7,
+    "pass": 6,
     "fail": 1,
-    "unknown": 1
+    "unknown": 2
   },
   "checks": [
     {
@@ -54,8 +54,8 @@
     {
       "id": "pages",
       "name": "Cloudflare Pages 镜像已部署新版",
-      "status": "pass",
-      "detail": "https://ecommerce-hot.pages.dev/robots.txt 已含 AI 爬虫名单，镜像与 GitHub 同步。"
+      "status": "unknown",
+      "detail": "无法访问 https://ecommerce-hot.pages.dev（网络异常）。"
     },
     {
       "id": "feed",
