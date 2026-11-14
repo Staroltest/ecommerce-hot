@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-14T01:20:32.534447+00:00",
-  "generated_at_cst": "2026-11-14T01:20:32.534447+00:00",
+  "generated_at": "2026-11-14T02:18:43.194445+00:00",
+  "generated_at_cst": "2026-11-14T02:18:43.194445+00:00",
   "site": "https://staroltest.github.io/ecommerce-hot",
   "site_name": "跨境电商选品HOT",
   "summary": {
-    "pass": 5,
-    "fail": 4,
+    "pass": 7,
+    "fail": 2,
     "unknown": 0
   },
   "checks": [
@@ -18,8 +18,8 @@
     {
       "id": "sitemap",
       "name": "sitemap.xml 完整且 lastmod 可信",
-      "status": "fail",
-      "detail": "629 条 URL；lastmod 共 1 个不同日期；磁盘 HTML 636 页，漏 9 页。漏页：geo-audit.html、items/3276293b5d262103868b2b2b2a54aa5fa00221ad.html、items/749c250882a001ef074439cc98bd4d7f63e10b35.html、items/76df0ac37b5f752a3c91fd4df928f27db184a17d.html、items/804cd60ed18698e4e0539c82ed2f58d1a6269669.html、items/9d3e38673afba4637af62c7211f293691c1a88e9.html、items/d59e717242513fcf4be80f0ac64172ad423810be.html、topics/optimization.html 等"
+      "status": "pass",
+      "detail": "644 条 URL；lastmod 共 30 个不同日期；磁盘 HTML 642 页，漏 0 页。"
     },
     {
       "id": "llms",
@@ -31,7 +31,7 @@
       "id": "head",
       "name": "抽查页面 canonical / hreflang 齐全",
       "status": "fail",
-      "detail": "index.html 缺 canonical,hreflang zh-CN,hreflang x-default,robots meta,RSS 发现链接；all.html 缺 canonical,hreflang zh-CN,hreflang x-default,robots meta,RSS 发现链接；daily.html 缺 canonical,hreflang zh-CN,hreflang x-default,robots meta,RSS 发现链接；items/00720ebad5c7fdad7590353af8ec9d7db8e1637d.html 缺 canonical,hreflang zh-CN,hreflang x-default,robots meta,RSS 发现链接；items/00ec78fe28dd4940c38fae9e728dd03838958437.html 缺 canonical,hreflang zh-CN,hreflang x-default,robots meta,RSS 发现链接；items/017da98da3961362c10ee8812cae82cc2b3e4d04.html 缺 canonical,hreflang zh-CN,hreflang x-default,robots meta,RSS 发现链接"
+      "detail": "daily.html 缺 canonical,hreflang zh-CN,hreflang x-default,robots meta,RSS 发现链接"
     },
     {
       "id": "jsonld",
@@ -42,8 +42,8 @@
     {
       "id": "article",
       "name": "详情页 Article 结构化数据完整",
-      "status": "fail",
-      "detail": "items/00720ebad5c7fdad7590353af8ec9d7db8e1637d.html 缺 dateModified,inLanguage,isBasedOn,author 不是本站（Payments Dive）,og:type 不是 article；items/00ec78fe28dd4940c38fae9e728dd03838958437.html 缺 dateModified,inLanguage,isBasedOn,author 不是本站（Digital Commerce 360）,og:type 不是 article；items/017da98da3961362c10ee8812cae82cc2b3e4d04.html 缺 dateModified,inLanguage,isBasedOn,author 不是本站（Google 新闻·跨境电商）,og:type 不是 article"
+      "status": "pass",
+      "detail": "抽查 3 篇详情页，Article 均含 datePublished / dateModified / inLanguage / isBasedOn，author 为本站，og:type 为 article。"
     },
     {
       "id": "mcp",
@@ -61,7 +61,7 @@
       "id": "feed",
       "name": "feed.xml 可解析",
       "status": "pass",
-      "detail": "feed.xml 可解析，20 条，language=zh-CN。其中 19 条 description 为空（建议后续补简介）。"
+      "detail": "feed.xml 可解析，20 条，language=zh-CN。其中 9 条 description 为空（建议后续补简介）。"
     }
   ]
 }
