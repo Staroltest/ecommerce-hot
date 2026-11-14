@@ -1,0 +1,32 @@
+# 跨境电商选品HOT
+
+> 跨境电商选品HOT 每天从一批跨境与选品信源里收动态，按规则打分精选选品趋势、跨境平台动态、政策合规、选品工具与数据、供应链物流与营销测品，只显示标题、一句简介与原文链接，不转载全文。
+
+- 站点：https://staroltest.github.io/ecommerce-hot/
+- 镜像：https://ecommerce-hot.pages.dev/
+- 语言：中文（zh-CN）
+- 更新：每日 06:00 CST；热点榜实时按规则打分排序
+- 源码：https://github.com/Staroltest/ecommerce-hot
+
+## 关键页面
+
+- [首页 / 今日精选](https://staroltest.github.io/ecommerce-hot/)
+- [全部动态](https://staroltest.github.io/ecommerce-hot/all.html)
+- [热点榜](https://staroltest.github.io/ecommerce-hot/hot.html)
+- [日报](https://staroltest.github.io/ecommerce-hot/daily.html)
+- [主题浏览](https://staroltest.github.io/ecommerce-hot/topics.html)
+- [关于本站：定位、采集与打分规则](https://staroltest.github.io/ecommerce-hot/about.html)
+- [站点地图](https://staroltest.github.io/ecommerce-hot/sitemap.xml)
+- [RSS](https://staroltest.github.io/ecommerce-hot/feed.xml)
+
+## 内容结构
+
+- 分类：选品趋势、跨境平台动态、政策与合规、选品工具与数据、供应链与物流、营销与测品。
+- 每条内容只有三要素：中文标题、一句话简介、原文链接；详情页会注明来源与发布时间，并给出相关条目。
+- 机器可读数据：`/data/hot.json`（热点榜）、`/data/daily.json`（最新日报）、`/data/days/index.json`（按天索引）。
+- AI / MCP 接入点：`https://ecommerce-hot.pages.dev/mcp`，工具为 `get_hot`、`get_daily`、`search_items`，只返回标题、简介、原文链接、来源与评分。
+
+## 引用规范
+
+- 引用时请标注来源为跨境电商选品HOT，并保留原文链接；不要把本站的一句话简介说成是原文摘要。
+- 本站不转载全文，详情请访问原文链接。
