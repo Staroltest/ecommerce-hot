@@ -6,6 +6,17 @@ function saveSet(k,s){try{localStorage.setItem(k,JSON.stringify(Array.from(s)));
 function loadObj(k){try{return JSON.parse(localStorage.getItem(k)||'{}')||{};}catch(e){return {};}}
 function saveObj(k,o){try{localStorage.setItem(k,JSON.stringify(o));}catch(e){}}
 var readSet=loadSet(LS_READ),starSet=loadSet(LS_STAR),starMeta=loadObj(LS_STAR_META);
+/* 双语：页面语言由 <html lang> 决定（zh-CN=中文，en=英文）。
+   英文页在 /en/ 下，取 data/ 要上一级；动态卡片标题在英文页用原文标题。 */
+var IS_EN=document.documentElement.lang==='en';
+var DATA_BASE=IS_EN?'../data/':'data/';
+/* 语言切换：点 中文/EN 时记住选择（localStorage 'ecommerce-hot-lang'），
+   下次访问中文页不再按浏览器语言自动跳转。 */
+document.querySelectorAll('.lang-switch a[data-lang]').forEach(function(a){
+  a.addEventListener('click',function(){
+    try{localStorage.setItem('ecommerce-hot-lang',a.getAttribute('data-lang'));}catch(e){}
+  });
+});
 function sysTheme(){return window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}
 function currentTheme(){var s=null;try{s=localStorage.getItem(LS_THEME);}catch(e){}return (s==='dark'||s==='light')?s:'system';}
 function applyTheme(mode){
@@ -29,7 +40,7 @@ function syncThemeUI(){
     if(ic)ic.style.display=mode==='dark'?'inline-flex':'none';
     if(is)is.style.display=mode==='light'?'inline-flex':'none';
     if(im)im.style.display=mode==='system'?'inline-flex':'none';
-    b.setAttribute('aria-label','外观：'+(mode==='dark'?'深色':mode==='light'?'浅色':'跟随系统')+'（点击切换）');
+    b.setAttribute('aria-label',IS_EN?('Appearance: '+(mode==='dark'?'Dark':mode==='light'?'Light':'System')+' (click to switch)'):('外观：'+(mode==='dark'?'深色':mode==='light'?'浅色':'跟随系统')+'（点击切换）'));
   });
   document.querySelectorAll('.theme-seg button').forEach(function(b){
     b.classList.toggle('on',b.getAttribute('data-theme-opt')===mode);
@@ -66,18 +77,18 @@ function bindFeedItem(el){
   if(readSet.has(id))el.classList.add('is-read');
   var star=el.querySelector('.star-btn');
   if(star){
-    if(starSet.has(id)){star.classList.add('on');star.setAttribute('aria-label','取消收藏');star.title='取消收藏';}
+    if(starSet.has(id)){star.classList.add('on');star.setAttribute('aria-label',IS_EN?'Unsave':'取消收藏');star.title=IS_EN?'Unsave':'取消收藏';}
     star.addEventListener('click',function(){
       if(starSet.has(id)){
         starSet.delete(id);delete starMeta[id];
-        star.classList.remove('on');star.setAttribute('aria-label','收藏');star.title='收藏';
+        star.classList.remove('on');star.setAttribute('aria-label',IS_EN?'Save':'收藏');star.title=IS_EN?'Save':'收藏';
       }else{
         starSet.add(id);
         /* 收藏快照：标题/链接/来源/时间，供收藏页离线展示与下架置灰用 */
         var a=el.querySelector('h3 a'),src=el.querySelector('.fi-head .src');
         starMeta[id]={title:a?a.textContent.trim():'',link:a?a.getAttribute('href'):'',
           source:src?src.textContent.trim():'',at:new Date().toISOString()};
-        star.classList.add('on');star.setAttribute('aria-label','取消收藏');star.title='取消收藏';
+        star.classList.add('on');star.setAttribute('aria-label',IS_EN?'Unsave':'取消收藏');star.title=IS_EN?'Unsave':'取消收藏';
       }
       saveSet(LS_STAR,starSet);saveObj(LS_STAR_META,starMeta);applyFilters();
     });
@@ -128,21 +139,21 @@ function applyFilters(){
     nr.hidden=!!shown;nr.style.display='';
     var t=document.getElementById('noResultTitle'),x=document.getElementById('noResultText');
     if(state.cat==='starred'||state.star){
-      if(t)t.textContent='还没有收藏';
-      if(x)x.textContent='去点卡片右上角的书签，喜欢的动态就会出现在这里。';
+      if(t)t.textContent=IS_EN?'No saved items yet':'还没有收藏';
+      if(x)x.textContent=IS_EN?'Tap the bookmark on a card and items you like will show up here.':'去点卡片右上角的书签，喜欢的动态就会出现在这里。';
     }else if(state.unread){
-      if(t)t.textContent='这批都读过了';
-      if(x)x.textContent='关掉「只看未读」可以看到全部动态。';
+      if(t)t.textContent=IS_EN?'All caught up':'这批都读过了';
+      if(x)x.textContent=IS_EN?'Turn off "Unread only" to see everything.':'关掉「只看未读」可以看到全部动态。';
     }else if(state.q){
-      if(t)t.textContent='没有匹配「'+state.q+'」的动态。';
-      if(x)x.textContent='换个关键词试试，或者清除搜索看看全部。';
+      if(t)t.textContent=IS_EN?('No items match "'+state.q+'".'):('没有匹配「'+state.q+'」的动态。');
+      if(x)x.textContent=IS_EN?'Try another keyword, or clear the search to see everything.':'换个关键词试试，或者清除搜索看看全部。';
     }else{
-      if(t)t.textContent='这个分类下暂无动态。';
-      if(x)x.textContent='换个分类看看，或者回到全部动态。';
+      if(t)t.textContent=IS_EN?'No items in this category yet.':'这个分类下暂无动态。';
+      if(x)x.textContent=IS_EN?'Try another category, or go back to all updates.':'换个分类看看，或者回到全部动态。';
     }
   }
   var sc=document.getElementById('starCount');
-  if(sc)sc.textContent=starSet.size?('（'+starSet.size+'）'):'';
+  if(sc)sc.textContent=starSet.size?(IS_EN?'('+starSet.size+')':('（'+starSet.size+'）')):'';
   if(typeof updateStarCounts==='function')updateStarCounts();
 }
 var filterTimer=null;
@@ -240,7 +251,7 @@ document.querySelectorAll('.tabbar a').forEach(function(a){
 });
 /* 收藏数量：侧栏/我的页/底栏都显示（B3/B4） */
 function updateStarCounts(){
-  document.querySelectorAll('[data-star-count]').forEach(function(el){el.textContent=starSet.size?('（'+starSet.size+'）'):(el.getAttribute('data-star-count-empty')||'');});
+  document.querySelectorAll('[data-star-count]').forEach(function(el){el.textContent=starSet.size?(IS_EN?'('+starSet.size+')':('（'+starSet.size+'）')):(el.getAttribute('data-star-count-empty')||'');});
 }
 updateStarCounts();
 /* 空状态操作按钮（B19）：清除筛选 / 去看精选（事件委托，搜索结果里的空状态也生效） */
@@ -306,7 +317,7 @@ function renderRecent(){
   var list=loadRecent();
   box.innerHTML=list.length?list.map(function(q){
     return '<div class="recent-row"><button type="button" class="chip" data-recent="'+q.replace(/"/g,'&quot;')+'">'+q.replace(/</g,'&lt;')+'</button></div>';
-  }).join(''):'<p class="more-note">还没有搜索过。</p>';
+  }).join(''):'<p class="more-note">'+(IS_EN?'No recent searches yet.':'还没有搜索过。')+'</p>';
   box.querySelectorAll('[data-recent]').forEach(function(b){
     b.addEventListener('click',function(){
       var q=b.getAttribute('data-recent');
@@ -352,7 +363,7 @@ var dayIndexPromise=null;
 var dayCache={};
 function getDayIndex(){
   if(dayIndexPromise)return dayIndexPromise;
-  dayIndexPromise=fetch('data/days/index.json').then(function(r){
+  dayIndexPromise=fetch(DATA_BASE+'days/index.json').then(function(r){
     if(!r.ok)throw new Error('HTTP '+r.status);return r.json();
   }).then(function(d){
     return (d.days||[]).map(function(x){return x.date;});
@@ -361,7 +372,7 @@ function getDayIndex(){
 }
 function getDay(date){
   if(dayCache[date])return dayCache[date];
-  dayCache[date]=fetch('data/days/'+date+'.json').then(function(r){
+  dayCache[date]=fetch(DATA_BASE+'days/'+date+'.json').then(function(r){
     if(!r.ok)throw new Error('HTTP '+r.status);return r.json();
   }).then(function(d){
     return (d.items||[]).sort(function(a,b){return new Date(b.published)-new Date(a.published);});
@@ -392,19 +403,19 @@ function getStore(){
       var m=starMeta[id]||{};
       var it=live[id];
       var gone=!it;
-      var title=m.title||(it?(it.zh_title||it.title):'（标题未知）');
+      var title=m.title||(it?(IS_EN?it.title:(it.zh_title||it.title)):(IS_EN?'(Unknown title)':'（标题未知）'));
       var link=m.link||(it?it.link:'#');
       var source=m.source||(it?it.source:'');
       var at=m.at?new Date(m.at):null;
-      var atStr=at?('收藏于 '+at.getFullYear()+'年'+(at.getMonth()+1)+'月'+at.getDate()+'日'):'';
+      var atStr=at?(IS_EN?('Saved on '+['January','February','March','April','May','June','July','August','September','October','November','December'][at.getMonth()]+' '+at.getDate()+', '+at.getFullYear()):('收藏于 '+at.getFullYear()+'年'+(at.getMonth()+1)+'月'+at.getDate()+'日')):'';
       return '<article class="feed-item starred-item'+(gone?' is-gone':'')+'">'
         +'<header class="fi-head"><span class="src">'+source.replace(/</g,'&lt;')+'</span>'
-        +(gone?'<span class="gone-tag">已下架</span>':'')
-        +'<span class="sp"><button type="button" class="star-btn on" data-unstar="'+id+'" aria-label="取消收藏" title="取消收藏">'
+        +(gone?'<span class="gone-tag">'+(IS_EN?'Removed':'已下架')+'</span>':'')
+        +'<span class="sp"><button type="button" class="star-btn on" data-unstar="'+id+'" aria-label="'+(IS_EN?'Unsave':'取消收藏')+'" title="'+(IS_EN?'Unsave':'取消收藏')+'">'
         +'<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>'
         +'</button></span></header>'
         +'<h3><a href="items/'+id+'.html">'+title.replace(/</g,'&lt;')+'</a></h3>'
-        +(gone?'<p class="sum">这条动态已不在本站 30 天数据里（可能已下架或超出保存期），只保留了你收藏时的标题与链接。</p>':'')
+        +(gone?'<p class="sum">'+(IS_EN?"This item is no longer in the site's 30-day data (it may have been removed or aged out); only the title and link from when you saved it are kept.":'这条动态已不在本站 30 天数据里（可能已下架或超出保存期），只保留了你收藏时的标题与链接。')+'</p>':'')
         +(atStr?'<p class="starred-at">'+atStr+'</p>':'')
         +'</article>';
     }).join('');
@@ -443,7 +454,7 @@ function cstParts(date){
 function todayCST(){return cstParts(new Date()).iso;}
 function fmtCST(iso){
   var p=cstParts(new Date(iso));
-  return p.m+'月'+p.d+'日 '+p.hm;
+  return IS_EN?(p.m+'/'+p.d+' '+p.hm):(p.m+'月'+p.d+'日 '+p.hm);
 }
 /* 与 Python score()/reason_for() 同规则的客户端版（动态卡片用） */
 function computeMeta(it){
@@ -494,35 +505,36 @@ function computeMeta(it){
 }
 function cardHTML(it){
   var m=computeMeta(it);
-  var title=it.zh_title||it.title;
+  var title=IS_EN?it.title:(it.zh_title||it.title);
   var summary=it.zh_oneliner||'';
   var en=it.title;
   var pub=cstParts(new Date(it.published));
-  var off=m.tier==='T1'?'<span class="off-tag">官方</span>':'';
+  var off=m.tier==='T1'?'<span class="off-tag">'+(IS_EN?'Official':'官方')+'</span>':'';
   var isNew=false;
   if(it.fetched_at){
     isNew=cstParts(new Date(it.fetched_at)).iso===todayCST()
       &&(Date.now()-new Date(it.published).getTime())<=86400000;
   }
-  var newHtml=isNew?'<span class="new-pill">新</span>':'';
+  var newHtml=isNew?'<span class="new-pill">'+(IS_EN?'New':'新')+'</span>':'';
   var tagsHtml=m.labels.length?'<div class="fi-tags">'+m.labels.map(function(t){
     return '<a class="tag" href="topics/'+((IH_CFG&&IH_CFG.tagSlugs[t])||t)+'.html">#'+escHtml(t)+'</a>';
   }).join('')+'</div>':'';
   var scoreCls=m.score>=85?'t-hot':(m.score>=70?'t-acc':'t-quiet');
+  var catLbl=IS_EN?((IH_CFG&&IH_CFG.catLabelsEn&&IH_CFG.catLabelsEn[it.category])||it.category_label||it.category||''):(it.category_label||it.category||'');
   return '<article class="feed-item" data-id="'+escHtml(it.id)+'" data-category="'+escHtml(it.category||'')+'"'
     +' data-official="'+(m.tier==='T1'?'1':'0')+'" data-en="'+escHtml(en)+'">'
     +'<header class="fi-head"><span class="src">'+escHtml(it.source)+'</span>'+off
     +'<time class="pt">· '+pub.hm+'</time>'+newHtml
-    +'<span class="sp"><span class="score-pill '+scoreCls+'" title="评分 '+m.score+'/100">'
-    +'<span class="lbl">评分</span><span class="sep"></span><span class="num">'+m.score+'</span></span>'
-    +'<button type="button" class="star-btn" aria-label="收藏" title="收藏">'+BOOKMARK_SVG+'</button></span></header>'
+    +'<span class="sp"><span class="score-pill '+scoreCls+'" title="'+(IS_EN?'Score ':'评分 ')+m.score+'/100">'
+    +'<span class="lbl">'+(IS_EN?'Score':'评分')+'</span><span class="sep"></span><span class="num">'+m.score+'</span></span>'
+    +'<button type="button" class="star-btn" aria-label="'+(IS_EN?'Save':'收藏')+'" title="'+(IS_EN?'Save':'收藏')+'">'+BOOKMARK_SVG+'</button></span></header>'
     +'<h3><a href="items/'+escHtml(it.id)+'.html">'+escHtml(title)+'</a></h3>'
-    +(summary?'<p class="sum">'+escHtml(summary)+'</p>':'')
+    +(summary?'<p class="sum"'+(IS_EN?' lang="zh-CN"':'')+'>'+escHtml(summary)+'</p>':'')
     +'<div class="fi-foot"><button type="button" class="chip cat" data-filter="'+escHtml(it.category||'')+'">'
-    +escHtml(it.category_label||it.category||'')+'</button>'
+    +escHtml(catLbl)+'</button>'
     +'<span class="when">'+escHtml(fmtCST(it.published))+'</span></div>'
     +tagsHtml
-    +'<p class="fi-reason">推荐理由：'+escHtml(m.reason)+'</p>'
+    +(IS_EN?'':'<p class="fi-reason">推荐理由：'+escHtml(m.reason)+'</p>')
     +'</article>';
 }
 function slotHTML(it){
@@ -565,7 +577,7 @@ function groupSlotHTML(g){
     return '<li><a href="items/'+escHtml(e.id)+'.html">'+escHtml(e.zh_title||e.title)+'</a>'
       +'<span class="ge-time">'+p.hm+'</span></li>';
   }).join('');
-  var toggle='<button type="button" class="group-toggle" aria-expanded="false">另有 '+g.extra.length+' 篇报道 <span aria-hidden="true">▾</span></button>';
+  var toggle='<button type="button" class="group-toggle" aria-expanded="false">'+(IS_EN?(g.extra.length+' more reports'):('另有 '+g.extra.length+' 篇报道'))+' <span aria-hidden="true">▾</span></button>';
   var extra='<div class="group-extra" hidden><ul class="group-extra-list">'+rows+'</ul></div>';
   return slot.slice(0,-5)+toggle+extra+'</li>';
 }
@@ -573,16 +585,17 @@ function dayHeaderHTML(dateISO,count){
   var parts=dateISO.split('-');
   var wd=new Date(+parts[0],+parts[1]-1,+parts[2]).getDay();
   var isToday=dateISO===todayCST();
-  var name=isToday?'今天':(+parts[1]+'月'+(+parts[2])+'日');
-  var wdShort=['周日','周一','周二','周三','周四','周五','周六'][wd];
-  var wdFull=['星期日','星期一','星期二','星期三','星期四','星期五','星期六'][wd];
+  var monEn=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+parts[1]-1];
+  var name=isToday?(IS_EN?'Today':'今天'):(IS_EN?(monEn+' '+(+parts[2])):(+parts[1]+'月'+(+parts[2])+'日'));
+  var wdShort=IS_EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][wd]:['周日','周一','周二','周三','周四','周五','周六'][wd];
+  var wdFull=IS_EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][wd]:['星期日','星期一','星期二','星期三','星期四','星期五','星期六'][wd];
   return '<header class="day-head'+(isToday?' is-today':'')+'">'
     +'<span class="dh-name">'+name+'</span>'
-    +'<span class="dh-date">'+(+parts[1])+'月'+(+parts[2])+'日</span>'
-    +'<button type="button" class="dh-toggle" aria-label="收起/展开这一天">'+CHEV_SVG+'</button>'
+    +'<span class="dh-date">'+(IS_EN?(monEn+' '+(+parts[2])):(+parts[1])+'月'+(+parts[2])+'日')+'</span>'
+    +'<button type="button" class="dh-toggle" aria-label="'+(IS_EN?'Collapse/expand this day':'收起/展开这一天')+'">'+CHEV_SVG+'</button>'
     +'<span class="dh-wd dh-wd-short">'+wdShort+'</span>'
     +'<span class="dh-wd dh-wd-full">'+wdFull+'</span>'
-    +'<span class="dh-count"><b class="num">'+count+'</b> 条</span></header>';
+    +'<span class="dh-count"><b class="num">'+count+'</b> '+(IS_EN?'items':'条')+'</span></header>';
 }
 function renderBatch(items){
   var groups=groupSimilarJS(items);
@@ -618,10 +631,10 @@ function setLoadMoreState(s){
   var btn=document.getElementById('loadMoreBtn'),st=document.getElementById('loadMoreState'),
       wrap=document.getElementById('loadMoreWrap'),end=document.getElementById('feedEnd');
   if(!btn)return;
-  if(s==='loading'){btn.disabled=true;btn.innerHTML='<span class="spin"></span>正在加载';if(st)st.textContent='';}
-  else if(s==='error'){btn.disabled=false;btn.textContent='加载失败，点击重试';if(st)st.textContent='网络或数据有问题，点按钮再试一次。';}
+  if(s==='loading'){btn.disabled=true;btn.innerHTML='<span class="spin"></span>'+(IS_EN?'Loading…':'正在加载');if(st)st.textContent='';}
+  else if(s==='error'){btn.disabled=false;btn.textContent=IS_EN?'Load failed — click to retry':'加载失败，点击重试';if(st)st.textContent=IS_EN?'Network or data problem — click the button to try again.':'网络或数据有问题，点按钮再试一次。';}
   else if(s==='done'){if(wrap)wrap.hidden=true;if(end)end.hidden=false;}
-  else{btn.disabled=false;btn.textContent='加载更多';if(st)st.textContent='';}
+  else{btn.disabled=false;btn.textContent=IS_EN?'Load more':'加载更多';if(st)st.textContent='';}
 }
 /* 分页：按天取分块，一天不够再取下一天，直到凑满 30 条未见过的卡片 */
 var lmDayIdx=0,lmBuffer=[];
@@ -703,13 +716,13 @@ function renderSearchResults(){
   var srList=document.getElementById('srList'),srCount=document.getElementById('srCount');
   if(!srList)return;
   var q=state.q;
-  srList.innerHTML='<p class="more-note">正在搜索…</p>';
+  srList.innerHTML='<p class="more-note">'+(IS_EN?'Searching…':'正在搜索…')+'</p>';
   getStore().then(function(items){
     if(state.q!==q)return;
     var scored=[];
     items.forEach(function(it){
       if(!matchFiltersData(it))return;
-      var title=((it.zh_title||it.title||'')+'').toLowerCase();
+      var title=(((it.zh_title||'')+' '+(it.title||''))+'').toLowerCase();
       var sum=((it.zh_oneliner||'')+'').toLowerCase();
       var src=(it.source||'').toLowerCase();
       var tier=0;
@@ -721,22 +734,22 @@ function renderSearchResults(){
     scored.sort(function(a,b){
       return b.tier-a.tier||(new Date(b.it.published)-new Date(a.it.published));
     });
-    if(srCount)srCount.textContent='找到 '+scored.length+' 条';
+    if(srCount)srCount.textContent=IS_EN?('Found '+scored.length+' items'):('找到 '+scored.length+' 条');
     if(!scored.length){
       srList.innerHTML='<div class="empty-state"><div class="empty-icon">'+SEARCH_ICON_SVG+'</div>'
-        +'<h3 class="empty-title">没有匹配「'+escHtml(state.q)+'」的动态。</h3>'
-        +'<p class="empty-text">换个关键词试试，或者清除搜索看看全部。</p>'
-        +'<div class="empty-actions"><button type="button" class="empty-btn" data-empty-action="clear">清除筛选</button>'
-        +'<button type="button" class="empty-btn primary" data-empty-action="featured">去看精选</button></div></div>';
+        +'<h3 class="empty-title">'+(IS_EN?('No items match "'+escHtml(state.q)+'".'):('没有匹配「'+escHtml(state.q)+'」的动态。'))+'</h3>'
+        +'<p class="empty-text">'+(IS_EN?'Try another keyword, or clear the search to see everything.':'换个关键词试试，或者清除搜索看看全部。')+'</p>'
+        +'<div class="empty-actions"><button type="button" class="empty-btn" data-empty-action="clear">'+(IS_EN?'Clear filters':'清除筛选')+'</button>'
+        +'<button type="button" class="empty-btn primary" data-empty-action="featured">'+(IS_EN?'Browse featured':'去看精选')+'</button></div></div>';
       return;
     }
     var show=scored.slice(0,50);
     srList.innerHTML=show.map(function(s){return cardHTML(s.it);}).join('')
-      +(scored.length>50?'<p class="more-note">只显示前 50 条，共 '+scored.length+' 条。</p>':'');
+      +(scored.length>50?'<p class="more-note">'+(IS_EN?('Showing the first 50 of '+scored.length+' items.'):('只显示前 50 条，共 '+scored.length+' 条。'))+'</p>':'');
     srList.querySelectorAll('.feed-item').forEach(bindFeedItem);
   }).catch(function(){
-    srList.innerHTML='<div class="empty-state"><h3 class="empty-title">搜索暂时不可用</h3>'
-      +'<p class="empty-text">数据没加载出来，刷新页面再试。</p></div>';
+    srList.innerHTML='<div class="empty-state"><h3 class="empty-title">'+(IS_EN?'Search is unavailable':'搜索暂时不可用')+'</h3>'
+      +'<p class="empty-text">'+(IS_EN?'The data did not load — refresh the page and try again.':'数据没加载出来，刷新页面再试。')+'</p></div>';
   });
 }
 /* 滚动恢复（B18）：从详情页/热点页返回首页时恢复滚动位置与已加载批次数 */
@@ -783,7 +796,7 @@ document.addEventListener('click',function(e){
   extra.hidden=!open;
   t.setAttribute('aria-expanded',open?'true':'false');
   var n=extra.querySelectorAll('li').length;
-  t.innerHTML=open?'收起 <span aria-hidden="true">▴</span>':'另有 '+n+' 篇报道 <span aria-hidden="true">▾</span>';
+  t.innerHTML=open?(IS_EN?'Collapse <span aria-hidden="true">▴</span>':'收起 <span aria-hidden="true">▴</span>'):(IS_EN?(n+' more reports <span aria-hidden="true">▾</span>'):('另有 '+n+' 篇报道 <span aria-hidden="true">▾</span>'));
 });
 /* 浮层搜索框的清空按钮（B14） */
 var ovClear=document.getElementById('overlaySearchClear');
@@ -801,8 +814,8 @@ if(ovClear)ovClear.addEventListener('click',function(){
     var syncStar=function(){
       var on=starSet.has(id);
       star.classList.toggle('on',on);
-      var sp=star.querySelector('span');if(sp)sp.textContent=on?'已收藏':'收藏';
-      star.setAttribute('aria-label',on?'取消收藏':'收藏');star.title=on?'取消收藏':'收藏';
+      var sp=star.querySelector('span');if(sp)sp.textContent=on?(IS_EN?'Saved':'已收藏'):(IS_EN?'Save':'收藏');
+      star.setAttribute('aria-label',on?(IS_EN?'Unsave':'取消收藏'):(IS_EN?'Save':'收藏'));star.title=on?(IS_EN?'Unsave':'取消收藏'):(IS_EN?'Save':'收藏');
     };
     syncStar();
     star.addEventListener('click',function(){
@@ -832,7 +845,7 @@ if(ovClear)ovClear.addEventListener('click',function(){
   }
   if(copy)copy.addEventListener('click',function(){
     var url=location.href;
-    var done=function(){copy.textContent='已复制';setTimeout(function(){copy.textContent='复制链接';},1500);};
+    var done=function(){copy.textContent=IS_EN?'Copied':'已复制';setTimeout(function(){copy.textContent=IS_EN?'Copy link':'复制链接';},1500);};
     if(navigator.clipboard&&navigator.clipboard.writeText){
       navigator.clipboard.writeText(url).then(done).catch(function(){fallbackCopy(url);done();});
     }else{fallbackCopy(url);done();}

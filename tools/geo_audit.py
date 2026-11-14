@@ -68,11 +68,12 @@ def _ld_blocks(page_html):
 
 
 def _disk_html(root):
-    """仓库里全部 HTML（相对路径），排除 404/index。"""
+    """仓库里全部 HTML（相对路径），排除 404/index。
+    en/index.html 同样排除：sitemap 里用 /en/ 代表英文首页，与中文首页只列 / 的做法一致。"""
     out = set()
     for p in glob.glob(os.path.join(root, "**", "*.html"), recursive=True):
         rel = os.path.relpath(p, root).replace(os.sep, "/")
-        if rel not in ("404.html", "index.html"):
+        if rel not in ("404.html", "index.html", "en/index.html"):
             out.add(rel)
     return out
 
