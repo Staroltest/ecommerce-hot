@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-14T21:48:54.678469+00:00",
-  "generated_at_cst": "2026-11-14T21:48:54.678469+00:00",
+  "generated_at": "2026-11-14T22:19:53.100654+00:00",
+  "generated_at_cst": "2026-11-14T22:19:53.100654+00:00",
   "site": "https://staroltest.github.io/ecommerce-hot",
   "site_name": "跨境电商选品HOT",
   "summary": {
-    "pass": 8,
-    "fail": 1,
+    "pass": 9,
+    "fail": 0,
     "unknown": 0
   },
   "checks": [
@@ -19,7 +19,7 @@
       "id": "sitemap",
       "name": "sitemap.xml 完整且 lastmod 可信",
       "status": "pass",
-      "detail": "1362 条 URL；lastmod 共 30 个不同日期；磁盘 HTML 1359 页，漏 0 页。"
+      "detail": "1366 条 URL；lastmod 共 30 个不同日期；磁盘 HTML 1363 页，漏 0 页。"
     },
     {
       "id": "llms",
@@ -30,8 +30,8 @@
     {
       "id": "head",
       "name": "抽查页面 canonical / hreflang 齐全",
-      "status": "fail",
-      "detail": "daily.html 缺 canonical,hreflang zh-CN,hreflang x-default,robots meta,RSS 发现链接"
+      "status": "pass",
+      "detail": "抽查 6 页（首页/聚合/日报/详情）全部含 canonical、hreflang zh-CN + x-default、robots meta、RSS 发现链接。"
     },
     {
       "id": "jsonld",
