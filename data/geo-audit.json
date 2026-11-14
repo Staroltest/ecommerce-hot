@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-14T02:18:43.194445+00:00",
-  "generated_at_cst": "2026-11-14T02:18:43.194445+00:00",
+  "generated_at": "2026-11-14T03:17:46.744074+00:00",
+  "generated_at_cst": "2026-11-14T03:17:46.744074+00:00",
   "site": "https://staroltest.github.io/ecommerce-hot",
   "site_name": "跨境电商选品HOT",
   "summary": {
-    "pass": 7,
-    "fail": 2,
+    "pass": 8,
+    "fail": 1,
     "unknown": 0
   },
   "checks": [
@@ -19,7 +19,7 @@
       "id": "sitemap",
       "name": "sitemap.xml 完整且 lastmod 可信",
       "status": "pass",
-      "detail": "644 条 URL；lastmod 共 30 个不同日期；磁盘 HTML 642 页，漏 0 页。"
+      "detail": "650 条 URL；lastmod 共 30 个不同日期；磁盘 HTML 648 页，漏 0 页。"
     },
     {
       "id": "llms",
@@ -54,8 +54,8 @@
     {
       "id": "pages",
       "name": "Cloudflare Pages 镜像已部署新版",
-      "status": "fail",
-      "detail": "https://ecommerce-hot.pages.dev/robots.txt 仍是旧版（无 AI 爬虫名单），镜像需重新部署。"
+      "status": "pass",
+      "detail": "https://ecommerce-hot.pages.dev/robots.txt 已含 AI 爬虫名单，镜像与 GitHub 同步。"
     },
     {
       "id": "feed",
