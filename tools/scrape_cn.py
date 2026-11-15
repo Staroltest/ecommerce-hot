@@ -294,7 +294,14 @@ GTRENDS_DENY = re.compile(
     r"|aeropuerto|colisi[oó]n|choque|accidente|avi[oó]n|heridos?|muertos?|fallecid[oa]s?|tiroteo|incendio|explosi[oó]n|desaparecid[oa]s?|secuestro"
     r"|mansi[oó]n|espect[aá]culos|telenovela|famoso|famosa|cantante|actriz|pel[ií]cula|estreno|concurso|gran hermano"
     r"|premiere|premieres|finale|finales|cast|director|producers?|novel|memoir|documentary|podcast|podcasts|chart|charts|song|songs|lyrics|hollywood"
-    r"|vote|votes|voter|voters|ballot|ballots|poll|polls|polling|vice\s+president|senator|senators|congressman|congresswoman|governor|governors|mayor|mayors|parliament|cabinet|democrat|democrats|republican|republicans|liberal|liberals|conservative|conservatives|campaign|campaigns|rally|rallies|debate|debates|impeachment|court|judge|judges|supreme\s+court|verdict|indictment|subpoena|sanction|sanctions)\b",
+    r"|vote|votes|voter|voters|ballot|ballots|poll|polls|polling|vice\s+president|senator|senators|congressman|congresswoman|governor|governors|mayor|mayors|parliament|cabinet|democrat|democrats|republican|republicans|liberal|liberals|conservative|conservatives|campaign|campaigns|rally|rallies|debate|debates|impeachment|court|judge|judges|supreme\s+court|verdict|indictment|subpoena|sanction|sanctions"
+    # --- 2026-11-15 补：游戏名与航天新闻（14:45 轮次两条漏网冲进热点第 3、4：
+    #   "when does gta 6 online come out"（Forbes，含 release 被商业词救回）、
+    #   "spacex starship rocket launch"（CNN，含 launch 被商业词救回）。
+    #   只加具体游戏名与航天专名，不加 xbox/playstation/nintendo——
+    #   主机类热搜可能是真实选品信号（配件需求），靠打分沉底而非硬拦。---
+    r"|gta|grand\s+theft\s+auto|fortnite|minecraft|roblox|call\s+of\s+duty|zelda|elden\s+ring|genshin|honkai|overwatch|valorant|apex\s+legends|league\s+of\s+legends|world\s+of\s+warcraft|baldur'?s\s+gate"
+    r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin)\b",
     re.I)
 
 # 2026-11-15 修复：否定词拦不住纯人名/地名/单字姓氏（mel gibson、
