@@ -283,6 +283,11 @@ GTRENDS_DENY = re.compile(
     r"|game|games|match|matches|score|scores|scoring|vs|versus|win|wins|won|winning|loss|losses|beat|beats|beaten|championship|champions|tournament|tournaments|league|leagues|semifinal|quarterfinal|fixture|fixtures|race|racing|fight|fights|bout|knockout|upset|shutout|touchdown|homer|home\s+run|penalty|penalties|referee"
     r"|storm|storms|hurricane|hurricanes|tornado|tornadoes|earthquake|earthquakes|flood|floods|flooding|waves|tsunami|eruption|eruptions|blizzard|wildfire|wildfires|rain|rains|snow|snowfall|heatwave|heat\s+wave|cold\s+snap|drought|tormenta|lluvia|terremoto|huracán|inundación|sequía|sismo|nevada|volcano|volcanic|avalanche|landslide|typhoon|cyclone|monsoon"
     r"|shooting|shootings|crash|crashes|collision|death|deaths|died|dies|killed|killing|murder|murders|arrested|arrest|arrests|police|explosive|explosives|lawsuit|lawsuits|sued|explosion|blast|attack|attacks|attacked|hostage|missing|funeral|obituary|passed\s+away|stabbing|robbery|burglary|hijack|kidnap"
+    # --- 2026-11-15 补：西语事故/娱乐词（12:15 轮次两条漏网均为西语标题：
+    #   "la mansion vip" 是西语真人秀，"aeropuerto internacional de miami"
+    #   是西语空难新闻，事故/娱乐词只有英文版拦不住）---
+    r"|aeropuerto|colisi[oó]n|choque|accidente|avi[oó]n|heridos?|muertos?|fallecid[oa]s?|tiroteo|incendio|explosi[oó]n|desaparecid[oa]s?|secuestro"
+    r"|mansi[oó]n|espect[aá]culos|telenovela|famoso|famosa|cantante|actriz|pel[ií]cula|estreno|concurso|gran hermano"
     r"|premiere|premieres|finale|finales|cast|director|producers?|novel|memoir|documentary|podcast|podcasts|chart|charts|song|songs|lyrics|hollywood"
     r"|vote|votes|voter|voters|ballot|ballots|poll|polls|polling|vice\s+president|senator|senators|congressman|congresswoman|governor|governors|mayor|mayors|parliament|cabinet|democrat|democrats|republican|republicans|liberal|liberals|conservative|conservatives|campaign|campaigns|rally|rallies|debate|debates|impeachment|court|judge|judges|supreme\s+court|verdict|indictment|subpoena|sanction|sanctions)\b",
     re.I)
@@ -311,13 +316,16 @@ def gtrends_verdict(title, news_title="", news_source=""):
     joined = " ".join([title, news_title, news_source])
     if GTRENDS_DENY.search(joined):
         return "deny-word"
+    # 西语动词 sale（"sale de …" = 离开）会误触英文商业词 sale 而放行
+    # 人名/片名（如 La Mansión VIP），救援判断前先去掉 "sale de"。
+    joined_rescue = re.sub(r"\bsale\s+de\b", " ", joined, flags=re.I)
     if (title.lower() not in GTRENDS_SHOPPING
             and GTRENDS_NAME_RE.match(title)
-            and not GTRENDS_COMMERCE_RE.search(joined)):
+            and not GTRENDS_COMMERCE_RE.search(joined_rescue)):
         return "deny-name"
     if GTRENDS_PLACE_RE.match(title):
         return "deny-place"
-    if len(title.split()) == 1 and not GTRENDS_COMMERCE_RE.search(joined):
+    if len(title.split()) == 1 and not GTRENDS_COMMERCE_RE.search(joined_rescue):
         return "deny-single"
     return None
 
