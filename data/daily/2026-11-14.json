@@ -6,7 +6,7 @@
  "date_iso": "2026-11-14",
  "issue": 2,
  "generated_at": "2026-11-14T01:04:11.845192+00:00",
- "summary": "过去 24 小时共收录 262 条动态，精选 10 条（选品趋势 6 条、供应链与物流 2 条、跨境平台动态 2 条）。头条：做Wayfair怎么选品？成熟畅销品vs高增长蓝海品类丨Wayfair运营干货③。",
+ "summary": "过去 24 小时共收录 262 条动态，精选 9 条（选品趋势 6 条、供应链与物流 1 条、跨境平台动态 2 条）。头条：做Wayfair怎么选品？成熟畅销品vs高增长蓝海品类丨Wayfair运营干货③。",
  "items": [
   {
    "id": "de8a6f51810b792e84deb188654fbaf635a45fa5",
@@ -157,30 +157,6 @@
    "hot_score": 71.9,
    "prev_rank": 5,
    "prev_hot_score": 71.9
-  },
-  {
-   "id": "5446bc67f61ec82cdaed8ef19290a9804556fa4b",
-   "title": "飞猪双11：活动商品履约GMV同比增长60%",
-   "link": "https://mjzj.com/article/g45196fh1ibk",
-   "source": "卖家之家（抓取）",
-   "source_id": "mjzj-scrape",
-   "published": "2026-11-13T05:51:34.362653+00:00",
-   "zh_title": "",
-   "zh_oneliner": "",
-   "category": "supply",
-   "category_label": "供应链与物流",
-   "tier": "T2",
-   "tags": [
-    "增长",
-    "GMV"
-   ],
-   "score": 80,
-   "reason": "涉及增长与GMV · 24 小时内发布",
-   "is_new": false,
-   "trend": "same",
-   "hot_score": 66.9,
-   "prev_rank": 16,
-   "prev_hot_score": 66.9
   },
   {
    "id": "4d8129b8e54d1a0a436cc81b3ec6bf4ba028d9cf",
