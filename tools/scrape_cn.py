@@ -443,7 +443,8 @@ def scrape_sellthetrend():
 # coach / trial / player 这些词——它们常出现在真实商品趋势里
 # （游戏机、产品系列、季节性商品、Coach 品牌、free trial、
 # 播放器），放进来会误杀产品信号。残留的人名类热搜（如纯人名，无任何
-# 体育/娱乐标记词）仍可能漏进来，需在精选环节靠打分自然沉底。
+# 体育/娱乐标记词）曾靠打分沉底，但 2026-11-15 证实该假设不成立；
+# 现由 GTRENDS_GATE_RE 商业词门槛兜底。
 # 美式球队昵称、trade、stadium、troops 也在列：球队人名类热搜常以
 # 交易流言（"XXX trade-or-keep"）或球队名形式出现，只靠联赛词拦不住。
 GTRENDS_DENY = re.compile(
@@ -508,6 +509,29 @@ GTRENDS_PLACE_RE = re.compile(r"^(?:afghanistan|albania|algeria|argentina|armeni
 GTRENDS_COMMERCE_RE = re.compile(r"\b(?:price|prices|pricing|\$|sale|sales|deal|deals|discount|discounts|coupon|coupons|launch|launches|launched|release|releases|released|preorder|pre-order|buy|buys|buying|shop|shopping|store|stores|restock|restocked|sold\s+out|review|reviews|unboxing|viral|goes\s+viral|craze|frenzy|tiktok|instagram|influencer|influencers|amazon|walmart|target|costco|shein|temu|ebay|etsy|shopify|brand|brands|product|products|gadget|gadgets|toy|toys|fashion|beauty|skincare|makeup|sneaker|sneakers|shoes|electronics|gaming|console|gift|gifts|haul|christmas|holiday\s+shopping|black\s+friday|cyber\s+monday|prime\s+day|singles\s+day|small\s+business\s+saturday)\b", re.I)
 GTRENDS_SHOPPING = {"black friday", "cyber monday", "prime day", "prime big deal days", "singles day", "small business saturday"}
 
+# 2026-11-15 商业词门槛（gate，用户在 Trends 第 4 次漏网后拍板）：
+# 否定词是"黑名单"，gate 是"白名单"——走到这一步还没被拦的条目，
+# 只有标题/新闻/来源里带强商业词才放行。gate 词表故意比救援词表
+# GTRENDS_COMMERCE_RE 严得多，后者只做人名规则的救援，本来就该宽松，
+# 保持原样不动。
+# 明确没放进 gate 的词：launch、release、review、viral、deal、price、
+# pricing、amazon（裸词）、target（裸词）、brand、christmas、
+# tiktok（裸词）、instagram、influencer、gaming——这些词会出现在
+# 火箭/电影/游戏/政治/物价新闻里：GTA 6 靠 release、SpaceX 靠 launch
+# 就是这么漏进来的。代价：Apple Watch Ultra / iPhone 17 Pro /
+# Galaxy Z Fold 这类只有 price/release/review 的产品名会被拦，
+# 它们本来也会经由其余 32 个源进来，接受这点损失。
+GTRENDS_GATE_RE = re.compile(
+    r"\b(?:\$|sale|sales|discount|discounts|coupon|coupons|preorder|pre-order"
+    r"|buy|buys|buying|shop|shopping|store|stores|restock|restocked|sold\s+out"
+    r"|unboxing|haul|walmart|costco|shein|temu|ebay|etsy|shopify|tiktok\s+shop"
+    r"|sneaker|sneakers|gadget|gadgets|toy|toys|fashion|beauty|skincare|makeup"
+    r"|shoe|shoes|electronics|console|product|products|gift|gifts"
+    r"|holiday\s+shopping|black\s+friday|cyber\s+monday|prime\s+day"
+    r"|prime\s+big\s+deal\s+days|singles\s+day|small\s+business\s+saturday"
+    r"|in\s+stock|clearance|bestseller|best\s+seller)\b",
+    re.I)
+
 
 def gtrends_verdict(title, news_title="", news_source=""):
     """一条 Trends 热搜的去留（供测试与 scrape_gtrends 共用）。
@@ -534,6 +558,11 @@ def gtrends_verdict(title, news_title="", news_source=""):
         return "deny-place"
     if len(title.split()) == 1 and not GTRENDS_COMMERCE_RE.search(joined_rescue):
         return "deny-single"
+    # 2026-11-15 商业词门槛：上面都没拦住的条目，最后看有没有强商业词。
+    # 购物节例外（GTRENDS_SHOPPING）不受此限。
+    if (title.lower() not in GTRENDS_SHOPPING
+            and not GTRENDS_GATE_RE.search(joined_rescue)):
+        return "deny-gate"
     return None
 
 
