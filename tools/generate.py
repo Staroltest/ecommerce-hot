@@ -2314,11 +2314,13 @@ def page_open(site, active, title, description, prefix="", base="", canonical=""
           f'<meta property="og:description" content="{esc(description)}">\n'
           f'<meta property="og:type" content="{esc(og_type)}">\n'
           f'<meta property="og:url" content="{esc(canon)}">\n'
-          f'<meta property="og:image" content="{site_url}/favicon.svg">\n'
-          f'<meta name="twitter:card" content="summary">\n'
+          f'<meta property="og:image" content="{site_url}/assets/og-image.png">\n'
+          f'<meta property="og:image:width" content="1200">\n'
+          f'<meta property="og:image:height" content="630">\n'
+          f'<meta name="twitter:card" content="summary_large_image">\n'
           f'<meta name="twitter:title" content="{esc(title)}">\n'
           f'<meta name="twitter:description" content="{esc(description)}">\n'
-          f'<meta name="twitter:image" content="{site_url}/favicon.svg">\n')
+          f'<meta name="twitter:image" content="{site_url}/assets/og-image.png">\n')
     ld = {"@context": "https://schema.org", "@type": "WebSite",
           "name": site["name"], "url": site_url,
           "inLanguage": html_lang,
@@ -2349,6 +2351,8 @@ def page_open(site, active, title, description, prefix="", base="", canonical=""
             f'<link rel="alternate" hreflang="en" href="{esc(en_url)}">\n'
             f'<link rel="alternate" hreflang="x-default" href="{esc(x_default)}">\n'
             f'<link rel="icon" type="image/svg+xml" href="{root_base}favicon.svg">\n'
+            f'<link rel="icon" type="image/x-icon" href="{root_base}favicon.ico">\n'
+            f'<link rel="apple-touch-icon" href="{root_base}apple-touch-icon.png">\n'
             f"{og}"
             f"{article_meta}"
             f'{ld_html}'
@@ -3119,7 +3123,7 @@ def render_item(site, it, related, is_selected, daily_issue, lang="zh"):
          "author": {"@type": "Organization", "name": site["name"], "url": site_url},
          "publisher": {"@type": "Organization", "name": site["name"]},
          "isBasedOn": it["link"],
-         "image": site_url + "/favicon.svg",
+         "image": site_url + "/assets/og-image.png",
          "mainEntityOfPage": canonical},
         {"@context": "https://schema.org", "@type": "BreadcrumbList",
          "itemListElement": [
@@ -3202,6 +3206,8 @@ def render_404(site):
             f"<title>找不到这篇内容 · {site['name']}</title>\n"
             f"<meta name=\"description\" content=\"找不到这篇内容。\">\n"
             f'<link rel="icon" type="image/svg+xml" href="{site_url}/favicon.svg">\n'
+            f'<link rel="icon" type="image/x-icon" href="{site_url}/favicon.ico">\n'
+            f'<link rel="apple-touch-icon" href="{site_url}/apple-touch-icon.png">\n'
             f"{theme_boot(site)}<link rel=\"stylesheet\" href=\"{site_url}/assets/site.css\"></head>\n<body>"
             f'<div class="shell"><div class="main"><div class="page page-reading">'
             f'<div class="empty-state" style="margin-top:20vh">'
