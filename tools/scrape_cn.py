@@ -277,8 +277,49 @@ GTRENDS_DENY = re.compile(
     r"|nfl\.com|nhl\.com|nbcsports|yahoo\s+sports|fox\s+sports|cbs\s+sports"
     r"|the\s+athletic|bleacher\s+report|sporting\s+news|sports\s+illustrated|sky\s+sports"
     r"|variety|deadline|hollywood\s+reporter|tmz|billboard|rolling\s+stone"
-    r"|politico|the\s+hill)\b",
+    r"|politico|the\s+hill"
+    # --- 2026-11-15 补：体育/天气/事故/娱乐/政治类通用词（之前只列了
+    # 联赛与球队名，拦不住 game/vs/风暴/枪击这类热搜）---
+    r"|game|games|match|matches|score|scores|scoring|vs|versus|win|wins|won|winning|loss|losses|beat|beats|beaten|championship|champions|tournament|tournaments|league|leagues|semifinal|quarterfinal|fixture|fixtures|race|racing|fight|fights|bout|knockout|upset|shutout|touchdown|homer|home\s+run|penalty|penalties|referee"
+    r"|storm|storms|hurricane|hurricanes|tornado|tornadoes|earthquake|earthquakes|flood|floods|flooding|waves|tsunami|eruption|eruptions|blizzard|wildfire|wildfires|rain|rains|snow|snowfall|heatwave|heat\s+wave|cold\s+snap|drought|tormenta|lluvia|terremoto|huracán|inundación|sequía|sismo|nevada|volcano|volcanic|avalanche|landslide|typhoon|cyclone|monsoon"
+    r"|shooting|shootings|crash|crashes|collision|death|deaths|died|dies|killed|killing|murder|murders|arrested|arrest|arrests|police|explosive|explosives|lawsuit|lawsuits|sued|explosion|blast|attack|attacks|attacked|hostage|missing|funeral|obituary|passed\s+away|stabbing|robbery|burglary|hijack|kidnap"
+    r"|premiere|premieres|finale|finales|cast|director|producers?|novel|memoir|documentary|podcast|podcasts|chart|charts|song|songs|lyrics|hollywood"
+    r"|vote|votes|voter|voters|ballot|ballots|poll|polls|polling|vice\s+president|senator|senators|congressman|congresswoman|governor|governors|mayor|mayors|parliament|cabinet|democrat|democrats|republican|republicans|liberal|liberals|conservative|conservatives|campaign|campaigns|rally|rallies|debate|debates|impeachment|court|judge|judges|supreme\s+court|verdict|indictment|subpoena|sanction|sanctions)\b",
     re.I)
+
+# 2026-11-15 修复：否定词拦不住纯人名/地名/单字姓氏（mel gibson、
+# michael j fox、serbia、lindstrom 等 15 条全部漏网，占据热点 60%）。
+# 补三条只看标题的规则（新闻正文只用来救产品名）：
+#   GTRENDS_NAME_RE：2–3 个单词的人名/片名类标题（如 Mel Gibson、
+#     Michael J Fox、Dallas Love Field），且新闻里没有商业信号词 -> 否定；
+#     新闻里有 price/launch/sale 等商业词时放行（Apple Watch Ultra、
+#     Galaxy Z Fold 这类产品名靠新闻救回来）。Trends 标题常为小写，故 re.I。
+#   GTRENDS_PLACE_RE：整个标题就是一个国家/地区名 -> 否定。
+#   单词标题：新闻里没有商业信号词 -> 否定（lindstrom 这类单姓；
+#     Labubu、Skims 这类单字产品名新闻里通常有 sold out/launch，不会误伤）。
+#   GTRENDS_SHOPPING：购物节例外（Black Friday、Cyber Monday、Prime Day…），
+#     不受人名规则影响。
+GTRENDS_NAME_RE = re.compile(r"^[A-Z][a-z]+(?: [A-Z]\.?| [A-Z][a-z]+){1,2}$", re.I)
+GTRENDS_PLACE_RE = re.compile(r"^(?:afghanistan|albania|algeria|argentina|armenia|australia|austria|azerbaijan|bangladesh|belarus|belgium|bolivia|bosnia|brazil|bulgaria|cambodia|canada|chile|china|colombia|croatia|cuba|cyprus|denmark|ecuador|egypt|estonia|ethiopia|finland|france|georgia|germany|ghana|greece|greenland|guatemala|haiti|honduras|hong kong|hungary|iceland|india|indonesia|iran|iraq|ireland|israel|italy|jamaica|japan|jordan|kazakhstan|kenya|kuwait|kyrgyzstan|latvia|lebanon|libya|lithuania|luxembourg|madagascar|malaysia|mali|malta|mexico|moldova|mongolia|morocco|myanmar|nepal|netherlands|nicaragua|niger|nigeria|norway|oman|pakistan|palestine|panama|paraguay|peru|philippines|poland|portugal|qatar|romania|russia|rwanda|senegal|serbia|singapore|slovakia|slovenia|somalia|south africa|south korea|spain|sri lanka|sudan|sweden|switzerland|syria|taiwan|tajikistan|tanzania|thailand|togo|tunisia|turkey|turkmenistan|uganda|ukraine|uruguay|uzbekistan|venezuela|vietnam|yemen|zambia|zimbabwe|gaza|kashmir|north korea|puerto rico)$", re.I)
+GTRENDS_COMMERCE_RE = re.compile(r"\b(?:price|prices|pricing|\$|sale|sales|deal|deals|discount|discounts|coupon|coupons|launch|launches|launched|release|releases|released|preorder|pre-order|buy|buys|buying|shop|shopping|store|stores|restock|restocked|sold\s+out|review|reviews|unboxing|viral|goes\s+viral|craze|frenzy|tiktok|instagram|influencer|influencers|amazon|walmart|target|costco|shein|temu|ebay|etsy|shopify|brand|brands|product|products|gadget|gadgets|toy|toys|fashion|beauty|skincare|makeup|sneaker|sneakers|shoes|electronics|gaming|console|gift|gifts|haul|christmas|holiday\s+shopping|black\s+friday|cyber\s+monday|prime\s+day|singles\s+day|small\s+business\s+saturday)\b", re.I)
+GTRENDS_SHOPPING = {"black friday", "cyber monday", "prime day", "prime big deal days", "singles day", "small business saturday"}
+
+
+def gtrends_verdict(title, news_title="", news_source=""):
+    """一条 Trends 热搜的去留（供测试与 scrape_gtrends 共用）。
+    返回 None 表示保留，否则返回命中的规则名。"""
+    joined = " ".join([title, news_title, news_source])
+    if GTRENDS_DENY.search(joined):
+        return "deny-word"
+    if (title.lower() not in GTRENDS_SHOPPING
+            and GTRENDS_NAME_RE.match(title)
+            and not GTRENDS_COMMERCE_RE.search(joined)):
+        return "deny-name"
+    if GTRENDS_PLACE_RE.match(title):
+        return "deny-place"
+    if len(title.split()) == 1 and not GTRENDS_COMMERCE_RE.search(joined):
+        return "deny-single"
+    return None
 
 
 def scrape_gtrends():
@@ -320,7 +361,7 @@ def scrape_gtrends():
                 break
         if not link or link in seen:
             continue
-        if GTRENDS_DENY.search(" ".join([title, news_title, news_source])):
+        if gtrends_verdict(title, news_title, news_source):
             continue
         pub = None
         pd = (el.findtext("pubDate") or "").strip()
