@@ -277,6 +277,11 @@ GTRENDS_DENY = re.compile(
     r"|nfl\.com|nhl\.com|nbcsports|yahoo\s+sports|fox\s+sports|cbs\s+sports"
     r"|the\s+athletic|bleacher\s+report|sporting\s+news|sports\s+illustrated|sky\s+sports"
     r"|variety|deadline|hollywood\s+reporter|tmz|billboard|rolling\s+stone"
+    r"|pitchfork|nme|stereogum|consequence"
+    # --- 2026-11-15 补：音乐节名（14:15 轮次 "camp flog gnaw 2026 lineup"
+    #   漏网冲进热点第 3：4 词标题不触发人名规则，新闻源 Pitchfork、
+    #   新闻标题含 Amazon Music 亦无否定词命中）---
+    r"|flog\s+gnaw|coachella|lollapalooza|bonnaroo|stagecoach|rolling\s+loud|governors\s+ball"
     r"|politico|the\s+hill"
     # --- 2026-11-15 补：体育/天气/事故/娱乐/政治类通用词（之前只列了
     # 联赛与球队名，拦不住 game/vs/风暴/枪击这类热搜）---
@@ -318,7 +323,15 @@ def gtrends_verdict(title, news_title="", news_source=""):
         return "deny-word"
     # 西语动词 sale（"sale de …" = 离开）会误触英文商业词 sale 而放行
     # 人名/片名（如 La Mansión VIP），救援判断前先去掉 "sale de"。
+    # "amazon music" 也去掉：音乐直播不是购物信号，否则
+    # "Camp Flog Gnaw … Amazon Music Livestream" 会被 amazon 一词救回。
     joined_rescue = re.sub(r"\bsale\s+de\b", " ", joined, flags=re.I)
+    joined_rescue = re.sub(r"\bamazon\s+music\b", " ", joined_rescue, flags=re.I)
+    # 2026-11-15 补：标题含 lineup 且新闻无商业词 -> 否定（音乐节阵容类
+    # 热搜，如 camp flog gnaw / coachella 阵容公布；产品线阵容如
+    # "iPhone 17 lineup" 新闻里通常有 price/launch/release，会被救回）。
+    if re.search(r"\blineup\b", title, re.I) and not GTRENDS_COMMERCE_RE.search(joined_rescue):
+        return "deny-lineup"
     if (title.lower() not in GTRENDS_SHOPPING
             and GTRENDS_NAME_RE.match(title)
             and not GTRENDS_COMMERCE_RE.search(joined_rescue)):
