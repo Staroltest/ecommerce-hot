@@ -8,10 +8,18 @@ sources.json 里用 local:feeds/<id>.xml 引用（generate.py 支持 local: 前�
 
 某站本轮抓到少于 3 条时，不覆盖旧文件（该站首页偶尔返回不完整页面，
 例如雨果网有时只返回 55KB 的空壳），保留上一轮的好文件。
+例外：Google Trends（gtrends）是日榜快照，过滤后剩 0-2 条是正常情况，
+0 条也写文件（表示今天没有产品类热搜）；只有拉取本身失败时才保留旧文件
+（见 MIN_KEEP）。
+
+2026-11-15 增 4 个产品热度信号源（用户批准）：Google Trends 美国热搜
+（官方 RSS 拉取后否定词过滤）、NicheHunter TikTok Shop 日榜、
+JadeShip 1688 七日榜（只取排名上升条目）、卖家精灵博客。
 
 用法：python3 tools/scrape_cn.py   （在站点根目录运行）
 """
 import html
+import json
 import os
 import re
 import sys
@@ -135,12 +143,212 @@ def scrape_mjzj():
     return out
 
 
+# ---------------------------------------------------------------- 产品热度信号源
+# 2026-11-15 接入（用户批准）。只取公开列表页的标题 + 链接 + 时间，
+# 不进详情页、不取正文、不取销量以外的任何字段、不登录。
+
+def scrape_nichehunter():
+    """NicheHunter TikTok Shop 每日 Top 10。
+
+    页面是 Next.js 服务端渲染，10 条商品在 JSON-LD ItemList 里
+    （含商品名、商品页链接、销量/预估收入/评分等描述），直接解析 JSON，
+    不依赖 JS。标题取商品名，链接取商品页，时间取榜单日期
+    （ItemList 名称里的 YYYY-MM-DD，中午 12:00 CST）。
+    销量数字只在写中文简介时用，不进 RSS（RSS 只放标题 + 链接 + 时间）。
+    """
+    h = fetch("https://nichehunter.com/tools/winning-product-finder/")
+    out, seen = [], set()
+    pub = None
+    for m in re.finditer(r'<script[^>]*type="application/ld\+json"[^>]*>(.*?)</script>', h, re.S):
+        try:
+            data = json.loads(m.group(1))
+        except ValueError:
+            continue
+        if not isinstance(data, dict) or data.get("@type") != "ItemList":
+            continue
+        dm = re.search(r"(\d{4})-(\d{2})-(\d{2})", data.get("name", ""))
+        if dm:
+            try:
+                pub = datetime(int(dm.group(1)), int(dm.group(2)), int(dm.group(3)),
+                               12, tzinfo=CST)
+            except ValueError:
+                pub = None
+        for el in data.get("itemListElement", []) or []:
+            it = el.get("item", {}) if isinstance(el, dict) else {}
+            t = clean(it.get("name", ""))
+            link = (it.get("url", "") or "").strip()
+            if len(t) >= 6 and link and link not in seen:
+                seen.add(link)
+                out.append((t, link, pub))
+        break
+    return out[:10]
+
+
+def scrape_jadeship():
+    """JadeShip 1688 七日榜（按 7 日销量排的 Top 50）。
+
+    取数逻辑：本页只有 amount_sold 一种排序，没有单独的“涨幅榜”，
+    因此取其中较上一周期排名上升的条目（卡片里 lucide-arrow-up 标记，
+    数字为上升位数），按原排名顺序取前 10 条（2026-11-15 用户定：先上线过渡，避免单源刷屏；根本修法是生成器单源上限）。下降（arrow-down）与
+    无升降标记的新上榜条目不取。标题取商品名，链接取商品页
+    （去掉 ?agent= 推广参数），时间取 Last bought 的 GMT 时间戳。
+    """
+    h = fetch("https://www.jadeship.com/feed/top/7-days/1688")
+    out, seen = [], set()
+    for m in re.finditer(r'id="item-1688-(\d+)"', h):
+        seg = h[m.start():m.start() + 4000]
+        tm = re.search(r'<h3[^>]*title="([^"]+)"', seg)
+        if not tm:
+            continue
+        t = clean(tm.group(1))
+        am = re.search(r'lucide-arrow-(up|down)[^>]*>.*?</svg>\s*(\d+)', seg, re.S)
+        if not am or am.group(1) != "up":
+            continue
+        lm = re.search(r'title="([A-Z][a-z]{2}, \d{2} [A-Z][a-z]{2} \d{4} \d{2}:\d{2}:\d{2}) GMT"',
+                       seg)
+        pub = None
+        if lm:
+            try:
+                pub = datetime.strptime(lm.group(1), "%a, %d %b %Y %H:%M:%S") \
+                    .replace(tzinfo=timezone.utc).astimezone(CST)
+            except ValueError:
+                pub = None
+        link = "https://www.jadeship.com/item/1688/" + m.group(1)
+        if len(t) >= 6 and link not in seen:
+            seen.add(link)
+            out.append((t, link, pub))
+        if len(out) >= 10:
+            break
+    return out
+
+
+def scrape_sellersprite():
+    """卖家精灵博客列表页。标题与日期都在列表页内。
+
+    注意：裸域名 sellersprite.com 在当前环境 DNS 解析失败，
+    必须用 www 子域名。标题取文章标题（已是中文），链接取文章页，
+    时间取文章信息区的 YYYY-MM-DD（中午 12:00 CST）。
+    """
+    h = fetch("https://www.sellersprite.com/cn/blog/")
+    out, seen = [], set()
+    for m in re.finditer(
+            r'<div class="article-title">\s*<a href="(/cn/blog/[^"]+)">([^<]+)</a>', h):
+        path, t = m.groups()
+        t = clean(t)
+        dm = re.search(r"(\d{4})-(\d{2})-(\d{2})", h[m.end():m.end() + 500])
+        pub = None
+        if dm:
+            try:
+                pub = datetime(int(dm.group(1)), int(dm.group(2)), int(dm.group(3)),
+                               12, tzinfo=CST)
+            except ValueError:
+                pub = None
+        link = "https://www.sellersprite.com" + path
+        if len(t) >= 6 and link not in seen:
+            seen.add(link)
+            out.append((t, link, pub))
+    return out
+
+
+# Google Trends 泛热搜否定词：体育、娱乐、政治类标记词（词边界匹配）。
+# 榜单是英文热搜词，人名本身无法枚举，所以同时看标题、首条新闻标题、
+# 新闻来源三处；命中即丢弃。注意：故意没放 game / series / season /
+# coach / trial / player 这些词——它们常出现在真实商品趋势里
+# （游戏机、产品系列、季节性商品、Coach 品牌、free trial、
+# 播放器），放进来会误杀产品信号。残留的人名类热搜（如纯人名，无任何
+# 体育/娱乐标记词）仍可能漏进来，需在精选环节靠打分自然沉底。
+# 美式球队昵称、trade、stadium、troops 也在列：球队人名类热搜常以
+# 交易流言（"XXX trade-or-keep"）或球队名形式出现，只靠联赛词拦不住。
+GTRENDS_DENY = re.compile(
+    r"\b(?:nfl|nba|mlb|nhl|ncaa|fifa|uefa|mls|pga|lpga|atp|wta|ufc|wwe|aew|espn"
+    r"|football|basketball|baseball|hockey|soccer|tennis|golf|boxing|wrestling"
+    r"|quarterback|qbs?|tds?|touchdown|mvp|playoffs?|super\s+bowl|world\s+cup|champions\s+league"
+    r"|premier\s+league|la\s+liga|serie\s+a|europa\s+league|all-star|all\s+star"
+    r"|draft|injury|trade|stadium|arena|troops|military"
+    r"|nuggets|sixers?|lakers|celtics|yankees|dodgers|cowboys|patriots|chiefs|eagles"
+    r"|warriors|knicks|bulls|heat|bucks|suns|mavericks|raiders|broncos|packers"
+    r"|steelers|ravens|bengals|browns|texans|colts|jaguars|titans|vikings|lions"
+    r"|bears|falcons|saints|buccaneers|panthers|cardinals|rams|seahawks|49ers"
+    r"|chargers|jets|giants|dolphins|bills"
+    r"|movie|film|tv\s+show|episode|album|concert|tour|grammy|oscar|emmy"
+    r"|golden\s+globe|actor|actress|singer|rapper|celebrity|snl|saturday\s+night\s+live"
+    r"|netflix|disney|marvel|trailer|president|white\s+house|senate|congress|election"
+    r"|minister|prime\s+minister|lobbyist|summit|protest|war|sports?|athlete"
+    r"|nfl\.com|nhl\.com|nbcsports|yahoo\s+sports|fox\s+sports|cbs\s+sports"
+    r"|the\s+athletic|bleacher\s+report|sporting\s+news|sports\s+illustrated|sky\s+sports"
+    r"|variety|deadline|hollywood\s+reporter|tmz|billboard|rolling\s+stone"
+    r"|politico|the\s+hill)\b",
+    re.I)
+
+
+def scrape_gtrends():
+    """Google Trends 美国日榜 RSS，拉官方 RSS 后否定词过滤。
+
+    为什么不在 sources.json 里直接挂 RSS：官方 RSS 所有条目共用同一个
+    link（https://trends.google.com/trending/rss?geo=US），而 generate.py
+    按链接去重，直接入库 10 条会塌成 1 条；且泛热搜（体育/名人/影视）
+    占大多数，必须按源过滤——generate.py 没有按源过滤机制（noise 词是
+    全局的，只扣分不排除）。所以在这里拉 RSS、过滤、重写成本地 feed：
+    标题取热搜词，链接取首条新闻链接（每条唯一），时间取 pubDate。
+    只有首条新闻链接缺失的条目才跳过。
+    """
+    raw = fetch("https://trends.google.com/trending/rss?geo=US")
+    try:
+        root = ET.fromstring(raw)
+    except ET.ParseError:
+        return []
+    ns = {"ht": "https://trends.google.com/trending/rss"}
+    raw_items = list(root.iter("item"))
+    if not raw_items:
+        # RSS 本身一条都没有：说明源结构变了或返回空壳，抛错走旧文件保护，
+        # 不要把空文件写出去。
+        raise RuntimeError("trends RSS has no items")
+    out, seen = [], set()
+    for el in raw_items:
+        title = (el.findtext("title") or "").strip()
+        if len(title) < 2:
+            continue
+        link = ""
+        news_title = ""
+        news_source = ""
+        for ni in el.findall("ht:news_item", ns):
+            u = ni.findtext("ht:news_item_url", namespaces=ns) or ""
+            if u.strip():
+                link = u.strip()
+                news_title = ni.findtext("ht:news_item_title", namespaces=ns) or ""
+                news_source = ni.findtext("ht:news_item_source", namespaces=ns) or ""
+                break
+        if not link or link in seen:
+            continue
+        if GTRENDS_DENY.search(" ".join([title, news_title, news_source])):
+            continue
+        pub = None
+        pd = (el.findtext("pubDate") or "").strip()
+        if pd:
+            try:
+                pub = datetime.strptime(pd, "%a, %d %b %Y %H:%M:%S %z").astimezone(CST)
+            except ValueError:
+                pub = None
+        seen.add(link)
+        out.append((title, link, pub))
+    return out
+
+
 SITES = [
     ("ebrun", "亿邦动力", "https://www.ebrun.com/", scrape_ebrun_fixed),
     ("cifnews", "雨果网", "https://www.cifnews.com/", scrape_cifnews),
     ("dsb", "电商报", "https://www.dsb.cn/", scrape_dsb),
     ("mjzj", "卖家之家", "https://www.mjzj.com/", scrape_mjzj),
+    ("gtrends", "Google Trends 美国热搜", "https://trends.google.com/trending/rss?geo=US", scrape_gtrends),
+    ("nichehunter", "NicheHunter TikTok 热销", "https://nichehunter.com/tools/winning-product-finder/", scrape_nichehunter),
+    ("jadeship", "JadeShip 1688 七日榜", "https://www.jadeship.com/feed/top/7-days/1688", scrape_jadeship),
+    ("sellersprite", "卖家精灵博客", "https://www.sellersprite.com/cn/blog/", scrape_sellersprite),
 ]
+
+# 本轮抓到少于多少条时保留旧文件（默认 3；gtrends 是日榜快照，
+# 过滤后剩 0-2 条是正常情况（美国日榜常被体育/名人占满），0 条也写文件，
+# 表示“今天没有产品类热搜”，不让旧榜单多留一天；只有拉取本身失败时才保旧文件）。
+MIN_KEEP = {"gtrends": 0}
 
 
 def main():
@@ -153,7 +361,8 @@ def main():
             print(f"{sid}: ERR {e}", flush=True)
             results[sid] = 0
             continue
-        if len(items) < 3:
+        need = MIN_KEEP.get(sid, 3)
+        if len(items) < need:
             print(f"{sid}: only {len(items)} items, keeping old file", flush=True)
             results[sid] = len(items)
             continue
@@ -162,7 +371,7 @@ def main():
         results[sid] = len(items)
         time.sleep(2)
     print("done:", results)
-    return 0 if all(v >= 3 for v in results.values()) else 1
+    return 0 if all(v >= MIN_KEEP.get(k, 3) for k, v in results.items()) else 1
 
 
 if __name__ == "__main__":
