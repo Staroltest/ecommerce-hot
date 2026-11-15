@@ -180,7 +180,7 @@
       "id": "ecomengine",
       "name": "eComEngine 博客",
       "tier": "T2",
-      "url": "https://www.ecomengine.com/feed/",
+      "url": "https://www.ecomengine.com/blog/rss.xml",
       "category_hint": "tools"
     },
     {
