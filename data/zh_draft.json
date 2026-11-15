@@ -1,1923 +1,2023 @@
 {
-  "https://www.searchenginejournal.com/google-ads-rolls-out-new-invalid-traffic-overview-card/597098": {
-    "zh_title": "Google Ads 上线无效流量总览卡片",
-    "zh_oneliner": "广告主可以在一个入口里查看无效流量情况，排查点击质量问题。"
-  },
-  "https://www.searchenginejournal.com/google-gemini-4-hydrogen-default-ai-mode/597096": {
-    "zh_title": "Google 把 Gemini 4 Hydrogen 设为 AI Mode 默认模型",
-    "zh_oneliner": "AI 搜索的默认模型换代，商家要留意回答里品牌与商品的呈现方式。"
-  },
-  "https://www.searchenginejournal.com/does-the-affiliate-model-survive-checkout-inside-ai-mode-and-gemini-ask-an-seo/585080": {
-    "zh_title": "AI Mode 与 Gemini 内置结账后，联盟营销还能活吗",
-    "zh_oneliner": "AI 直接帮用户下单，联盟佣金的归属与追踪方式面临重构。"
-  },
-  "https://www.digitalcommerce360.com/2026/11/12/j-crew-claude-style-advisor": {
-    "zh_title": "J. Crew 用 Claude 打造新款穿搭顾问工具",
-    "zh_oneliner": "服装品牌把 AI 对话做成导购助手，帮顾客搭配并推荐商品。"
-  },
-  "https://www.searchenginejournal.com/visits-to-the-top-million-websites-fell-12-data-shows/597085": {
-    "zh_title": "数据：头部百万网站访问量下滑 12%",
-    "zh_oneliner": "流量正在向少数平台集中，店铺不能只靠自然搜索等客上门。"
-  },
-  "https://www.searchenginejournal.com/microsoft-advertising-updates-ui-following-advertiser-feedback/597078": {
-    "zh_title": "微软广告根据广告主反馈更新界面",
-    "zh_oneliner": "投放后台的界面调整以操作反馈为依据，投手要重新熟悉入口位置。"
-  },
-  "https://www.retaildive.com/news/bnpl-bolsters-holiday-budgets/874425": {
-    "zh_title": "先买后付撑起假日购物预算",
-    "zh_oneliner": "分期付款让消费者在旺季敢花更多，商家可把它当作转化工具。"
-  },
-  "https://www.retaildive.com/news/michaels-holiday-black-friday-cyber-monday/874500": {
-    "zh_title": "Michaels 鼓励过一个无屏幕的假日季",
-    "zh_oneliner": "手工艺零售商反其道而行之，用线下体验带动节日消费。"
-  },
-  "https://www.retaildive.com/news/walmart-more-than-doubles-planned-drone-delivery-sites-zipline/874378": {
-    "zh_title": "沃尔玛无人机配送站点计划翻倍还多",
-    "zh_oneliner": "无人机配送从试点走向规模化，履约速度成为零售竞争的新维度。"
-  },
-  "https://www.glossy.co/beauty/the-holiday-playbook-how-brands-are-banking-on-live-shopping-this-holiday-season": {
-    "zh_title": "品牌押注直播带货过这个假日季",
-    "zh_oneliner": "直播购物成为节日营销的主战场，内容与转化要一起抓。"
-  },
-  "https://www.retaildive.com/news/tiktok-shop-plus-paid-membership/874451": {
-    "zh_title": "TikTok Shop 试点付费会员",
-    "zh_oneliner": "平台用会员权益锁定高价值买家，商家要想好会员专属的玩法。"
-  },
-  "https://www.retaildive.com/news/calvin-klein-tommy-hilfiger-owner-to-cut-4-of-workforce/874492": {
-    "zh_title": "Calvin Klein 与 Tommy Hilfiger 母公司裁员 4%",
-    "zh_oneliner": "服装集团通过裁员控制成本，品牌投入会更看重投入产出。"
-  },
-  "https://www.searchenginejournal.com/the-traffic-pool-is-shrinking-and-which-channel-fills-it-matters-less-than-we-think/596346": {
-    "zh_title": "流量池在缩小，哪个渠道补位没那么重要",
-    "zh_oneliner": "与其纠结渠道归属，不如把有限流量高效转化成订单。"
-  },
-  "https://www.sellerlabs.com/blog/amazon-review-requests-ads": {
-    "zh_title": "要不要花钱让亚马逊帮你向买家要评价",
-    "zh_oneliner": "官方邀评服务值不值，关键看评价增长能不能带来真实转化。"
-  },
-  "https://ecommercenews.eu/eu-targets-online-sales-tricks-with-digital-fairness-act": {
-    "zh_title": "欧盟以《数字公平法案》打击网购套路",
-    "zh_oneliner": "误导性定价与暗黑设计将被重点监管，跨境卖家要提前合规。"
-  },
-  "https://www.practicalecommerce.com/usps-service-cuts-could-impact-merchants": {
-    "zh_title": "美国邮政削减服务或影响商家",
-    "zh_oneliner": "邮政服务收紧会抬高小商家的配送成本与时效风险。"
-  },
-  "https://ecommercenews.eu/sheins-total-investment-in-poland-reaches-1-billion-euros": {
-    "zh_title": "Shein 在波兰累计投资达 10 亿欧元",
-    "zh_oneliner": "快时尚巨头加码欧洲本地布局，供应链与合规都要跟上。"
-  },
-  "https://www.searchenginejournal.com/submit-website-chatgpt/596785": {
-    "zh_title": "如何把网站提交到 ChatGPT Business Hub",
-    "zh_oneliner": "想在 AI 对话里被推荐，商家要先完成商业信息的收录。"
-  },
-  "https://www.searchenginejournal.com/dont-let-a-tool-lead-your-ai-search-strategy-own-your-data-instead/596538": {
-    "zh_title": "别让工具主导 AI 搜索策略，先守住自己的数据",
-    "zh_oneliner": "AI 搜索时代，自己的商品与用户数据才是长期资产。"
-  },
-  "https://www.searchenginejournal.com/fix-ai-shopping-errors-writesonic-spa/595790": {
-    "zh_title": "AI 购物出错怎么办：先修好这些问题",
-    "zh_oneliner": "AI 推荐商品时信息错了会直接丢单，先把商品数据做准确。"
-  },
-  "https://www.printful.com/blog/design-trends": {
-    "zh_title": "2026 年值得印的 15 个 T 恤设计趋势",
-    "zh_oneliner": "按需打印卖家可以按这份趋势清单提前备设计。"
-  },
-  "https://www.modernretail.co/marketing/modern-retail-research-2026-creator-marketing-index-a-brand-guide-to-effective-social-media-campaigns": {
-    "zh_title": "2026 创作者营销指数：品牌社媒投放指南",
-    "zh_oneliner": "这份研究总结了创作者合作怎么做才有效，品牌方可照着排预算。"
-  },
-  "https://www.modernretail.co/operations/hims-hers-benefits-program-gruns-tonal-viome-medjet": {
-    "zh_title": "Hims & Hers 扩大 GLP-1 支持福利计划",
-    "zh_oneliner": "健康品牌把减重支持做成会员权益，联名品牌一起分摊成本。"
-  },
-  "https://www.glossy.co/podcasts/pov-beautys-mikayla-nogueira-unpacks-her-creator-brand-playbook-with-ceo-and-co-founder-ani-hadjinian": {
-    "zh_title": "美妆博主 Mikayla Nogueira 拆解创作者品牌打法",
-    "zh_oneliner": "头部博主聊自己的品牌怎么做，创作者转型卖货值得参考。"
-  },
-  "https://www.glossy.co/fashion/fashion-briefing-how-zara-larsson-charli-xcx-and-burning-suitcases-drove-a-boom-in-aways-aluminum-luggage-business": {
-    "zh_title": "时尚简报：明星效应如何带火 Away 铝制行李箱",
-    "zh_oneliner": "一场行李箱着火的事件反而成了品牌热度，明星联动功不可没。"
-  },
-  "https://www.digitalcommerce360.com/2026/11/11/lowes-partners-with-bilt-to-expand-loyalty-rewards-ai-powered-commerce": {
-    "zh_title": "Lowe’s 与 Bilt 合作扩大忠诚奖励与 AI 购物",
-    "zh_oneliner": "家居零售把忠诚计划与 AI 结合，让老客更愿意回购。"
-  },
-  "https://www.digitalcommerce360.com/2026/11/11/ebay-visual-identification-magical-listing-tool": {
-    "zh_title": "eBay 上架工具新增视觉识别功能",
-    "zh_oneliner": "拍张照片就能生成刊登信息，卖家上架的速度会更快。"
-  },
-  "https://www.retaildive.com/news/dicks-sporting-goods-foot-locker-signs-caitlin-clark/874141": {
-    "zh_title": "Dick’s 体育用品签下 Caitlin Clark",
-    "zh_oneliner": "体育零售商押注明星运动员带货，门店与线上一起造势。"
-  },
-  "https://neilpatel.com/blog/the-definitive-guide-to-lead-generation-form-optimization": {
-    "zh_title": "如何提高表单转化率并获得更多线索",
-    "zh_oneliner": "表单每少一步、每清晰一分，留下的潜在客户就多一分。"
-  },
-  "https://www.retaildive.com/news/capri-holdings-michael-kors-jimmy-choo-new-ceo-justin-boxford/874377": {
-    "zh_title": "Michael Kors 与 Jimmy Choo 母公司任命新 CEO",
-    "zh_oneliner": "奢侈品集团换帅，品牌与渠道策略可能随之调整。"
-  },
-  "https://www.retaildive.com/news/amazon-black-friday-cyber-monday-holiday-deals/874359": {
-    "zh_title": "亚马逊黑五与网一独家优惠创纪录",
-    "zh_oneliner": "大促的独家商品越来越多，卖家要提前抢好活动坑位。"
-  },
-  "https://www.retaildive.com/news/bed-bath-beyond-parent-to-close-maryland-distribution-center/874363": {
-    "zh_title": "Bed Bath & Beyond 母公司关闭马里兰配送中心",
-    "zh_oneliner": "家居零售收缩仓储网络，履约成本与速度要重新算账。"
-  },
-  "https://www.practicalecommerce.com/new-ecommerce-tools-november-11-2026": {
-    "zh_title": "新电商工具速览：2026 年 11 月 11 日",
-    "zh_oneliner": "每周一次的新工具盘点，帮商家快速发现提效的工具。"
-  },
-  "https://www.searchenginejournal.com/visibility-gets-you-on-the-list-evidence-helps-you-stay-there/592127": {
-    "zh_title": "曝光让你上榜，证据让你留下来",
-    "zh_oneliner": "在 AI 搜索里被提到只是第一步，真实口碑才能留住位置。"
-  },
-  "https://www.searchenginejournal.com/google-discovers-unexpected-patterns-in-ai-image-generation/596745": {
-    "zh_title": "Google 发现 AI 图片生成的意外规律",
-    "zh_oneliner": "AI 生成图片的规律会影响商品图的制作方式，值得留意。"
-  },
-  "https://www.ecommercetimes.com/story/why-blocking-ai-chatbots-can-leave-smbs-more-exposed-178718.html?rss=1": {
-    "zh_title": "屏蔽 AI 聊天机器人可能让中小商家更被动",
-    "zh_oneliner": "把 AI 爬虫挡在门外，也等于把 AI 带来的流量挡在门外。"
-  },
-  "https://ahrefs.com/blog/most-mentioned-brands-chatgpt": {
-    "zh_title": "ChatGPT 里被提到最多的 100 个品牌（2026 年 11 月）",
-    "zh_oneliner": "这份榜单能看出哪些品牌在 AI 对话里最有存在感。"
-  },
-  "https://www.searchenginejournal.com/google-ads-gives-you-more-channel-control-but-not-as-much-as-you-think/596266": {
-    "zh_title": "Google Ads 渠道优先级有上限：PMax 仍不让拆分的那些事",
-    "zh_oneliner": "最高效果广告的拆分限制还在，投手要按它的规则排预算。"
-  },
-  "https://www.printful.com/blog/best-quality-tshirts-for-printing": {
-    "zh_title": "2026 年最适合印花的 9 款优质 T 恤",
-    "zh_oneliner": "选对底衫是印花质量的第一步，这份清单可直接对照选品。"
-  },
-  "https://www.printful.com/blog/what-is-jacquard-knitting": {
-    "zh_title": "什么是提花针织：提花面料与毛衣指南",
-    "zh_oneliner": "想做针织品类的卖家，先搞懂提花工艺与成本。"
-  },
-  "https://www.printful.com/blog/sublimation-design-software": {
-    "zh_title": "热升华设计软件：10 款免费与付费选择",
-    "zh_oneliner": "做热升华定制，先挑一款顺手的设计软件。"
-  },
-  "https://www.printful.com/blog/t-shirt-design-software": {
-    "zh_title": "2026 年 12 款最佳 T 恤设计软件",
-    "zh_oneliner": "从设计到打样，选对工具能省下大量返工时间。"
-  },
-  "https://www.modernretail.co/operations/mattel-brings-barbie-hot-wheels-to-tiktok-shop": {
-    "zh_title": "美泰把芭比与风火轮带进 TikTok Shop",
-    "zh_oneliner": "玩具大牌正式入驻短视频电商，直播与短视频是主阵地。"
-  },
-  "https://www.glossy.co/beauty/maybelline-love-island-usa-lifter-gel": {
-    "zh_title": "美宝莲第三年入驻《爱情岛》别墅内幕",
-    "zh_oneliner": "美妆品牌把综艺场景做成长期种草阵地。"
-  },
-  "https://www.glossy.co/beauty/wellness/wellness-briefing-why-ulta-beauty-is-racing-toward-wearables-plus-news": {
-    "zh_title": "健康简报：Ulta Beauty 为何急着布局可穿戴设备",
-    "zh_oneliner": "美妆零售向健康赛道延伸，可穿戴成为新的增长点。"
-  },
-  "https://www.searchenginejournal.com/meta-paused-its-new-business-terms-and-businesses-should-plan-as-if-it-never-gets-better/596343": {
-    "zh_title": "Meta 暂停新商务条款，商家要按最坏情况做打算",
-    "zh_oneliner": "平台条款说变就变，依赖单一渠道的商家要留好后路。"
-  },
-  "https://www.retaildive.com/news/cybersecurity-grocery-refrigeration-attacks/874270": {
-    "zh_title": "美国政府着手防范制冷系统网络攻击",
-    "zh_oneliner": "零售冷链也成了网络安全议题，相关商家要关注合规要求。"
-  },
-  "https://www.searchenginejournal.com/google-november-2026-core-update/596614": {
-    "zh_title": "Google 2026 年 11 月核心更新开始推送",
-    "zh_oneliner": "搜索排名要波动一阵子，商家先别急着大改页面。"
-  },
-  "https://www.searchenginejournal.com/google-expands-ads-in-ai-mode-multiturn-ads/596540": {
-    "zh_title": "Google Ads 在 AI Mode 新增覆盖 10 个国家",
-    "zh_oneliner": "AI 搜索里的广告位继续扩大，出海商家要跟上。"
-  },
-  "https://www.searchenginejournal.com/forget-keywords-well-what-are-you-replacing-them-with/596349": {
-    "zh_title": "“关键词已死”，那你用什么替代它",
-    "zh_oneliner": "关键词思维过时了，取而代之的是意图与内容质量。"
-  },
-  "https://www.modernretail.co/announcement/awards/the-next-gen-store-awards-how-anthropologie-diptyque-and-others-are-transforming-the-in-store-experience": {
-    "zh_title": "新一代门店奖：Anthropologie 等如何改造线下体验",
-    "zh_oneliner": "线下门店的体验升级有了可抄的作业。"
-  },
-  "https://www.digitalcommerce360.com/2026/11/10/e-l-f-beauty-q2-sales-grow-51-as-it-embraces-digital-platforms": {
-    "zh_title": "e.l.f. 美妆二季度销售额增长 51%，数字化是关键",
-    "zh_oneliner": "平价美妆靠数字渠道拉动增长，值得同行参考。"
-  },
-  "https://www.searchenginejournal.com/google-releases-modern-web-guidance-1-0-for-ai-coding-agents/596495": {
-    "zh_title": "Google 发布面向 AI 编程智能体的现代网络指南 1.0",
-    "zh_oneliner": "网站要按新规范来写，AI 智能体才能顺利抓取与操作。"
-  },
-  "https://ahrefs.com/blog/where-does-chatgpt-get-its-information": {
-    "zh_title": "ChatGPT 的信息从哪来：4 个来源解析",
-    "zh_oneliner": "搞清 AI 的信息来源，才能让自家品牌被它引用。"
-  },
-  "https://ecommercenews.eu/european-council-approves-vat-simplification-for-online-sales": {
-    "zh_title": "欧洲理事会批准网售增值税简化方案",
-    "zh_oneliner": "跨境卖家报税的流程有望简化，合规成本可能下降。"
-  },
-  "https://www.searchenginejournal.com/good-vs-bad-pseo-learnings-from-a-decade-of-building-scalable-content-engines/594204": {
-    "zh_title": "好的与坏的程序化 SEO：十年搭建经验",
-    "zh_oneliner": "批量做内容页面，质量把控才是能不能起量的分水岭。"
-  },
-  "https://www.modernretail.co/operations/brands-briefing-dr-martens-revamps-stores-to-kickstart-growth-and-recontextualize-the-brand": {
-    "zh_title": "品牌简报：Dr. Martens 翻新门店重启增长",
-    "zh_oneliner": "老牌通过门店改造重新讲品牌故事。"
-  },
-  "https://blog.hubspot.com/marketing/aeo-benchmarking": {
-    "zh_title": "AEO 对标：市场数据揭示 AI 搜索真相",
-    "zh_oneliner": "拿自家品牌在 AI 搜索里的表现跟同行比一比。"
-  },
-  "https://www.sellerlabs.com/blog/posting-daily-no-leads-linkedin-ai-content": {
-    "zh_title": "天天发帖却没线索：我的领英数据怎么说",
-    "zh_oneliner": "AI 生成的内容发得多不等于有效，数据会说实话。"
-  },
-  "https://blog.hubspot.com/marketing/how-to-use-ai-to-write-a-blog-post": {
-    "zh_title": "如何用 AI 写出不水的博客文章",
-    "zh_oneliner": "AI 写作要有人把关，写出真正有用的内容才行。"
-  },
-  "https://www.practicalecommerce.com/optimize-youtube-videos-for-chatgpt": {
-    "zh_title": "为 ChatGPT 优化 YouTube 视频",
-    "zh_oneliner": "视频内容也要考虑被 AI 引用，标题与描述要写清楚。"
-  },
-  "https://www.searchenginejournal.com/jon-miller-ai-marketing-automation/596446": {
-    "zh_title": "Jon Miller 谈 AI 与营销自动化的未来",
-    "zh_oneliner": "营销自动化正在被 AI 重写，流程设计要跟着变。"
-  },
-  "https://www.searchenginejournal.com/meta-pauses-updated-business-ad-terms/596493": {
-    "zh_title": "Meta 暂缓原定 11 月 20 日生效的新商务与广告条款",
-    "zh_oneliner": "条款暂缓执行，商家仍要按原计划准备合规材料。"
-  },
-  "https://www.glossy.co/beauty/beauty-briefing-how-sephora-is-banking-on-expertise": {
-    "zh_title": "美妆简报：丝芙兰如何押注专业服务",
-    "zh_oneliner": "美妆零售靠专业顾问留住顾客，服务本身就是卖点。"
-  },
-  "https://www.glossy.co/beauty/k-beauty-brand-laneige-bets-on-experiential-retail-with-new-lip-mask-station": {
-    "zh_title": "韩妆品牌兰芝押注体验零售，推出唇膜体验站",
-    "zh_oneliner": "线下体验站把试用变成购买理由。"
-  },
-  "https://www.digitalcommerce360.com/2026/11/09/under-armour-sales-q2-2027": {
-    "zh_title": "安德玛二季度销售额下滑，CEO 仍看好 AI",
-    "zh_oneliner": "运动品牌业绩承压，把希望寄托在 AI 带来的效率上。"
-  },
-  "https://www.glossy.co/sponsored/brands-are-putting-youtube-front-and-center-in-their-holiday-marketing-strategies": {
-    "zh_title": "品牌把 YouTube 放在假日营销的中心位置",
-    "zh_oneliner": "长视频成为节日营销的主力渠道，预算正在向它倾斜。"
-  },
-  "https://www.digitalcommerce360.com/2026/11/09/the-childrens-place-bankruptcy-filing-sets-bidding-in-december": {
-    "zh_title": "The Children’s Place 破产申请，12 月启动竞拍",
-    "zh_oneliner": "童装零售商进入破产程序，品牌与门店资产将易主。"
-  },
-  "https://neilpatel.com/blog/ubersuggest-vs-moz": {
-    "zh_title": "Ubersuggest 与 MOZ：SEO 工具对比",
-    "zh_oneliner": "两款 SEO 工具各有侧重，按团队需求选就行。"
-  },
-  "https://www.modernretail.co/operations/exclusive-tiktok-shop-launches-a-paid-premium-tier-for-1m-of-its-top-us-shoppers": {
-    "zh_title": "独家：TikTok Shop 为百万美国头部用户推出付费高级会员",
-    "zh_oneliner": "平台用付费会员绑定高消费用户，商家可借势做专属活动。"
-  },
-  "https://www.practicalecommerce.com/google-ads-loosens-channel-restrictions": {
-    "zh_title": "Google Ads 放宽渠道限制",
-    "zh_oneliner": "广告渠道的限制松了，投放组合可以更灵活。"
-  },
-  "https://woocommerce.com/posts/woo-latest-security": {
-    "zh_title": "我们去查了：Woo 自 6 月以来在安全上做了什么",
-    "zh_oneliner": "电商建站平台的安全改进，店主升级前值得一看。"
-  },
-  "https://www.digitalcommerce360.com/2026/11/09/on-balancing-speed-and-security-for-smarter-payments": {
-    "zh_title": "更快与更安全之间：如何做好智能支付",
-    "zh_oneliner": "支付既要快又要防欺诈，平衡点在风控设计上。"
-  },
-  "https://www.digitalcommerce360.com/2026/11/09/card-not-present-fraud-is-evolving-is-payment-security-keeping-up": {
-    "zh_title": "无卡支付欺诈在进化，支付安全跟得上吗",
-    "zh_oneliner": "远程支付欺诈手法在变，商家的风控也要升级。"
-  },
-  "https://www.modernretail.co/operations/how-azunas-strong-supply-chain-fuels-its-9-figure-sales": {
-    "zh_title": "Azuna 靠强大的供应链撑起九位数销售额",
-    "zh_oneliner": "供应链稳定是规模化的底气，值得中小品牌学习。"
-  },
-  "https://www.sellerlabs.com/blog/perfect-takes-forever-amazon-listing-images": {
-    "zh_title": "完美没有尽头：亚马逊刊登图片的 100 件法则",
-    "zh_oneliner": "上架图片不必追求完美，先按规则跑起来再优化。"
-  },
-  "https://ecommercenews.eu/almost-half-of-eu-online-spending-abroad-goes-to-fashion": {
-    "zh_title": "欧盟近半跨境网购支出流向时尚品类",
-    "zh_oneliner": "时尚仍是欧洲跨境电商的主力，选品可优先考虑。"
-  },
-  "https://blog.hubspot.com/marketing/branded-vs-unbranded-prompt-tracking": {
-    "zh_title": "AI 搜索里的品牌词与非品牌词：如何追踪",
-    "zh_oneliner": "在 AI 回答里，品牌词与品类词的曝光要分开看。"
-  },
-  "https://ecommercenews.eu/partner-sales-on-bol-continue-growing": {
-    "zh_title": "Bol 平台第三方卖家销售额持续增长",
-    "zh_oneliner": "荷兰电商平台的第三方生态在扩大，入驻窗口值得关注。"
-  },
-  "https://blog.google/products-and-platforms/products/shopping/holiday-100-gift-guide-2026": {
-    "zh_title": "假日百大礼物指南：今年最热门的礼物",
-    "zh_oneliner": "按这份榜单备货，假日季的选品方向更明确。"
-  },
-  "https://www.glossy.co/beauty/wellness/ulta-beauty-oura-ring-health-tracking": {
-    "zh_title": "独家：Ulta Beauty 在 1000 家门店押注 Oura 健康追踪",
-    "zh_oneliner": "美妆零售把健康追踪设备搬进门店，跨界合作在加速。"
-  },
-  "https://www.shipbob.com/blog/shipbob-flexible-fulfillment": {
-    "zh_title": "ShipBob 对复杂履约是不是太死板？商家如何定制",
-    "zh_oneliner": "履约服务要能按商家需求定制，否则规模上去了也难用。"
-  },
-  "https://www.modernretail.co/operations/poppi-founder-allison-ellsworth-on-launching-jetty-a-new-hydration-brand": {
-    "zh_title": "Poppi 创始人谈推出新补水品牌 Jetty",
-    "zh_oneliner": "成功创始人再创业，品牌打法仍值得借鉴。"
-  },
-  "https://www.practicalecommerce.com/who-owns-an-ai-agents-mistakes": {
-    "zh_title": "AI 智能体犯了错，责任算谁的",
-    "zh_oneliner": "商家用 AI 智能体做客服与运营，出问题后的责任边界要先想清楚。"
-  },
-  "https://www.glossy.co/fashion/inside-oner-actives-tequila-scented-new-flagship-in-nyc": {
-    "zh_title": "走进 Oner Active 纽约新旗舰店：龙舌兰香氛体验",
-    "zh_oneliner": "运动品牌用气味与场景做旗舰店，线下体验越来越讲究。"
-  },
-  "https://www.sellerlabs.com/blog/amazon-dsp-explained-drive-more-traffic-mike-begg": {
-    "zh_title": "亚马逊 DSP 详解：如何带来更多流量",
-    "zh_oneliner": "站外广告投放是亚马逊卖家拉新流量的常用手段。"
-  },
-  "https://www.modernretail.co/podcasts/how-delivery-apps-came-to-be-discovery-platforms": {
-    "zh_title": "外卖应用如何变成“发现平台”",
-    "zh_oneliner": "配送应用不只是送货，也成了用户发现新品牌的地方。"
-  },
-  "https://www.digitalcommerce360.com/2026/11/06/gme-acquires-regional-rival-commercial-supply-co": {
-    "zh_title": "GME 收购地区竞争对手 Commercial Supply Co.",
-    "zh_oneliner": "分销商通过并购扩大区域覆盖，行业整合在继续。"
-  },
-  "https://neilpatel.com/blog/answerthepublic-trending-keywords": {
-    "zh_title": "AnswerThePublic 热门关键词：谷歌与 YouTube 上正在涨什么",
-    "zh_oneliner": "用趋势关键词工具找选题，内容与选品都能沾光。"
-  },
-  "https://woocommerce.com/posts/ecommerce-analytics-tools": {
-    "zh_title": "选电商分析工具，先看问题再看功能",
-    "zh_oneliner": "工具不在多，能回答经营问题的才是好工具。"
-  },
-  "https://blog.hubspot.com/marketing/marketing-automation-challenges": {
-    "zh_title": "营销自动化的障碍及修复方法（2026）",
-    "zh_oneliner": "自动化流程跑不顺，多半是数据与规则没理清。"
-  },
-  "https://blog.hubspot.com/marketing/scrunch-vs-ahrefs": {
-    "zh_title": "Scrunch 与 Ahrefs：AI 可见度追踪对比",
-    "zh_oneliner": "两款工具都测品牌在 AI 回答里的曝光，侧重点不同。"
-  },
-  "https://www.practicalecommerce.com/my-ai-bots-for-email-seo-reports-more": {
-    "zh_title": "我的 AI 机器人：邮件、SEO、报表全包",
-    "zh_oneliner": "把重复工作交给 AI 机器人，人只做判断与决策。"
-  },
-  "https://www.sellerlabs.com/blog/amazon-demographic-data-fix-your-listing-ruben-alikhanyan": {
-    "zh_title": "用亚马逊人群数据修好你的刊登",
-    "zh_oneliner": "看懂买家人群画像，再回头改标题与图片。"
-  },
-  "https://www.modernretail.co/marketing/foot-locker-puts-employees-front-and-center-in-its-holiday-campaign": {
-    "zh_title": "Foot Locker 让员工站到假日营销前台",
-    "zh_oneliner": "让一线员工出镜，品牌故事更真实可信。"
-  },
-  "https://ecommercenews.eu/eu-commission-approves-takeover-ceconomy-by-jd-com": {
-    "zh_title": "欧盟批准京东收购 Ceconomy",
-    "zh_oneliner": "京东的欧洲布局再进一步，跨境卖家要关注新渠道。"
-  },
-  "https://www.glossy.co/podcasts/glossy-podcast-after-his-12th-cfda-award-what-makes-ralph-lauren-such-an-icon-of-american-fashion": {
-    "zh_title": "播客：拿下第 12 个 CFDA 奖后，Ralph Lauren 为何仍是美式时尚标杆",
-    "zh_oneliner": "老牌的设计与品牌经营，值得时尚从业者反复琢磨。"
-  },
-  "https://www.glossy.co/fashion/luxury/luxury-briefing-ralph-lauren-marketing-coach-black-friday": {
-    "zh_title": "奢侈品简报：Ralph Lauren 卖“营销梦”不设上限",
-    "zh_oneliner": "奢侈品牌卖的不只是产品，还有生活方式的想象。"
-  },
-  "https://www.glossy.co/pop/glossy-pop-newsletter-depop-is-hosting-over-2000-campus-events-this-fall": {
-    "zh_title": "Depop 今秋在校园举办超 2000 场活动",
-    "zh_oneliner": "二手平台深入校园做活动，年轻用户是增长关键。"
-  },
-  "https://www.digitalcommerce360.com/2026/11/05/bark-revenue-falls-despite-commerce-growth-resuming-in-q2": {
-    "zh_title": "Bark 营收下滑，尽管电商业务二季度恢复增长",
-    "zh_oneliner": "宠物品牌营收与电商增长不同步，渠道结构值得细看。"
-  },
-  "https://www.shipbob.com/blog/bondiboost": {
-    "zh_title": "BondiBoost 如何用 ShipBob 保持 98% 准时履约",
-    "zh_oneliner": "准时率与准确的送达预估，是复购率的隐形推手。"
-  },
-  "https://www.glossy.co/beauty/interparfums-inc-to-launch-new-off-white-longchamp-fragrances-in-2027": {
-    "zh_title": "Interparfums 将于 2027 年推出 Off-White 与 Longchamp 新香水",
-    "zh_oneliner": "授权香水业务继续扩品，品牌联名仍是增长点。"
-  },
-  "https://blog.hubspot.com/marketing/rag-in-ai": {
-    "zh_title": "AI 里的 RAG 是什么：给营销人的通俗指南",
-    "zh_oneliner": "搞懂检索增强生成，营销人才能用好 AI 工具。"
-  },
-  "https://ecommercenews.eu/zalando-sees-new-revenue-potential-in-external-shops": {
-    "zh_title": "Zalando 看到外部店铺的新收入潜力",
-    "zh_oneliner": "欧洲时尚平台把自家能力开放给外部商家，生态在扩大。"
-  },
-  "https://www.sellerlabs.com/blog/most-people-think-ai-is-a-chatbot": {
-    "zh_title": "多数人以为 AI 就是聊天机器人，这是个昂贵的误解",
-    "zh_oneliner": "把 AI 只当客服用，会错过它在运营上的更大价值。"
-  },
-  "https://www.ecommercetimes.com/story/what-ai-search-tells-customers-about-your-brand-178715.html?rss=1": {
-    "zh_title": "AI 搜索会向顾客透露你品牌的哪些信息",
-    "zh_oneliner": "AI 回答里的品牌形象，正在变成新的门面。"
-  },
-  "https://www.practicalecommerce.com/5-content-marketing-ideas-for-december-2026": {
-    "zh_title": "2026 年 12 月的 5 个内容营销点子",
-    "zh_oneliner": "年底的内容日历可以照着这几个方向排。"
-  },
-  "https://www.glossy.co/podcasts/how-is-cvs-sneaking-brands-into-its-stores-without-brand-approval": {
-    "zh_title": "CVS 如何在未获品牌许可的情况下把品牌放进门店",
-    "zh_oneliner": "零售渠道与品牌授权之间的灰色地带值得警惕。"
-  },
-  "https://www.glossy.co/fashion/fashion-briefing-as-ai-content-takes-over-brands-embrace-hand-drawn-animation-for-holiday": {
-    "zh_title": "时尚简报：AI 内容泛滥之际，品牌拥抱手绘动画过节",
-    "zh_oneliner": "越是 AI 内容多，手绘的温度越显得稀缺。"
-  },
-  "https://stripe.com/blog/analyze-your-stripe-data-directly-with-your-agent": {
-    "zh_title": "直接用智能体分析你的 Stripe 数据",
-    "zh_oneliner": "支付数据不用导出表格，问智能体就能得到结论。"
-  },
-  "https://www.glossy.co/beauty/rhodes-european-summer-fuels-51-sales-spike-for-e-l-f-beauty": {
-    "zh_title": "Rhode 的欧洲夏季推动 e.l.f. 美妆销售额激增 51%",
-    "zh_oneliner": "品牌出海欧洲见效，区域市场值得投入。"
-  },
-  "https://www.glossy.co/beauty/revolve-cardi-b-grow-good-beauty-earnings": {
-    "zh_title": "Cardi B 的护发品牌为 Revolve 带来新客",
-    "zh_oneliner": "明星品牌入驻平台，能直接带来增量用户。"
-  },
-  "https://neilpatel.com/blog/xml-sitemap": {
-    "zh_title": "XML 网站地图优化：如何提升可抓取性",
-    "zh_oneliner": "地图做对了，搜索引擎才能顺利收录商品页。"
-  },
-  "https://www.practicalecommerce.com/new-ecommerce-tools-november-4-2026": {
-    "zh_title": "新电商工具速览：2026 年 11 月 4 日",
-    "zh_oneliner": "每周一次的新工具盘点，帮商家快速发现提效的工具。"
-  },
-  "https://www.sellerlabs.com/blog/amazon-mcp-ai-inventory-tools-guide": {
-    "zh_title": "什么是亚马逊 MCP？卖家 AI 库存工具指南",
-    "zh_oneliner": "亚马逊的 MCP 接口让 AI 工具能直接操作库存数据。"
-  },
-  "https://blog.hubspot.com/marketing/aeo-keyword-gap-analysis": {
-    "zh_title": "如何找到并补上 AEO 关键词缺口",
-    "zh_oneliner": "AI 搜索时代，关键词缺口就是流量缺口。"
-  },
-  "https://blog.hubspot.com/marketing/ai-search-industry-benchmarks": {
-    "zh_title": "如何把 AI 搜索表现与同行对标",
-    "zh_oneliner": "先找到行业基准，再判断自家品牌处在什么位置。"
-  },
-  "https://www.glossy.co/research/glossy-research-marketers-express-revenue-optimism-for-2026-holiday-season-despite-economic-pressures": {
-    "zh_title": "调研：尽管经济承压，营销人仍看好 2026 假日季营收",
-    "zh_oneliner": "假日季的预算没有缩水，品牌方普遍乐观。"
-  },
-  "https://www.glossy.co/beauty/wellness/the-5-consumer-archetypes-driving-the-2-7-trillion-wellness-industry-today-plus-news": {
-    "zh_title": "驱动 2.7 万亿美元健康产业的 5 类消费者",
-    "zh_oneliner": "搞清健康消费者的画像，选品与营销才有方向。"
-  },
-  "https://ahrefs.com/blog/openai-publisher-partnerships": {
-    "zh_title": "OpenAI 的每个出版商合作，以及 ChatGPT 引用它们的频率",
-    "zh_oneliner": "内容合作方在 AI 回答里的引用率差别很大。"
-  },
-  "https://www.practicalecommerce.com/find-site-errors-with-ai-before-ads-run": {
-    "zh_title": "投广告前，先用 AI 找出网站错误",
-    "zh_oneliner": "落地页有错再投广告，钱就白花了。"
-  },
-  "https://ahrefs.com/blog/aeo-geo-experts": {
-    "zh_title": "2026 年值得关注的 25 位 AEO/GEO 专家",
-    "zh_oneliner": "想跟上 AI 搜索，先关注这批一线专家。"
-  },
-  "https://blog.hubspot.com/marketing/claude-integrations": {
-    "zh_title": "值得加入 GTM 技术栈的 Claude 集成",
-    "zh_oneliner": "把 Claude 接进营销工具链，执行效率会明显提升。"
-  },
-  "https://www.sellerlabs.com/blog/chatbot-diy-agent-or-personal-agent": {
-    "zh_title": "聊天机器人、自建智能体还是个人助理：亚马逊卖家该用哪种 AI",
-    "zh_oneliner": "不同阶段的卖家，适合的 AI 助手类型也不同。"
-  },
-  "https://ahrefs.com/blog/mention-types-ai-visibility": {
-    "zh_title": "哪种提及与 AI 可见度相关性最强（分析 2.6 亿条 AI 提示）",
-    "zh_oneliner": "数据告诉你，什么样的品牌提及最能换来 AI 曝光。"
-  },
-  "https://ahrefs.com/blog/clearscope-alternatives": {
-    "zh_title": "10 款 Clearscope 替代品（价格、API 与 MCP 对比）",
-    "zh_oneliner": "内容优化工具不止一家，按预算与接入方式选。"
-  },
-  "https://ecommercenews.eu/dhl-introduces-fee-for-second-delivery-attempt": {
-    "zh_title": "DHL 对第二次派送尝试开始收费",
-    "zh_oneliner": "跨境物流成本又多一项，商家要算进定价里。"
-  },
-  "https://www.shipbob.com/blog/fall-26-release": {
-    "zh_title": "ShipBob 2026 秋季更新：机器人、退货与 Bobby 等旺季功能",
-    "zh_oneliner": "履约商在旺季前集中上新，机器人与退货是重点。"
-  },
-  "https://www.shipbob.com/blog/ai-fulfillment-strategies-from-tuft-paw": {
-    "zh_title": "Tuft & Paw 的 3 个 AI 履约策略（基于 ShipBob MCP）",
-    "zh_oneliner": "把 AI 接进履约系统，补货与发货都能更主动。"
-  },
-  "https://blog.hubspot.com/marketing/ai-maturity": {
-    "zh_title": "营销 AI 成熟度：研究揭示了什么",
-    "zh_oneliner": "多数团队的 AI 应用还停在初级阶段，差距就是机会。"
-  },
-  "https://blog.hubspot.com/marketing/scrunch-vs-semrush": {
-    "zh_title": "Scrunch 与 Semrush：谁更擅长追踪 AI 可见度",
-    "zh_oneliner": "两款工具测 AI 曝光的方式不同，按需求选。"
-  },
-  "https://www.practicalecommerce.com/html-vs-xml-sitemaps-for-ecommerce": {
-    "zh_title": "电商网站该用 HTML 还是 XML 网站地图",
-    "zh_oneliner": "两种地图各有用途，商品站最好两个都做。"
-  },
-  "https://woocommerce.com/posts/strategies-how-use-coupons-discounts-without-sacrificing-profits": {
-    "zh_title": "设计能自我回本的折扣，守住利润率",
-    "zh_oneliner": "折扣不是越狠越好，算好账再降价。"
-  },
-  "https://www.ecommercetimes.com/story/ai-shopping-agents-put-retailers-data-to-the-test-178711.html?rss=1": {
-    "zh_title": "AI 购物智能体正在考验零售商的数据",
-    "zh_oneliner": "商品数据不规范，AI 智能体就推不动你的货。"
-  },
-  "https://ecommercenews.eu/brussels-approves-temus-action-plan": {
-    "zh_title": "布鲁塞尔批准 Temu 的整改行动计划",
-    "zh_oneliner": "Temu 的合规整改过关，欧洲业务可以继续推进。"
-  },
-  "https://www.practicalecommerce.com/chatgpt-sends-1-in-5-orders-to-florist": {
-    "zh_title": "花店每 5 单就有 1 单来自 ChatGPT",
-    "zh_oneliner": "AI 对话已经成为实实在在的订单来源。"
-  },
-  "https://www.sellerlabs.com/blog/amazon-risk-check-most-sellers-skip-lesley-hensell": {
-    "zh_title": "多数卖家跳过的亚马逊风险检查",
-    "zh_oneliner": "账号风险平时不查，出事时再补救就晚了。"
-  },
-  "https://woocommerce.com/posts/peak-season-conversions": {
-    "zh_title": "回答好购物者的问题，旺季转化率自然涨",
-    "zh_oneliner": "问答内容做扎实，犹豫的顾客更容易下单。"
-  },
-  "https://ahrefs.com/blog/bluf": {
-    "zh_title": "什么是 BLUF？如何先写结论（附免费改写工具）",
-    "zh_oneliner": "内容先给结论，读者与 AI 都更喜欢。"
-  },
-  "https://www.practicalecommerce.com/i-built-a-voice-bot-for-customer-calls": {
-    "zh_title": "我做了一个接客户电话的语音机器人",
-    "zh_oneliner": "语音机器人接电话的实战记录，值得想降本的商家看。"
-  },
-  "https://ecommercenews.eu/winners-becom-awards-2026-announced": {
-    "zh_title": "Becom Awards 2026 获奖名单公布",
-    "zh_oneliner": "欧洲电商奖项揭晓，获奖打法可作参考。"
-  },
-  "https://www.sellerlabs.com/blog/blind-spots-costing-amazon-sellers-money-aaron-conant": {
-    "zh_title": "让亚马逊卖家亏钱的盲点",
-    "zh_oneliner": "费用与库存里的隐形亏损，多数卖家平时注意不到。"
-  },
-  "https://neilpatel.com/blog/answer-engine-optimization": {
-    "zh_title": "答案引擎优化：如何提升 AI 可见度",
-    "zh_oneliner": "想在 AI 回答里出现，内容结构要先改。"
-  },
-  "https://stripe.com/blog/stripe-on-stripe-what-we-learned-moving-1b-in-vendor-payments-to-global-payouts": {
-    "zh_title": "Stripe 自己的经验：把 10 亿美元供应商付款迁到 Global Payouts 学到了什么",
-    "zh_oneliner": "大额跨境付款的迁移经验，对平台型商家有参考价值。"
-  },
-  "https://ahrefs.com/blog/how-stable-are-ai-citations": {
-    "zh_title": "AI 引用有多稳定？追踪 37500 条引用学到的 10 件事",
-    "zh_oneliner": "AI 引用并不稳定，品牌曝光要持续维护。"
-  },
-  "https://www.practicalecommerce.com/marketers-guide-to-late-bfcm-email": {
-    "zh_title": "黑五网一后期邮件营销指南",
-    "zh_oneliner": "大促后半程的邮件还能再捞一波订单。"
-  },
-  "https://blog.hubspot.com/marketing/chatgpt-ads-vs-google-search-ads": {
-    "zh_title": "ChatGPT 广告与谷歌搜索广告：策略上要考虑的 5 点不同",
-    "zh_oneliner": "两种广告的投放逻辑不同，预算要分开算。"
-  },
-  "https://blog.hubspot.com/marketing/claude-marketing-plugin": {
-    "zh_title": "2026 年值得加入营销工具栈的 Claude 插件",
-    "zh_oneliner": "把 Claude 插件接进日常流程，内容与投放都能提速。"
-  },
-  "https://neilpatel.com/blog/teach-content-strategy-to-stakeholders": {
-    "zh_title": "如何向不懂营销的利益相关方讲清内容策略",
-    "zh_oneliner": "内容策略要讲业务结果，而不是营销术语。"
-  },
-  "https://blog.hubspot.com/marketing/how-often-to-run-prompt-tracking": {
-    "zh_title": "AEO 提示追踪多久跑一次：频率指南",
-    "zh_oneliner": "AI 搜索的追踪频率要跟得上模型更新节奏。"
-  },
-  "https://blog.hubspot.com/marketing/profound-vs-peec-ai": {
-    "zh_title": "Profound 与 Peec AI：哪个适合你的团队",
-    "zh_oneliner": "两款 AI 可见度工具定位不同，按团队规模选。"
-  },
-  "https://www.practicalecommerce.com/new-ecommerce-tools-october-28-2026": {
-    "zh_title": "新电商工具速览：2026 年 10 月 28 日",
-    "zh_oneliner": "每周一次的新工具盘点，帮商家快速发现提效的工具。"
-  },
-  "https://ahrefs.com/blog/google-ai-mode": {
-    "zh_title": "Google AI Mode：你需要知道的一切",
-    "zh_oneliner": "AI 模式正在改变搜索流量，商家要提前适应。"
-  },
-  "https://ahrefs.com/blog/new-features-september-2026": {
-    "zh_title": "AI 可发现性、页面类型等（2026 年 9 月）",
-    "zh_oneliner": "哪些页面类型最容易被 AI 发现，这份总结讲清楚了。"
-  },
-  "https://blog.hubspot.com/marketing/profound-vs-semrush": {
-    "zh_title": "Profound 与 Semrush 的 AEO 对比：专精还是套件",
-    "zh_oneliner": "做 AEO 是选专精工具还是全能套件，看团队现状。"
-  },
-  "https://blog.hubspot.com/marketing/aeo-analysis-tools": {
-    "zh_title": "AEO 分析工具测评：2026 年真正好用的是哪些",
-    "zh_oneliner": "市面上的 AEO 工具测了一圈，好用的就那么几款。"
-  },
-  "https://www.practicalecommerce.com/color-works-only-through-contrast": {
-    "zh_title": "色彩只有靠对比才有效",
-    "zh_oneliner": "商品页配色讲对比，视觉层次比颜色本身重要。"
-  },
-  "https://woocommerce.com/posts/subscription-churn-strategies": {
-    "zh_title": "订阅流失：把留存洞察变成持续收入增长",
-    "zh_oneliner": "订阅业务的增长关键在留存，不在拉新。"
-  },
-  "https://stripe.com/blog/how-the-fastest-growing-enterprises-on-stripe-scale-globally": {
-    "zh_title": "Stripe 上增长最快的企业如何全球扩张",
-    "zh_oneliner": "增长快的企业在支付与合规上都有共性打法。"
-  },
-  "https://neilpatel.com/blog/ubersuggest-inside-claude": {
-    "zh_title": "Ubersuggest 已接入 Claude，它到底能做什么",
-    "zh_oneliner": "SEO 工具住进 AI 对话里，查数据的方式变了。"
-  },
-  "https://www.practicalecommerce.com/seo-vs-geo-which-to-prioritize": {
-    "zh_title": "SEO 与 GEO：优先做哪个",
-    "zh_oneliner": "传统搜索与 AI 搜索的优化，预算分配要想清楚。"
-  },
-  "https://woocommerce.com/posts/how-to-scale-small-business": {
-    "zh_title": "电商规模化：增长销量而不丢利润",
-    "zh_oneliner": "规模做大容易亏，利润率要跟着算。"
-  },
-  "https://blog.hubspot.com/marketing/create-claude-skills": {
-    "zh_title": "如何创建 Claude Skills：团队真正需要的是什么",
-    "zh_oneliner": "给 AI 写技能要从团队的实际工作流出发。"
-  },
-  "https://www.shipbob.com/blog/annas-wild-yam-cream": {
-    "zh_title": "ANNA’S 野生山药霜如何靠拓展美国市场提升转化 36%、缩短发货时间 71%",
-    "zh_oneliner": "品牌出海美国，转化与物流可以同时改善。"
-  },
-  "https://www.practicalecommerce.com/usps-can-bill-sellers-for-foreign-duties": {
-    "zh_title": "美国邮政可向卖家收取外国关税",
-    "zh_oneliner": "跨境卖家的关税成本可能多一笔，要提前核算。"
-  },
-  "https://blog.hubspot.com/marketing/profound-vs-bluefish": {
-    "zh_title": "Profound 与 Bluefish AI 的 AEO 对比：营销人选哪个",
-    "zh_oneliner": "两款 AEO 工具的打法不同，按营销目标选。"
-  },
-  "https://neilpatel.com/blog/4-ps-of-marketing": {
-    "zh_title": "营销 4P：产品、价格、渠道与推广",
-    "zh_oneliner": "经典框架不过时，新手做营销先从这里入门。"
-  },
-  "https://blog.hubspot.com/marketing/ai-content-gaps": {
-    "zh_title": "如何找到影响 AI 可见度的内容缺口",
-    "zh_oneliner": "内容缺口找出来，AI 曝光才有提升空间。"
-  },
-  "https://blog.hubspot.com/marketing/which-prompts-to-track": {
-    "zh_title": "该追踪哪些 AI 提示：实用指南",
-    "zh_oneliner": "不是所有提示都值得追踪，先挑与业务相关的。"
-  },
-  "https://blog.hubspot.com/marketing/ahrefs-vs-profound": {
-    "zh_title": "Ahrefs Brand Radar 与 Profound：哪个适合你的团队",
-    "zh_oneliner": "品牌在 AI 里的曝光，两款工具测的角度不同。"
-  },
-  "https://blog.hubspot.com/marketing/llm-visibility-tools": {
-    "zh_title": "8 款 LLM 可见度工具，追踪品牌在答案引擎里的表现",
-    "zh_oneliner": "想知道品牌在 AI 回答里出现多少次，用这批工具。"
-  },
-  "https://www.practicalecommerce.com/agency-founder-touts-youtube-tv-ads": {
-    "zh_title": "代理公司创始人看好 YouTube 电视广告",
-    "zh_oneliner": "大屏广告正在成为品牌投放的新选择。"
-  },
-  "https://blog.hubspot.com/marketing/profound-vs-scrunch": {
-    "zh_title": "Profound 与 Scrunch：哪款 AEO 工具适合你的团队",
-    "zh_oneliner": "AEO 工具选型要看团队规模与预算。"
-  },
-  "https://blog.hubspot.com/marketing/build-ai-agent": {
-    "zh_title": "如何搭建 AI 智能体：从目标到上线",
-    "zh_oneliner": "做智能体要先定目标，再谈技术实现。"
-  },
-  "https://www.practicalecommerce.com/ai-shopping-metrics-considered": {
-    "zh_title": "AI 购物指标怎么看",
-    "zh_oneliner": "AI 带来的流量与订单，要用新的指标衡量。"
-  },
-  "https://stripe.com/blog/trends-from-money20-20-2026-the-rise-of-hidden-financial-services": {
-    "zh_title": "Money20/20 2026 趋势：“隐形”金融服务崛起",
-    "zh_oneliner": "支付正在藏进购物流程里，商家要跟上这股趋势。"
-  },
-  "https://www.shipbob.com/blog/welleco": {
-    "zh_title": "WelleCo 两人运营团队如何用 ShipBob 跑全球履约",
-    "zh_oneliner": "小团队也能做全球履约，关键在系统与外包。"
-  },
-  "https://woocommerce.com/posts/woocommerce-multiple-stores": {
-    "zh_title": "一个 WordPress 安装搭建多个 WooCommerce 店铺",
-    "zh_oneliner": "多店铺共用一套系统，管理成本可以降下来。"
-  },
-  "https://neilpatel.com/blog/an-eye-opening-guide-create-grow-facebook-group": {
-    "zh_title": "如何用 Facebook 小组做营销",
-    "zh_oneliner": "社群营销的老办法，至今仍然有效。"
-  },
-  "https://www.practicalecommerce.com/new-ecommerce-tools-october-21-2026": {
-    "zh_title": "新电商工具速览：2026 年 10 月 21 日",
-    "zh_oneliner": "每周一次的新工具盘点，帮商家快速发现提效的工具。"
-  },
-  "https://www.practicalecommerce.com/shopify-vercel-arm-stores-for-ai-agents": {
-    "zh_title": "Shopify 与 Vercel 联手让店铺为 AI 智能体做好准备",
-    "zh_oneliner": "店铺要能被 AI 智能体顺利访问与下单，基建要先到位。"
-  },
-  "https://blog.hubspot.com/marketing/aeo-for-small-teams": {
-    "zh_title": "没有大团队怎么做 AEO：有哪些选择",
-    "zh_oneliner": "小团队做 AI 搜索优化，工具与外包是两条路。"
-  },
-  "https://www.ecommercetimes.com/story/how-smbs-can-keep-ai-website-agents-under-control-178693.html?rss=1": {
-    "zh_title": "中小企业如何管住 AI 网站智能体",
-    "zh_oneliner": "AI 智能体访问网站要设边界，别让它乱跑。"
-  },
-  "https://www.shipbob.com/blog/shipbob-fulfillment-technology": {
-    "zh_title": "ShipBob 的技术落后了吗？深入看它的全套履约系统",
-    "zh_oneliner": "履约商的技术栈决定了它能帮商家走多远。"
-  },
-  "https://neilpatel.com/blog/seo-templates": {
-    "zh_title": "SEO 模板、指南与清单，让策略更顺畅",
-    "zh_oneliner": "用现成的模板搭 SEO 流程，省下从零摸索的时间。"
-  },
-  "https://www.practicalecommerce.com/beware-of-ai-content-for-seo": {
-    "zh_title": "警惕 AI 内容做 SEO 的风险",
-    "zh_oneliner": "AI 内容用不好，反而会拖累搜索排名。"
-  },
-  "https://blog.hubspot.com/marketing/how-ai-changed-our-editorial-process": {
-    "zh_title": "我们的博客全面转向 AI 后到底发生了什么：一位经理的记录",
-    "zh_oneliner": "博客 AI 化的真实过程，有收获也有教训。"
-  },
-  "https://blog.hubspot.com/marketing/best-claude-skills": {
-    "zh_title": "最适合营销与销售团队的 Claude Skills",
-    "zh_oneliner": "给 Claude 配好技能，营销与销售工作能提速。"
-  },
-  "https://stripe.com/blog/saas-platform-trends-in-AI-era": {
-    "zh_title": "Stripe 调研：AI 时代重塑 SaaS 平台竞争的四大趋势",
-    "zh_oneliner": "SaaS 平台的竞争逻辑在变，支付是其中一环。"
-  },
-  "https://www.ecommercetimes.com/story/hanso-expands-online-apex-pergola-catalog-with-4-new-sizes-and-accessories-178690.html?rss=1": {
-    "zh_title": "Hansø 凉棚目录新增 4 种尺寸与配件",
-    "zh_oneliner": "户外品类靠扩品拉动线上销售。"
-  },
-  "https://blog.hubspot.com/marketing/marketing-automation-secondary-market-playbook": {
-    "zh_title": "营销自动化模型如何让次级市场的合格线索增长 9 倍",
-    "zh_oneliner": "自动化流程跑通后，线索增长可以非常快。"
-  },
-  "https://www.practicalecommerce.com/ai-platforms-attract-a-growing-ecosystem": {
-    "zh_title": "AI 平台正在吸引越来越大的生态",
-    "zh_oneliner": "围绕 AI 平台的工具与服务越来越多，商家可选的更多。"
-  },
-  "https://stripe.com/blog/new-ways-for-fintechs-to-move-money-and-expand-globally": {
-    "zh_title": "金融科技公司转移资金与全球扩张的新方式",
-    "zh_oneliner": "跨境收款的路子在变多，出海商家可以比较着选。"
-  },
-  "https://www.shipbob.com/blog/supplement-fulfillment-requirements": {
-    "zh_title": "履约伙伴能发保健品吗？发货前要知道的事",
-    "zh_oneliner": "保健品的仓储与配送有特殊要求，发货前先确认。"
-  },
-  "https://blog.hubspot.com/marketing/best-transactional-email-platforms": {
-    "zh_title": "交易邮件：是什么、怎么运作",
-    "zh_oneliner": "订单确认与物流通知这类邮件，转化率其实很高。"
-  },
-  "https://blog.google/products-and-platforms/products/shopping/universal-cart-launch": {
-    "zh_title": "一款智能的新购物车",
-    "zh_oneliner": "Google 给购物车加了智能功能，购物体验在变。"
-  },
-  "https://blog.google/products-and-platforms/products/shopping/holiday-shopping-when-to-buy-guide": {
-    "zh_title": "数据支撑的假日购物秘诀",
-    "zh_oneliner": "按数据备货与定价，假日季少走弯路。"
-  },
-  "https://www.practicalecommerce.com/commerce-data-as-credit-data": {
-    "zh_title": "电商数据正在变成信用数据",
-    "zh_oneliner": "商家的交易数据可能影响融资，经营记录要重视。"
-  },
-  "https://stripe.com/blog/real-time-stripe-data-postgres": {
-    "zh_title": "用 Stripe Data Pipeline 把实时数据同步到 Postgres",
-    "zh_oneliner": "支付数据实时入库，分析与对账都更方便。"
-  },
-  "https://blog.hubspot.com/marketing/tracking-ai-overviews": {
-    "zh_title": "追踪 AI 概览：数据到底显示了什么",
-    "zh_oneliner": "AI 概览的实际影响，要看数据而不是感觉。"
-  },
-  "https://blog.hubspot.com/marketing/claude-skills-plugins-mcp": {
-    "zh_title": "Claude Skills、插件与 MCP 连接器：简单指南",
-    "zh_oneliner": "三种接入方式各有用途，选错会白费力气。"
-  },
-  "https://www.practicalecommerce.com/new-ecommerce-tools-october-14-2026": {
-    "zh_title": "新电商工具速览：2026 年 10 月 14 日",
-    "zh_oneliner": "每周一次的新工具盘点，帮商家快速发现提效的工具。"
-  },
-  "https://www.ecomcrew.com/reddit-is-building-your-products-review-page-without-you": {
-    "zh_title": "Reddit 在替你建商品评价页",
-    "zh_oneliner": "Reddit 推出商品评价页，直接汇总社区讨论，购物者不用点进店铺就能判断产品口碑。"
-  },
-  "https://www.ecomcrew.com/claim-your-business-in-chatgpt-what-sellers-should-test-first": {
-    "zh_title": "先在 ChatGPT 里认领你的商家身份",
-    "zh_oneliner": "ChatGPT 上线商家认领功能，卖家可以提交店铺信息和商品数据，尽早测试在 AI 对话里的曝光方式。"
-  },
-  "https://www.ecomcrew.com/amazons-ad-auction-under-fire-check-your-holiday-bids": {
-    "zh_title": "亚马逊广告竞价遭质疑，假日出价先自查",
-    "zh_oneliner": "FTC 公开的诉讼细节涉及亚马逊广告竞价的计价方式，大促前值得复核自己的出价策略。"
-  },
-  "https://www.ecomcrew.com/less-cargo-higher-air-freight-what-europe-sellers-are-paying": {
-    "zh_title": "货量降了，欧洲空运费反而涨了",
-    "zh_oneliner": "中欧空运费一周上涨，补货欧洲站的卖家要重新算物流成本。"
-  },
-  "https://www.ecomcrew.com/meta-paused-its-new-terms-what-still-applies": {
-    "zh_title": "Meta 新条款暂缓，现行规则照旧",
-    "zh_oneliner": "Meta 暂缓了原定 11 月 20 日生效的商业与广告条款更新，卖家按现行规则投放即可。"
-  },
-  "https://www.ecomcrew.com/e667-trading-card-businesses": {
-    "zh_title": "在线球星卡生意正火，怎么做",
-    "zh_oneliner": "这期播客拆解在线交易卡店铺的玩法，适合想找小众高毛利类目的卖家参考。"
-  },
-  "https://www.ecomcrew.com/italian-prosecutors-close-an-amazon-customs-case-check-your-own-records": {
-    "zh_title": "意大利结案一宗亚马逊海关案，自查报关记录",
-    "zh_oneliner": "意大利检方结束了一起涉及亚马逊海关与进口增值税的调查，做欧洲站的卖家应核对自己的报关资料。"
-  },
-  "https://www.ecomcrew.com/amazon-haul-is-in-regular-search-now-should-you-cut-prices": {
-    "zh_title": "Amazon Haul 进了常规搜索，要不要降价",
-    "zh_oneliner": "低价商品已出现在亚马逊常规搜索结果里，低价类目卖家要权衡价格与曝光。"
-  },
-  "https://www.ecomcrew.com/cbp-rule-changes": {
-    "zh_title": "美国海关收紧进口，发货更难了",
-    "zh_oneliner": "美国海关出台新规，改变外国进口商的入境方式，11 月 6 日起影响对美发货安排。"
-  },
-  "https://www.ecomcrew.com/amazon-ads-can-now-target-rival-retailers-shoppers": {
-    "zh_title": "亚马逊广告能定向竞争对手的顾客了",
-    "zh_oneliner": "亚马逊广告接入站外购买人群数据，品牌可以把广告打给在别处买过同类商品的人。"
-  },
-  "https://www.sellerapp.com/blog/rainforest-api-alternatives-for-developers": {
-    "zh_title": "Rainforest API 的 5 个替代工具",
-    "zh_oneliner": "做商品数据抓取的卖家如果被 Rainforest API 的延迟拖累，可以看看这几个替代方案。"
-  },
-  "https://www.sellerapp.com/blog/best-white-label-amazon-ppc-and-dsp-platforms-for-agencies": {
-    "zh_title": "6 个可贴牌的亚马逊广告代运营平台",
-    "zh_oneliner": "接代运营业务的机构可以用白标 PPC 和 DSP 平台对外提供服务，不用自建投放团队。"
-  },
-  "https://www.sellerapp.com/blog/chatgpt-shopping-what-it-means-for-amazon-dtc-sellers": {
-    "zh_title": "ChatGPT 购物对亚马逊和独立站卖家意味着什么",
-    "zh_oneliner": "用户可以在 ChatGPT 里比价下单，卖家要留意商品数据在 AI 购物入口的呈现。"
-  },
-  "https://www.sellerapp.com/blog/amzscout-vs-sellerapp": {
-    "zh_title": "AMZScout 对比 SellerApp，哪个更赚钱",
-    "zh_oneliner": "两款选品工具面向不同阶段的卖家，选之前先看自己的运营阶段。"
-  },
-  "https://www.sellerapp.com/blog/amazon-ai-shopping-assistant": {
-    "zh_title": "亚马逊 AI 购物助手换成 Alexa 了",
-    "zh_oneliner": "亚马逊把 AI 购物助手并入 Alexa，搜索栏里的商品推荐方式变了，企业卖家要相应调整。"
-  },
-  "https://www.sellerapp.com/blog/amazon-marketing-agency-tools": {
-    "zh_title": "2026 年亚马逊代运营机构都在用的工具",
-    "zh_oneliner": "管理多个品牌的机构靠工具而不是靠加班，这篇盘点了头部机构的常用工具组合。"
-  },
-  "https://www.sellerapp.com/blog/amazon-vine-program-and-the-strategy-behind-getting-more-reviews": {
-    "zh_title": "亚马逊 Vine 计划怎么拿更多评价",
-    "zh_oneliner": "Vine 计划能帮合规卖家拿到可信评价，关键是选对产品和把握邀请节奏。"
-  },
-  "https://www.sellerapp.com/blog/amazon-dsp-for-brands-under-20k-a-month-a-2026-starter-guide": {
-    "zh_title": "月预算 2 万美元以下怎么做亚马逊 DSP",
-    "zh_oneliner": "DSP 不只是大品牌的游戏，小预算品牌也可以按这份入门指南起步。"
-  },
-  "https://www.sellerapp.com/blog/amazon-dsp-for-new-to-brand-growth-backed-by-sellerapp-2026-benchmark-data": {
-    "zh_title": "用亚马逊 DSP 拉新客，看新客占比",
-    "zh_oneliner": "DSP 的价值不只在转化，更在拉来从没买过你品牌的新客，复盘时要看新客占比。"
-  },
-  "https://www.sellerapp.com/blog/amazon-fba-partial-refund-strategy-for-2026-what-actually-moves-the-needle": {
-    "zh_title": "亚马逊 FBA 部分退款策略怎么用",
-    "zh_oneliner": "美国等六国站点支持 10% 至 40% 的部分退款且不用退货，处理售后时可以先算这笔账。"
-  },
-  "https://blog.ordoro.com/2026/11/12/features-and-updates-6": {
-    "zh_title": "Ordoro 功能更新：权限与订单筛选更好用了",
-    "zh_oneliner": "本轮更新加强了团队权限管理和订单筛选，处理大批量订单时找货更快。"
-  },
-  "https://blog.ordoro.com/2026/11/10/discounted-fedex-shipping-rates": {
-    "zh_title": "更多商家能拿到 Ordoro 的 FedEx 折扣运费了",
-    "zh_oneliner": "联邦快递折扣价覆盖更多 Ordoro 商家，发货量大的店铺能直接省下运费。"
-  },
-  "https://blog.ordoro.com/2026/11/09/ecommerce-shipping-workflow": {
-    "zh_title": "电商发货全流程：从下单到送达的 10 步",
-    "zh_oneliner": "把接单、拣货、打包、发运到回传单号拆成 10 步，新手按图索骥不容易漏单。"
-  },
-  "https://blog.ordoro.com/2026/11/06/commerce-corner-9": {
-    "zh_title": "假日消费创新高，平台新规与新功能一览",
-    "zh_oneliner": "美国假日季消费有望破万亿，同时亚马逊等平台出了新规，卖家开卖前先过一遍。"
-  },
-  "https://blog.ordoro.com/2026/11/06/holiday-sales-forecast-2026": {
-    "zh_title": "2026 假日季销售额将破万亿，但别只看总数",
-    "zh_oneliner": "全美假日零售额预计增长 4.2% 至 1.013 万亿美元，卖家更要看自己类目的分化。"
-  },
-  "https://blog.ordoro.com/2026/11/06/amazon-seller-policy-changes-2026": {
-    "zh_title": "亚马逊改了保险与退货标签规则",
-    "zh_oneliner": "假日季起部分高风险类目卖家须投保 100 万美元责任险，退货标签规则也有变。"
-  },
-  "https://blog.ordoro.com/2026/11/06/walmart-black-friday-2026": {
-    "zh_title": "沃尔玛黑五分三波、持续 14 天",
-    "zh_oneliner": "沃尔玛今年黑五拆成三场大促，卖家按三波节奏排库存和广告。"
-  },
-  "https://blog.ordoro.com/2026/11/06/shopify-checkout-hijack": {
-    "zh_title": "Shopify 结账页被劫持事件，卖家自查指南",
-    "zh_oneliner": "第三方应用被攻破后把买家引向假结账页，装了同类应用的店铺要立即排查。"
-  },
-  "https://blog.ordoro.com/2026/11/06/shopify-editions-fall-2026": {
-    "zh_title": "Shopify 秋季更新对库存与履约的影响",
-    "zh_oneliner": "150 多项更新里和发货最相关的是订单归属变化，履约流程可能要跟着调。"
-  },
-  "https://blog.ordoro.com/2026/11/05/order-routing-for-ecommerce": {
-    "zh_title": "订单路由：决定每单从哪个仓发出",
-    "zh_oneliner": "多仓卖家按库存、位置和时效决定发货仓，规则定好能省运费、少超时。"
-  },
-  "https://cedcommerce.com/blog/shopifys-new-app-store-submission-rules-whats-changed": {
-    "zh_title": "Shopify 收紧应用商店上架规则",
-    "zh_oneliner": "11 月 10 日起应用提交要求变严，做 Shopify 应用的开发者要按新规改材料。"
-  },
-  "https://cedcommerce.com/blog/how-to-prevent-overselling-fba-or-wfs-stock-on-temu-shein-tiktok": {
-    "zh_title": "多平台共用库存，怎么防超卖",
-    "zh_oneliner": "同一批 FBA 或沃尔玛库存同时在 Temu、SHEIN 和 TikTok 上卖，库存同步慢了就会超卖。"
-  },
-  "https://cedcommerce.com/blog/amazon-mcf-vs-walmart-mcs-for-temu-shein-and-tiktok-shop-what-is-the-right-choice": {
-    "zh_title": "亚马逊 MCF 对比沃尔玛 MCS，哪个更适合多平台",
-    "zh_oneliner": "两个履约服务都支持向 Temu、SHEIN 和 TikTok 发货，选哪个看订单结构和成本。"
-  },
-  "https://www.supplychaindive.com/news/trump-threatens-to-double-mexico-tariffs-over-migrant-caravans/874534": {
-    "zh_title": "特朗普威胁把墨西哥关税翻倍",
-    "zh_oneliner": "若墨西哥不阻止移民车队，美方威胁立即加征关税，依赖墨西哥供应链的卖家要留预案。"
-  },
-  "https://www.supplychaindive.com/news/manufacturing-advocates-make-case-for-tariffs-following-midterm-results/874456": {
-    "zh_title": "制造业团体呼吁保留关税",
-    "zh_oneliner": "尽管民调显示公众厌倦进口税，制造业团体认为取消贸易执法会是严重错误。"
-  },
-  "https://www.supplychaindive.com/news/ups-teamsters-contract-expires-in-2028-shippers-should-prepare-now/874374": {
-    "zh_title": "UPS 工会合同 2028 年到期，货主提前准备",
-    "zh_oneliner": "虽然冲突还远，专家建议发货方现在就建立备用承运商关系以防罢工风险。"
-  },
-  "https://www.supplychaindive.com/news/bipartisan-push-possible-to-curb-trump-tariffs/874347": {
-    "zh_title": "国会可能联手限制总统关税权",
-    "zh_oneliner": "三项法案若通过将大幅限制总统的关税权力，贸易政策存在变数。"
-  },
-  "https://www.supplychaindive.com/news/air-cargos-hopes-for-end-of-year-volume-surge-dwindle/874430": {
-    "zh_title": "年末空运货量冲高希望落空",
-    "zh_oneliner": "10 月传统旺季信号不足，空运价格与舱位压力仍在，补货要留出时间。"
-  },
-  "https://www.supplychaindive.com/news/bmw-announces-new-battery-supply-deals-for-the-us-europe/874409": {
-    "zh_title": "宝马签下美欧电池供应大单",
-    "zh_oneliner": "宝马与三星 SDI 和 LG 合作推进电池本土化，供应链区域化趋势仍在继续。"
-  },
-  "https://www.supplychaindive.com/news/transpacific-ocean-rates-ease-slightly-as-peak-winds-down/874262": {
-    "zh_title": "跨太平洋海运费小幅回落",
-    "zh_oneliner": "旺季过后美线港口需求放缓，运价回落但同比仍处高位。"
-  },
-  "https://www.supplychaindive.com/news/carpartscom-revs-up-in-house-last-mile-delivery-for-cost-speed-benefits/874287": {
-    "zh_title": "CarParts.com 自建最后一公里配送",
-    "zh_oneliner": "这家汽配电商计划每年自送 30 万单，省下的配送成本相当可观。"
-  },
-  "https://www.supplychaindive.com/news/asics-boosts-inventory-management-using-warehouse-drones/874273": {
-    "zh_title": "亚瑟士用仓库无人机管库存",
-    "zh_oneliner": "无人机盘点减少了错放货物的找回时间，盘点频率也提高了。"
-  },
-  "https://www.supplychaindive.com/news/honda-to-invest-3b-in-new-ohio-hybrid-vehicle-plant/874281": {
-    "zh_title": "本田投 30 亿美元在俄亥俄建混动车工厂",
-    "zh_oneliner": "新厂将创造 2000 个岗位，本田正把混动产能向美国本土集中。"
-  },
-  "https://www.paymentsdive.com/news/ftc-aims-to-better-fight-scams/874509": {
-    "zh_title": "FTC 拟修法，更严打击诈骗",
-    "zh_oneliner": "美国联邦贸易委员会可能更新规则，让科技公司为平台上的诈骗承担更多责任。"
-  },
-  "https://www.paymentsdive.com/news/merchants-sue-feds-over-illinois-card-fee-law/874494": {
-    "zh_title": "商家起诉联邦机构，争刷卡费禁令",
-    "zh_oneliner": "围绕伊利诺伊州禁止对税费收刷卡费的法律，行业团体与监管机构打起了官司。"
-  },
-  "https://www.paymentsdive.com/news/fiserv-preps-debit-network-sale/874395": {
-    "zh_title": "Fiserv 准备出售借记卡网络",
-    "zh_oneliner": "支付巨头正把客户迁移到其中一个借记网络，为出售或关闭另一个做准备。"
-  },
-  "https://www.paymentsdive.com/news/western-union-intermex-acquisition-fight-California-regulator/874396": {
-    "zh_title": "西联与 Intermex 反目",
-    "zh_oneliner": "收购告吹后，两家汇款公司因监管介入产生了纠纷。"
-  },
-  "https://www.paymentsdive.com/news/blocks-cash-app-weaves-payment-tech-into-bandanas/874328": {
-    "zh_title": "Cash App 把支付芯片缝进头巾里卖",
-    "zh_oneliner": "Block 开始销售内置支付标签的头巾，算是线下支付场景的一次新尝试。"
-  },
-  "https://www.paymentsdive.com/news/states-keep-targeting-card-fee-relief/874260": {
-    "zh_title": "各州继续推动刷卡费减免",
-    "zh_oneliner": "尽管面临法律挑战，今年各州已提出 30 多项刷卡费减免法案。"
-  },
-  "https://www.paymentsdive.com/news/block-to-provide-data-to-ftc/874156": {
-    "zh_title": "Block 将向 FTC 提供数据",
-    "zh_oneliner": "因 Square 的投诉调查，Block 同意交出联邦贸易委员会要求的文件。"
-  },
-  "https://www.paymentsdive.com/news/global-payments-faces-industry-pricing-pressure/874128": {
-    "zh_title": "Global Payments 面临行业定价压力",
-    "zh_oneliner": "支付处理竞争加剧，分析师认为这家公司提价的空间越来越小。"
-  },
-  "https://www.paymentsdive.com/news/5-questions-with-barclays-head-of-us-cards-samsung-wallet/874057": {
-    "zh_title": "巴克莱如何把卡塞进三星钱包",
-    "zh_oneliner": "联名卡与手机钱包深度绑定后，发卡行与手机厂商的合作模式也在变。"
-  },
-  "https://www.paymentsdive.com/news/bnpl-for-rent-seeks-a-market/874061": {
-    "zh_title": "先买后付盯上房租市场",
-    "zh_oneliner": "一批金融科技公司尝试把分期付款做到房租上，通胀下租房客的需求在涨。"
-  },
-  "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/readout-ambassador-greers-call-chinas-vice-premier-he-lifeng": {
-    "zh_title": "美贸易代表与何立峰通话",
-    "zh_oneliner": "双方通话涉及中美经贸议题，做中美贸易的卖家可关注后续政策信号。"
-  },
-  "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/united-states-seeks-mexicos-review-alleged-denial-workers-rights-madobox": {
-    "zh_title": "美国要求墨西哥审查 Madobox 劳工权利问题",
-    "zh_oneliner": "美方启动快速反应劳工机制，涉及墨西哥工厂的工人权利争议。"
-  },
-  "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/united-states-and-mexico-announce-memorandum-understanding-industrias-tecnos-facility": {
-    "zh_title": "美墨就 Industrias Tecnos 工厂签署谅解备忘录",
-    "zh_oneliner": "双方就该工厂的劳工问题达成谅解，跨境供应链合规风险值得留意。"
-  },
-  "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/ambassador-greer-issues-statement-president-trumps-intent-terminate-rwanda-and-south-africa-agoa": {
-    "zh_title": "美国拟终止卢旺达和南非的 AGOA 优惠待遇",
-    "zh_oneliner": "两国可能失去对美出口免税待遇，涉及非洲供应链的卖家要评估影响。"
-  },
-  "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/october/america-first-seafood-strategy-charts-course-restoring-us-seafood-dominance": {
-    "zh_title": "美国发布海鲜产业振兴战略",
-    "zh_oneliner": "白宫出台恢复美国海鲜主导地位的战略，与电商关联有限。"
-  },
-  "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/october/ambassador-greer-issues-statement-status-us-eu-detente-following-record-breaking-loan-european": {
-    "zh_title": "美欧贸易缓和现状声明",
-    "zh_oneliner": "美方就与欧盟的贸易缓和表态，涉及欧洲市场的卖家可关注关税动向。"
-  },
-  "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/october/united-states-announces-successful-resolution-rapid-response-labor-mechanism-matter-amphenol": {
-    "zh_title": "美墨快速反应劳工机制一案解决",
-    "zh_oneliner": "双方就 Amphenol Optimize 工厂的劳工争议达成解决方案。"
-  },
-  "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/october/united-states-and-mexico-announce-course-remediation-minera-penasquito": {
-    "zh_title": "美墨公布 Peñasquito 矿场整改方案",
-    "zh_oneliner": "双方就该矿场的劳工问题确定整改路径。"
-  },
-  "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/october/ustr-announces-2026-award-recipients": {
-    "zh_title": "USTR 公布 2026 年度获奖名单",
-    "zh_oneliner": "贸易代表办公室公布年度奖项，与卖家日常经营关联不大。"
-  },
-  "https://internetretailing.net/guest-comment-retailers-have-work-to-do-earning-customer-trust-in-ai": {
-    "zh_title": "零售商要赢得消费者对 AI 的信任",
-    "zh_oneliner": "消费者是否愿意让 AI 替自己花钱，决定了 AI 购物功能的接受度。"
-  },
-  "https://internetretailing.net/poundland-secures-extra-time-to-pursue-rescue-deal-but-mp-warns-that-jobs-are-still-in-jeopardy": {
-    "zh_title": "Poundland 续命谈判再获宽限",
-    "zh_oneliner": "这家折扣连锁又争取到 10 天寻找收购方，但就业风险仍未解除。"
-  },
-  "https://internetretailing.net/morrisons-media-group-expands-retail-media-network-into-convenience-stores": {
-    "zh_title": "Morrisons 把零售媒体做到便利店",
-    "zh_oneliner": "英国超市把零售媒体网络扩展到便利店业态，品牌广告位又多了一处。"
-  },
-  "https://internetretailing.net/retail-mediax-heads-to-new-york-as-uk-born-event-brand-makes-us-debut": {
-    "zh_title": "Retail MediaX 首进美国市场",
-    "zh_oneliner": "这个英国零售媒体活动品牌首次在纽约办展，零售媒体出海值得关注。"
-  },
-  "https://internetretailing.net/aldi-cuts-roles-as-supermarket-sector-faces-margin-pressure": {
-    "zh_title": "Aldi 裁员，超市行业利润承压",
-    "zh_oneliner": "英国超市行业成本高企，Aldi 开始裁撤总部岗位以控制成本。"
-  },
-  "https://internetretailing.net/almost-half-of-shoppers-plan-black-friday-purchases-in-advance-with-ai-and-social-media-having-limited-influence-on-buying-behaviour": {
-    "zh_title": "近半消费者提前计划黑五购物",
-    "zh_oneliner": "调查显示 47% 的网购者会提前定好黑五要买的东西，冲动消费占比有限。"
-  },
-  "https://internetretailing.net/singles-day-spend-set-to-top-2-2bn-as-uk-shoppers-embrace-global-retail-event": {
-    "zh_title": "英国双 11 消费预计超 22 亿英镑",
-    "zh_oneliner": "英国消费者对全球购物节的参与度上升，双 11 已成当地零售节点。"
-  },
-  "https://internetretailing.net/asda-turnaround-under-pressure-as-market-share-slips": {
-    "zh_title": "Asda 复苏承压，市场份额下滑",
-    "zh_oneliner": "最新数据显示 Asda 是英国主要超市中唯一销售额下滑的一家。"
-  },
-  "https://internetretailing.net/guest-comment-whats-really-driving-advertising-value": {
-    "zh_title": "广告价值到底由什么驱动",
-    "zh_oneliner": "广告效果评估过于看重结果，忽略了价值本身，品牌方值得反思衡量方式。"
-  },
-  "https://internetretailing.net/black-friday-spending-set-to-hit-9-8bn-as-shoppers-plan-christmas-bargains": {
-    "zh_title": "英国黑五消费预计达 98 亿英镑",
-    "zh_oneliner": "英国黑五支出同比增长 3%，圣诞购物季开局稳健。"
-  },
-  "https://developer.woocommerce.com/2026/11/11/stripe-gateway-security-update": {
-    "zh_title": "WooCommerce Stripe 插件安全修复，尽快升级",
-    "zh_oneliner": "11.2.0 或 11.1.2 修复了重要安全问题，用 Stripe 收款的店铺应立即更新。"
-  },
-  "https://developer.woocommerce.com/2026/11/11/woocommerce-11-3-0-release-notes": {
-    "zh_title": "WooCommerce 11.3.0 发布说明",
-    "zh_oneliner": "新版让店主更好控制商品与促销展示，新增促销徽章选项和图库滑动体验。"
-  },
-  "https://developer.woocommerce.com/2026/11/06/woo-latest-security": {
-    "zh_title": "WooCommerce 6 月以来做了哪些安全改进",
-    "zh_oneliner": "针对近期频繁的安全更新，官方梳理了改动内容和店主能做的事。"
-  },
-  "https://developer.woocommerce.com/2026/11/04/woocommerce-11-2-2-release-notes": {
-    "zh_title": "WooCommerce 11.2.2 发布说明",
-    "zh_oneliner": "这次更新以安全修复为主，建议尽快升级到最新版。"
-  },
-  "https://developer.woocommerce.com/2026/11/03/security-update-for-woopayments": {
-    "zh_title": "WooPayments 安全更新",
-    "zh_oneliner": "订阅功能的安全更新已发布，用 WooPayments 的店铺请按版本说明升级。"
-  },
-  "https://developer.woocommerce.com/2026/11/03/php-stubs-for-extensions": {
-    "zh_title": "WooCommerce 插件可用自动生成的 PHP 存根",
-    "zh_oneliner": "新工具能自动生成 PHP 存根，方便开发者用 PHPStan 检查扩展代码。"
-  },
-  "https://developer.woocommerce.com/2026/10/27/cart-item-children": {
-    "zh_title": "WooCommerce 11.3 支持声明购物车父子商品关系",
-    "zh_oneliner": "新过滤器能准确追踪套装商品在购物车里的数量关系。"
-  },
-  "https://developer.woocommerce.com/2026/10/26/woocommerce-11-3-pre-release": {
-    "zh_title": "WooCommerce 11.3 开发者预览",
-    "zh_oneliner": "测试版带来样式控制、促销徽章、移动端图库改进和 MCP 相关更新。"
-  },
-  "https://developer.woocommerce.com/2026/10/22/extensible-abilities": {
-    "zh_title": "WooCommerce 征集扩展字段能力测试",
-    "zh_oneliner": "11.3 的实验性 API 允许扩展把自己的数据接入 MCP 能力体系。"
-  },
-  "https://developer.woocommerce.com/2026/10/21/woocommerce-11-3-mcp": {
-    "zh_title": "WooCommerce 11.3 的 MCP 适配器更新",
-    "zh_oneliner": "旧的 MCP 端点已废弃，扩展与客户端要迁移到 WordPress MCP 适配器。"
-  },
-  "https://developer.woocommerce.com/2026/10/21/php-security-release": {
-    "zh_title": "PHP 发布关键安全更新",
-    "zh_oneliner": "PHP 修复了两个严重安全漏洞，建站的店铺应尽快升级运行环境。"
-  },
-  "https://developer.woocommerce.com/2026/10/20/purple-monorepo": {
-    "zh_title": "Purple 主题开发并入 WooCommerce 主仓库",
-    "zh_oneliner": "该主题仍独立维护，但开发协作统一进了主仓库。"
-  },
-  "https://myamazonguy.com/seo/amazon-seo-challenges-for-small-ecommerce-teams": {
-    "zh_title": "小团队做亚马逊 SEO 的 8 个难题",
-    "zh_oneliner": "关键词更新跟不上补货节奏是常见问题，先从最影响排名的几项改起。"
-  },
-  "https://myamazonguy.com/advertising/amazon-ppc-campaign-overlap-search-term-audit": {
-    "zh_title": "亚马逊 PPC 搜索词重叠审计，别自己跟自己竞价",
-    "zh_oneliner": "同一个关键词可能同时在三个广告组里竞价，审计后能省下不少冤枉钱。"
-  },
-  "https://myamazonguy.com/fba-holiday-readiness/amazon-buy-box-repricing-strategy-during-bfcm": {
-    "zh_title": "黑五期间 Buy Box 调价策略",
-    "zh_oneliner": "大促期间调价太慢会丢黄金购物车，太快又会压利润，这份指南讲怎么把握节奏。"
-  },
-  "https://myamazonguy.com/amazon-account-management/fba-prep-requirements-that-trigger-rejections": {
-    "zh_title": "哪些 FBA 备货要求会触发拒收",
-    "zh_oneliner": "一个薄塑料袋或标签贴错就能让整批货卡在仓库，出发前按清单自查。"
-  },
-  "https://myamazonguy.com/seo/tactics-to-increase-amazon-organic-traffic": {
-    "zh_title": "10 招提升亚马逊自然流量、降低 TACoS",
-    "zh_oneliner": "关掉广告后流量还剩多少，是检验店铺健康度的一面镜子。"
-  },
-  "https://myamazonguy.com/advertising/amazon-ppc-structure-to-stop-cannibalization": {
-    "zh_title": "亚马逊 PPC 结构防内耗",
-    "zh_oneliner": "出价越涨销量不动，往往是自己的广告组在互相抢量，结构要先理顺。"
-  },
-  "https://myamazonguy.com/fba-holiday-readiness/amazon-cyber-five-execution-plan": {
-    "zh_title": "黑五按小时执行计划",
-    "zh_oneliner": "大促当天按小时排预算与补货，第二波流量来了预算不能先烧完。"
-  },
-  "https://myamazonguy.com/amazon-account-management/awd-vs-fba-cost-comparison": {
-    "zh_title": "亚马逊 AWD 与 FBA 成本对比",
-    "zh_oneliner": "AWD 仓储费便宜不少，但换仓后总成本未必更低，关键看隐藏费用。"
-  },
-  "https://myamazonguy.com/seo/amazon-brand-story-tips-to-match-buyer-intent": {
-    "zh_title": "亚马逊品牌故事怎么写才对买家胃口",
-    "zh_oneliner": "品牌故事出现在每个商品页，写偏了等于处处丢分，要贴合买家意图。"
-  },
-  "https://myamazonguy.com/advertising/amazon-ppc-strategy-to-offset-rising-fba-fees": {
-    "zh_title": "用 PPC 省下的钱对冲 FBA 涨价",
-    "zh_oneliner": "FBA 费用上涨后，能赢回来的利润藏在被浪费的广告费里。"
-  },
-  "https://growthbox.net/overseas-ai-search-traffic-geo-plugin-growth-strategies": {
-    "zh_title": "深挖 15 万网站流量数据，找到三个海外用户增长新策略",
-    "zh_oneliner": "AI 推荐改写了获客路径，增长要围绕访问、注册和转化三个环节重新设计。"
-  },
-  "https://growthbox.net/songmont-pane-tosummer-reverse-haitao-brand-in-china": {
-    "zh_title": "从Songmont、PANE到观夏，让老外来中国抢购的中国品牌做对了什么？",
-    "zh_oneliner": "“Brand in China”走的是另一条路，先让外国消费者来中国抢购，再反哺海外市场。"
-  },
-  "https://growthbox.net/ai-agent-transformation-faster-work-vs-better-business": {
-    "zh_title": "AI让工作变快了，但让生意变好了吗？",
-    "zh_oneliner": "任务变快不等于生意变好，AI 加速的是执行，增长还得靠市场判断。"
-  },
-  "https://www.sellerapp.com/blog/amazon-spn-and-the-client-acquisition-channel-agencies-are-sleeping-on": {
-    "zh_title": "亚马逊 SPN，代运营机构忽略的获客渠道",
-    "zh_oneliner": "亚马逊服务商网络能帮机构被卖家主动找到，是个低成本的获客入口。"
-  },
-  "https://www.modernretail.co/operations/why-quince-is-bringing-on-more-third-party-brands": {
-    "zh_title": "Quince 为何引入更多第三方品牌",
-    "zh_oneliner": "靠低价自有品牌起家的 Quince 开始扩充第三方品牌，补齐品类、抬高客单价。"
-  },
-  "https://www.modernretail.co/marketing/why-brands-like-anthropologie-are-commissioning-creator-created-shows-instead-of-posts": {
-    "zh_title": "Anthropologie 等品牌为何让创作者拍节目，而不只是发帖",
-    "zh_oneliner": "品牌把预算从单条种草帖转向创作者主导的系列内容，换更长的传播生命周期。"
-  },
-  "https://www.glossy.co/fashion/luxury/luxury-briefing-statement-coats-outerwear": {
-    "zh_title": "大衣就是整套造型，它能撑起一门生意吗",
-    "zh_oneliner": "奢侈品牌把外套当成主打单品来卖，拆解这件单品背后的定价与销售逻辑。"
-  },
-  "https://www.glossy.co/podcasts/glossy-podcast-was-diors-hand-drawn-holiday-campaign-a-case-of-ai-powered-craftwashing": {
-    "zh_title": "Dior 手绘风节日广告，是 AI 包装的“手工洗白”吗",
-    "zh_oneliner": "播客讨论 Dior 节日广告：手绘质感背后是不是 AI 生成，手工叙事还可不可信。"
-  },
-  "https://www.glossy.co/pop/smart-glasses-fashion-privacy-consent": {
-    "zh_title": "智能眼镜竞赛：怎样做才不招人反感",
-    "zh_oneliner": "各家抢做日常可戴的智能眼镜，隐私与外观接受度成了关键门槛。"
-  },
-  "https://www.ecomcrew.com/tiktok-shop-plus-is-confirmed-who-pays-for-the-discounts": {
-    "zh_title": "TikTok Shop Plus 确认推出，折扣由谁买单？",
-    "zh_oneliner": "TikTok 在美国试点会员折扣计划，商家要先弄清补贴成本到底由谁承担。"
-  },
-  "https://www.ecomcrew.com/your-fba-products-may-already-be-selling-on-amazon-haul": {
-    "zh_title": "你的 FBA 商品可能已在 Amazon Haul 上架",
-    "zh_oneliner": "近四成美国站活跃卖家的商品已被交叉上架至 Haul，卖家应尽快核查自己的 listing。"
-  },
-  "https://www.ecomcrew.com/usps-just-proposed-a-permanent-fuel-surcharge": {
-    "zh_title": "USPS 拟征收永久燃油附加费",
-    "zh_oneliner": "美国邮政拟于 2027 年 1 月起上调运费并加收燃油附加费，跨境卖家的物流成本将上升。"
-  },
-  "https://www.printful.com/blog/teepublic-alternatives": {
-    "zh_title": "2026 年 9 个 TeePublic 替代平台：卖设计赚钱的新选择",
-    "zh_oneliner": "想在 TeePublic 之外出售自己的设计，这 9 个平台值得对比看看。"
-  },
-  "https://www.printful.com/blog/bonfire-alternatives": {
-    "zh_title": "Bonfire 的替代选择：2027 年在哪里开周边义卖或网店",
-    "zh_oneliner": "想用周边商品做筹款或开店，这篇盘点了 Bonfire 之外的可选平台。"
-  },
-  "https://ecommercenews.eu/strong-online-growth-in-denmark": {
-    "zh_title": "丹麦电商增长强劲",
-    "zh_oneliner": "丹麦线上消费保持强劲增长，北欧市场值得卖家留意。"
-  },
-  "https://www.sellerlabs.com/blog/get-leadership-to-back-your-amazon-channel-corey-brown": {
-    "zh_title": "争取管理层支持你的 Amazon 渠道：Corey Brown 访谈",
-    "zh_oneliner": "想让公司加大投入 Amazon，先要让管理层看到渠道价值，这篇访谈讲了争取内部支持的打法。"
-  },
-  "https://www.printful.com/blog/how-to-sell-printful-products-on-etsy": {
-    "zh_title": "Etsy 按需打印销售指南：2026 年分步教程",
-    "zh_oneliner": "从开店到上架，手把手教你用 Print on Demand 在 Etsy 上卖定制商品。"
-  },
-  "https://www.modernretail.co/operations/big-box-briefing-how-targets-and-walmarts-beauty-department-makeovers-are-reshaping-brand-strategies": {
-    "zh_title": "Target 与 Walmart 美妆区大改造，正在重塑品牌策略",
-    "zh_oneliner": "两大零售巨头翻新美妆货架，品牌方要重新思考线下陈列与选品策略。"
-  },
-  "https://www.printful.com/blog/threadless-alternatives": {
-    "zh_title": "2026 年 9 个 Threadless 替代平台，适合你的周边生意",
-    "zh_oneliner": "想换个印制平台卖周边？这里有 9 个 Threadless 的替代选择可供比较。"
-  },
-  "https://www.supplychaindive.com/news/walmart-more-than-doubles-planned-drone-delivery-sites/874580": {
-    "zh_title": "Walmart 计划中的无人机配送站点增加一倍多",
-    "zh_oneliner": "无人机配送网点大幅扩张，零售履约的“最后一公里”正在提速。"
-  },
-  "https://www.supplychaindive.com/news/usps-readies-2027-rate-increase-permanent-fuel-surcharge/874524": {
-    "zh_title": "USPS 酝酿 2027 年涨价，并设永久燃油附加费",
-    "zh_oneliner": "美国邮政计划上调 2027 年资费并固化燃油附加费，跨境卖家的物流成本要重新测算。"
-  },
-  "https://www.practicalecommerce.com/show-online-what-shoppers-cant-touch": {
-    "zh_title": "把顾客摸不到的东西在线上讲清楚",
-    "zh_oneliner": "无法亲手触摸的商品，更要靠图片、视频与细节说明建立信任。"
-  },
-  "https://www.retaildive.com/news/sally-beauty-expand-refreshed-store-model/874547": {
-    "zh_title": "Sally Beauty 计划 2027 年推广新版门店模式",
-    "zh_oneliner": "这家美妆连锁将扩大 Sally Ignited 门店概念，长期计划翻新三分之二的门店。"
-  },
-  "https://www.digitalcommerce360.com/2026/11/13/how-growing-e-commerce-brands-pay-international-contractors-without-triggering-compliance-risk": {
-    "zh_title": "成长型电商品牌如何合规支付海外承包商、避开合规风险",
-    "zh_oneliner": "跨境用工的支付与合规要点，帮成长型品牌少踩坑。"
-  },
-  "https://internetretailing.net/hobbycraft-returns-to-profit-as-britains-crafting-boom-gathers-pace": {
-    "zh_title": "Hobbycraft 扭亏为盈，英国手工艺热潮持续升温",
-    "zh_oneliner": "英国手工艺消费回暖，Hobbycraft 借势重回盈利。"
-  },
-  "https://www.supplychaindive.com/news/port-of-los-angeles-grapples-with-elevated-rail-dwell-times/874553": {
-    "zh_title": "洛杉矶港铁路滞留时间居高不下，港口承压",
-    "zh_oneliner": "铁路疏港不畅推高货物滞留，洛杉矶港的拥堵压力仍在。"
-  },
-  "https://www.supplychaindive.com/news/jd-sports-leverages-tech-for-faster-replenishment/874427": {
-    "zh_title": "JD Sports 借技术提速补货",
-    "zh_oneliner": "用技术优化补货节奏，JD Sports 让货架周转更快。"
-  },
-  "https://www.retaildive.com/news/target-board-member-centric-brands-ceo-fossil-turnaround/874550": {
-    "zh_title": "本周收官：Target 任命新董事，Centric Brands 卖身给 CEO",
-    "zh_oneliner": "Target 董事会换血，Centric Brands 由 CEO 接盘，本周零售大事件一览。"
-  },
-  "https://www.retaildive.com/news/family-dollar-63-million-settlement-unfair-pricing-claims-ftc/874605": {
-    "zh_title": "Family Dollar 将支付 6300 万美元，和解州与联邦监管机构的不当定价指控",
-    "zh_oneliner": "连锁折扣零售商因被指控定价不公而达成和解，商家可留意价格合规风险。"
-  },
-  "https://www.paymentsdive.com/news/why-paypal-wants-to-have-a-bank/874615": {
-    "zh_title": "PayPal 为什么想拥有一家银行",
-    "zh_oneliner": "PayPal 布局银行业务，支付平台与持牌金融机构的边界正在被打破。"
-  },
-  "https://www.retaildive.com/news/grocery-inflation-october-2026-meat-produce-coffee/874599": {
-    "zh_title": "消费者面临更高的食品杂货价格",
-    "zh_oneliner": "肉类、农产品和咖啡涨价推高日常开支，零售商与品牌需应对消费收紧。"
-  },
-  "https://www.paymentsdive.com/news/stripe-awaits-payoff-on-tempo-chain/874618": {
-    "zh_title": "Stripe 静待 Tempo 链带来回报",
-    "zh_oneliner": "Stripe 把自家 Tempo 区块链视为稳定币交易增长的关键基础设施，正在等待这项布局见效。"
-  },
-  "https://www.digitalcommerce360.com/2026/11/13/grubmarket-ai-agent": {
-    "zh_title": "GrubMarket 推出 AI 代理，把发票自动转成采购订单",
-    "zh_oneliner": "这家生鲜供应链 SaaS 用 AI 代理自动把发票转成采购订单，帮食品批发商和零售商省掉手工对账。"
-  },
-  "https://www.digitalcommerce360.com/2026/11/13/asics-uses-ai-powered-drones-to-recover-misplaced-inventory-60-faster": {
-    "zh_title": "Asics 用 AI 无人机找回错放库存，速度快 60%",
-    "zh_oneliner": "Asics 在北美主配送中心用自主无人机定位错放商品，找货效率大幅提升。"
-  },
-  "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/united-states-seeks-mexicos-review-alleged-denial-workers-rights-industrias-fg": {
-    "zh_title": "美国要求墨西哥审查 Industrias FG 工人权利受侵害指控",
-    "zh_oneliner": "美国依据美墨加协定快速响应劳工机制，要求墨方审查该工厂是否剥夺工人结社与集体谈判权。"
-  },
-  "https://www.cifnews.com/article/189977": {
-    "zh_oneliner": "2026 年亚马逊黑五网一的关键时间点和 Deal 提报要求都在这里，卖家可以照着排期准备。",
-    "zh_title": "卖家必看！2026亚马逊黑五网一时间节点＋Deal提报"
-  },
-  "https://sellerengine.com/amazon-fba-fees-2027": {
-    "zh_title": "2027年亚马逊FBA费用：卖家须知",
-    "zh_oneliner": "梳理2027年FBA费用调整要点，帮卖家提前算清成本、做好定价准备。"
-  },
-  "https://www.ecomengine.com/blog/amazon-review-request-automation-black-friday": {
-    "zh_title": "旺季评价：黑五前为何要盯紧反馈评分",
-    "zh_oneliner": "旺季来临前，卖家反馈评分直接影响流量与转化，提前自查别等爆单才发现问题。"
-  },
-  "https://www.ecomengine.com/blog/amazon-fba-reimbursement-audit": {
-    "zh_title": "亚马逊悄悄欠了你多少钱？20分钟完成FBA赔付自查",
-    "zh_oneliner": "用20分钟快速核查FBA赔付情况，把亚马逊应退未退的钱要回来。"
-  },
-  "http://www.baijing.cn/article/57359": {
-    "zh_title": "TikTok Shop东南亚直邮价卡大跳水，轻小件卖家迎来降本窗口期",
-    "zh_oneliner": "东南亚直邮价格大幅下调，轻小件卖家的物流成本有了下降空间。"
-  },
-  "http://www.baijing.cn/article/57366": {
-    "zh_title": "从做亏本买卖到年入10亿，欧美巨头垄断的高价地盘被深圳企业踹开",
-    "zh_oneliner": "深圳企业从亏损起步做到年入10亿，打破欧美巨头在高价市场的垄断。"
-  },
-  "http://www.baijing.cn/article/57367": {
-    "zh_title": "泰国定下30%跨境重税，爆款类目全按顶格收？",
-    "zh_oneliner": "泰国拟对跨境商品征收30%重税，热门类目可能面临最高税率。"
-  },
-  "https://mjzj.com/article/g45196fh1ibk": {
-    "zh_title": "飞猪双11：活动商品履约GMV同比增长60%",
-    "zh_oneliner": "飞猪双11活动商品履约 GMV 同比增长60%。"
-  },
-  "https://mjzj.com/article/g45jxempzgn4": {
-    "zh_title": "TikTok Shop调整退货运费责任；越南税务机关已管理超百万电商卖家及KOL；泰国研判进口电商关税影响",
-    "zh_oneliner": "本期汇总 TikTok Shop 退货运费调整、越南电商税务管理与泰国进口关税动向。"
-  },
-  "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB3UEI3NGRRRk5NeDYxbkNQNVpaZ0g3b1JBWFRhV19oSENUV0tiOGJRTEFVS29tejJ6aUxwVjloUUU0RHJUb1BmZWg5cFFfU3c?oc=5": {
-    "zh_title": "AI内容电商平台Moras以达人为赚钱Agent，锚定TikTok Shop美区",
-    "zh_oneliner": "AI 内容电商平台 Moras 以达人变现 Agent 切入 TikTok Shop 美区市场。"
-  },
-  "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUjdxQndMbUtaU1VKV2hYZGNnR0g0NnBRaC05czI4MDBTV2UzNnZkV1pZNlNwOHFkZ3ZNdEZhSW9PR1BmY3ZLMkZ5dnBsUnlBRnh2X1RORkVaRjR2eGpjTTNiX1gtVXc0TlJwbHE2YUM0X1pWTEZYelZBYkhkNHFnVGMzQmlqUGd1?oc=5": {
-    "zh_title": "一城输出服务，一城输出产业，跨境电商激活成德开放新动能",
-    "zh_oneliner": "成德两地以跨境电商联动服务与产业，释放区域开放新动能。"
-  },
-  "https://news.google.com/rss/articles/CBMijAFBVV95cUxPZVZXXzRzSlJFNzRNTm1yMnZJeGFCSGhGUTJITUpidjhGZVNLUzAzXzVqbE8yZzRoY2tZcVlhV3UxV1A1WGJtVGhQN0d2SjdmRzR3YlBCV2FYZ0JHVExlNDgxNFprSnFhS295SVNNckRCYzRqNC1nVWNVQmQ2WEttSGNWNTgwWk9EQWtUNA?oc=5": {
-    "zh_title": "一人成军，生态为王！深圳龙岗长出OPC创业“热带雨林”",
-    "zh_oneliner": "深圳龙岗 OPC 创业生态成型，个体创业者借生态快速起步。"
-  },
-  "https://www.cifnews.com/article/188363": {
-    "zh_title": "AI 成人内容出海：一门踩着红线的“快钱”生意",
-    "zh_oneliner": "AI 成人内容出海游走在合规边缘，短期收益高但风险不小。"
-  },
-  "https://www.cifnews.com/article/189462": {
-    "zh_title": "一文吃透Wayfair全品牌矩阵：客群画像+选品方向+实操指南",
-    "zh_oneliner": "一文讲清 Wayfair 全品牌矩阵的客群画像与选品方向，附实操指南。"
-  },
-  "https://www.cifnews.com/article/189569": {
-    "zh_title": "做Wayfair怎么选品？成熟畅销品vs高增长蓝海品类",
-    "zh_oneliner": "对比成熟畅销品与高增长蓝海品类，讲清在 Wayfair 上怎么做选品。"
-  },
-  "https://www.cifnews.com/article/189617": {
-    "zh_title": "Wayfair合规重点：产品责任险（COI）审查与更新指南",
-    "zh_oneliner": "讲清 Wayfair 产品责任险 COI 的审查要点与更新方法。"
-  },
-  "https://www.cifnews.com/article/189792": {
-    "zh_title": "Wayfair账号被关不要慌！完整申诉流程详解",
-    "zh_oneliner": "Wayfair 账号被封后的完整申诉流程，一步步讲清如何应对。"
-  },
-  "https://www.cifnews.com/article/189828": {
-    "zh_title": "Wayfair自发货模式解析：仓库配置、订单处理与物流要求",
-    "zh_oneliner": "解析 Wayfair 自发货模式的仓库配置、订单处理与物流要求。"
-  },
-  "https://www.cifnews.com/article/189976": {
-    "zh_title": "亚马逊2027年销售佣金&物流费用变更",
-    "zh_oneliner": "亚马逊公布 2027 年销售佣金与物流费用调整，卖家需重新核算成本。"
-  },
-  "https://www.cifnews.com/article/190083": {
-    "zh_title": "Wayfair用户信息设置概览及供应商账户设置指南",
-    "zh_oneliner": "Wayfair 用户信息与供应商账户的设置指南，新手入驻可对照操作。"
-  },
-  "https://www.cifnews.com/article/190118": {
-    "zh_title": "Walmart开放AI代理、Amazon限制第三方：跨境卖家流量入口正在发生什么",
-    "zh_oneliner": "Walmart 开放 AI 代理、Amazon 收紧第三方，卖家流量入口正在重构。"
-  },
-  "https://www.cifnews.com/article/190122": {
-    "zh_title": "亚马逊爆款断货后，为什么降价也推不动？补货后如何重新拉升链接自然流量？",
-    "zh_oneliner": "爆款断货后降价也难见效，补货后如何把链接自然流量重新拉起来。"
-  },
-  "https://www.ebrun.com/20261114/720059.shtml": {
-    "zh_title": "创业板今年最大IPO来了",
-    "zh_oneliner": "创业板迎来今年最大 IPO，关注其业务成色与市场反应。"
-  },
-  "https://www.cifnews.com/article/189901": {
-    "zh_title": "【亚马逊卖家注意】2027欧盟电池新规要求将强制执行",
-    "zh_oneliner": "2027 年欧盟电池新规将强制执行，亚马逊卖家需提前合规准备。"
-  },
-  "https://www.cifnews.com/article/189984": {
-    "zh_title": "突发！多个广州跨境电商老板被限制出境！",
-    "zh_oneliner": "多名广州跨境电商从业者被限制出境，合规风险再度敲响警钟。"
-  },
-  "https://www.cifnews.com/article/190135": {
-    "zh_title": "【雨果快报】德国AWD免仓储费到年底；速卖通双11品牌成交翻两倍",
-    "zh_oneliner": "德国 AWD 免仓储费延至年底，速卖通双11品牌成交翻两倍。"
-  },
-  "https://www.cifnews.com/article/189845": {
-    "zh_title": "Wayfair运营逻辑详解：从流量到销售的转化闭环",
-    "zh_oneliner": "拆解Wayfair从流量获取到成交转化的完整运营闭环，讲清每个环节该怎么做。"
-  },
-  "https://www.cifnews.com/article/189939": {
-    "zh_title": "Wayfair运营制胜三部曲：从SKU基本功到头部产品增长",
-    "zh_oneliner": "从SKU基本功打起，分三步讲卖家如何在Wayfair上做到头部增长。"
-  },
-  "https://www.cifnews.com/article/190061": {
-    "zh_title": "营收暴增61%！这个清洁小家电，正在杀入TOP卖家阵营",
-    "zh_oneliner": "一个清洁小家电品牌营收暴增61%，正在冲进头部卖家阵营，复盘它做对了什么。"
-  },
-  "https://news.google.com/rss/articles/CBMijAFBVV95cUxOdXNDb182Y2xCOUVsS1lZUXc2TkwycXA4X1UwLWFJTWh5Tk9vekw4eW5wZ1Fpak9ESkJFM0YyUUNpSFZkbktqa3ppNHdrT2tRSFlCd0tPcnpiRzkwOEhwM1BsLU1wejNCRHFVSF8zNENQRlNwa0FSSjNib3JIc2pDcUVRMlZuV01oaGJVNw?oc=5": {
-    "zh_title": "2026年中国跨境电商SaaS市场行业报告",
-    "zh_oneliner": "报告梳理2026年中国跨境电商SaaS市场的规模与格局，附报告下载。"
-  },
-  "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1VZ196STZaeUpmMU41ZS10SHhhT1ZSSUR3UFpCTzJZQThJQlpjRm5EeVhNS2RLNXp0RVN5N2tpU3oxRjBhWktYZHRkeVo2S1U?oc=5": {
-    "zh_title": "非洲电商KiKUU宣布逐步停止运营，过渡期至12月31日",
-    "zh_oneliner": "非洲电商KiKUU宣布逐步停运，过渡期至12月31日，保证金与年费将分期退还。"
-  },
-  "https://news.google.com/rss/articles/CBMimAFBVV95cUxPczB1Y1dsc2N6LXY1V292bDg0bjQ0TWwtNGJSTmRlNXAzRUJKUFdtQ2MwZkkyWGhSRHlMOTJ5V2FxUVUzOWtWa1FCdldrVzRzRmM4MnBuamVYYmVRbjhIbnlIdlRQdEFOQWMtQXNUQ0Q3cnVQY1EwQVR2SzIybHBGRXYxckxIT1dVcHVnQmZIb3FPZHFfY081TQ?oc=5": {
-    "zh_title": "保税仓迎来订单高峰，盐城经开区跨境电商备战双十一",
-    "zh_oneliner": "双十一前保税仓订单大涨，盐城经开区跨境电商进入备战状态。"
-  },
-  "https://news.google.com/rss/articles/CBMijwFBVV95cUxNVHZNNkNTVzh4Tk9zMUpzNGVEX3d4bEpLQjVfNVpmSjBJYTAzTm5XSlI3VWdHZEpMdTZRdU1mRkZRUGpCODA2WmtZblJRZ3h6U1RtSEozYUtBXzdnSk9LeW5CVk9WUXNQUVg3UG5Nc0otTm9YYUhWWVlaSndSVUNoT1RycjRPZnRuVnVnMEFnRQ?oc=5": {
-    "zh_title": "1.45万亿元创同期新高，东莞外贸连续31个月正增长",
-    "zh_oneliner": "东莞外贸总额1.45万亿元创同期新高，已连续31个月保持正增长。"
-  },
-  "https://news.google.com/rss/articles/CBMiTEFVX3lxTE0wWk80QUFVYV9NN1hKaEpNNW90Zmt3M2prY05DWnBIUGs0SEhHbVg4dk5EbDk4OUY4VjloT2xMWHpxTXBsaWMxbUdSdlU?oc=5": {
-    "zh_title": "对标亚马逊？欧洲新平台开放21国，中国卖家机会来了",
-    "zh_oneliner": "欧洲一新平台向21国开放，对标亚马逊，中国卖家或迎来新的入场机会。"
-  },
-  "https://www.cifnews.com/article/190070": {
-    "zh_title": "新店月销3000单！又一平台杀入这片蓝海市场",
-    "zh_oneliner": "新平台入局带来新的流量机会，新店单月做到3000单，值得留意这个蓝海市场的入驻窗口。"
-  },
-  "https://news.google.com/rss/articles/CBMinwFBVV95cUxNY1lodktMS3BmSXJqRnFZcHFRYld5a2NaaVllaDhxQTAwZVBsWWV3Ry1VeDJyYy1YQVhiMXE0ZWFTdFRqeUMzUWhkSGdtOHNPTUZWMlRWVmhYeTdfaHNsWmdtSW92TDJQYkN2NnU2WnhLQmVkZWExaFg3clNCejVpUmM4NXRkenhYZVU1YU9FRnNkRl9sekt5UVZURVFxVTg?oc=5": {
-    "zh_title": "亚马逊海外购中国业务负责人：中国跨境电商市场具备三大优势",
-    "zh_oneliner": "亚马逊海外购负责人谈中国跨境电商的三大优势，帮卖家判断市场机会。"
-  },
-  "https://www.ebrun.com/20261114/721165.shtml": {
-    "zh_title": "电商周报：双11最全战报出炉；京东内测“短剧电商”；腾讯上线全新产品“元宝搜索”",
-    "zh_oneliner": "本周双11战报汇总，附京东短剧电商内测与腾讯新产品元宝搜索的动态。"
-  },
-  "https://news.google.com/rss/articles/CBMickFVX3lxTFBJN3pFVkZIMmNDWi1DOHNBT0NVS3p5bk85N1dMWTN0YlZRdXVTRHR2NzhDNnhpaURNR1RRelVvT0tMVGRTcjBFRlJDbUR5Yi1TUXBFZ0tUVXhmVno2RGdvTGk0TllvRFdWU2lSNjJoOGxVZw?oc=5": {
-    "zh_title": "重庆适合出海吗？3个维度说清内陆如何向海而兴",
-    "zh_oneliner": "从三个维度分析内陆城市重庆做跨境出海的条件与路径。"
-  },
-  "https://www.cifnews.com/article/190138": {
-    "zh_title": "突发！非洲电商KiKUU宣布停运，卖家分期退款",
-    "zh_oneliner": "非洲电商 KiKUU 宣布停运，卖家货款将分期退回，布局非洲市场的卖家需留意回款安排。"
-  },
-  "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1SSW9IOVZfc2Y0RTN1NnJGRV9XcV94UFgzN2NUWHBza0d2M0t3YXpVZlJ2SDZCcTZ0ZGY1V3g0UjVvdHgyZmpydlNCZUZUYjZFMUZ2U18zdk1Nd1BlN24zTFBKQQ?oc=5": {
-    "zh_title": "揭秘：“美国原产”的保健食品不仅是国内生产，还非法添加药品！",
-    "zh_oneliner": "所谓“美国原产”保健食品实为国内生产，还涉嫌非法添加药品，选品时要警惕这类合规风险。"
-  },
-  "https://news.google.com/rss/articles/CBMijAFBVV95cUxQcHZVcTBQcS1ZcU41ZnppdUFrRHNJcjJjdVBOWmRkZjMxTllRdHIwcEVFSkF2Q2dCeVVSZlBPRTNfMzFXNUJOWFFfX3dqczVRamY5Q0UtczZVRWF4SDV1bVgtZE5sb0lJS2QtLTdLWDZTUVkzWU05VWVaSHp1cktqTmNCa1JhZkNRZzFzdw?oc=5": {
-    "zh_title": "揭秘：“美国原产”的保健食品不仅是国内生产，还非法添加药品！",
-    "zh_oneliner": "所谓“美国原产”保健食品实为国内生产，还涉嫌非法添加药品，选品时要警惕这类合规风险。"
-  },
-  "https://news.google.com/rss/articles/CBMimAFBVV95cUxOXy1tUzBUMy1jSlNzeWdkTzVXZnZGd3Btc2xVQmFqTWtfWnF4eE9TQ3ZJVHF5c1VOSTdJUC1EazZvSnlGTzVvaEU4M2FMdldlOXpRLURXbmtFOHppZVpmQzRIS1oxNTdPNjZuTWhuNnBIM2dtNm9sc2JDNnVmQ1J5QnJ1X1ZiUGhXUERUSTVjTm1nUWhmTm91LQ?oc=5": {
-    "zh_title": "揭秘：“美国原产”的保健食品不仅是国内生产，还非法添加药品！",
-    "zh_oneliner": "所谓“美国原产”保健食品实为国内生产，还涉嫌非法添加药品，选品时要警惕这类合规风险。"
-  },
-  "https://news.google.com/rss/articles/CBMickFVX3lxTFBuZFRGX3dZUkVpOVk1NWE5d3Z2QTFiOFMtX09UQVI1Rjcxd3dYRExfM0ZOemRaeW5TN3FhanM2M3dQRDRGR2RGUWZPLWlETzBpemdLZWQxSFhXVmZpX3BoUUVSQzB3cUZqc29JdHhiZVNHZw?oc=5": {
-    "zh_title": "【评论】推动航运保险跟上中国制造“出海”步伐",
-    "zh_oneliner": "评论呼吁航运保险跟上中国制造出海的步伐，跨境卖家可留意物流保障与成本的变化。"
-  },
-  "https://www.sellerapp.com/blog/market-basket-analysis-report": {
-    "zh_title": "购物篮分析报告：把 Amazon 购买规律变成可预测的增长",
-    "zh_oneliner": "用购物篮分析报告挖掘历史订单里的商品搭配规律，帮 Amazon 卖家把增长变得可预测。"
-  },
-  "https://news.google.com/rss/articles/CBMicEFVX3lxTFBQc25pZ0F2VnkxN1FxZDczcDFZLW5tSmFiVG5jUmppZkZ4cmtHWFFoRU82QjFrX2NKSkFNb1gyQ3MzNTVfM0lkc2hPdC1Ra1hzR3FDOEVRRXA2SFl4N1RIZFV4R0RVcHpURkM2bVdPN2w?oc=5": {
-    "zh_title": "首届苏州跨境物流大会成功举办，KLN全面融入苏州制造出海立体生态",
-    "zh_oneliner": "首届苏州跨境物流大会成功举办，KLN全面融入苏州制造出海立体生态，跨境卖家可留意区域出海物流的新动向。"
-  },
-  "https://news.google.com/rss/articles/CBMiY0FVX3lxTE41bTRrNzY0SE14Z2ZvQ0daem94NEpsSEhiRHllS2F2dDRpRF9QdTcyT2JOTnQ0cWU1SER0NFNzSG1VZG9RU0Jjc2hnVGI5TWVNTlhnb3ptWTdxUlgyMUU0T2NQYw?oc=5": {
-    "zh_title": "国是直通车",
-    "zh_oneliner": "国是直通车栏目更新，原文见新浪网。"
-  },
-  "https://www.sellerlabs.com/blog/you-are-not-behind-on-ai-brent-wees": {
-    "zh_title": "你并没有在 AI 上落后：Brent Wees 访谈",
-    "zh_oneliner": "多数亚马逊卖家并没有在 AI 上掉队，从一个重复性小任务开始就能赶上。"
-  },
-  "https://www.cifnews.com/article/168947": {
-    "zh_title": "24-cv-00435：英国时尚品牌 KJP 发起 TRO 维权，卖家须避开这些商标和专利",
-    "zh_oneliner": "英国时尚品牌 KJP 通过 TRO 临时限制令维权，相关商标与专利成为卖家侵权高风险点。"
-  },
-  "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5SQ0hZNmJCTF9kamxtS1B5Uy1uWVVjb185d3pyckFPV3ZfQ2ZBU1d3ellBcENCRFcwUnlIYThCNnJqblh2Q0ZkUl81dkhzR3R6LVczM3VNbld5YmRDTEMtd3YySlFyQQ?oc=5": {
-    "zh_title": "陈泓缣：禁跨境电商卖食品，才是监管跨境食安的有效办法",
-    "zh_oneliner": "马来西亚方面认为，禁止跨境电商平台销售食品，是管住跨境食品安全的最有效办法。"
-  },
-  "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNLXd2azBGRzRDMWZ0U3VncmhIaTZzWmU0M3c0ckU3ZURyOXVrTWhfcXZYV3JEd3E2MmprVXBhY3ZRZGdBRzBVa252eG5leXExcVNLdF9EWW9PQ3liX0Fla3p5RjhYWkhMTXUzWG9EMk5oeXFBdUt0SV9mYUNsTjdyS0FpWm1xeFRF?oc=5": {
-    "zh_title": "湖南专题交流会助湘企更好出海，分享实操干货",
-    "zh_oneliner": "湖南举办专题交流会，围绕出海实操经验为本地企业出海提供参考。"
-  },
-  "https://news.google.com/rss/articles/CBMieEFVX3lxTE5hZmNKZXN6V1lFaHJOQm1PYmhDQXdPRk9SV1V4d1VMTG11MWNmN3c4TnRjWnFJN215NFItcW40dWk3WEVJSEhRMHFOTDJLWmhaUUtqbXQ2b1paY3dxejl6bVYtY2hEMFMwOG9xaC1kdVN1UzVITnNTbw?oc=5": {
-    "zh_title": "广东—韩国贸易基本盘：粤韩经贸合作现状扫描",
-    "zh_oneliner": "广东与韩国的贸易基本盘稳固，双方经贸合作持续深化。"
-  },
-  "https://www.dsb.cn/p/01m7d28p3jmpx8a13dc8sd5b8e": {
-    "zh_title": "全渠道元年：双十一家电销售主阵地仍在京东",
-    "zh_oneliner": "双十一期间家电销售仍以京东为主阵地，全渠道布局成为今年主线。"
-  },
-  "https://www.dsb.cn/p/01m7c2kdv1pzqw2y30mnc82acb": {
-    "zh_title": "问界新M8售价37.98万元起，主打家庭智慧旗舰SUV",
-    "zh_oneliner": "鸿蒙智行发布问界新M8，起售价37.98万元，定位家庭智慧旗舰SUV。"
-  },
-  "https://www.dsb.cn/p/01m7589rzt1fxcntrcpc1bryr4": {
-    "zh_oneliner": "速卖通在沙特市场迎来爆发，卖家可关注中东站点的选品与物流机会。"
-  },
-  "https://www.dsb.cn/p/01m6r7zm23x3xmtypvxkdvmvx4": {
-    "zh_oneliner": "速卖通近期增长强劲，平台红利期值得卖家留意。"
-  },
-  "https://www.dsb.cn/p/01m7bskg4wgbeev6sentwyct6j": {
-    "zh_oneliner": "盒马海外业务拿下大单，出海供应链的机会值得关注。"
-  },
-  "https://news.google.com/rss/articles/CBMijAFBVV95cUxNX0JQd18wMnVKYVA1VU1Pa00tdTVlUVpLZFNoZXBKRzByQjB6a2tPUXQ4a2MxREw5Z1ljaG9xNk9KMHo4eVpLVi1xTEx2N2J3eDRSRjZMQTdVNjRzdEZ5VGU2X0E1eWhkOFo4UzN1QmttSXk4QW1oRWJ6NUJkd1R3bVl1V3pBeUFOSHNocA?oc=5": {
-    "zh_oneliner": "成德两地以跨境电商联动产业出海，区域协同模式可供参考。"
-  },
-  "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9VVndWeHhSdHRuZUpOREV6NXYyRnYtdm9ObFQ3WjBYZXppaXo0cjBDbUlFRHhyQlZFc19TalRucVFvQXZuNkVRdFVQS2pZY2FZblpURG8tejFoaUxzQ2xaRjI1WW16Zw?oc=5": {
-    "zh_oneliner": "校企合作搭建跨境出海实训平台，为行业输送实操型人才。"
-  },
-  "https://news.google.com/rss/articles/CBMibEFVX3lxTE1CQ3kwTGNLbTlHWDhPVEUzQmlUVFhjR3FiVjk2Tkt5V3ZiSDl0M0ZCYlNEMWUzRkd2M0E5cUFBckJlYkE0a1RBOWVvMnlPbWJOU1ZXV1JKRXl1S3VqVU9aTTBhNnU0eXBISkhZSw?oc=5": {
-    "zh_oneliner": "从超市货架看 APEC 与深圳外贸的联系，帮卖家理解身边的出海机会。"
-  },
-  "https://news.google.com/rss/articles/CBMid0FVX3lxTFBpMWZJNk5sUmdGRGRNajRnNDlJeHNKWi1iT0NhZDhHTXB1TVZ4RkNaWi1KZmw0YzNmYmZPMklaV0hPcFQtamhSV2w5WTUxalFfVjgySU5OTTYyLXUyQzY2d0loTk9sRHJ3UHFWbE1mbGhsemp0MEpV?oc=5": {
-    "zh_oneliner": "阿里国际站上线权威交易保障功能，跨境交易的安全与效率有望提升。"
-  },
-  "https://news.google.com/rss/articles/CBMid0FVX3lxTFAxLXdNS254b1FXX1pkMjJjbjVFWnZtYlpmbm9FQ3dJMjRNM3IwOUZYZVA3ZHlGcFNTOEllYXV2SF90dDAyUDU3RGFRZ25EeGd5aXR6dzJYVERwS09Rc0REUnlYR2NnUWc4SVE1QnphREVXd21XWTJJ?oc=5": {
-    "zh_oneliner": "国际站推出全新智能匹配服务，帮买卖双方更快找到合适的交易对象。"
-  },
-  "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPOENqa2VzTzhMWEM3NXdZYnVSR2JwTm9yaTctNEYtTDV3VGdyUGpVaDVpQUlpTDRBNzl3NFhzWWNqbG5KYkF3OVNFaGpINkRfdS1TR3l3OUtuM0dkZjVhdUVRU0hYcDJPd3dDb0ZxVE9MX3BMMjg5dFd0SHpya3VBbW1Gbkh2WEQz?oc=5": {
-    "zh_oneliner": "一人也能跑通业务，关键在于搭建好自己的生态打法。"
-  },
-  "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9NSGZFdGdEUjhJVUMwRUdJRi1SQUJ6enZINDQyZVVwWGttVm5lQTNzRFBzek9YV3lzZjNuQ2o1U01WNFpBQkpSWkotOGtuWjQ?oc=5": {
-    "zh_oneliner": "WOOT 面向直连供应商加码旺季广告扶持，符合条件的卖家最高可获 50% 补贴。"
-  },
-  "https://news.google.com/rss/articles/CBMimAFBVV95cUxPRXZheUNVNnNra1YtcG1tTzNJcktnUHpDbFFxQnB5UEZIdTlSeGQyaTY0SmpQSWtOMEp6RS0tZmlLMW55alBLWEV2WUxSenBvdHdFVVJuckhLUS12TUtfbDNEX0xyTm54VHZEaU0tVXlPQjlMNFBmUzQzX0NUN0JoeVlsTUg2UGJibDQ3Zi05VU5oaG1MaC16Ng?oc=5": {
-    "zh_oneliner": "双十一包裹加速发往东盟，中国商品的跨境极速达体验正在提升。"
-  },
-  "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9PNjlNWjYzSmFFaWpRYnRrREZKZ0NLS3ZobHBxY0hlQlkyV29GenY2WkNJZEF1eEo1eDNkUDhLMEt3Nm5VWHNiOVkzbzQ?oc=5": {
-    "zh_oneliner": "德国 AWD 仓储费免到年底，速卖通双十一品牌成交翻倍，旺季利好不少。"
-  },
-  "https://www.cifnews.com/article/189932": {
-    "zh_oneliner": "亚马逊2027年费用结构将调整，卖家要提前测算利润，重新核定售价与备货节奏。"
-  },
-  "https://news.google.com/rss/articles/CBMickFVX3lxTFBqdnI4SmV1QXNXaVRhWkJNXzluZVR6UWo4RWVwYkpRR04zckkyM0FuVGNOSmlwVlRHOVdrTG95VlM5Z2E2R2Z5dVJKY0o2a2R1aFZ4b1hKRFZvNXJaS3I5em93cGJyUm5UeEctNEtMeXVVZw?oc=5": {
-    "zh_oneliner": "双十一跨境包裹发往东盟提速，东南亚市场的物流时效与履约能力成为新的比拼点。"
-  },
-  "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQV2hKQXJjaEg2eTlIQXVEcmpMLW05SFhZTmRBNDJZVlB5eXdXYjBvQzhUUEVSMXlpaThRS3dHeTNUWjR3Qjc5OFFVaXBxT2NLY01XRDZITl9vNE53UW45NVpXUXM1OXlPTkM2dnBYcEFNejIyeEpOMk45ZHdqejdjLVpsQkdBV1RQ?oc=5": {
-    "zh_oneliner": "双十一期间发往东盟的跨境包裹量大增，物流链路的稳定性直接影响大促转化。"
-  },
-  "https://www.dsb.cn/p/01m7a6pcm4hgavz06b6gcsjq3t": {
-    "zh_oneliner": "亚马逊与拼多多在低价与流量上的竞争升级，卖家要看清两边规则再选主战场。"
-  },
-  "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5WN2txdFdzT1ltMUxVX3IyZ2RwVF9MOVdwTU56cUc1UmxuUTRNUllJNzVOR0E1YkVVdlpkaGRET3J6YWdHRWV4Uy1pZUlYTUlYUWQ0eUIxQ3N0M3RhWWJtaA?oc=5": {
-    "zh_oneliner": "两大平台正面交锋，低价策略与流量分配的变化会直接影响卖家的定价空间。"
-  },
-  "https://news.google.com/rss/articles/CBMibEFVX3lxTE82UFhYU2RFdFRqMmlCSS13cVhEV1ROVFRsXy1DNG13YnllazB4SWRlaFFBNDFRZTZGd2hxck1IVmFuVU84eEs5cTdRWGtSWXN0RFNoWUgybEt1TEFxXzE5enBOWEVmMjhUN1NjVw?oc=5": {
-    "zh_oneliner": "沧州高端管道装备借出海打开新市场，传统制造品类靠产品力也能走通跨境路。"
-  },
-  "https://news.google.com/rss/articles/CBMifEFVX3lxTE50NUQ3YWF2Tm9DZ3JjM2RNWlUwckZmem52NG40V0s0N0NoYmU1Uzh4Ri1OVDI4dEktNF9KWERpcmpkcFEtUHN5QUNITkp4cVJONnowTkhDRVdQVnlHdGFaQVNuekJ1ZUEzc1ZTUjVwdWRjRHpaejlpYThMdUk?oc=5": {
-    "zh_oneliner": "保税仓订单进入高峰，盐城经开区的跨境备货节奏可作为旺季仓配安排的参考。"
-  },
-  "https://www.cifnews.com/article/190136": {
-    "zh_oneliner": "亚马逊集中清理换评行为，卖家应自查评论获取方式，避开账号风险红线。"
-  },
-  "https://mjzj.com/article/g463vf6o8ydc": {
-    "zh_oneliner": "435个卖家账户卷入调查、涉资超467万美元，合规经营已是保住账号的底线。"
-  },
-  "https://news.google.com/rss/articles/CBMib0FVX3lxTE1pM0JKd1NQLVB2WEpVNzFMaHdkaWlQbWVkbHdFb18wOWhrOEs1RXFlWGlLYVVUb2E2UHdEc2dhZl9aY2pWMkpuSnNDRWRKMkpSdC1pbkJqUGY3X1RZWUh6VnJuNDhEX1h5ZEJwUjEwbw?oc=5": {
-    "zh_oneliner": "盐城保税仓为双十一备货进入冲刺，跨境卖家可对照检查自己的旺季库存与发货节奏。"
-  },
-  "https://mjzj.com/article/g45zzq3upbeo": {
-    "zh_oneliner": "亚马逊大件配送费降至6.78美元，家具等大件品类的利润模型值得重新测算。"
-  },
-  "http://www.baijing.cn/article/57373": {
-    "zh_oneliner": "一款水杯在亚马逊反超Stanley登顶，爆款打法与差异化卖点值得选品时拆解。"
-  },
-  "https://www.cifnews.com/article/190133": {
-    "zh_oneliner": "小众品类出海做网红营销，选人标签定不准，AI工具也难把流量推给对的人。"
-  },
-  "https://www.cifnews.com/article/190132": {
-    "zh_oneliner": "亚马逊旺季仓储费涨至三倍，卖家要算清库存周转，避免滞销品吃掉利润。"
-  },
-  "https://www.cifnews.com/article/190131": {
-    "zh_oneliner": "黑五网一前一周，不同阶段的链接各有操作重点，按节奏走才能接住大促流量。"
-  },
-  "https://www.cifnews.com/article/190130": {
-    "zh_oneliner": "手机壳上的叶子与格纹图案也可能触发版权维权，127家店铺翻车给选品提了醒。"
-  },
-  "https://www.cifnews.com/article/190129": {
-    "zh_oneliner": "Home & Kitchen品类三轮Woot BD复盘：比起活动脉冲，沉淀下来的运营经验更值钱。"
-  },
-  "https://www.cifnews.com/article/190127": {
-    "zh_oneliner": "热门动画商标与版权同时维权，RWBY相关商品在各平台被集中清理，擦边选品风险很高。"
-  },
-  "https://www.cifnews.com/article/190125": {
-    "zh_oneliner": "新版3C认证11月1日起落地，玩具与童车类卖家要确认证书状态再上架出货。"
-  },
-  "https://www.cifnews.com/article/190124": {
-    "zh_oneliner": "平台审核检测报告有三项要件、四类失效场景，日常管理不到位就可能被下架。"
-  },
-  "https://news.google.com/rss/articles/CBMibEFVX3lxTE1qQ0JmZVZ5OFRTQUVxbWc0T2UtZlZrRGxPSzBOZW9SN2RheGZpcnViaEtobzNhZTZoVjJoVVJETTcwbWQwOXlMSWpOb3Z5Sm9fTTQ5YVlHbUQ4ZGtKM2FlMU5DTGRHQXAzcmhEMA?oc=5": {
-    "zh_oneliner": "校企合作搭建跨境出海实训平台，首批留学生已进入园博工坊参与实操。"
-  },
-  "https://www.dsb.cn/p/01m7abbxhyn4kh6qkbajgrpz53": {
-    "zh_oneliner": "快手电商开售三周成交超25亿元，多位达人接连刷新单场销售纪录。"
-  },
-  "https://www.dsb.cn/p/01m7aap2s47qfbfd5sfs3zyetj": {
-    "zh_oneliner": "张一鸣公开露面，字节跳动在 AI 方向上与 OpenAI 正面竞争的信号明显。"
-  },
-  "https://www.dsb.cn/p/01m7a9vdj6yxb235r9qffm37xs": {
-    "zh_oneliner": "英伟达员工集体挽留黄仁勋，侧面反映其在公司内外的号召力。"
-  },
-  "https://www.dsb.cn/p/01m7a7r5ev19w771t4sgpkk7zc": {
-    "zh_oneliner": "湖南创业者靠卖运动鞋做到月入5亿元，公司已在筹备上市。"
-  },
-  "http://www.baijing.cn/article/57374": {
-    "zh_oneliner": "短剧平台 DramaBox 迎来新股东，背后是月活1.6亿的网漫平台 Webtoon 与迪士尼。"
-  },
-  "https://www.dsb.cn/p/01m79rxp0cev6fdvszdewgbm11": {
-    "zh_oneliner": "中国平安成为 APEC 唯一保险赞助商，借国际会议提升品牌曝光。"
-  },
-  "https://www.dsb.cn/p/01m7a503pn4060qn3gg99mexd5": {
-    "zh_oneliner": "B站双11收官，参与视频带货的 UP 主数量同比增长41%。"
-  },
-  "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1PRlF1cHdEX24zSVFUTGNZMnZHVk52TTQ4M1BGaVlEdUgwNkhRcWxfcDlBRHpPTGJURlF2NDRrcXQtNEtBSnVpY0V4bXA?oc=5": {
-    "zh_title": "突发！非洲电商 KiKUU 宣布停运，卖家分期退款",
-    "zh_oneliner": "非洲电商 KiKUU 宣布停运，卖家货款将分期退回，出海卖家需留意回款安排。"
-  },
-  "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1GNlQxQjJYVnhkZ0k4dXhhWHBFZk5BaFdYWjg5LWc3UXJUaTBjV0E4X01Rcm1xRkdBVUdNVkx0ODAzaW91MkhYcmpybGVuUQ?oc=5": {
-    "zh_title": "陈泓缣：禁跨境电商卖食品，才是监管跨境食安的有效办法",
-    "zh_oneliner": "马来西亚方面认为，禁止跨境电商平台销售食品，是管住跨境食品安全的最有效办法。"
-  },
-  "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBTQ0w2dmVqd0ptZENkdHVYb1dGRm9fWHVXOEU0X01GUTlob3N2UlZGS3FBMlE4bXQ2endPX19VYzNnNlJFQ1Jpb2JUaXRJMzJfSHEzTmhKQ3lIVFVmUExBdjJqTk5PUjRi?oc=5": {
-    "zh_title": "保税区里搭起一座“双向选品”的桥",
-    "zh_oneliner": "宁波保税区搭起“双向选品”的桥，为跨境卖家与海外货源提供双向对接通道。"
-  },
-  "https://news.google.com/rss/articles/CBMid0FVX3lxTFBSX2VSWTFpaVZnR3pXZU9TQy1meHlEMWVYMkZxNEcxRHRORnl4ZGRienA4bEsyaEE2ZHZGRlJqbkM0TXZBenFKMFczTEFHcjJqZ0FBUHE5WXg0WU1UTlRuOU1VQjF4ck15RUw4R0lORmNuUHllQnNV?oc=5": {
-    "zh_title": "问鼎国际-国际站今日正式升级，推出权威跨境交易保障服务，助力全球采购效率提升",
-    "zh_oneliner": "国际站上线权威跨境交易保障服务，为全球采购用户提供官方交易保障，提升交易安全与效率。"
-  },
-  "https://app.nichehunter.com/tiktok-shop/?product=1729558556070089471": {
-    "zh_title": "草饲牛脂蜂蜜润肤膏",
-    "zh_oneliner": "TikTok Shop 当日热销第 1 名，累计销量约 66.4 万件，预估收入 1330 万美元。"
-  },
-  "https://app.nichehunter.com/tiktok-shop/?product=1729389453329862915": {
-    "zh_title": "Sirena 旋风空气净化香薰机",
-    "zh_oneliner": "TikTok Shop 当日热销第 2 名，累计销量约 19.2 万件，预估收入 1150 万美元。"
-  },
-  "https://app.nichehunter.com/tiktok-shop/?product=1729577747003314278": {
-    "zh_title": "Merach 扶手踏步机",
-    "zh_oneliner": "TikTok Shop 当日热销第 3 名，累计销量约 11.2 万件，预估收入 1460 万美元。"
-  },
-  "https://app.nichehunter.com/tiktok-shop/?product=1729405889651904902": {
-    "zh_title": "Persona 24小时防水眼线笔",
-    "zh_oneliner": "TikTok Shop 当日热销第 4 名，累计销量约 25.7 万件，预估收入 570 万美元。"
-  },
-  "https://app.nichehunter.com/tiktok-shop/?product=1731227895274115130": {
-    "zh_title": "OQQ 女士高腰宽松休闲裤",
-    "zh_oneliner": "TikTok Shop 当日热销第 5 名，累计销量约 14.4 万件，预估收入 1310 万美元。"
-  },
-  "https://app.nichehunter.com/tiktok-shop/?product=1729551073277678119": {
-    "zh_title": "EVELLYHOOTD 女士真皮短靴",
-    "zh_oneliner": "TikTok Shop 当日热销第 6 名，累计销量约 20.3 万件，预估收入 870 万美元。"
-  },
-  "https://app.nichehunter.com/tiktok-shop/?product=1729439565726454007": {
-    "zh_title": "Sweet Sweat 暴汗腰带",
-    "zh_oneliner": "TikTok Shop 当日热销第 7 名，累计销量约 22.8 万件，预估收入 830 万美元。"
-  },
-  "https://app.nichehunter.com/tiktok-shop/?product=1729589595500745694": {
-    "zh_title": "15天肠道清洁套装",
-    "zh_oneliner": "TikTok Shop 当日热销第 8 名，累计销量约 28.6 万件，预估收入 1090 万美元。"
-  },
-  "https://app.nichehunter.com/tiktok-shop/?product=1729710829635801620": {
-    "zh_title": "Clean Nutra 辣椒素膳食补充滴剂",
-    "zh_oneliner": "TikTok Shop 当日热销第 9 名，累计销量约 20.6 万件，预估收入 1030 万美元。"
-  },
-  "https://app.nichehunter.com/tiktok-shop/?product=1729436078970475149": {
-    "zh_title": "Luna Bean 手模铸造套装",
-    "zh_oneliner": "TikTok Shop 当日热销第 10 名，累计销量约 16.3 万件，预估收入 740 万美元。"
-  },
-  "https://www.jadeship.com/item/1688/719600721509": {
-    "zh_title": "四季中性钩花棉袜",
-    "zh_oneliner": "1688 七日销量榜第 2 名，较上期上升 6 位。"
-  },
-  "https://www.jadeship.com/item/1688/871672793755": {
-    "zh_title": "礼盒装男女长筒运动袜",
-    "zh_oneliner": "1688 七日销量榜第 9 名，较上期上升 69 位。"
-  },
-  "https://www.jadeship.com/item/1688/979647718693": {
-    "zh_title": "巴甲帕尔梅拉斯/科林蒂安球衣",
-    "zh_oneliner": "1688 七日销量榜第 11 名，较上期上升 22 位。"
-  },
-  "https://www.jadeship.com/item/1688/770710259551": {
-    "zh_title": "欧美风速干沙滩裤",
-    "zh_oneliner": "1688 七日销量榜第 14 名，较上期上升 27 位。"
-  },
-  "https://www.jadeship.com/item/1688/798996476745": {
-    "zh_title": "春秋空气层连帽运动套装",
-    "zh_oneliner": "1688 七日销量榜第 15 名，较上期上升 23 位。"
-  },
-  "https://www.jadeship.com/item/1688/865706015902": {
-    "zh_title": "日韩风小马刺绣棒球帽",
-    "zh_oneliner": "1688 七日销量榜第 17 名，较上期上升 1 位。"
-  },
-  "https://www.jadeship.com/item/1688/893044112777": {
-    "zh_title": "速干运动紧身训练套装",
-    "zh_oneliner": "1688 七日销量榜第 18 名，较上期上升 7 位。"
-  },
-  "https://www.jadeship.com/item/1688/819553942170": {
-    "zh_title": "巴甲桑托斯内马尔 10 号球衣",
-    "zh_oneliner": "1688 七日销量榜第 19 名，较上期上升 473 位。"
-  },
-  "https://www.jadeship.com/item/1688/981410722063": {
-    "zh_title": "小马刺绣速干沙滩裤",
-    "zh_oneliner": "1688 七日销量榜第 20 名，较上期上升 12 位。"
-  },
-  "https://www.jadeship.com/item/1688/1013421744809": {
-    "zh_title": "巴甲克鲁塞罗/弗拉门戈球衣",
-    "zh_oneliner": "1688 七日销量榜第 22 名，较上期上升 31 位。"
-  },
-  "https://www.sellersprite.com/cn/blog/sellersprite-live-20261119": {
-    "zh_oneliner": "讲怎么用 AI 做出高转化的亚马逊创意图。"
-  },
-  "https://www.sellersprite.com/cn/blog/amazon-category-evaluation": {
-    "zh_oneliner": "用 AI 结合竞争、新品和需求数据，判断一个类目值不值得进。"
-  },
-  "https://www.sellersprite.com/cn/blog/ai-batch-screen": {
-    "zh_oneliner": "教怎么让 AI 批量筛出评论少但销量高的新品。"
-  },
-  "https://www.sellersprite.com/cn/blog/sellersprite-live-20261118": {
-    "zh_oneliner": "专业投手分享怎么用 Codex 提升广告优化效率。"
-  },
-  "https://www.sellersprite.com/cn/blog/mcp-product-selection": {
-    "zh_oneliner": "讲怎么让 AI 从细分类目里帮你找到选品方向。"
-  },
-  "https://www.sellersprite.com/cn/blog/sellersprite-live-20261117": {
-    "zh_oneliner": "亚马逊视觉工作台的实战分享。"
-  },
-  "https://www.sellersprite.com/cn/blog/sellersprite-mcp-tools": {
-    "zh_oneliner": "按运营场景介绍卖家精灵 MCP 的 28 个数据查询工具。"
-  },
-  "https://www.sellersprite.com/cn/blog/ai-auto-market-research": {
-    "zh_oneliner": "讲亚马逊运营怎么让 AI 自己查数据。"
-  },
-  "https://www.jadeship.com/item/1688/854968176120": {
-    "zh_title": "2627赛季豪门俱乐部球衣合集",
-    "zh_oneliner": "1688 七日销量榜第 24 名，较上期上升 11 位。"
-  },
-  "https://www.jadeship.com/item/1688/1051343618100": {
-    "zh_title": "RL拉夫小马刺绣男士针织半拉链毛衣",
-    "zh_oneliner": "1688 七日销量榜第 25 名，较上期上升 414 位。"
-  },
-  "https://www.jadeship.com/item/1688/788710986503": {
-    "zh_title": "春秋空气层连帽拉链卫衣外套",
-    "zh_oneliner": "1688 七日销量榜第 26 名，较上期上升 39 位。"
-  },
-  "https://www.jadeship.com/item/1688/828970803106": {
-    "zh_title": "ESS雾面立体字母加绒连帽卫衣",
-    "zh_oneliner": "1688 七日销量榜第 27 名，较上期上升 41 位。"
-  },
-  "https://www.jadeship.com/item/1688/1027943767261": {
-    "zh_title": "2627赛季世界杯俱乐部国家队球衣合集",
-    "zh_oneliner": "1688 七日销量榜第 28 名，较上期上升 6 位。"
-  },
-  "https://www.jadeship.com/item/1688/1044854153366": {
-    "zh_title": "26SS Nudepr重磅纯棉情侣短袖T恤",
-    "zh_oneliner": "1688 七日销量榜第 29 名，较上期上升 42 位。"
-  },
-  "https://www.jadeship.com/item/1688/819557742132": {
-    "zh_oneliner": "1688 七日销量榜第 30 名，较上期上升 949 位。"
-  },
-  "https://www.jadeship.com/item/1688/952594081111": {
-    "zh_title": "复古法国队梅西内马尔球衣",
-    "zh_oneliner": "1688 七日销量榜第 32 名，较上期上升 98 位。"
-  },
-  "https://www.jadeship.com/item/1688/773453105445": {
-    "zh_title": "跨境男士翻领半袖纯棉T恤",
-    "zh_oneliner": "1688 七日销量榜第 33 名，较上期上升 157 位。"
-  },
-  "https://www.jadeship.com/item/1688/1045224094144": {
-    "zh_title": "26SS NUDE宽松纯棉基础短袖T恤",
-    "zh_oneliner": "1688 七日销量榜第 42 名，较上期上升 30 位。"
-  },
-  "https://www.jadeship.com/item/1688/955857296185": {
-    "zh_title": "巴甲美洲科林蒂安皇马利物浦巴黎球衣合集",
-    "zh_oneliner": "1688 七日销量榜第 43 名，较上期上升 151 位。"
-  },
-  "https://www.jadeship.com/item/1688/982733335366": {
-    "zh_title": "KTM F1赛车棒球帽",
-    "zh_oneliner": "1688 七日销量榜第 45 名，较上期上升 3 位。"
-  },
-  "https://www.jadeship.com/item/1688/618840204092": {
-    "zh_title": "2020跨境新款圆框小框太阳镜",
-    "zh_oneliner": "1688 七日销量榜第 46 名，较上期上升 33 位。"
-  },
-  "https://www.jadeship.com/item/1688/1010693336686": {
-    "zh_title": "行李箱造型手机壳",
-    "zh_oneliner": "1688 七日销量榜第 50 名，较上期上升 23 位。"
-  },
-  "https://www.jadeship.com/item/1688/980283446488": {
-    "zh_title": "2627赛季新款俱乐部球员版球衣合集",
-    "zh_oneliner": "1688 七日销量榜第 51 名，较上期上升 3 位。"
-  },
-  "https://www.jadeship.com/item/1688/1084897610364": {
-    "zh_oneliner": "1688 七日销量榜第 53 名，较上期上升 155 位。"
-  },
-  "https://www.jadeship.com/item/1688/746801458197": {
-    "zh_title": "老钱风21AM针织毛衣",
-    "zh_oneliner": "1688 七日销量榜第 56 名，较上期上升 10 位。"
-  },
-  "https://www.jadeship.com/item/1688/976670126479": {
-    "zh_title": "空军一号低帮百搭白运动鞋",
-    "zh_oneliner": "1688 七日销量榜第 61 名，较上期上升 67 位。"
-  },
-  "https://www.jadeship.com/item/1688/798929144098": {
-    "zh_title": "2024夏季男士针织撞色拉链运动短裤",
-    "zh_oneliner": "1688 七日销量榜第 62 名，较上期上升 126 位。"
-  },
-  "https://www.jadeship.com/item/1688/1080114672684": {
-    "zh_title": "Supreme潮流五片拼接棒球帽",
-    "zh_oneliner": "1688 七日销量榜第 71 名，较上期上升 2 位。"
-  },
-  "https://www.jadeship.com/item/1688/798302810843": {
-    "zh_title": "2425赛季巴甲科林蒂安弗拉门戈球衣",
-    "zh_oneliner": "1688 七日销量榜第 72 名，较上期上升 437 位。"
-  },
-  "https://www.jadeship.com/item/1688/1080704536809": {
-    "zh_title": "Supreme字母连帽加绒卫衣",
-    "zh_oneliner": "1688 七日销量榜第 74 名，较上期上升 65 位。"
-  },
-  "https://www.jadeship.com/item/1688/1082242925655": {
-    "zh_title": "M外贸跨境针织拼接轻棉夹克",
-    "zh_oneliner": "1688 七日销量榜第 78 名，较上期上升 2 位。"
-  },
-  "https://www.jadeship.com/item/1688/1087964766948": {
-    "zh_oneliner": "1688 七日销量榜第 81 名，较上期上升 387 位。"
-  },
-  "https://www.jadeship.com/item/1688/1012260586454": {
-    "zh_title": "25赛季新款F1赛车服合集",
-    "zh_oneliner": "1688 七日销量榜第 82 名，较上期上升 2 位。"
-  },
-  "https://www.jadeship.com/item/1688/1016201721851": {
-    "zh_title": "巴甲球员版弗拉门戈帕尔梅拉斯球衣合集",
-    "zh_oneliner": "1688 七日销量榜第 83 名，较上期上升 110 位。"
-  },
-  "https://www.jadeship.com/item/1688/774249365947": {
-    "zh_title": "美式撞色条纹篮球运动短裤",
-    "zh_oneliner": "1688 七日销量榜第 84 名，较上期上升 18 位。"
-  },
-  "https://www.jadeship.com/item/1688/1067124557079": {
-    "zh_title": "2627赛季俱乐部球员版球衣合集",
-    "zh_oneliner": "1688 七日销量榜第 85 名，较上期上升 884 位。"
-  },
-  "https://www.ebrun.com/20261115/720060.shtml": {
-    "zh_title": "企业上了 AI 为什么没换来增长？",
-    "zh_oneliner": "文章探讨企业引入 AI 后仍未换来增长的原因，提醒卖家警惕为 AI 而 AI 的投入。"
-  },
-  "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPM2JILU5yeGRad3JmT2N2aWdUTnYzNUJOUFhOeUQ0UGVtMU4tLXJiV2tXQmhwODVxRnR1WmdVZGZ0ODV1QWo2QTFud2VjeHNZMEFSRVhnWEpJRHFNcmpKMUgyYnBiVUxMSjZ6S2pSakV3dmlUWUtobUpFaHpBVV9VbUVFWlF5QURl?oc=5": {
-    "zh_title": "从一块牛仔布中看广东产业跃升",
-    "zh_oneliner": "以广东牛仔布产业为例，看传统制造如何借跨境电商实现升级。"
-  },
-  "https://www.ebrun.com/20261115/720062.shtml": {
-    "zh_title": "阿里蜜獾要出笼了",
-    "zh_oneliner": "阿里拟分拆芯片子公司平头哥在港股独立上市，AI 算力需求爆发下自研芯片商业化提速。"
-  },
-  "https://www.cifnews.com/article/190092": {
-    "zh_title": "大换血！一批平台突然倒下",
-    "zh_oneliner": "Costco Next、Goimagine、FonQ 等平台相继关停，Zaful 主体破产，卖家要重新评估平台布局。"
-  },
-  "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5XSk92T21qQldKcXdHSUdyV2ZBY2V2OEN0MTRma3VwZHlvdmM1ZXFpc3Q2dmdxVF9HQkVrVndMS05lTWVjN2dMejlpcFlZZC1scTZZam9qTjdtNkhtZzZfd1ZiamJEOFU?oc=5": {
-    "zh_title": "陈章王：应对跨境电商冲击打造具公信力文具官网",
-    "zh_oneliner": "文具商以品牌官网的公信力应对跨境电商冲击，提醒卖家重视自有渠道建设。"
-  },
-  "https://news.google.com/rss/articles/CBMiTEFVX3lxTE82UUh1S3pVUGNZQzJ2RlJYMERZMmM2Qk1RX0hVczd2cENodloxT0lfd05BMTJKSU9zSmhQUEpId3NIYTRoTEptZ3o3TVA?oc=5": {
-    "zh_title": "大换血！一批平台突然倒下",
-    "zh_oneliner": "Costco Next、Goimagine、FonQ 等平台相继关停，Zaful 主体破产，卖家要重新评估平台布局。"
-  },
-  "https://news.google.com/rss/articles/CBMiRkFVX3lxTE83VlBmd0JaRGZaUVhRVmVtQjJjWmpydHVlM3JRT2pEdE9VWG1MUG9Cdndsb2tQSHFaRTVjY2dDT0xyalVCQ0E?oc=5": {
-    "zh_title": "中国公司全球化周报：TikTok Shop 东南亚开通海运直邮，速卖通双 11 潜力市场日均成交增超 50%",
-    "zh_oneliner": "TikTok Shop 东南亚跨境开通海运直邮，速卖通双 11 潜力市场日均成交增长超 50%，出海动向值得关注。"
-  },
-  "https://www.aboutamazon.com/news/retail/amazon-black-friday-cyber-monday-deals-2026": {
-    "zh_title": "Target 黑五 2026 搜索暴涨",
-    "zh_oneliner": "美区热搜显示消费者正集中搜索 Target 黑五促销，黑五购物季需求升温，卖家可关注大促选品与备货节奏。"
-  },
-  "http://www.baijing.cn/article/57369": {
-    "zh_title": "海思前员工出走创业，单品上线首日爆卖1.2亿",
-    "zh_oneliner": "海思前员工创业做一体化消费电子，单品上线首日卖出1.2亿，海外消费者越来越看重同一品牌的全套体验。"
-  }
+ "https://www.searchenginejournal.com/google-ads-rolls-out-new-invalid-traffic-overview-card/597098": {
+  "zh_title": "Google Ads 上线无效流量总览卡片",
+  "zh_oneliner": "广告主可以在一个入口里查看无效流量情况，排查点击质量问题。"
+ },
+ "https://www.searchenginejournal.com/google-gemini-4-hydrogen-default-ai-mode/597096": {
+  "zh_title": "Google 把 Gemini 4 Hydrogen 设为 AI Mode 默认模型",
+  "zh_oneliner": "AI 搜索的默认模型换代，商家要留意回答里品牌与商品的呈现方式。"
+ },
+ "https://www.searchenginejournal.com/does-the-affiliate-model-survive-checkout-inside-ai-mode-and-gemini-ask-an-seo/585080": {
+  "zh_title": "AI Mode 与 Gemini 内置结账后，联盟营销还能活吗",
+  "zh_oneliner": "AI 直接帮用户下单，联盟佣金的归属与追踪方式面临重构。"
+ },
+ "https://www.digitalcommerce360.com/2026/11/12/j-crew-claude-style-advisor": {
+  "zh_title": "J. Crew 用 Claude 打造新款穿搭顾问工具",
+  "zh_oneliner": "服装品牌把 AI 对话做成导购助手，帮顾客搭配并推荐商品。"
+ },
+ "https://www.searchenginejournal.com/visits-to-the-top-million-websites-fell-12-data-shows/597085": {
+  "zh_title": "数据：头部百万网站访问量下滑 12%",
+  "zh_oneliner": "流量正在向少数平台集中，店铺不能只靠自然搜索等客上门。"
+ },
+ "https://www.searchenginejournal.com/microsoft-advertising-updates-ui-following-advertiser-feedback/597078": {
+  "zh_title": "微软广告根据广告主反馈更新界面",
+  "zh_oneliner": "投放后台的界面调整以操作反馈为依据，投手要重新熟悉入口位置。"
+ },
+ "https://www.retaildive.com/news/bnpl-bolsters-holiday-budgets/874425": {
+  "zh_title": "先买后付撑起假日购物预算",
+  "zh_oneliner": "分期付款让消费者在旺季敢花更多，商家可把它当作转化工具。"
+ },
+ "https://www.retaildive.com/news/michaels-holiday-black-friday-cyber-monday/874500": {
+  "zh_title": "Michaels 鼓励过一个无屏幕的假日季",
+  "zh_oneliner": "手工艺零售商反其道而行之，用线下体验带动节日消费。"
+ },
+ "https://www.retaildive.com/news/walmart-more-than-doubles-planned-drone-delivery-sites-zipline/874378": {
+  "zh_title": "沃尔玛无人机配送站点计划翻倍还多",
+  "zh_oneliner": "无人机配送从试点走向规模化，履约速度成为零售竞争的新维度。"
+ },
+ "https://www.glossy.co/beauty/the-holiday-playbook-how-brands-are-banking-on-live-shopping-this-holiday-season": {
+  "zh_title": "品牌押注直播带货过这个假日季",
+  "zh_oneliner": "直播购物成为节日营销的主战场，内容与转化要一起抓。"
+ },
+ "https://www.retaildive.com/news/tiktok-shop-plus-paid-membership/874451": {
+  "zh_title": "TikTok Shop 试点付费会员",
+  "zh_oneliner": "平台用会员权益锁定高价值买家，商家要想好会员专属的玩法。"
+ },
+ "https://www.retaildive.com/news/calvin-klein-tommy-hilfiger-owner-to-cut-4-of-workforce/874492": {
+  "zh_title": "Calvin Klein 与 Tommy Hilfiger 母公司裁员 4%",
+  "zh_oneliner": "服装集团通过裁员控制成本，品牌投入会更看重投入产出。"
+ },
+ "https://www.searchenginejournal.com/the-traffic-pool-is-shrinking-and-which-channel-fills-it-matters-less-than-we-think/596346": {
+  "zh_title": "流量池在缩小，哪个渠道补位没那么重要",
+  "zh_oneliner": "与其纠结渠道归属，不如把有限流量高效转化成订单。"
+ },
+ "https://www.sellerlabs.com/blog/amazon-review-requests-ads": {
+  "zh_title": "要不要花钱让亚马逊帮你向买家要评价",
+  "zh_oneliner": "官方邀评服务值不值，关键看评价增长能不能带来真实转化。"
+ },
+ "https://ecommercenews.eu/eu-targets-online-sales-tricks-with-digital-fairness-act": {
+  "zh_title": "欧盟以《数字公平法案》打击网购套路",
+  "zh_oneliner": "误导性定价与暗黑设计将被重点监管，跨境卖家要提前合规。"
+ },
+ "https://www.practicalecommerce.com/usps-service-cuts-could-impact-merchants": {
+  "zh_title": "美国邮政削减服务或影响商家",
+  "zh_oneliner": "邮政服务收紧会抬高小商家的配送成本与时效风险。"
+ },
+ "https://ecommercenews.eu/sheins-total-investment-in-poland-reaches-1-billion-euros": {
+  "zh_title": "Shein 在波兰累计投资达 10 亿欧元",
+  "zh_oneliner": "快时尚巨头加码欧洲本地布局，供应链与合规都要跟上。"
+ },
+ "https://www.searchenginejournal.com/submit-website-chatgpt/596785": {
+  "zh_title": "如何把网站提交到 ChatGPT Business Hub",
+  "zh_oneliner": "想在 AI 对话里被推荐，商家要先完成商业信息的收录。"
+ },
+ "https://www.searchenginejournal.com/dont-let-a-tool-lead-your-ai-search-strategy-own-your-data-instead/596538": {
+  "zh_title": "别让工具主导 AI 搜索策略，先守住自己的数据",
+  "zh_oneliner": "AI 搜索时代，自己的商品与用户数据才是长期资产。"
+ },
+ "https://www.searchenginejournal.com/fix-ai-shopping-errors-writesonic-spa/595790": {
+  "zh_title": "AI 购物出错怎么办：先修好这些问题",
+  "zh_oneliner": "AI 推荐商品时信息错了会直接丢单，先把商品数据做准确。"
+ },
+ "https://www.printful.com/blog/design-trends": {
+  "zh_title": "2026 年值得印的 15 个 T 恤设计趋势",
+  "zh_oneliner": "按需打印卖家可以按这份趋势清单提前备设计。"
+ },
+ "https://www.modernretail.co/marketing/modern-retail-research-2026-creator-marketing-index-a-brand-guide-to-effective-social-media-campaigns": {
+  "zh_title": "2026 创作者营销指数：品牌社媒投放指南",
+  "zh_oneliner": "这份研究总结了创作者合作怎么做才有效，品牌方可照着排预算。"
+ },
+ "https://www.modernretail.co/operations/hims-hers-benefits-program-gruns-tonal-viome-medjet": {
+  "zh_title": "Hims & Hers 扩大 GLP-1 支持福利计划",
+  "zh_oneliner": "健康品牌把减重支持做成会员权益，联名品牌一起分摊成本。"
+ },
+ "https://www.glossy.co/podcasts/pov-beautys-mikayla-nogueira-unpacks-her-creator-brand-playbook-with-ceo-and-co-founder-ani-hadjinian": {
+  "zh_title": "美妆博主 Mikayla Nogueira 拆解创作者品牌打法",
+  "zh_oneliner": "头部博主聊自己的品牌怎么做，创作者转型卖货值得参考。"
+ },
+ "https://www.glossy.co/fashion/fashion-briefing-how-zara-larsson-charli-xcx-and-burning-suitcases-drove-a-boom-in-aways-aluminum-luggage-business": {
+  "zh_title": "时尚简报：明星效应如何带火 Away 铝制行李箱",
+  "zh_oneliner": "一场行李箱着火的事件反而成了品牌热度，明星联动功不可没。"
+ },
+ "https://www.digitalcommerce360.com/2026/11/11/lowes-partners-with-bilt-to-expand-loyalty-rewards-ai-powered-commerce": {
+  "zh_title": "Lowe’s 与 Bilt 合作扩大忠诚奖励与 AI 购物",
+  "zh_oneliner": "家居零售把忠诚计划与 AI 结合，让老客更愿意回购。"
+ },
+ "https://www.digitalcommerce360.com/2026/11/11/ebay-visual-identification-magical-listing-tool": {
+  "zh_title": "eBay 上架工具新增视觉识别功能",
+  "zh_oneliner": "拍张照片就能生成刊登信息，卖家上架的速度会更快。"
+ },
+ "https://www.retaildive.com/news/dicks-sporting-goods-foot-locker-signs-caitlin-clark/874141": {
+  "zh_title": "Dick’s 体育用品签下 Caitlin Clark",
+  "zh_oneliner": "体育零售商押注明星运动员带货，门店与线上一起造势。"
+ },
+ "https://neilpatel.com/blog/the-definitive-guide-to-lead-generation-form-optimization": {
+  "zh_title": "如何提高表单转化率并获得更多线索",
+  "zh_oneliner": "表单每少一步、每清晰一分，留下的潜在客户就多一分。"
+ },
+ "https://www.retaildive.com/news/capri-holdings-michael-kors-jimmy-choo-new-ceo-justin-boxford/874377": {
+  "zh_title": "Michael Kors 与 Jimmy Choo 母公司任命新 CEO",
+  "zh_oneliner": "奢侈品集团换帅，品牌与渠道策略可能随之调整。"
+ },
+ "https://www.retaildive.com/news/amazon-black-friday-cyber-monday-holiday-deals/874359": {
+  "zh_title": "亚马逊黑五与网一独家优惠创纪录",
+  "zh_oneliner": "大促的独家商品越来越多，卖家要提前抢好活动坑位。"
+ },
+ "https://www.retaildive.com/news/bed-bath-beyond-parent-to-close-maryland-distribution-center/874363": {
+  "zh_title": "Bed Bath & Beyond 母公司关闭马里兰配送中心",
+  "zh_oneliner": "家居零售收缩仓储网络，履约成本与速度要重新算账。"
+ },
+ "https://www.practicalecommerce.com/new-ecommerce-tools-november-11-2026": {
+  "zh_title": "新电商工具速览：2026 年 11 月 11 日",
+  "zh_oneliner": "每周一次的新工具盘点，帮商家快速发现提效的工具。"
+ },
+ "https://www.searchenginejournal.com/visibility-gets-you-on-the-list-evidence-helps-you-stay-there/592127": {
+  "zh_title": "曝光让你上榜，证据让你留下来",
+  "zh_oneliner": "在 AI 搜索里被提到只是第一步，真实口碑才能留住位置。"
+ },
+ "https://www.searchenginejournal.com/google-discovers-unexpected-patterns-in-ai-image-generation/596745": {
+  "zh_title": "Google 发现 AI 图片生成的意外规律",
+  "zh_oneliner": "AI 生成图片的规律会影响商品图的制作方式，值得留意。"
+ },
+ "https://www.ecommercetimes.com/story/why-blocking-ai-chatbots-can-leave-smbs-more-exposed-178718.html?rss=1": {
+  "zh_title": "屏蔽 AI 聊天机器人可能让中小商家更被动",
+  "zh_oneliner": "把 AI 爬虫挡在门外，也等于把 AI 带来的流量挡在门外。"
+ },
+ "https://ahrefs.com/blog/most-mentioned-brands-chatgpt": {
+  "zh_title": "ChatGPT 里被提到最多的 100 个品牌（2026 年 11 月）",
+  "zh_oneliner": "这份榜单能看出哪些品牌在 AI 对话里最有存在感。"
+ },
+ "https://www.searchenginejournal.com/google-ads-gives-you-more-channel-control-but-not-as-much-as-you-think/596266": {
+  "zh_title": "Google Ads 渠道优先级有上限：PMax 仍不让拆分的那些事",
+  "zh_oneliner": "最高效果广告的拆分限制还在，投手要按它的规则排预算。"
+ },
+ "https://www.printful.com/blog/best-quality-tshirts-for-printing": {
+  "zh_title": "2026 年最适合印花的 9 款优质 T 恤",
+  "zh_oneliner": "选对底衫是印花质量的第一步，这份清单可直接对照选品。"
+ },
+ "https://www.printful.com/blog/what-is-jacquard-knitting": {
+  "zh_title": "什么是提花针织：提花面料与毛衣指南",
+  "zh_oneliner": "想做针织品类的卖家，先搞懂提花工艺与成本。"
+ },
+ "https://www.printful.com/blog/sublimation-design-software": {
+  "zh_title": "热升华设计软件：10 款免费与付费选择",
+  "zh_oneliner": "做热升华定制，先挑一款顺手的设计软件。"
+ },
+ "https://www.printful.com/blog/t-shirt-design-software": {
+  "zh_title": "2026 年 12 款最佳 T 恤设计软件",
+  "zh_oneliner": "从设计到打样，选对工具能省下大量返工时间。"
+ },
+ "https://www.modernretail.co/operations/mattel-brings-barbie-hot-wheels-to-tiktok-shop": {
+  "zh_title": "美泰把芭比与风火轮带进 TikTok Shop",
+  "zh_oneliner": "玩具大牌正式入驻短视频电商，直播与短视频是主阵地。"
+ },
+ "https://www.glossy.co/beauty/maybelline-love-island-usa-lifter-gel": {
+  "zh_title": "美宝莲第三年入驻《爱情岛》别墅内幕",
+  "zh_oneliner": "美妆品牌把综艺场景做成长期种草阵地。"
+ },
+ "https://www.glossy.co/beauty/wellness/wellness-briefing-why-ulta-beauty-is-racing-toward-wearables-plus-news": {
+  "zh_title": "健康简报：Ulta Beauty 为何急着布局可穿戴设备",
+  "zh_oneliner": "美妆零售向健康赛道延伸，可穿戴成为新的增长点。"
+ },
+ "https://www.searchenginejournal.com/meta-paused-its-new-business-terms-and-businesses-should-plan-as-if-it-never-gets-better/596343": {
+  "zh_title": "Meta 暂停新商务条款，商家要按最坏情况做打算",
+  "zh_oneliner": "平台条款说变就变，依赖单一渠道的商家要留好后路。"
+ },
+ "https://www.retaildive.com/news/cybersecurity-grocery-refrigeration-attacks/874270": {
+  "zh_title": "美国政府着手防范制冷系统网络攻击",
+  "zh_oneliner": "零售冷链也成了网络安全议题，相关商家要关注合规要求。"
+ },
+ "https://www.searchenginejournal.com/google-november-2026-core-update/596614": {
+  "zh_title": "Google 2026 年 11 月核心更新开始推送",
+  "zh_oneliner": "搜索排名要波动一阵子，商家先别急着大改页面。"
+ },
+ "https://www.searchenginejournal.com/google-expands-ads-in-ai-mode-multiturn-ads/596540": {
+  "zh_title": "Google Ads 在 AI Mode 新增覆盖 10 个国家",
+  "zh_oneliner": "AI 搜索里的广告位继续扩大，出海商家要跟上。"
+ },
+ "https://www.searchenginejournal.com/forget-keywords-well-what-are-you-replacing-them-with/596349": {
+  "zh_title": "“关键词已死”，那你用什么替代它",
+  "zh_oneliner": "关键词思维过时了，取而代之的是意图与内容质量。"
+ },
+ "https://www.modernretail.co/announcement/awards/the-next-gen-store-awards-how-anthropologie-diptyque-and-others-are-transforming-the-in-store-experience": {
+  "zh_title": "新一代门店奖：Anthropologie 等如何改造线下体验",
+  "zh_oneliner": "线下门店的体验升级有了可抄的作业。"
+ },
+ "https://www.digitalcommerce360.com/2026/11/10/e-l-f-beauty-q2-sales-grow-51-as-it-embraces-digital-platforms": {
+  "zh_title": "e.l.f. 美妆二季度销售额增长 51%，数字化是关键",
+  "zh_oneliner": "平价美妆靠数字渠道拉动增长，值得同行参考。"
+ },
+ "https://www.searchenginejournal.com/google-releases-modern-web-guidance-1-0-for-ai-coding-agents/596495": {
+  "zh_title": "Google 发布面向 AI 编程智能体的现代网络指南 1.0",
+  "zh_oneliner": "网站要按新规范来写，AI 智能体才能顺利抓取与操作。"
+ },
+ "https://ahrefs.com/blog/where-does-chatgpt-get-its-information": {
+  "zh_title": "ChatGPT 的信息从哪来：4 个来源解析",
+  "zh_oneliner": "搞清 AI 的信息来源，才能让自家品牌被它引用。"
+ },
+ "https://ecommercenews.eu/european-council-approves-vat-simplification-for-online-sales": {
+  "zh_title": "欧洲理事会批准网售增值税简化方案",
+  "zh_oneliner": "跨境卖家报税的流程有望简化，合规成本可能下降。"
+ },
+ "https://www.searchenginejournal.com/good-vs-bad-pseo-learnings-from-a-decade-of-building-scalable-content-engines/594204": {
+  "zh_title": "好的与坏的程序化 SEO：十年搭建经验",
+  "zh_oneliner": "批量做内容页面，质量把控才是能不能起量的分水岭。"
+ },
+ "https://www.modernretail.co/operations/brands-briefing-dr-martens-revamps-stores-to-kickstart-growth-and-recontextualize-the-brand": {
+  "zh_title": "品牌简报：Dr. Martens 翻新门店重启增长",
+  "zh_oneliner": "老牌通过门店改造重新讲品牌故事。"
+ },
+ "https://blog.hubspot.com/marketing/aeo-benchmarking": {
+  "zh_title": "AEO 对标：市场数据揭示 AI 搜索真相",
+  "zh_oneliner": "拿自家品牌在 AI 搜索里的表现跟同行比一比。"
+ },
+ "https://www.sellerlabs.com/blog/posting-daily-no-leads-linkedin-ai-content": {
+  "zh_title": "天天发帖却没线索：我的领英数据怎么说",
+  "zh_oneliner": "AI 生成的内容发得多不等于有效，数据会说实话。"
+ },
+ "https://blog.hubspot.com/marketing/how-to-use-ai-to-write-a-blog-post": {
+  "zh_title": "如何用 AI 写出不水的博客文章",
+  "zh_oneliner": "AI 写作要有人把关，写出真正有用的内容才行。"
+ },
+ "https://www.practicalecommerce.com/optimize-youtube-videos-for-chatgpt": {
+  "zh_title": "为 ChatGPT 优化 YouTube 视频",
+  "zh_oneliner": "视频内容也要考虑被 AI 引用，标题与描述要写清楚。"
+ },
+ "https://www.searchenginejournal.com/jon-miller-ai-marketing-automation/596446": {
+  "zh_title": "Jon Miller 谈 AI 与营销自动化的未来",
+  "zh_oneliner": "营销自动化正在被 AI 重写，流程设计要跟着变。"
+ },
+ "https://www.searchenginejournal.com/meta-pauses-updated-business-ad-terms/596493": {
+  "zh_title": "Meta 暂缓原定 11 月 20 日生效的新商务与广告条款",
+  "zh_oneliner": "条款暂缓执行，商家仍要按原计划准备合规材料。"
+ },
+ "https://www.glossy.co/beauty/beauty-briefing-how-sephora-is-banking-on-expertise": {
+  "zh_title": "美妆简报：丝芙兰如何押注专业服务",
+  "zh_oneliner": "美妆零售靠专业顾问留住顾客，服务本身就是卖点。"
+ },
+ "https://www.glossy.co/beauty/k-beauty-brand-laneige-bets-on-experiential-retail-with-new-lip-mask-station": {
+  "zh_title": "韩妆品牌兰芝押注体验零售，推出唇膜体验站",
+  "zh_oneliner": "线下体验站把试用变成购买理由。"
+ },
+ "https://www.digitalcommerce360.com/2026/11/09/under-armour-sales-q2-2027": {
+  "zh_title": "安德玛二季度销售额下滑，CEO 仍看好 AI",
+  "zh_oneliner": "运动品牌业绩承压，把希望寄托在 AI 带来的效率上。"
+ },
+ "https://www.glossy.co/sponsored/brands-are-putting-youtube-front-and-center-in-their-holiday-marketing-strategies": {
+  "zh_title": "品牌把 YouTube 放在假日营销的中心位置",
+  "zh_oneliner": "长视频成为节日营销的主力渠道，预算正在向它倾斜。"
+ },
+ "https://www.digitalcommerce360.com/2026/11/09/the-childrens-place-bankruptcy-filing-sets-bidding-in-december": {
+  "zh_title": "The Children’s Place 破产申请，12 月启动竞拍",
+  "zh_oneliner": "童装零售商进入破产程序，品牌与门店资产将易主。"
+ },
+ "https://neilpatel.com/blog/ubersuggest-vs-moz": {
+  "zh_title": "Ubersuggest 与 MOZ：SEO 工具对比",
+  "zh_oneliner": "两款 SEO 工具各有侧重，按团队需求选就行。"
+ },
+ "https://www.modernretail.co/operations/exclusive-tiktok-shop-launches-a-paid-premium-tier-for-1m-of-its-top-us-shoppers": {
+  "zh_title": "独家：TikTok Shop 为百万美国头部用户推出付费高级会员",
+  "zh_oneliner": "平台用付费会员绑定高消费用户，商家可借势做专属活动。"
+ },
+ "https://www.practicalecommerce.com/google-ads-loosens-channel-restrictions": {
+  "zh_title": "Google Ads 放宽渠道限制",
+  "zh_oneliner": "广告渠道的限制松了，投放组合可以更灵活。"
+ },
+ "https://woocommerce.com/posts/woo-latest-security": {
+  "zh_title": "我们去查了：Woo 自 6 月以来在安全上做了什么",
+  "zh_oneliner": "电商建站平台的安全改进，店主升级前值得一看。"
+ },
+ "https://www.digitalcommerce360.com/2026/11/09/on-balancing-speed-and-security-for-smarter-payments": {
+  "zh_title": "更快与更安全之间：如何做好智能支付",
+  "zh_oneliner": "支付既要快又要防欺诈，平衡点在风控设计上。"
+ },
+ "https://www.digitalcommerce360.com/2026/11/09/card-not-present-fraud-is-evolving-is-payment-security-keeping-up": {
+  "zh_title": "无卡支付欺诈在进化，支付安全跟得上吗",
+  "zh_oneliner": "远程支付欺诈手法在变，商家的风控也要升级。"
+ },
+ "https://www.modernretail.co/operations/how-azunas-strong-supply-chain-fuels-its-9-figure-sales": {
+  "zh_title": "Azuna 靠强大的供应链撑起九位数销售额",
+  "zh_oneliner": "供应链稳定是规模化的底气，值得中小品牌学习。"
+ },
+ "https://www.sellerlabs.com/blog/perfect-takes-forever-amazon-listing-images": {
+  "zh_title": "完美没有尽头：亚马逊刊登图片的 100 件法则",
+  "zh_oneliner": "上架图片不必追求完美，先按规则跑起来再优化。"
+ },
+ "https://ecommercenews.eu/almost-half-of-eu-online-spending-abroad-goes-to-fashion": {
+  "zh_title": "欧盟近半跨境网购支出流向时尚品类",
+  "zh_oneliner": "时尚仍是欧洲跨境电商的主力，选品可优先考虑。"
+ },
+ "https://blog.hubspot.com/marketing/branded-vs-unbranded-prompt-tracking": {
+  "zh_title": "AI 搜索里的品牌词与非品牌词：如何追踪",
+  "zh_oneliner": "在 AI 回答里，品牌词与品类词的曝光要分开看。"
+ },
+ "https://ecommercenews.eu/partner-sales-on-bol-continue-growing": {
+  "zh_title": "Bol 平台第三方卖家销售额持续增长",
+  "zh_oneliner": "荷兰电商平台的第三方生态在扩大，入驻窗口值得关注。"
+ },
+ "https://blog.google/products-and-platforms/products/shopping/holiday-100-gift-guide-2026": {
+  "zh_title": "假日百大礼物指南：今年最热门的礼物",
+  "zh_oneliner": "按这份榜单备货，假日季的选品方向更明确。"
+ },
+ "https://www.glossy.co/beauty/wellness/ulta-beauty-oura-ring-health-tracking": {
+  "zh_title": "独家：Ulta Beauty 在 1000 家门店押注 Oura 健康追踪",
+  "zh_oneliner": "美妆零售把健康追踪设备搬进门店，跨界合作在加速。"
+ },
+ "https://www.shipbob.com/blog/shipbob-flexible-fulfillment": {
+  "zh_title": "ShipBob 对复杂履约是不是太死板？商家如何定制",
+  "zh_oneliner": "履约服务要能按商家需求定制，否则规模上去了也难用。"
+ },
+ "https://www.modernretail.co/operations/poppi-founder-allison-ellsworth-on-launching-jetty-a-new-hydration-brand": {
+  "zh_title": "Poppi 创始人谈推出新补水品牌 Jetty",
+  "zh_oneliner": "成功创始人再创业，品牌打法仍值得借鉴。"
+ },
+ "https://www.practicalecommerce.com/who-owns-an-ai-agents-mistakes": {
+  "zh_title": "AI 智能体犯了错，责任算谁的",
+  "zh_oneliner": "商家用 AI 智能体做客服与运营，出问题后的责任边界要先想清楚。"
+ },
+ "https://www.glossy.co/fashion/inside-oner-actives-tequila-scented-new-flagship-in-nyc": {
+  "zh_title": "走进 Oner Active 纽约新旗舰店：龙舌兰香氛体验",
+  "zh_oneliner": "运动品牌用气味与场景做旗舰店，线下体验越来越讲究。"
+ },
+ "https://www.sellerlabs.com/blog/amazon-dsp-explained-drive-more-traffic-mike-begg": {
+  "zh_title": "亚马逊 DSP 详解：如何带来更多流量",
+  "zh_oneliner": "站外广告投放是亚马逊卖家拉新流量的常用手段。"
+ },
+ "https://www.modernretail.co/podcasts/how-delivery-apps-came-to-be-discovery-platforms": {
+  "zh_title": "外卖应用如何变成“发现平台”",
+  "zh_oneliner": "配送应用不只是送货，也成了用户发现新品牌的地方。"
+ },
+ "https://www.digitalcommerce360.com/2026/11/06/gme-acquires-regional-rival-commercial-supply-co": {
+  "zh_title": "GME 收购地区竞争对手 Commercial Supply Co.",
+  "zh_oneliner": "分销商通过并购扩大区域覆盖，行业整合在继续。"
+ },
+ "https://neilpatel.com/blog/answerthepublic-trending-keywords": {
+  "zh_title": "AnswerThePublic 热门关键词：谷歌与 YouTube 上正在涨什么",
+  "zh_oneliner": "用趋势关键词工具找选题，内容与选品都能沾光。"
+ },
+ "https://woocommerce.com/posts/ecommerce-analytics-tools": {
+  "zh_title": "选电商分析工具，先看问题再看功能",
+  "zh_oneliner": "工具不在多，能回答经营问题的才是好工具。"
+ },
+ "https://blog.hubspot.com/marketing/marketing-automation-challenges": {
+  "zh_title": "营销自动化的障碍及修复方法（2026）",
+  "zh_oneliner": "自动化流程跑不顺，多半是数据与规则没理清。"
+ },
+ "https://blog.hubspot.com/marketing/scrunch-vs-ahrefs": {
+  "zh_title": "Scrunch 与 Ahrefs：AI 可见度追踪对比",
+  "zh_oneliner": "两款工具都测品牌在 AI 回答里的曝光，侧重点不同。"
+ },
+ "https://www.practicalecommerce.com/my-ai-bots-for-email-seo-reports-more": {
+  "zh_title": "我的 AI 机器人：邮件、SEO、报表全包",
+  "zh_oneliner": "把重复工作交给 AI 机器人，人只做判断与决策。"
+ },
+ "https://www.sellerlabs.com/blog/amazon-demographic-data-fix-your-listing-ruben-alikhanyan": {
+  "zh_title": "用亚马逊人群数据修好你的刊登",
+  "zh_oneliner": "看懂买家人群画像，再回头改标题与图片。"
+ },
+ "https://www.modernretail.co/marketing/foot-locker-puts-employees-front-and-center-in-its-holiday-campaign": {
+  "zh_title": "Foot Locker 让员工站到假日营销前台",
+  "zh_oneliner": "让一线员工出镜，品牌故事更真实可信。"
+ },
+ "https://ecommercenews.eu/eu-commission-approves-takeover-ceconomy-by-jd-com": {
+  "zh_title": "欧盟批准京东收购 Ceconomy",
+  "zh_oneliner": "京东的欧洲布局再进一步，跨境卖家要关注新渠道。"
+ },
+ "https://www.glossy.co/podcasts/glossy-podcast-after-his-12th-cfda-award-what-makes-ralph-lauren-such-an-icon-of-american-fashion": {
+  "zh_title": "播客：拿下第 12 个 CFDA 奖后，Ralph Lauren 为何仍是美式时尚标杆",
+  "zh_oneliner": "老牌的设计与品牌经营，值得时尚从业者反复琢磨。"
+ },
+ "https://www.glossy.co/fashion/luxury/luxury-briefing-ralph-lauren-marketing-coach-black-friday": {
+  "zh_title": "奢侈品简报：Ralph Lauren 卖“营销梦”不设上限",
+  "zh_oneliner": "奢侈品牌卖的不只是产品，还有生活方式的想象。"
+ },
+ "https://www.glossy.co/pop/glossy-pop-newsletter-depop-is-hosting-over-2000-campus-events-this-fall": {
+  "zh_title": "Depop 今秋在校园举办超 2000 场活动",
+  "zh_oneliner": "二手平台深入校园做活动，年轻用户是增长关键。"
+ },
+ "https://www.digitalcommerce360.com/2026/11/05/bark-revenue-falls-despite-commerce-growth-resuming-in-q2": {
+  "zh_title": "Bark 营收下滑，尽管电商业务二季度恢复增长",
+  "zh_oneliner": "宠物品牌营收与电商增长不同步，渠道结构值得细看。"
+ },
+ "https://www.shipbob.com/blog/bondiboost": {
+  "zh_title": "BondiBoost 如何用 ShipBob 保持 98% 准时履约",
+  "zh_oneliner": "准时率与准确的送达预估，是复购率的隐形推手。"
+ },
+ "https://www.glossy.co/beauty/interparfums-inc-to-launch-new-off-white-longchamp-fragrances-in-2027": {
+  "zh_title": "Interparfums 将于 2027 年推出 Off-White 与 Longchamp 新香水",
+  "zh_oneliner": "授权香水业务继续扩品，品牌联名仍是增长点。"
+ },
+ "https://blog.hubspot.com/marketing/rag-in-ai": {
+  "zh_title": "AI 里的 RAG 是什么：给营销人的通俗指南",
+  "zh_oneliner": "搞懂检索增强生成，营销人才能用好 AI 工具。"
+ },
+ "https://ecommercenews.eu/zalando-sees-new-revenue-potential-in-external-shops": {
+  "zh_title": "Zalando 看到外部店铺的新收入潜力",
+  "zh_oneliner": "欧洲时尚平台把自家能力开放给外部商家，生态在扩大。"
+ },
+ "https://www.sellerlabs.com/blog/most-people-think-ai-is-a-chatbot": {
+  "zh_title": "多数人以为 AI 就是聊天机器人，这是个昂贵的误解",
+  "zh_oneliner": "把 AI 只当客服用，会错过它在运营上的更大价值。"
+ },
+ "https://www.ecommercetimes.com/story/what-ai-search-tells-customers-about-your-brand-178715.html?rss=1": {
+  "zh_title": "AI 搜索会向顾客透露你品牌的哪些信息",
+  "zh_oneliner": "AI 回答里的品牌形象，正在变成新的门面。"
+ },
+ "https://www.practicalecommerce.com/5-content-marketing-ideas-for-december-2026": {
+  "zh_title": "2026 年 12 月的 5 个内容营销点子",
+  "zh_oneliner": "年底的内容日历可以照着这几个方向排。"
+ },
+ "https://www.glossy.co/podcasts/how-is-cvs-sneaking-brands-into-its-stores-without-brand-approval": {
+  "zh_title": "CVS 如何在未获品牌许可的情况下把品牌放进门店",
+  "zh_oneliner": "零售渠道与品牌授权之间的灰色地带值得警惕。"
+ },
+ "https://www.glossy.co/fashion/fashion-briefing-as-ai-content-takes-over-brands-embrace-hand-drawn-animation-for-holiday": {
+  "zh_title": "时尚简报：AI 内容泛滥之际，品牌拥抱手绘动画过节",
+  "zh_oneliner": "越是 AI 内容多，手绘的温度越显得稀缺。"
+ },
+ "https://stripe.com/blog/analyze-your-stripe-data-directly-with-your-agent": {
+  "zh_title": "直接用智能体分析你的 Stripe 数据",
+  "zh_oneliner": "支付数据不用导出表格，问智能体就能得到结论。"
+ },
+ "https://www.glossy.co/beauty/rhodes-european-summer-fuels-51-sales-spike-for-e-l-f-beauty": {
+  "zh_title": "Rhode 的欧洲夏季推动 e.l.f. 美妆销售额激增 51%",
+  "zh_oneliner": "品牌出海欧洲见效，区域市场值得投入。"
+ },
+ "https://www.glossy.co/beauty/revolve-cardi-b-grow-good-beauty-earnings": {
+  "zh_title": "Cardi B 的护发品牌为 Revolve 带来新客",
+  "zh_oneliner": "明星品牌入驻平台，能直接带来增量用户。"
+ },
+ "https://neilpatel.com/blog/xml-sitemap": {
+  "zh_title": "XML 网站地图优化：如何提升可抓取性",
+  "zh_oneliner": "地图做对了，搜索引擎才能顺利收录商品页。"
+ },
+ "https://www.practicalecommerce.com/new-ecommerce-tools-november-4-2026": {
+  "zh_title": "新电商工具速览：2026 年 11 月 4 日",
+  "zh_oneliner": "每周一次的新工具盘点，帮商家快速发现提效的工具。"
+ },
+ "https://www.sellerlabs.com/blog/amazon-mcp-ai-inventory-tools-guide": {
+  "zh_title": "什么是亚马逊 MCP？卖家 AI 库存工具指南",
+  "zh_oneliner": "亚马逊的 MCP 接口让 AI 工具能直接操作库存数据。"
+ },
+ "https://blog.hubspot.com/marketing/aeo-keyword-gap-analysis": {
+  "zh_title": "如何找到并补上 AEO 关键词缺口",
+  "zh_oneliner": "AI 搜索时代，关键词缺口就是流量缺口。"
+ },
+ "https://blog.hubspot.com/marketing/ai-search-industry-benchmarks": {
+  "zh_title": "如何把 AI 搜索表现与同行对标",
+  "zh_oneliner": "先找到行业基准，再判断自家品牌处在什么位置。"
+ },
+ "https://www.glossy.co/research/glossy-research-marketers-express-revenue-optimism-for-2026-holiday-season-despite-economic-pressures": {
+  "zh_title": "调研：尽管经济承压，营销人仍看好 2026 假日季营收",
+  "zh_oneliner": "假日季的预算没有缩水，品牌方普遍乐观。"
+ },
+ "https://www.glossy.co/beauty/wellness/the-5-consumer-archetypes-driving-the-2-7-trillion-wellness-industry-today-plus-news": {
+  "zh_title": "驱动 2.7 万亿美元健康产业的 5 类消费者",
+  "zh_oneliner": "搞清健康消费者的画像，选品与营销才有方向。"
+ },
+ "https://ahrefs.com/blog/openai-publisher-partnerships": {
+  "zh_title": "OpenAI 的每个出版商合作，以及 ChatGPT 引用它们的频率",
+  "zh_oneliner": "内容合作方在 AI 回答里的引用率差别很大。"
+ },
+ "https://www.practicalecommerce.com/find-site-errors-with-ai-before-ads-run": {
+  "zh_title": "投广告前，先用 AI 找出网站错误",
+  "zh_oneliner": "落地页有错再投广告，钱就白花了。"
+ },
+ "https://ahrefs.com/blog/aeo-geo-experts": {
+  "zh_title": "2026 年值得关注的 25 位 AEO/GEO 专家",
+  "zh_oneliner": "想跟上 AI 搜索，先关注这批一线专家。"
+ },
+ "https://blog.hubspot.com/marketing/claude-integrations": {
+  "zh_title": "值得加入 GTM 技术栈的 Claude 集成",
+  "zh_oneliner": "把 Claude 接进营销工具链，执行效率会明显提升。"
+ },
+ "https://www.sellerlabs.com/blog/chatbot-diy-agent-or-personal-agent": {
+  "zh_title": "聊天机器人、自建智能体还是个人助理：亚马逊卖家该用哪种 AI",
+  "zh_oneliner": "不同阶段的卖家，适合的 AI 助手类型也不同。"
+ },
+ "https://ahrefs.com/blog/mention-types-ai-visibility": {
+  "zh_title": "哪种提及与 AI 可见度相关性最强（分析 2.6 亿条 AI 提示）",
+  "zh_oneliner": "数据告诉你，什么样的品牌提及最能换来 AI 曝光。"
+ },
+ "https://ahrefs.com/blog/clearscope-alternatives": {
+  "zh_title": "10 款 Clearscope 替代品（价格、API 与 MCP 对比）",
+  "zh_oneliner": "内容优化工具不止一家，按预算与接入方式选。"
+ },
+ "https://ecommercenews.eu/dhl-introduces-fee-for-second-delivery-attempt": {
+  "zh_title": "DHL 对第二次派送尝试开始收费",
+  "zh_oneliner": "跨境物流成本又多一项，商家要算进定价里。"
+ },
+ "https://www.shipbob.com/blog/fall-26-release": {
+  "zh_title": "ShipBob 2026 秋季更新：机器人、退货与 Bobby 等旺季功能",
+  "zh_oneliner": "履约商在旺季前集中上新，机器人与退货是重点。"
+ },
+ "https://www.shipbob.com/blog/ai-fulfillment-strategies-from-tuft-paw": {
+  "zh_title": "Tuft & Paw 的 3 个 AI 履约策略（基于 ShipBob MCP）",
+  "zh_oneliner": "把 AI 接进履约系统，补货与发货都能更主动。"
+ },
+ "https://blog.hubspot.com/marketing/ai-maturity": {
+  "zh_title": "营销 AI 成熟度：研究揭示了什么",
+  "zh_oneliner": "多数团队的 AI 应用还停在初级阶段，差距就是机会。"
+ },
+ "https://blog.hubspot.com/marketing/scrunch-vs-semrush": {
+  "zh_title": "Scrunch 与 Semrush：谁更擅长追踪 AI 可见度",
+  "zh_oneliner": "两款工具测 AI 曝光的方式不同，按需求选。"
+ },
+ "https://www.practicalecommerce.com/html-vs-xml-sitemaps-for-ecommerce": {
+  "zh_title": "电商网站该用 HTML 还是 XML 网站地图",
+  "zh_oneliner": "两种地图各有用途，商品站最好两个都做。"
+ },
+ "https://woocommerce.com/posts/strategies-how-use-coupons-discounts-without-sacrificing-profits": {
+  "zh_title": "设计能自我回本的折扣，守住利润率",
+  "zh_oneliner": "折扣不是越狠越好，算好账再降价。"
+ },
+ "https://www.ecommercetimes.com/story/ai-shopping-agents-put-retailers-data-to-the-test-178711.html?rss=1": {
+  "zh_title": "AI 购物智能体正在考验零售商的数据",
+  "zh_oneliner": "商品数据不规范，AI 智能体就推不动你的货。"
+ },
+ "https://ecommercenews.eu/brussels-approves-temus-action-plan": {
+  "zh_title": "布鲁塞尔批准 Temu 的整改行动计划",
+  "zh_oneliner": "Temu 的合规整改过关，欧洲业务可以继续推进。"
+ },
+ "https://www.practicalecommerce.com/chatgpt-sends-1-in-5-orders-to-florist": {
+  "zh_title": "花店每 5 单就有 1 单来自 ChatGPT",
+  "zh_oneliner": "AI 对话已经成为实实在在的订单来源。"
+ },
+ "https://www.sellerlabs.com/blog/amazon-risk-check-most-sellers-skip-lesley-hensell": {
+  "zh_title": "多数卖家跳过的亚马逊风险检查",
+  "zh_oneliner": "账号风险平时不查，出事时再补救就晚了。"
+ },
+ "https://woocommerce.com/posts/peak-season-conversions": {
+  "zh_title": "回答好购物者的问题，旺季转化率自然涨",
+  "zh_oneliner": "问答内容做扎实，犹豫的顾客更容易下单。"
+ },
+ "https://ahrefs.com/blog/bluf": {
+  "zh_title": "什么是 BLUF？如何先写结论（附免费改写工具）",
+  "zh_oneliner": "内容先给结论，读者与 AI 都更喜欢。"
+ },
+ "https://www.practicalecommerce.com/i-built-a-voice-bot-for-customer-calls": {
+  "zh_title": "我做了一个接客户电话的语音机器人",
+  "zh_oneliner": "语音机器人接电话的实战记录，值得想降本的商家看。"
+ },
+ "https://ecommercenews.eu/winners-becom-awards-2026-announced": {
+  "zh_title": "Becom Awards 2026 获奖名单公布",
+  "zh_oneliner": "欧洲电商奖项揭晓，获奖打法可作参考。"
+ },
+ "https://www.sellerlabs.com/blog/blind-spots-costing-amazon-sellers-money-aaron-conant": {
+  "zh_title": "让亚马逊卖家亏钱的盲点",
+  "zh_oneliner": "费用与库存里的隐形亏损，多数卖家平时注意不到。"
+ },
+ "https://neilpatel.com/blog/answer-engine-optimization": {
+  "zh_title": "答案引擎优化：如何提升 AI 可见度",
+  "zh_oneliner": "想在 AI 回答里出现，内容结构要先改。"
+ },
+ "https://stripe.com/blog/stripe-on-stripe-what-we-learned-moving-1b-in-vendor-payments-to-global-payouts": {
+  "zh_title": "Stripe 自己的经验：把 10 亿美元供应商付款迁到 Global Payouts 学到了什么",
+  "zh_oneliner": "大额跨境付款的迁移经验，对平台型商家有参考价值。"
+ },
+ "https://ahrefs.com/blog/how-stable-are-ai-citations": {
+  "zh_title": "AI 引用有多稳定？追踪 37500 条引用学到的 10 件事",
+  "zh_oneliner": "AI 引用并不稳定，品牌曝光要持续维护。"
+ },
+ "https://www.practicalecommerce.com/marketers-guide-to-late-bfcm-email": {
+  "zh_title": "黑五网一后期邮件营销指南",
+  "zh_oneliner": "大促后半程的邮件还能再捞一波订单。"
+ },
+ "https://blog.hubspot.com/marketing/chatgpt-ads-vs-google-search-ads": {
+  "zh_title": "ChatGPT 广告与谷歌搜索广告：策略上要考虑的 5 点不同",
+  "zh_oneliner": "两种广告的投放逻辑不同，预算要分开算。"
+ },
+ "https://blog.hubspot.com/marketing/claude-marketing-plugin": {
+  "zh_title": "2026 年值得加入营销工具栈的 Claude 插件",
+  "zh_oneliner": "把 Claude 插件接进日常流程，内容与投放都能提速。"
+ },
+ "https://neilpatel.com/blog/teach-content-strategy-to-stakeholders": {
+  "zh_title": "如何向不懂营销的利益相关方讲清内容策略",
+  "zh_oneliner": "内容策略要讲业务结果，而不是营销术语。"
+ },
+ "https://blog.hubspot.com/marketing/how-often-to-run-prompt-tracking": {
+  "zh_title": "AEO 提示追踪多久跑一次：频率指南",
+  "zh_oneliner": "AI 搜索的追踪频率要跟得上模型更新节奏。"
+ },
+ "https://blog.hubspot.com/marketing/profound-vs-peec-ai": {
+  "zh_title": "Profound 与 Peec AI：哪个适合你的团队",
+  "zh_oneliner": "两款 AI 可见度工具定位不同，按团队规模选。"
+ },
+ "https://www.practicalecommerce.com/new-ecommerce-tools-october-28-2026": {
+  "zh_title": "新电商工具速览：2026 年 10 月 28 日",
+  "zh_oneliner": "每周一次的新工具盘点，帮商家快速发现提效的工具。"
+ },
+ "https://ahrefs.com/blog/google-ai-mode": {
+  "zh_title": "Google AI Mode：你需要知道的一切",
+  "zh_oneliner": "AI 模式正在改变搜索流量，商家要提前适应。"
+ },
+ "https://ahrefs.com/blog/new-features-september-2026": {
+  "zh_title": "AI 可发现性、页面类型等（2026 年 9 月）",
+  "zh_oneliner": "哪些页面类型最容易被 AI 发现，这份总结讲清楚了。"
+ },
+ "https://blog.hubspot.com/marketing/profound-vs-semrush": {
+  "zh_title": "Profound 与 Semrush 的 AEO 对比：专精还是套件",
+  "zh_oneliner": "做 AEO 是选专精工具还是全能套件，看团队现状。"
+ },
+ "https://blog.hubspot.com/marketing/aeo-analysis-tools": {
+  "zh_title": "AEO 分析工具测评：2026 年真正好用的是哪些",
+  "zh_oneliner": "市面上的 AEO 工具测了一圈，好用的就那么几款。"
+ },
+ "https://www.practicalecommerce.com/color-works-only-through-contrast": {
+  "zh_title": "色彩只有靠对比才有效",
+  "zh_oneliner": "商品页配色讲对比，视觉层次比颜色本身重要。"
+ },
+ "https://woocommerce.com/posts/subscription-churn-strategies": {
+  "zh_title": "订阅流失：把留存洞察变成持续收入增长",
+  "zh_oneliner": "订阅业务的增长关键在留存，不在拉新。"
+ },
+ "https://stripe.com/blog/how-the-fastest-growing-enterprises-on-stripe-scale-globally": {
+  "zh_title": "Stripe 上增长最快的企业如何全球扩张",
+  "zh_oneliner": "增长快的企业在支付与合规上都有共性打法。"
+ },
+ "https://neilpatel.com/blog/ubersuggest-inside-claude": {
+  "zh_title": "Ubersuggest 已接入 Claude，它到底能做什么",
+  "zh_oneliner": "SEO 工具住进 AI 对话里，查数据的方式变了。"
+ },
+ "https://www.practicalecommerce.com/seo-vs-geo-which-to-prioritize": {
+  "zh_title": "SEO 与 GEO：优先做哪个",
+  "zh_oneliner": "传统搜索与 AI 搜索的优化，预算分配要想清楚。"
+ },
+ "https://woocommerce.com/posts/how-to-scale-small-business": {
+  "zh_title": "电商规模化：增长销量而不丢利润",
+  "zh_oneliner": "规模做大容易亏，利润率要跟着算。"
+ },
+ "https://blog.hubspot.com/marketing/create-claude-skills": {
+  "zh_title": "如何创建 Claude Skills：团队真正需要的是什么",
+  "zh_oneliner": "给 AI 写技能要从团队的实际工作流出发。"
+ },
+ "https://www.shipbob.com/blog/annas-wild-yam-cream": {
+  "zh_title": "ANNA’S 野生山药霜如何靠拓展美国市场提升转化 36%、缩短发货时间 71%",
+  "zh_oneliner": "品牌出海美国，转化与物流可以同时改善。"
+ },
+ "https://www.practicalecommerce.com/usps-can-bill-sellers-for-foreign-duties": {
+  "zh_title": "美国邮政可向卖家收取外国关税",
+  "zh_oneliner": "跨境卖家的关税成本可能多一笔，要提前核算。"
+ },
+ "https://blog.hubspot.com/marketing/profound-vs-bluefish": {
+  "zh_title": "Profound 与 Bluefish AI 的 AEO 对比：营销人选哪个",
+  "zh_oneliner": "两款 AEO 工具的打法不同，按营销目标选。"
+ },
+ "https://neilpatel.com/blog/4-ps-of-marketing": {
+  "zh_title": "营销 4P：产品、价格、渠道与推广",
+  "zh_oneliner": "经典框架不过时，新手做营销先从这里入门。"
+ },
+ "https://blog.hubspot.com/marketing/ai-content-gaps": {
+  "zh_title": "如何找到影响 AI 可见度的内容缺口",
+  "zh_oneliner": "内容缺口找出来，AI 曝光才有提升空间。"
+ },
+ "https://blog.hubspot.com/marketing/which-prompts-to-track": {
+  "zh_title": "该追踪哪些 AI 提示：实用指南",
+  "zh_oneliner": "不是所有提示都值得追踪，先挑与业务相关的。"
+ },
+ "https://blog.hubspot.com/marketing/ahrefs-vs-profound": {
+  "zh_title": "Ahrefs Brand Radar 与 Profound：哪个适合你的团队",
+  "zh_oneliner": "品牌在 AI 里的曝光，两款工具测的角度不同。"
+ },
+ "https://blog.hubspot.com/marketing/llm-visibility-tools": {
+  "zh_title": "8 款 LLM 可见度工具，追踪品牌在答案引擎里的表现",
+  "zh_oneliner": "想知道品牌在 AI 回答里出现多少次，用这批工具。"
+ },
+ "https://www.practicalecommerce.com/agency-founder-touts-youtube-tv-ads": {
+  "zh_title": "代理公司创始人看好 YouTube 电视广告",
+  "zh_oneliner": "大屏广告正在成为品牌投放的新选择。"
+ },
+ "https://blog.hubspot.com/marketing/profound-vs-scrunch": {
+  "zh_title": "Profound 与 Scrunch：哪款 AEO 工具适合你的团队",
+  "zh_oneliner": "AEO 工具选型要看团队规模与预算。"
+ },
+ "https://blog.hubspot.com/marketing/build-ai-agent": {
+  "zh_title": "如何搭建 AI 智能体：从目标到上线",
+  "zh_oneliner": "做智能体要先定目标，再谈技术实现。"
+ },
+ "https://www.practicalecommerce.com/ai-shopping-metrics-considered": {
+  "zh_title": "AI 购物指标怎么看",
+  "zh_oneliner": "AI 带来的流量与订单，要用新的指标衡量。"
+ },
+ "https://stripe.com/blog/trends-from-money20-20-2026-the-rise-of-hidden-financial-services": {
+  "zh_title": "Money20/20 2026 趋势：“隐形”金融服务崛起",
+  "zh_oneliner": "支付正在藏进购物流程里，商家要跟上这股趋势。"
+ },
+ "https://www.shipbob.com/blog/welleco": {
+  "zh_title": "WelleCo 两人运营团队如何用 ShipBob 跑全球履约",
+  "zh_oneliner": "小团队也能做全球履约，关键在系统与外包。"
+ },
+ "https://woocommerce.com/posts/woocommerce-multiple-stores": {
+  "zh_title": "一个 WordPress 安装搭建多个 WooCommerce 店铺",
+  "zh_oneliner": "多店铺共用一套系统，管理成本可以降下来。"
+ },
+ "https://neilpatel.com/blog/an-eye-opening-guide-create-grow-facebook-group": {
+  "zh_title": "如何用 Facebook 小组做营销",
+  "zh_oneliner": "社群营销的老办法，至今仍然有效。"
+ },
+ "https://www.practicalecommerce.com/new-ecommerce-tools-october-21-2026": {
+  "zh_title": "新电商工具速览：2026 年 10 月 21 日",
+  "zh_oneliner": "每周一次的新工具盘点，帮商家快速发现提效的工具。"
+ },
+ "https://www.practicalecommerce.com/shopify-vercel-arm-stores-for-ai-agents": {
+  "zh_title": "Shopify 与 Vercel 联手让店铺为 AI 智能体做好准备",
+  "zh_oneliner": "店铺要能被 AI 智能体顺利访问与下单，基建要先到位。"
+ },
+ "https://blog.hubspot.com/marketing/aeo-for-small-teams": {
+  "zh_title": "没有大团队怎么做 AEO：有哪些选择",
+  "zh_oneliner": "小团队做 AI 搜索优化，工具与外包是两条路。"
+ },
+ "https://www.ecommercetimes.com/story/how-smbs-can-keep-ai-website-agents-under-control-178693.html?rss=1": {
+  "zh_title": "中小企业如何管住 AI 网站智能体",
+  "zh_oneliner": "AI 智能体访问网站要设边界，别让它乱跑。"
+ },
+ "https://www.shipbob.com/blog/shipbob-fulfillment-technology": {
+  "zh_title": "ShipBob 的技术落后了吗？深入看它的全套履约系统",
+  "zh_oneliner": "履约商的技术栈决定了它能帮商家走多远。"
+ },
+ "https://neilpatel.com/blog/seo-templates": {
+  "zh_title": "SEO 模板、指南与清单，让策略更顺畅",
+  "zh_oneliner": "用现成的模板搭 SEO 流程，省下从零摸索的时间。"
+ },
+ "https://www.practicalecommerce.com/beware-of-ai-content-for-seo": {
+  "zh_title": "警惕 AI 内容做 SEO 的风险",
+  "zh_oneliner": "AI 内容用不好，反而会拖累搜索排名。"
+ },
+ "https://blog.hubspot.com/marketing/how-ai-changed-our-editorial-process": {
+  "zh_title": "我们的博客全面转向 AI 后到底发生了什么：一位经理的记录",
+  "zh_oneliner": "博客 AI 化的真实过程，有收获也有教训。"
+ },
+ "https://blog.hubspot.com/marketing/best-claude-skills": {
+  "zh_title": "最适合营销与销售团队的 Claude Skills",
+  "zh_oneliner": "给 Claude 配好技能，营销与销售工作能提速。"
+ },
+ "https://stripe.com/blog/saas-platform-trends-in-AI-era": {
+  "zh_title": "Stripe 调研：AI 时代重塑 SaaS 平台竞争的四大趋势",
+  "zh_oneliner": "SaaS 平台的竞争逻辑在变，支付是其中一环。"
+ },
+ "https://www.ecommercetimes.com/story/hanso-expands-online-apex-pergola-catalog-with-4-new-sizes-and-accessories-178690.html?rss=1": {
+  "zh_title": "Hansø 凉棚目录新增 4 种尺寸与配件",
+  "zh_oneliner": "户外品类靠扩品拉动线上销售。"
+ },
+ "https://blog.hubspot.com/marketing/marketing-automation-secondary-market-playbook": {
+  "zh_title": "营销自动化模型如何让次级市场的合格线索增长 9 倍",
+  "zh_oneliner": "自动化流程跑通后，线索增长可以非常快。"
+ },
+ "https://www.practicalecommerce.com/ai-platforms-attract-a-growing-ecosystem": {
+  "zh_title": "AI 平台正在吸引越来越大的生态",
+  "zh_oneliner": "围绕 AI 平台的工具与服务越来越多，商家可选的更多。"
+ },
+ "https://stripe.com/blog/new-ways-for-fintechs-to-move-money-and-expand-globally": {
+  "zh_title": "金融科技公司转移资金与全球扩张的新方式",
+  "zh_oneliner": "跨境收款的路子在变多，出海商家可以比较着选。"
+ },
+ "https://www.shipbob.com/blog/supplement-fulfillment-requirements": {
+  "zh_title": "履约伙伴能发保健品吗？发货前要知道的事",
+  "zh_oneliner": "保健品的仓储与配送有特殊要求，发货前先确认。"
+ },
+ "https://blog.hubspot.com/marketing/best-transactional-email-platforms": {
+  "zh_title": "交易邮件：是什么、怎么运作",
+  "zh_oneliner": "订单确认与物流通知这类邮件，转化率其实很高。"
+ },
+ "https://blog.google/products-and-platforms/products/shopping/universal-cart-launch": {
+  "zh_title": "一款智能的新购物车",
+  "zh_oneliner": "Google 给购物车加了智能功能，购物体验在变。"
+ },
+ "https://blog.google/products-and-platforms/products/shopping/holiday-shopping-when-to-buy-guide": {
+  "zh_title": "数据支撑的假日购物秘诀",
+  "zh_oneliner": "按数据备货与定价，假日季少走弯路。"
+ },
+ "https://www.practicalecommerce.com/commerce-data-as-credit-data": {
+  "zh_title": "电商数据正在变成信用数据",
+  "zh_oneliner": "商家的交易数据可能影响融资，经营记录要重视。"
+ },
+ "https://stripe.com/blog/real-time-stripe-data-postgres": {
+  "zh_title": "用 Stripe Data Pipeline 把实时数据同步到 Postgres",
+  "zh_oneliner": "支付数据实时入库，分析与对账都更方便。"
+ },
+ "https://blog.hubspot.com/marketing/tracking-ai-overviews": {
+  "zh_title": "追踪 AI 概览：数据到底显示了什么",
+  "zh_oneliner": "AI 概览的实际影响，要看数据而不是感觉。"
+ },
+ "https://blog.hubspot.com/marketing/claude-skills-plugins-mcp": {
+  "zh_title": "Claude Skills、插件与 MCP 连接器：简单指南",
+  "zh_oneliner": "三种接入方式各有用途，选错会白费力气。"
+ },
+ "https://www.practicalecommerce.com/new-ecommerce-tools-october-14-2026": {
+  "zh_title": "新电商工具速览：2026 年 10 月 14 日",
+  "zh_oneliner": "每周一次的新工具盘点，帮商家快速发现提效的工具。"
+ },
+ "https://www.ecomcrew.com/reddit-is-building-your-products-review-page-without-you": {
+  "zh_title": "Reddit 在替你建商品评价页",
+  "zh_oneliner": "Reddit 推出商品评价页，直接汇总社区讨论，购物者不用点进店铺就能判断产品口碑。"
+ },
+ "https://www.ecomcrew.com/claim-your-business-in-chatgpt-what-sellers-should-test-first": {
+  "zh_title": "先在 ChatGPT 里认领你的商家身份",
+  "zh_oneliner": "ChatGPT 上线商家认领功能，卖家可以提交店铺信息和商品数据，尽早测试在 AI 对话里的曝光方式。"
+ },
+ "https://www.ecomcrew.com/amazons-ad-auction-under-fire-check-your-holiday-bids": {
+  "zh_title": "亚马逊广告竞价遭质疑，假日出价先自查",
+  "zh_oneliner": "FTC 公开的诉讼细节涉及亚马逊广告竞价的计价方式，大促前值得复核自己的出价策略。"
+ },
+ "https://www.ecomcrew.com/less-cargo-higher-air-freight-what-europe-sellers-are-paying": {
+  "zh_title": "货量降了，欧洲空运费反而涨了",
+  "zh_oneliner": "中欧空运费一周上涨，补货欧洲站的卖家要重新算物流成本。"
+ },
+ "https://www.ecomcrew.com/meta-paused-its-new-terms-what-still-applies": {
+  "zh_title": "Meta 新条款暂缓，现行规则照旧",
+  "zh_oneliner": "Meta 暂缓了原定 11 月 20 日生效的商业与广告条款更新，卖家按现行规则投放即可。"
+ },
+ "https://www.ecomcrew.com/e667-trading-card-businesses": {
+  "zh_title": "在线球星卡生意正火，怎么做",
+  "zh_oneliner": "这期播客拆解在线交易卡店铺的玩法，适合想找小众高毛利类目的卖家参考。"
+ },
+ "https://www.ecomcrew.com/italian-prosecutors-close-an-amazon-customs-case-check-your-own-records": {
+  "zh_title": "意大利结案一宗亚马逊海关案，自查报关记录",
+  "zh_oneliner": "意大利检方结束了一起涉及亚马逊海关与进口增值税的调查，做欧洲站的卖家应核对自己的报关资料。"
+ },
+ "https://www.ecomcrew.com/amazon-haul-is-in-regular-search-now-should-you-cut-prices": {
+  "zh_title": "Amazon Haul 进了常规搜索，要不要降价",
+  "zh_oneliner": "低价商品已出现在亚马逊常规搜索结果里，低价类目卖家要权衡价格与曝光。"
+ },
+ "https://www.ecomcrew.com/cbp-rule-changes": {
+  "zh_title": "美国海关收紧进口，发货更难了",
+  "zh_oneliner": "美国海关出台新规，改变外国进口商的入境方式，11 月 6 日起影响对美发货安排。"
+ },
+ "https://www.ecomcrew.com/amazon-ads-can-now-target-rival-retailers-shoppers": {
+  "zh_title": "亚马逊广告能定向竞争对手的顾客了",
+  "zh_oneliner": "亚马逊广告接入站外购买人群数据，品牌可以把广告打给在别处买过同类商品的人。"
+ },
+ "https://www.sellerapp.com/blog/rainforest-api-alternatives-for-developers": {
+  "zh_title": "Rainforest API 的 5 个替代工具",
+  "zh_oneliner": "做商品数据抓取的卖家如果被 Rainforest API 的延迟拖累，可以看看这几个替代方案。"
+ },
+ "https://www.sellerapp.com/blog/best-white-label-amazon-ppc-and-dsp-platforms-for-agencies": {
+  "zh_title": "6 个可贴牌的亚马逊广告代运营平台",
+  "zh_oneliner": "接代运营业务的机构可以用白标 PPC 和 DSP 平台对外提供服务，不用自建投放团队。"
+ },
+ "https://www.sellerapp.com/blog/chatgpt-shopping-what-it-means-for-amazon-dtc-sellers": {
+  "zh_title": "ChatGPT 购物对亚马逊和独立站卖家意味着什么",
+  "zh_oneliner": "用户可以在 ChatGPT 里比价下单，卖家要留意商品数据在 AI 购物入口的呈现。"
+ },
+ "https://www.sellerapp.com/blog/amzscout-vs-sellerapp": {
+  "zh_title": "AMZScout 对比 SellerApp，哪个更赚钱",
+  "zh_oneliner": "两款选品工具面向不同阶段的卖家，选之前先看自己的运营阶段。"
+ },
+ "https://www.sellerapp.com/blog/amazon-ai-shopping-assistant": {
+  "zh_title": "亚马逊 AI 购物助手换成 Alexa 了",
+  "zh_oneliner": "亚马逊把 AI 购物助手并入 Alexa，搜索栏里的商品推荐方式变了，企业卖家要相应调整。"
+ },
+ "https://www.sellerapp.com/blog/amazon-marketing-agency-tools": {
+  "zh_title": "2026 年亚马逊代运营机构都在用的工具",
+  "zh_oneliner": "管理多个品牌的机构靠工具而不是靠加班，这篇盘点了头部机构的常用工具组合。"
+ },
+ "https://www.sellerapp.com/blog/amazon-vine-program-and-the-strategy-behind-getting-more-reviews": {
+  "zh_title": "亚马逊 Vine 计划怎么拿更多评价",
+  "zh_oneliner": "Vine 计划能帮合规卖家拿到可信评价，关键是选对产品和把握邀请节奏。"
+ },
+ "https://www.sellerapp.com/blog/amazon-dsp-for-brands-under-20k-a-month-a-2026-starter-guide": {
+  "zh_title": "月预算 2 万美元以下怎么做亚马逊 DSP",
+  "zh_oneliner": "DSP 不只是大品牌的游戏，小预算品牌也可以按这份入门指南起步。"
+ },
+ "https://www.sellerapp.com/blog/amazon-dsp-for-new-to-brand-growth-backed-by-sellerapp-2026-benchmark-data": {
+  "zh_title": "用亚马逊 DSP 拉新客，看新客占比",
+  "zh_oneliner": "DSP 的价值不只在转化，更在拉来从没买过你品牌的新客，复盘时要看新客占比。"
+ },
+ "https://www.sellerapp.com/blog/amazon-fba-partial-refund-strategy-for-2026-what-actually-moves-the-needle": {
+  "zh_title": "亚马逊 FBA 部分退款策略怎么用",
+  "zh_oneliner": "美国等六国站点支持 10% 至 40% 的部分退款且不用退货，处理售后时可以先算这笔账。"
+ },
+ "https://blog.ordoro.com/2026/11/12/features-and-updates-6": {
+  "zh_title": "Ordoro 功能更新：权限与订单筛选更好用了",
+  "zh_oneliner": "本轮更新加强了团队权限管理和订单筛选，处理大批量订单时找货更快。"
+ },
+ "https://blog.ordoro.com/2026/11/10/discounted-fedex-shipping-rates": {
+  "zh_title": "更多商家能拿到 Ordoro 的 FedEx 折扣运费了",
+  "zh_oneliner": "联邦快递折扣价覆盖更多 Ordoro 商家，发货量大的店铺能直接省下运费。"
+ },
+ "https://blog.ordoro.com/2026/11/09/ecommerce-shipping-workflow": {
+  "zh_title": "电商发货全流程：从下单到送达的 10 步",
+  "zh_oneliner": "把接单、拣货、打包、发运到回传单号拆成 10 步，新手按图索骥不容易漏单。"
+ },
+ "https://blog.ordoro.com/2026/11/06/commerce-corner-9": {
+  "zh_title": "假日消费创新高，平台新规与新功能一览",
+  "zh_oneliner": "美国假日季消费有望破万亿，同时亚马逊等平台出了新规，卖家开卖前先过一遍。"
+ },
+ "https://blog.ordoro.com/2026/11/06/holiday-sales-forecast-2026": {
+  "zh_title": "2026 假日季销售额将破万亿，但别只看总数",
+  "zh_oneliner": "全美假日零售额预计增长 4.2% 至 1.013 万亿美元，卖家更要看自己类目的分化。"
+ },
+ "https://blog.ordoro.com/2026/11/06/amazon-seller-policy-changes-2026": {
+  "zh_title": "亚马逊改了保险与退货标签规则",
+  "zh_oneliner": "假日季起部分高风险类目卖家须投保 100 万美元责任险，退货标签规则也有变。"
+ },
+ "https://blog.ordoro.com/2026/11/06/walmart-black-friday-2026": {
+  "zh_title": "沃尔玛黑五分三波、持续 14 天",
+  "zh_oneliner": "沃尔玛今年黑五拆成三场大促，卖家按三波节奏排库存和广告。"
+ },
+ "https://blog.ordoro.com/2026/11/06/shopify-checkout-hijack": {
+  "zh_title": "Shopify 结账页被劫持事件，卖家自查指南",
+  "zh_oneliner": "第三方应用被攻破后把买家引向假结账页，装了同类应用的店铺要立即排查。"
+ },
+ "https://blog.ordoro.com/2026/11/06/shopify-editions-fall-2026": {
+  "zh_title": "Shopify 秋季更新对库存与履约的影响",
+  "zh_oneliner": "150 多项更新里和发货最相关的是订单归属变化，履约流程可能要跟着调。"
+ },
+ "https://blog.ordoro.com/2026/11/05/order-routing-for-ecommerce": {
+  "zh_title": "订单路由：决定每单从哪个仓发出",
+  "zh_oneliner": "多仓卖家按库存、位置和时效决定发货仓，规则定好能省运费、少超时。"
+ },
+ "https://cedcommerce.com/blog/shopifys-new-app-store-submission-rules-whats-changed": {
+  "zh_title": "Shopify 收紧应用商店上架规则",
+  "zh_oneliner": "11 月 10 日起应用提交要求变严，做 Shopify 应用的开发者要按新规改材料。"
+ },
+ "https://cedcommerce.com/blog/how-to-prevent-overselling-fba-or-wfs-stock-on-temu-shein-tiktok": {
+  "zh_title": "多平台共用库存，怎么防超卖",
+  "zh_oneliner": "同一批 FBA 或沃尔玛库存同时在 Temu、SHEIN 和 TikTok 上卖，库存同步慢了就会超卖。"
+ },
+ "https://cedcommerce.com/blog/amazon-mcf-vs-walmart-mcs-for-temu-shein-and-tiktok-shop-what-is-the-right-choice": {
+  "zh_title": "亚马逊 MCF 对比沃尔玛 MCS，哪个更适合多平台",
+  "zh_oneliner": "两个履约服务都支持向 Temu、SHEIN 和 TikTok 发货，选哪个看订单结构和成本。"
+ },
+ "https://www.supplychaindive.com/news/trump-threatens-to-double-mexico-tariffs-over-migrant-caravans/874534": {
+  "zh_title": "特朗普威胁把墨西哥关税翻倍",
+  "zh_oneliner": "若墨西哥不阻止移民车队，美方威胁立即加征关税，依赖墨西哥供应链的卖家要留预案。"
+ },
+ "https://www.supplychaindive.com/news/manufacturing-advocates-make-case-for-tariffs-following-midterm-results/874456": {
+  "zh_title": "制造业团体呼吁保留关税",
+  "zh_oneliner": "尽管民调显示公众厌倦进口税，制造业团体认为取消贸易执法会是严重错误。"
+ },
+ "https://www.supplychaindive.com/news/ups-teamsters-contract-expires-in-2028-shippers-should-prepare-now/874374": {
+  "zh_title": "UPS 工会合同 2028 年到期，货主提前准备",
+  "zh_oneliner": "虽然冲突还远，专家建议发货方现在就建立备用承运商关系以防罢工风险。"
+ },
+ "https://www.supplychaindive.com/news/bipartisan-push-possible-to-curb-trump-tariffs/874347": {
+  "zh_title": "国会可能联手限制总统关税权",
+  "zh_oneliner": "三项法案若通过将大幅限制总统的关税权力，贸易政策存在变数。"
+ },
+ "https://www.supplychaindive.com/news/air-cargos-hopes-for-end-of-year-volume-surge-dwindle/874430": {
+  "zh_title": "年末空运货量冲高希望落空",
+  "zh_oneliner": "10 月传统旺季信号不足，空运价格与舱位压力仍在，补货要留出时间。"
+ },
+ "https://www.supplychaindive.com/news/bmw-announces-new-battery-supply-deals-for-the-us-europe/874409": {
+  "zh_title": "宝马签下美欧电池供应大单",
+  "zh_oneliner": "宝马与三星 SDI 和 LG 合作推进电池本土化，供应链区域化趋势仍在继续。"
+ },
+ "https://www.supplychaindive.com/news/transpacific-ocean-rates-ease-slightly-as-peak-winds-down/874262": {
+  "zh_title": "跨太平洋海运费小幅回落",
+  "zh_oneliner": "旺季过后美线港口需求放缓，运价回落但同比仍处高位。"
+ },
+ "https://www.supplychaindive.com/news/carpartscom-revs-up-in-house-last-mile-delivery-for-cost-speed-benefits/874287": {
+  "zh_title": "CarParts.com 自建最后一公里配送",
+  "zh_oneliner": "这家汽配电商计划每年自送 30 万单，省下的配送成本相当可观。"
+ },
+ "https://www.supplychaindive.com/news/asics-boosts-inventory-management-using-warehouse-drones/874273": {
+  "zh_title": "亚瑟士用仓库无人机管库存",
+  "zh_oneliner": "无人机盘点减少了错放货物的找回时间，盘点频率也提高了。"
+ },
+ "https://www.supplychaindive.com/news/honda-to-invest-3b-in-new-ohio-hybrid-vehicle-plant/874281": {
+  "zh_title": "本田投 30 亿美元在俄亥俄建混动车工厂",
+  "zh_oneliner": "新厂将创造 2000 个岗位，本田正把混动产能向美国本土集中。"
+ },
+ "https://www.paymentsdive.com/news/ftc-aims-to-better-fight-scams/874509": {
+  "zh_title": "FTC 拟修法，更严打击诈骗",
+  "zh_oneliner": "美国联邦贸易委员会可能更新规则，让科技公司为平台上的诈骗承担更多责任。"
+ },
+ "https://www.paymentsdive.com/news/merchants-sue-feds-over-illinois-card-fee-law/874494": {
+  "zh_title": "商家起诉联邦机构，争刷卡费禁令",
+  "zh_oneliner": "围绕伊利诺伊州禁止对税费收刷卡费的法律，行业团体与监管机构打起了官司。"
+ },
+ "https://www.paymentsdive.com/news/fiserv-preps-debit-network-sale/874395": {
+  "zh_title": "Fiserv 准备出售借记卡网络",
+  "zh_oneliner": "支付巨头正把客户迁移到其中一个借记网络，为出售或关闭另一个做准备。"
+ },
+ "https://www.paymentsdive.com/news/western-union-intermex-acquisition-fight-California-regulator/874396": {
+  "zh_title": "西联与 Intermex 反目",
+  "zh_oneliner": "收购告吹后，两家汇款公司因监管介入产生了纠纷。"
+ },
+ "https://www.paymentsdive.com/news/blocks-cash-app-weaves-payment-tech-into-bandanas/874328": {
+  "zh_title": "Cash App 把支付芯片缝进头巾里卖",
+  "zh_oneliner": "Block 开始销售内置支付标签的头巾，算是线下支付场景的一次新尝试。"
+ },
+ "https://www.paymentsdive.com/news/states-keep-targeting-card-fee-relief/874260": {
+  "zh_title": "各州继续推动刷卡费减免",
+  "zh_oneliner": "尽管面临法律挑战，今年各州已提出 30 多项刷卡费减免法案。"
+ },
+ "https://www.paymentsdive.com/news/block-to-provide-data-to-ftc/874156": {
+  "zh_title": "Block 将向 FTC 提供数据",
+  "zh_oneliner": "因 Square 的投诉调查，Block 同意交出联邦贸易委员会要求的文件。"
+ },
+ "https://www.paymentsdive.com/news/global-payments-faces-industry-pricing-pressure/874128": {
+  "zh_title": "Global Payments 面临行业定价压力",
+  "zh_oneliner": "支付处理竞争加剧，分析师认为这家公司提价的空间越来越小。"
+ },
+ "https://www.paymentsdive.com/news/5-questions-with-barclays-head-of-us-cards-samsung-wallet/874057": {
+  "zh_title": "巴克莱如何把卡塞进三星钱包",
+  "zh_oneliner": "联名卡与手机钱包深度绑定后，发卡行与手机厂商的合作模式也在变。"
+ },
+ "https://www.paymentsdive.com/news/bnpl-for-rent-seeks-a-market/874061": {
+  "zh_title": "先买后付盯上房租市场",
+  "zh_oneliner": "一批金融科技公司尝试把分期付款做到房租上，通胀下租房客的需求在涨。"
+ },
+ "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/readout-ambassador-greers-call-chinas-vice-premier-he-lifeng": {
+  "zh_title": "美贸易代表与何立峰通话",
+  "zh_oneliner": "双方通话涉及中美经贸议题，做中美贸易的卖家可关注后续政策信号。"
+ },
+ "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/united-states-seeks-mexicos-review-alleged-denial-workers-rights-madobox": {
+  "zh_title": "美国要求墨西哥审查 Madobox 劳工权利问题",
+  "zh_oneliner": "美方启动快速反应劳工机制，涉及墨西哥工厂的工人权利争议。"
+ },
+ "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/united-states-and-mexico-announce-memorandum-understanding-industrias-tecnos-facility": {
+  "zh_title": "美墨就 Industrias Tecnos 工厂签署谅解备忘录",
+  "zh_oneliner": "双方就该工厂的劳工问题达成谅解，跨境供应链合规风险值得留意。"
+ },
+ "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/ambassador-greer-issues-statement-president-trumps-intent-terminate-rwanda-and-south-africa-agoa": {
+  "zh_title": "美国拟终止卢旺达和南非的 AGOA 优惠待遇",
+  "zh_oneliner": "两国可能失去对美出口免税待遇，涉及非洲供应链的卖家要评估影响。"
+ },
+ "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/october/america-first-seafood-strategy-charts-course-restoring-us-seafood-dominance": {
+  "zh_title": "美国发布海鲜产业振兴战略",
+  "zh_oneliner": "白宫出台恢复美国海鲜主导地位的战略，与电商关联有限。"
+ },
+ "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/october/ambassador-greer-issues-statement-status-us-eu-detente-following-record-breaking-loan-european": {
+  "zh_title": "美欧贸易缓和现状声明",
+  "zh_oneliner": "美方就与欧盟的贸易缓和表态，涉及欧洲市场的卖家可关注关税动向。"
+ },
+ "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/october/united-states-announces-successful-resolution-rapid-response-labor-mechanism-matter-amphenol": {
+  "zh_title": "美墨快速反应劳工机制一案解决",
+  "zh_oneliner": "双方就 Amphenol Optimize 工厂的劳工争议达成解决方案。"
+ },
+ "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/october/united-states-and-mexico-announce-course-remediation-minera-penasquito": {
+  "zh_title": "美墨公布 Peñasquito 矿场整改方案",
+  "zh_oneliner": "双方就该矿场的劳工问题确定整改路径。"
+ },
+ "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/october/ustr-announces-2026-award-recipients": {
+  "zh_title": "USTR 公布 2026 年度获奖名单",
+  "zh_oneliner": "贸易代表办公室公布年度奖项，与卖家日常经营关联不大。"
+ },
+ "https://internetretailing.net/guest-comment-retailers-have-work-to-do-earning-customer-trust-in-ai": {
+  "zh_title": "零售商要赢得消费者对 AI 的信任",
+  "zh_oneliner": "消费者是否愿意让 AI 替自己花钱，决定了 AI 购物功能的接受度。"
+ },
+ "https://internetretailing.net/poundland-secures-extra-time-to-pursue-rescue-deal-but-mp-warns-that-jobs-are-still-in-jeopardy": {
+  "zh_title": "Poundland 续命谈判再获宽限",
+  "zh_oneliner": "这家折扣连锁又争取到 10 天寻找收购方，但就业风险仍未解除。"
+ },
+ "https://internetretailing.net/morrisons-media-group-expands-retail-media-network-into-convenience-stores": {
+  "zh_title": "Morrisons 把零售媒体做到便利店",
+  "zh_oneliner": "英国超市把零售媒体网络扩展到便利店业态，品牌广告位又多了一处。"
+ },
+ "https://internetretailing.net/retail-mediax-heads-to-new-york-as-uk-born-event-brand-makes-us-debut": {
+  "zh_title": "Retail MediaX 首进美国市场",
+  "zh_oneliner": "这个英国零售媒体活动品牌首次在纽约办展，零售媒体出海值得关注。"
+ },
+ "https://internetretailing.net/aldi-cuts-roles-as-supermarket-sector-faces-margin-pressure": {
+  "zh_title": "Aldi 裁员，超市行业利润承压",
+  "zh_oneliner": "英国超市行业成本高企，Aldi 开始裁撤总部岗位以控制成本。"
+ },
+ "https://internetretailing.net/almost-half-of-shoppers-plan-black-friday-purchases-in-advance-with-ai-and-social-media-having-limited-influence-on-buying-behaviour": {
+  "zh_title": "近半消费者提前计划黑五购物",
+  "zh_oneliner": "调查显示 47% 的网购者会提前定好黑五要买的东西，冲动消费占比有限。"
+ },
+ "https://internetretailing.net/singles-day-spend-set-to-top-2-2bn-as-uk-shoppers-embrace-global-retail-event": {
+  "zh_title": "英国双 11 消费预计超 22 亿英镑",
+  "zh_oneliner": "英国消费者对全球购物节的参与度上升，双 11 已成当地零售节点。"
+ },
+ "https://internetretailing.net/asda-turnaround-under-pressure-as-market-share-slips": {
+  "zh_title": "Asda 复苏承压，市场份额下滑",
+  "zh_oneliner": "最新数据显示 Asda 是英国主要超市中唯一销售额下滑的一家。"
+ },
+ "https://internetretailing.net/guest-comment-whats-really-driving-advertising-value": {
+  "zh_title": "广告价值到底由什么驱动",
+  "zh_oneliner": "广告效果评估过于看重结果，忽略了价值本身，品牌方值得反思衡量方式。"
+ },
+ "https://internetretailing.net/black-friday-spending-set-to-hit-9-8bn-as-shoppers-plan-christmas-bargains": {
+  "zh_title": "英国黑五消费预计达 98 亿英镑",
+  "zh_oneliner": "英国黑五支出同比增长 3%，圣诞购物季开局稳健。"
+ },
+ "https://developer.woocommerce.com/2026/11/11/stripe-gateway-security-update": {
+  "zh_title": "WooCommerce Stripe 插件安全修复，尽快升级",
+  "zh_oneliner": "11.2.0 或 11.1.2 修复了重要安全问题，用 Stripe 收款的店铺应立即更新。"
+ },
+ "https://developer.woocommerce.com/2026/11/11/woocommerce-11-3-0-release-notes": {
+  "zh_title": "WooCommerce 11.3.0 发布说明",
+  "zh_oneliner": "新版让店主更好控制商品与促销展示，新增促销徽章选项和图库滑动体验。"
+ },
+ "https://developer.woocommerce.com/2026/11/06/woo-latest-security": {
+  "zh_title": "WooCommerce 6 月以来做了哪些安全改进",
+  "zh_oneliner": "针对近期频繁的安全更新，官方梳理了改动内容和店主能做的事。"
+ },
+ "https://developer.woocommerce.com/2026/11/04/woocommerce-11-2-2-release-notes": {
+  "zh_title": "WooCommerce 11.2.2 发布说明",
+  "zh_oneliner": "这次更新以安全修复为主，建议尽快升级到最新版。"
+ },
+ "https://developer.woocommerce.com/2026/11/03/security-update-for-woopayments": {
+  "zh_title": "WooPayments 安全更新",
+  "zh_oneliner": "订阅功能的安全更新已发布，用 WooPayments 的店铺请按版本说明升级。"
+ },
+ "https://developer.woocommerce.com/2026/11/03/php-stubs-for-extensions": {
+  "zh_title": "WooCommerce 插件可用自动生成的 PHP 存根",
+  "zh_oneliner": "新工具能自动生成 PHP 存根，方便开发者用 PHPStan 检查扩展代码。"
+ },
+ "https://developer.woocommerce.com/2026/10/27/cart-item-children": {
+  "zh_title": "WooCommerce 11.3 支持声明购物车父子商品关系",
+  "zh_oneliner": "新过滤器能准确追踪套装商品在购物车里的数量关系。"
+ },
+ "https://developer.woocommerce.com/2026/10/26/woocommerce-11-3-pre-release": {
+  "zh_title": "WooCommerce 11.3 开发者预览",
+  "zh_oneliner": "测试版带来样式控制、促销徽章、移动端图库改进和 MCP 相关更新。"
+ },
+ "https://developer.woocommerce.com/2026/10/22/extensible-abilities": {
+  "zh_title": "WooCommerce 征集扩展字段能力测试",
+  "zh_oneliner": "11.3 的实验性 API 允许扩展把自己的数据接入 MCP 能力体系。"
+ },
+ "https://developer.woocommerce.com/2026/10/21/woocommerce-11-3-mcp": {
+  "zh_title": "WooCommerce 11.3 的 MCP 适配器更新",
+  "zh_oneliner": "旧的 MCP 端点已废弃，扩展与客户端要迁移到 WordPress MCP 适配器。"
+ },
+ "https://developer.woocommerce.com/2026/10/21/php-security-release": {
+  "zh_title": "PHP 发布关键安全更新",
+  "zh_oneliner": "PHP 修复了两个严重安全漏洞，建站的店铺应尽快升级运行环境。"
+ },
+ "https://developer.woocommerce.com/2026/10/20/purple-monorepo": {
+  "zh_title": "Purple 主题开发并入 WooCommerce 主仓库",
+  "zh_oneliner": "该主题仍独立维护，但开发协作统一进了主仓库。"
+ },
+ "https://myamazonguy.com/seo/amazon-seo-challenges-for-small-ecommerce-teams": {
+  "zh_title": "小团队做亚马逊 SEO 的 8 个难题",
+  "zh_oneliner": "关键词更新跟不上补货节奏是常见问题，先从最影响排名的几项改起。"
+ },
+ "https://myamazonguy.com/advertising/amazon-ppc-campaign-overlap-search-term-audit": {
+  "zh_title": "亚马逊 PPC 搜索词重叠审计，别自己跟自己竞价",
+  "zh_oneliner": "同一个关键词可能同时在三个广告组里竞价，审计后能省下不少冤枉钱。"
+ },
+ "https://myamazonguy.com/fba-holiday-readiness/amazon-buy-box-repricing-strategy-during-bfcm": {
+  "zh_title": "黑五期间 Buy Box 调价策略",
+  "zh_oneliner": "大促期间调价太慢会丢黄金购物车，太快又会压利润，这份指南讲怎么把握节奏。"
+ },
+ "https://myamazonguy.com/amazon-account-management/fba-prep-requirements-that-trigger-rejections": {
+  "zh_title": "哪些 FBA 备货要求会触发拒收",
+  "zh_oneliner": "一个薄塑料袋或标签贴错就能让整批货卡在仓库，出发前按清单自查。"
+ },
+ "https://myamazonguy.com/seo/tactics-to-increase-amazon-organic-traffic": {
+  "zh_title": "10 招提升亚马逊自然流量、降低 TACoS",
+  "zh_oneliner": "关掉广告后流量还剩多少，是检验店铺健康度的一面镜子。"
+ },
+ "https://myamazonguy.com/advertising/amazon-ppc-structure-to-stop-cannibalization": {
+  "zh_title": "亚马逊 PPC 结构防内耗",
+  "zh_oneliner": "出价越涨销量不动，往往是自己的广告组在互相抢量，结构要先理顺。"
+ },
+ "https://myamazonguy.com/fba-holiday-readiness/amazon-cyber-five-execution-plan": {
+  "zh_title": "黑五按小时执行计划",
+  "zh_oneliner": "大促当天按小时排预算与补货，第二波流量来了预算不能先烧完。"
+ },
+ "https://myamazonguy.com/amazon-account-management/awd-vs-fba-cost-comparison": {
+  "zh_title": "亚马逊 AWD 与 FBA 成本对比",
+  "zh_oneliner": "AWD 仓储费便宜不少，但换仓后总成本未必更低，关键看隐藏费用。"
+ },
+ "https://myamazonguy.com/seo/amazon-brand-story-tips-to-match-buyer-intent": {
+  "zh_title": "亚马逊品牌故事怎么写才对买家胃口",
+  "zh_oneliner": "品牌故事出现在每个商品页，写偏了等于处处丢分，要贴合买家意图。"
+ },
+ "https://myamazonguy.com/advertising/amazon-ppc-strategy-to-offset-rising-fba-fees": {
+  "zh_title": "用 PPC 省下的钱对冲 FBA 涨价",
+  "zh_oneliner": "FBA 费用上涨后，能赢回来的利润藏在被浪费的广告费里。"
+ },
+ "https://growthbox.net/overseas-ai-search-traffic-geo-plugin-growth-strategies": {
+  "zh_title": "深挖 15 万网站流量数据，找到三个海外用户增长新策略",
+  "zh_oneliner": "AI 推荐改写了获客路径，增长要围绕访问、注册和转化三个环节重新设计。"
+ },
+ "https://growthbox.net/songmont-pane-tosummer-reverse-haitao-brand-in-china": {
+  "zh_title": "从Songmont、PANE到观夏，让老外来中国抢购的中国品牌做对了什么？",
+  "zh_oneliner": "“Brand in China”走的是另一条路，先让外国消费者来中国抢购，再反哺海外市场。"
+ },
+ "https://growthbox.net/ai-agent-transformation-faster-work-vs-better-business": {
+  "zh_title": "AI让工作变快了，但让生意变好了吗？",
+  "zh_oneliner": "任务变快不等于生意变好，AI 加速的是执行，增长还得靠市场判断。"
+ },
+ "https://www.sellerapp.com/blog/amazon-spn-and-the-client-acquisition-channel-agencies-are-sleeping-on": {
+  "zh_title": "亚马逊 SPN，代运营机构忽略的获客渠道",
+  "zh_oneliner": "亚马逊服务商网络能帮机构被卖家主动找到，是个低成本的获客入口。"
+ },
+ "https://www.modernretail.co/operations/why-quince-is-bringing-on-more-third-party-brands": {
+  "zh_title": "Quince 为何引入更多第三方品牌",
+  "zh_oneliner": "靠低价自有品牌起家的 Quince 开始扩充第三方品牌，补齐品类、抬高客单价。"
+ },
+ "https://www.modernretail.co/marketing/why-brands-like-anthropologie-are-commissioning-creator-created-shows-instead-of-posts": {
+  "zh_title": "Anthropologie 等品牌为何让创作者拍节目，而不只是发帖",
+  "zh_oneliner": "品牌把预算从单条种草帖转向创作者主导的系列内容，换更长的传播生命周期。"
+ },
+ "https://www.glossy.co/fashion/luxury/luxury-briefing-statement-coats-outerwear": {
+  "zh_title": "大衣就是整套造型，它能撑起一门生意吗",
+  "zh_oneliner": "奢侈品牌把外套当成主打单品来卖，拆解这件单品背后的定价与销售逻辑。"
+ },
+ "https://www.glossy.co/podcasts/glossy-podcast-was-diors-hand-drawn-holiday-campaign-a-case-of-ai-powered-craftwashing": {
+  "zh_title": "Dior 手绘风节日广告，是 AI 包装的“手工洗白”吗",
+  "zh_oneliner": "播客讨论 Dior 节日广告：手绘质感背后是不是 AI 生成，手工叙事还可不可信。"
+ },
+ "https://www.glossy.co/pop/smart-glasses-fashion-privacy-consent": {
+  "zh_title": "智能眼镜竞赛：怎样做才不招人反感",
+  "zh_oneliner": "各家抢做日常可戴的智能眼镜，隐私与外观接受度成了关键门槛。"
+ },
+ "https://www.ecomcrew.com/tiktok-shop-plus-is-confirmed-who-pays-for-the-discounts": {
+  "zh_title": "TikTok Shop Plus 确认推出，折扣由谁买单？",
+  "zh_oneliner": "TikTok 在美国试点会员折扣计划，商家要先弄清补贴成本到底由谁承担。"
+ },
+ "https://www.ecomcrew.com/your-fba-products-may-already-be-selling-on-amazon-haul": {
+  "zh_title": "你的 FBA 商品可能已在 Amazon Haul 上架",
+  "zh_oneliner": "近四成美国站活跃卖家的商品已被交叉上架至 Haul，卖家应尽快核查自己的 listing。"
+ },
+ "https://www.ecomcrew.com/usps-just-proposed-a-permanent-fuel-surcharge": {
+  "zh_title": "USPS 拟征收永久燃油附加费",
+  "zh_oneliner": "美国邮政拟于 2027 年 1 月起上调运费并加收燃油附加费，跨境卖家的物流成本将上升。"
+ },
+ "https://www.printful.com/blog/teepublic-alternatives": {
+  "zh_title": "2026 年 9 个 TeePublic 替代平台：卖设计赚钱的新选择",
+  "zh_oneliner": "想在 TeePublic 之外出售自己的设计，这 9 个平台值得对比看看。"
+ },
+ "https://www.printful.com/blog/bonfire-alternatives": {
+  "zh_title": "Bonfire 的替代选择：2027 年在哪里开周边义卖或网店",
+  "zh_oneliner": "想用周边商品做筹款或开店，这篇盘点了 Bonfire 之外的可选平台。"
+ },
+ "https://ecommercenews.eu/strong-online-growth-in-denmark": {
+  "zh_title": "丹麦电商增长强劲",
+  "zh_oneliner": "丹麦线上消费保持强劲增长，北欧市场值得卖家留意。"
+ },
+ "https://www.sellerlabs.com/blog/get-leadership-to-back-your-amazon-channel-corey-brown": {
+  "zh_title": "争取管理层支持你的 Amazon 渠道：Corey Brown 访谈",
+  "zh_oneliner": "想让公司加大投入 Amazon，先要让管理层看到渠道价值，这篇访谈讲了争取内部支持的打法。"
+ },
+ "https://www.printful.com/blog/how-to-sell-printful-products-on-etsy": {
+  "zh_title": "Etsy 按需打印销售指南：2026 年分步教程",
+  "zh_oneliner": "从开店到上架，手把手教你用 Print on Demand 在 Etsy 上卖定制商品。"
+ },
+ "https://www.modernretail.co/operations/big-box-briefing-how-targets-and-walmarts-beauty-department-makeovers-are-reshaping-brand-strategies": {
+  "zh_title": "Target 与 Walmart 美妆区大改造，正在重塑品牌策略",
+  "zh_oneliner": "两大零售巨头翻新美妆货架，品牌方要重新思考线下陈列与选品策略。"
+ },
+ "https://www.printful.com/blog/threadless-alternatives": {
+  "zh_title": "2026 年 9 个 Threadless 替代平台，适合你的周边生意",
+  "zh_oneliner": "想换个印制平台卖周边？这里有 9 个 Threadless 的替代选择可供比较。"
+ },
+ "https://www.supplychaindive.com/news/walmart-more-than-doubles-planned-drone-delivery-sites/874580": {
+  "zh_title": "Walmart 计划中的无人机配送站点增加一倍多",
+  "zh_oneliner": "无人机配送网点大幅扩张，零售履约的“最后一公里”正在提速。"
+ },
+ "https://www.supplychaindive.com/news/usps-readies-2027-rate-increase-permanent-fuel-surcharge/874524": {
+  "zh_title": "USPS 酝酿 2027 年涨价，并设永久燃油附加费",
+  "zh_oneliner": "美国邮政计划上调 2027 年资费并固化燃油附加费，跨境卖家的物流成本要重新测算。"
+ },
+ "https://www.practicalecommerce.com/show-online-what-shoppers-cant-touch": {
+  "zh_title": "把顾客摸不到的东西在线上讲清楚",
+  "zh_oneliner": "无法亲手触摸的商品，更要靠图片、视频与细节说明建立信任。"
+ },
+ "https://www.retaildive.com/news/sally-beauty-expand-refreshed-store-model/874547": {
+  "zh_title": "Sally Beauty 计划 2027 年推广新版门店模式",
+  "zh_oneliner": "这家美妆连锁将扩大 Sally Ignited 门店概念，长期计划翻新三分之二的门店。"
+ },
+ "https://www.digitalcommerce360.com/2026/11/13/how-growing-e-commerce-brands-pay-international-contractors-without-triggering-compliance-risk": {
+  "zh_title": "成长型电商品牌如何合规支付海外承包商、避开合规风险",
+  "zh_oneliner": "跨境用工的支付与合规要点，帮成长型品牌少踩坑。"
+ },
+ "https://internetretailing.net/hobbycraft-returns-to-profit-as-britains-crafting-boom-gathers-pace": {
+  "zh_title": "Hobbycraft 扭亏为盈，英国手工艺热潮持续升温",
+  "zh_oneliner": "英国手工艺消费回暖，Hobbycraft 借势重回盈利。"
+ },
+ "https://www.supplychaindive.com/news/port-of-los-angeles-grapples-with-elevated-rail-dwell-times/874553": {
+  "zh_title": "洛杉矶港铁路滞留时间居高不下，港口承压",
+  "zh_oneliner": "铁路疏港不畅推高货物滞留，洛杉矶港的拥堵压力仍在。"
+ },
+ "https://www.supplychaindive.com/news/jd-sports-leverages-tech-for-faster-replenishment/874427": {
+  "zh_title": "JD Sports 借技术提速补货",
+  "zh_oneliner": "用技术优化补货节奏，JD Sports 让货架周转更快。"
+ },
+ "https://www.retaildive.com/news/target-board-member-centric-brands-ceo-fossil-turnaround/874550": {
+  "zh_title": "本周收官：Target 任命新董事，Centric Brands 卖身给 CEO",
+  "zh_oneliner": "Target 董事会换血，Centric Brands 由 CEO 接盘，本周零售大事件一览。"
+ },
+ "https://www.retaildive.com/news/family-dollar-63-million-settlement-unfair-pricing-claims-ftc/874605": {
+  "zh_title": "Family Dollar 将支付 6300 万美元，和解州与联邦监管机构的不当定价指控",
+  "zh_oneliner": "连锁折扣零售商因被指控定价不公而达成和解，商家可留意价格合规风险。"
+ },
+ "https://www.paymentsdive.com/news/why-paypal-wants-to-have-a-bank/874615": {
+  "zh_title": "PayPal 为什么想拥有一家银行",
+  "zh_oneliner": "PayPal 布局银行业务，支付平台与持牌金融机构的边界正在被打破。"
+ },
+ "https://www.retaildive.com/news/grocery-inflation-october-2026-meat-produce-coffee/874599": {
+  "zh_title": "消费者面临更高的食品杂货价格",
+  "zh_oneliner": "肉类、农产品和咖啡涨价推高日常开支，零售商与品牌需应对消费收紧。"
+ },
+ "https://www.paymentsdive.com/news/stripe-awaits-payoff-on-tempo-chain/874618": {
+  "zh_title": "Stripe 静待 Tempo 链带来回报",
+  "zh_oneliner": "Stripe 把自家 Tempo 区块链视为稳定币交易增长的关键基础设施，正在等待这项布局见效。"
+ },
+ "https://www.digitalcommerce360.com/2026/11/13/grubmarket-ai-agent": {
+  "zh_title": "GrubMarket 推出 AI 代理，把发票自动转成采购订单",
+  "zh_oneliner": "这家生鲜供应链 SaaS 用 AI 代理自动把发票转成采购订单，帮食品批发商和零售商省掉手工对账。"
+ },
+ "https://www.digitalcommerce360.com/2026/11/13/asics-uses-ai-powered-drones-to-recover-misplaced-inventory-60-faster": {
+  "zh_title": "Asics 用 AI 无人机找回错放库存，速度快 60%",
+  "zh_oneliner": "Asics 在北美主配送中心用自主无人机定位错放商品，找货效率大幅提升。"
+ },
+ "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/united-states-seeks-mexicos-review-alleged-denial-workers-rights-industrias-fg": {
+  "zh_title": "美国要求墨西哥审查 Industrias FG 工人权利受侵害指控",
+  "zh_oneliner": "美国依据美墨加协定快速响应劳工机制，要求墨方审查该工厂是否剥夺工人结社与集体谈判权。"
+ },
+ "https://www.cifnews.com/article/189977": {
+  "zh_oneliner": "2026 年亚马逊黑五网一的关键时间点和 Deal 提报要求都在这里，卖家可以照着排期准备。",
+  "zh_title": "卖家必看！2026亚马逊黑五网一时间节点＋Deal提报"
+ },
+ "https://sellerengine.com/amazon-fba-fees-2027": {
+  "zh_title": "2027年亚马逊FBA费用：卖家须知",
+  "zh_oneliner": "梳理2027年FBA费用调整要点，帮卖家提前算清成本、做好定价准备。"
+ },
+ "https://www.ecomengine.com/blog/amazon-review-request-automation-black-friday": {
+  "zh_title": "旺季评价：黑五前为何要盯紧反馈评分",
+  "zh_oneliner": "旺季来临前，卖家反馈评分直接影响流量与转化，提前自查别等爆单才发现问题。"
+ },
+ "https://www.ecomengine.com/blog/amazon-fba-reimbursement-audit": {
+  "zh_title": "亚马逊悄悄欠了你多少钱？20分钟完成FBA赔付自查",
+  "zh_oneliner": "用20分钟快速核查FBA赔付情况，把亚马逊应退未退的钱要回来。"
+ },
+ "http://www.baijing.cn/article/57359": {
+  "zh_title": "TikTok Shop东南亚直邮价卡大跳水，轻小件卖家迎来降本窗口期",
+  "zh_oneliner": "东南亚直邮价格大幅下调，轻小件卖家的物流成本有了下降空间。"
+ },
+ "http://www.baijing.cn/article/57366": {
+  "zh_title": "从做亏本买卖到年入10亿，欧美巨头垄断的高价地盘被深圳企业踹开",
+  "zh_oneliner": "深圳企业从亏损起步做到年入10亿，打破欧美巨头在高价市场的垄断。"
+ },
+ "http://www.baijing.cn/article/57367": {
+  "zh_title": "泰国定下30%跨境重税，爆款类目全按顶格收？",
+  "zh_oneliner": "泰国拟对跨境商品征收30%重税，热门类目可能面临最高税率。"
+ },
+ "https://mjzj.com/article/g45196fh1ibk": {
+  "zh_title": "飞猪双11：活动商品履约GMV同比增长60%",
+  "zh_oneliner": "飞猪双11活动商品履约 GMV 同比增长60%。"
+ },
+ "https://mjzj.com/article/g45jxempzgn4": {
+  "zh_title": "TikTok Shop调整退货运费责任；越南税务机关已管理超百万电商卖家及KOL；泰国研判进口电商关税影响",
+  "zh_oneliner": "本期汇总 TikTok Shop 退货运费调整、越南电商税务管理与泰国进口关税动向。"
+ },
+ "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB3UEI3NGRRRk5NeDYxbkNQNVpaZ0g3b1JBWFRhV19oSENUV0tiOGJRTEFVS29tejJ6aUxwVjloUUU0RHJUb1BmZWg5cFFfU3c?oc=5": {
+  "zh_title": "AI内容电商平台Moras以达人为赚钱Agent，锚定TikTok Shop美区",
+  "zh_oneliner": "AI 内容电商平台 Moras 以达人变现 Agent 切入 TikTok Shop 美区市场。"
+ },
+ "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUjdxQndMbUtaU1VKV2hYZGNnR0g0NnBRaC05czI4MDBTV2UzNnZkV1pZNlNwOHFkZ3ZNdEZhSW9PR1BmY3ZLMkZ5dnBsUnlBRnh2X1RORkVaRjR2eGpjTTNiX1gtVXc0TlJwbHE2YUM0X1pWTEZYelZBYkhkNHFnVGMzQmlqUGd1?oc=5": {
+  "zh_title": "一城输出服务，一城输出产业，跨境电商激活成德开放新动能",
+  "zh_oneliner": "成德两地以跨境电商联动服务与产业，释放区域开放新动能。"
+ },
+ "https://news.google.com/rss/articles/CBMijAFBVV95cUxPZVZXXzRzSlJFNzRNTm1yMnZJeGFCSGhGUTJITUpidjhGZVNLUzAzXzVqbE8yZzRoY2tZcVlhV3UxV1A1WGJtVGhQN0d2SjdmRzR3YlBCV2FYZ0JHVExlNDgxNFprSnFhS295SVNNckRCYzRqNC1nVWNVQmQ2WEttSGNWNTgwWk9EQWtUNA?oc=5": {
+  "zh_title": "一人成军，生态为王！深圳龙岗长出OPC创业“热带雨林”",
+  "zh_oneliner": "深圳龙岗 OPC 创业生态成型，个体创业者借生态快速起步。"
+ },
+ "https://www.cifnews.com/article/188363": {
+  "zh_title": "AI 成人内容出海：一门踩着红线的“快钱”生意",
+  "zh_oneliner": "AI 成人内容出海游走在合规边缘，短期收益高但风险不小。"
+ },
+ "https://www.cifnews.com/article/189462": {
+  "zh_title": "一文吃透Wayfair全品牌矩阵：客群画像+选品方向+实操指南",
+  "zh_oneliner": "一文讲清 Wayfair 全品牌矩阵的客群画像与选品方向，附实操指南。"
+ },
+ "https://www.cifnews.com/article/189569": {
+  "zh_title": "做Wayfair怎么选品？成熟畅销品vs高增长蓝海品类",
+  "zh_oneliner": "对比成熟畅销品与高增长蓝海品类，讲清在 Wayfair 上怎么做选品。"
+ },
+ "https://www.cifnews.com/article/189617": {
+  "zh_title": "Wayfair合规重点：产品责任险（COI）审查与更新指南",
+  "zh_oneliner": "讲清 Wayfair 产品责任险 COI 的审查要点与更新方法。"
+ },
+ "https://www.cifnews.com/article/189792": {
+  "zh_title": "Wayfair账号被关不要慌！完整申诉流程详解",
+  "zh_oneliner": "Wayfair 账号被封后的完整申诉流程，一步步讲清如何应对。"
+ },
+ "https://www.cifnews.com/article/189828": {
+  "zh_title": "Wayfair自发货模式解析：仓库配置、订单处理与物流要求",
+  "zh_oneliner": "解析 Wayfair 自发货模式的仓库配置、订单处理与物流要求。"
+ },
+ "https://www.cifnews.com/article/189976": {
+  "zh_title": "亚马逊2027年销售佣金&物流费用变更",
+  "zh_oneliner": "亚马逊公布 2027 年销售佣金与物流费用调整，卖家需重新核算成本。"
+ },
+ "https://www.cifnews.com/article/190083": {
+  "zh_title": "Wayfair用户信息设置概览及供应商账户设置指南",
+  "zh_oneliner": "Wayfair 用户信息与供应商账户的设置指南，新手入驻可对照操作。"
+ },
+ "https://www.cifnews.com/article/190118": {
+  "zh_title": "Walmart开放AI代理、Amazon限制第三方：跨境卖家流量入口正在发生什么",
+  "zh_oneliner": "Walmart 开放 AI 代理、Amazon 收紧第三方，卖家流量入口正在重构。"
+ },
+ "https://www.cifnews.com/article/190122": {
+  "zh_title": "亚马逊爆款断货后，为什么降价也推不动？补货后如何重新拉升链接自然流量？",
+  "zh_oneliner": "爆款断货后降价也难见效，补货后如何把链接自然流量重新拉起来。"
+ },
+ "https://www.ebrun.com/20261114/720059.shtml": {
+  "zh_title": "创业板今年最大IPO来了",
+  "zh_oneliner": "创业板迎来今年最大 IPO，关注其业务成色与市场反应。"
+ },
+ "https://www.cifnews.com/article/189901": {
+  "zh_title": "【亚马逊卖家注意】2027欧盟电池新规要求将强制执行",
+  "zh_oneliner": "2027 年欧盟电池新规将强制执行，亚马逊卖家需提前合规准备。"
+ },
+ "https://www.cifnews.com/article/189984": {
+  "zh_title": "突发！多个广州跨境电商老板被限制出境！",
+  "zh_oneliner": "多名广州跨境电商从业者被限制出境，合规风险再度敲响警钟。"
+ },
+ "https://www.cifnews.com/article/190135": {
+  "zh_title": "【雨果快报】德国AWD免仓储费到年底；速卖通双11品牌成交翻两倍",
+  "zh_oneliner": "德国 AWD 免仓储费延至年底，速卖通双11品牌成交翻两倍。"
+ },
+ "https://www.cifnews.com/article/189845": {
+  "zh_title": "Wayfair运营逻辑详解：从流量到销售的转化闭环",
+  "zh_oneliner": "拆解Wayfair从流量获取到成交转化的完整运营闭环，讲清每个环节该怎么做。"
+ },
+ "https://www.cifnews.com/article/189939": {
+  "zh_title": "Wayfair运营制胜三部曲：从SKU基本功到头部产品增长",
+  "zh_oneliner": "从SKU基本功打起，分三步讲卖家如何在Wayfair上做到头部增长。"
+ },
+ "https://www.cifnews.com/article/190061": {
+  "zh_title": "营收暴增61%！这个清洁小家电，正在杀入TOP卖家阵营",
+  "zh_oneliner": "一个清洁小家电品牌营收暴增61%，正在冲进头部卖家阵营，复盘它做对了什么。"
+ },
+ "https://news.google.com/rss/articles/CBMijAFBVV95cUxOdXNDb182Y2xCOUVsS1lZUXc2TkwycXA4X1UwLWFJTWh5Tk9vekw4eW5wZ1Fpak9ESkJFM0YyUUNpSFZkbktqa3ppNHdrT2tRSFlCd0tPcnpiRzkwOEhwM1BsLU1wejNCRHFVSF8zNENQRlNwa0FSSjNib3JIc2pDcUVRMlZuV01oaGJVNw?oc=5": {
+  "zh_title": "2026年中国跨境电商SaaS市场行业报告",
+  "zh_oneliner": "报告梳理2026年中国跨境电商SaaS市场的规模与格局，附报告下载。"
+ },
+ "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1VZ196STZaeUpmMU41ZS10SHhhT1ZSSUR3UFpCTzJZQThJQlpjRm5EeVhNS2RLNXp0RVN5N2tpU3oxRjBhWktYZHRkeVo2S1U?oc=5": {
+  "zh_title": "非洲电商KiKUU宣布逐步停止运营，过渡期至12月31日",
+  "zh_oneliner": "非洲电商KiKUU宣布逐步停运，过渡期至12月31日，保证金与年费将分期退还。"
+ },
+ "https://news.google.com/rss/articles/CBMimAFBVV95cUxPczB1Y1dsc2N6LXY1V292bDg0bjQ0TWwtNGJSTmRlNXAzRUJKUFdtQ2MwZkkyWGhSRHlMOTJ5V2FxUVUzOWtWa1FCdldrVzRzRmM4MnBuamVYYmVRbjhIbnlIdlRQdEFOQWMtQXNUQ0Q3cnVQY1EwQVR2SzIybHBGRXYxckxIT1dVcHVnQmZIb3FPZHFfY081TQ?oc=5": {
+  "zh_title": "保税仓迎来订单高峰，盐城经开区跨境电商备战双十一",
+  "zh_oneliner": "双十一前保税仓订单大涨，盐城经开区跨境电商进入备战状态。"
+ },
+ "https://news.google.com/rss/articles/CBMijwFBVV95cUxNVHZNNkNTVzh4Tk9zMUpzNGVEX3d4bEpLQjVfNVpmSjBJYTAzTm5XSlI3VWdHZEpMdTZRdU1mRkZRUGpCODA2WmtZblJRZ3h6U1RtSEozYUtBXzdnSk9LeW5CVk9WUXNQUVg3UG5Nc0otTm9YYUhWWVlaSndSVUNoT1RycjRPZnRuVnVnMEFnRQ?oc=5": {
+  "zh_title": "1.45万亿元创同期新高，东莞外贸连续31个月正增长",
+  "zh_oneliner": "东莞外贸总额1.45万亿元创同期新高，已连续31个月保持正增长。"
+ },
+ "https://news.google.com/rss/articles/CBMiTEFVX3lxTE0wWk80QUFVYV9NN1hKaEpNNW90Zmt3M2prY05DWnBIUGs0SEhHbVg4dk5EbDk4OUY4VjloT2xMWHpxTXBsaWMxbUdSdlU?oc=5": {
+  "zh_title": "对标亚马逊？欧洲新平台开放21国，中国卖家机会来了",
+  "zh_oneliner": "欧洲一新平台向21国开放，对标亚马逊，中国卖家或迎来新的入场机会。"
+ },
+ "https://www.cifnews.com/article/190070": {
+  "zh_title": "新店月销3000单！又一平台杀入这片蓝海市场",
+  "zh_oneliner": "新平台入局带来新的流量机会，新店单月做到3000单，值得留意这个蓝海市场的入驻窗口。"
+ },
+ "https://news.google.com/rss/articles/CBMinwFBVV95cUxNY1lodktMS3BmSXJqRnFZcHFRYld5a2NaaVllaDhxQTAwZVBsWWV3Ry1VeDJyYy1YQVhiMXE0ZWFTdFRqeUMzUWhkSGdtOHNPTUZWMlRWVmhYeTdfaHNsWmdtSW92TDJQYkN2NnU2WnhLQmVkZWExaFg3clNCejVpUmM4NXRkenhYZVU1YU9FRnNkRl9sekt5UVZURVFxVTg?oc=5": {
+  "zh_title": "亚马逊海外购中国业务负责人：中国跨境电商市场具备三大优势",
+  "zh_oneliner": "亚马逊海外购负责人谈中国跨境电商的三大优势，帮卖家判断市场机会。"
+ },
+ "https://www.ebrun.com/20261114/721165.shtml": {
+  "zh_title": "电商周报：双11最全战报出炉；京东内测“短剧电商”；腾讯上线全新产品“元宝搜索”",
+  "zh_oneliner": "本周双11战报汇总，附京东短剧电商内测与腾讯新产品元宝搜索的动态。"
+ },
+ "https://news.google.com/rss/articles/CBMickFVX3lxTFBJN3pFVkZIMmNDWi1DOHNBT0NVS3p5bk85N1dMWTN0YlZRdXVTRHR2NzhDNnhpaURNR1RRelVvT0tMVGRTcjBFRlJDbUR5Yi1TUXBFZ0tUVXhmVno2RGdvTGk0TllvRFdWU2lSNjJoOGxVZw?oc=5": {
+  "zh_title": "重庆适合出海吗？3个维度说清内陆如何向海而兴",
+  "zh_oneliner": "从三个维度分析内陆城市重庆做跨境出海的条件与路径。"
+ },
+ "https://www.cifnews.com/article/190138": {
+  "zh_title": "突发！非洲电商KiKUU宣布停运，卖家分期退款",
+  "zh_oneliner": "非洲电商 KiKUU 宣布停运，卖家货款将分期退回，布局非洲市场的卖家需留意回款安排。"
+ },
+ "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1SSW9IOVZfc2Y0RTN1NnJGRV9XcV94UFgzN2NUWHBza0d2M0t3YXpVZlJ2SDZCcTZ0ZGY1V3g0UjVvdHgyZmpydlNCZUZUYjZFMUZ2U18zdk1Nd1BlN24zTFBKQQ?oc=5": {
+  "zh_title": "揭秘：“美国原产”的保健食品不仅是国内生产，还非法添加药品！",
+  "zh_oneliner": "所谓“美国原产”保健食品实为国内生产，还涉嫌非法添加药品，选品时要警惕这类合规风险。"
+ },
+ "https://news.google.com/rss/articles/CBMijAFBVV95cUxQcHZVcTBQcS1ZcU41ZnppdUFrRHNJcjJjdVBOWmRkZjMxTllRdHIwcEVFSkF2Q2dCeVVSZlBPRTNfMzFXNUJOWFFfX3dqczVRamY5Q0UtczZVRWF4SDV1bVgtZE5sb0lJS2QtLTdLWDZTUVkzWU05VWVaSHp1cktqTmNCa1JhZkNRZzFzdw?oc=5": {
+  "zh_title": "揭秘：“美国原产”的保健食品不仅是国内生产，还非法添加药品！",
+  "zh_oneliner": "所谓“美国原产”保健食品实为国内生产，还涉嫌非法添加药品，选品时要警惕这类合规风险。"
+ },
+ "https://news.google.com/rss/articles/CBMimAFBVV95cUxOXy1tUzBUMy1jSlNzeWdkTzVXZnZGd3Btc2xVQmFqTWtfWnF4eE9TQ3ZJVHF5c1VOSTdJUC1EazZvSnlGTzVvaEU4M2FMdldlOXpRLURXbmtFOHppZVpmQzRIS1oxNTdPNjZuTWhuNnBIM2dtNm9sc2JDNnVmQ1J5QnJ1X1ZiUGhXUERUSTVjTm1nUWhmTm91LQ?oc=5": {
+  "zh_title": "揭秘：“美国原产”的保健食品不仅是国内生产，还非法添加药品！",
+  "zh_oneliner": "所谓“美国原产”保健食品实为国内生产，还涉嫌非法添加药品，选品时要警惕这类合规风险。"
+ },
+ "https://news.google.com/rss/articles/CBMickFVX3lxTFBuZFRGX3dZUkVpOVk1NWE5d3Z2QTFiOFMtX09UQVI1Rjcxd3dYRExfM0ZOemRaeW5TN3FhanM2M3dQRDRGR2RGUWZPLWlETzBpemdLZWQxSFhXVmZpX3BoUUVSQzB3cUZqc29JdHhiZVNHZw?oc=5": {
+  "zh_title": "【评论】推动航运保险跟上中国制造“出海”步伐",
+  "zh_oneliner": "评论呼吁航运保险跟上中国制造出海的步伐，跨境卖家可留意物流保障与成本的变化。"
+ },
+ "https://www.sellerapp.com/blog/market-basket-analysis-report": {
+  "zh_title": "购物篮分析报告：把 Amazon 购买规律变成可预测的增长",
+  "zh_oneliner": "用购物篮分析报告挖掘历史订单里的商品搭配规律，帮 Amazon 卖家把增长变得可预测。"
+ },
+ "https://news.google.com/rss/articles/CBMicEFVX3lxTFBQc25pZ0F2VnkxN1FxZDczcDFZLW5tSmFiVG5jUmppZkZ4cmtHWFFoRU82QjFrX2NKSkFNb1gyQ3MzNTVfM0lkc2hPdC1Ra1hzR3FDOEVRRXA2SFl4N1RIZFV4R0RVcHpURkM2bVdPN2w?oc=5": {
+  "zh_title": "首届苏州跨境物流大会成功举办，KLN全面融入苏州制造出海立体生态",
+  "zh_oneliner": "首届苏州跨境物流大会成功举办，KLN全面融入苏州制造出海立体生态，跨境卖家可留意区域出海物流的新动向。"
+ },
+ "https://news.google.com/rss/articles/CBMiY0FVX3lxTE41bTRrNzY0SE14Z2ZvQ0daem94NEpsSEhiRHllS2F2dDRpRF9QdTcyT2JOTnQ0cWU1SER0NFNzSG1VZG9RU0Jjc2hnVGI5TWVNTlhnb3ptWTdxUlgyMUU0T2NQYw?oc=5": {
+  "zh_title": "国是直通车",
+  "zh_oneliner": "国是直通车栏目更新，原文见新浪网。"
+ },
+ "https://www.sellerlabs.com/blog/you-are-not-behind-on-ai-brent-wees": {
+  "zh_title": "你并没有在 AI 上落后：Brent Wees 访谈",
+  "zh_oneliner": "多数亚马逊卖家并没有在 AI 上掉队，从一个重复性小任务开始就能赶上。"
+ },
+ "https://www.cifnews.com/article/168947": {
+  "zh_title": "24-cv-00435：英国时尚品牌 KJP 发起 TRO 维权，卖家须避开这些商标和专利",
+  "zh_oneliner": "英国时尚品牌 KJP 通过 TRO 临时限制令维权，相关商标与专利成为卖家侵权高风险点。"
+ },
+ "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5SQ0hZNmJCTF9kamxtS1B5Uy1uWVVjb185d3pyckFPV3ZfQ2ZBU1d3ellBcENCRFcwUnlIYThCNnJqblh2Q0ZkUl81dkhzR3R6LVczM3VNbld5YmRDTEMtd3YySlFyQQ?oc=5": {
+  "zh_title": "陈泓缣：禁跨境电商卖食品，才是监管跨境食安的有效办法",
+  "zh_oneliner": "马来西亚方面认为，禁止跨境电商平台销售食品，是管住跨境食品安全的最有效办法。"
+ },
+ "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNLXd2azBGRzRDMWZ0U3VncmhIaTZzWmU0M3c0ckU3ZURyOXVrTWhfcXZYV3JEd3E2MmprVXBhY3ZRZGdBRzBVa252eG5leXExcVNLdF9EWW9PQ3liX0Fla3p5RjhYWkhMTXUzWG9EMk5oeXFBdUt0SV9mYUNsTjdyS0FpWm1xeFRF?oc=5": {
+  "zh_title": "湖南专题交流会助湘企更好出海，分享实操干货",
+  "zh_oneliner": "湖南举办专题交流会，围绕出海实操经验为本地企业出海提供参考。"
+ },
+ "https://news.google.com/rss/articles/CBMieEFVX3lxTE5hZmNKZXN6V1lFaHJOQm1PYmhDQXdPRk9SV1V4d1VMTG11MWNmN3c4TnRjWnFJN215NFItcW40dWk3WEVJSEhRMHFOTDJLWmhaUUtqbXQ2b1paY3dxejl6bVYtY2hEMFMwOG9xaC1kdVN1UzVITnNTbw?oc=5": {
+  "zh_title": "广东—韩国贸易基本盘：粤韩经贸合作现状扫描",
+  "zh_oneliner": "广东与韩国的贸易基本盘稳固，双方经贸合作持续深化。"
+ },
+ "https://www.dsb.cn/p/01m7d28p3jmpx8a13dc8sd5b8e": {
+  "zh_title": "全渠道元年：双十一家电销售主阵地仍在京东",
+  "zh_oneliner": "双十一期间家电销售仍以京东为主阵地，全渠道布局成为今年主线。"
+ },
+ "https://www.dsb.cn/p/01m7c2kdv1pzqw2y30mnc82acb": {
+  "zh_title": "问界新M8售价37.98万元起，主打家庭智慧旗舰SUV",
+  "zh_oneliner": "鸿蒙智行发布问界新M8，起售价37.98万元，定位家庭智慧旗舰SUV。"
+ },
+ "https://www.dsb.cn/p/01m7589rzt1fxcntrcpc1bryr4": {
+  "zh_oneliner": "速卖通在沙特市场迎来爆发，卖家可关注中东站点的选品与物流机会。"
+ },
+ "https://www.dsb.cn/p/01m6r7zm23x3xmtypvxkdvmvx4": {
+  "zh_oneliner": "速卖通近期增长强劲，平台红利期值得卖家留意。"
+ },
+ "https://www.dsb.cn/p/01m7bskg4wgbeev6sentwyct6j": {
+  "zh_oneliner": "盒马海外业务拿下大单，出海供应链的机会值得关注。"
+ },
+ "https://news.google.com/rss/articles/CBMijAFBVV95cUxNX0JQd18wMnVKYVA1VU1Pa00tdTVlUVpLZFNoZXBKRzByQjB6a2tPUXQ4a2MxREw5Z1ljaG9xNk9KMHo4eVpLVi1xTEx2N2J3eDRSRjZMQTdVNjRzdEZ5VGU2X0E1eWhkOFo4UzN1QmttSXk4QW1oRWJ6NUJkd1R3bVl1V3pBeUFOSHNocA?oc=5": {
+  "zh_oneliner": "成德两地以跨境电商联动产业出海，区域协同模式可供参考。"
+ },
+ "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9VVndWeHhSdHRuZUpOREV6NXYyRnYtdm9ObFQ3WjBYZXppaXo0cjBDbUlFRHhyQlZFc19TalRucVFvQXZuNkVRdFVQS2pZY2FZblpURG8tejFoaUxzQ2xaRjI1WW16Zw?oc=5": {
+  "zh_oneliner": "校企合作搭建跨境出海实训平台，为行业输送实操型人才。"
+ },
+ "https://news.google.com/rss/articles/CBMibEFVX3lxTE1CQ3kwTGNLbTlHWDhPVEUzQmlUVFhjR3FiVjk2Tkt5V3ZiSDl0M0ZCYlNEMWUzRkd2M0E5cUFBckJlYkE0a1RBOWVvMnlPbWJOU1ZXV1JKRXl1S3VqVU9aTTBhNnU0eXBISkhZSw?oc=5": {
+  "zh_oneliner": "从超市货架看 APEC 与深圳外贸的联系，帮卖家理解身边的出海机会。"
+ },
+ "https://news.google.com/rss/articles/CBMid0FVX3lxTFBpMWZJNk5sUmdGRGRNajRnNDlJeHNKWi1iT0NhZDhHTXB1TVZ4RkNaWi1KZmw0YzNmYmZPMklaV0hPcFQtamhSV2w5WTUxalFfVjgySU5OTTYyLXUyQzY2d0loTk9sRHJ3UHFWbE1mbGhsemp0MEpV?oc=5": {
+  "zh_oneliner": "阿里国际站上线权威交易保障功能，跨境交易的安全与效率有望提升。"
+ },
+ "https://news.google.com/rss/articles/CBMid0FVX3lxTFAxLXdNS254b1FXX1pkMjJjbjVFWnZtYlpmbm9FQ3dJMjRNM3IwOUZYZVA3ZHlGcFNTOEllYXV2SF90dDAyUDU3RGFRZ25EeGd5aXR6dzJYVERwS09Rc0REUnlYR2NnUWc4SVE1QnphREVXd21XWTJJ?oc=5": {
+  "zh_oneliner": "国际站推出全新智能匹配服务，帮买卖双方更快找到合适的交易对象。"
+ },
+ "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPOENqa2VzTzhMWEM3NXdZYnVSR2JwTm9yaTctNEYtTDV3VGdyUGpVaDVpQUlpTDRBNzl3NFhzWWNqbG5KYkF3OVNFaGpINkRfdS1TR3l3OUtuM0dkZjVhdUVRU0hYcDJPd3dDb0ZxVE9MX3BMMjg5dFd0SHpya3VBbW1Gbkh2WEQz?oc=5": {
+  "zh_oneliner": "一人也能跑通业务，关键在于搭建好自己的生态打法。"
+ },
+ "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9NSGZFdGdEUjhJVUMwRUdJRi1SQUJ6enZINDQyZVVwWGttVm5lQTNzRFBzek9YV3lzZjNuQ2o1U01WNFpBQkpSWkotOGtuWjQ?oc=5": {
+  "zh_oneliner": "WOOT 面向直连供应商加码旺季广告扶持，符合条件的卖家最高可获 50% 补贴。"
+ },
+ "https://news.google.com/rss/articles/CBMimAFBVV95cUxPRXZheUNVNnNra1YtcG1tTzNJcktnUHpDbFFxQnB5UEZIdTlSeGQyaTY0SmpQSWtOMEp6RS0tZmlLMW55alBLWEV2WUxSenBvdHdFVVJuckhLUS12TUtfbDNEX0xyTm54VHZEaU0tVXlPQjlMNFBmUzQzX0NUN0JoeVlsTUg2UGJibDQ3Zi05VU5oaG1MaC16Ng?oc=5": {
+  "zh_oneliner": "双十一包裹加速发往东盟，中国商品的跨境极速达体验正在提升。"
+ },
+ "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9PNjlNWjYzSmFFaWpRYnRrREZKZ0NLS3ZobHBxY0hlQlkyV29GenY2WkNJZEF1eEo1eDNkUDhLMEt3Nm5VWHNiOVkzbzQ?oc=5": {
+  "zh_oneliner": "德国 AWD 仓储费免到年底，速卖通双十一品牌成交翻倍，旺季利好不少。"
+ },
+ "https://www.cifnews.com/article/189932": {
+  "zh_oneliner": "亚马逊2027年费用结构将调整，卖家要提前测算利润，重新核定售价与备货节奏。"
+ },
+ "https://news.google.com/rss/articles/CBMickFVX3lxTFBqdnI4SmV1QXNXaVRhWkJNXzluZVR6UWo4RWVwYkpRR04zckkyM0FuVGNOSmlwVlRHOVdrTG95VlM5Z2E2R2Z5dVJKY0o2a2R1aFZ4b1hKRFZvNXJaS3I5em93cGJyUm5UeEctNEtMeXVVZw?oc=5": {
+  "zh_oneliner": "双十一跨境包裹发往东盟提速，东南亚市场的物流时效与履约能力成为新的比拼点。"
+ },
+ "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQV2hKQXJjaEg2eTlIQXVEcmpMLW05SFhZTmRBNDJZVlB5eXdXYjBvQzhUUEVSMXlpaThRS3dHeTNUWjR3Qjc5OFFVaXBxT2NLY01XRDZITl9vNE53UW45NVpXUXM1OXlPTkM2dnBYcEFNejIyeEpOMk45ZHdqejdjLVpsQkdBV1RQ?oc=5": {
+  "zh_oneliner": "双十一期间发往东盟的跨境包裹量大增，物流链路的稳定性直接影响大促转化。"
+ },
+ "https://www.dsb.cn/p/01m7a6pcm4hgavz06b6gcsjq3t": {
+  "zh_oneliner": "亚马逊与拼多多在低价与流量上的竞争升级，卖家要看清两边规则再选主战场。"
+ },
+ "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5WN2txdFdzT1ltMUxVX3IyZ2RwVF9MOVdwTU56cUc1UmxuUTRNUllJNzVOR0E1YkVVdlpkaGRET3J6YWdHRWV4Uy1pZUlYTUlYUWQ0eUIxQ3N0M3RhWWJtaA?oc=5": {
+  "zh_oneliner": "两大平台正面交锋，低价策略与流量分配的变化会直接影响卖家的定价空间。"
+ },
+ "https://news.google.com/rss/articles/CBMibEFVX3lxTE82UFhYU2RFdFRqMmlCSS13cVhEV1ROVFRsXy1DNG13YnllazB4SWRlaFFBNDFRZTZGd2hxck1IVmFuVU84eEs5cTdRWGtSWXN0RFNoWUgybEt1TEFxXzE5enBOWEVmMjhUN1NjVw?oc=5": {
+  "zh_oneliner": "沧州高端管道装备借出海打开新市场，传统制造品类靠产品力也能走通跨境路。"
+ },
+ "https://news.google.com/rss/articles/CBMifEFVX3lxTE50NUQ3YWF2Tm9DZ3JjM2RNWlUwckZmem52NG40V0s0N0NoYmU1Uzh4Ri1OVDI4dEktNF9KWERpcmpkcFEtUHN5QUNITkp4cVJONnowTkhDRVdQVnlHdGFaQVNuekJ1ZUEzc1ZTUjVwdWRjRHpaejlpYThMdUk?oc=5": {
+  "zh_oneliner": "保税仓订单进入高峰，盐城经开区的跨境备货节奏可作为旺季仓配安排的参考。"
+ },
+ "https://www.cifnews.com/article/190136": {
+  "zh_oneliner": "亚马逊集中清理换评行为，卖家应自查评论获取方式，避开账号风险红线。"
+ },
+ "https://mjzj.com/article/g463vf6o8ydc": {
+  "zh_oneliner": "435个卖家账户卷入调查、涉资超467万美元，合规经营已是保住账号的底线。"
+ },
+ "https://news.google.com/rss/articles/CBMib0FVX3lxTE1pM0JKd1NQLVB2WEpVNzFMaHdkaWlQbWVkbHdFb18wOWhrOEs1RXFlWGlLYVVUb2E2UHdEc2dhZl9aY2pWMkpuSnNDRWRKMkpSdC1pbkJqUGY3X1RZWUh6VnJuNDhEX1h5ZEJwUjEwbw?oc=5": {
+  "zh_oneliner": "盐城保税仓为双十一备货进入冲刺，跨境卖家可对照检查自己的旺季库存与发货节奏。"
+ },
+ "https://mjzj.com/article/g45zzq3upbeo": {
+  "zh_oneliner": "亚马逊大件配送费降至6.78美元，家具等大件品类的利润模型值得重新测算。"
+ },
+ "http://www.baijing.cn/article/57373": {
+  "zh_oneliner": "一款水杯在亚马逊反超Stanley登顶，爆款打法与差异化卖点值得选品时拆解。"
+ },
+ "https://www.cifnews.com/article/190133": {
+  "zh_oneliner": "小众品类出海做网红营销，选人标签定不准，AI工具也难把流量推给对的人。"
+ },
+ "https://www.cifnews.com/article/190132": {
+  "zh_oneliner": "亚马逊旺季仓储费涨至三倍，卖家要算清库存周转，避免滞销品吃掉利润。"
+ },
+ "https://www.cifnews.com/article/190131": {
+  "zh_oneliner": "黑五网一前一周，不同阶段的链接各有操作重点，按节奏走才能接住大促流量。"
+ },
+ "https://www.cifnews.com/article/190130": {
+  "zh_oneliner": "手机壳上的叶子与格纹图案也可能触发版权维权，127家店铺翻车给选品提了醒。"
+ },
+ "https://www.cifnews.com/article/190129": {
+  "zh_oneliner": "Home & Kitchen品类三轮Woot BD复盘：比起活动脉冲，沉淀下来的运营经验更值钱。"
+ },
+ "https://www.cifnews.com/article/190127": {
+  "zh_oneliner": "热门动画商标与版权同时维权，RWBY相关商品在各平台被集中清理，擦边选品风险很高。"
+ },
+ "https://www.cifnews.com/article/190125": {
+  "zh_oneliner": "新版3C认证11月1日起落地，玩具与童车类卖家要确认证书状态再上架出货。"
+ },
+ "https://www.cifnews.com/article/190124": {
+  "zh_oneliner": "平台审核检测报告有三项要件、四类失效场景，日常管理不到位就可能被下架。"
+ },
+ "https://news.google.com/rss/articles/CBMibEFVX3lxTE1qQ0JmZVZ5OFRTQUVxbWc0T2UtZlZrRGxPSzBOZW9SN2RheGZpcnViaEtobzNhZTZoVjJoVVJETTcwbWQwOXlMSWpOb3Z5Sm9fTTQ5YVlHbUQ4ZGtKM2FlMU5DTGRHQXAzcmhEMA?oc=5": {
+  "zh_oneliner": "校企合作搭建跨境出海实训平台，首批留学生已进入园博工坊参与实操。"
+ },
+ "https://www.dsb.cn/p/01m7abbxhyn4kh6qkbajgrpz53": {
+  "zh_oneliner": "快手电商开售三周成交超25亿元，多位达人接连刷新单场销售纪录。"
+ },
+ "https://www.dsb.cn/p/01m7aap2s47qfbfd5sfs3zyetj": {
+  "zh_oneliner": "张一鸣公开露面，字节跳动在 AI 方向上与 OpenAI 正面竞争的信号明显。"
+ },
+ "https://www.dsb.cn/p/01m7a9vdj6yxb235r9qffm37xs": {
+  "zh_oneliner": "英伟达员工集体挽留黄仁勋，侧面反映其在公司内外的号召力。"
+ },
+ "https://www.dsb.cn/p/01m7a7r5ev19w771t4sgpkk7zc": {
+  "zh_oneliner": "湖南创业者靠卖运动鞋做到月入5亿元，公司已在筹备上市。"
+ },
+ "http://www.baijing.cn/article/57374": {
+  "zh_oneliner": "短剧平台 DramaBox 迎来新股东，背后是月活1.6亿的网漫平台 Webtoon 与迪士尼。"
+ },
+ "https://www.dsb.cn/p/01m79rxp0cev6fdvszdewgbm11": {
+  "zh_oneliner": "中国平安成为 APEC 唯一保险赞助商，借国际会议提升品牌曝光。"
+ },
+ "https://www.dsb.cn/p/01m7a503pn4060qn3gg99mexd5": {
+  "zh_oneliner": "B站双11收官，参与视频带货的 UP 主数量同比增长41%。"
+ },
+ "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1PRlF1cHdEX24zSVFUTGNZMnZHVk52TTQ4M1BGaVlEdUgwNkhRcWxfcDlBRHpPTGJURlF2NDRrcXQtNEtBSnVpY0V4bXA?oc=5": {
+  "zh_title": "突发！非洲电商 KiKUU 宣布停运，卖家分期退款",
+  "zh_oneliner": "非洲电商 KiKUU 宣布停运，卖家货款将分期退回，出海卖家需留意回款安排。"
+ },
+ "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1GNlQxQjJYVnhkZ0k4dXhhWHBFZk5BaFdYWjg5LWc3UXJUaTBjV0E4X01Rcm1xRkdBVUdNVkx0ODAzaW91MkhYcmpybGVuUQ?oc=5": {
+  "zh_title": "陈泓缣：禁跨境电商卖食品，才是监管跨境食安的有效办法",
+  "zh_oneliner": "马来西亚方面认为，禁止跨境电商平台销售食品，是管住跨境食品安全的最有效办法。"
+ },
+ "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBTQ0w2dmVqd0ptZENkdHVYb1dGRm9fWHVXOEU0X01GUTlob3N2UlZGS3FBMlE4bXQ2endPX19VYzNnNlJFQ1Jpb2JUaXRJMzJfSHEzTmhKQ3lIVFVmUExBdjJqTk5PUjRi?oc=5": {
+  "zh_title": "保税区里搭起一座“双向选品”的桥",
+  "zh_oneliner": "宁波保税区搭起“双向选品”的桥，为跨境卖家与海外货源提供双向对接通道。"
+ },
+ "https://news.google.com/rss/articles/CBMid0FVX3lxTFBSX2VSWTFpaVZnR3pXZU9TQy1meHlEMWVYMkZxNEcxRHRORnl4ZGRienA4bEsyaEE2ZHZGRlJqbkM0TXZBenFKMFczTEFHcjJqZ0FBUHE5WXg0WU1UTlRuOU1VQjF4ck15RUw4R0lORmNuUHllQnNV?oc=5": {
+  "zh_title": "问鼎国际-国际站今日正式升级，推出权威跨境交易保障服务，助力全球采购效率提升",
+  "zh_oneliner": "国际站上线权威跨境交易保障服务，为全球采购用户提供官方交易保障，提升交易安全与效率。"
+ },
+ "https://app.nichehunter.com/tiktok-shop/?product=1729558556070089471": {
+  "zh_title": "草饲牛脂蜂蜜润肤膏",
+  "zh_oneliner": "TikTok Shop 当日热销第 1 名，累计销量约 66.4 万件，预估收入 1330 万美元。"
+ },
+ "https://app.nichehunter.com/tiktok-shop/?product=1729389453329862915": {
+  "zh_title": "Sirena 旋风空气净化香薰机",
+  "zh_oneliner": "TikTok Shop 当日热销第 2 名，累计销量约 19.2 万件，预估收入 1150 万美元。"
+ },
+ "https://app.nichehunter.com/tiktok-shop/?product=1729577747003314278": {
+  "zh_title": "Merach 扶手踏步机",
+  "zh_oneliner": "TikTok Shop 当日热销第 3 名，累计销量约 11.2 万件，预估收入 1460 万美元。"
+ },
+ "https://app.nichehunter.com/tiktok-shop/?product=1729405889651904902": {
+  "zh_title": "Persona 24小时防水眼线笔",
+  "zh_oneliner": "TikTok Shop 当日热销第 4 名，累计销量约 25.7 万件，预估收入 570 万美元。"
+ },
+ "https://app.nichehunter.com/tiktok-shop/?product=1731227895274115130": {
+  "zh_title": "OQQ 女士高腰宽松休闲裤",
+  "zh_oneliner": "TikTok Shop 当日热销第 5 名，累计销量约 14.4 万件，预估收入 1310 万美元。"
+ },
+ "https://app.nichehunter.com/tiktok-shop/?product=1729551073277678119": {
+  "zh_title": "EVELLYHOOTD 女士真皮短靴",
+  "zh_oneliner": "TikTok Shop 当日热销第 6 名，累计销量约 20.3 万件，预估收入 870 万美元。"
+ },
+ "https://app.nichehunter.com/tiktok-shop/?product=1729439565726454007": {
+  "zh_title": "Sweet Sweat 暴汗腰带",
+  "zh_oneliner": "TikTok Shop 当日热销第 7 名，累计销量约 22.8 万件，预估收入 830 万美元。"
+ },
+ "https://app.nichehunter.com/tiktok-shop/?product=1729589595500745694": {
+  "zh_title": "15天肠道清洁套装",
+  "zh_oneliner": "TikTok Shop 当日热销第 8 名，累计销量约 28.6 万件，预估收入 1090 万美元。"
+ },
+ "https://app.nichehunter.com/tiktok-shop/?product=1729710829635801620": {
+  "zh_title": "Clean Nutra 辣椒素膳食补充滴剂",
+  "zh_oneliner": "TikTok Shop 当日热销第 9 名，累计销量约 20.6 万件，预估收入 1030 万美元。"
+ },
+ "https://app.nichehunter.com/tiktok-shop/?product=1729436078970475149": {
+  "zh_title": "Luna Bean 手模铸造套装",
+  "zh_oneliner": "TikTok Shop 当日热销第 10 名，累计销量约 16.3 万件，预估收入 740 万美元。"
+ },
+ "https://www.jadeship.com/item/1688/719600721509": {
+  "zh_title": "四季中性钩花棉袜",
+  "zh_oneliner": "1688 七日销量榜第 2 名，较上期上升 6 位。"
+ },
+ "https://www.jadeship.com/item/1688/871672793755": {
+  "zh_title": "礼盒装男女长筒运动袜",
+  "zh_oneliner": "1688 七日销量榜第 9 名，较上期上升 69 位。"
+ },
+ "https://www.jadeship.com/item/1688/979647718693": {
+  "zh_title": "巴甲帕尔梅拉斯/科林蒂安球衣",
+  "zh_oneliner": "1688 七日销量榜第 11 名，较上期上升 22 位。"
+ },
+ "https://www.jadeship.com/item/1688/770710259551": {
+  "zh_title": "欧美风速干沙滩裤",
+  "zh_oneliner": "1688 七日销量榜第 14 名，较上期上升 27 位。"
+ },
+ "https://www.jadeship.com/item/1688/798996476745": {
+  "zh_title": "春秋空气层连帽运动套装",
+  "zh_oneliner": "1688 七日销量榜第 15 名，较上期上升 23 位。"
+ },
+ "https://www.jadeship.com/item/1688/865706015902": {
+  "zh_title": "日韩风小马刺绣棒球帽",
+  "zh_oneliner": "1688 七日销量榜第 17 名，较上期上升 1 位。"
+ },
+ "https://www.jadeship.com/item/1688/893044112777": {
+  "zh_title": "速干运动紧身训练套装",
+  "zh_oneliner": "1688 七日销量榜第 18 名，较上期上升 7 位。"
+ },
+ "https://www.jadeship.com/item/1688/819553942170": {
+  "zh_title": "巴甲桑托斯内马尔 10 号球衣",
+  "zh_oneliner": "1688 七日销量榜第 19 名，较上期上升 473 位。"
+ },
+ "https://www.jadeship.com/item/1688/981410722063": {
+  "zh_title": "小马刺绣速干沙滩裤",
+  "zh_oneliner": "1688 七日销量榜第 20 名，较上期上升 12 位。"
+ },
+ "https://www.jadeship.com/item/1688/1013421744809": {
+  "zh_title": "巴甲克鲁塞罗/弗拉门戈球衣",
+  "zh_oneliner": "1688 七日销量榜第 22 名，较上期上升 31 位。"
+ },
+ "https://www.sellersprite.com/cn/blog/sellersprite-live-20261119": {
+  "zh_oneliner": "讲怎么用 AI 做出高转化的亚马逊创意图。"
+ },
+ "https://www.sellersprite.com/cn/blog/amazon-category-evaluation": {
+  "zh_oneliner": "用 AI 结合竞争、新品和需求数据，判断一个类目值不值得进。"
+ },
+ "https://www.sellersprite.com/cn/blog/ai-batch-screen": {
+  "zh_oneliner": "教怎么让 AI 批量筛出评论少但销量高的新品。"
+ },
+ "https://www.sellersprite.com/cn/blog/sellersprite-live-20261118": {
+  "zh_oneliner": "专业投手分享怎么用 Codex 提升广告优化效率。"
+ },
+ "https://www.sellersprite.com/cn/blog/mcp-product-selection": {
+  "zh_oneliner": "讲怎么让 AI 从细分类目里帮你找到选品方向。"
+ },
+ "https://www.sellersprite.com/cn/blog/sellersprite-live-20261117": {
+  "zh_oneliner": "亚马逊视觉工作台的实战分享。"
+ },
+ "https://www.sellersprite.com/cn/blog/sellersprite-mcp-tools": {
+  "zh_oneliner": "按运营场景介绍卖家精灵 MCP 的 28 个数据查询工具。"
+ },
+ "https://www.sellersprite.com/cn/blog/ai-auto-market-research": {
+  "zh_oneliner": "讲亚马逊运营怎么让 AI 自己查数据。"
+ },
+ "https://www.jadeship.com/item/1688/854968176120": {
+  "zh_title": "2627赛季豪门俱乐部球衣合集",
+  "zh_oneliner": "1688 七日销量榜第 24 名，较上期上升 11 位。"
+ },
+ "https://www.jadeship.com/item/1688/1051343618100": {
+  "zh_title": "RL拉夫小马刺绣男士针织半拉链毛衣",
+  "zh_oneliner": "1688 七日销量榜第 25 名，较上期上升 414 位。"
+ },
+ "https://www.jadeship.com/item/1688/788710986503": {
+  "zh_title": "春秋空气层连帽拉链卫衣外套",
+  "zh_oneliner": "1688 七日销量榜第 26 名，较上期上升 39 位。"
+ },
+ "https://www.jadeship.com/item/1688/828970803106": {
+  "zh_title": "ESS雾面立体字母加绒连帽卫衣",
+  "zh_oneliner": "1688 七日销量榜第 27 名，较上期上升 41 位。"
+ },
+ "https://www.jadeship.com/item/1688/1027943767261": {
+  "zh_title": "2627赛季世界杯俱乐部国家队球衣合集",
+  "zh_oneliner": "1688 七日销量榜第 28 名，较上期上升 6 位。"
+ },
+ "https://www.jadeship.com/item/1688/1044854153366": {
+  "zh_title": "26SS Nudepr重磅纯棉情侣短袖T恤",
+  "zh_oneliner": "1688 七日销量榜第 29 名，较上期上升 42 位。"
+ },
+ "https://www.jadeship.com/item/1688/819557742132": {
+  "zh_oneliner": "1688 七日销量榜第 30 名，较上期上升 949 位。"
+ },
+ "https://www.jadeship.com/item/1688/952594081111": {
+  "zh_title": "复古法国队梅西内马尔球衣",
+  "zh_oneliner": "1688 七日销量榜第 32 名，较上期上升 98 位。"
+ },
+ "https://www.jadeship.com/item/1688/773453105445": {
+  "zh_title": "跨境男士翻领半袖纯棉T恤",
+  "zh_oneliner": "1688 七日销量榜第 33 名，较上期上升 157 位。"
+ },
+ "https://www.jadeship.com/item/1688/1045224094144": {
+  "zh_title": "26SS NUDE宽松纯棉基础短袖T恤",
+  "zh_oneliner": "1688 七日销量榜第 42 名，较上期上升 30 位。"
+ },
+ "https://www.jadeship.com/item/1688/955857296185": {
+  "zh_title": "巴甲美洲科林蒂安皇马利物浦巴黎球衣合集",
+  "zh_oneliner": "1688 七日销量榜第 43 名，较上期上升 151 位。"
+ },
+ "https://www.jadeship.com/item/1688/982733335366": {
+  "zh_title": "KTM F1赛车棒球帽",
+  "zh_oneliner": "1688 七日销量榜第 45 名，较上期上升 3 位。"
+ },
+ "https://www.jadeship.com/item/1688/618840204092": {
+  "zh_title": "2020跨境新款圆框小框太阳镜",
+  "zh_oneliner": "1688 七日销量榜第 46 名，较上期上升 33 位。"
+ },
+ "https://www.jadeship.com/item/1688/1010693336686": {
+  "zh_title": "行李箱造型手机壳",
+  "zh_oneliner": "1688 七日销量榜第 50 名，较上期上升 23 位。"
+ },
+ "https://www.jadeship.com/item/1688/980283446488": {
+  "zh_title": "2627赛季新款俱乐部球员版球衣合集",
+  "zh_oneliner": "1688 七日销量榜第 51 名，较上期上升 3 位。"
+ },
+ "https://www.jadeship.com/item/1688/1084897610364": {
+  "zh_oneliner": "1688 七日销量榜第 53 名，较上期上升 155 位。"
+ },
+ "https://www.jadeship.com/item/1688/746801458197": {
+  "zh_title": "老钱风21AM针织毛衣",
+  "zh_oneliner": "1688 七日销量榜第 56 名，较上期上升 10 位。"
+ },
+ "https://www.jadeship.com/item/1688/976670126479": {
+  "zh_title": "空军一号低帮百搭白运动鞋",
+  "zh_oneliner": "1688 七日销量榜第 61 名，较上期上升 67 位。"
+ },
+ "https://www.jadeship.com/item/1688/798929144098": {
+  "zh_title": "2024夏季男士针织撞色拉链运动短裤",
+  "zh_oneliner": "1688 七日销量榜第 62 名，较上期上升 126 位。"
+ },
+ "https://www.jadeship.com/item/1688/1080114672684": {
+  "zh_title": "Supreme潮流五片拼接棒球帽",
+  "zh_oneliner": "1688 七日销量榜第 71 名，较上期上升 2 位。"
+ },
+ "https://www.jadeship.com/item/1688/798302810843": {
+  "zh_title": "2425赛季巴甲科林蒂安弗拉门戈球衣",
+  "zh_oneliner": "1688 七日销量榜第 72 名，较上期上升 437 位。"
+ },
+ "https://www.jadeship.com/item/1688/1080704536809": {
+  "zh_title": "Supreme字母连帽加绒卫衣",
+  "zh_oneliner": "1688 七日销量榜第 74 名，较上期上升 65 位。"
+ },
+ "https://www.jadeship.com/item/1688/1082242925655": {
+  "zh_title": "M外贸跨境针织拼接轻棉夹克",
+  "zh_oneliner": "1688 七日销量榜第 78 名，较上期上升 2 位。"
+ },
+ "https://www.jadeship.com/item/1688/1087964766948": {
+  "zh_oneliner": "1688 七日销量榜第 81 名，较上期上升 387 位。"
+ },
+ "https://www.jadeship.com/item/1688/1012260586454": {
+  "zh_title": "25赛季新款F1赛车服合集",
+  "zh_oneliner": "1688 七日销量榜第 82 名，较上期上升 2 位。"
+ },
+ "https://www.jadeship.com/item/1688/1016201721851": {
+  "zh_title": "巴甲球员版弗拉门戈帕尔梅拉斯球衣合集",
+  "zh_oneliner": "1688 七日销量榜第 83 名，较上期上升 110 位。"
+ },
+ "https://www.jadeship.com/item/1688/774249365947": {
+  "zh_title": "美式撞色条纹篮球运动短裤",
+  "zh_oneliner": "1688 七日销量榜第 84 名，较上期上升 18 位。"
+ },
+ "https://www.jadeship.com/item/1688/1067124557079": {
+  "zh_title": "2627赛季俱乐部球员版球衣合集",
+  "zh_oneliner": "1688 七日销量榜第 85 名，较上期上升 884 位。"
+ },
+ "https://www.ebrun.com/20261115/720060.shtml": {
+  "zh_title": "企业上了 AI 为什么没换来增长？",
+  "zh_oneliner": "文章探讨企业引入 AI 后仍未换来增长的原因，提醒卖家警惕为 AI 而 AI 的投入。"
+ },
+ "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPM2JILU5yeGRad3JmT2N2aWdUTnYzNUJOUFhOeUQ0UGVtMU4tLXJiV2tXQmhwODVxRnR1WmdVZGZ0ODV1QWo2QTFud2VjeHNZMEFSRVhnWEpJRHFNcmpKMUgyYnBiVUxMSjZ6S2pSakV3dmlUWUtobUpFaHpBVV9VbUVFWlF5QURl?oc=5": {
+  "zh_title": "从一块牛仔布中看广东产业跃升",
+  "zh_oneliner": "以广东牛仔布产业为例，看传统制造如何借跨境电商实现升级。"
+ },
+ "https://www.ebrun.com/20261115/720062.shtml": {
+  "zh_title": "阿里蜜獾要出笼了",
+  "zh_oneliner": "阿里拟分拆芯片子公司平头哥在港股独立上市，AI 算力需求爆发下自研芯片商业化提速。"
+ },
+ "https://www.cifnews.com/article/190092": {
+  "zh_title": "大换血！一批平台突然倒下",
+  "zh_oneliner": "Costco Next、Goimagine、FonQ 等平台相继关停，Zaful 主体破产，卖家要重新评估平台布局。"
+ },
+ "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5XSk92T21qQldKcXdHSUdyV2ZBY2V2OEN0MTRma3VwZHlvdmM1ZXFpc3Q2dmdxVF9HQkVrVndMS05lTWVjN2dMejlpcFlZZC1scTZZam9qTjdtNkhtZzZfd1ZiamJEOFU?oc=5": {
+  "zh_title": "陈章王：应对跨境电商冲击打造具公信力文具官网",
+  "zh_oneliner": "文具商以品牌官网的公信力应对跨境电商冲击，提醒卖家重视自有渠道建设。"
+ },
+ "https://news.google.com/rss/articles/CBMiTEFVX3lxTE82UUh1S3pVUGNZQzJ2RlJYMERZMmM2Qk1RX0hVczd2cENodloxT0lfd05BMTJKSU9zSmhQUEpId3NIYTRoTEptZ3o3TVA?oc=5": {
+  "zh_title": "大换血！一批平台突然倒下",
+  "zh_oneliner": "Costco Next、Goimagine、FonQ 等平台相继关停，Zaful 主体破产，卖家要重新评估平台布局。"
+ },
+ "https://news.google.com/rss/articles/CBMiRkFVX3lxTE83VlBmd0JaRGZaUVhRVmVtQjJjWmpydHVlM3JRT2pEdE9VWG1MUG9Cdndsb2tQSHFaRTVjY2dDT0xyalVCQ0E?oc=5": {
+  "zh_title": "中国公司全球化周报：TikTok Shop 东南亚开通海运直邮，速卖通双 11 潜力市场日均成交增超 50%",
+  "zh_oneliner": "TikTok Shop 东南亚跨境开通海运直邮，速卖通双 11 潜力市场日均成交增长超 50%，出海动向值得关注。"
+ },
+ "https://www.aboutamazon.com/news/retail/amazon-black-friday-cyber-monday-deals-2026": {
+  "zh_title": "Target 黑五 2026 搜索暴涨",
+  "zh_oneliner": "美区热搜显示消费者正集中搜索 Target 黑五促销，黑五购物季需求升温，卖家可关注大促选品与备货节奏。"
+ },
+ "http://www.baijing.cn/article/57369": {
+  "zh_title": "海思前员工出走创业，单品上线首日爆卖1.2亿",
+  "zh_oneliner": "海思前员工创业做一体化消费电子，单品上线首日卖出1.2亿，海外消费者越来越看重同一品牌的全套体验。"
+ },
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=p23NoufgoVVsLDvoZwk6p4fHCTowvqHM&location=handpicked": {
+  "zh_title": "PattyPro Maker 汉堡肉饼成型器",
+  "zh_oneliner": "Sell The Trend 11 月爆款榜第 1 名，预估月收入 $30,675，进价 $10.74、售价 $29.95，单件利润 $19.21。"
+ },
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=66GrzHlMNbr2Ven4ls6QLQZyxEQPksX2&location=handpicked": {
+  "zh_title": "PaperJet Flyer Kit 纸飞机手工套件",
+  "zh_oneliner": "Sell The Trend 11 月爆款榜第 2 名，预估月收入 $36,045，进价 $13.95、售价 $39.95，单件利润 $26.00。"
+ },
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=zsEF9eNtH0PS2ycM0s9clWH1fqyfBnEh&location=handpicked": {
+  "zh_title": "PieMagic Molds 派造型烘焙模具",
+  "zh_oneliner": "Sell The Trend 11 月爆款榜第 3 名，预估月收入 $113,055，进价 $2.28、售价 $59.95，单件利润 $57.67。"
+ },
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=24ZJ1r94QWqcP6tH3sfl5oAforRrSGr1&location=handpicked": {
+  "zh_title": "MerryMesh Lights 圣诞网状装饰灯",
+  "zh_oneliner": "Sell The Trend 11 月爆款榜第 4 名，预估月收入 $62,985，进价 $32.97、售价 $79.95，单件利润 $46.98。"
+ },
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=bAJYPCSeQT7LOqXGcQeHWqCe19rRiEKW&location=handpicked": {
+  "zh_title": "EquiMagic Advent Calendar 圣诞倒数日历",
+  "zh_oneliner": "Sell The Trend 11 月爆款榜第 5 名，预估月收入 $62,625，进价 $5.09、售价 $39.95，单件利润 $34.86。"
+ },
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=AFU7SYR8w1G0PnrAOn9T2Z0PvfLGAI81&location=handpicked": {
+  "zh_title": "PearlSpark Ornaments 圣诞珍珠挂饰",
+  "zh_oneliner": "Sell The Trend 11 月爆款榜第 6 名，预估月收入 $59,205，进价 $18.93、售价 $69.95，单件利润 $51.02。"
+ },
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=OV2X7q2BA9aNKcFozHxksAys1kIrgKy8&location=handpicked": {
+  "zh_title": "NaughtyNest Sweatshirt 圣诞卫衣",
+  "zh_oneliner": "Sell The Trend 11 月爆款榜第 7 名，预估月收入 $33,555，进价 $14.78、售价 $39.95，单件利润 $25.17。"
+ },
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=3olR4b4LOVy4ayOW1hYfz80lG2FzZYXq&location=handpicked": {
+  "zh_title": "MerryMessage Bottle 圣诞留言瓶",
+  "zh_oneliner": "Sell The Trend 11 月爆款榜第 8 名，预估月收入 $48,915，进价 $11.66、售价 $39.95，单件利润 $28.29。"
+ },
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=oERztlF5rg7kS5vMnLTX7w1mLTnnOEpD&location=handpicked": {
+  "zh_title": "BethlehemBox 圣诞主题礼盒",
+  "zh_oneliner": "Sell The Trend 11 月爆款榜第 9 名，预估月收入 $44,595，进价 $4.10、售价 $29.95，单件利润 $25.85。"
+ },
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=nUlXckrbHlr00EEUQEO3AEg5Gb3377rG&location=handpicked": {
+  "zh_title": "TimeQuest History Chart 历史学习挂图",
+  "zh_oneliner": "Sell The Trend 11 月爆款榜第 10 名，预估月收入 $40,875，进价 $14.34、售价 $39.95，单件利润 $25.61。"
+ },
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=tC1DY1es0zTpmoRsw3YnFdL5JYPIGuhC&location=handpicked": {
+  "zh_title": "StarDrive 多功能车载充电投影仪",
+  "zh_oneliner": "Sell The Trend 汽车配件、旅行装备 2 个类目本周第 1 名，类目平均利润率 68.97%，竞争程度低。"
+ },
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=gIPU2EFheZyEII6mDavEaiueQwRXwLaj&location=handpicked": {
+  "zh_title": "GiraffeGiggles 会跳舞说话的长颈鹿毛绒玩具",
+  "zh_oneliner": "Sell The Trend 母婴用品、电子科技、手工创意 3 个类目本周第 1 名，类目平均利润率 64.93%，竞争程度低。"
+ },
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=6guw6JlIbZErIeX1lMnVSy3VtqKxnJ7i&location=handpicked": {
+  "zh_title": "CozyCrown 韩式无檐冬季保暖帽",
+  "zh_oneliner": "Sell The Trend 美容个护类目本周第 1 名，类目平均利润率 72.97%，竞争程度低。"
+ },
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=FuOuqUHbLKic1AmnyO4AhmnHJJ9LEnfb&location=handpicked": {
+  "zh_title": "MerrySip 3D 圣诞红酒杯礼盒",
+  "zh_oneliner": "Sell The Trend 厨具类目本周第 1 名，类目平均利润率 66.13%，竞争程度低。"
+ },
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=KnawDJ1komz9ntWWesAASvMZNGEmrIMZ&location=handpicked": {
+  "zh_title": "SafeHoot 儿童猫头鹰安全报警钥匙扣",
+  "zh_oneliner": "Sell The Trend 环保必需品、时尚服饰、健康养生 3 个类目本周第 1 名，类目平均利润率 77.75%，竞争程度低。"
+ },
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=OM4ZAo4fWCzCv7ncPGJkZfGOkAqFciCH&location=handpicked": {
+  "zh_title": "CapKeeper 防尘折叠帽子收纳架",
+  "zh_oneliner": "Sell The Trend 健身运动类目本周第 1 名，类目平均利润率 71.85%，竞争程度低。"
+ },
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=spdlcOUuBbQsAnKdhjGqN4lCIQIlpcWe&location=handpicked": {
+  "zh_title": "EcoBlossom 可种植种子日历",
+  "zh_oneliner": "Sell The Trend 园艺庭院类目本周第 1 名，类目平均利润率 70.75%，竞争程度低。"
+ },
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=WFFtBJp999rnBJgw5dxSX9aTb1cV8eZi&location=handpicked": {
+  "zh_title": "CozyGlow 圣诞小屋香薰机",
+  "zh_oneliner": "Sell The Trend 家居装饰、节日季 2 个类目本周第 1 名，类目平均利润率 65.7%，竞争程度低。"
+ },
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=vPw9clifVXBWmTE6HcN0RiL4DrlTS8aB&location=handpicked": {
+  "zh_title": "LunaKnot 生日石爱心项链",
+  "zh_oneliner": "Sell The Trend 珠宝手表类目本周第 1 名，类目平均利润率 74.72%，竞争程度低。"
+ },
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=xAoWeYT4s2f8L5dKkQhq328Ik01BlH68&location=handpicked": {
+  "zh_title": "DrawEase 可重复书写桌面垫",
+  "zh_oneliner": "Sell The Trend 办公效率类目本周第 1 名，类目平均利润率 72.69%，竞争程度低。"
+ },
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=GzEJNAf1Yvvld2iFQBTtoGpLk5SQMPjp&location=handpicked": {
+  "zh_title": "FrostShield 防风全脸冬季面罩",
+  "zh_oneliner": "Sell The Trend 户外生存、运动 2 个类目本周第 1 名，类目平均利润率 67.55%，竞争程度低。"
+ },
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=rtPbzJlIyZ9O5iMPJuanN6UeVKEOjouj&location=handpicked": {
+  "zh_title": "WarmHug 带袖口脚袋的加热毯",
+  "zh_oneliner": "Sell The Trend 个性化定制礼品类目本周第 1 名，类目平均利润率 64.51%，竞争程度低。"
+ },
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=462vNdKM9yGNvucz5TCuqfjTSYJojiOz&location=handpicked": {
+  "zh_title": "FurAway 洗衣去宠物毛神器",
+  "zh_oneliner": "Sell The Trend 宠物用品类目本周第 1 名，类目平均利润率 73.27%，竞争程度低。"
+ },
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=ekiHe7OroWerbQSzsCwI9LNuUuWgYpHn&location=handpicked": {
+  "zh_title": "LinguaLink 智能翻译无线耳机",
+  "zh_oneliner": "Sell The Trend 手机配件类目本周第 1 名，类目平均利润率 62.27%，竞争程度低。"
+ },
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=YvMplVesXbTDsjk0vnIN0Clexjf9UjPs&location=handpicked": {
+  "zh_title": "SparkleCharm 圣诞 DIY 钻石胸针套装",
+  "zh_oneliner": "Sell The Trend 工具 DIY类目本周第 1 名，类目平均利润率 62.71%，竞争程度低。"
+ }
 }

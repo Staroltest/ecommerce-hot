@@ -15,6 +15,8 @@ sources.json 里用 local:feeds/<id>.xml 引用（generate.py 支持 local: 前�
 2026-11-15 增 4 个产品热度信号源（用户批准）：Google Trends 美国热搜
 （官方 RSS 拉取后否定词过滤）、NicheHunter TikTok Shop 日榜、
 JadeShip 1688 七日榜（只取排名上升条目）、卖家精灵博客。
+同日再增 Sell The Trend 爆款榜（用户批准）：月榜 Top 10 + 22 类目周榜
+各取第 1 名，去重后通常 25 条（见 scrape_sellthetrend）。
 
 用法：python3 tools/scrape_cn.py   （在站点根目录运行）
 """
@@ -250,6 +252,191 @@ def scrape_sellersprite():
     return out
 
 
+# ---------------------------------------------------------------- Sell The Trend 爆款榜
+# 2026-11-15 接入（用户批准）。月榜 Top 10 + 22 个类目周榜各取第 1 名，
+# 去重后通常 25 条左右（同一产品常跨多个类目登顶，如 SafeHoot 同时是
+# 环保/时尚/健康三个类目的第 1 名，2026-11-15 实测 22 类目只有 15 个
+# 不同产品）。只取公开列表页的标题 + 链接 + 时间，不进详情页、不取正文、
+# 不登录。周榜只取第 1 名是防刷屏上限（之前 JadeShip 一度占热点 19/20，
+# 用户已批过按源截流的做法；根本修法仍是生成器单源上限）。
+# 每条产品的数字信息（月榜 Stats 行、周榜类目平均利润率/竞争程度）
+# 不进 RSS，只写 sidecar data/feeds/sellthetrend-meta.json，
+# 供写中文简介时用；RSS 仍只放标题 + 链接 + 时间。
+
+# 22 个类目 slug（见 https://www.sellthetrend.com/basic-sitemap.xml
+# 里的 /niche/<slug>，不含 categories 索引页）。
+STT_NICHES = [
+    "automotive-accessories", "baby-and-parenting-essentials",
+    "beauty-and-personal-care", "cooking-and-kitchen-gadgets",
+    "eco-friendly-essentials", "electronics-and-tech-gadgets",
+    "fashion-and-apparel", "fitness-and-exercise",
+    "garden-and-patio-essentials", "health-wellness-and-recovery",
+    "hobby-and-creative-kits", "home-improvement-and-decor",
+    "jewelry-and-watches", "office-and-productivity",
+    "outdoor-and-survival-gear", "personalized-and-custom-gifts",
+    "pet-products", "phone-accessories", "seasonal", "sports",
+    "tools-and-diy-hardware", "travel-and-digital-nomad-gear",
+]
+STT_MONTHS = {n: i + 1 for i, n in enumerate(
+    ["January", "February", "March", "April", "May", "June", "July",
+     "August", "September", "October", "November", "December"])}
+# 每条产品的数字信息（写中文简介用），按链接做键。
+STT_META = {}
+
+
+def _stt_text(snippet):
+    """去标签、解实体后压缩成一行全文（与 clean() 只取第一行不同，
+    周榜的日期/利润率/竞争程度在同一段落的不同行里）。"""
+    t = html.unescape(re.sub(r"<[^>]+>", " ", snippet or ""))
+    return re.sub(r"\s+", " ", t).strip()
+
+
+def _stt_strip_marks(t):
+    """去掉标题里的 ™ / ® / © 与 emoji（周榜标题常带，如 CapKeeper™ 🧢✨）。"""
+    t = re.sub(r"[™®©]", "", t)
+    t = re.sub(r"[\U0001F000-\U0001FAFF\u2600-\u27BF\uFE0F\u200D]+", "", t)
+    return re.sub(r"\s+", " ", t).strip(" -–—")
+
+
+def scrape_sellthetrend():
+    """Sell The Trend 月榜 + 类目周榜。
+
+    月榜：主榜页 Monthly Winning Products Archive 标题（h2）之前的
+    前 10 条带编号产品 h3（形如 <h3><b>1. <a href="…pid=…">…</a></b></h3>），
+    链接取 pid 链接；日期取标题里的 "(Updated for November 2026)"，
+    定为当月 1 日 12:00 CST。产品下方的 Stats 行记入 sidecar。
+    周榜：每个类目页取 "Top N … (Products) to Dropship This Week" 里的
+    第 1 名（h3 形如 <h3>1. <a href="…pid=…">…</a></h3>），链接取 pid 链接；
+    日期取页内 "Weekly Intelligence Summary" 里的 "for November 15th, 2026"
+    （取不到时用 JSON-LD dateModified 的日期），定为当日 12:00 CST；
+    类目平均利润率与竞争程度也记入 sidecar。类目页之间停 1 秒。
+    单个类目页拉取失败时跳过该类目，不影响其余类目。
+    """
+    out, seen = [], set()
+    pat = re.compile(
+        r'<h3[^>]*>(?:\s*<b>)?\s*(\d+)\.\s*<a\s+href="([^"]*pid=[^"]*)"[^>]*>(.*?)</a>',
+        re.S)
+    # --- 月榜 ---
+    h = fetch("https://www.sellthetrend.com/blog/winning-products")
+    pub_m = None
+    month_label = ""
+    dm = re.search(
+        r"Updated for (January|February|March|April|May|June|July|August|"
+        r"September|October|November|December) (\d{4})", h)
+    if dm:
+        month_label = dm.group(0)
+        try:
+            pub_m = datetime(int(dm.group(2)), STT_MONTHS[dm.group(1)], 1, 12,
+                             tzinfo=CST)
+        except ValueError:
+            pub_m = None
+    cut = len(h)
+    for m in re.finditer(r"<h2[^>]*>(.*?)</h2>", h, re.S):
+        if "Monthly Winning Products Archive" in clean(m.group(1)):
+            cut = m.start()
+            break
+    n_month = 0
+    for m in pat.finditer(h[:cut]):
+        rank, link, raw = m.groups()
+        if int(rank) < 1 or int(rank) > 10:
+            continue
+        t = _stt_strip_marks(clean(raw))
+        link = html.unescape(link)
+        if len(t) < 3 or link in seen:
+            continue
+        seg = h[m.end():m.end() + 3000]
+        sm = re.search(r"Stats:</i></b><i><span[^>]*>(.*?)</span>", seg, re.S)
+        stats = clean(sm.group(1)) if sm else ""
+        seen.add(link)
+        out.append((t, link, pub_m))
+        STT_META[link] = {"kind": "monthly", "rank": int(rank),
+                          "stats": stats, "month": month_label}
+        n_month += 1
+        if n_month >= 10:
+            break
+    # --- 周榜：22 类目各取第 1 名 ---
+    for slug in STT_NICHES:
+        time.sleep(1)
+        p = None
+        for attempt in range(2):
+            try:
+                p = fetch("https://www.sellthetrend.com/niche/" + slug)
+                break
+            except Exception as e:
+                # 类目页偶尔拉取失败（连拉 23 个页时易被限流），隔 3 秒重试一次；
+                # 再失败就跳过该类目，不影响其余类目（下轮再试）。
+                if attempt == 0:
+                    time.sleep(3)
+                else:
+                    print(f"sellthetrend: {slug} fetch failed ({e}), skipped",
+                          flush=True)
+        if p is None:
+            continue
+        niche = slug.replace("-", " ").title()
+        hm = re.search(r"<h1[^>]*>(.*?)</h1>", p, re.S)
+        if hm:
+            nm = re.match(r"Best Trending (.+?) (?:Products )?to Dropship",
+                          clean(hm.group(1)))
+            if nm:
+                niche = nm.group(1)
+        pub_w, margin, competition = None, "", ""
+        si = p.find("Weekly Intelligence Summary")
+        if si >= 0:
+            stext = _stt_text(p[si:si + 3000])
+            dw = re.search(
+                r"for\s+([A-Z][a-z]+)\s+(\d{1,2})(?:st|nd|rd|th),\s*(\d{4})",
+                stext)
+            if dw:
+                try:
+                    pub_w = datetime(int(dw.group(3)), STT_MONTHS[dw.group(1)],
+                                     int(dw.group(2)), 12, tzinfo=CST)
+                except ValueError:
+                    pub_w = None
+            mm = re.search(r"average profit margin of\s+([\d.]+%)", stext)
+            if mm:
+                margin = mm.group(1)
+            cm = re.search(r"and\s+(low|medium|high)\s+competition", stext)
+            if cm:
+                competition = cm.group(1)
+        if pub_w is None:
+            jm = re.search(r'"dateModified"\s*:\s*"(\d{4})-(\d{2})-(\d{2})', p)
+            if jm:
+                pub_w = datetime(int(jm.group(1)), int(jm.group(2)),
+                                 int(jm.group(3)), 12, tzinfo=CST)
+        # 第 1 名：锚定在周榜标题之后（标题有两种写法：
+        #   "Top 10 Fitness & Exercise Products to Dropship This Week"
+        #   或 "Top 10 Automotive Accessories to Dropship This Week"，
+        #   有的带 Products 有的不带，不要锚定 Products）。
+        anchor = p.find("to Dropship This Week")
+        wm = pat.search(p[anchor:anchor + 20000]) if anchor >= 0 else None
+        if not wm or int(wm.group(1)) != 1:
+            print(f"sellthetrend: {slug} no #1 product found, skipped",
+                  flush=True)
+            continue
+        link = html.unescape(wm.group(2))
+        t = _stt_strip_marks(clean(wm.group(3)))
+        if len(t) < 3:
+            continue
+        if link in seen:
+            # 同一产品常在多个类目同时登顶（如 SafeHoot 同时是环保/时尚/
+            # 健康三个类目的第 1 名）：feed 里只留一条，但把类目都记进
+            # sidecar，写简介时可写“多类目第 1 名”。
+            prev = STT_META.get(link)
+            if prev and prev.get("kind") == "weekly" \
+                    and niche not in prev.get("niches", []):
+                prev.setdefault("niches", []).append(niche)
+            continue
+        seen.add(link)
+        out.append((t, link, pub_w))
+        STT_META[link] = {"kind": "weekly", "rank": 1, "niche": niche,
+                          "niches": [niche],
+                          "margin": margin, "competition": competition}
+    with open(os.path.join(FEED_DIR, "sellthetrend-meta.json"),
+              "w", encoding="utf-8") as f:
+        json.dump(STT_META, f, ensure_ascii=False, indent=1)
+    return out
+
+
 # Google Trends 泛热搜否定词：体育、娱乐、政治类标记词（词边界匹配）。
 # 榜单是英文热搜词，人名本身无法枚举，所以同时看标题、首条新闻标题、
 # 新闻来源三处；命中即丢弃。注意：故意没放 game / series / season /
@@ -412,6 +599,7 @@ SITES = [
     ("nichehunter", "NicheHunter TikTok 热销", "https://nichehunter.com/tools/winning-product-finder/", scrape_nichehunter),
     ("jadeship", "JadeShip 1688 七日榜", "https://www.jadeship.com/feed/top/7-days/1688", scrape_jadeship),
     ("sellersprite", "卖家精灵博客", "https://www.sellersprite.com/cn/blog/", scrape_sellersprite),
+    ("sellthetrend", "Sell The Trend 爆款榜", "https://www.sellthetrend.com/blog/winning-products", scrape_sellthetrend),
 ]
 
 # 本轮抓到少于多少条时保留旧文件（默认 3；gtrends 是日榜快照，

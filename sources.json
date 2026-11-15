@@ -224,6 +224,13 @@
       "tier": "T2",
       "url": "local:data/feeds/sellersprite.xml",
       "category_hint": "xuanpin"
+    },
+    {
+      "id": "sellthetrend",
+      "name": "Sell The Trend 爆款榜",
+      "tier": "T2",
+      "url": "local:data/feeds/sellthetrend.xml",
+      "category_hint": "xuanpin"
     }
   ]
 }
