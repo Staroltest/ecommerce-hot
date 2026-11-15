@@ -506,7 +506,7 @@ GTRENDS_DENY = re.compile(
 #     不受人名规则影响。
 GTRENDS_NAME_RE = re.compile(r"^[A-Z][a-z]+(?: [A-Z]\.?| [A-Z][a-z]+){1,2}$", re.I)
 GTRENDS_PLACE_RE = re.compile(r"^(?:afghanistan|albania|algeria|argentina|armenia|australia|austria|azerbaijan|bangladesh|belarus|belgium|bolivia|bosnia|brazil|bulgaria|cambodia|canada|chile|china|colombia|croatia|cuba|cyprus|denmark|ecuador|egypt|estonia|ethiopia|finland|france|georgia|germany|ghana|greece|greenland|guatemala|haiti|honduras|hong kong|hungary|iceland|india|indonesia|iran|iraq|ireland|israel|italy|jamaica|japan|jordan|kazakhstan|kenya|kuwait|kyrgyzstan|latvia|lebanon|libya|lithuania|luxembourg|madagascar|malaysia|mali|malta|mexico|moldova|mongolia|morocco|myanmar|nepal|netherlands|nicaragua|niger|nigeria|norway|oman|pakistan|palestine|panama|paraguay|peru|philippines|poland|portugal|qatar|romania|russia|rwanda|senegal|serbia|singapore|slovakia|slovenia|somalia|south africa|south korea|spain|sri lanka|sudan|sweden|switzerland|syria|taiwan|tajikistan|tanzania|thailand|togo|tunisia|turkey|turkmenistan|uganda|ukraine|uruguay|uzbekistan|venezuela|vietnam|yemen|zambia|zimbabwe|gaza|kashmir|north korea|puerto rico)$", re.I)
-GTRENDS_COMMERCE_RE = re.compile(r"\b(?:price|prices|pricing|\$|sale|sales|deal|deals|discount|discounts|coupon|coupons|launch|launches|launched|release|releases|released|preorder|pre-order|buy|buys|buying|shop|shopping|store|stores|restock|restocked|sold\s+out|review|reviews|unboxing|viral|goes\s+viral|craze|frenzy|tiktok|instagram|influencer|influencers|amazon|walmart|target|costco|shein|temu|ebay|etsy|shopify|brand|brands|product|products|gadget|gadgets|toy|toys|fashion|beauty|skincare|makeup|sneaker|sneakers|shoes|electronics|gaming|console|gift|gifts|haul|christmas|holiday\s+shopping|black\s+friday|cyber\s+monday|prime\s+day|singles\s+day|small\s+business\s+saturday)\b", re.I)
+GTRENDS_COMMERCE_RE = re.compile(r"\b(?:price|prices|pricing|\$\s*\d|sale|sales|deal|deals|discount|discounts|coupon|coupons|launch|launches|launched|release|releases|released|preorder|pre-order|buy|buys|buying|shop|shopping|store|stores|restock|restocked|sold\s+out|review|reviews|unboxing|viral|goes\s+viral|craze|frenzy|tiktok|instagram|influencer|influencers|amazon|walmart|target|costco|shein|temu|ebay|etsy|shopify|brand|brands|product|products|gadget|gadgets|toy|toys|fashion|beauty|skincare|makeup|sneaker|sneakers|shoes|electronics|gaming|console|gift|gifts|haul|christmas|holiday\s+shopping|black\s+friday|cyber\s+monday|prime\s+day|singles\s+day|small\s+business\s+saturday)\b", re.I)
 GTRENDS_SHOPPING = {"black friday", "cyber monday", "prime day", "prime big deal days", "singles day", "small business saturday"}
 
 # 2026-11-15 商业词门槛（gate，用户在 Trends 第 4 次漏网后拍板）：
@@ -515,6 +515,10 @@ GTRENDS_SHOPPING = {"black friday", "cyber monday", "prime day", "prime big deal
 # GTRENDS_COMMERCE_RE 严得多，后者只做人名规则的救援，本来就该宽松，
 # 保持原样不动。
 # 明确没放进 gate 的词：launch、release、review、viral、deal、price、
+# 2026-11-15 第 5 次漏网："people magazine"（Rihanna 之子登封面娱乐新闻）
+#   靠新闻标题里的 "A$AP Rocky" 漏进来——\$ 被当成价格信号，救回了人名规则
+#   又通过了 gate。修复：\$ 只有后跟数字时才算价格信号（$99），"A$AP"
+#   这类艺名拼写不再触发。
 # pricing、amazon（裸词）、target（裸词）、brand、christmas、
 # tiktok（裸词）、instagram、influencer、gaming——这些词会出现在
 # 火箭/电影/游戏/政治/物价新闻里：GTA 6 靠 release、SpaceX 靠 launch
@@ -522,7 +526,7 @@ GTRENDS_SHOPPING = {"black friday", "cyber monday", "prime day", "prime big deal
 # Galaxy Z Fold 这类只有 price/release/review 的产品名会被拦，
 # 它们本来也会经由其余 32 个源进来，接受这点损失。
 GTRENDS_GATE_RE = re.compile(
-    r"\b(?:\$|sale|sales|discount|discounts|coupon|coupons|preorder|pre-order"
+    r"\b(?:\$\s*\d|sale|sales|discount|discounts|coupon|coupons|preorder|pre-order"
     r"|buy|buys|buying|shop|shopping|store|stores|restock|restocked|sold\s+out"
     r"|unboxing|haul|walmart|costco|shein|temu|ebay|etsy|shopify|tiktok\s+shop"
     r"|sneaker|sneakers|gadget|gadgets|toy|toys|fashion|beauty|skincare|makeup"
