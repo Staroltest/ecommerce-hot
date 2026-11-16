@@ -488,8 +488,12 @@ GTRENDS_DENY = re.compile(
     #   "spacex starship rocket launch"（CNN，含 launch 被商业词救回）。
     #   只加具体游戏名与航天专名，不加 xbox/playstation/nintendo——
     #   主机类热搜可能是真实选品信号（配件需求），靠打分沉底而非硬拦。---
+    # --- 2026-11-16 补：金融类股票抛售（第 7 次漏网："greg abel berkshire
+    #   hathaway stock sales"（Yahoo Finance），靠 gate 里的 sales 一词放行。
+    #   只加 "stock sale(s)" 短语：裸词 stock 不能加，"in stock" 是产品信号；
+    #   gate 里的 sales 保留，"holiday sales" 类购物热搜仍可通过。---
     r"|gta|grand\s+theft\s+auto|fortnite|minecraft|roblox|call\s+of\s+duty|zelda|elden\s+ring|genshin|honkai|overwatch|valorant|apex\s+legends|league\s+of\s+legends|world\s+of\s+warcraft|baldur'?s\s+gate"
-    r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin)\b",
+    r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 
 # 2026-11-15 修复：否定词拦不住纯人名/地名/单字姓氏（mel gibson、
