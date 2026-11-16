@@ -556,6 +556,16 @@ def gtrends_verdict(title, news_title="", news_source=""):
     joined = " ".join([title, news_title, news_source])
     if GTRENDS_DENY.search(joined):
         return "deny-word"
+    # 2026-11-16 补：股票代码类热搜（第 8 次漏网："walmart stock"，Yahoo Finance
+    #   沃尔玛 Q3 财报新闻，靠 gate 里的裸词 walmart 放行；第 7 次是
+    #   "greg abel berkshire hathaway stock sales"，只拦了 stock sales。
+    #   标题里出现独立单词 stock（如 walmart stock、tesla stock、stock market）
+    #   是查股价/股市新闻，不是选品信号；"in stock / out of stock / low stock"
+    #   是缺货信号，不拦；restock 不含独立 stock，不受影响。只看标题，不看
+    #   新闻标题——新闻里提股价（如 Pop Mart stock）不应连累产品热搜。）
+    if (re.search(r"\bstock\b", title, re.I)
+            and not re.search(r"\b(?:in|out of|low)\s+stock\b", title, re.I)):
+        return "deny-stock"
     # 西语动词 sale（"sale de …" = 离开）会误触英文商业词 sale 而放行
     # 人名/片名（如 La Mansión VIP），救援判断前先去掉 "sale de"。
     # "amazon music" 也去掉：音乐直播不是购物信号，否则
