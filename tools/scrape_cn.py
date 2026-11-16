@@ -537,9 +537,18 @@ GTRENDS_SHOPPING = {"black friday", "cyber monday", "prime day", "prime big deal
 # 明确的购物短语留在 gate 里，礼物指南类选品信号不至于全灭。
 # 代价：新闻里只有裸词 gift 的纯礼物话题会被拦，接受这点损失，
 # 礼物类选品信号仍可经其余 32 个源进来。
+# 2026-11-17 第 9 次漏网："tara harding ford bronco purchase"（CBS：女子买下
+# Ford Bronco、航班停飞后开车 27 小时回家的人情味新闻）靠新闻标题里的
+# buys 通过 gate，冲进热点第 4 位。买/卖车的一次性个人消费故事不是选品
+# 信号。修复：buy/buys/buying 移出 gate（GTRENDS_COMMERCE_RE 救援词表里
+# 保留，人名规则仍可被救回，但最后的 gate 会拦住——deny-gate）。
+# 代价：新闻里只有 buy/buys 的纯购买话题会被拦（如 "everyone is buying
+# the Stanley Cup"），接受这点损失，购物类信号仍可经其余 32 个源进来；
+# 真正的爆款通常还带 sale / sold out / restock / viral / tiktok shop 等
+# 更强的词，不受影响。
 GTRENDS_GATE_RE = re.compile(
     r"\b(?:\$\s*\d|sale|sales|discount|discounts|coupon|coupons|preorder|pre-order"
-    r"|buy|buys|buying|shop|shopping|store|stores|restock|restocked|sold\s+out"
+    r"|shop|shopping|store|stores|restock|restocked|sold\s+out"
     r"|unboxing|haul|walmart|costco|shein|temu|ebay|etsy|shopify|tiktok\s+shop"
     r"|sneaker|sneakers|gadget|gadgets|toy|toys|fashion|beauty|skincare|makeup"
     r"|shoe|shoes|electronics|console|product|products"
