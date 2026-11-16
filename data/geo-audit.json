@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-16T01:52:47.946162+00:00",
-  "generated_at_cst": "2026-11-16T01:52:47.946162+00:00",
+  "generated_at": "2026-11-16T02:05:50.770702+00:00",
+  "generated_at_cst": "2026-11-16T02:05:50.770702+00:00",
   "site": "https://staroltest.github.io/ecommerce-hot",
   "site_name": "跨境电商选品HOT",
   "summary": {
-    "pass": 9,
+    "pass": 10,
     "fail": 0,
     "unknown": 0
   },
@@ -19,7 +19,7 @@
       "id": "sitemap",
       "name": "sitemap.xml 完整且 lastmod 可信",
       "status": "pass",
-      "detail": "1629 条 URL；lastmod 共 30 个不同日期；磁盘 HTML 1626 页，漏 0 页。"
+      "detail": "1631 条 URL；lastmod 共 30 个不同日期；磁盘 HTML 1628 页，漏 0 页。"
     },
     {
       "id": "llms",
@@ -32,6 +32,12 @@
       "name": "抽查页面 canonical / hreflang 齐全",
       "status": "pass",
       "detail": "抽查 6 页（首页/聚合/日报/详情）全部含 canonical、hreflang zh-CN + x-default、robots meta、RSS 发现链接。"
+    },
+    {
+      "id": "og",
+      "name": "抽查页面 OG 图与图标链接齐全",
+      "status": "pass",
+      "detail": "抽查 6 页 og:image / twitter:image 均指向 /assets/og-image.png，twitter:card 为 summary_large_image，含 favicon.ico 与 apple-touch-icon 链接。"
     },
     {
       "id": "jsonld",
