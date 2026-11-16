@@ -525,12 +525,21 @@ GTRENDS_SHOPPING = {"black friday", "cyber monday", "prime day", "prime big deal
 # 就是这么漏进来的。代价：Apple Watch Ultra / iPhone 17 Pro /
 # Galaxy Z Fold 这类只有 price/release/review 的产品名会被拦，
 # 它们本来也会经由其余 32 个源进来，接受这点损失。
+# 2026-11-16 第 6 次漏网：\"adam devine\"（Adam Devine 谈“最差节日礼物”
+# 娱乐新闻）靠新闻标题里的裸词 gift 救回人名规则又通过 gate。
+# 修复：裸词 gift/gifts 移出 gate（GTRENDS_COMMERCE_RE 救援词表里保留，
+# 人名规则仍可被救回，但最后的 gate 会拦住——deny-gate）。
+# 但 gift guide / gift ideas / gift set / gift box / best gift 这类
+# 明确的购物短语留在 gate 里，礼物指南类选品信号不至于全灭。
+# 代价：新闻里只有裸词 gift 的纯礼物话题会被拦，接受这点损失，
+# 礼物类选品信号仍可经其余 32 个源进来。
 GTRENDS_GATE_RE = re.compile(
     r"\b(?:\$\s*\d|sale|sales|discount|discounts|coupon|coupons|preorder|pre-order"
     r"|buy|buys|buying|shop|shopping|store|stores|restock|restocked|sold\s+out"
     r"|unboxing|haul|walmart|costco|shein|temu|ebay|etsy|shopify|tiktok\s+shop"
     r"|sneaker|sneakers|gadget|gadgets|toy|toys|fashion|beauty|skincare|makeup"
-    r"|shoe|shoes|electronics|console|product|products|gift|gifts"
+    r"|shoe|shoes|electronics|console|product|products"
+    r"|gift\s+ideas|gift\s+guide|gift\s+set|gift\s+box|best\s+gifts?"
     r"|holiday\s+shopping|black\s+friday|cyber\s+monday|prime\s+day"
     r"|prime\s+big\s+deal\s+days|singles\s+day|small\s+business\s+saturday"
     r"|in\s+stock|clearance|bestseller|best\s+seller)\b",
