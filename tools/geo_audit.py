@@ -8,7 +8,7 @@
 只读检查现有文件 + 写两个输出文件，不改其他文件；所有网络检查都有超时，
 失败时记为 unknown/fail，不抛异常。
 
-检查项（9 项）：
+检查项（10 项）：
     1 robots.txt 是否点名放行 AI 爬虫、是否屏蔽 Bytespider、是否声明 Sitemap
     2 sitemap.xml 的 URL 数、lastmod 是否可信（多于 1 个不同日期）、有无漏页
     3 llms.txt 是否存在且提到 MCP 接入点
@@ -18,6 +18,7 @@
     7 MCP 端点是否可达
     8 Cloudflare Pages 镜像是否已部署新版 robots.txt
     9 feed.xml 是否可解析、条目数
+    10 抽查页面的 OG 图与图标链接（batch 2 落地检查）
 """
 
 import argparse
@@ -196,6 +197,29 @@ def run(root, site_url=None):
     else:
         add("head", "抽查页面 canonical / hreflang 齐全", "fail",
             ("未抽到页面。" if not sample_html else "；".join(bad)))
+
+    # 10. OG 图与图标链接（batch 2 落地检查）
+    bad_og = []
+    for rel, h in sample_html.items():
+        lacks = []
+        if "/assets/og-image.png" not in h:
+            lacks.append("og:image/twitter:image 未指向 /assets/og-image.png")
+        if 'content="summary_large_image"' not in h:
+            lacks.append("twitter:card 不是 summary_large_image")
+        if "favicon.ico" not in h:
+            lacks.append("favicon.ico 链接缺失")
+        if "apple-touch-icon" not in h:
+            lacks.append("apple-touch-icon 链接缺失")
+        if lacks:
+            bad_og.append(f"{rel} 缺 {';'.join(lacks)}")
+    if sample_html and not bad_og:
+        add("og", "抽查页面 OG 图与图标链接齐全", "pass",
+            f"抽查 {len(sample_html)} 页 og:image / twitter:image 均指向 "
+            f"/assets/og-image.png，twitter:card 为 summary_large_image，"
+            f"含 favicon.ico 与 apple-touch-icon 链接。")
+    else:
+        add("og", "抽查页面 OG 图与图标链接齐全", "fail",
+            ("未抽到页面。" if not sample_html else "；".join(bad_og)))
 
     # 5. JSON-LD
     bad_ld, types_seen = [], set()
