@@ -5,8 +5,8 @@
  "date": "2026年11月17日",
  "date_iso": "2026-11-17",
  "issue": 1,
- "generated_at": "2026-11-16T22:21:34.720612+00:00",
- "summary": "过去 30 天共收录 920 条动态，精选 10 条（跨境平台动态 6 条、选品趋势 3 条、营销与测品 1 条）。头条：亚马逊竞品突然起量：销量、价格和流量词能说明什么？。",
+ "generated_at": "2026-11-16T23:52:37.148850+00:00",
+ "summary": "过去 30 天共收录 926 条动态，精选 10 条（跨境平台动态 5 条、选品趋势 4 条、营销与测品 1 条）。头条：亚马逊竞品突然起量：销量、价格和流量词能说明什么？。",
  "items": [
   {
    "id": "f58cc615688d749a1d5cd7ede28da35432b36fbd",
@@ -29,9 +29,9 @@
    "reason": "涉及销量与流量 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 71.7,
-   "prev_rank": 7,
-   "prev_hot_score": 71.7
+   "hot_score": 70.7,
+   "prev_rank": 6,
+   "prev_hot_score": 70.7
   },
   {
    "id": "3f66869392b41b70d78ca6110fe27fb075adaebc",
@@ -53,9 +53,9 @@
    "reason": "涉及销量与FBA · 6 小时内发布",
    "is_new": true,
    "trend": "same",
-   "hot_score": 81.7,
+   "hot_score": 80.6,
    "prev_rank": 1,
-   "prev_hot_score": 81.7
+   "prev_hot_score": 80.6
   },
   {
    "id": "6c633455ad87295ff2f2859db015992d4f6608a1",
@@ -77,9 +77,9 @@
    "reason": "涉及FBA与利润 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 66.4,
+   "hot_score": 65.5,
    "prev_rank": 17,
-   "prev_hot_score": 66.4
+   "prev_hot_score": 65.5
   },
   {
    "id": "8bf4ff0f2c22bcd7edfd7736e12dd7c426cd432b",
@@ -101,9 +101,9 @@
    "reason": "涉及流量与竞品 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 67.4,
+   "hot_score": 66.5,
    "prev_rank": 12,
-   "prev_hot_score": 67.5
+   "prev_hot_score": 66.5
   },
   {
    "id": "d0d90eff884b580c00ff0a87ba0dafc82c2c4f71",
@@ -125,9 +125,9 @@
    "reason": "涉及跨境与投流 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 67.4,
+   "hot_score": 66.5,
    "prev_rank": 13,
-   "prev_hot_score": 67.5
+   "prev_hot_score": 66.5
   },
   {
    "id": "bcdbdc40a7fbf6b44e722a06ad335d711288e6a2",
@@ -149,9 +149,9 @@
    "reason": "涉及指南与流量 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 67.4,
+   "hot_score": 66.5,
    "prev_rank": 14,
-   "prev_hot_score": 67.5
+   "prev_hot_score": 66.5
   },
   {
    "id": "f734fd607c13c84a25e275fd1741938d6bef9508",
@@ -173,76 +173,80 @@
    "reason": "涉及live与营收 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 70.6,
+   "hot_score": 69.6,
    "prev_rank": 9,
-   "prev_hot_score": 70.6
+   "prev_hot_score": 69.7
   },
   {
-   "id": "a04feb7149f51493cb1c6cb80520248bca44a37f",
-   "title": "How to find the best Black Friday deals and shop smarter",
-   "link": "https://blog.google/products-and-platforms/products/shopping/black-friday-cyber-monday-shopping-tips-2026",
-   "source": "Google Shopping 博客",
-   "source_id": "google-shopping",
-   "published": "2026-11-16T14:00:00+00:00",
-   "zh_title": "黑五购物攻略：如何找到最划算的折扣、买得更聪明",
-   "zh_oneliner": "Google 购物分享黑五比价与省钱技巧，卖家可从中了解消费者今年的比价习惯与促销敏感点。",
+   "id": "de8a6f51810b792e84deb188654fbaf635a45fa5",
+   "title": "做Wayfair怎么选品？成熟畅销品vs高增长蓝海品类丨Wayfair运营干货③",
+   "link": "https://www.cifnews.com/article/189569",
+   "source": "雨果网（抓取）",
+   "source_id": "cifnews-scrape",
+   "published": "2026-11-13T05:50:13.550827+00:00",
+   "zh_title": "做Wayfair怎么选品？成熟畅销品vs高增长蓝海品类",
+   "zh_oneliner": "对比成熟畅销品与高增长蓝海品类，讲清在 Wayfair 上怎么做选品。",
    "category": "xuanpin",
    "category_label": "选品趋势",
-   "tier": "T1",
-   "tags": [],
-   "score": 80,
-   "reason": "官方来源 · 24 小时内发布",
+   "tier": "T2",
+   "tags": [
+    "选品",
+    "运营",
+    "增长"
+   ],
+   "score": 75,
+   "reason": "涉及选品与运营 · 与本主题相关",
    "is_new": false,
    "trend": "same",
-   "hot_score": 74.0,
-   "prev_rank": 6,
-   "prev_hot_score": 74.0
+   "hot_score": 32.5,
+   "prev_rank": null,
+   "prev_hot_score": null
   },
   {
-   "id": "d16a8df3ebcc9ef6240a1f2b2d9ebce271ed8e5e",
-   "title": "2026 Holiday Shipping Deadlines: USPS, UPS & FedEx Cutoffs for eCommerce Sellers",
-   "link": "https://blog.ordoro.com/2026/11/16/holiday-shipping-deadlines-2026",
-   "source": "Ordoro 博客",
-   "source_id": "ordoro",
-   "published": "2026-11-16T16:54:55+00:00",
-   "zh_title": "2026 假日季快递截止日期：USPS、UPS 与 FedEx 截单时间一览",
-   "zh_oneliner": "Ordoro 汇总三大快递商的假日截单日期，跨境卖家可据此安排黑五与圣诞季的发货节奏。",
-   "category": "platform",
-   "category_label": "跨境平台动态",
-   "tier": "T2",
-   "tags": [
-    "live"
-   ],
-   "score": 80,
-   "reason": "涉及live · 6 小时内发布",
-   "is_new": true,
-   "trend": "same",
-   "hot_score": 76.1,
-   "prev_rank": 3,
-   "prev_hot_score": 76.1
-  },
-  {
-   "id": "d2ab3ab39112c86d2d030e98dd4bd54b14781fa1",
-   "title": "Cross-border men's lapel half-sleeved t-shirt solid color cotton plus size loose foreign trade collar short-sleeved t-shirt",
-   "link": "https://www.jadeship.com/item/1688/773453105445",
-   "source": "JadeShip 1688 七日榜",
-   "source_id": "jadeship-1688",
-   "published": "2026-11-16T17:14:55+00:00",
-   "zh_title": "跨境男士翻领半袖纯棉T恤",
-   "zh_oneliner": "1688 七日销量榜第 33 名，较上期上升 157 位。",
+   "id": "46b8217a7294fe8ceedd8a118f2561bb3eba0657",
+   "title": "欠薪资、砍预算，部分跨境企业濒临倒闭",
+   "link": "https://mjzj.com/article/g45sb92r9af4",
+   "source": "卖家之家（抓取）",
+   "source_id": "mjzj-scrape",
+   "published": "2026-11-16T01:49:04.110944+00:00",
+   "zh_title": "欠薪资、砍预算，部分跨境企业濒临倒闭",
+   "zh_oneliner": "部分跨境企业出现欠薪与预算缩减，行业调整期卖家需留意合作方经营风险。",
    "category": "xuanpin",
    "category_label": "选品趋势",
    "tier": "T2",
    "tags": [
-    "cross-border"
+    "跨境"
    ],
-   "score": 80,
-   "reason": "涉及cross-border · 6 小时内发布",
-   "is_new": true,
+   "score": 75,
+   "reason": "涉及跨境 · 24 小时内发布",
+   "is_new": false,
    "trend": "same",
-   "hot_score": 76.3,
-   "prev_rank": 2,
-   "prev_hot_score": 76.3
+   "hot_score": 61.1,
+   "prev_rank": null,
+   "prev_hot_score": null
+  },
+  {
+   "id": "f676879148269c79f44afb47b3c2086a63c72189",
+   "title": "亚马逊爆款为什么也可能成为卖家的“陷阱”？",
+   "link": "https://mjzj.com/article/g4cfyedvyu4g",
+   "source": "卖家之家（抓取）",
+   "source_id": "mjzj-scrape",
+   "published": "2026-11-16T01:49:04.110944+00:00",
+   "zh_title": "亚马逊爆款为什么也可能成为卖家的“陷阱”？",
+   "zh_oneliner": "爆款未必等于稳赚，文章分析爆款背后可能藏着的库存与利润陷阱。",
+   "category": "xuanpin",
+   "category_label": "选品趋势",
+   "tier": "T2",
+   "tags": [
+    "爆款"
+   ],
+   "score": 75,
+   "reason": "涉及爆款 · 24 小时内发布",
+   "is_new": false,
+   "trend": "same",
+   "hot_score": 61.1,
+   "prev_rank": null,
+   "prev_hot_score": null
   }
  ]
 }
