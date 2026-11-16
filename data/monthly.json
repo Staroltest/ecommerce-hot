@@ -5,8 +5,8 @@
  "date": "2026年11月16日",
  "date_iso": "2026-11-16",
  "issue": 1,
- "generated_at": "2026-11-15T22:20:38.976687+00:00",
- "summary": "过去 30 天共收录 706 条动态，精选 10 条（选品趋势 6 条、供应链与物流 1 条、跨境平台动态 2 条、选品工具与数据 1 条）。头条：做Wayfair怎么选品？成熟畅销品vs高增长蓝海品类。",
+ "generated_at": "2026-11-16T00:26:12.750840+00:00",
+ "summary": "过去 30 天共收录 711 条动态，精选 10 条（选品趋势 6 条、供应链与物流 1 条、跨境平台动态 2 条、选品工具与数据 1 条）。头条：做Wayfair怎么选品？成熟畅销品vs高增长蓝海品类。",
  "items": [
   {
    "id": "de8a6f51810b792e84deb188654fbaf635a45fa5",
@@ -29,7 +29,7 @@
    "reason": "涉及选品与运营 · 与本主题相关",
    "is_new": false,
    "trend": "same",
-   "hot_score": 46.7,
+   "hot_score": 45.8,
    "prev_rank": null,
    "prev_hot_score": null
   },
@@ -54,7 +54,7 @@
    "reason": "涉及选品与物流 · 与本主题相关",
    "is_new": false,
    "trend": "same",
-   "hot_score": 44.1,
+   "hot_score": 43.3,
    "prev_rank": null,
    "prev_hot_score": null
   },
@@ -79,7 +79,7 @@
    "reason": "涉及指南与运营 · 与本主题相关",
    "is_new": false,
    "trend": "same",
-   "hot_score": 41.2,
+   "hot_score": 40.4,
    "prev_rank": null,
    "prev_hot_score": null
   },
@@ -104,7 +104,7 @@
    "reason": "涉及指南与选品 · 与本主题相关",
    "is_new": false,
    "trend": "same",
-   "hot_score": 41.2,
+   "hot_score": 40.4,
    "prev_rank": null,
    "prev_hot_score": null
   },
@@ -129,7 +129,7 @@
    "reason": "涉及物流与跨境 · 与本主题相关",
    "is_new": false,
    "trend": "same",
-   "hot_score": 39.6,
+   "hot_score": 38.9,
    "prev_rank": null,
    "prev_hot_score": null
   },
@@ -154,7 +154,7 @@
    "reason": "涉及跨境与爆款 · 与本主题相关",
    "is_new": false,
    "trend": "same",
-   "hot_score": 41.6,
+   "hot_score": 40.8,
    "prev_rank": null,
    "prev_hot_score": null
   },
@@ -178,7 +178,7 @@
    "reason": "涉及爆款与流量 · 与本主题相关",
    "is_new": false,
    "trend": "same",
-   "hot_score": 42.7,
+   "hot_score": 41.9,
    "prev_rank": null,
    "prev_hot_score": null
   },
@@ -201,9 +201,9 @@
    "reason": "涉及cross-border · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 61.4,
-   "prev_rank": 9,
-   "prev_hot_score": 61.4
+   "hot_score": 60.2,
+   "prev_rank": 11,
+   "prev_hot_score": 60.3
   },
   {
    "id": "7f12a99fc00e5bae0b3ac18ccac55aa486d260d5",
@@ -224,9 +224,9 @@
    "reason": "涉及增长 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 63.2,
-   "prev_rank": 5,
-   "prev_hot_score": 63.2
+   "hot_score": 62.0,
+   "prev_rank": 7,
+   "prev_hot_score": 62.1
   },
   {
    "id": "c1680e063c511059e981768312e6efeb5f4577d0",
@@ -247,9 +247,9 @@
    "reason": "涉及跨境 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 63.2,
-   "prev_rank": 6,
-   "prev_hot_score": 63.2
+   "hot_score": 62.0,
+   "prev_rank": 8,
+   "prev_hot_score": 62.1
   }
  ]
 }

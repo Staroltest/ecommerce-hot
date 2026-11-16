@@ -2193,6 +2193,18 @@ def _theme_btn(lang="zh"):
             f'<span class="ic-monitor">{icon("monitor", 20)}</span></button>')
 
 
+def _alt_for(canon, lang, site_url):
+    """由 canonical 推导本页路径与另一语言对应页的相对链接。
+    与 page_open 共用同一规则；page_close 也用它算页脚切换的链接。"""
+    _rel = canon[len(site_url):].lstrip("/") if canon.startswith(site_url) else ""
+    page_path = _rel or "index.html"
+    if lang == "en" and not page_path.startswith("en/"):
+        page_path = "en/" + page_path
+    depth = page_path.count("/")
+    alt_path = ("en/" + page_path) if lang == "zh" else page_path[3:]
+    return page_path, alt_path, "../" * depth + alt_path
+
+
 def lang_switch_html(lang, alt_href):
     """中文 | EN 切换：当前语言为不可点的 on 态，另一语言链到对应版本页；
     点击时由 site.js 把选择记入 localStorage（ecommerce-hot-lang）。"""
@@ -2250,7 +2262,7 @@ def tabbar_html(active, prefix="", base="", lang="zh"):
     return f'<nav class="tabbar" aria-label="{tr(lang, "主导航", "Main navigation")}"><div class="tabbar-in">{links}</div></nav>'
 
 
-def footer_html(site, base="", lang="zh"):
+def footer_html(site, base="", lang="zh", alt_href=""):
     name = esc(site["name"])
     repo = esc(site.get("repo", ""))
     note = site.get("footer_note", "")
@@ -2274,6 +2286,7 @@ def footer_html(site, base="", lang="zh"):
     return (f'<footer class="foot"><p>{foot_p}</p>'
             + (f'<p>{esc(note)}</p>' if note else '')
             + f'<nav class="foot-links" aria-label="{tr(lang, "页脚链接", "Footer links")}">'
+            + f'{lang_switch_html(lang, alt_href) if alt_href else ""}'
             f'<a href="{root_base}feed.xml">{tr(lang, "RSS 订阅", "RSS Feed")}</a>'
             f'{mcp_link}'
             f'<a href="{root_base}data/days/index.json">{tr(lang, "数据 JSON", "Data JSON")}</a>'
@@ -2293,20 +2306,13 @@ def page_open(site, active, title, description, prefix="", base="", canonical=""
     canon = canonical or site_url + "/"
     # 本页在站内的相对路径（由 canonical 推导；调用方须传正确的 canonical，
     # 见 render_all 的显式传入）。据此算出另一语言对应页的相对链接 alt_href。
-    _rel = canon[len(site_url):].lstrip("/") if canon.startswith(site_url) else ""
-    page_path = _rel or "index.html"
-    if lang == "en" and not page_path.startswith("en/"):
-        page_path = "en/" + page_path
-    depth = page_path.count("/")
+    page_path, alt_path, alt_href = _alt_for(canon, lang, site_url)
     if lang == "zh":
-        alt_path = "en/" + page_path
         en_url = site_url + "/en/" if page_path == "index.html" else site_url + "/en/" + page_path
         zh_url, x_default = canon, en_url
     else:
-        alt_path = page_path[3:]
         zh_url = site_url + "/" if alt_path == "index.html" else site_url + "/" + alt_path
         en_url, x_default = canon, canon
-    alt_href = "../" * depth + alt_path
     html_lang = "en" if lang == "en" else "zh-CN"
     # 站根资源（favicon、site.css）的相对基：英文页在 /en/ 下，要再上一级；中文页与 base 相同。
     root_base = ("../" + base) if lang == "en" else base
@@ -2372,12 +2378,15 @@ def analytics_beacon(site):
             f"<!-- End Cloudflare Web Analytics -->")
 
 
-def page_close(site, active, prefix="", base="", lang="zh"):
+def page_close(site, active, prefix="", base="", lang="zh", canonical=""):
     # 站根资源（site.js）与页面链接的相对基不同：英文页在 /en/ 下，要再上一级。
     root_base = ("../" + base) if lang == "en" else base
+    # 页脚语言切换：由 canonical 推导另一语言对应页（与 page_open 共用 _alt_for 规则）；
+    # 未传 canonical 时不渲染页脚切换。
+    alt_href = _alt_for(canonical, lang, site.get("url", ""))[2] if canonical else ""
     to_top = (f'<button type="button" class="to-top" id="toTop" aria-label="{tr(lang, "回到顶部", "Back to top")}">'
               f'{icon("arrow-up", 18)}</button>')
-    return (f"{footer_html(site, base, lang)}</div></div></div>{to_top}{tabbar_html(active, prefix, base, lang)}<script src='{root_base}assets/site.js'></script>{analytics_beacon(site)}</body></html>\n")
+    return (f"{footer_html(site, base, lang, alt_href)}</div></div></div>{to_top}{tabbar_html(active, prefix, base, lang)}<script src='{root_base}assets/site.js'></script>{analytics_beacon(site)}</body></html>\n")
 
 
 def day_header(d, items, today, aside=False, lang="zh"):
@@ -2630,7 +2639,7 @@ def render_index(site, cats, cfg, src_by_id, selected, hot, timeline, generated_
             + '<p class="load-more-state" id="loadMoreState"></p></div>'
             + f'<p class="feed-end" id="feedEnd" hidden>{tr(lang, "已经到底了", "You have reached the end")}</p>'
             + f'<script id="ihConfig" type="application/json">{cfg_json}</script>'
-            + page_close(site, "featured", lang=lang))
+            + page_close(site, "featured", lang=lang, canonical=site.get("url", "") + ("/en/" if lang == "en" else "/")))
 
 
 def render_all(site, cats, cfg, src_by_id, selected, hot, pool, generated_at, lang="zh"):
@@ -2727,7 +2736,7 @@ def render_all(site, cats, cfg, src_by_id, selected, hot, pool, generated_at, la
             + '<p class="load-more-state" id="loadMoreState"></p></div>'
             + f'<p class="feed-end" id="feedEnd" hidden>{tr(lang, "已经到底了", "You have reached the end")}</p>'
             + f'<script id="ihConfig" type="application/json">{cfg_json}</script>'
-            + page_close(site, "all", lang=lang))
+            + page_close(site, "all", lang=lang, canonical=site.get("url", "") + ("/en/all.html" if lang == "en" else "/all.html")))
 
 
 LAUNCH_DATE = datetime(2026, 1, 1, tzinfo=CST).date()
@@ -2808,7 +2817,7 @@ def render_period(site, kind, report, base="", prev=None, next_=None, canonical=
             f'<p{" lang=\"zh-CN\"" if lang == "en" else ""}>{esc(report["summary"])}</p></div>'
             + f'<h2 class="sec">{picked} {tr(lang, f"{len(report["items"])} 条", f"{len(report["items"])} items")}</h2>'
             + items_html + nav + "</div>"
-            + page_close(site, kind, prefix="index.html", base=base, lang=lang))
+            + page_close(site, kind, prefix="index.html", base=base, lang=lang, canonical=canonical))
 
 
 def render_daily(site, daily, base="", prev=None, next_=None, canonical="", lang="zh"):
@@ -2840,7 +2849,7 @@ def render_starred(site, lang="zh"):
             f'{tr(lang, "点开标题即记已读；下架的条目会置灰保留。", "Opening a title marks it read; removed items stay greyed out.")}</span></p>'
             + '<div id="starList"></div>'
             + empty_state
-            + page_close(site, "starred", prefix="index.html", lang=lang))
+            + page_close(site, "starred", prefix="index.html", lang=lang, canonical=site.get("url", "") + ("/en/starred.html" if lang == "en" else "/starred.html")))
 
 
 def render_more(site, changelog_version, lang="zh"):
@@ -2906,7 +2915,7 @@ def render_more(site, changelog_version, lang="zh"):
             + f'<section class="more-sec"><h2>{tr(lang, "数据与订阅", "Data & feeds")}</h2>{data_row}'
             f'<p class="more-note">{more_note}</p></section>'
             + f'<section class="more-sec"><h2>{tr(lang, "关于本站", "About this site")}</h2>{about_rows}</section>'
-            + page_close(site, "more", prefix="index.html", lang=lang))
+            + page_close(site, "more", prefix="index.html", lang=lang, canonical=site.get("url", "") + ("/en/more.html" if lang == "en" else "/more.html")))
 
 
 def render_changelog(site, entries, lang="zh"):
@@ -2927,7 +2936,7 @@ def render_changelog(site, entries, lang="zh"):
             + f'<h1>{tr(lang, "更新日志", "Changelog")}</h1>'
             + f'<p class="lede">{tr(lang, f"{site["name"]} 每次改版都记在这里。", f"Every change to {site["name"]} is logged here.")}</p>'
             + f'<div id="changelogPage" data-changelog-version="{esc(latest)}">{items_html}</div>'
-            + page_close(site, "changelog", prefix="index.html", lang=lang))
+            + page_close(site, "changelog", prefix="index.html", lang=lang, canonical=site.get("url", "") + ("/en/changelog.html" if lang == "en" else "/changelog.html")))
 
 
 def render_archive(site, daily_entries, weekly_entries, monthly_entries, lang="zh"):
@@ -2981,7 +2990,7 @@ def render_archive(site, daily_entries, weekly_entries, monthly_entries, lang="z
             + f'<h2 class="sec">{tr(lang, "日报", "Daily")}</h2>' + daily_section()
             + period_section(tr(lang, "周报", "Weekly"), weekly_entries, tr(lang, "周报", "Weekly"))
             + period_section(tr(lang, "月报", "Monthly"), monthly_entries, tr(lang, "月报", "Monthly"))
-            + page_close(site, "archive", prefix="index.html", base="../", lang=lang))
+            + page_close(site, "archive", prefix="index.html", base="../", lang=lang, canonical=site.get("url", "") + ("/en/daily/archive.html" if lang == "en" else "/daily/archive.html")))
 
 
 def render_topic(site, label, slug, items, lang="zh"):
@@ -2997,7 +3006,7 @@ def render_topic(site, label, slug, items, lang="zh"):
             + f'<h1>#{esc(label)}</h1>'
             + f'<p class="lede">{tr(lang, f"共 {len(items)} 条", f"{len(items)} items")} · <a href="../topics.html">{tr(lang, "全部主题 →", "All topics →")}</a></p>'
             + items_html
-            + page_close(site, "topics", prefix="index.html", base="../", lang=lang))
+            + page_close(site, "topics", prefix="index.html", base="../", lang=lang, canonical=site.get("url", "") + ("/en/topics/" if lang == "en" else "/topics/") + slug + ".html"))
 
 
 def render_topics_index(site, tag_counts, lang="zh"):
@@ -3016,7 +3025,7 @@ def render_topics_index(site, tag_counts, lang="zh"):
             + f'<h1>{tr(lang, "主题", "Topics")}</h1>'
             + f'<p class="lede">{tr(lang, "按标签浏览：点一个标签，看它下面最近 30 天的动态。", "Browse by tag: pick one to see its updates from the last 30 days.")}</p>'
             + (f'<section class="more-sec">{rows}</section>' if rows else f"<p>{tr(lang, '暂无标签。', 'No topics yet.')}</p>")
-            + page_close(site, "topics", prefix="index.html", lang=lang))
+            + page_close(site, "topics", prefix="index.html", lang=lang, canonical=site.get("url", "") + ("/en/topics.html" if lang == "en" else "/topics.html")))
 
 
 def render_simple_page(site, active, title, lede, blocks, canonical_path, lang="zh"):
@@ -3033,7 +3042,7 @@ def render_simple_page(site, active, title, lede, blocks, canonical_path, lang="
             + f'<h1>{esc(title)}</h1>'
             + f'<p class="lede">{esc(lede)}</p>'
             + body
-            + page_close(site, active, prefix="index.html", lang=lang))
+            + page_close(site, active, prefix="index.html", lang=lang, canonical=site.get("url", "") + "/" + en_path))
 
 
 def render_about(site, lang="zh"):
@@ -3195,7 +3204,7 @@ def render_item(site, it, related, is_selected, daily_issue, lang="zh"):
             + tags_html
             + related_html
             + '</article>'
-            + page_close(site, "all", prefix="index.html", base="../", lang=lang))
+            + page_close(site, "all", prefix="index.html", base="../", lang=lang, canonical=canonical))
 
 
 def render_404(site):
@@ -3302,7 +3311,7 @@ def render_hot(site, hot, generated_at, counts, cfg, lang="zh"):
             + f'<h1>{tr(lang, "热点榜", "Hot List")}</h1>'
             + f'<p class="lede">{tr(lang, "更新于", "Updated")} {esc(generated_at)}{tr(lang, "（北京时间）", " (Beijing Time)")}<span class="lede-rest">{lede_rest}</span></p>'
             + hero + subs + rest + method
-            + page_close(site, "hot", prefix="index.html", lang=lang))
+            + page_close(site, "hot", prefix="index.html", lang=lang, canonical=site.get("url", "") + ("/en/hot.html" if lang == "en" else "/hot.html")))
 
 
 def rss_date(dt):
