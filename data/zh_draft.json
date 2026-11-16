@@ -2793,5 +2793,9 @@
   "https://www.retaildive.com/news/asics-boosts-inventory-management-using-warehouse-drones/874481": {
     "zh_title": "亚瑟士用仓库无人机提升库存管理",
     "zh_oneliner": "亚瑟士在仓库引入无人机盘点库存，盘点与拣货效率提升，做仓储自动化的卖家值得参考。"
+  },
+  "https://www.sellerlabs.com/blog/amazon-search-ranks-ai-agent-filters": {
+    "zh_title": "亚马逊搜索只管排名，AI 助手负责筛选：关键规格写进标题才会被选中",
+    "zh_oneliner": "实测对比亚马逊搜索与 AI 购物助手：搜索前 24 名半数是广告且无一完全符合需求，而 AI 助手按规格精准筛选；卖家须把关键参数写进标题，否则在代理购物时代会被直接跳过。"
   }
 }
