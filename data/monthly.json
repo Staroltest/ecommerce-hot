@@ -5,38 +5,10 @@
  "date": "2026年11月18日",
  "date_iso": "2026-11-18",
  "issue": 1,
- "generated_at": "2026-11-17T22:22:56.656663+00:00",
- "summary": "过去 30 天共收录 1115 条动态，精选 10 条（跨境平台动态 4 条、选品工具与数据 2 条、选品趋势 4 条）。头条：亿邦动力联合央国企及供应链平台参编，《供应商能力建设指南 总则》国家标准发布。",
- "en_summary": "Past 30 days collected 1115 updates, featuring 10 (Cross-Border Platform Updates 4, Tools & Data 2, Product Trends 4). Headline: National Standard “Supplier Capability Building Guidelines — General Principles” Released, Co-Drafted by Ebun and State-Owned Enterprises.",
+ "generated_at": "2026-11-17T23:53:06.358341+00:00",
+ "summary": "过去 30 天共收录 1121 条动态，精选 10 条（选品工具与数据 2 条、选品趋势 4 条、跨境平台动态 4 条）。头条：Numetri × Ordoro：用 AI 让电商数据发挥价值。",
+ "en_summary": "Past 30 days collected 1121 updates, featuring 10 (Tools & Data 2, Product Trends 4, Cross-Border Platform Updates 4). Headline: Numetri + Ordoro: Put Your eCommerce Data to Work with AI.",
  "items": [
-  {
-   "id": "4f8b6e0fa54b19e67561103b09f9d2dd7f97a183",
-   "title": "亿邦动力联合数家央国企及供应链平台参编《供应商能力建设指南 总则》国家标准发布",
-   "link": "https://www.ebrun.com/20261117/720101.shtml",
-   "source": "亿邦动力（抓取）",
-   "source_id": "ebrun-scrape",
-   "published": "2026-11-17T04:00:00+00:00",
-   "zh_title": "亿邦动力联合央国企及供应链平台参编，《供应商能力建设指南 总则》国家标准发布",
-   "zh_oneliner": "亿邦动力与多家央国企及供应链平台共同参编的《供应商能力建设指南 总则》国家标准正式发布。",
-   "en_title": "National Standard “Supplier Capability Building Guidelines — General Principles” Released, Co-Drafted by Ebun and State-Owned Enterprises",
-   "en_oneliner": "The national standard “Supplier Capability Building Guidelines — General Principles,” co-drafted by Ebun with central state-owned enterprises and supply-chain platforms, has been officially released.",
-   "en_source": "Ebrun",
-   "category": "platform",
-   "category_label": "跨境平台动态",
-   "tier": "T2",
-   "tags": [
-    "指南",
-    "供应链",
-    "供应商"
-   ],
-   "score": 85,
-   "reason": "涉及指南与供应链 · 24 小时内发布",
-   "is_new": false,
-   "trend": "same",
-   "hot_score": 71.6,
-   "prev_rank": 7,
-   "prev_hot_score": 71.7
-  },
   {
    "id": "7b2befdeed512d249bf2c7e69dbbfce10ffc1ca2",
    "title": "Numetri + Ordoro: Put Your eCommerce Data to Work with AI",
@@ -60,9 +32,9 @@
    "reason": "涉及数据与operation · 6 小时内发布",
    "is_new": true,
    "trend": "same",
-   "hot_score": 83.3,
+   "hot_score": 82.2,
    "prev_rank": 2,
-   "prev_hot_score": 83.4
+   "prev_hot_score": 82.2
   },
   {
    "id": "f56842ddd336def17d57d561b8ebf282cdfdd6d2",
@@ -87,9 +59,9 @@
    "reason": "涉及数据与增长 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 66.4,
-   "prev_rank": 17,
-   "prev_hot_score": 66.4
+   "hot_score": 65.5,
+   "prev_rank": 18,
+   "prev_hot_score": 65.5
   },
   {
    "id": "591d3a6c4393ab391f172b1809a169e993220ea5",
@@ -114,9 +86,9 @@
    "reason": "涉及榜单与热销 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 67.3,
+   "hot_score": 66.4,
    "prev_rank": 13,
-   "prev_hot_score": 67.3
+   "prev_hot_score": 66.4
   },
   {
    "id": "75e5d866dc3515d226baa14a3ae59f8dc59a760f",
@@ -141,9 +113,9 @@
    "reason": "涉及GMV与爆卖 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 67.6,
+   "hot_score": 66.7,
    "prev_rank": 11,
-   "prev_hot_score": 67.7
+   "prev_hot_score": 66.7
   },
   {
    "id": "0cd63f0acb82400ac1c7c64257c21463686b6051",
@@ -168,9 +140,9 @@
    "reason": "涉及优化与竞品 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 67.4,
+   "hot_score": 66.5,
    "prev_rank": 12,
-   "prev_hot_score": 67.5
+   "prev_hot_score": 66.5
   },
   {
    "id": "08b89f1656cef7d2673050f1ddf8804e63d80cfe",
@@ -195,9 +167,9 @@
    "reason": "涉及工具与新品 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 70.8,
+   "hot_score": 69.9,
    "prev_rank": 8,
-   "prev_hot_score": 70.9
+   "prev_hot_score": 69.9
   },
   {
    "id": "cd8f2e556ac45f2ca28d556333f8febae0585893",
@@ -221,9 +193,9 @@
    "reason": "涉及GMV · 6 小时内发布",
    "is_new": true,
    "trend": "same",
-   "hot_score": 84.3,
+   "hot_score": 83.1,
    "prev_rank": 1,
-   "prev_hot_score": 84.3
+   "prev_hot_score": 83.1
   },
   {
    "id": "de8a6f51810b792e84deb188654fbaf635a45fa5",
@@ -249,7 +221,7 @@
    "reason": "涉及选品与运营 · 与本主题相关",
    "is_new": false,
    "trend": "same",
-   "hot_score": 26.3,
+   "hot_score": 26.0,
    "prev_rank": null,
    "prev_hot_score": null
   },
@@ -277,7 +249,33 @@
    "reason": "涉及销量与流量 · 与本主题相关",
    "is_new": false,
    "trend": "same",
-   "hot_score": 50.6,
+   "hot_score": 49.9,
+   "prev_rank": null,
+   "prev_hot_score": null
+  },
+  {
+   "id": "6b7a12139f7a9e7edd0aeb7e7b288fe878209f96",
+   "title": "重磅新规！个人香港公司时代落幕，跨境卖家资金或将卡壳",
+   "link": "https://mjzj.com/article/g4j2wzhbmtxc",
+   "source": "卖家之家（抓取）",
+   "source_id": "mjzj-scrape",
+   "published": "2026-11-17T02:17:54.207400+00:00",
+   "zh_title": "重磅新规！个人香港公司时代落幕，跨境卖家资金或将卡壳",
+   "zh_oneliner": "新规之下个人香港公司时代落幕，跨境卖家的资金流转可能受影响。",
+   "en_title": "Major New Rules! The Era of Personal Hong Kong Companies Ends, Cross-Border Sellers' Funds May Stall",
+   "en_oneliner": "New rules mark the end of the personal Hong Kong company era, and cross-border sellers' fund flows may be affected.",
+   "en_source": "MJZJ",
+   "category": "platform",
+   "category_label": "跨境平台动态",
+   "tier": "T2",
+   "tags": [
+    "跨境"
+   ],
+   "score": 75,
+   "reason": "涉及跨境 · 24 小时内发布",
+   "is_new": false,
+   "trend": "same",
+   "hot_score": 61.4,
    "prev_rank": null,
    "prev_hot_score": null
   }
