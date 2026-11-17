@@ -5,8 +5,8 @@
  "date": "2026年11月17日",
  "date_iso": "2026-11-17",
  "issue": 1,
- "generated_at": "2026-11-16T23:52:37.148850+00:00",
- "summary": "过去 7 天共收录 772 条动态，精选 10 条（跨境平台动态 5 条、选品趋势 4 条、营销与测品 1 条）。头条：亚马逊竞品突然起量：销量、价格和流量词能说明什么？。",
+ "generated_at": "2026-11-17T00:56:27.577073+00:00",
+ "summary": "过去 7 天共收录 773 条动态，精选 10 条（跨境平台动态 5 条、营销与测品 1 条、选品趋势 4 条）。头条：亚马逊竞品突然起量：销量、价格和流量词能说明什么？。",
  "items": [
   {
    "id": "f58cc615688d749a1d5cd7ede28da35432b36fbd",
@@ -29,33 +29,9 @@
    "reason": "涉及销量与流量 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 70.7,
-   "prev_rank": 6,
-   "prev_hot_score": 70.7
-  },
-  {
-   "id": "3f66869392b41b70d78ca6110fe27fb075adaebc",
-   "title": "Your Best Q4 SKU Might Be a Bad Q1 Reorder. Check the Market With an AI Agent First",
-   "link": "https://www.ecomengine.com/blog/q4-sku-q1-reorder",
-   "source": "eComEngine 博客",
-   "source_id": "ecomengine",
-   "published": "2026-11-16T18:07:34+00:00",
-   "zh_title": "Q4 畅销 SKU 未必适合 Q1 补货：先用 AI 智能体看市场",
-   "zh_oneliner": "eComEngine 提醒卖家：Q4 热卖款到 Q1 未必还好卖，补货前先用 AI 智能体核查市场需求再决定。",
-   "category": "xuanpin",
-   "category_label": "选品趋势",
-   "tier": "T2",
-   "tags": [
-    "销量",
-    "FBA"
-   ],
-   "score": 85,
-   "reason": "涉及销量与FBA · 6 小时内发布",
-   "is_new": true,
-   "trend": "same",
-   "hot_score": 80.6,
-   "prev_rank": 1,
-   "prev_hot_score": 80.6
+   "hot_score": 70.0,
+   "prev_rank": 5,
+   "prev_hot_score": 70.0
   },
   {
    "id": "6c633455ad87295ff2f2859db015992d4f6608a1",
@@ -77,9 +53,9 @@
    "reason": "涉及FBA与利润 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 65.5,
-   "prev_rank": 17,
-   "prev_hot_score": 65.5
+   "hot_score": 64.8,
+   "prev_rank": 16,
+   "prev_hot_score": 64.9
   },
   {
    "id": "8bf4ff0f2c22bcd7edfd7736e12dd7c426cd432b",
@@ -101,9 +77,9 @@
    "reason": "涉及流量与竞品 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 66.5,
-   "prev_rank": 12,
-   "prev_hot_score": 66.5
+   "hot_score": 65.8,
+   "prev_rank": 11,
+   "prev_hot_score": 65.9
   },
   {
    "id": "d0d90eff884b580c00ff0a87ba0dafc82c2c4f71",
@@ -125,9 +101,9 @@
    "reason": "涉及跨境与投流 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 66.5,
-   "prev_rank": 13,
-   "prev_hot_score": 66.5
+   "hot_score": 65.8,
+   "prev_rank": 12,
+   "prev_hot_score": 65.9
   },
   {
    "id": "bcdbdc40a7fbf6b44e722a06ad335d711288e6a2",
@@ -149,9 +125,9 @@
    "reason": "涉及指南与流量 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 66.5,
-   "prev_rank": 14,
-   "prev_hot_score": 66.5
+   "hot_score": 65.8,
+   "prev_rank": 13,
+   "prev_hot_score": 65.9
   },
   {
    "id": "f734fd607c13c84a25e275fd1741938d6bef9508",
@@ -173,9 +149,33 @@
    "reason": "涉及live与营收 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 69.6,
-   "prev_rank": 9,
-   "prev_hot_score": 69.7
+   "hot_score": 68.9,
+   "prev_rank": 8,
+   "prev_hot_score": 69.0
+  },
+  {
+   "id": "3f66869392b41b70d78ca6110fe27fb075adaebc",
+   "title": "Your Best Q4 SKU Might Be a Bad Q1 Reorder. Check the Market With an AI Agent First",
+   "link": "https://www.ecomengine.com/blog/q4-sku-q1-reorder",
+   "source": "eComEngine 博客",
+   "source_id": "ecomengine",
+   "published": "2026-11-16T18:07:34+00:00",
+   "zh_title": "Q4 畅销 SKU 未必适合 Q1 补货：先用 AI 智能体看市场",
+   "zh_oneliner": "eComEngine 提醒卖家：Q4 热卖款到 Q1 未必还好卖，补货前先用 AI 智能体核查市场需求再决定。",
+   "category": "xuanpin",
+   "category_label": "选品趋势",
+   "tier": "T2",
+   "tags": [
+    "销量",
+    "FBA"
+   ],
+   "score": 80,
+   "reason": "涉及销量与FBA · 24 小时内发布",
+   "is_new": true,
+   "trend": "same",
+   "hot_score": 75.1,
+   "prev_rank": 1,
+   "prev_hot_score": 75.1
   },
   {
    "id": "de8a6f51810b792e84deb188654fbaf635a45fa5",
@@ -198,7 +198,7 @@
    "reason": "涉及选品与运营 · 与本主题相关",
    "is_new": false,
    "trend": "same",
-   "hot_score": 32.5,
+   "hot_score": 32.2,
    "prev_rank": null,
    "prev_hot_score": null
   },
@@ -221,7 +221,7 @@
    "reason": "涉及跨境 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 61.1,
+   "hot_score": 60.5,
    "prev_rank": null,
    "prev_hot_score": null
   },
@@ -244,7 +244,7 @@
    "reason": "涉及爆款 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 61.1,
+   "hot_score": 60.5,
    "prev_rank": null,
    "prev_hot_score": null
   }
