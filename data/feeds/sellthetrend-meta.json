@@ -59,14 +59,15 @@
   "stats": "$40,875 Estimated Monthly Revenue. Buy for $14.34, sell for $39.95, profit $25.61.",
   "month": "Updated for November 2026"
  },
- "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=tC1DY1es0zTpmoRsw3YnFdL5JYPIGuhC&location=handpicked": {
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=CmWnEUjoZNSZBECsyiFbcRGeGqLO5nGA&location=handpicked": {
   "kind": "weekly",
   "rank": 1,
   "niche": "Automotive Accessories",
   "niches": [
-   "Automotive Accessories"
+   "Automotive Accessories",
+   "Travel & Digital Nomad Gear"
   ],
-  "margin": "68.97%",
+  "margin": "71.67%",
   "competition": "low"
  },
  "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=gIPU2EFheZyEII6mDavEaiueQwRXwLaj&location=handpicked": {
@@ -90,14 +91,14 @@
   "margin": "72.97%",
   "competition": "low"
  },
- "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=FuOuqUHbLKic1AmnyO4AhmnHJJ9LEnfb&location=handpicked": {
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=hoqB81nuPaAwLfGKw3WEA7352Z6wQaUw&location=handpicked": {
   "kind": "weekly",
   "rank": 1,
   "niche": "Cooking & Kitchen Gadgets",
   "niches": [
    "Cooking & Kitchen Gadgets"
   ],
-  "margin": "66.13%",
+  "margin": "68.78%",
   "competition": "low"
  },
  "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=KnawDJ1komz9ntWWesAASvMZNGEmrIMZ&location=handpicked": {
@@ -213,16 +214,6 @@
    "Phone Accessories"
   ],
   "margin": "62.27%",
-  "competition": "low"
- },
- "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=CmWnEUjoZNSZBECsyiFbcRGeGqLO5nGA&location=handpicked": {
-  "kind": "weekly",
-  "rank": 1,
-  "niche": "Travel & Digital Nomad Gear",
-  "niches": [
-   "Travel & Digital Nomad Gear"
-  ],
-  "margin": "70.93%",
   "competition": "low"
  }
 }
