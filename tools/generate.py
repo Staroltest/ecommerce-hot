@@ -2145,7 +2145,7 @@ def _nav_items(prefix, base="", lang="zh"):
     ]
 
 
-def sidebar_html(site, active, prefix="", base="", lang="zh"):
+def sidebar_html(site, active, prefix="", base="", lang="zh", alt_href=""):
     # 站根资源（data JSON）与页面链接的相对基不同：英文页在 /en/ 下，站根资源要再上一级。
     root_base = ("../" + base) if lang == "en" else base
     items = _nav_items(prefix, base, lang)
@@ -2162,6 +2162,12 @@ def sidebar_html(site, active, prefix="", base="", lang="zh"):
         f'<a class="side-link{" on" if active == "about" else ""}" href="{base}about.html">{icon("rss")}<span>{tr(lang, "关于", "About")}</span></a>'
         f'<a class="side-link" href="{site["repo"]}/issues" target="_blank" rel="noopener">{icon("message")}<span>{tr(lang, "反馈", "Feedback")}</span></a>'
         f'<a class="side-link" href="{root_base}data/hot.json">{icon("code")}<span>{tr(lang, "数据 JSON", "Data JSON")}</span></a>')
+    lang_link = ""
+    if alt_href:
+        other = "en" if lang == "zh" else "zh"
+        lang_link = ('<a class="gh" href="' + alt_href + '" '
+                     'onclick="try{localStorage.setItem(\'ecommerce-hot-lang\',\'' + other + '\')}catch(e){}">'
+                     + tr(lang, "English", "中文") + '</a>')
     return (f'<aside class="sidebar"><a class="brand" href="{base}index.html">{_logo(32)}'
             f'<span><b>{esc(site["name"])}</b><small>{esc(site.get("subtitle", ""))}</small></span></a>'
             f'<nav aria-label="{tr(lang, "主导航", "Main navigation")}"><div class="nav-sec"><h3>{tr(lang, "内容", "Content")}</h3>{links}</div>'
@@ -2169,6 +2175,7 @@ def sidebar_html(site, active, prefix="", base="", lang="zh"):
             f'</div></nav>'
             f'<div class="side-foot">'
             f'<a class="gh" href="{site["repo"]}" target="_blank" rel="noopener">{tr(lang, "GitHub 仓库", "GitHub Repo")}</a>'
+            f'{lang_link}'
             f'{_theme_btn(lang)}'
             f'<p class="note">{tr(lang, f"每天 {esc(site["edition_time_cst"])} 出日报", f"Daily issue at {esc(site["edition_time_cst"])}")}</p>'
             f'</div></aside>')
@@ -2363,7 +2370,7 @@ def page_open(site, active, title, description, prefix="", base="", canonical=""
             f"{article_meta}"
             f'{ld_html}'
             f"{theme_boot(site)}{lang_boot(alt_href) if lang == 'zh' else ''}<link rel=\"stylesheet\" href=\"{root_base}assets/site.css\"></head>\n<body>"
-            f'<div class="shell">{sidebar_html(site, active, prefix, base, lang)}{rail_html(site, active, prefix, base, lang)}'
+            f'<div class="shell">{sidebar_html(site, active, prefix, base, lang, alt_href)}{rail_html(site, active, prefix, base, lang)}'
             f'<div class="main">{topbar_html(site, active, prefix, base, lang, alt_href)}<div class="page{page_cls}">')
 
 
