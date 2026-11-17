@@ -469,7 +469,7 @@ GTRENDS_DENY = re.compile(
     r"|chargers|jets|giants|dolphins|bills"
     r"|movie|film|tv\s+show|episode|album|concert|tour|grammy|oscar|emmy"
     r"|golden\s+globe|actor|actress|singer|rapper|celebrity|snl|saturday\s+night\s+live"
-    r"|netflix|disney|marvel|trailer|president|white\s+house|senate|congress|election"
+    r"|netflix|disney|marvel|starz|paramount|hulu|peacock|hbo|showtime|trailer|president|white\s+house|senate|congress|election"
     r"|minister|prime\s+minister|lobbyist|summit|protest|war|sports?|athlete"
     r"|nfl\.com|nhl\.com|nbcsports|yahoo\s+sports|fox\s+sports|cbs\s+sports"
     r"|the\s+athletic|bleacher\s+report|sporting\s+news|sports\s+illustrated|sky\s+sports"
@@ -501,6 +501,13 @@ GTRENDS_DENY = re.compile(
     #   hathaway stock sales"（Yahoo Finance），靠 gate 里的 sales 一词放行。
     #   只加 "stock sale(s)" 短语：裸词 stock 不能加，"in stock" 是产品信号；
     #   gate 里的 sales 保留，"holiday sales" 类购物热搜仍可通过。---
+    # --- 2026-11-18 补：流媒体订阅类热搜（第 10 次漏网：本轮 "starz"，首条新闻
+    #   是 Mashable 的 Paramount+ 黑五流媒体订阅折扣，新闻标题里的 black friday
+    #   既救回了单字标题规则、又通过了 gate，冲进热点第 3。流媒体订阅折扣不是
+    #   选品信号。只加品牌名（starz/paramount/hulu/peacock/hbo/showtime，与已
+    #   有的 netflix/disney 同类）；裸词 streaming 不加——直播电商新闻里也会出
+    #   现 streaming（如 TikTok live streaming sales），加了会误杀真实选品信号。
+    #   代价：未列入的流媒体品牌（如 Crunchyroll）仍可能漏网，届时再补。---
     r"|gta|grand\s+theft\s+auto|fortnite|minecraft|roblox|call\s+of\s+duty|zelda|elden\s+ring|genshin|honkai|overwatch|valorant|apex\s+legends|league\s+of\s+legends|world\s+of\s+warcraft|baldur'?s\s+gate"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)

@@ -64,8 +64,7 @@
   "rank": 1,
   "niche": "Automotive Accessories",
   "niches": [
-   "Automotive Accessories",
-   "Travel & Digital Nomad Gear"
+   "Automotive Accessories"
   ],
   "margin": "68.97%",
   "competition": "low"
@@ -76,8 +75,7 @@
   "niche": "Baby & Parenting Essentials",
   "niches": [
    "Baby & Parenting Essentials",
-   "Smart Home Electronics & Tech Gadgets",
-   "Hobby & Creative Kits"
+   "Smart Home Electronics & Tech Gadgets"
   ],
   "margin": "64.93%",
   "competition": "low"
@@ -108,10 +106,20 @@
   "niche": "Eco-Friendly Essentials",
   "niches": [
    "Eco-Friendly Essentials",
-   "Sustainable Fashion & Apparel",
    "Health, Wellness & Recovery"
   ],
   "margin": "77.75%",
+  "competition": "low"
+ },
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=UgebAemWdeombeEt6VeGGGcCYErVaP9H&location=handpicked": {
+  "kind": "weekly",
+  "rank": 1,
+  "niche": "Sustainable Fashion & Apparel",
+  "niches": [
+   "Sustainable Fashion & Apparel",
+   "Seasonal"
+  ],
+  "margin": "71.24%",
   "competition": "low"
  },
  "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=OM4ZAo4fWCzCv7ncPGJkZfGOkAqFciCH&location=handpicked": {
@@ -134,15 +142,16 @@
   "margin": "70.75%",
   "competition": "low"
  },
- "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=WFFtBJp999rnBJgw5dxSX9aTb1cV8eZi&location=handpicked": {
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=dWeVFltU62tqJuPZi8vSzXTx4S5Uotal&location=handpicked": {
   "kind": "weekly",
   "rank": 1,
-  "niche": "Home Improvement & Decor",
+  "niche": "Hobby & Creative Kits",
   "niches": [
+   "Hobby & Creative Kits",
    "Home Improvement & Decor",
-   "Seasonal"
+   "Tools & DIY Hardware"
   ],
-  "margin": "65.7%",
+  "margin": "71.95%",
   "competition": "low"
  },
  "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=vPw9clifVXBWmTE6HcN0RiL4DrlTS8aB&location=handpicked": {
@@ -186,14 +195,14 @@
   "margin": "64.51%",
   "competition": "low"
  },
- "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=462vNdKM9yGNvucz5TCuqfjTSYJojiOz&location=handpicked": {
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=3pTiZ9QFd2adV61HXFObohAGowskJqTL&location=handpicked": {
   "kind": "weekly",
   "rank": 1,
   "niche": "Pet",
   "niches": [
    "Pet"
   ],
-  "margin": "73.27%",
+  "margin": "74.89%",
   "competition": "low"
  },
  "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=ekiHe7OroWerbQSzsCwI9LNuUuWgYpHn&location=handpicked": {
@@ -206,14 +215,14 @@
   "margin": "62.27%",
   "competition": "low"
  },
- "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=YvMplVesXbTDsjk0vnIN0Clexjf9UjPs&location=handpicked": {
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=CmWnEUjoZNSZBECsyiFbcRGeGqLO5nGA&location=handpicked": {
   "kind": "weekly",
   "rank": 1,
-  "niche": "Tools & DIY Hardware",
+  "niche": "Travel & Digital Nomad Gear",
   "niches": [
-   "Tools & DIY Hardware"
+   "Travel & Digital Nomad Gear"
   ],
-  "margin": "62.71%",
+  "margin": "70.93%",
   "competition": "low"
  }
 }
