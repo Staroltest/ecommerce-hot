@@ -403,9 +403,9 @@ function getStore(){
       var m=starMeta[id]||{};
       var it=live[id];
       var gone=!it;
-      var title=m.title||(it?(IS_EN?it.title:(it.zh_title||it.title)):(IS_EN?'(Unknown title)':'（标题未知）'));
+      var title=m.title||(it?(IS_EN?(it.en_title||it.title):(it.zh_title||it.title)):(IS_EN?'(Unknown title)':'（标题未知）'));
       var link=m.link||(it?it.link:'#');
-      var source=m.source||(it?it.source:'');
+      var source=m.source||(it?(IS_EN?(it.en_source||it.source):it.source):'');
       var at=m.at?new Date(m.at):null;
       var atStr=at?(IS_EN?('Saved on '+['January','February','March','April','May','June','July','August','September','October','November','December'][at.getMonth()]+' '+at.getDate()+', '+at.getFullYear()):('收藏于 '+at.getFullYear()+'年'+(at.getMonth()+1)+'月'+at.getDate()+'日')):'';
       return '<article class="feed-item starred-item'+(gone?' is-gone':'')+'">'
@@ -505,9 +505,9 @@ function computeMeta(it){
 }
 function cardHTML(it){
   var m=computeMeta(it);
-  var title=IS_EN?it.title:(it.zh_title||it.title);
-  var summary=it.zh_oneliner||'';
-  var en=it.title;
+  var title=IS_EN?(it.en_title||it.title):(it.zh_title||it.title);
+  var summary=IS_EN?(it.en_oneliner||it.zh_oneliner||''):(it.zh_oneliner||'');
+  var en=it.en_title||it.title;
   var pub=cstParts(new Date(it.published));
   var off=m.tier==='T1'?'<span class="off-tag">'+(IS_EN?'Official':'官方')+'</span>':'';
   var isNew=false;
@@ -523,7 +523,7 @@ function cardHTML(it){
   var catLbl=IS_EN?((IH_CFG&&IH_CFG.catLabelsEn&&IH_CFG.catLabelsEn[it.category])||it.category_label||it.category||''):(it.category_label||it.category||'');
   return '<article class="feed-item" data-id="'+escHtml(it.id)+'" data-category="'+escHtml(it.category||'')+'"'
     +' data-official="'+(m.tier==='T1'?'1':'0')+'" data-en="'+escHtml(en)+'">'
-    +'<header class="fi-head"><span class="src">'+escHtml(it.source)+'</span>'+off
+    +'<header class="fi-head"><span class="src">'+escHtml(IS_EN?(it.en_source||it.source):it.source)+'</span>'+off
     +'<time class="pt">· '+pub.hm+'</time>'+newHtml
     +'<span class="sp"><span class="score-pill '+scoreCls+'" title="'+(IS_EN?'Score ':'评分 ')+m.score+'/100">'
     +'<span class="lbl">'+(IS_EN?'Score':'评分')+'</span><span class="sep"></span><span class="num">'+m.score+'</span></span>'
@@ -574,7 +574,7 @@ function groupSlotHTML(g){
   if(!g.extra.length)return slot;
   var rows=g.extra.map(function(e){
     var p=cstParts(new Date(e.published));
-    return '<li><a href="items/'+escHtml(e.id)+'.html">'+escHtml(e.zh_title||e.title)+'</a>'
+    return '<li><a href="items/'+escHtml(e.id)+'.html">'+escHtml(IS_EN?(e.en_title||e.title):(e.zh_title||e.title))+'</a>'
       +'<span class="ge-time">'+p.hm+'</span></li>';
   }).join('');
   var toggle='<button type="button" class="group-toggle" aria-expanded="false">'+(IS_EN?(g.extra.length+' more reports'):('另有 '+g.extra.length+' 篇报道'))+' <span aria-hidden="true">▾</span></button>';
@@ -722,9 +722,9 @@ function renderSearchResults(){
     var scored=[];
     items.forEach(function(it){
       if(!matchFiltersData(it))return;
-      var title=(((it.zh_title||'')+' '+(it.title||''))+'').toLowerCase();
-      var sum=((it.zh_oneliner||'')+'').toLowerCase();
-      var src=(it.source||'').toLowerCase();
+      var title=(((it.en_title||'')+' '+(it.zh_title||'')+' '+(it.title||''))+'').toLowerCase();
+      var sum=(((it.en_oneliner||'')+' '+(it.zh_oneliner||''))+'').toLowerCase();
+      var src=(((it.en_source||'')+' '+(it.source||''))+'').toLowerCase();
       var tier=0;
       if(title.indexOf(q)>-1)tier=3;
       else if(sum.indexOf(q)>-1)tier=2;

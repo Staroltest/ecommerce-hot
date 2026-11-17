@@ -5,8 +5,9 @@
  "date": "2026年11月17日",
  "date_iso": "2026-11-17",
  "issue": 5,
- "generated_at": "2026-11-17T00:56:27.577073+00:00",
- "summary": "过去 24 小时共收录 209 条动态，精选 10 条（跨境平台动态 6 条、营销与测品 1 条、选品趋势 3 条）。头条：亚马逊竞品突然起量：销量、价格和流量词能说明什么？。",
+ "generated_at": "2026-11-17T01:35:23.324041+00:00",
+ "summary": "过去 24 小时共收录 212 条动态，精选 10 条（跨境平台动态 6 条、营销与测品 1 条、选品趋势 3 条）。头条：亚马逊竞品突然起量：销量、价格和流量词能说明什么？。",
+ "en_summary": "Past 24 hours collected 212 updates, featuring 10 (Cross-Border Platform Updates 6, Marketing & Product Testing 1, Product Trends 3). Headline: When an Amazon Competitor Suddenly Takes Off: What Do Sales, Price and Traffic Keywords Tell You?.",
  "items": [
   {
    "id": "f58cc615688d749a1d5cd7ede28da35432b36fbd",
@@ -17,6 +18,9 @@
    "published": "2026-11-16T04:00:00+00:00",
    "zh_title": "亚马逊竞品突然起量：销量、价格和流量词能说明什么？",
    "zh_oneliner": "竞品销量突然起量时，对照销量、价格与流量词的变化，才能判断是真实需求还是短期波动。",
+   "en_title": "When an Amazon Competitor Suddenly Takes Off: What Do Sales, Price and Traffic Keywords Tell You?",
+   "en_oneliner": "When a competitor's sales suddenly surge, comparing changes in sales, price and traffic keywords shows whether it's real demand or a short-lived spike.",
+   "en_source": "SellerSprite Blog",
    "category": "platform",
    "category_label": "跨境平台动态",
    "tier": "T2",
@@ -29,9 +33,9 @@
    "reason": "涉及销量与流量 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 70.0,
-   "prev_rank": 5,
-   "prev_hot_score": 70.0
+   "hot_score": 69.5,
+   "prev_rank": 10,
+   "prev_hot_score": 69.6
   },
   {
    "id": "6c633455ad87295ff2f2859db015992d4f6608a1",
@@ -42,6 +46,9 @@
    "published": "2026-11-16T02:18:47.108025+00:00",
    "zh_title": "亚马逊FBA费用越来越高，哪些产品正在悄悄失去利润？",
    "zh_oneliner": "FBA费用持续上涨正在侵蚀部分产品的利润空间，卖家需要重新核算哪些品类还值得做。",
+   "en_title": "Amazon FBA Fees Keep Rising — Which Products Are Quietly Losing Their Margins?",
+   "en_oneliner": "Rising FBA fees are quietly eating into some products' margins, and sellers need to recalculate which categories are still worth selling.",
+   "en_source": "MJZJ",
    "category": "platform",
    "category_label": "跨境平台动态",
    "tier": "T2",
@@ -53,9 +60,9 @@
    "reason": "涉及FBA与利润 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 64.8,
-   "prev_rank": 16,
-   "prev_hot_score": 64.9
+   "hot_score": 64.4,
+   "prev_rank": null,
+   "prev_hot_score": null
   },
   {
    "id": "8bf4ff0f2c22bcd7edfd7736e12dd7c426cd432b",
@@ -66,6 +73,9 @@
    "published": "2026-11-16T04:00:00+00:00",
    "zh_title": "亚马逊竞品流量词怎么反查？如何让AI生成选词清单？",
    "zh_oneliner": "卖家精灵分享如何反查竞品流量词，并用 AI 自动生成选词清单，帮卖家找准高转化关键词。",
+   "en_title": "How to Reverse-Engineer a Competitor's Amazon Traffic Keywords — and Let AI Build Your Keyword List",
+   "en_oneliner": "SellerSprite explains how to reverse-engineer competitor traffic keywords and use AI to auto-generate keyword lists that target high-converting search terms.",
+   "en_source": "SellerSprite Blog",
    "category": "platform",
    "category_label": "跨境平台动态",
    "tier": "T2",
@@ -77,9 +87,9 @@
    "reason": "涉及流量与竞品 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 65.8,
-   "prev_rank": 11,
-   "prev_hot_score": 65.9
+   "hot_score": 65.5,
+   "prev_rank": 16,
+   "prev_hot_score": 65.5
   },
   {
    "id": "d0d90eff884b580c00ff0a87ba0dafc82c2c4f71",
@@ -90,6 +100,9 @@
    "published": "2026-11-16T04:00:00+00:00",
    "zh_title": "米多多：单一渠道粗放投流失效，内容力成跨境卖家核心胜负手",
    "zh_oneliner": "黑五访谈指出，单一渠道粗放投流已经失效，内容力成为跨境卖家决胜的关键。",
+   "en_title": "Mi Duo Duo: Single-Channel Ad Blitz No Longer Works — Content Is Now the Deciding Edge for Cross-Border Sellers | Black Friday Interview",
+   "en_oneliner": "A Black Friday interview argues that broad single-channel ad spending has stopped working, and content strength is now what decides cross-border sellers' fate.",
+   "en_source": "Ebrun",
    "category": "platform",
    "category_label": "跨境平台动态",
    "tier": "T2",
@@ -101,9 +114,9 @@
    "reason": "涉及跨境与投流 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 65.8,
-   "prev_rank": 12,
-   "prev_hot_score": 65.9
+   "hot_score": 65.5,
+   "prev_rank": 17,
+   "prev_hot_score": 65.5
   },
   {
    "id": "bcdbdc40a7fbf6b44e722a06ad335d711288e6a2",
@@ -114,6 +127,9 @@
    "published": "2026-11-16T04:00:00+00:00",
    "zh_title": "第17期 旺季流量不浪费：黑五网一SB与SD广告布局指南",
    "zh_oneliner": "黑五网一期间，SB 与 SD 广告如何分配预算、不浪费旺季流量。",
+   "en_title": "Creator Class Ep. 17: Don't Waste Peak-Season Traffic — A Black Friday/Cyber Monday Guide to Sponsored Brands and Sponsored Display Ads",
+   "en_oneliner": "This guide shows how to split budgets between Sponsored Brands and Sponsored Display ads so Black Friday and Cyber Monday traffic doesn't go to waste.",
+   "en_source": "SellerSprite Blog",
    "category": "marketing",
    "category_label": "营销与测品",
    "tier": "T2",
@@ -125,9 +141,9 @@
    "reason": "涉及指南与流量 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 65.8,
-   "prev_rank": 13,
-   "prev_hot_score": 65.9
+   "hot_score": 65.5,
+   "prev_rank": 18,
+   "prev_hot_score": 65.5
   },
   {
    "id": "f734fd607c13c84a25e275fd1741938d6bef9508",
@@ -138,6 +154,9 @@
    "published": "2026-11-16T08:56:43+00:00",
    "zh_title": "TikTok Shop 英国报告：一场直播销售额可超平时一周",
    "zh_oneliner": "报告显示英国站一场直播带货的销售额可能超过卖家平时一周的水平，直播正在成为出单主力渠道。",
+   "en_title": "",
+   "en_oneliner": "The report shows one UK live session can outsell a seller's typical week, making livestreaming a key sales channel.",
+   "en_source": "CedCommerce Blog",
    "category": "platform",
    "category_label": "跨境平台动态",
    "tier": "T2",
@@ -149,9 +168,9 @@
    "reason": "涉及live与营收 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 68.9,
-   "prev_rank": 8,
-   "prev_hot_score": 69.0
+   "hot_score": 68.5,
+   "prev_rank": 13,
+   "prev_hot_score": 68.5
   },
   {
    "id": "3f66869392b41b70d78ca6110fe27fb075adaebc",
@@ -162,6 +181,9 @@
    "published": "2026-11-16T18:07:34+00:00",
    "zh_title": "Q4 畅销 SKU 未必适合 Q1 补货：先用 AI 智能体看市场",
    "zh_oneliner": "eComEngine 提醒卖家：Q4 热卖款到 Q1 未必还好卖，补货前先用 AI 智能体核查市场需求再决定。",
+   "en_title": "",
+   "en_oneliner": "eComEngine warns sellers that a Q4 bestseller may flop in Q1, so check market demand with an AI agent before reordering.",
+   "en_source": "eComEngine Blog",
    "category": "xuanpin",
    "category_label": "选品趋势",
    "tier": "T2",
@@ -173,9 +195,9 @@
    "reason": "涉及销量与FBA · 24 小时内发布",
    "is_new": true,
    "trend": "same",
-   "hot_score": 75.1,
-   "prev_rank": 1,
-   "prev_hot_score": 75.1
+   "hot_score": 74.6,
+   "prev_rank": 6,
+   "prev_hot_score": 74.6
   },
   {
    "id": "46b8217a7294fe8ceedd8a118f2561bb3eba0657",
@@ -186,6 +208,9 @@
    "published": "2026-11-16T01:49:04.110944+00:00",
    "zh_title": "欠薪资、砍预算，部分跨境企业濒临倒闭",
    "zh_oneliner": "部分跨境企业出现欠薪与预算缩减，行业调整期卖家需留意合作方经营风险。",
+   "en_title": "Unpaid Wages and Slashed Budgets: Some Cross-Border Firms Are Near Collapse",
+   "en_oneliner": "Some cross-border companies are falling behind on pay and cutting budgets, and sellers should watch counterparty risks as the industry adjusts.",
+   "en_source": "MJZJ",
    "category": "xuanpin",
    "category_label": "选品趋势",
    "tier": "T2",
@@ -196,7 +221,7 @@
    "reason": "涉及跨境 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 60.5,
+   "hot_score": 60.1,
    "prev_rank": null,
    "prev_hot_score": null
   },
@@ -209,6 +234,9 @@
    "published": "2026-11-16T01:49:04.110944+00:00",
    "zh_title": "亚马逊爆款为什么也可能成为卖家的“陷阱”？",
    "zh_oneliner": "爆款未必等于稳赚，文章分析爆款背后可能藏着的库存与利润陷阱。",
+   "en_title": "Why Can Even an Amazon Bestseller Become a Trap for Sellers?",
+   "en_oneliner": "A bestseller doesn't always mean steady profit — this article unpacks the inventory and margin traps that can hide behind a hit product.",
+   "en_source": "MJZJ",
    "category": "xuanpin",
    "category_label": "选品趋势",
    "tier": "T2",
@@ -219,7 +247,7 @@
    "reason": "涉及爆款 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 60.5,
+   "hot_score": 60.1,
    "prev_rank": null,
    "prev_hot_score": null
   },
@@ -232,6 +260,9 @@
    "published": "2026-11-16T02:18:47.108025+00:00",
    "zh_title": "亚马逊2027年FBA低库存费新规，怎么算？哪些情况会被收费？",
    "zh_oneliner": "2027年低库存费新规的计费方式与触发情形，卖家可以对照自查补货节奏。",
+   "en_title": "Amazon's 2027 FBA Low-Inventory Fee Rules Explained: How Is It Calculated, and When Does It Apply?",
+   "en_oneliner": "This guide breaks down how Amazon's 2027 low-inventory fee is calculated and when it kicks in, so sellers can check their restocking rhythm.",
+   "en_source": "MJZJ",
    "category": "platform",
    "category_label": "跨境平台动态",
    "tier": "T2",
@@ -242,7 +273,7 @@
    "reason": "涉及FBA · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 60.8,
+   "hot_score": 60.4,
    "prev_rank": null,
    "prev_hot_score": null
   }

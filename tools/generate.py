@@ -140,7 +140,9 @@ def parse_date(text):
         return None
 
 
-def fmt_cst(dt):
+def fmt_cst(dt, lang="zh"):
+    if lang == "en":
+        return dt.astimezone(CST).strftime("%b %d, %H:%M")
     return dt.astimezone(CST).strftime("%m月%d日 %H:%M")
 
 
@@ -270,6 +272,68 @@ TAG_SLUGS = {
     "源码": "source-code", "工作流": "workflow",
 }
 
+# 标签在英文版上的显示名（仅显示翻译，slug/链接与数据里的中文标签不变；
+# 已是英文的标签（live、FBA、GMV 等）不在表里，原样显示）。
+TAG_LABEL_EN = {
+    "跨境": "Cross-Border", "销量": "Sales", "增长": "Growth",
+    "工具": "Tools", "数据": "Data", "物流": "Logistics",
+    "运营": "Operations", "指南": "Guides", "流量": "Traffic",
+    "营收": "Revenue", "利润": "Profit", "品类": "Categories",
+    "新品": "New Products", "爆款": "Best Sellers", "选品": "Product Selection",
+    "案例": "Case Studies", "仓储": "Warehousing", "工作流": "Workflows",
+    "竞品": "Competitors", "蓝海": "Blue Ocean", "供应商": "Suppliers",
+    "关税": "Tariffs", "供应链": "Supply Chain", "卖爆": "Selling Out",
+    "榜单": "Rankings", "经验教训": "Lessons Learned",
+    "海外仓": "Overseas Warehouses", "复盘": "Reviews",
+    "优化": "Optimization", "投流": "Ad Spending", "出圈": "Going Viral",
+    "教程": "Tutorials", "转化率": "Conversion Rate", "复购": "Repeat Purchase",
+    "独立站": "Independent Sites", "收入": "Revenue", "经验": "Experience",
+    "教训": "Lessons", "测品": "Product Testing", "测款": "Style Testing",
+    "热销": "Hot Sellers", "飙升": "Surging", "需求激增": "Surging Demand",
+    "销量暴涨": "Sales Surge", "走红": "Going Viral", "热卖": "Hot Sellers",
+    "爆卖": "Selling Fast", "畅销": "Best Sellers", "缺货": "Out of Stock",
+    "定价": "Pricing", "采购成本": "Sourcing Costs", "搜索量": "Search Volume",
+    "利润率": "Profit Margin", "断货": "Out of Stock",
+    "引擎": "Engine", "性能": "Performance", "开源": "Open Source",
+    "源码": "Source Code",
+}
+
+# 来源在英文版上的显示名（仅显示翻译；已是英文的来源不在表里，原样显示）。
+SOURCE_NAME_EN = {
+    "Google Shopping 博客": "Google Shopping Blog",
+    "WooCommerce 博客": "WooCommerce Blog",
+    "ShipBob 博客": "ShipBob Blog",
+    "Printful 博客": "Printful Blog",
+    "SellerApp 博客": "SellerApp Blog",
+    "Ordoro 博客": "Ordoro Blog",
+    "CedCommerce 博客": "CedCommerce Blog",
+    "美国贸易代表办公室": "USTR",
+    "My Amazon Guy 博客": "My Amazon Guy Blog",
+    "增长黑盒": "GrowthBox",
+    "亿邦动力（抓取）": "Ebrun",
+    "雨果网（抓取）": "Cifnews",
+    "电商报（抓取）": "DSB",
+    "卖家之家（抓取）": "MJZJ",
+    "Google 新闻·跨境电商": "Google News · Cross-Border E-Commerce",
+    "SellerEngine 博客": "SellerEngine Blog",
+    "eComEngine 博客": "eComEngine Blog",
+    "Google 新闻·跨境选品": "Google News · Cross-Border Picks",
+    "Google 新闻·亚马逊卖家": "Google News · Amazon Sellers",
+    "Google Trends 美国热搜": "Google Trends US Hot Searches",
+    "NicheHunter TikTok Shop 日榜": "NicheHunter TikTok Shop Daily Top 10",
+    "JadeShip 1688 七日榜": "JadeShip 1688 7-Day Top List",
+    "卖家精灵博客": "SellerSprite Blog",
+    "Sell The Trend 爆款榜": "Sell The Trend Top Products",
+    "WooCommerce 开发者博客": "WooCommerce Developer Blog",
+    "白鲸出海": "Baijing",
+    "Stripe 博客": "Stripe Blog",
+}
+
+
+def src_disp(name, lang="zh"):
+    """来源名在英文版上的显示名；没有映射时原样显示。"""
+    return SOURCE_NAME_EN.get(name, name) if lang == "en" else name
+
 
 # 英文版实际生成的主题页 slug 集合（主流程在算出 tag_counts 后填好）。
 # 英文页上的标签只在该集合里才生成 <a> 链接，否则只显示纯文本——
@@ -280,9 +344,10 @@ EN_TAG_SLUGS = None
 def tag_chip(base, t, lang="zh"):
     """标签小片：有对应主题页时是链接，否则纯文本（英文版防过期标签死链）。"""
     slug = TAG_SLUGS.get(t, t)
+    disp = TAG_LABEL_EN.get(t, t) if lang == "en" else t
     if lang == "en" and EN_TAG_SLUGS is not None and slug not in EN_TAG_SLUGS:
-        return f'<span class="tag">#{esc(t)}</span>'
-    return f'<a class="tag" href="{base}topics/{slug}.html">#{esc(t)}</a>'
+        return f'<span class="tag">#{esc(disp)}</span>'
+    return f'<a class="tag" href="{base}topics/{slug}.html">#{esc(disp)}</a>'
 
 
 def labels_for(item, cfg):
@@ -963,9 +1028,10 @@ WEEKDAYS_SHORT = ["周一", "周二", "周三", "周四", "周五", "周六", "�
 WEEKDAYS_EN = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 WEEKDAYS_EN_SHORT = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 
-# 英文版（/en/，scope A）只翻界面文案：分类名、站名/副标题/描述、导航与页脚、
-# 赞赏区；新闻标题用原文标题，一句话简介（zh_oneliner）仍为中文原文、只标 lang="zh-CN"；
-# 不翻译新闻内容，不接翻译 API，不写 zh_summary。
+# 英文版（/en/）翻界面文案（分类名、站名/副标题/描述、导航与页脚、赞赏区），
+# 也翻新闻标题与一句话简介（en_title / en_oneliner，见 data/en_draft.json；
+# 没有英文版时回落原文标题/中文简介、标 lang="zh-CN"）；不翻推荐理由等中文
+# derived 文案，不接翻译 API，不写 zh_summary。
 CAT_LABEL_EN = {
     "xuanpin": "Product Trends",
     "platform": "Cross-Border Platform Updates",
@@ -1138,7 +1204,8 @@ def feed_item(it, rank=None, badge=False, base="", lang="zh"):
     """AIHOT FeedItem 的静态版：来源行 + 标题 + 一句话简介 + 分类 + 推荐理由 + 星标。
     标题有中文翻译时优先显示中文；简介是本站自己写的一句话（zh_oneliner），
     不展示源站摘要原文。base 是到站根的目录前缀（'' 或 '../'，日报存档页用）。
-    lang=='en' 时：标题用原文标题（不翻译内容），一句话简介仍为中文原文、标 lang="zh-CN"，
+    lang=='en' 时：标题优先用英文翻译（en_title，没有时回落原文标题），
+    简介优先用英文版（en_oneliner，没有时回落中文原文、标 lang="zh-CN"），
     推荐理由（中文 derived 文案）不显示，分类/徽章/按钮用英文。"""
     pub = _pub_dt(it)
     rank_html = ""
@@ -1156,16 +1223,16 @@ def feed_item(it, rank=None, badge=False, base="", lang="zh"):
     if tags:
         tags_html = ('<div class="fi-tags">' + "".join(
             tag_chip(base, t, lang) for t in tags[:3]) + '</div>')
-    title = it["title"] if lang == "en" else (it.get("zh_title") or it["title"])
-    summary = it.get("zh_oneliner") or ""
-    sum_attr = ' lang="zh-CN"' if lang == "en" and summary else ""
+    title = (it.get("en_title") or it["title"]) if lang == "en" else (it.get("zh_title") or it["title"])
+    summary = (it.get("en_oneliner") or it.get("zh_oneliner") or "") if lang == "en" else (it.get("zh_oneliner") or "")
+    sum_attr = ' lang="zh-CN"' if lang == "en" and summary and not it.get("en_oneliner") else ""
     cat_label = (CAT_LABEL_EN.get(it["category"], it["category_label"])
                  if lang == "en" else it["category_label"])
-    en_text = it["title"]
+    en_text = it.get("en_title") or it["title"]
     return (f'<article class="feed-item" data-id="{esc(it["id"])}" data-category="{esc(it["category"])}"'
             f' data-official="{"1" if it.get("_tier") == "T1" else "0"}"'
             f' data-en="{esc(en_text)}">'
-            f'<header class="fi-head"><span class="src">{esc(it["source"])}</span>{off_html}'
+            f'<header class="fi-head"><span class="src">{esc(src_disp(it["source"], lang))}</span>{off_html}'
             f'<time class="pt">· {esc(pub.astimezone(CST).strftime("%H:%M"))}</time>'
             f'{badge_html}{new_html}'
             f'<span class="sp">{score_pill(it["score"], lang)}'
@@ -1175,7 +1242,7 @@ def feed_item(it, rank=None, badge=False, base="", lang="zh"):
             + (f'<p class="sum"{sum_attr}>{esc(summary)}</p>' if summary else "")
             + f'<div class="fi-foot"><button type="button" class="chip cat" data-filter="{esc(it["category"])}">'
             f'{esc(cat_label)}</button>'
-            f'<span class="when">{esc(fmt_cst(pub))}</span></div>'
+            f'<span class="when">{esc(fmt_cst(pub, lang))}</span></div>'
             + tags_html
             + reason_html
             + "</article>")
@@ -1227,7 +1294,7 @@ def hot_row(it, rank, pad=False, lang="zh", base=""):
     else:
         trend_html = (f'<span class="hot-trend"><span class="flat" title="{tr(lang, "热度持平", "Steady")}">'
                       f'{icon("minus", 14)}</span></span>')
-    title = it["title"] if lang == "en" else (it.get("zh_title") or it["title"])
+    title = (it.get("en_title") or it["title"]) if lang == "en" else (it.get("zh_title") or it["title"])
     heat_lbl = tr(lang, "热度", "heat")
     return (f'<li><a class="hot-row" href="{base}items/{esc(it["id"])}.html">'
             f'<span class="rank {cls}">{num}</span>'
@@ -1646,9 +1713,9 @@ function getStore(){
       var m=starMeta[id]||{};
       var it=live[id];
       var gone=!it;
-      var title=m.title||(it?(IS_EN?it.title:(it.zh_title||it.title)):(IS_EN?'(Unknown title)':'（标题未知）'));
+      var title=m.title||(it?(IS_EN?(it.en_title||it.title):(it.zh_title||it.title)):(IS_EN?'(Unknown title)':'（标题未知）'));
       var link=m.link||(it?it.link:'#');
-      var source=m.source||(it?it.source:'');
+      var source=m.source||(it?(IS_EN?(it.en_source||it.source):it.source):'');
       var at=m.at?new Date(m.at):null;
       var atStr=at?(IS_EN?('Saved on '+['January','February','March','April','May','June','July','August','September','October','November','December'][at.getMonth()]+' '+at.getDate()+', '+at.getFullYear()):('收藏于 '+at.getFullYear()+'年'+(at.getMonth()+1)+'月'+at.getDate()+'日')):'';
       return '<article class="feed-item starred-item'+(gone?' is-gone':'')+'">'
@@ -1748,9 +1815,9 @@ function computeMeta(it){
 }
 function cardHTML(it){
   var m=computeMeta(it);
-  var title=IS_EN?it.title:(it.zh_title||it.title);
-  var summary=it.zh_oneliner||'';
-  var en=it.title;
+  var title=IS_EN?(it.en_title||it.title):(it.zh_title||it.title);
+  var summary=IS_EN?(it.en_oneliner||it.zh_oneliner||''):(it.zh_oneliner||'');
+  var en=it.en_title||it.title;
   var pub=cstParts(new Date(it.published));
   var off=m.tier==='T1'?'<span class="off-tag">'+(IS_EN?'Official':'官方')+'</span>':'';
   var isNew=false;
@@ -1766,7 +1833,7 @@ function cardHTML(it){
   var catLbl=IS_EN?((IH_CFG&&IH_CFG.catLabelsEn&&IH_CFG.catLabelsEn[it.category])||it.category_label||it.category||''):(it.category_label||it.category||'');
   return '<article class="feed-item" data-id="'+escHtml(it.id)+'" data-category="'+escHtml(it.category||'')+'"'
     +' data-official="'+(m.tier==='T1'?'1':'0')+'" data-en="'+escHtml(en)+'">'
-    +'<header class="fi-head"><span class="src">'+escHtml(it.source)+'</span>'+off
+    +'<header class="fi-head"><span class="src">'+escHtml(IS_EN?(it.en_source||it.source):it.source)+'</span>'+off
     +'<time class="pt">· '+pub.hm+'</time>'+newHtml
     +'<span class="sp"><span class="score-pill '+scoreCls+'" title="'+(IS_EN?'Score ':'评分 ')+m.score+'/100">'
     +'<span class="lbl">'+(IS_EN?'Score':'评分')+'</span><span class="sep"></span><span class="num">'+m.score+'</span></span>'
@@ -1817,7 +1884,7 @@ function groupSlotHTML(g){
   if(!g.extra.length)return slot;
   var rows=g.extra.map(function(e){
     var p=cstParts(new Date(e.published));
-    return '<li><a href="items/'+escHtml(e.id)+'.html">'+escHtml(e.zh_title||e.title)+'</a>'
+    return '<li><a href="items/'+escHtml(e.id)+'.html">'+escHtml(IS_EN?(e.en_title||e.title):(e.zh_title||e.title))+'</a>'
       +'<span class="ge-time">'+p.hm+'</span></li>';
   }).join('');
   var toggle='<button type="button" class="group-toggle" aria-expanded="false">'+(IS_EN?(g.extra.length+' more reports'):('另有 '+g.extra.length+' 篇报道'))+' <span aria-hidden="true">▾</span></button>';
@@ -1965,9 +2032,9 @@ function renderSearchResults(){
     var scored=[];
     items.forEach(function(it){
       if(!matchFiltersData(it))return;
-      var title=(((it.zh_title||'')+' '+(it.title||''))+'').toLowerCase();
-      var sum=((it.zh_oneliner||'')+'').toLowerCase();
-      var src=(it.source||'').toLowerCase();
+      var title=(((it.en_title||'')+' '+(it.zh_title||'')+' '+(it.title||''))+'').toLowerCase();
+      var sum=(((it.en_oneliner||'')+' '+(it.zh_oneliner||''))+'').toLowerCase();
+      var src=(((it.en_source||'')+' '+(it.source||''))+'').toLowerCase();
       var tier=0;
       if(title.indexOf(q)>-1)tier=3;
       else if(sum.indexOf(q)>-1)tier=2;
@@ -2343,7 +2410,7 @@ def page_open(site, active, title, description, prefix="", base="", canonical=""
         items_ld = {"@context": "https://schema.org", "@type": "ItemList",
                     "itemListElement": [
                         {"@type": "ListItem", "position": i + 1,
-                         "name": (it["title"] if lang == "en" else (it.get("zh_title") or it["title"])),
+                         "name": ((it.get("en_title") or it["title"]) if lang == "en" else (it.get("zh_title") or it["title"])),
                          "url": site_url + ("/en/" if lang == "en" else "/") + "items/" + it["id"] + ".html"}
                         for i, it in enumerate(ld_items[:10])]}
         ld_parts.append(json.dumps(items_ld, ensure_ascii=False))
@@ -2498,7 +2565,7 @@ def timeline_group_slot(group, sel_ids, base="", lang="zh"):
     n = len(extra)
     rows = "".join(
         f'<li><a href="{base}items/{esc(e["id"])}.html">'
-        f'{esc(e["title"] if lang == "en" else (e.get("zh_title") or e["title"]))}</a>'
+        f'{esc((e.get("en_title") or e["title"]) if lang == "en" else (e.get("zh_title") or e["title"]))}</a>'
         f'<span class="ge-time">{esc(e["_pub"].astimezone(CST).strftime("%H:%M"))}</span></li>'
         for e in extra)
     toggle = (f'<button type="button" class="group-toggle" aria-expanded="false">'
@@ -2558,7 +2625,7 @@ def render_index(site, cats, cfg, src_by_id, selected, hot, timeline, generated_
     overlay_cats += f'<button type="button" class="chip" data-filter="official">{tr(lang, "官方", "Official")}</button>'
     overlay_hot = "".join(
         f'<li><span class="rank{" r1" if i == 0 else (" r2" if i == 1 else (" r3" if i == 2 else ""))}">{i + 1}</span>'
-        f'<a href="items/{esc(it["id"])}.html">{esc(it["title"] if lang == "en" else (it.get("zh_title") or it["title"]))}</a></li>'
+        f'<a href="items/{esc(it["id"])}.html">{esc((it.get("en_title") or it["title"]) if lang == "en" else (it.get("zh_title") or it["title"]))}</a></li>'
         for i, it in enumerate(hot[:5]))
     overlay_html = (
         f'<div class="search-overlay" id="searchOverlay" hidden>'
@@ -2607,10 +2674,12 @@ def render_index(site, cats, cfg, src_by_id, selected, hot, timeline, generated_
         f'<button type="button" class="empty-btn" data-empty-action="clear">{tr(lang, "清除筛选", "Clear filters")}</button>'
         f'<button type="button" class="empty-btn primary" data-empty-action="featured">{tr(lang, "去看精选", "Browse featured")}</button>'
         '</div></div>')
+    _missing_en = any(not it.get("en_oneliner") for it in selected + hot + timeline)
     lede_rest = (f' · 最近 7 天共 {counts["total_7d"]} 条 · 精选 {counts["selected"]} 条 · '
                  f'只显示标题与摘要，点击标题查看详情，详情页里有原文链接。') if lang != "en" else \
         (f' · {counts["total_7d"]} items in the last 7 days · {counts["selected"]} featured · '
-         f'Titles and intros only — click a title for details and the source link. Intros are written in Chinese.')
+         f'Titles and intros only — click a title for details and the source link.'
+         + (' Intros are written in Chinese.' if _missing_en else ''))
     return (page_open(site, "featured", f'{site["title"]} · {tr(lang, "今日精选与热点榜", "Featured Today & Hot List")}',
                       site["description"], ld_items=selected,
                       canonical=site.get("url", "") + ("/en/" if lang == "en" else "/"),
@@ -2672,7 +2741,7 @@ def render_all(site, cats, cfg, src_by_id, selected, hot, pool, generated_at, la
     overlay_cats += f'<button type="button" class="chip" data-filter="official">{tr(lang, "官方", "Official")}</button>'
     overlay_hot = "".join(
         f'<li><span class="rank{" r1" if i == 0 else (" r2" if i == 1 else (" r3" if i == 2 else ""))}">{i + 1}</span>'
-        f'<a href="items/{esc(it["id"])}.html">{esc(it["title"] if lang == "en" else (it.get("zh_title") or it["title"]))}</a></li>'
+        f'<a href="items/{esc(it["id"])}.html">{esc((it.get("en_title") or it["title"]) if lang == "en" else (it.get("zh_title") or it["title"]))}</a></li>'
         for i, it in enumerate(hot[:5]))
     overlay_html = (
         f'<div class="search-overlay" id="searchOverlay" hidden>'
@@ -2713,10 +2782,12 @@ def render_all(site, cats, cfg, src_by_id, selected, hot, pool, generated_at, la
         f'<button type="button" class="empty-btn" data-empty-action="clear">{tr(lang, "清除筛选", "Clear filters")}</button>'
         f'<button type="button" class="empty-btn primary" data-empty-action="featured">{tr(lang, "去看精选", "Browse featured")}</button>'
         '</div></div>')
+    _missing_en = any(not it.get("en_oneliner") for it in pool)
     lede_rest = (f' · 最近 30 天共 {len(pool)} 条 · '
                  f'只显示标题与摘要，点击标题查看详情，详情页里有原文链接。') if lang != "en" else \
         (f' · {len(pool)} items in the last 30 days · '
-         f'Titles and intros only — click a title for details and the source link. Intros are written in Chinese.')
+         f'Titles and intros only — click a title for details and the source link.'
+         + (' Intros are written in Chinese.' if _missing_en else ''))
     return (page_open(site, "all", f'{site["title"]} · {tr(lang, "全部动态", "All Updates")}',
                       site["description"],
                       canonical=site.get("url", "") + ("/en/all.html" if lang == "en" else "/all.html"),
@@ -2765,7 +2836,7 @@ def render_period(site, kind, report, base="", prev=None, next_=None, canonical=
     """日报/周报/月报共用同一模板（B9）：kind 为 daily/weekly/monthly。
     report: {kind, date, date_iso, issue, summary, items}。
     prev/next: (label, href) 或 None。base 是到站根的目录前缀。
-    lang=='en' 时界面为英文，导读 summary 仍为中文原文、标 lang="zh-CN"。"""
+    lang=='en' 时界面为英文，导读优先用英文版（en_summary，没有时回落中文原文、标 lang="zh-CN"）。"""
     labels = {"daily": (tr(lang, "日报", "Daily"), tr(lang, "过去 24 小时", "Past 24 hours"),
                         tr(lang, "今日精选", "Today's picks"), tr(lang, "每天", "daily")),
               "weekly": (tr(lang, "周报", "Weekly"), tr(lang, "过去 7 天", "Past 7 days"),
@@ -2811,6 +2882,8 @@ def render_period(site, kind, report, base="", prev=None, next_=None, canonical=
         f'<a href="{base}monthly.html">{tr(lang, "月报", "Monthly")}</a> · <a href="{base}daily/archive.html">{tr(lang, "往期存档", "Archive")}</a></p>')
     sep = " " if lang == "en" else ""
     issue_lbl = f"Issue #{report['issue']}" if lang == "en" else f"第 {report['issue']} 期"
+    glance = (report.get("en_summary") or report["summary"]) if lang == "en" else report["summary"]
+    glance_attr = ' lang="zh-CN"' if lang == "en" and not report.get("en_summary") else ""
     return (page_open(site, kind, f'{site["name"]}{sep}{name} · {disp_date}',
                       period_desc, prefix="index.html", base=base,
                       canonical=canonical, ld_items=report["items"], page_cls=" page-reading",
@@ -2821,7 +2894,7 @@ def render_period(site, kind, report, base="", prev=None, next_=None, canonical=
             + f'<p class="mp-meta">{esc(disp_date)} {wd} · {sched_txt} · '
             f'{window if lang != "en" else window + ":"} {tr(lang, f"精选 {len(report["items"])} 条", f"{len(report["items"])} picks")}</p>{period_nav}</div>'
             + f'<div class="well" style="margin-top:16px"><span class="kicker">{tr(lang, "速览", "At a glance")}</span>'
-            f'<p{" lang=\"zh-CN\"" if lang == "en" else ""}>{esc(report["summary"])}</p></div>'
+            f'<p{glance_attr}>{esc(glance)}</p></div>'
             + f'<h2 class="sec">{picked} {tr(lang, f"{len(report["items"])} 条", f"{len(report["items"])} items")}</h2>'
             + items_html + nav + "</div>"
             + page_close(site, kind, prefix="index.html", base=base, lang=lang, canonical=canonical))
@@ -2930,9 +3003,11 @@ def render_changelog(site, entries, lang="zh"):
     latest = entries[0]["version"] if entries else ""
     items_html = ""
     for e in entries:
-        lis = "".join(f"<li>{esc(x)}</li>" for x in e.get("items", []))
+        cl_title = (e.get("en_title") or e.get("title", "")) if lang == "en" else e.get("title", "")
+        cl_items = (e.get("en_items") or e.get("items", [])) if lang == "en" else e.get("items", [])
+        lis = "".join(f"<li>{esc(x)}</li>" for x in cl_items)
         items_html += (
-            f'<article class="cl-item"><h3>{esc(e.get("title", ""))}</h3>'
+            f'<article class="cl-item"><h3>{esc(cl_title)}</h3>'
             f'<p class="cl-date">{esc(e.get("date", ""))}</p>'
             f"<ul>{lis}</ul></article>")
     return (page_open(site, "changelog", f'{site["title"]} · {tr(lang, "更新日志", "Changelog")}',
@@ -3002,15 +3077,16 @@ def render_archive(site, daily_entries, weekly_entries, monthly_entries, lang="z
 
 def render_topic(site, label, slug, items, lang="zh"):
     """主题页（B11）：某标签下的条目列表。"""
+    disp = TAG_LABEL_EN.get(label, label) if lang == "en" else label
     items_html = "".join(feed_item(it, base="../", lang=lang) for it in items) \
         or f"<p>{tr(lang, '这个标签下暂时没有条目。', 'No items under this topic yet.')}</p>"
-    return (page_open(site, "topics", f'{site["title"]} · #{label}',
-                      f"{tr(lang, f'关于「{label}」的{site.get("audience", "")}动态。', f'Updates about “{label}” for {site.get("audience", "")}.')}",
+    return (page_open(site, "topics", f'{site["title"]} · #{disp}',
+                      f"{tr(lang, f'关于「{label}」的{site.get("audience", "")}动态。', f'Updates about “{disp}” for {site.get("audience", "")}.')}",
                       prefix="index.html", base="../",
                       canonical=site.get("url", "") + ("/en/topics/" if lang == "en" else "/topics/") + slug + ".html",
                       ld_items=items, lang=lang)
-            + f'<div class="m-title">#{esc(label)}</div>'
-            + f'<h1>#{esc(label)}</h1>'
+            + f'<div class="m-title">#{esc(disp)}</div>'
+            + f'<h1>#{esc(disp)}</h1>'
             + f'<p class="lede">{tr(lang, f"共 {len(items)} 条", f"{len(items)} items")} · <a href="../topics.html">{tr(lang, "全部主题 →", "All topics →")}</a></p>'
             + items_html
             + page_close(site, "topics", prefix="index.html", base="../", lang=lang, canonical=site.get("url", "") + ("/en/topics/" if lang == "en" else "/topics/") + slug + ".html"))
@@ -3020,7 +3096,7 @@ def render_topics_index(site, tag_counts, lang="zh"):
     """主题索引（B11）：全部标签 + 条数。"""
     rows = "".join(
         f'<a class="more-row" href="topics/{slug}.html">{icon("rss", 18)}'
-        f'<span class="m-label">#{esc(label)}</span>'
+        f'<span class="m-label">#{esc(TAG_LABEL_EN.get(label, label) if lang == "en" else label)}</span>'
         f'<span class="m-val">{n} {tr(lang, "条", "items")}</span><span class="m-arrow">›</span></a>'
         for label, slug, n in tag_counts)
     return (page_open(site, "topics", f'{site["title"]} · {tr(lang, "主题", "Topics")}',
@@ -3110,18 +3186,25 @@ def render_item(site, it, related, is_selected, daily_issue, lang="zh"):
     相关条目——不编造正文，不转载全文，不展示源站摘要或完整摘要原文。
     导读就是本站自己写的一句话简介（zh_oneliner）；没有简介时只显示标题与链接，
     原文只通过“打开原文”按钮出去。
-    lang=='en' 时标题用原文标题；一句话简介仍为中文原文、标 lang="zh-CN"；
+    lang=='en' 时标题优先用英文翻译（en_title，没有时回落原文标题）；
+    简介优先用英文版（en_oneliner，没有时回落中文原文、标 lang="zh-CN" 并附注）；
     中文推荐理由不显示。"""
     site_url = site.get("url", "")
-    title = it["title"] if lang == "en" else (it.get("zh_title") or it["title"])
+    title = (it.get("en_title") or it["title"]) if lang == "en" else (it.get("zh_title") or it["title"])
     if lang == "en":
         zh_title = it.get("zh_title") or ""
-        alt_title_html = (f'<p class="item-en-title" lang="zh-CN">中文标题：{esc(zh_title)}</p>'
-                          if zh_title and zh_title != it["title"] else "")
+        if zh_title and zh_title != it["title"]:
+            alt = zh_title
+        elif it.get("en_title") and it["en_title"] != it["title"]:
+            alt = it["title"]
+        else:
+            alt = ""
+        alt_title_html = (f'<p class="item-en-title" lang="zh-CN">中文标题：{esc(alt)}</p>'
+                          if alt else "")
     else:
         en_title = it["title"] if (it.get("zh_title") and it["zh_title"] != it["title"]) else ""
         alt_title_html = (f'<p class="item-en-title">原文标题：{esc(en_title)}</p>' if en_title else "")
-    oneliner = it.get("zh_oneliner") or ""
+    oneliner = (it.get("en_oneliner") or it.get("zh_oneliner") or "") if lang == "en" else (it.get("zh_oneliner") or "")
     desc = oneliner if oneliner else title
     pub = _pub_dt(it)
     domain = urllib.parse.urlparse(it["link"]).netloc
@@ -3150,16 +3233,16 @@ def render_item(site, it, related, is_selected, daily_issue, lang="zh"):
              {"@type": "ListItem", "position": 3, "name": title,
               "item": canonical}]},
     ]
-    meta = (f'<span class="src">{esc(it["source"])}</span>'
+    meta = (f'<span class="src">{esc(src_disp(it["source"], lang))}</span>'
             + (f'<span class="off-tag">{tr(lang, "官方", "Official")}</span>' if it.get("tier") == "T1" else "")
-            + f'<time>· {esc(fmt_cst(pub))}</time>'
+            + f'<time>· {esc(fmt_cst(pub, lang))}</time>'
             + (f'<span class="pick">{tr(lang, "精选", "Featured")}</span>' if is_selected else "")
             + f'<span class="sp">{score_pill(it["score"], lang)}</span>')
     # 导读：只显示本站自己写的一句话简介；没有简介时不展示任何源站摘要文字。
-    # 英文页上简介仍为中文原文，标 lang="zh-CN" 并附一小注。
+    # 英文页上简介优先用英文版；没有英文版时回落中文原文，标 lang="zh-CN" 并附一小注。
     guide_text = oneliner
-    guide_note = ' <span class="item-guide-note">(in Chinese)</span>' if lang == "en" else ""
-    guide_attr = ' lang="zh-CN"' if lang == "en" and guide_text else ""
+    guide_note = ' <span class="item-guide-note">(in Chinese)</span>' if lang == "en" and guide_text and not it.get("en_oneliner") else ""
+    guide_attr = ' lang="zh-CN"' if lang == "en" and guide_text and not it.get("en_oneliner") else ""
     guide_html = (f'<p{guide_attr}>{esc(guide_text)}</p>'
                   if guide_text else f'<p>{tr(lang, "这条动态暂无简介，点“打开原文”查看。", "No intro for this item yet — open the source to read it.")}</p>')
     reason_html = (f'<section class="item-sec"><h2>推荐理由</h2>'
@@ -3201,12 +3284,12 @@ def render_item(site, it, related, is_selected, daily_issue, lang="zh"):
             + f'<div class="item-actions">'
             f'<a class="item-open-btn" href="{esc(it["link"])}" target="_blank" rel="noopener">{tr(lang, "打开原文 ↗", "Open source ↗")}</a>'
             f'<button type="button" class="item-ghost-btn" id="itemStarBtn" data-id="{esc(it["id"])}" '
-            f'data-title="{esc(title)}" data-link="{esc(it["link"])}" data-source="{esc(it["source"])}">'
+            f'data-title="{esc(title)}" data-link="{esc(it["link"])}" data-source="{esc(src_disp(it["source"], lang))}">'
             f'{icon("bookmark", 16)}<span>{tr(lang, "收藏", "Save")}</span></button>'
             f'<button type="button" class="item-ghost-btn" id="copyLinkBtn">{tr(lang, "复制链接", "Copy link")}</button>'
             f'<button type="button" class="item-ghost-btn" id="shareBtn" hidden>{tr(lang, "分享", "Share")}</button>'
             f'</div>'
-            + f'<p class="item-source-line">{tr(lang, "来源：", "Source:")}<b>{esc(it["source"])}</b> · {esc(domain)}</p>'
+            + f'<p class="item-source-line">{tr(lang, "来源：", "Source:")}<b>{esc(src_disp(it["source"], lang))}</b> · {esc(domain)}</p>'
             + issue_html
             + tags_html
             + related_html
@@ -3244,16 +3327,16 @@ def render_hot(site, hot, generated_at, counts, cfg, lang="zh"):
     rest = ""
     if hot:
         h0 = hot[0]
-        latest = h0.get("zh_oneliner") or ""
-        h0_title = h0["title"] if lang == "en" else (h0.get("zh_title") or h0["title"])
+        latest = (h0.get("en_oneliner") or h0.get("zh_oneliner") or "") if lang == "en" else (h0.get("zh_oneliner") or "")
+        h0_title = (h0.get("en_title") or h0["title"]) if lang == "en" else (h0.get("zh_title") or h0["title"])
         h0_cat = CAT_LABEL_EN.get(h0["category"], h0["category_label"]) if lang == "en" else h0["category_label"]
-        hero_latest_attr = ' lang="zh-CN"' if lang == "en" else ""
+        hero_latest_attr = ' lang="zh-CN"' if lang == "en" and latest and not h0.get("en_oneliner") else ""
         hero = (
             f'<article class="card hot-hero"><div class="hot-hero-top">'
             f'<span class="no-tag">NO.01</span>{hot_badges(h0, lang)}</div>'
             f'<h2><a href="items/{esc(h0["id"])}.html">'
             f'{esc(h0_title)}</a></h2>'
-            f'<p class="hot-hero-meta">{esc(h0["source"])} · {esc(fmt_cst(_pub_dt(h0)))} · '
+            f'<p class="hot-hero-meta">{esc(src_disp(h0["source"], lang))} · {esc(fmt_cst(_pub_dt(h0), lang))} · '
             f'{esc(h0_cat)}</p>'
             + (f'<p class="hot-hero-latest"><span class="k">{tr(lang, "最新进展", "Latest")}</span>'
                f'<span{hero_latest_attr}>{esc(shorten(latest, 110))}</span></p>'
@@ -3263,13 +3346,13 @@ def render_hot(site, hot, generated_at, counts, cfg, lang="zh"):
     if len(hot) > 1:
         sub_cards = ""
         for i, it in enumerate(hot[1:3], start=2):
-            it_title = it["title"] if lang == "en" else (it.get("zh_title") or it["title"])
+            it_title = (it.get("en_title") or it["title"]) if lang == "en" else (it.get("zh_title") or it["title"])
             sub_cards += (
                 f'<article class="card hot-sub"><div class="hot-sub-top">'
                 f'<span class="no-tag">NO.{i:02d}</span>{hot_badges(it, lang)}</div>'
                 f'<h3><a href="items/{esc(it["id"])}.html">'
                 f'{esc(it_title)}</a></h3>'
-                f'<p class="hot-sub-meta">{esc(it["source"])} · {esc(fmt_cst(_pub_dt(it)))}</p>'
+                f'<p class="hot-sub-meta">{esc(src_disp(it["source"], lang))} · {esc(fmt_cst(_pub_dt(it), lang))}</p>'
                 f'<div class="hot-sub-foot"><span class="hot-num"><b class="num">{round(it["hot_score"])}</b> {tr(lang, "热度", "heat")}</span>'
                 f'{hot_delta_html(it, lang)}</div></article>')
         subs = f'<div class="hot-sub-grid">{sub_cards}</div>'
@@ -3291,7 +3374,7 @@ def render_hot(site, hot, generated_at, counts, cfg, lang="zh"):
             f'<p>Each item is first scored by rule: base {sc["base"]} points; freshness ({rec_txt_en}); '
             f'official sources +{sc["tier_bonus"].get("T1", 0)}'
             f'{("; T3 sources " + str(sc["tier_bonus"]["T3"])) if "T3" in sc["tier_bonus"] else ""}; '
-            f'topic keywords ({", ".join(sc["dev_keywords"])}) '
+            f'topic keywords ({", ".join(TAG_LABEL_EN.get(k, k) for k in sc["dev_keywords"])}) '
             f'+{sc["dev_keyword_bonus"]} each, capped at +{sc["dev_keyword_cap"]}; noise keywords '
             f'{sc["noise_keyword_penalty"]} each, floor {sc["noise_keyword_floor"]}; total capped at 100. '
             f'Heat = score × {sc["decay_base"]}^days (decays daily), last {sc["hot_days"]} days only. '
@@ -3306,10 +3389,12 @@ def render_hot(site, hot, generated_at, counts, cfg, lang="zh"):
             f'下限 {sc["noise_keyword_floor"]}；总分封顶 100 分。热度 = 评分 × {sc["decay_base"]}'
             f'^天数（每天衰减），只看最近 {sc["hot_days"]} 天。趋势对照上一轮榜单：名次上升 2 名以上为上升，'
             f'下降 2 名以上为回落，只挪 1 名算持平；首次上榜标“新”。</p></section>')
+    _missing_en = any(not it.get("en_oneliner") for it in hot)
     lede_rest = (f' · 最近 7 天共 {counts["total_7d"]} 条 · '
                  f'热度按评分随时间衰减，趋势对照上一轮榜单。') if lang != "en" else \
         (f' · {counts["total_7d"]} items in the last 7 days · '
-         f'Heat decays with time; trends compare with the previous list. Intros are written in Chinese.')
+         f'Heat decays with time; trends compare with the previous list.'
+         + (' Intros are written in Chinese.' if _missing_en else ''))
     return (page_open(site, "hot", f'{site["title"]} · {tr(lang, "热点榜", "Hot List")}',
                       site["description"], prefix="index.html",
                       canonical=site.get("url", "") + ("/en/hot.html" if lang == "en" else "/hot.html"),
@@ -3520,6 +3605,26 @@ def main():
                 print(f"zh: {applied} items matched from zh_draft.json")
         except (json.JSONDecodeError, AttributeError) as e:
             print("zh_draft.json skipped (%s)" % e, file=sys.stderr)
+    # 英文翻译（data/en_draft.json，按规范化链接匹配；与 zh_draft 同机制，
+    # 翻译由每轮的翻译步骤更新，下一轮生成自动合入并写回 store.json）
+    en_path = os.path.join(data_dir, "en_draft.json")
+    if os.path.exists(en_path):
+        try:
+            en = load_json(en_path)
+            applied = 0
+            for it in history.values():
+                tr = en.get(norm_link(it.get("link", "")))
+                if not tr:
+                    continue
+                if tr.get("en_title"):
+                    it["en_title"] = tr["en_title"]
+                if tr.get("en_oneliner"):
+                    it["en_oneliner"] = tr["en_oneliner"]
+                applied += 1
+            if applied:
+                print(f"en: {applied} items matched from en_draft.json")
+        except (json.JSONDecodeError, AttributeError) as e:
+            print("en_draft.json skipped (%s)" % e, file=sys.stderr)
     for src in sources:
         try:
             # local: 前缀：读 tools/scrape_cn.py 生成的本地 RSS 文件
@@ -3634,6 +3739,9 @@ def main():
                 "published": it["published"],
                 "zh_title": it.get("zh_title", ""),
                 "zh_oneliner": it.get("zh_oneliner", ""),
+                "en_title": it.get("en_title", ""),
+                "en_oneliner": it.get("en_oneliner", ""),
+                "en_source": SOURCE_NAME_EN.get(it["source"], it["source"]),
                 "category": it["category"], "category_label": it["category_label"],
                 "tier": it.get("_tier", "T2"), "tags": it.get("tags", []),
                 "score": it["score"],
@@ -3644,6 +3752,7 @@ def main():
                 "prev_hot_score": it.get("prev_hot_score")}
 
     gen_cst = now_cst.strftime("%Y年%m月%d日 %H:%M")
+    gen_cst_en = now_cst.strftime("%b %d, %Y %H:%M")
     # hot.json 只写最终发布的热点榜 Top 20（7 天候选只在内存里，不落盘）
     hot_data = {
         "generated_at": now.isoformat(),
@@ -3659,6 +3768,9 @@ def main():
         return {"id": it["id"], "title": it["title"],
                 "zh_title": it.get("zh_title", ""),
                 "zh_oneliner": it.get("zh_oneliner", ""),
+                "en_title": it.get("en_title", ""),
+                "en_oneliner": it.get("en_oneliner", ""),
+                "en_source": SOURCE_NAME_EN.get(it["source"], it["source"]),
                 "link": it["link"], "source": it["source"],
                 "source_id": it.get("source_id", ""),
                 "published": it["published"],
@@ -3780,13 +3892,13 @@ def main():
     # 英文版主页 / 全部 / 热点榜（/en/，与中文页同一套数据）
     with open(os.path.join(en_dir, "index.html"), "w", encoding="utf-8") as f:
         f.write(render_index(en_site, en_cats, cfg, src_by_id, selected, hot, timeline,
-                             gen_cst, hot_data["counts"], lang="en"))
+                             gen_cst_en, hot_data["counts"], lang="en"))
     with open(os.path.join(en_dir, "all.html"), "w", encoding="utf-8") as f:
         f.write(render_all(en_site, en_cats, cfg, src_by_id, selected, hot,
                            sorted(live, key=lambda x: x["_pub"], reverse=True),
-                           gen_cst, lang="en"))
+                           gen_cst_en, lang="en"))
     with open(os.path.join(en_dir, "hot.html"), "w", encoding="utf-8") as f:
-        f.write(render_hot(en_site, hot, gen_cst, hot_data["counts"], cfg, lang="en"))
+        f.write(render_hot(en_site, hot, gen_cst_en, hot_data["counts"], cfg, lang="en"))
 
     # 静态页：收藏 / 我的 / 更新日志 / 关于 / 条款 / 隐私（每轮都重写，内容不依赖抓取）
     changelog = []
@@ -3977,6 +4089,16 @@ def main():
             cat_part = "、".join(f"{k} {v} 条" for k, v in per_cat.items()) or "无"
             head = (f"头条：{items[0].get('zh_title') or items[0]['title']}"
                     if items else "暂无精选")
+            # 英文版导读：同一组数字 + 英文分类名 + 英文头条（en_title，没有时回落原文标题）
+            per_cat_en = {}
+            for it in items:
+                lbl = CAT_LABEL_EN.get(it["category"], it["category_label"])
+                per_cat_en[lbl] = per_cat_en.get(lbl, 0) + 1
+            cat_part_en = ", ".join(f"{k} {v}" for k, v in per_cat_en.items()) or "none"
+            head_en = (f"Headline: {items[0].get('en_title') or items[0]['title']}"
+                       if items else "No featured items")
+            window_label_en = {"daily": "Past 24 hours", "weekly": "Past 7 days",
+                               "monthly": "Past 30 days"}.get(kind, window_label)
             date_str = now_cst.strftime("%Y年%m月%d日")
             date_iso = now_cst.strftime("%Y-%m-%d")
             if kind == "daily":
@@ -3996,6 +4118,8 @@ def main():
                 "generated_at": now.isoformat(),
                 "summary": (f"{window_label}共收录 {len(pool)} 条动态，精选 "
                             f"{len(items)} 条（{cat_part}）。{head}。"),
+                "en_summary": (f"{window_label_en} collected {len(pool)} updates, featuring "
+                               f"{len(items)} ({cat_part_en}). {head_en}."),
                 "items": [pub_item(it) for it in items],
             }
 
