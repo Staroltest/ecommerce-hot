@@ -119,6 +119,15 @@ def scrape_dsb():
         if link in seen:
             continue
         seen.add(link)
+        # 2026-11-17：国内医药合作签约（如“九州通医药集团与三元基因签署
+        #   战略合作协议”）是纯国内商业新闻，与跨境选品无关，且会进入首页
+        #   时间线（时间线按时间取前 100 条，不按分数），此前 12:23 轮次已
+        #   下架过同类条目。规则：标题同时含“医药”和“签署/战略合作”才拦，
+        #   只含“医药”的跨境医药类目/合规新闻不受影响。代价：跨境医药合作
+        #   签约类新闻若只经电商报进来也会被拦，可经其余信源进入。
+        t_clean = clean(t)
+        if "医药" in t_clean and ("签署" in t_clean or "战略合作" in t_clean):
+            continue
         # 在该条目附近找 published_at
         window = h[max(0, m.start() - 600):m.end() + 1200]
         dm = re.search(r'"published_at":"(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})"', window)
