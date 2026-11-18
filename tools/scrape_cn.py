@@ -791,6 +791,13 @@ GTRENDS_DENY = re.compile(
     #   需求激增的选品信号。只加 "hall of shame" 固定短语；gate 里的
     #   black friday 保留，真实黑五购物热搜不受影响。---
     r"|hall\s+of\s+shame"
+    # --- 2026-11-19 补：美妆颁奖榜单类热搜（第 15 次漏网：本轮 "hailey
+    #   bieber"，首条新闻是 WWD 的 "WWD Beauty Awards" 榜单，新闻标题里的
+    #   beauty 既救回了人名规则、又通过了 gate，冲进热点第 3 位。颁奖榜单
+    #   是行业新闻，不是商品走红，更不是需求激增的选品信号。只加
+    #   "beauty award(s)" 固定短语；gate 里的 beauty 保留，真实美妆
+    #   爆款热搜不受影响。---
+    r"|beauty\s+awards?"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 
