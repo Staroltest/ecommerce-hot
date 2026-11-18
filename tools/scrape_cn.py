@@ -784,6 +784,13 @@ GTRENDS_DENY = re.compile(
     #   更不是需求激增的选品信号。只加 recall/recalls/recalled；gate 里的
     #   product 保留，真实产品热搜不受影响。---
     r"|recall|recalls|recalled"
+    # --- 2026-11-18 补：健康/环保榜单类热搜（第 14 次漏网：本轮 "toxic hall
+    #   of shame"，首条新闻是 CNN 的年度有毒化学品 "Hall of Shame" 榜单，
+    #   新闻标题里的 "Black Friday"（榜单赶在黑五前发布）通过了 gate，
+    #   冲进热点第 11 位。健康环保榜单是倡导新闻，不是商品走红，更不是
+    #   需求激增的选品信号。只加 "hall of shame" 固定短语；gate 里的
+    #   black friday 保留，真实黑五购物热搜不受影响。---
+    r"|hall\s+of\s+shame"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 
