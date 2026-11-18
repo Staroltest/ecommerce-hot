@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-18T10:20:00.865773+00:00",
-  "generated_at_cst": "2026-11-18T10:20:00.865773+00:00",
+  "generated_at": "2026-11-18T10:49:42.881024+00:00",
+  "generated_at_cst": "2026-11-18T10:49:42.881024+00:00",
   "site": "https://staroltest.github.io/ecommerce-hot",
   "site_name": "跨境电商选品HOT",
   "summary": {
@@ -19,7 +19,7 @@
       "id": "sitemap",
       "name": "sitemap.xml 完整且 lastmod 可信",
       "status": "pass",
-      "detail": "2821 条 URL；lastmod 共 31 个不同日期；磁盘 HTML 2818 页，漏 0 页。"
+      "detail": "2823 条 URL；lastmod 共 31 个不同日期；磁盘 HTML 2820 页，漏 0 页。"
     },
     {
       "id": "llms",
