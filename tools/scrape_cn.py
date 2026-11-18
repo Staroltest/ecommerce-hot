@@ -798,6 +798,13 @@ GTRENDS_DENY = re.compile(
     #   "beauty award(s)" 固定短语；gate 里的 beauty 保留，真实美妆
     #   爆款热搜不受影响。---
     r"|beauty\s+awards?"
+    # --- 2026-11-19 补：宝可梦卡牌资讯站名类热搜（第 16 次漏网：本轮 "pokebeach"，
+    #   首条新闻是 PokeBeach 的 "Gold & Silver TCG Products to Release Alongside
+    #   Pokemon ex…"，新闻标题里的 "products" 既救回了单字标题规则、又通过了 gate，
+    #   冲进热点第 2 位。热搜词本身是宝可梦卡牌资讯站名，不是商品名；资讯站名
+    #   热搜不是选品信号。只加站名 "pokebeach"；gate 里的 products 保留，
+    #   真实产品热搜不受影响。---
+    r"|pokebeach"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 
