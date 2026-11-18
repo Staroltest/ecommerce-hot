@@ -446,6 +446,263 @@ def scrape_sellthetrend():
     return out
 
 
+# ---------------------------------------------------------------- TokConnect / 蝉妈妈
+# 2026-11-18 接入（用户批准“先加最强的两个”）。
+# TokConnect：美国 TikTok Shop 数据站，三页同一表格结构，无登录墙。
+#   注意：产品行里没有单品链接（只有产品名 + 数字），因此条目链接用榜单页
+#   + ?product=<slug>-<rank>（generate.py 的 norm_link 只去 fragment 与
+#   utm_*，其余参数保留，去重不塌；链接本身打开就是该产品所在的榜单页）。
+#   日期取页面 updated_time（榜单更新日，定为当日 12:00 CST），不用抓取日冒充。
+#   上限（防刷屏；用户已批过按源截流的做法，根本修法仍是生成器单源上限）：
+#   Rising 只取前 10，Breakout 全取 18 条，搜索榜只取主榜前 10。
+#   产品数字（销售额/涨幅/件数/搜索量）不进 RSS，只写 sidecar
+#   data/feeds/tokconnect-meta.json，供写中文简介时用（与 STT 同例）。
+# 蝉妈妈：运营圈抖音销量周榜文章。发现用 sitemap-yyq.xml（1MB，
+#   20 小时内复用本地缓存，不每半小时全量拉）；标题取文章页 <title>
+#   （去掉 " - 蝉妈妈运营圈" 后缀；只取标题，不取正文——文章页在这里就是
+#   条目本身，与卖家精灵博客同理，用户已点头）；时间取 sitemap lastmod；
+#   只收标题含“销量榜/周榜”的文章；标题另存 chanmama-titles.json 缓存，
+#   已取过的标题不再重复拉——不缓存会让每轮把 7 天内上百篇文章重拉一遍。
+
+TOK_META = {}
+
+
+def _tok_slug(name):
+    """产品名 -> URL 安全的 slug（ASCII 字母数字，其余变 -）。"""
+    slug = re.sub(r"[^a-z0-9]+", "-", (name or "").lower()).strip("-")
+    return slug or "product"
+
+
+def _tok_updated(h):
+    """页面 updated_time meta -> 当日 12:00 CST；取不到抛错（走旧文件保护）。"""
+    m = re.search(r'updated_time"\s+content="(\d{4})-(\d{2})-(\d{2})', h)
+    if not m:
+        raise RuntimeError("tokconnect: no updated_time meta")
+    return datetime(int(m.group(1)), int(m.group(2)), int(m.group(3)), 12,
+                    tzinfo=CST)
+
+
+def _tok_cells(row):
+    """一行 <tr> -> (rank, name, sub, {data-label: 文本}, cells)。
+    榜单行：rank 在 <td class="rank">，产品名在 <td class="pk"> 的 <strong>，
+    数字列带 data-label 属性。"""
+    cells = re.findall(r"<td[^>]*>(.*?)</td>", row, re.S)
+    if len(cells) < 2:
+        return None
+    rank_m = re.search(r"(\d+)", clean(cells[0]))
+    rank = int(rank_m.group(1)) if rank_m else 0
+    nm = re.search(r"<strong>([^<]+)</strong>", cells[1])
+    name = _stt_strip_marks(clean(nm.group(1))) if nm else clean(cells[1])
+    sm = re.search(r'<span class="sub">([^<]+)</span>', cells[1])
+    sub = clean(sm.group(1)) if sm else ""
+    labs = {}
+    for lm in re.finditer(r'<td[^>]*data-label="([^"]+)"[^>]*>(.*?)</td>', row, re.S):
+        labs[lm.group(1)] = clean(lm.group(2))
+    return rank, name, sub, labs, cells
+
+
+def _tok_write_meta():
+    with open(os.path.join(FEED_DIR, "tokconnect-meta.json"),
+              "w", encoding="utf-8") as f:
+        json.dump(TOK_META, f, ensure_ascii=False, indent=1)
+
+
+def scrape_tokconnect_rising():
+    """TokConnect Rising：本周涨最快 50 条，只取前 10。"""
+    h = fetch("https://tokconnect.com/trends/tiktok-shop/rising-products/")
+    pub = _tok_updated(h)
+    out, seen = [], set()
+    for row in re.findall(r"<tr[^>]*>(.*?)</tr>", h, re.S):
+        if "<td" not in row:
+            continue
+        parsed = _tok_cells(row)
+        if not parsed:
+            continue
+        rank, name, sub, labs, _cells = parsed
+        if not rank or len(name) < 3:
+            continue
+        link = ("https://tokconnect.com/trends/tiktok-shop/rising-products/"
+                "?product=" + _tok_slug(name) + "-" + str(rank))
+        if link in seen:
+            continue
+        seen.add(link)
+        out.append((name, link, pub))
+        TOK_META[link] = {"kind": "rising", "rank": rank,
+                          "price": labs.get("Price", ""),
+                          "revenue7d": labs.get("Revenue, 7 days", ""),
+                          "growth": labs.get("Growth, added revenue", ""),
+                          "units7d": labs.get("Units, 7 days", ""),
+                          "creators": labs.get("Creators", ""),
+                          "commission": labs.get("Commission", ""),
+                          "category": sub}
+        if len(out) >= 10:
+            break
+    _tok_write_meta()
+    return out
+
+
+def scrape_tokconnect_breakout():
+    """TokConnect Breakout：新品爆发榜 18 条，全取。"""
+    h = fetch("https://tokconnect.com/trends/tiktok-shop/breakout-products/")
+    pub = _tok_updated(h)
+    out, seen = [], set()
+    for row in re.findall(r"<tr[^>]*>(.*?)</tr>", h, re.S):
+        if "<td" not in row:
+            continue
+        parsed = _tok_cells(row)
+        if not parsed:
+            continue
+        rank, name, sub, labs, _cells = parsed
+        if not rank or len(name) < 3:
+            continue
+        link = ("https://tokconnect.com/trends/tiktok-shop/breakout-products/"
+                "?product=" + _tok_slug(name) + "-" + str(rank))
+        if link in seen:
+            continue
+        seen.add(link)
+        out.append((name, link, pub))
+        TOK_META[link] = {"kind": "breakout", "rank": rank,
+                          "price": labs.get("Price", ""),
+                          "units30d": labs.get("Units, 30 days", ""),
+                          "reviews": labs.get("Reviews", ""),
+                          "reviews_per_1000": labs.get("Reviews per 1,000 units", ""),
+                          "creators": labs.get("Creators", ""),
+                          "commission": labs.get("Commission", ""),
+                          "category": sub}
+    _tok_write_meta()
+    return out
+
+
+def scrape_tokconnect_search():
+    """TokConnect 搜索榜：取主榜（"Product topics people are searching
+    on TikTok this week"，11 条）前 10；"Fastest risers" 与 "TikTok names
+    itself" 两表暂不取（同一批词会重复，且后者无涨幅）。"""
+    h = fetch("https://tokconnect.com/trends/products/")
+    pub = _tok_updated(h)
+    out, seen = [], set()
+    tables = re.findall(r"<table[^>]*>(.*?)</table>", h, re.S)
+    main = None
+    for tb in tables:
+        ths = [re.sub(r"<[^>]+>", "", x).strip()
+               for x in re.findall(r"<th[^>]*>(.*?)</th>", tb, re.S)]
+        if ths == ["#", "Search topic", "7-day searches", "7-day trend",
+                   "Videos"]:
+            main = tb
+            break
+    if main is None:
+        raise RuntimeError("tokconnect-search: main table not found")
+    for row in re.findall(r"<tr[^>]*>(.*?)</tr>", main, re.S):
+        if "<td" not in row:
+            continue
+        cells = re.findall(r"<td[^>]*>(.*?)</td>", row, re.S)
+        if len(cells) < 5:
+            continue
+        rank_m = re.search(r"(\d+)", clean(cells[0]))
+        rank = int(rank_m.group(1)) if rank_m else 0
+        topic = _stt_strip_marks(clean(cells[1]))
+        if not rank or len(topic) < 3:
+            continue
+        link = ("https://tokconnect.com/trends/products/"
+                "?topic=" + _tok_slug(topic) + "-" + str(rank))
+        if link in seen:
+            continue
+        seen.add(link)
+        out.append((topic, link, pub))
+        TOK_META[link] = {"kind": "search", "rank": rank,
+                          "searches7d": clean(cells[2]),
+                          "trend": clean(cells[3]),
+                          "videos": clean(cells[4])}
+        if len(out) >= 10:
+            break
+    _tok_write_meta()
+    return out
+
+
+CHANMAMA_SITEMAP = "https://www.chanmama.com/open/sitemap-yyq.xml"
+CHANMAMA_SITEMAP_CACHE = os.path.join(FEED_DIR, "chanmama-sitemap.xml")
+CHANMAMA_TITLES_CACHE = os.path.join(FEED_DIR, "chanmama-titles.json")
+CHANMAMA_CACHE_SECONDS = 20 * 3600
+
+
+def scrape_chanmama():
+    """蝉妈妈运营圈抖音销量周榜文章。
+
+    发现用 sitemap-yyq.xml（1MB，20 小时内复用本地缓存，不每半小时
+    全量拉）；标题取文章页 <title>（去掉 " - 蝉妈妈运营圈" 后缀；
+    只取标题，不取正文——文章页在这里就是条目本身，与卖家精灵博客
+    同理，用户已点头）；时间取 sitemap lastmod；只收标题含“销量榜/
+    周榜”的文章。标题另存 chanmama-titles.json 缓存（{链接：[标题，
+    lastmod]}，超 8 天的清理），已取过的标题不再重复拉——不缓存会
+    导致每轮把 7 天内上百篇文章重拉一遍。
+    """
+    xml = None
+    if os.path.exists(CHANMAMA_SITEMAP_CACHE):
+        age = time.time() - os.path.getmtime(CHANMAMA_SITEMAP_CACHE)
+        if age < CHANMAMA_CACHE_SECONDS:
+            with open(CHANMAMA_SITEMAP_CACHE, encoding="utf-8") as f:
+                xml = f.read()
+    if xml is None:
+        xml = fetch(CHANMAMA_SITEMAP)
+        with open(CHANMAMA_SITEMAP_CACHE, "w", encoding="utf-8") as f:
+            f.write(xml)
+    now = datetime.now(CST)
+    arts = []
+    for m in re.finditer(r"<loc>([^<]+)</loc>\s*<lastmod>([^<]+)</lastmod>", xml):
+        loc, lm = m.groups()
+        if "/yunyingquan/article/" not in loc:
+            continue
+        try:
+            pub = datetime.fromisoformat(lm).astimezone(CST)
+        except ValueError:
+            continue
+        if (now - pub).days > 7:
+            continue
+        arts.append((loc, pub))
+    titles = {}
+    if os.path.exists(CHANMAMA_TITLES_CACHE):
+        try:
+            titles = json.load(open(CHANMAMA_TITLES_CACHE, encoding="utf-8"))
+        except (json.JSONDecodeError, AttributeError):
+            titles = {}
+    # 清掉超 8 天的缓存标题（按缓存时记的 lastmod）
+    fresh = {}
+    for l, v in titles.items():
+        try:
+            if isinstance(v, list) and len(v) == 2 \
+                    and (now - datetime.fromisoformat(v[1])).days <= 8:
+                fresh[l] = v
+        except (ValueError, TypeError):
+            continue
+    titles = fresh
+    out = []
+    dirty = False
+    for link, pub in sorted(arts, key=lambda x: x[1], reverse=True):
+        ent = titles.get(link)
+        t = ent[0] if ent else None
+        if t is None:
+            try:
+                h = fetch(link)
+            except Exception as e:
+                print(f"chanmama: {link} fetch failed ({e}), skipped", flush=True)
+                continue
+            tm = re.search(r"<title>([^<]+)</title>", h)
+            if not tm:
+                continue
+            t = re.sub(r"\s*-\s*蝉妈妈运营圈\s*$", "", clean(tm.group(1)))
+            titles[link] = [t, pub.isoformat()]
+            dirty = True
+            time.sleep(1)
+        if len(t) < 6:
+            continue
+        if "销量榜" not in t and "周榜" not in t:
+            continue
+        out.append((t, link, pub))
+    if dirty:
+        with open(CHANMAMA_TITLES_CACHE, "w", encoding="utf-8") as f:
+            json.dump(titles, f, ensure_ascii=False, indent=1)
+    return out
+
+
 # Google Trends 泛热搜否定词：体育、娱乐、政治类标记词（词边界匹配）。
 # 榜单是英文热搜词，人名本身无法枚举，所以同时看标题、首条新闻标题、
 # 新闻来源三处；命中即丢弃。注意：故意没放 game / series / season /
@@ -681,6 +938,10 @@ SITES = [
     ("jadeship", "JadeShip 1688 七日榜", "https://www.jadeship.com/feed/top/7-days/1688", scrape_jadeship),
     ("sellersprite", "卖家精灵博客", "https://www.sellersprite.com/cn/blog/", scrape_sellersprite),
     ("sellthetrend", "Sell The Trend 爆款榜", "https://www.sellthetrend.com/blog/winning-products", scrape_sellthetrend),
+    ("tokconnect-rising", "TokConnect TikTok Shop 涨幅榜", "https://tokconnect.com/trends/tiktok-shop/rising-products/", scrape_tokconnect_rising),
+    ("tokconnect-breakout", "TokConnect TikTok Shop 新品爆发榜", "https://tokconnect.com/trends/tiktok-shop/breakout-products/", scrape_tokconnect_breakout),
+    ("tokconnect-search", "TokConnect TikTok 搜索榜", "https://tokconnect.com/trends/products/", scrape_tokconnect_search),
+    ("chanmama-yyq", "蝉妈妈抖音销量周榜", "https://www.chanmama.com/yunyingquan/", scrape_chanmama),
 ]
 
 # 本轮抓到少于多少条时保留旧文件（默认 3；gtrends 是日榜快照，

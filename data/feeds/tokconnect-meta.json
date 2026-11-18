@@ -1,0 +1,380 @@
+{
+ "https://tokconnect.com/trends/tiktok-shop/rising-products/?product=nothing-headphone-1": {
+  "kind": "rising",
+  "rank": 1,
+  "price": "$129.00",
+  "revenue7d": "$52.4K",
+  "growth": "+912%+$47.2K",
+  "units7d": "406",
+  "creators": "134",
+  "commission": "10%",
+  "category": "Phones & Electronics · Launched 11 Mar 2026"
+ },
+ "https://tokconnect.com/trends/tiktok-shop/rising-products/?product=ecoflow-delta-3-ultra-portable-power-station-2": {
+  "kind": "rising",
+  "rank": 2,
+  "price": "$1,400.00",
+  "revenue7d": "$173.5K",
+  "growth": "+833%+$154.9K",
+  "units7d": "124",
+  "creators": "216",
+  "commission": "6%",
+  "category": "Home Improvement · Launched 23 Oct 2025"
+ },
+ "https://tokconnect.com/trends/tiktok-shop/rising-products/?product=ecoflow-delta-3-classic-3": {
+  "kind": "rising",
+  "rank": 3,
+  "price": "$429.00",
+  "revenue7d": "$136.8K",
+  "growth": "+699%+$119.7K",
+  "units7d": "319",
+  "creators": "516",
+  "commission": "7%",
+  "category": "Home Improvement · Launched 2 Sep 2025"
+ },
+ "https://tokconnect.com/trends/tiktok-shop/rising-products/?product=ufc-ultimate-k-o-3-3-oz-4": {
+  "kind": "rising",
+  "rank": 4,
+  "price": "$35.00",
+  "revenue7d": "$82.7K",
+  "growth": "+539%+$69.8K",
+  "units7d": "2.4K",
+  "creators": "373",
+  "commission": "15%",
+  "category": "Beauty & Personal Care · Launched 2 Feb 2026"
+ },
+ "https://tokconnect.com/trends/tiktok-shop/rising-products/?product=ecoflow-delta-3-classic-portable-power-station-5": {
+  "kind": "rising",
+  "rank": 5,
+  "price": "$449.00",
+  "revenue7d": "$72.3K",
+  "growth": "+457%+$59.3K",
+  "units7d": "161",
+  "creators": "300",
+  "commission": "6%",
+  "category": "Home Improvement · Launched 9 Oct 2025"
+ },
+ "https://tokconnect.com/trends/tiktok-shop/rising-products/?product=wonderskin-1440-longwear-eyeliner-6": {
+  "kind": "rising",
+  "rank": 6,
+  "price": "$18.00",
+  "revenue7d": "$429.9K",
+  "growth": "+416%+$346.6K",
+  "units7d": "24K",
+  "creators": "1,225",
+  "commission": "11%",
+  "category": "Beauty & Personal Care · Launched 21 Nov 2023"
+ },
+ "https://tokconnect.com/trends/tiktok-shop/rising-products/?product=shark-hydrovac-messmaster-corded-3-in-1-vacuum-7": {
+  "kind": "rising",
+  "rank": 7,
+  "price": "$249.99",
+  "revenue7d": "$109.5K",
+  "growth": "+318%+$83.3K",
+  "units7d": "438",
+  "creators": "62",
+  "commission": "5%",
+  "category": "Household Appliances · Launched 10 Apr 2026"
+ },
+ "https://tokconnect.com/trends/tiktok-shop/rising-products/?product=delta-pro-3600wh-8": {
+  "kind": "rising",
+  "rank": 8,
+  "price": "$1,800.00",
+  "revenue7d": "$93.5K",
+  "growth": "+273%+$68.4K",
+  "units7d": "52",
+  "creators": "244",
+  "commission": "6%",
+  "category": "Home Improvement · Launched 3 Nov 2023"
+ },
+ "https://tokconnect.com/trends/tiktok-shop/rising-products/?product=gbx155-4250a-jump-starter-for-10-0l-gasoline-and-8-0l-9": {
+  "kind": "rising",
+  "rank": 9,
+  "price": "$314.00",
+  "revenue7d": "$119.6K",
+  "growth": "+265%+$86.8K",
+  "units7d": "381",
+  "creators": "173",
+  "commission": "10%",
+  "category": "Automotive & Motorcycle · Launched 4 Dec 2024"
+ },
+ "https://tokconnect.com/trends/tiktok-shop/rising-products/?product=elegant-women-s-two-piece-set-10": {
+  "kind": "rising",
+  "rank": 10,
+  "price": "$21.84",
+  "revenue7d": "$146.2K",
+  "growth": "+251%+$104.6K",
+  "units7d": "6.7K",
+  "creators": "558",
+  "commission": "Not listed",
+  "category": "Womenswear & Underwear · Launched 22 Sep"
+ },
+ "https://tokconnect.com/trends/tiktok-shop/breakout-products/?product=noodle-squishy-toy-1": {
+  "kind": "breakout",
+  "rank": 1,
+  "price": "$10.94",
+  "units30d": "32K",
+  "reviews": "55",
+  "reviews_per_1000": "1.6",
+  "creators": "267",
+  "commission": "Not listed",
+  "category": "Sports & Outdoor · Launched 28 Oct"
+ },
+ "https://tokconnect.com/trends/tiktok-shop/breakout-products/?product=exovan-non-invasive-fingerstick-glucose-meter-2": {
+  "kind": "breakout",
+  "rank": 2,
+  "price": "$17.26",
+  "units30d": "12K",
+  "reviews": "25",
+  "reviews_per_1000": "1.9",
+  "creators": "104",
+  "commission": "Not listed",
+  "category": "Beauty & Personal Care · Launched 5 Nov"
+ },
+ "https://tokconnect.com/trends/tiktok-shop/breakout-products/?product=lightweight-christmas-snowflake-curtain-lights-set-3": {
+  "kind": "breakout",
+  "rank": 3,
+  "price": "$14.99",
+  "units30d": "11K",
+  "reviews": "2",
+  "reviews_per_1000": "0.2",
+  "creators": "44",
+  "commission": "Not listed",
+  "category": "Sports & Outdoor · Launched 25 Oct"
+ },
+ "https://tokconnect.com/trends/tiktok-shop/breakout-products/?product=smart-rgb-led-curtain-lights-4": {
+  "kind": "breakout",
+  "rank": 4,
+  "price": "$37.82",
+  "units30d": "8.5K",
+  "reviews": "1",
+  "reviews_per_1000": "0.1",
+  "creators": "93",
+  "commission": "Not listed",
+  "category": "Sports & Outdoor · Launched 17 Oct"
+ },
+ "https://tokconnect.com/trends/tiktok-shop/breakout-products/?product=disney-store-darth-vader-plush-5": {
+  "kind": "breakout",
+  "rank": 5,
+  "price": "$29.99",
+  "units30d": "5.7K",
+  "reviews": "75",
+  "reviews_per_1000": "13.9",
+  "creators": "112",
+  "commission": "Not listed",
+  "category": "Toys & Hobbies · Launched 4 Nov"
+ },
+ "https://tokconnect.com/trends/tiktok-shop/breakout-products/?product=women-s-high-waisted-wide-leg-pants-6": {
+  "kind": "breakout",
+  "rank": 6,
+  "price": "$16.64",
+  "units30d": "4.7K",
+  "reviews": "27",
+  "reviews_per_1000": "3.6",
+  "creators": "257",
+  "commission": "Not listed",
+  "category": "Womenswear & Underwear · Launched 18 Oct"
+ },
+ "https://tokconnect.com/trends/tiktok-shop/breakout-products/?product=shark-powerpro-cordless-vacuum-7": {
+  "kind": "breakout",
+  "rank": 7,
+  "price": "$230.06",
+  "units30d": "4.4K",
+  "reviews": "30",
+  "reviews_per_1000": "4",
+  "creators": "215",
+  "commission": "5%",
+  "category": "Household Appliances · Launched 21 Oct"
+ },
+ "https://tokconnect.com/trends/tiktok-shop/breakout-products/?product=comfrt-travel-blanket-8": {
+  "kind": "breakout",
+  "rank": 8,
+  "price": "$39.00",
+  "units30d": "4.3K",
+  "reviews": "82",
+  "reviews_per_1000": "24",
+  "creators": "235",
+  "commission": "Not listed",
+  "category": "Textiles & Soft Furnishings · Launched 2 Nov"
+ },
+ "https://tokconnect.com/trends/tiktok-shop/breakout-products/?product=bisous-set-l-ic-ne-9": {
+  "kind": "breakout",
+  "rank": 9,
+  "price": "$88.00",
+  "units30d": "3.7K",
+  "reviews": "65",
+  "reviews_per_1000": "16.3",
+  "creators": "397",
+  "commission": "Not listed",
+  "category": "Beauty & Personal Care · Launched 25 Oct"
+ },
+ "https://tokconnect.com/trends/tiktok-shop/breakout-products/?product=seese-cordless-snow-shovel-149-10": {
+  "kind": "breakout",
+  "rank": 10,
+  "price": "$148.79",
+  "units30d": "2.1K",
+  "reviews": "55",
+  "reviews_per_1000": "22.3",
+  "creators": "111",
+  "commission": "Not listed",
+  "category": "Tools & Hardware · Launched 15 Oct"
+ },
+ "https://tokconnect.com/trends/tiktok-shop/breakout-products/?product=men-s-i-never-dreamed-i-d-be-a-son-in-law-soft-11": {
+  "kind": "breakout",
+  "rank": 11,
+  "price": "$13.99",
+  "units30d": "2.1K",
+  "reviews": "52",
+  "reviews_per_1000": "24.1",
+  "creators": "121",
+  "commission": "Not listed",
+  "category": "Menswear & Underwear · Launched 27 Oct"
+ },
+ "https://tokconnect.com/trends/tiktok-shop/breakout-products/?product=crocs-adult-unfurgettable-platform-clog-12": {
+  "kind": "breakout",
+  "rank": 12,
+  "price": "$74.99",
+  "units30d": "2K",
+  "reviews": "49",
+  "reviews_per_1000": "24",
+  "creators": "31",
+  "commission": "Not listed",
+  "category": "Shoes · Launched 4 Nov"
+ },
+ "https://tokconnect.com/trends/tiktok-shop/breakout-products/?product=heydude-wally-funk-snow-camo-13": {
+  "kind": "breakout",
+  "rank": 13,
+  "price": "$79.41",
+  "units30d": "1.9K",
+  "reviews": "9",
+  "reviews_per_1000": "4.5",
+  "creators": "24",
+  "commission": "Not listed",
+  "category": "Shoes · Launched 6 Nov"
+ },
+ "https://tokconnect.com/trends/tiktok-shop/breakout-products/?product=workprox-cordless-snow-shovel-14": {
+  "kind": "breakout",
+  "rank": 14,
+  "price": "$152.61",
+  "units30d": "1.3K",
+  "reviews": "20",
+  "reviews_per_1000": "12.8",
+  "creators": "44",
+  "commission": "Not listed",
+  "category": "Tools & Hardware · Launched 19 Oct"
+ },
+ "https://tokconnect.com/trends/tiktok-shop/breakout-products/?product=rifpod-cordless-snow-shovel-15": {
+  "kind": "breakout",
+  "rank": 15,
+  "price": "$150.93",
+  "units30d": "1.2K",
+  "reviews": "26",
+  "reviews_per_1000": "20.8",
+  "creators": "33",
+  "commission": "6%",
+  "category": "Tools & Hardware · Launched 20 Oct"
+ },
+ "https://tokconnect.com/trends/tiktok-shop/breakout-products/?product=men-s-women-s-retro-chunky-sneakers-skate-shoes-casual-16": {
+  "kind": "breakout",
+  "rank": 16,
+  "price": "$113.17",
+  "units30d": "1.2K",
+  "reviews": "82",
+  "reviews_per_1000": "53.4",
+  "creators": "22",
+  "commission": "Not listed",
+  "category": "Shoes · Launched 24 Oct"
+ },
+ "https://tokconnect.com/trends/tiktok-shop/breakout-products/?product=medicube-age-r-glow-booster-17": {
+  "kind": "breakout",
+  "rank": 17,
+  "price": "$135.97",
+  "units30d": "1.1K",
+  "reviews": "5",
+  "reviews_per_1000": "3.2",
+  "creators": "270",
+  "commission": "Not listed",
+  "category": "Beauty & Personal Care · Launched 27 Oct"
+ },
+ "https://tokconnect.com/trends/tiktok-shop/breakout-products/?product=seese-cordless-snow-shovel-207-18": {
+  "kind": "breakout",
+  "rank": 18,
+  "price": "$207.39",
+  "units30d": "1K",
+  "reviews": "7",
+  "reviews_per_1000": "5.9",
+  "creators": "12",
+  "commission": "Not listed",
+  "category": "Tools & Hardware · Launched 19 Oct"
+ },
+ "https://tokconnect.com/trends/products/?topic=amazon-finds-for-girls-1": {
+  "kind": "search",
+  "rank": 1,
+  "searches7d": "1.2M",
+  "trend": "▲ 122%",
+  "videos": "461"
+ },
+ "https://tokconnect.com/trends/products/?topic=dm-best-products-2": {
+  "kind": "search",
+  "rank": 2,
+  "searches7d": "465.4K",
+  "trend": "▲ 3%",
+  "videos": "1.1K"
+ },
+ "https://tokconnect.com/trends/products/?topic=kitchen-gadgets-2026-3": {
+  "kind": "search",
+  "rank": 3,
+  "searches7d": "406.4K",
+  "trend": "▲ 194%",
+  "videos": "979"
+ },
+ "https://tokconnect.com/trends/products/?topic=amazon-finds-for-men-4": {
+  "kind": "search",
+  "rank": 4,
+  "searches7d": "306.7K",
+  "trend": "▲ 54%",
+  "videos": "577"
+ },
+ "https://tokconnect.com/trends/products/?topic=must-have-cleaning-products-5": {
+  "kind": "search",
+  "rank": 5,
+  "searches7d": "280.6K",
+  "trend": "▲ 33%",
+  "videos": "1.1K"
+ },
+ "https://tokconnect.com/trends/products/?topic=testing-kitchen-gadgets-6": {
+  "kind": "search",
+  "rank": 6,
+  "searches7d": "276.4K",
+  "trend": "▲ 159%",
+  "videos": "826"
+ },
+ "https://tokconnect.com/trends/products/?topic=amazon-cool-finds-7": {
+  "kind": "search",
+  "rank": 7,
+  "searches7d": "267.3K",
+  "trend": "▼ -7%",
+  "videos": "882"
+ },
+ "https://tokconnect.com/trends/products/?topic=best-lip-product-8": {
+  "kind": "search",
+  "rank": 8,
+  "searches7d": "258.5K",
+  "trend": "▲ >1,000%",
+  "videos": "7.0K"
+ },
+ "https://tokconnect.com/trends/products/?topic=amazon-desk-must-haves-9": {
+  "kind": "search",
+  "rank": 9,
+  "searches7d": "238.7K",
+  "trend": "▼ -11%",
+  "videos": "108"
+ },
+ "https://tokconnect.com/trends/products/?topic=amazon-car-must-haves-10": {
+  "kind": "search",
+  "rank": 10,
+  "searches7d": "236.2K",
+  "trend": "flat",
+  "videos": "481"
+ }
+}

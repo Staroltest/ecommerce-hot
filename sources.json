@@ -1,5 +1,5 @@
 {
-  "comment": "2026-11-14 转型为跨境电商选品HOT（用户批准，网址/仓库不变）：删除 Modern Retail、Glossy、WooCommerce 开发者博客；降权 WooCommerce 博客→T2、Printful/Retail Dive/DC360/Ecommerce News Europe/增长黑盒/电商报→T3；新增 SellerEngine、eComEngine（2026-11-14 实测 200 有新条目）、Google 新闻·跨境选品、Google 新闻·亚马逊卖家；分类提示改为新分类 xuanpin/platform/policy/tools/supply/marketing。Jungle Scout（停更 2024-03）与 Helium 10（500）实测不可用，未加。 2026-11-14 日常检查：移除 7 条失效/停更源（白鲸出海 RSS 现返回空频道且曾混入手游/短剧内容污染精选、E-Commerce Times 403、Stripe 博客 feed 404 且另试 3 个地址均 404、Shopify Newsroom 最新 2023-12、Jungle Scout 博客最新 2024-03、Econsultancy 最新 2026-07、Smart Insights 最新 2026-05），34→27 条；白鲸出海 3 条游戏/短剧旧条目已从本地库清除；config 噪音词新增 新游/手游/短剧/游戏，政策类关键词新增 出境。 2026-11-13 第三轮（中文源专项）：新增 6 条中文源。抓取 4 条（tools/scrape_cn.py 生成 data/feeds/*.xml，sources.json 用 local: 前缀引用，generate.py 已支持）：亿邦动力首页抓取 32 条（标题+链接+URL 中的日期）、雨果网首页抓取 34 条（data-fetch-title，首页偶尔返回 55KB 空壳，少于 3 条时不覆盖旧文件）、电商报 20 条（内嵌 JSON 的 title/slug/published_at）、卖家之家 23 条（无日期，生成时补抓取时间）；原生 RSS 1 条：白鲸出海 /rss（5 条，全跨境电商相关；其 /feed 20 条约一半手游/短剧，未用）；聚合 1 条：Google 新闻·跨境电商搜索 RSS（63 条，T3 降权）。RSSHub 实测不可用：rsshub.app 403/断连，peachyjoy/kayin/bobbie 等公共实例 36kr/微博路由 503，只有 /huxiu/channel/105 与 /36kr/hot-list 偶尔 200 但内容泛科技，未收。抓取失败：派代网/刀法研究所/电商在线连接被关闭，见实 400，虎嗅超时，Morketing 为 Nuxt 渲染页（/newsflash 无静态条目），跨境知道为 JS 空壳，36kr 的 API 返回首页 HTML。中文源现 7/34 条。 格式：每条 {id, name, tier, url, category_hint}。tier: T1 官方一手，T2 媒体/社区，T3 综合媒体（降权，见 config.json tier_bonus）。实测日期 2026-11-13（北京时间）：本轮共测约 85 个候选源，每个都用 HOTBot UA 真实抓取并解析 RSS/Atom，要求 HTTP 200 且至少 3 条可解析条目（标题+链接+时间）、近 30 天内有更新，才收录。新增 11 条：EcomCrew、SellerApp、Ordoro、CedCommerce、Supply Chain Dive、Payments Dive、美国贸易代表办公室（USTR）、Internet Retailing、WooCommerce 开发者博客（T1）、My Amazon Guy、增长黑盒（唯一可用的中文源，10 条中仅 3 条在 30 天内，低频）。剔除 4 条通用 SEO/营销源：Search Engine Journal、Neil Patel、HubSpot Marketing、Ahrefs（内容以泛 SEO/营销为主，电商相关度低）。中文源实测结论：亿邦动力分类 feed 为 GBK 编码（生成器 XML 解析器不支持）、且多数分类已停更（policy/mec/o2o/retail 最新多为 2025-05 或更早，排序混乱），仅 news_data 新鲜但全是双11战报，未收；雨果网 YuGuo.xml 直接 405；派代网/刀法研究所连接被关闭；见实/数英 403；卖家之家/跨境知道/DNY123/AMZ123 404；虎嗅/Helium 10 超时；钛媒体 feed 虽 200 但为泛科技内容（与已剔除的 36氪同类问题），未收；白鲸出海虽 200 且 20 条全在 30 天内，但约一半是手游/短剧/AI 应用买量内容，会污染精选，未收；跨境日报 AltoSea feed 虽 200 但标题全是“跨境日报 YYYY-MM-DD”重复日报，未收。英文淘汰：Shopify 博客/News feed 404 或最新 2023-12；BigCommerce/Klaviyo/Attentive/Adyen/Walmart/eBay/SHEIN/Mirakl/VTEX/commercetools/ChannelEngine/Easyship/Flexport/Triple Whale 404；Etsy 403；Retail TouchPoints/Full-Time FBA/Ecommerce Fastlane/DTC 403；RetailWire/Reddit 429；SellerEngine/RepricerExpress/DSers/EcommerceFuel/Gorgias/Recharge 停更或近 30 天仅 0-1 条；ZonBase 混入赌场内容；Shopify Changelog 与 shopify.dev/changelog 均一次返回 811 条，量太大未收；ShipStation/Rithum/Sellbrite/ecommercenews.com 返回 0 条；EcommerceBytes/Yotpo/AfterShip/PayPal 响应为 HTML 解析失败；Salesforce 博客/新闻、Marketing Dive、Retail Gazette 为泛 AI/品牌广告/线下零售内容，未收；Reddit r/ecommerce 与 r/FulfillmentByAmazon 429，仅 r/shopify 可用但为社区问答质量低，未收。旧淘汰（2026-11-13 首轮，仍有效）：Shopify 博客 feed 404；Alizila 403；虎嗅/Helium 10 超时；亿邦动力/雨果网/ChannelX/EcommerceBytes/Printify 解析失败；eBay/速卖通/卖家之家/跨境知道/TikTok Shop 卖家中心 404；PYMNTS、36氪、钛媒体、About Amazon 为综合财经/科技/企业 feed，已剔除。 2026-11-13 第二轮：Supply Chain Dive、Payments Dive、USTR、Internet Retailing 降为 T3（内容只有部分与电商相关：关税/物流/支付/英国线下零售，降权后不易挤进精选）。2026-11-15 新增 4 条产品热度信号源（用户批准）：Google Trends 美国热搜（scrape_cn.py 拉官方 RSS 后否定词过滤成本地 feed——官方 RSS 各条目共用同一链接，直接入库会按链接去重塌成 1 条；过滤后美国日榜常剩 0 条，空 feed 是正常结果）、NicheHunter TikTok Shop 日榜、JadeShip 1688 七日榜（只取排名上升条目）、卖家精灵博客（列表页抓取，须用 www 域名，裸域名在当前环境 DNS 失败）。2026-11-17 每日精选把关：Google Shopping 博客 T1→T2——其仅有两条入库内容均为面向消费者的购物攻略/礼物指南（黑五比价指南曾进日报第 8 位、热点第 4 位），不适合继续享受 T1 加权。",
+  "comment": "2026-11-14 转型为跨境电商选品HOT（用户批准，网址/仓库不变）：删除 Modern Retail、Glossy、WooCommerce 开发者博客；降权 WooCommerce 博客→T2、Printful/Retail Dive/DC360/Ecommerce News Europe/增长黑盒/电商报→T3；新增 SellerEngine、eComEngine（2026-11-14 实测 200 有新条目）、Google 新闻·跨境选品、Google 新闻·亚马逊卖家；分类提示改为新分类 xuanpin/platform/policy/tools/supply/marketing。Jungle Scout（停更 2024-03）与 Helium 10（500）实测不可用，未加。 2026-11-14 日常检查：移除 7 条失效/停更源（白鲸出海 RSS 现返回空频道且曾混入手游/短剧内容污染精选、E-Commerce Times 403、Stripe 博客 feed 404 且另试 3 个地址均 404、Shopify Newsroom 最新 2023-12、Jungle Scout 博客最新 2024-03、Econsultancy 最新 2026-07、Smart Insights 最新 2026-05），34→27 条；白鲸出海 3 条游戏/短剧旧条目已从本地库清除；config 噪音词新增 新游/手游/短剧/游戏，政策类关键词新增 出境。 2026-11-13 第三轮（中文源专项）：新增 6 条中文源。抓取 4 条（tools/scrape_cn.py 生成 data/feeds/*.xml，sources.json 用 local: 前缀引用，generate.py 已支持）：亿邦动力首页抓取 32 条（标题+链接+URL 中的日期）、雨果网首页抓取 34 条（data-fetch-title，首页偶尔返回 55KB 空壳，少于 3 条时不覆盖旧文件）、电商报 20 条（内嵌 JSON 的 title/slug/published_at）、卖家之家 23 条（无日期，生成时补抓取时间）；原生 RSS 1 条：白鲸出海 /rss（5 条，全跨境电商相关；其 /feed 20 条约一半手游/短剧，未用）；聚合 1 条：Google 新闻·跨境电商搜索 RSS（63 条，T3 降权）。RSSHub 实测不可用：rsshub.app 403/断连，peachyjoy/kayin/bobbie 等公共实例 36kr/微博路由 503，只有 /huxiu/channel/105 与 /36kr/hot-list 偶尔 200 但内容泛科技，未收。抓取失败：派代网/刀法研究所/电商在线连接被关闭，见实 400，虎嗅超时，Morketing 为 Nuxt 渲染页（/newsflash 无静态条目），跨境知道为 JS 空壳，36kr 的 API 返回首页 HTML。中文源现 7/34 条。 格式：每条 {id, name, tier, url, category_hint}。tier: T1 官方一手，T2 媒体/社区，T3 综合媒体（降权，见 config.json tier_bonus）。实测日期 2026-11-13（北京时间）：本轮共测约 85 个候选源，每个都用 HOTBot UA 真实抓取并解析 RSS/Atom，要求 HTTP 200 且至少 3 条可解析条目（标题+链接+时间）、近 30 天内有更新，才收录。新增 11 条：EcomCrew、SellerApp、Ordoro、CedCommerce、Supply Chain Dive、Payments Dive、美国贸易代表办公室（USTR）、Internet Retailing、WooCommerce 开发者博客（T1）、My Amazon Guy、增长黑盒（唯一可用的中文源，10 条中仅 3 条在 30 天内，低频）。剔除 4 条通用 SEO/营销源：Search Engine Journal、Neil Patel、HubSpot Marketing、Ahrefs（内容以泛 SEO/营销为主，电商相关度低）。中文源实测结论：亿邦动力分类 feed 为 GBK 编码（生成器 XML 解析器不支持）、且多数分类已停更（policy/mec/o2o/retail 最新多为 2025-05 或更早，排序混乱），仅 news_data 新鲜但全是双11战报，未收；雨果网 YuGuo.xml 直接 405；派代网/刀法研究所连接被关闭；见实/数英 403；卖家之家/跨境知道/DNY123/AMZ123 404；虎嗅/Helium 10 超时；钛媒体 feed 虽 200 但为泛科技内容（与已剔除的 36氪同类问题），未收；白鲸出海虽 200 且 20 条全在 30 天内，但约一半是手游/短剧/AI 应用买量内容，会污染精选，未收；跨境日报 AltoSea feed 虽 200 但标题全是“跨境日报 YYYY-MM-DD”重复日报，未收。英文淘汰：Shopify 博客/News feed 404 或最新 2023-12；BigCommerce/Klaviyo/Attentive/Adyen/Walmart/eBay/SHEIN/Mirakl/VTEX/commercetools/ChannelEngine/Easyship/Flexport/Triple Whale 404；Etsy 403；Retail TouchPoints/Full-Time FBA/Ecommerce Fastlane/DTC 403；RetailWire/Reddit 429；SellerEngine/RepricerExpress/DSers/EcommerceFuel/Gorgias/Recharge 停更或近 30 天仅 0-1 条；ZonBase 混入赌场内容；Shopify Changelog 与 shopify.dev/changelog 均一次返回 811 条，量太大未收；ShipStation/Rithum/Sellbrite/ecommercenews.com 返回 0 条；EcommerceBytes/Yotpo/AfterShip/PayPal 响应为 HTML 解析失败；Salesforce 博客/新闻、Marketing Dive、Retail Gazette 为泛 AI/品牌广告/线下零售内容，未收；Reddit r/ecommerce 与 r/FulfillmentByAmazon 429，仅 r/shopify 可用但为社区问答质量低，未收。旧淘汰（2026-11-13 首轮，仍有效）：Shopify 博客 feed 404；Alizila 403；虎嗅/Helium 10 超时；亿邦动力/雨果网/ChannelX/EcommerceBytes/Printify 解析失败；eBay/速卖通/卖家之家/跨境知道/TikTok Shop 卖家中心 404；PYMNTS、36氪、钛媒体、About Amazon 为综合财经/科技/企业 feed，已剔除。 2026-11-13 第二轮：Supply Chain Dive、Payments Dive、USTR、Internet Retailing 降为 T3（内容只有部分与电商相关：关税/物流/支付/英国线下零售，降权后不易挤进精选）。2026-11-15 新增 4 条产品热度信号源（用户批准）：Google Trends 美国热搜（scrape_cn.py 拉官方 RSS 后否定词过滤成本地 feed——官方 RSS 各条目共用同一链接，直接入库会按链接去重塌成 1 条；过滤后美国日榜常剩 0 条，空 feed 是正常结果）、NicheHunter TikTok Shop 日榜、JadeShip 1688 七日榜（只取排名上升条目）、卖家精灵博客（列表页抓取，须用 www 域名，裸域名在当前环境 DNS 失败）。2026-11-17 每日精选把关：Google Shopping 博客 T1→T2——其仅有两条入库内容均为面向消费者的购物攻略/礼物指南（黑五比价指南曾进日报第 8 位、热点第 4 位），不适合继续享受 T1 加权。 2026-11-18 新增产品热度信号源（用户批准“先加最强的两个”）：TokConnect 三页（Rising 前 10、Breakout 18 条全取、搜索主榜前 10；行内无单品链接，链接用榜单页 + ?product=/?topic= 参数区分，日期取 updated_time；Rising/Breakout 为 T1）、蝉妈妈抖音销量周榜（sitemap 发现，标题取文章页 <title>，只收“销量榜/周榜”，时间取 lastmod；T2）。TrendHunter feed 新鲜但沙箱 curl 403 未加；点赞数无免费源可取。",
   "sources": [
     {
       "id": "google-shopping",
@@ -230,6 +230,34 @@
       "name": "Sell The Trend 爆款榜",
       "tier": "T2",
       "url": "local:data/feeds/sellthetrend.xml",
+      "category_hint": "xuanpin"
+    },
+    {
+      "id": "tokconnect-rising",
+      "name": "TokConnect TikTok Shop 涨幅榜",
+      "tier": "T1",
+      "url": "local:data/feeds/tokconnect-rising.xml",
+      "category_hint": "xuanpin"
+    },
+    {
+      "id": "tokconnect-breakout",
+      "name": "TokConnect TikTok Shop 新品爆发榜",
+      "tier": "T1",
+      "url": "local:data/feeds/tokconnect-breakout.xml",
+      "category_hint": "xuanpin"
+    },
+    {
+      "id": "tokconnect-search",
+      "name": "TokConnect TikTok 搜索榜",
+      "tier": "T2",
+      "url": "local:data/feeds/tokconnect-search.xml",
+      "category_hint": "xuanpin"
+    },
+    {
+      "id": "chanmama-yyq",
+      "name": "蝉妈妈抖音销量周榜",
+      "tier": "T2",
+      "url": "local:data/feeds/chanmama-yyq.xml",
       "category_hint": "xuanpin"
     }
   ]
