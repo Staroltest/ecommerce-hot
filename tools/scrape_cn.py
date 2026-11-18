@@ -765,6 +765,12 @@ GTRENDS_DENY = re.compile(
     #   有的 netflix/disney 同类）；裸词 streaming 不加——直播电商新闻里也会出
     #   现 streaming（如 TikTok live streaming sales），加了会误杀真实选品信号。
     #   代价：未列入的流媒体品牌（如 Crunchyroll）仍可能漏网，届时再补。---
+    # --- 2026-11-18 补：名人穿搭导购类热搜（第 11 次漏网：本轮 "cox"，首条新闻
+    #   是 People 的 Courteney Cox 穿搭文，标题尾 "Shop Similar Pieces" 里的
+    #   shop 既救回了单字标题规则、又通过了 gate，冲进首页时间线。名人穿搭
+    #   导购不是选品信号。只加 "shop similar / shop the look / shop the style"
+    #   这类导购固定短语；裸词 shop 保留，真实购物热搜不受影响。---
+    r"|shop\s+similar|shop\s+the\s+look|shop\s+the\s+style"
     r"|gta|grand\s+theft\s+auto|fortnite|minecraft|roblox|call\s+of\s+duty|zelda|elden\s+ring|genshin|honkai|overwatch|valorant|apex\s+legends|league\s+of\s+legends|world\s+of\s+warcraft|baldur'?s\s+gate"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
