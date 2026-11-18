@@ -778,6 +778,12 @@ GTRENDS_DENY = re.compile(
     #   只加 "play store / google play / app store" 三个短语；裸词 store 保留，
     #   真实零售店热搜不受影响。---
     r"|play\s+store|google\s+play|app\s+store"
+    # --- 2026-11-18 补：召回类热搜（第 13 次漏网：本轮 "product recall"，首条新闻
+    #   是 Fox Business 的降压药全国召回（疑似金属污染），标题里的 "product"
+    #   一词通过了 gate，冲进热点第 11 位。召回是安全新闻，不是商品走红，
+    #   更不是需求激增的选品信号。只加 recall/recalls/recalled；gate 里的
+    #   product 保留，真实产品热搜不受影响。---
+    r"|recall|recalls|recalled"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 
