@@ -5,10 +5,36 @@
  "date": "2026年11月19日",
  "date_iso": "2026-11-19",
  "issue": 7,
- "generated_at": "2026-11-18T22:23:11.135164+00:00",
- "summary": "过去 24 小时共收录 190 条动态，精选 10 条（选品趋势 5 条、选品工具与数据 4 条、跨境平台动态 1 条）。头条：掘金中东欧蓝海：Allegro五大爆款类目解析与中国卖家出海指南。",
- "en_summary": "Past 24 hours collected 190 updates, featuring 10 (Product Trends 5, Tools & Data 4, Cross-Border Platform Updates 1). Headline: Tapping the Central and Eastern Europe Blue Ocean: Allegro's Five Hot Categories and a Guide for Chinese Sellers.",
+ "generated_at": "2026-11-18T23:55:23.101678+00:00",
+ "summary": "过去 24 小时共收录 192 条动态，精选 10 条（选品趋势 6 条、选品工具与数据 3 条、跨境平台动态 1 条）。头条：【实战课堂】AI+MCP 选品实战：几分钟出市场调研报告。",
+ "en_summary": "Past 24 hours collected 192 updates, featuring 10 (Product Trends 6, Tools & Data 3, Cross-Border Platform Updates 1). Headline: [Hands-On Class] AI + MCP Product Selection in Practice: A Market Research Report in Minutes.",
  "items": [
+  {
+   "id": "6314d5cbb480f6490d09a534fb62380bd412b1a8",
+   "title": "【实战课堂】AI+MCP选品实战：几分钟出市场调研报告",
+   "link": "https://www.sellersprite.com/cn/blog/sellersprite-live-20261123",
+   "source": "卖家精灵博客",
+   "source_id": "sellersprite-blog",
+   "published": "2026-11-18T04:00:00+00:00",
+   "zh_title": "【实战课堂】AI+MCP 选品实战：几分钟出市场调研报告",
+   "zh_oneliner": "用 AI 加 MCP 做选品，几分钟就能出一份市场调研报告，适合想提效的卖家试试。",
+   "en_title": "[Hands-On Class] AI + MCP Product Selection in Practice: A Market Research Report in Minutes",
+   "en_oneliner": "Using AI with MCP for product selection can produce a market research report in minutes, a workflow worth trying for sellers who want to work faster.",
+   "en_source": "SellerSprite Blog",
+   "category": "xuanpin",
+   "category_label": "选品趋势",
+   "tier": "T1",
+   "tags": [
+    "选品"
+   ],
+   "score": 85,
+   "reason": "官方来源 · 涉及选品 · 24 小时内发布",
+   "is_new": false,
+   "trend": "same",
+   "hot_score": 70.6,
+   "prev_rank": 7,
+   "prev_hot_score": 70.6
+  },
   {
    "id": "6405c1420b9235b7faf827068abf53c13cd9b941",
    "title": "掘金中东欧蓝海：Allegro五大爆款类目解析与中国卖家出海指南",
@@ -33,9 +59,9 @@
    "reason": "涉及指南与爆款 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 73.5,
-   "prev_rank": 2,
-   "prev_hot_score": 73.6
+   "hot_score": 72.5,
+   "prev_rank": 4,
+   "prev_hot_score": 72.5
   },
   {
    "id": "3def74ca70f987da338eae2ecc93e9e7a7280c40",
@@ -60,9 +86,9 @@
    "reason": "涉及数据与转化率 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 67.4,
-   "prev_rank": 9,
-   "prev_hot_score": 67.5
+   "hot_score": 66.5,
+   "prev_rank": 13,
+   "prev_hot_score": 66.5
   },
   {
    "id": "ec65c2b3117395b36c5ff431eb01ccbbbde4c478",
@@ -87,9 +113,9 @@
    "reason": "涉及指南与运营 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 66.7,
-   "prev_rank": 13,
-   "prev_hot_score": 66.7
+   "hot_score": 65.7,
+   "prev_rank": 19,
+   "prev_hot_score": 65.7
   },
   {
    "id": "992700b800fd18db120de3ad717dc0f67044f851",
@@ -114,9 +140,9 @@
    "reason": "涉及指南与增长 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 69.2,
-   "prev_rank": 7,
-   "prev_hot_score": 69.3
+   "hot_score": 68.2,
+   "prev_rank": 11,
+   "prev_hot_score": 68.2
   },
   {
    "id": "9ba0583772d05ebdaa8c7f717ce0eb58d97b2e1a",
@@ -141,9 +167,9 @@
    "reason": "涉及增长与GMV · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 67.4,
-   "prev_rank": 10,
-   "prev_hot_score": 67.5
+   "hot_score": 66.5,
+   "prev_rank": 14,
+   "prev_hot_score": 66.5
   },
   {
    "id": "f8f36d13ed5cee0576fd7f95b63157e2902a2e36",
@@ -168,9 +194,9 @@
    "reason": "涉及数据与转化率 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 67.4,
-   "prev_rank": 11,
-   "prev_hot_score": 67.5
+   "hot_score": 66.5,
+   "prev_rank": 15,
+   "prev_hot_score": 66.5
   },
   {
    "id": "3b29bb293ffb6632b441e350486b9c2250206516",
@@ -195,9 +221,9 @@
    "reason": "涉及工具与新品 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 70.2,
-   "prev_rank": 5,
-   "prev_hot_score": 70.2
+   "hot_score": 69.2,
+   "prev_rank": 9,
+   "prev_hot_score": 69.2
   },
   {
    "id": "f869e19a16ff60e7a260cfe5e2fe3e6cfb0c4a8d",
@@ -222,9 +248,9 @@
    "reason": "涉及增长与利润 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 70.2,
-   "prev_rank": 6,
-   "prev_hot_score": 70.2
+   "hot_score": 69.2,
+   "prev_rank": 10,
+   "prev_hot_score": 69.2
   },
   {
    "id": "ed1d69e08716b9686a24866c788bfcf8ced54a49",
@@ -249,36 +275,9 @@
    "reason": "涉及榜单与海外仓 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 71.8,
-   "prev_rank": 4,
-   "prev_hot_score": 71.9
-  },
-  {
-   "id": "437ca8002a7b5941d6b0441df9696558143de321",
-   "title": "New Ecommerce Tools: November 18, 2026",
-   "link": "https://www.practicalecommerce.com/new-ecommerce-tools-november-18-2026",
-   "source": "Practical Ecommerce",
-   "source_id": "practical-ecom",
-   "published": "2026-11-18T13:52:18+00:00",
-   "zh_title": "电商新工具：2026年11月18日",
-   "zh_oneliner": "汇总本日值得关注的电商新工具，帮卖家快速了解最新工具动态。",
-   "en_title": "",
-   "en_oneliner": "A roundup of new ecommerce tools worth a look today.",
-   "en_source": "Practical Ecommerce",
-   "category": "tools",
-   "category_label": "选品工具与数据",
-   "tier": "T2",
-   "tags": [
-    "工具",
-    "cross-border"
-   ],
-   "score": 80,
-   "reason": "涉及工具与cross-border · 24 小时内发布",
-   "is_new": false,
-   "trend": "same",
-   "hot_score": 73.9,
-   "prev_rank": 1,
-   "prev_hot_score": 74.0
+   "hot_score": 70.8,
+   "prev_rank": 6,
+   "prev_hot_score": 70.8
   }
  ]
 }
