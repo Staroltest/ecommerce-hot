@@ -772,6 +772,12 @@ GTRENDS_DENY = re.compile(
     #   这类导购固定短语；裸词 shop 保留，真实购物热搜不受影响。---
     r"|shop\s+similar|shop\s+the\s+look|shop\s+the\s+style"
     r"|gta|grand\s+theft\s+auto|fortnite|minecraft|roblox|call\s+of\s+duty|zelda|elden\s+ring|genshin|honkai|overwatch|valorant|apex\s+legends|league\s+of\s+legends|world\s+of\s+warcraft|baldur'?s\s+gate"
+    # --- 2026-11-18 补：应用商店类热搜（第 12 次漏网：本轮 "play store"，首条新闻
+    #   是 Mercari 安卓应用从 Google Play Store 下架，标题/新闻里的 "store"
+    #   一词通过了 gate。应用商店本身不是可售商品，相关热搜不是选品信号。
+    #   只加 "play store / google play / app store" 三个短语；裸词 store 保留，
+    #   真实零售店热搜不受影响。---
+    r"|play\s+store|google\s+play|app\s+store"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 
