@@ -805,6 +805,12 @@ GTRENDS_DENY = re.compile(
     #   热搜不是选品信号。只加站名 "pokebeach"；gate 里的 products 保留，
     #   真实产品热搜不受影响。---
     r"|pokebeach"
+    # --- 2026-11-19 补：房地产类热搜（第 17 次漏网：本轮 "housing"，首条新闻
+    #   是 CNBC 的 "Two new housing reports point to bleak winter ahead, with
+    #   record low sales"，新闻标题里的 "sales"（指房屋销量）既救回了单字标题
+    #   规则、又通过了 gate，冲进首页时间线。房地产新闻不是选品信号。只加
+    #   "housing"；gate 里的 sales 保留，真实购物热搜不受影响。---
+    r"|housing"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 
