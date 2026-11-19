@@ -2223,10 +2223,6 @@
     "zh_title": "美团开源1.6万亿参数智能体模型，全程未用英伟达GPU",
     "zh_oneliner": "美团开源了一个1.6万亿参数的智能体模型，而且全程没有用英伟达GPU。"
   },
-  "https://news.google.com/rss/articles/CBMiTkFVX3lxTFA5Tk13dG14T29iQmpod0pEb1ZnaG1": {
-    "zh_title": "KiKUU宣布停止运营：过渡期至12月31日，卖家退款与应对指南",
-    "zh_oneliner": "KiKUU宣布停止运营，过渡期到12月31日，卖家要尽快处理退款与后续安排。"
-  },
   "https://www.dsb.cn/p/01m7h18c263asp1wzzv5p679fq": {
     "zh_title": "神州控股科捷第17个双十一：单量同比增长近四成，AI覆盖供应链全场景",
     "zh_oneliner": "神州控股科捷第17个双十一单量增长近四成，AI已覆盖供应链各个环节。"
@@ -3987,10 +3983,6 @@
     "zh_title": "欧盟法规背景下商品包装“绿点”标识（Green Dot）禁用提醒",
     "zh_oneliner": "欧盟法规下商品包装“绿点”标识面临禁用，出口欧盟的卖家需尽快自查包装合规。"
   },
-  "https://news.google.com/rss/articles/CBMimgFBVV95cUxQRm1sTTNYSDRtRUpyY1FTR2Nmblo": {
-    "zh_title": "银联商务携全功能融合创新终端首次亮相第九届进博会",
-    "zh_oneliner": "银联商务全功能融合创新终端亮相进博会，数智支付赋能经贸融通。"
-  },
   "https://www.ebrun.com/20261118/721472.shtml": {
     "zh_title": "领星海外仓 ERP 短暂“卡壳”，黑五前卖家履约仍待后续处理",
     "zh_oneliner": "黑五在即，海外仓 ERP 出故障可能影响履约，卖家要盯紧后续处理进度。"
@@ -4079,7 +4071,8 @@
     "zh_oneliner": "抖音生活服务换帅，浦燕子卸任、红果负责人莫少君接任，属于国内平台人事变动。"
   },
   "https://news.google.com/rss/articles/CBMimgFBVV95cUxQRm1sTTNYSDRtRUpyY1FTR2NmblowUWY1OEIweHRERkt3eFQ5U21ST1F0ZXVSZmtsQ0VNdnI2WjZBUzBWVUFmMG5OcWM1UU9NOFFsY1FNMDVYT3RjTFZublk4dlhNRWpMRm5CLTZMRExod3JSMHFGdVBRelVvLXQ3ODFZZ3U3a1YtbVFndDFsRlZIdlcydDNKTXp3?oc=5": {
-    "zh_oneliner": "银联商务在第九届进博会上首次展示全功能融合创新终端，属于国内支付行业动态。"
+    "zh_title": "银联商务携全功能融合创新终端首次亮相第九届进博会",
+    "zh_oneliner": "银联商务全功能融合创新终端亮相进博会，数智支付赋能经贸融通。"
   },
   "https://www.dsb.cn/p/01m7pcf0sdtybtaawfbq0wymgf": {
     "zh_oneliner": "秋假期间亲子游出游人次占比超80%，成为秋假出行的主力客群。"
@@ -4981,5 +4974,74 @@
   "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNN3J3UE1uQlg3ZWRZcl9VelBxdU51OXlvSDkycEhuY1ZGMDg5dGlJV0YwTUllUXlyVW1WV255YTd0aDVYbWNFMjdoTExTa2dMM08xbTVjR3dERjREbk5wcU0xbXNEbG5rNnlXZ1hnMkpOdWF2SnFncF9XNThlS2VOLVVWQVpvN3Jp?oc=5": {
     "zh_title": "免费指纹浏览器有哪些？跨境电商选工具指南",
     "zh_oneliner": "跨境电商新手选指纹浏览器，先看免费额度、基础功能和后续使用成本，这里整理了几个实用的选型思路。"
+  },
+  "https://mjzj.com/article/g4qjqwg458u8": {
+    "zh_oneliner": "Ozon 将从 12 月 3 日起把手动推送费率上调至每收件人 3 卢布，卖家要留意推送成本的变化。"
+  },
+  "https://www.dsb.cn/p/01m7rz1ha322vqz02z1c5q50e4": {
+    "zh_oneliner": "京东健康与齐鲁制药达成战略合作，双方将在医药健康领域展开合作。"
+  },
+  "https://www.ebrun.com/20261119/721592.shtml": {
+    "zh_oneliner": "Scalapay 加码南欧市场，用分期支付撬动黑五期间的大额订单。"
+  },
+  "https://www.ebrun.com/20261119/721591.shtml": {
+    "zh_oneliner": "腾讯三季度 Non-IFRS 净利润下滑 6%，财报解析关注微信 14 亿用户背后的增长挖潜。"
+  },
+  "https://www.ebrun.com/20261119/721589.shtml": {
+    "zh_oneliner": "前安克创新 CMO 押注 AI 记忆硬件，穗升科技完成数千万元 Pre-A 轮融资。"
+  },
+  "https://www.ebrun.com/20261119/721586.shtml": {
+    "zh_oneliner": "云汉芯城李鲲鹏将出席 2026 年第八届亿邦产业互联网年会，分享 Agent 如何读懂元器件。"
+  },
+  "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5RdkF6UkFFR3hMZ1JuSFlQVHZKNG1FbU1PMDhSWGswUzNIdTh2d2JQbC1MV0dsZjV2RV9VektVRklWbUFWbzUyUVgtQ3h4LTNwNGExaGRB?oc=5": {
+    "zh_oneliner": "领星海外仓 ERP 短暂出现故障，黑五前卖家的履约问题仍待后续处理。"
+  },
+  "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5LTlV3cWJxNUdTSVR6RXI5d1VLd0VNOVVxaGI2em5UaGM2YjVTYU5oeGhFdWVYdmJwUHdueUdZYUs0X1hFU1FtYXdOWFJLM1lTcjF6dFV3?oc=5": {
+    "zh_oneliner": "跨境日报：京东三季度净利润增长 44%，外卖亏损收窄释放盈利信号。"
+  },
+  "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1xeVRwRlNhcWxadVg4QlVIbTFCbVg5OWNxalh4amk5T3owbTByanFiVnNJc29rSW1DaE1PVUJaellDbUNWZ0NTTDNGMEhwd3dWUWdGUkNqTHZPdEl4VDUxWlpiWQ?oc=5": {
+    "zh_oneliner": "河北馆陶多点布局，正在推动轻资产创业模式落地。"
+  },
+  "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1LR0FFZHpxVE10bkM5dmlibXBHWVd3SjNoRVgwN0Zvbld2ZnFWa1M3NFozXzJqSWljYXJkWGk1VGlCTEkyaGx0UjVCNElSZVozSnNtUHJB?oc=5": {
+    "zh_oneliner": "谷仓谈海外仓旺季货量整体提升，认为海外仓的功能不只是仓储。"
+  },
+  "https://news.google.com/rss/articles/CBMibEFVX3lxTE0xa1dQTEhoVVRkeXcydm5wM2FDV252ckQxMjhFN29IZGRKQ0hNRU1aZXRXdF9fOVhhZU80NTZpQm1SdVJQWlFxT0RpQW9YWUlqSGVWR2pURzBmbVR2R2IxSEtlQlNzS1lxWDFhLQ?oc=5": {
+    "zh_oneliner": "“澄迈直播 + 义乌发货”模式下，澄迈正在打造跨境选品新载体。"
+  },
+  "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9xa2QwY1NCYjJjbUF4OXExYWxmQS1LdGQ5TTNfY240QjhQT3E1Uk1FeThQalBxV01nSlAySlBRcUxTb1k0V0ZqYkY2elVmRkRoQTZPMkln?oc=5": {
+    "zh_oneliner": "电商早报：微信小店双 11 成交增长 407%，胖东来年销售额 258 亿元、增长 26%。"
+  },
+  "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5CMnR0S3dHbHpfcG1jZzFicmVMSHVyb2lOY3pxWTl4MHhlblh6RDZjS1AwRVBuQk5MYkxMMUlxek9Cbi1SV3Nuc2lxLVM4bEU?oc=5": {
+    "zh_oneliner": "雨果快报公开 TikTok Shop 美英墨周榜爆品，Shopee 双 11 多类目单量涨 8 倍。"
+  },
+  "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPQkQ0d1lkbnlMdVUxaG9UZFVWOVpZZWJPV0xjOU9vUG9SNEdKb3EtTVg3ZXAxY1dFTUtadnc1TlFUcnlQN2thYWxPdUxQTHVLZjc4eEhJT3NTTVByRmNNWFhWdVJnd18wMmQxSnJTU2ROR2tRMy14ai12aUpCMXE5RzEwTzk5V2UwVDBR?oc=5": {
+    "zh_oneliner": "深圳龙华区商务局长表示，选品中心正在帮助创业者实现出海梦想。"
+  },
+  "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5fbVpZTTl6aElQTE5SUzIzUEh0M3VON090UVFYVFlfSU51azlHblc4NVlMUDE0RjlGZ0steDU2Z1RoZmEzVFdQVXBlZ0c5Nkc5NUZF?oc=5": {
+    "zh_oneliner": "一篇跨境服装品类的数据分析与选品软件推荐，附带避坑提醒。"
+  },
+  "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5ENEVqSjl4T0Fuc0V3OVlQRTJuNTBYSGIteGNsV2wzbmpiMTl3V3I3TGN3Wm8yLUpDLTdJWmtWd0VSakNheUFaeWRjOHNrNnM0T1c5SHJZZmVGSUxNajg2bUtocEYta0pt?oc=5": {
+    "zh_oneliner": "从“四个一”看鹤城电商产业如何加速跨境出海。"
+  },
+  "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5wSFY5ZzZXV3NMQkRPRy0zM2NlZ011SDJNemtNOXcxNTA0NmE0S1JxQzFMeVp6VGdqeWdIRHB5bjFSLWFzTlhSb0YwTzdWQUVCZU9yQ3UtU3J6aVI2?oc=5": {
+    "zh_oneliner": "老葛跨境直播双线推进溯源选品与民生好物，品类从首尔持续扩张到埃塞俄比亚。"
+  },
+  "https://news.google.com/rss/articles/CBMiTkFVX3lxTE15Y0dRUkJHb0hrYmZNSjhFNUV4UEVXb0lDR1llTFFBYVdOVHhWdG5TUkM2ZjU0UGIxaDhUWmllVm41VWZXRE1BMVlFejVyQQ?oc=5": {
+    "zh_oneliner": "酷澎智慧中枢正式启动，旨在让跨境增长更确定。"
+  },
+  "https://news.google.com/rss/articles/CBMic0FVX3lxTE5lbVQ5emRlaHNQbU1QMnc3QXd2TEtrbnYzSGt5MHh6Wm8tNk1aRDNsLXdHSzhwNnVYYmVWQUpjM29WdnFxWDk0M0k5NFpwbHZmd3RwSXhoWGFEZ1lycy1sVVkyay1CeHo2cVJmQXZ0ckdOYk0?oc=5": {
+    "zh_oneliner": "兰州新区综保区选品展示区落地中哈霍尔果斯国际边境合作中心。"
+  },
+  "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4zZHNEOEtUY3dRZFJFYTlsc0JoUzJLRDFhUm9HSlptYzlEU3oxeE9yV3NUSExDWVZJTXBEWkNOY2hqWXl3UkFXNDZwSTRjRkcxOFE?oc=5": {
+    "zh_oneliner": "AI 跨境选品中心将落户祖庙，助力佛山童装企业出海抢单。"
+  },
+  "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBEeHppUExTQXZmbXRzLTVlNmhYN2wzbVZrTG43N3ZjVlJHQ2JUQVJTX0NMQXdacWlQVzd5Mzl3MnZGZ1ZhU0RYVmRaNHo2b0VFMkN4Uy13?oc=5": {
+    "zh_oneliner": "横琴牵手快手，共建跨境电商选品中心和葡语系选剧中心。"
+  },
+  "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBoUjFOVUN3X0tOVG0yQkhRWG5wMlBBTWRBWERtYWlnOHQtX0FNMi1VOEVaVmo0Sl8yWXhOaWI5a1pXazVlbWhCNGxpVTg?oc=5": {
+    "zh_oneliner": "通过对接洽谈与选品推介，当地正在构建跨境电商发展新生态。"
+  },
+  "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9EOVM3WHViVkRWUjg4VlllcXBfektPaGswY1Npb1g1akNYR05DcG5sYTBRZ05hRWxDWUs3QjVUUklSTkxTNFlJRkhsWlBGQQ?oc=5": {
+    "zh_oneliner": "“澄迈直播 + 义乌发货”模式下，澄迈正在打造跨境选品新载体。"
   }
 }
