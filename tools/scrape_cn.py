@@ -811,6 +811,14 @@ GTRENDS_DENY = re.compile(
     #   规则、又通过了 gate，冲进首页时间线。房地产新闻不是选品信号。只加
     #   "housing"；gate 里的 sales 保留，真实购物热搜不受影响。---
     r"|housing"
+    # --- 2026-11-19 补：外汇汇率类热搜（第 18 次漏网：本轮 "dolar hoje"，
+    #   巴西雷亚尔兑美元汇率查询，首条新闻 UOL "Dólar fecha a R$ 5,87,
+    #   maior valor em 19 meses; Ibovespa cai mais de 1%" 里的 "R$ 5,87"
+    #   被 gate 的 $+数字规则当成价格信号放行。只加汇率市场专名
+    #   （dolar/dólar/ibovespa/cotação）；裸词 euro 不加——另在 $ 规则上
+    #   加前置字母否定（见 GTRENDS_GATE_RE / GTRENDS_COMMERCE_RE），
+    #   让 R$/US$/A$ 这类货币符号报价不再算价格信号。---
+    r"|dolar|dólar|ibovespa|cotaç[aã]o|cotacao|euro\s+hoje"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 
@@ -828,7 +836,12 @@ GTRENDS_DENY = re.compile(
 #     不受人名规则影响。
 GTRENDS_NAME_RE = re.compile(r"^[A-Z][a-z]+(?: [A-Z]\.?| [A-Z][a-z]+){1,2}$", re.I)
 GTRENDS_PLACE_RE = re.compile(r"^(?:afghanistan|albania|algeria|argentina|armenia|australia|austria|azerbaijan|bangladesh|belarus|belgium|bolivia|bosnia|brazil|bulgaria|cambodia|canada|chile|china|colombia|croatia|cuba|cyprus|denmark|ecuador|egypt|estonia|ethiopia|finland|france|georgia|germany|ghana|greece|greenland|guatemala|haiti|honduras|hong kong|hungary|iceland|india|indonesia|iran|iraq|ireland|israel|italy|jamaica|japan|jordan|kazakhstan|kenya|kuwait|kyrgyzstan|latvia|lebanon|libya|lithuania|luxembourg|madagascar|malaysia|mali|malta|mexico|moldova|mongolia|morocco|myanmar|nepal|netherlands|nicaragua|niger|nigeria|norway|oman|pakistan|palestine|panama|paraguay|peru|philippines|poland|portugal|qatar|romania|russia|rwanda|senegal|serbia|singapore|slovakia|slovenia|somalia|south africa|south korea|spain|sri lanka|sudan|sweden|switzerland|syria|taiwan|tajikistan|tanzania|thailand|togo|tunisia|turkey|turkmenistan|uganda|ukraine|uruguay|uzbekistan|venezuela|vietnam|yemen|zambia|zimbabwe|gaza|kashmir|north korea|puerto rico)$", re.I)
-GTRENDS_COMMERCE_RE = re.compile(r"\b(?:price|prices|pricing|\$\s*\d|sale|sales|deal|deals|discount|discounts|coupon|coupons|launch|launches|launched|release|releases|released|preorder|pre-order|buy|buys|buying|shop|shopping|store|stores|restock|restocked|sold\s+out|review|reviews|unboxing|viral|goes\s+viral|craze|frenzy|tiktok|instagram|influencer|influencers|amazon|walmart|target|costco|shein|temu|ebay|etsy|shopify|brand|brands|product|products|gadget|gadgets|toy|toys|fashion|beauty|skincare|makeup|sneaker|sneakers|shoes|electronics|gaming|console|gift|gifts|haul|christmas|holiday\s+shopping|black\s+friday|cyber\s+monday|prime\s+day|singles\s+day|small\s+business\s+saturday)\b", re.I)
+# 2026-11-19 修复：$+数字规则原来写在 \b(?:...) 组里，\b 要求 $ 前是
+# 词字符，于是 "costs $5" 这类真价格永远匹配不上，反而只有 "R$ 5,87"
+# 这类货币符号报价能匹配（第 18 次漏网 dolar hoje 的根因）。现把
+# $ 分支移出 \b 组，并加前置字母否定：独立 $+数字算价格信号，
+# R$/US$/A$/C$ 等货币符号报价不算（A$AP Rocky 的旧修复仍成立）。
+GTRENDS_COMMERCE_RE = re.compile(r"(?:(?<![A-Za-z])\$\s*\d|\b(?:price|prices|pricing|sale|sales|deal|deals|discount|discounts|coupon|coupons|launch|launches|launched|release|releases|released|preorder|pre-order|buy|buys|buying|shop|shopping|store|stores|restock|restocked|sold\s+out|review|reviews|unboxing|viral|goes\s+viral|craze|frenzy|tiktok|instagram|influencer|influencers|amazon|walmart|target|costco|shein|temu|ebay|etsy|shopify|brand|brands|product|products|gadget|gadgets|toy|toys|fashion|beauty|skincare|makeup|sneaker|sneakers|shoes|electronics|gaming|console|gift|gifts|haul|christmas|holiday\s+shopping|black\s+friday|cyber\s+monday|prime\s+day|singles\s+day|small\s+business\s+saturday)\b)", re.I)
 GTRENDS_SHOPPING = {"black friday", "cyber monday", "prime day", "prime big deal days", "singles day", "small business saturday"}
 
 # 2026-11-15 商业词门槛（gate，用户在 Trends 第 4 次漏网后拍板）：
@@ -864,8 +877,11 @@ GTRENDS_SHOPPING = {"black friday", "cyber monday", "prime day", "prime big deal
 # the Stanley Cup"），接受这点损失，购物类信号仍可经其余 32 个源进来；
 # 真正的爆款通常还带 sale / sold out / restock / viral / tiktok shop 等
 # 更强的词，不受影响。
+# 2026-11-19 修复（同 GTRENDS_COMMERCE_RE）：$+数字原来在 \b 组里，
+# 真价格 "costs $5" 匹配不上，只有 "R$ 5,87" 货币报价能过（第 18 次
+# 漏网 dolar hoje 根因）。$ 分支移出 \b 组 + 前置字母否定。
 GTRENDS_GATE_RE = re.compile(
-    r"\b(?:\$\s*\d|sale|sales|discount|discounts|coupon|coupons|preorder|pre-order"
+    r"(?:(?<![A-Za-z])\$\s*\d|\b(?:sale|sales|discount|discounts|coupon|coupons|preorder|pre-order"
     r"|shop|shopping|store|stores|restock|restocked|sold\s+out"
     r"|unboxing|haul|walmart|costco|shein|temu|ebay|etsy|shopify|tiktok\s+shop"
     r"|sneaker|sneakers|gadget|gadgets|toy|toys|fashion|beauty|skincare|makeup"
@@ -873,7 +889,7 @@ GTRENDS_GATE_RE = re.compile(
     r"|gift\s+ideas|gift\s+guide|gift\s+set|gift\s+box|best\s+gifts?"
     r"|holiday\s+shopping|black\s+friday|cyber\s+monday|prime\s+day"
     r"|prime\s+big\s+deal\s+days|singles\s+day|small\s+business\s+saturday"
-    r"|in\s+stock|clearance|bestseller|best\s+seller)\b",
+    r"|in\s+stock|clearance|bestseller|best\s+seller)\b)",
     re.I)
 
 
