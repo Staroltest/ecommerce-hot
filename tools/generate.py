@@ -2452,17 +2452,6 @@ def analytics_beacon(site):
             f"<!-- End Cloudflare Web Analytics -->")
 
 
-
-def clarity_snippet(site):
-    """Microsoft Clarity 统计；site.clarity_id 为空时不输出。"""
-    cid = site.get("clarity_id", "")
-    if not cid:
-        return ""
-    return ("<script type=\"text/javascript\">" + "(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};"
-            "t=l.createElement(r);t.async=1;t.src=\"https://www.clarity.ms/tag/\"+i;"
-            "y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})"
-            "(window, document, \"clarity\", \"script\", \"" + cid + "\");</script>")
-
 def page_close(site, active, prefix="", base="", lang="zh", canonical=""):
     # 站根资源（site.js）与页面链接的相对基不同：英文页在 /en/ 下，要再上一级。
     root_base = ("../" + base) if lang == "en" else base
@@ -2471,7 +2460,7 @@ def page_close(site, active, prefix="", base="", lang="zh", canonical=""):
     alt_href = _alt_for(canonical, lang, site.get("url", ""))[2] if canonical else ""
     to_top = (f'<button type="button" class="to-top" id="toTop" aria-label="{tr(lang, "回到顶部", "Back to top")}">'
               f'{icon("arrow-up", 18)}</button>')
-    return (f"{footer_html(site, base, lang, alt_href)}</div></div></div>{to_top}{tabbar_html(active, prefix, base, lang)}<script src='{root_base}assets/site.js'></script>{analytics_beacon(site)}{clarity_snippet(site)}</body></html>\n")
+    return (f"{footer_html(site, base, lang, alt_href)}</div></div></div>{to_top}{tabbar_html(active, prefix, base, lang)}<script src='{root_base}assets/site.js'></script>{analytics_beacon(site)}</body></html>\n")
 
 
 def day_header(d, items, today, aside=False, lang="zh"):
@@ -3327,7 +3316,7 @@ def render_404(site):
             f'<div class="empty-actions">'
             f'<a class="empty-btn primary" href="{site_url}/index.html">回首页</a>'
             f'<a class="empty-btn" href="{site_url}/hot.html">去看热点榜</a>'
-            f'</div></div></div></div></div>{analytics_beacon(site)}{clarity_snippet(site)}</body></html>\n')
+            f'</div></div></div></div></div>{analytics_beacon(site)}</body></html>\n')
 
 
 def render_hot(site, hot, generated_at, counts, cfg, lang="zh"):
