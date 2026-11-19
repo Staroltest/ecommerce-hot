@@ -52,4 +52,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://staroltest.github.io/ecommerce-hot/sitemap.xml
+Sitemap: https://ecommerce-hot.pages.dev/sitemap.xml

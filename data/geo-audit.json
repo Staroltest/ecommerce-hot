@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-19T02:22:29.295281+00:00",
-  "generated_at_cst": "2026-11-19T02:22:29.295281+00:00",
-  "site": "https://staroltest.github.io/ecommerce-hot",
+  "generated_at": "2026-11-19T02:29:02.385700+00:00",
+  "generated_at_cst": "2026-11-19T02:29:02.385700+00:00",
+  "site": "https://ecommerce-hot.pages.dev",
   "site_name": "跨境电商选品HOT",
   "summary": {
     "pass": 10,
@@ -25,7 +25,7 @@
       "id": "llms",
       "name": "llms.txt 存在",
       "status": "pass",
-      "detail": "llms.txt 存在（1603 字符），含 MCP 接入点说明。"
+      "detail": "llms.txt 存在（1471 字符），含 MCP 接入点说明。"
     },
     {
       "id": "head",

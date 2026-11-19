@@ -2,8 +2,8 @@
 
 > 跨境电商选品HOT 每天从一批跨境与选品信源里收动态，按规则打分精选选品趋势、跨境平台动态、政策合规、选品工具与数据、供应链物流与营销测品，只显示标题、一句简介与原文链接，不转载全文。
 
-- 站点：https://staroltest.github.io/ecommerce-hot/
-- English version: https://staroltest.github.io/ecommerce-hot/en/ (default language is English; the version is picked from the browser language — Chinese browsers see the Chinese version, others see English)
+- 站点：https://ecommerce-hot.pages.dev/
+- English version: https://ecommerce-hot.pages.dev/en/ (default language is English; the version is picked from the browser language — Chinese browsers see the Chinese version, others see English)
 - 镜像：https://ecommerce-hot.pages.dev/
 - 语言：中文（zh-CN）、英文（en）
 - 更新：每日 06:00 CST；热点榜实时按规则打分排序
@@ -11,16 +11,16 @@
 
 ## 关键页面
 
-- [首页 / 今日精选](https://staroltest.github.io/ecommerce-hot/)
-- [English home / Featured](https://staroltest.github.io/ecommerce-hot/en/)
-- [全部动态](https://staroltest.github.io/ecommerce-hot/all.html)
-- [热点榜](https://staroltest.github.io/ecommerce-hot/hot.html)
-- [日报](https://staroltest.github.io/ecommerce-hot/daily.html)
-- [主题浏览](https://staroltest.github.io/ecommerce-hot/topics.html)
-- [关于本站：定位、采集与打分规则](https://staroltest.github.io/ecommerce-hot/about.html)
-- [About (English)](https://staroltest.github.io/ecommerce-hot/en/about.html)
-- [站点地图](https://staroltest.github.io/ecommerce-hot/sitemap.xml)
-- [RSS](https://staroltest.github.io/ecommerce-hot/feed.xml)
+- [首页 / 今日精选](https://ecommerce-hot.pages.dev/)
+- [English home / Featured](https://ecommerce-hot.pages.dev/en/)
+- [全部动态](https://ecommerce-hot.pages.dev/all.html)
+- [热点榜](https://ecommerce-hot.pages.dev/hot.html)
+- [日报](https://ecommerce-hot.pages.dev/daily.html)
+- [主题浏览](https://ecommerce-hot.pages.dev/topics.html)
+- [关于本站：定位、采集与打分规则](https://ecommerce-hot.pages.dev/about.html)
+- [About (English)](https://ecommerce-hot.pages.dev/en/about.html)
+- [站点地图](https://ecommerce-hot.pages.dev/sitemap.xml)
+- [RSS](https://ecommerce-hot.pages.dev/feed.xml)
 
 ## 内容结构
 
