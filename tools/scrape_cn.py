@@ -822,6 +822,20 @@ GTRENDS_DENY = re.compile(
     #   加前置字母否定（见 GTRENDS_GATE_RE / GTRENDS_COMMERCE_RE），
     #   让 R$/US$/A$ 这类货币符号报价不再算价格信号。---
     r"|dolar|dólar|ibovespa|cotaç[aã]o|cotacao|euro\s+hoje"
+    # --- 2026-11-20 补：第 20、21 次漏网（本轮两条同进首页时间线）：
+    #   \"regions\"——Reuters 首条新闻 \"More Russian regions limit fuel
+    #   sales as Ukrainian drone strikes hit refinery\"，新闻标题里的
+    #   \"sales\"（燃油限售）既救回了单字标题规则、又通过了 gate；通用名词
+    #   regions 本身不是商品信号，与第 17 次漏网 \"housing\"（房屋销量新闻
+    #   里的 sales）同一模式，只加 \"regions\"。
+    #   \"warren buffett\"——CNBC 首条新闻 \"Warren Buffett donates $5.5
+    #   billion…\"，捐款金额里的 \"$5.5\" 被 $+数字规则当成价格信号，既救回
+    #   了人名规则、又通过了 gate。两处修：(1) 加人名 \"warren buffett\"
+    #   （巴菲特/伯克希尔/捐款新闻，不是选品信号）；(2) 加捐款类词
+    #   donat(e/es/ed/ing/ion/ions)——捐款新闻里的金额不是商品价格，今后
+    #   \"X donates $Y\" 类热搜直接拦住。gate 里的 $+数字与 sales 保留，
+    #   真实价格/销量热搜不受影响。---
+    r"|regions|warren\s+buffett|donat(?:e|es|ed|ing|ion|ions)"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 
