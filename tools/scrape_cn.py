@@ -836,6 +836,13 @@ GTRENDS_DENY = re.compile(
     #   \"X donates $Y\" 类热搜直接拦住。gate 里的 $+数字与 sales 保留，
     #   真实价格/销量热搜不受影响。---
     r"|regions|warren\s+buffett|donat(?:e|es|ed|ing|ion|ions)"
+    # --- 2026-11-20 补：第 22 次漏网（本轮 "elise stefanik"，首条新闻是
+    #   华盛顿邮报 "Stefanik family's DC home sells to mystery buyer for
+    #   $900K over list price"，房屋售价里的 "$900K" 被 $+数字规则当成商品
+    #   价格信号，既救回了人名规则、又通过了 gate，冲进热点第 3 位。政客
+    #   人名热搜不是选品信号。只加姓氏 "stefanik"；gate 里的 $+数字保留，
+    #   真实价格热搜不受影响。---
+    r"|stefanik"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 
