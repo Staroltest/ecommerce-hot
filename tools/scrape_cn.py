@@ -730,7 +730,7 @@ GTRENDS_DENY = re.compile(
     r"|minister|prime\s+minister|lobbyist|summit|protest|war|sports?|athlete"
     r"|nfl\.com|nhl\.com|nbcsports|yahoo\s+sports|fox\s+sports|cbs\s+sports"
     r"|the\s+athletic|bleacher\s+report|sporting\s+news|sports\s+illustrated|sky\s+sports"
-    r"|variety|deadline|hollywood\s+reporter|tmz|billboard|rolling\s+stone"
+    r"|variety|deadline|hollywood\s+reporter|tmz|billboard|rolling\s+stone|imdb"
     r"|pitchfork|nme|stereogum|consequence"
     # --- 2026-11-15 补：音乐节名（14:15 轮次 "camp flog gnaw 2026 lineup"
     #   漏网冲进热点第 3：4 词标题不触发人名规则，新闻源 Pitchfork、
@@ -791,13 +791,16 @@ GTRENDS_DENY = re.compile(
     #   需求激增的选品信号。只加 "hall of shame" 固定短语；gate 里的
     #   black friday 保留，真实黑五购物热搜不受影响。---
     r"|hall\s+of\s+shame"
-    # --- 2026-11-19 补：美妆颁奖榜单类热搜（第 15 次漏网：本轮 "hailey
-    #   bieber"，首条新闻是 WWD 的 "WWD Beauty Awards" 榜单，新闻标题里的
-    #   beauty 既救回了人名规则、又通过了 gate，冲进热点第 3 位。颁奖榜单
-    #   是行业新闻，不是商品走红，更不是需求激增的选品信号。只加
-    #   "beauty award(s)" 固定短语；gate 里的 beauty 保留，真实美妆
-    #   爆款热搜不受影响。---
-    r"|beauty\s+awards?"
+    # --- 2026-11-20 补：美妆颁奖榜单变体（第 19 次漏网：本轮 "jennifer
+    #   lawrence"，首条新闻是 IMDb 的 "Jennifer Lawrence Rocks the Wet Hair
+    #   Trend for Wwd's Beauty Inc Awards"，新闻标题里的 beauty 既救回了
+    #   人名规则、又通过了 gate；"Beauty Inc Awards" 不含 "beauty awards"
+    #   短语，旧规则拦不住。两处修：(1) "beauty award(s)" 扩展为
+    #   "beauty (inc )award(s)"，覆盖 WWD Beauty Inc Awards；(2) 娱乐
+    #   资讯源加 imdb——IMDb 是纯娱乐站，首条新闻出自 IMDb 的热搜基本是
+    #   名人新闻，不是选品信号。gate 里的 beauty 保留，真实美妆爆款热搜
+    #   不受影响。---
+    r"|beauty\s+(?:inc\s+)?awards?"
     # --- 2026-11-19 补：宝可梦卡牌资讯站名类热搜（第 16 次漏网：本轮 "pokebeach"，
     #   首条新闻是 PokeBeach 的 "Gold & Silver TCG Products to Release Alongside
     #   Pokemon ex…"，新闻标题里的 "products" 既救回了单字标题规则、又通过了 gate，
