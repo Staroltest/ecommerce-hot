@@ -327,6 +327,10 @@ SOURCE_NAME_EN = {
     "WooCommerce 开发者博客": "WooCommerce Developer Blog",
     "白鲸出海": "Baijing",
     "Stripe 博客": "Stripe Blog",
+    "TokConnect TikTok Shop 涨幅榜": "TokConnect TikTok Shop Rising Products",
+    "TokConnect TikTok Shop 新品爆发榜": "TokConnect TikTok Shop Breakout Products",
+    "TokConnect TikTok 搜索榜": "TokConnect TikTok Trending Searches",
+    "蝉妈妈抖音销量周榜": "Chanmama Douyin Weekly Sales Ranking",
 }
 
 
