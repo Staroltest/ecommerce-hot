@@ -843,6 +843,18 @@ GTRENDS_DENY = re.compile(
     #   人名热搜不是选品信号。只加姓氏 "stefanik"；gate 里的 $+数字保留，
     #   真实价格热搜不受影响。---
     r"|stefanik"
+    # --- 2026-11-21 补：第 23、24 次漏网（本轮 "soxx"、"btc price"，同进
+    #   热点第 6、7 位，均由 2026-11-21 00:48 轮次入库、05:45 轮次发现）：
+    #   "soxx"——Benzinga "1000 Invested iShares PHLX SOX Semiconductor
+    #   Sector Index Fund 15 Years Ago…"，投资回顾文，新闻标题里的 "$1,000"
+    #   被 $+数字规则当成价格信号，既救回了单字标题规则、又通过了 gate；
+    #   "btc price"——Motley Fool "Crypto Market Today: Bitcoin Approaches
+    #   $60,000 as ETF Outflows Surpass $2.5 Billion"，新闻标题里的 "$60,000"
+    #   同样被 $+数字规则放行。半导体 ETF 回顾与比特币行情都是金融新闻，
+    #   不是选品信号。只加专名 soxx / bitcoin / btc 与通用词 etf（ETF
+    #   本身是金融产品，不会是可售商品信号）；gate 里的 $+数字保留，真实
+    #   价格热搜不受影响。---
+    r"|soxx|bitcoin|btc|etf"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 
