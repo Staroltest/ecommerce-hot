@@ -5,9 +5,9 @@
  "date": "2026年11月20日",
  "date_iso": "2026-11-20",
  "issue": 2,
- "generated_at": "2026-11-19T22:19:05.808978+00:00",
- "summary": "过去 7 天共收录 1270 条动态，精选 10 条（选品趋势 5 条、跨境平台动态 5 条）。头条：亚马逊AI选品工具怎么选？哪些工具能直接查询市场数据？。",
- "en_summary": "Past 7 days collected 1270 updates, featuring 10 (Product Trends 5, Cross-Border Platform Updates 5). Headline: How to Choose an AI Product-Research Tool for Amazon — and Which Ones Query Market Data Directly?.",
+ "generated_at": "2026-11-19T23:58:23.304642+00:00",
+ "summary": "过去 7 天共收录 1271 条动态，精选 10 条（选品趋势 4 条、跨境平台动态 5 条、选品工具与数据 1 条）。头条：亚马逊AI选品工具怎么选？哪些工具能直接查询市场数据？。",
+ "en_summary": "Past 7 days collected 1271 updates, featuring 10 (Product Trends 4, Cross-Border Platform Updates 5, Tools & Data 1). Headline: How to Choose an AI Product-Research Tool for Amazon — and Which Ones Query Market Data Directly?.",
  "items": [
   {
    "id": "c193b9b1376d397aa40bf966c282b3c8aaebe6b3",
@@ -33,9 +33,9 @@
    "reason": "官方来源 · 涉及工具与数据 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 80.1,
-   "prev_rank": 1,
-   "prev_hot_score": 80.5
+   "hot_score": 78.9,
+   "prev_rank": 2,
+   "prev_hot_score": 79.0
   },
   {
    "id": "ad3072895c1db3874c572a349a3d90a65a5cd494",
@@ -60,9 +60,9 @@
    "reason": "官方来源 · 涉及新品与竞品 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 75.9,
-   "prev_rank": 5,
-   "prev_hot_score": 76.2
+   "hot_score": 74.7,
+   "prev_rank": 7,
+   "prev_hot_score": 74.8
   },
   {
    "id": "f1f563eacea7628b1798915cbed0783938fa1c19",
@@ -86,9 +86,9 @@
    "reason": "官方来源 · 涉及选品 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 71.7,
-   "prev_rank": 10,
-   "prev_hot_score": 72.0
+   "hot_score": 70.6,
+   "prev_rank": 12,
+   "prev_hot_score": 70.6
   },
   {
    "id": "5be4afe22d217237a33be6dc0f6fba42b5affbd3",
@@ -112,9 +112,9 @@
    "reason": "官方来源 · 涉及数据 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 71.7,
-   "prev_rank": 11,
-   "prev_hot_score": 72.0
+   "hot_score": 70.6,
+   "prev_rank": 13,
+   "prev_hot_score": 70.6
   },
   {
    "id": "30c95be4b6d0cf98a9f0af2d320cbb50eae53854",
@@ -138,9 +138,9 @@
    "reason": "官方来源 · 涉及优化 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 71.7,
-   "prev_rank": 12,
-   "prev_hot_score": 72.0
+   "hot_score": 70.6,
+   "prev_rank": 14,
+   "prev_hot_score": 70.6
   },
   {
    "id": "1abc52390f6b80c3d17fe0d7d2b6774405d81fce",
@@ -164,9 +164,9 @@
    "reason": "官方来源 · 涉及运营 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 71.7,
-   "prev_rank": 13,
-   "prev_hot_score": 72.0
+   "hot_score": 70.6,
+   "prev_rank": 15,
+   "prev_hot_score": 70.6
   },
   {
    "id": "774b0264a65c056314c0f4700050288f71edd319",
@@ -190,9 +190,35 @@
    "reason": "官方来源 · 涉及cross-border · 24 小时内发布",
    "is_new": true,
    "trend": "same",
-   "hot_score": 72.8,
-   "prev_rank": 9,
-   "prev_hot_score": 73.1
+   "hot_score": 71.7,
+   "prev_rank": 10,
+   "prev_hot_score": 71.8
+  },
+  {
+   "id": "a0945d710ea855ab4bb6cb60188e2f209e690c41",
+   "title": "【Black Friday】Automatic Hair Curling Iron, 28mm Hair Curler, Negative Ion Automatic Hair Hair Curl Wand, 4 Modes Temperatures Rotating Curling Iron for Women, Automatic Curling Stick Hair Styling Tool",
+   "link": "https://app.nichehunter.com/tiktok-shop/?product=1729427922906943495",
+   "source": "NicheHunter TikTok Shop 日榜",
+   "source_id": "nichehunter-tiktok",
+   "published": "2026-11-19T04:00:00+00:00",
+   "zh_title": "【黑五】自动卷发棒：28mm负离子自动旋转卷发器，4档温控女士造型工具",
+   "zh_oneliner": "黑五期间登上TikTok Shop热销榜的自动卷发棒，负离子护发、4档温控可调。",
+   "en_title": "",
+   "en_oneliner": "An automatic rotating curling iron with negative-ion care and four temperature settings, trending on TikTok Shop for Black Friday.",
+   "en_source": "NicheHunter TikTok Shop Daily Top 10",
+   "category": "tools",
+   "category_label": "选品工具与数据",
+   "tier": "T1",
+   "tags": [
+    "工具"
+   ],
+   "score": 85,
+   "reason": "官方来源 · 涉及工具 · 24 小时内发布",
+   "is_new": true,
+   "trend": "same",
+   "hot_score": 70.6,
+   "prev_rank": 16,
+   "prev_hot_score": 70.6
   },
   {
    "id": "0cd63f0acb82400ac1c7c64257c21463686b6051",
@@ -217,34 +243,7 @@
    "reason": "官方来源 · 涉及优化与竞品",
    "is_new": false,
    "trend": "same",
-   "hot_score": 43.2,
-   "prev_rank": null,
-   "prev_hot_score": null
-  },
-  {
-   "id": "dbf6e0ceb5b1bc1569b7c3f70628287c5d2c1ba6",
-   "title": "腾讯三季报：WorkBuddy日均Token用量国内第一，云收入同比增长35%",
-   "link": "https://mjzj.com/article/g4q63o93twcg",
-   "source": "卖家之家（抓取）",
-   "source_id": "mjzj-scrape",
-   "published": "2026-11-19T01:48:36.633551+00:00",
-   "zh_title": "腾讯三季报：WorkBuddy日均Token用量国内第一，云收入同比增长35%",
-   "zh_oneliner": "腾讯三季报显示，WorkBuddy日均Token用量国内第一，云收入同比增长35%。",
-   "en_title": "Tencent Q3 Results: WorkBuddy Leads China in Daily Token Usage, Cloud Revenue Up 35% YoY",
-   "en_oneliner": "Tencent's Q3 report shows WorkBuddy leading China in daily token usage, with cloud revenue up 35% year on year.",
-   "en_source": "MJZJ",
-   "category": "xuanpin",
-   "category_label": "选品趋势",
-   "tier": "T2",
-   "tags": [
-    "增长",
-    "营收"
-   ],
-   "score": 80,
-   "reason": "涉及增长与营收 · 24 小时内发布",
-   "is_new": false,
-   "trend": "same",
-   "hot_score": 66.1,
+   "hot_score": 42.5,
    "prev_rank": null,
    "prev_hot_score": null
   },
@@ -271,7 +270,7 @@
    "reason": "涉及增长与独立站 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 66.3,
+   "hot_score": 65.3,
    "prev_rank": null,
    "prev_hot_score": null
   }
