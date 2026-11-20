@@ -184,7 +184,7 @@
   "base": 50,
   "daily_hours": 24,
   "daily_top": 10,
-  "decay_base": 0.8,
+  "decay_base": 0.85,
   "dev_keyword_bonus": 5,
   "dev_keyword_cap": 25,
   "dev_keywords": [
@@ -350,7 +350,7 @@
   "selected_hours": 48,
   "selected_min": 65,
   "tier_bonus": {
-   "T1": 10,
+   "T1": 20,
    "T2": 0,
    "T3": -15
   },
