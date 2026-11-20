@@ -4080,7 +4080,7 @@ def main():
     sm = ["<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
           "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">"]
     for _p, _lm in sitemap_entries:
-        sm.append(f"<url><loc>{site_url}/{_p}</loc><lastmod>{_lm}</lastmod></url>")
+        sm.append(f"<url><loc>{site_url}/{urllib.parse.quote(_p, safe='/')}</loc><lastmod>{_lm}</lastmod></url>")
     sm.append("</urlset>")
     print(f"sitemap: {len(sitemap_entries)} urls")
     with open(os.path.join(root, "sitemap.xml"), "w", encoding="utf-8") as f:
