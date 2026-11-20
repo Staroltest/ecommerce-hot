@@ -30,6 +30,7 @@ import re
 import sys
 import urllib.error
 import urllib.request
+import urllib.parse
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 
@@ -135,7 +136,7 @@ def run(root, site_url=None):
                 lm = u.findtext("sm:lastmod", "", ns)
                 if lm:
                     lastmods.add(lm)
-            sm_paths = {u[len(site_url) + 1:] if u.startswith(site_url + "/") else u
+            sm_paths = {urllib.parse.unquote(u[len(site_url) + 1:]) if u.startswith(site_url + "/") else u
                         for u in urls}
             disk = _disk_html(root)
             missing = sorted(disk - sm_paths)
