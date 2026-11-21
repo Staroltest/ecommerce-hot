@@ -882,6 +882,17 @@ GTRENDS_DENY = re.compile(
     #   同一模式：名人捐赠新闻里的金额不是商品价格。只加人名
     #   "ken griffin"；gate 里的 $+数字保留，真实价格热搜不受影响。---
     r"|ken\s+griffin"
+    # --- 2026-11-21 补：第 28 次漏网（本轮 5 条黑五 deals 查询同进热点 20：
+    #   "best tech black friday deals" 第 3、"apple black friday deals 2026"
+    #   第 5、"nintendo switch 2 black friday deals" 第 7、"black friday sale
+    #   deals" 第 10、"biggest black friday deals" 第 15，另有 11-15 入库的
+    #   同题旧条。均为无具体商品的通用导购榜单查询（Wirecutter/CNN/NBC 等
+    #   deals 汇总），靠 gate 里的 black friday 一词放行；黑五季 Trends 日榜
+    #   本来就以这类查询为主。只加 "black friday (sale )deals" 固定模式：
+    #   品牌/零售商专指查询（apple black friday、lego black friday、
+    #   target/home depot black friday 2026）不含 deals，不受影响；裸词
+    #   black friday 仍可通过 gate，购物季信号保留。---
+    r"|black\s+friday(?:\s+\w+)?\s+deals"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 
