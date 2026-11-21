@@ -865,6 +865,14 @@ GTRENDS_DENY = re.compile(
     #   众筹募资新闻里的金额不是商品价格；"raises prices by $5" 这类中间隔
     #   了词的不命中）；gate 里的 $+数字保留，真实价格热搜不受影响。---
     r"|colin\s+farrell|gala|fundrais(?:e|es|ed|ing|er|ers)?|rais(?:e|es|ed|ing)\s+(?:over\s+)?\$"
+    # --- 2026-11-21 补：第 26 次漏网（本轮 "kevin durant"，首条新闻是
+    #   WSJ "Exclusive | Kevin Durant Lists U-Shaped Arizona House for $13.9
+    #   Million"，豪宅挂牌价里的 "$13.9" 被 $+数字规则当成商品价格信号，
+    #   既救回了人名规则、又通过了 gate，冲进热点第 5 位。与第 22 次漏网
+    #   "elise stefanik"（政客住宅以高于挂牌价 $900K 售出）同一模式：名人
+    #   豪宅挂牌/售出新闻不是选品信号。只加人名 "kevin durant"；gate 里的
+    #   $+数字保留，真实价格热搜不受影响。---
+    r"|kevin\s+durant"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 
