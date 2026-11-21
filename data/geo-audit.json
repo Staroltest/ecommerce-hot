@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-21T19:20:25.713834+00:00",
-  "generated_at_cst": "2026-11-21T19:20:25.713834+00:00",
+  "generated_at": "2026-11-21T19:51:59.856925+00:00",
+  "generated_at_cst": "2026-11-21T19:51:59.856925+00:00",
   "site": "https://ecommerce-hot.pages.dev",
   "site_name": "跨境电商选品HOT",
   "summary": {
@@ -67,7 +67,7 @@
       "id": "feed",
       "name": "feed.xml 可解析",
       "status": "pass",
-      "detail": "feed.xml 可解析，20 条，language=zh-CN。其中 1 条 description 为空（建议后续补简介）。"
+      "detail": "feed.xml 可解析，20 条，language=zh-CN。"
     }
   ]
 }
