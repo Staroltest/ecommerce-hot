@@ -893,6 +893,13 @@ GTRENDS_DENY = re.compile(
     #   target/home depot black friday 2026）不含 deals，不受影响；裸词
     #   black friday 仍可通过 gate，购物季信号保留。---
     r"|black\s+friday(?:\s+\w+)?\s+deals"
+    # --- 2026-11-21 补：第 29 次漏网（本轮 "costco thanksgiving holiday
+    #   store closures"，首条新闻是 TheStreet "Costco Makes a Tough Store
+    #   Closure Decision"，靠 gate 里的 costco 与 store 两词放行，冲进热点
+    #   第 2 位。零售商节假日闭店/关店是门店运营新闻，没有商品、没有折扣、
+    #   没有需求信号，不是选品信号。只加 "store closure(s)" 固定短语；
+    #   gate 里的 costco 与裸词 store 保留，真实零售购物热搜不受影响。---
+    r"|store\s+closures?"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 
