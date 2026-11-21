@@ -855,6 +855,16 @@ GTRENDS_DENY = re.compile(
     #   本身是金融产品，不会是可售商品信号）；gate 里的 $+数字保留，真实
     #   价格热搜不受影响。---
     r"|soxx|bitcoin|btc|etf"
+    # --- 2026-11-21 补：第 25 次漏网（本轮 "colin farrell"，首条新闻是
+    #   PR Newswire "…Help Raise Over $3 Million For EB Research Partnership
+    #   At New York Gala"，慈善晚会筹款新闻，标题里的 "$3 Million" 被 $+数字
+    #   规则当成价格信号，既救回了人名规则、又通过了 gate，冲进热点第 5 位。
+    #   与第 20、21 次漏网（warren buffett 捐款 $5.5 billion）同一模式，
+    #   只是动词是 raise 不是 donate，donat 拦不住。只加人名 "colin farrell"
+    #   与筹款类词 gala / fundrais… / "raise(s/d) (over) $数字"（晚会筹款、
+    #   众筹募资新闻里的金额不是商品价格；"raises prices by $5" 这类中间隔
+    #   了词的不命中）；gate 里的 $+数字保留，真实价格热搜不受影响。---
+    r"|colin\s+farrell|gala|fundrais(?:e|es|ed|ing|er|ers)?|rais(?:e|es|ed|ing)\s+(?:over\s+)?\$"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 
