@@ -873,6 +873,15 @@ GTRENDS_DENY = re.compile(
     #   豪宅挂牌/售出新闻不是选品信号。只加人名 "kevin durant"；gate 里的
     #   $+数字保留，真实价格热搜不受影响。---
     r"|kevin\s+durant"
+    # --- 2026-11-21 补：第 27 次漏网（本轮 "ken griffin"，首条新闻是
+    #   Pittsburgh Post-Gazette "Carnegie museum receives $5M gift and 3
+    #   rare dinosaurs from Ken Griffin"，捐赠金额 "$5M" 被 $+数字规则当成
+    #   商品价格信号，既救回了人名规则（新闻标题里的 gift 也在救援词表
+    #   里）又通过了 gate，冲进热点第 3 位。与第 20、21 次 "warren buffett"
+    #   （捐款 $5.5 billion）与第 25 次 "colin farrell"（筹款 $3 Million）
+    #   同一模式：名人捐赠新闻里的金额不是商品价格。只加人名
+    #   "ken griffin"；gate 里的 $+数字保留，真实价格热搜不受影响。---
+    r"|ken\s+griffin"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 
