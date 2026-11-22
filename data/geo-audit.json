@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-22T13:51:27.795222+00:00",
-  "generated_at_cst": "2026-11-22T13:51:27.795222+00:00",
+  "generated_at": "2026-11-22T14:28:05.189750+00:00",
+  "generated_at_cst": "2026-11-22T14:28:05.189750+00:00",
   "site": "https://ecommerce-hot.pages.dev",
   "site_name": "跨境电商选品HOT",
   "summary": {
-    "pass": 10,
+    "pass": 9,
     "fail": 0,
-    "unknown": 0
+    "unknown": 1
   },
   "checks": [
     {
@@ -54,8 +54,8 @@
     {
       "id": "mcp",
       "name": "MCP 端点可达",
-      "status": "pass",
-      "detail": "GET https://ecommerce-hot.pages.dev/mcp 返回 HTTP 405，端点可达。"
+      "status": "unknown",
+      "detail": "无法访问 https://ecommerce-hot.pages.dev/mcp（网络异常）。"
     },
     {
       "id": "pages",
