@@ -914,6 +914,14 @@ GTRENDS_DENY = re.compile(
     #   nordvpn/expressvpn/surfshark/protonvpn；gate 里的 $+数字保留。
     #   代价：极小众的 "vpn router" 这类硬件热搜也会被拦，接受这点损失。---
     r"|unemployment|vpn|nordvpn|expressvpn|surfshark|protonvpn"
+    # --- 2026-11-23 补：第 32 次漏网（本轮 "cnbc make it"，首条新闻是 CNBC
+    #   Make It "Google worker earns $323,000 a year but he lives on minimum
+    #   wage"，薪资/个人理财故事，新闻标题里的 "$323,000" 被 $+数字规则当成
+    #   价格信号放行，冲进热点第 9 位。同 #30（"$2.1 million" 失业救济金
+    #   诈骗案）、#31（"$2.99 a month" VPN 折扣）一样是 $+数字误放。
+    #   只加薪资故事固定模式 "earns $X a year" 与 "minimum wage"；
+    #   gate 里的 $+数字保留，真实价格热搜不受影响。---
+    r"|earns?\s+\$?[\d,]+\s+a\s+year|minimum\s+wage"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 
