@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-22T12:50:39.254150+00:00",
-  "generated_at_cst": "2026-11-22T12:50:39.254150+00:00",
+  "generated_at": "2026-11-22T13:21:58.871053+00:00",
+  "generated_at_cst": "2026-11-22T13:21:58.871053+00:00",
   "site": "https://ecommerce-hot.pages.dev",
   "site_name": "跨境电商选品HOT",
   "summary": {
-    "pass": 10,
+    "pass": 9,
     "fail": 0,
-    "unknown": 0
+    "unknown": 1
   },
   "checks": [
     {
@@ -19,7 +19,7 @@
       "id": "sitemap",
       "name": "sitemap.xml 完整且 lastmod 可信",
       "status": "pass",
-      "detail": "4236 条 URL；lastmod 共 31 个不同日期；磁盘 HTML 4233 页，漏 0 页。"
+      "detail": "4240 条 URL；lastmod 共 31 个不同日期；磁盘 HTML 4237 页，漏 0 页。"
     },
     {
       "id": "llms",
@@ -54,8 +54,8 @@
     {
       "id": "mcp",
       "name": "MCP 端点可达",
-      "status": "pass",
-      "detail": "GET https://ecommerce-hot.pages.dev/mcp 返回 HTTP 405，端点可达。"
+      "status": "unknown",
+      "detail": "无法访问 https://ecommerce-hot.pages.dev/mcp（网络异常）。"
     },
     {
       "id": "pages",
@@ -67,7 +67,7 @@
       "id": "feed",
       "name": "feed.xml 可解析",
       "status": "pass",
-      "detail": "feed.xml 可解析，20 条，language=zh-CN。"
+      "detail": "feed.xml 可解析，20 条，language=zh-CN。其中 1 条 description 为空（建议后续补简介）。"
     }
   ]
 }
