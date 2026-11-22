@@ -900,6 +900,20 @@ GTRENDS_DENY = re.compile(
     #   没有需求信号，不是选品信号。只加 "store closure(s)" 固定短语；
     #   gate 里的 costco 与裸词 store 保留，真实零售购物热搜不受影响。---
     r"|store\s+closures?"
+    # --- 2026-11-22 补：第 30、31 次漏网（本轮 "unemployment"、"nordvpn"
+    #   同进热点第 10、11 位，均由 2026-11-22 17:35 轮次入库）：
+    #   "unemployment"——KTLA 首条新闻 "Southern California duo stole
+    #   $2.1 million in unemployment benefits"，失业救济金诈骗案涉案金额
+    #   "$2.1" 被 $+数字规则当成价格信号，既救回了单字标题规则、又通过了
+    #   gate。只加 "unemployment"；gate 里的 $+数字保留，真实价格热搜不
+    #   受影响。
+    #   "nordvpn"——Gizmodo 首条新闻 "NordVPN at $2.99 a Month Costs Less
+    #   Than Your Airport Coffee This Thanksgiving"，黑五 VPN 订阅折扣文，
+    #   "$2.99" 同样被 $+数字规则放行。VPN 是数字订阅服务，不是跨境实物
+    #   商品，订阅折扣不是选品信号。加裸词 vpn 与四大品牌名
+    #   nordvpn/expressvpn/surfshark/protonvpn；gate 里的 $+数字保留。
+    #   代价：极小众的 "vpn router" 这类硬件热搜也会被拦，接受这点损失。---
+    r"|unemployment|vpn|nordvpn|expressvpn|surfshark|protonvpn"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 
