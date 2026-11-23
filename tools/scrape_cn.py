@@ -931,6 +931,25 @@ GTRENDS_DENY = re.compile(
     #   $ 金额误放。只加人名 "bill hader"；gate 里的 $+数字保留，真实价格
     #   热搜不受影响。---
     r"|bill\s+hader"
+    # --- 2026-11-23 补：第 34 次漏网（本轮 "copper price"，首条新闻是
+    #   Bloomberg "Copper Wavers Near $12,000 a Ton After Meltdown on AI
+    #   Jitters"，大宗商品铜价新闻，标题里的 "$12,000" 被 $+数字规则当成
+    #   商品价格信号放行，进了首页时间线。同 #30（失业救济金 "$2.1
+    #   million"）、#31（VPN "$2.99"）、#32（年薪 "$323,000"）、#33
+    #   （票房 "$70 million"）一样是新闻标题里的 $ 金额误放。只加
+    #   "X price" 形式的大宗商品价格短语（金属、能源、农产品），gate 里
+    #   的 $+数字保留，真实商品价格热搜不受影响。---
+    r"|(?:copper|gold|silver|platinum|palladium|alumin[iu]m|nickel|zinc|tin|lead|iron\s+ore|crude\s+oil|brent|natural\s+gas|wheat|corn|soybean|soybeans|coffee|cocoa|lithium|cobalt)\s+prices?"
+    # --- 2026-11-23 补：第 35 次漏网（未遂，本轮第二遍抓取时 feed 里出现
+    #   "musk foundation"，首条新闻是 Fortune "Elon Musk's $16 billion
+    #   foundation gave away $400 million in 2025, mostly to another Musk
+    #   nonprofit"，基金会捐款新闻，标题里的 "$16 billion / $400 million"
+    #   被 $+数字规则当成商品价格信号放行。与 #20/21（warren buffett 捐款
+    #   $5.5 billion）同一模式，只是动词是 "gave away" 而非 "donates"，
+    #   donat 拦不住。在入库前于 feed 阶段拦下，未进 store。只加
+    #   "musk foundation" 与 "gave away $数字" 模式；gate 里的 $+数字保留，
+    #   真实价格热搜不受影响。---
+    r"|musk\s+foundation|gav(?:e|ing)\s+away\s+\$"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 
