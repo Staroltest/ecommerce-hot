@@ -922,6 +922,15 @@ GTRENDS_DENY = re.compile(
     #   只加薪资故事固定模式 "earns $X a year" 与 "minimum wage"；
     #   gate 里的 $+数字保留，真实价格热搜不受影响。---
     r"|earns?\s+\$?[\d,]+\s+a\s+year|minimum\s+wage"
+    # --- 2026-11-23 补：第 33 次漏网（本轮 "bill hader"，首条新闻是 Digg
+    #   "The Cat in the Hat's latest trick is a reported $70 million
+    #   worldwide"，电影票房新闻，票房金额 "$70 million" 被 $+数字规则当成
+    #   商品价格信号，既救回了人名规则、又通过了 gate，冲进热点第 8 位。
+    #   同 #20/21（warren buffett 捐款 $5.5 billion）、#22（stefanik 豪宅
+    #   $900K）、#25（colin farrell 筹款 $3 Million）一样是新闻标题里的
+    #   $ 金额误放。只加人名 "bill hader"；gate 里的 $+数字保留，真实价格
+    #   热搜不受影响。---
+    r"|bill\s+hader"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 
