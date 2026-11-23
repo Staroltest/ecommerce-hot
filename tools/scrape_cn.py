@@ -724,7 +724,7 @@ GTRENDS_DENY = re.compile(
     r"|steelers|ravens|bengals|browns|texans|colts|jaguars|titans|vikings|lions"
     r"|bears|falcons|saints|buccaneers|panthers|cardinals|rams|seahawks|49ers"
     r"|chargers|jets|giants|dolphins|bills"
-    r"|movie|film|tv\s+show|episode|album|concert|tour|grammy|oscar|emmy"
+    r"|movie|films?|tv\s+show|episode|album|concert|tour|grammy|oscar|emmy"
     r"|golden\s+globe|actor|actress|singer|rapper|celebrity|snl|saturday\s+night\s+live"
     r"|netflix|disney|marvel|starz|paramount|hulu|peacock|hbo|showtime|trailer|president|white\s+house|senate|congress|election"
     r"|minister|prime\s+minister|lobbyist|summit|protest|war|sports?|athlete"
@@ -950,6 +950,18 @@ GTRENDS_DENY = re.compile(
     #   "musk foundation" 与 "gave away $数字" 模式；gate 里的 $+数字保留，
     #   真实价格热搜不受影响。---
     r"|musk\s+foundation|gav(?:e|ing)\s+away\s+\$"
+    # --- 2026-11-24 补：第 36 次漏网（本轮 "accountant"，首条新闻是 KTLA
+    #   "Los Angeles accountant sentenced for stealing more than $1.7M from
+    #   indie films"，影业会计挪用公款被判刑的犯罪新闻，新闻标题里的 "$1.7M"
+    #   被 $+数字规则当成商品价格信号，既救回了单字标题规则、又通过了 gate，
+    #   进了首页时间线。同 #30（失业救济金诈骗 "$2.1 million"）、#32（年薪
+    #   "$323,000"）、#33（票房 "$70 million"）一样是新闻标题里的 $ 金额误放。
+    #   两处修：(1) 加职业词 "accountant"（会计职业热搜不是选品信号）与犯罪
+    #   判决类词 sentenced/embezzle/steal/stole/fraud/convicted——犯罪新闻里
+    #   的涉案金额不是商品价格；(2) 顺手把娱乐行的 film 扩展为 films?，复数
+    #   "indie films" 之前从 \bfilm\b 的词界漏过。gate 里的 $+数字保留，
+    #   真实价格热搜不受影响。---
+    r"|accountant|sentenced|embezzl\w*|stea(?:l|ls|ling)|stol(?:e|en)|fraud|convict(?:ed|ion|ions)?"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 
