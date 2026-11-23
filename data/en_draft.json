@@ -7699,5 +7699,37 @@
  "https://www.sellersprite.com/cn/blog/verifiable-ai-research": {
   "en_title": "Analysing Amazon With AI: How Do You Get Real Data?",
   "en_oneliner": "When analysing Amazon with AI, getting trustworthy real data is the hard part — this SellerSprite guide shows how."
+ },
+ "https://www.ebrun.com/20261123/722837.shtml": {
+  "en_title": "Style3D Founder & CEO Liu Chen: The First Step in Enterprise AI Transformation Is Picking the Right 'AI Architect'",
+  "en_oneliner": "Style3D's founder argues that choosing the right AI architect is the crucial first move for enterprises adopting AI."
+ },
+ "https://www.dsb.cn/p/01m8341m3zkg2eafss7t03mff5": {
+  "en_title": "Former XPeng Europe Executive Qiang Shunqiang Joins Xiaomi Auto",
+  "en_oneliner": "XPeng's former Europe chief moves to Xiaomi's auto business."
+ },
+ "https://www.dsb.cn/p/01m7vhq8hth147yrnxsepw6pnv": {
+  "en_title": "Former Anker Executive's Smart-Band Startup Rakes In Tens of Millions Overnight",
+  "en_oneliner": "A smart-band venture founded by a former Anker executive reportedly earned tens of millions in a single night."
+ },
+ "https://www.dsb.cn/p/01m7kty9vy7ewb1w3zcscdtmwv": {
+  "en_title": "Jack Ma Makes a Move as Alibaba Acquires a Korean Retail Giant",
+  "en_oneliner": "Alibaba has acquired a major South Korean retailer in a surprise cross-border deal."
+ },
+ "https://www.dsb.cn/p/01m832ryxz9ersnfvvd2e32426": {
+  "en_title": "Report: Zhuanzhuan Confidentially Files for Hong Kong IPO, Seeking Up to $500 Million",
+  "en_oneliner": "Secondhand marketplace Zhuanzhuan has reportedly filed confidentially for a Hong Kong listing."
+ },
+ "https://mjzj.com/article/g54l3c9alp1c": {
+  "en_title": "Morning Briefing: Amazon Opens Review-Invite Ads to Public Beta; TikTok Shop US Launches Limited-Time CBT Discounts",
+  "en_oneliner": "Amazon's review-invite ads enter public beta while TikTok Shop US rolls out limited-time cross-border trade promotions."
+ },
+ "https://mjzj.com/article/g54j83sw59mo": {
+  "en_title": "A Young Seller from Ningbo Builds a Cross-Border E-Commerce Business in Chongqing's Mountainous Wuling Region",
+  "en_oneliner": "Far from the coast, a young entrepreneur from Ningbo is opening up new export markets from the Wuling mountains."
+ },
+ "https://www.sellersprite.com/cn/blog/chatgpt-mcp-setup": {
+  "en_title": "How to Connect ChatGPT to SellerSprite's MCP and Run Your First Data Query with One ASIN",
+  "en_oneliner": "A step-by-step guide to querying SellerSprite data through ChatGPT MCP with a single ASIN."
  }
 }
