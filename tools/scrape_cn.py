@@ -962,6 +962,14 @@ GTRENDS_DENY = re.compile(
     #   "indie films" 之前从 \bfilm\b 的词界漏过。gate 里的 $+数字保留，
     #   真实价格热搜不受影响。---
     r"|accountant|sentenced|embezzl\w*|stea(?:l|ls|ling)|stol(?:e|en)|fraud|convict(?:ed|ion|ions)?"
+    # --- 2026-11-24 补：第 37 次漏网（本轮 "student loans news"，首条新闻是
+    #   SILive "NY offers up to $50k in student loan forgiveness — here's who
+    #   can apply"，纽约州助学贷款减免新闻，新闻标题里的 "$50k" 被 $+数字规则
+    #   当成商品价格信号放行，进了首页时间线。同 #30（失业救济金 "$2.1
+    #   million"）、#32（年薪 "$323,000"）一样是新闻标题里的 $ 金额误放。
+    #   只加 "student loan(s)" 与 "loan forgiveness"（助学贷款减免新闻不是
+    #   选品信号）；gate 里的 $+数字保留，真实价格热搜不受影响。---
+    r"|student\s+loans?|loan\s+forgiveness"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 
