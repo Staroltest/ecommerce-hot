@@ -1004,6 +1004,18 @@ GTRENDS_DENY = re.compile(
     #   导购不是选品信号。只加人名 "natalie portman"；gate 里的导购词保留，
     #   真实产品热搜不受影响。---
     r"|natalie\s+portman"
+    # --- 2026-11-25 补：第 42 次漏网（本轮 "dell earnings"，首条新闻是
+    #   Trefis "Over Half of Dell's $95 Billion Backlog Waits…"，财报新闻，
+    #   新闻标题里的 "$95" 被 $+数字规则当成商品价格信号，既救回了人名规则
+    #   （2 词标题 "dell earnings" 命中 GTRENDS_NAME_RE）、又通过了 gate，
+    #   冲进热点第 7 位、进了首页时间线。同 #30（失业救济金 "$2.1
+    #   million"）、#32（年薪 "$323,000"）、#33（票房 "$70 million"）、
+    #   #34（铜价 "$12,000"）、#36（会计挪用 "$1.7M"）一样是新闻标题里的
+    #   $ 金额误放。只加裸词 "earnings"——公司财报新闻（Dell/HP/英伟达等
+    #   季度财报）是金融新闻，不是选品信号；gate 里的 $+数字保留，真实
+    #   商品价格热搜不受影响。代价：极少数以财报新闻为主的产品商热搜
+    #   （如 Pop Mart 财报）也会被拦，接受这点损失。---
+    r"|earnings"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 
