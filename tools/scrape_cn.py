@@ -714,7 +714,14 @@ def scrape_chanmama():
 # 美式球队昵称、trade、stadium、troops 也在列：球队人名类热搜常以
 # 交易流言（"XXX trade-or-keep"）或球队名形式出现，只靠联赛词拦不住。
 GTRENDS_DENY = re.compile(
-    r"\b(?:nfl|nba|mlb|nhl|ncaa|fifa|uefa|mls|pga|lpga|atp|wta|ufc|wwe|aew|espn"
+    r"\b(?:nfl|nba|wnba|mlb|nhl|ncaa|fifa|uefa|mls|pga|lpga|atp|wta|ufc|wwe|aew|espn"
+    # --- 2026-11-24 补：第 40 次漏网（未遂，重抓时发现：本轮 "lexie hull"，
+    #   首条新闻是 Observer "The Essentials With Lexie Hull: Throne of
+    #   Glass, Cabo and Makeup Put to the WNBA Test"，WNBA 球员的明星生活方式
+    #   专栏，新闻标题里的 "Makeup" 既救回了人名规则、又通过了 gate（makeup
+    #   在 gate 词表里）。人名热搜不是选品信号。只加联赛词 "wnba"——旧规则
+    #   的 \bnba\b 匹配不到 WNBA（词界问题）；gate 里的 makeup 保留，真实美妆
+    #   爆款热搜不受影响。---
     r"|football|basketball|baseball|hockey|soccer|tennis|golf|boxing|wrestling"
     r"|quarterback|qbs?|tds?|touchdown|mvp|playoffs?|super\s+bowl|world\s+cup|champions\s+league"
     r"|premier\s+league|la\s+liga|serie\s+a|europa\s+league|all-star|all\s+star"
@@ -742,6 +749,15 @@ GTRENDS_DENY = re.compile(
     r"|game|games|match|matches|score|scores|scoring|vs|versus|win|wins|won|winning|loss|losses|beat|beats|beaten|championship|champions|tournament|tournaments|league|leagues|semifinal|quarterfinal|fixture|fixtures|race|racing|fight|fights|bout|knockout|upset|shutout|touchdown|homer|home\s+run|penalty|penalties|referee"
     r"|storm|storms|hurricane|hurricanes|tornado|tornadoes|earthquake|earthquakes|flood|floods|flooding|waves|tsunami|eruption|eruptions|blizzard|wildfire|wildfires|rain|rains|snow|snowfall|heatwave|heat\s+wave|cold\s+snap|drought|tormenta|lluvia|terremoto|huracán|inundación|sequía|sismo|nevada|volcano|volcanic|avalanche|landslide|typhoon|cyclone|monsoon"
     r"|shooting|shootings|crash|crashes|collision|death|deaths|died|dies|killed|killing|murder|murders|arrested|arrest|arrests|police|explosive|explosives|lawsuit|lawsuits|sued|explosion|blast|attack|attacks|attacked|hostage|missing|funeral|obituary|passed\s+away|stabbing|robbery|burglary|hijack|kidnap"
+    # --- 2026-11-24 补：第 39 次漏网（本轮 "union nj fire"，首条新闻是 CBS
+    #   "Union, New Jersey fire burns through row of stores"，新泽西州联合市
+    #   商铺火灾新闻，新闻标题里的 "row of stores"（stores）既救回了人名规则
+    #   （3 词标题 "union nj fire" 命中 GTRENDS_NAME_RE）、又通过了 gate，
+    #   进了首页时间线。火灾事故新闻不是选品信号。只加火灾动词短语
+    #   "fire burns/rips/tears/destroys/guts/engulfs/breaks out/damages"——
+    #   裸词 fire 不加，Amazon Fire / Fire TV 等真实产品热搜不受影响；gate
+    #   里的 store/stores 保留，真实零售店热搜不受影响。---
+    r"|fire\s+(?:burns?|rips?|tears?|destroys?|guts?|engulfs?|breaks?\s+out|damages?|sparks?|erupts?|claims?|kills?|injures?)"
     # --- 2026-11-15 补：西语事故/娱乐词（12:15 轮次两条漏网均为西语标题：
     #   "la mansion vip" 是西语真人秀，"aeropuerto internacional de miami"
     #   是西语空难新闻，事故/娱乐词只有英文版拦不住）---
