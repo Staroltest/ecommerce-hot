@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-24T06:51:41.896660+00:00",
-  "generated_at_cst": "2026-11-24T06:51:41.896660+00:00",
+  "generated_at": "2026-11-24T07:21:32.911662+00:00",
+  "generated_at_cst": "2026-11-24T07:21:32.911662+00:00",
   "site": "https://ecommerce-hot.pages.dev",
   "site_name": "跨境电商选品HOT",
   "summary": {
@@ -19,7 +19,7 @@
       "id": "sitemap",
       "name": "sitemap.xml 完整且 lastmod 可信",
       "status": "pass",
-      "detail": "4774 条 URL；lastmod 共 31 个不同日期；磁盘 HTML 4771 页，漏 0 页。"
+      "detail": "4818 条 URL；lastmod 共 31 个不同日期；磁盘 HTML 4815 页，漏 0 页。"
     },
     {
       "id": "llms",
