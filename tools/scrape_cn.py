@@ -996,6 +996,14 @@ GTRENDS_DENY = re.compile(
     #   售的实物商品）；gate 里的 $+数字保留，真实价格热搜不受影响。---
     r"|ticket"
     r"|student\s+loans?|loan\s+forgiveness"
+    # --- 2026-11-24 补：第 41 次漏网（本轮 "natalie portman"，首条新闻是
+    #   InStyle 的 Natalie Portman 冬季 loungewear 穿搭文（Oprah 推荐款），
+    #   新闻标题里的导购词（shop/fashion/gift guide 类）既救回了人名规则、
+    #   又通过了 gate，冲进热点第 7 位。同 #33（bill hader 电影票房新闻）、
+    #   #40（lexie hull WNBA 球员生活方式专栏）一样是名人热搜：名人穿搭
+    #   导购不是选品信号。只加人名 "natalie portman"；gate 里的导购词保留，
+    #   真实产品热搜不受影响。---
+    r"|natalie\s+portman"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 

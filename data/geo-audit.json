@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-24T17:50:15.072073+00:00",
-  "generated_at_cst": "2026-11-24T17:50:15.072073+00:00",
+  "generated_at": "2026-11-24T18:24:44.391940+00:00",
+  "generated_at_cst": "2026-11-24T18:24:44.391940+00:00",
   "site": "https://ecommerce-hot.pages.dev",
   "site_name": "跨境电商选品HOT",
   "summary": {
-    "pass": 10,
+    "pass": 9,
     "fail": 0,
-    "unknown": 0
+    "unknown": 1
   },
   "checks": [
     {
@@ -19,7 +19,7 @@
       "id": "sitemap",
       "name": "sitemap.xml 完整且 lastmod 可信",
       "status": "pass",
-      "detail": "5098 条 URL；lastmod 共 31 个不同日期；磁盘 HTML 5095 页，漏 0 页。"
+      "detail": "5104 条 URL；lastmod 共 31 个不同日期；磁盘 HTML 5101 页，漏 0 页。"
     },
     {
       "id": "llms",
@@ -60,8 +60,8 @@
     {
       "id": "pages",
       "name": "Cloudflare Pages 镜像已部署新版",
-      "status": "pass",
-      "detail": "https://ecommerce-hot.pages.dev/robots.txt 已含 AI 爬虫名单，镜像与 GitHub 同步。"
+      "status": "unknown",
+      "detail": "无法访问 https://ecommerce-hot.pages.dev（网络异常）。"
     },
     {
       "id": "feed",
