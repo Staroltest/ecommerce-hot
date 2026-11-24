@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-24T23:51:43.503274+00:00",
-  "generated_at_cst": "2026-11-24T23:51:43.503274+00:00",
+  "generated_at": "2026-11-24T23:55:17.258127+00:00",
+  "generated_at_cst": "2026-11-24T23:55:17.258127+00:00",
   "site": "https://ecommerce-hot.pages.dev",
   "site_name": "跨境电商选品HOT",
   "summary": {
-    "pass": 10,
+    "pass": 9,
     "fail": 0,
-    "unknown": 0
+    "unknown": 1
   },
   "checks": [
     {
@@ -60,8 +60,8 @@
     {
       "id": "pages",
       "name": "Cloudflare Pages 镜像已部署新版",
-      "status": "pass",
-      "detail": "https://ecommerce-hot.pages.dev/robots.txt 已含 AI 爬虫名单，镜像与 GitHub 同步。"
+      "status": "unknown",
+      "detail": "无法访问 https://ecommerce-hot.pages.dev（网络异常）。"
     },
     {
       "id": "feed",

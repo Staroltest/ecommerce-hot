@@ -137,14 +137,14 @@
     {
       "id": "ebrun-scrape",
       "name": "亿邦动力（抓取）",
-      "tier": "T2",
+      "tier": "T3",
       "url": "local:data/feeds/ebrun.xml",
       "category_hint": "xuanpin"
     },
     {
       "id": "cifnews-scrape",
       "name": "雨果网（抓取）",
-      "tier": "T2",
+      "tier": "T3",
       "url": "local:data/feeds/cifnews.xml",
       "category_hint": "xuanpin"
     },
@@ -158,7 +158,7 @@
     {
       "id": "mjzj-scrape",
       "name": "卖家之家（抓取）",
-      "tier": "T2",
+      "tier": "T3",
       "url": "local:data/feeds/mjzj.xml",
       "category_hint": "xuanpin"
     },
