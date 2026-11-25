@@ -27,6 +27,7 @@ import re
 import sys
 import time
 import urllib.error
+import gzip
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
@@ -42,7 +43,14 @@ CST = timezone(timedelta(hours=8))
 def fetch(url, timeout=20):
     req = urllib.request.Request(url, headers=UA)
     with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.read().decode("utf-8", errors="ignore")
+        raw = r.read()
+        # 2026-11-25 修：雨果网首页开始回 Content-Encoding: gzip（未请求也
+        # 压），urllib 不自动解压，decode 后是乱码、正则 0 命中，cifnews
+        # 连续 3 轮 0 条。按 gzip 魔数解压；非 gzip 体原样解码，不影响
+        # 其他源。
+        if raw[:2] == b"\x1f\x8b":
+            raw = gzip.decompress(raw)
+        return raw.decode("utf-8", errors="ignore")
 
 
 def clean(text):
@@ -1026,6 +1034,15 @@ GTRENDS_DENY = re.compile(
     #   是跨境卖家可售的实物商品；gate 里的商业词保留，真实商品热搜不受
     #   影响。---
     r"|boeing"
+    # --- 2026-11-25 补：第 44 次漏网（本轮 "fatima bosch"，首条新闻是
+    #   Yahoo "Fátima Bosch embraces romantic pink eyeshadow for an elegant
+    #   Miss Universe 2026 beauty look"，环球小姐 2026 冠军的妆容新闻，新闻
+    #   标题里的 "beauty" 既救回了人名规则、又通过了 gate，冲进热点第 4 位。
+    #   同 #19（jennifer lawrence，Beauty Inc Awards）、#41（natalie
+    #   portman，名人穿搭导购）一样是名人热搜：选美冠军妆容新闻不是选品
+    #   信号。只加人名 "fatima bosch"；gate 里的 beauty 保留，真实美妆爆款
+    #   热搜不受影响。---
+    r"|fatima\s+bosch"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 
