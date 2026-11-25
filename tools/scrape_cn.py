@@ -1072,6 +1072,16 @@ GTRENDS_DENY = re.compile(
     #   vix / nasdaq / djia / wti——波动率指数、股指与原油基准都是金融
     #   行情，不是选品信号；gate 里的 $+数字保留，真实价格热搜不受影响。---
     r"|vix|nasdaq|djia|wti"
+    # --- 2026-11-26 补：第 48 次漏网（本轮 "is cvs open on thanksgiving"，首条新闻是
+    #   KHOU "Texas stores open on Thanksgiving 2026"，感恩节当天门店营业时间新闻，
+    #   新闻标题里的 "stores" 通过了 gate，冲进热点第 20 位。同 #45（"when is
+    #   thanksgiving 2026"，WRAL "stores open on thanksgiving"）与 #29（"costco
+    #   thanksgiving holiday store closures"）一样是感恩节门店营业类热搜的变体：
+    #   节假日门店开门/闭店时间查询没有商品、没有折扣、没有需求信号，不是选品信号。
+    #   只加 "open on thanksgiving" 固定短语——"is X open on thanksgiving"、
+    #   "stores open on thanksgiving" 等变体一并拦住；gate 里的 stores 与
+    #   "thanksgiving sale" 保留，真实购物季热搜不受影响。---
+    r"|open\s+on\s+thanksgiving"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 
