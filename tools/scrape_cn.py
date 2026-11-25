@@ -1060,6 +1060,18 @@ GTRENDS_DENY = re.compile(
     #   只加人名 "hailey bieber"；gate 里的 deal 保留，真实折扣/交易热搜不受
     #   影响。---
     r"|hailey\s+bieber"
+    # --- 2026-11-25 补：第 47 次漏网（本轮 "vix"，首条新闻是 TradingView
+    #   "MKTS: VIX 31.64, +18.6%; NASDAQ -3.47%; S&P -2.4%; DJIA -1.5%; …
+    #   WTI $83.50, +1.6%; NVDA -7.18%/$144"，美股市场综述，新闻标题里的
+    #   "WTI $83.50"（原油报价）被 $+数字规则当成商品价格信号，既救回了
+    #   单字标题规则、又通过了 gate，冲进热点第 15 位、进了首页时间线。
+    #   同 #30（失业救济金 "$2.1 million"）、#32（年薪 "$323,000"）、
+    #   #33（票房 "$70 million"）、#34（铜价 "$12,000"）、#36（会计
+    #   挪用 "$1.7M"）、#42（戴尔财报 "$95 Billion"）一样是新闻标题里
+    #   的 $ 金额误放。只加这条市场综述里出现的股指/原油专名
+    #   vix / nasdaq / djia / wti——波动率指数、股指与原油基准都是金融
+    #   行情，不是选品信号；gate 里的 $+数字保留，真实价格热搜不受影响。---
+    r"|vix|nasdaq|djia|wti"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 
