@@ -1051,6 +1051,15 @@ GTRENDS_DENY = re.compile(
     #   热搜的变体。只加 "when is thanksgiving" 固定短语；gate 里的 stores 与
     #   black friday 保留，真实购物季热搜不受影响。---
     r"|when\s+is\s+thanksgiving"
+    # --- 2026-11-25 补：第 46 次漏网（本轮 "hailey bieber nyt interview"，首条新闻是
+    #   BoF "Hailey Bieber, Rhode, DealBook…"，名人访谈/美妆品牌创始人专访，新闻标题
+    #   里的 "dealbook" 含 "deal" 子串，被当成商业信号，既救回了人名规则、又通过
+    #   了 gate，冲进热点第 15 位、进了首页时间线。同 #19（jennifer lawrence，
+    #   Beauty Inc Awards）、#41（natalie portman，名人穿搭导购）、#44
+    #   （fatima bosch，选美冠军妆容）一样是名人热搜：名人访谈不是选品信号。
+    #   只加人名 "hailey bieber"；gate 里的 deal 保留，真实折扣/交易热搜不受
+    #   影响。---
+    r"|hailey\s+bieber"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 
