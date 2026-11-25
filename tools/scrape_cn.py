@@ -1043,6 +1043,14 @@ GTRENDS_DENY = re.compile(
     #   信号。只加人名 "fatima bosch"；gate 里的 beauty 保留，真实美妆爆款
     #   热搜不受影响。---
     r"|fatima\s+bosch"
+    # --- 2026-11-25 补：第 45 次漏网（本轮 "when is thanksgiving 2026"，首条新闻是
+    #   WRAL "stores open on thanksgiving"，新闻标题里的 "stores" 通过了 gate，
+    #   冲进热点。感恩节日期查询 + 本地门店营业时间新闻，没有商品、没有折扣、
+    #   没有需求信号，不是选品信号。同 #29（"costco thanksgiving holiday store
+    #   closures"，当时只加了 "store closures" 短语）一样是感恩节门店营业类
+    #   热搜的变体。只加 "when is thanksgiving" 固定短语；gate 里的 stores 与
+    #   black friday 保留，真实购物季热搜不受影响。---
+    r"|when\s+is\s+thanksgiving"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 
