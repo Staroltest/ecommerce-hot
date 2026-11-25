@@ -1016,6 +1016,16 @@ GTRENDS_DENY = re.compile(
     #   商品价格热搜不受影响。代价：极少数以财报新闻为主的产品商热搜
     #   （如 Pop Mart 财报）也会被拦，接受这点损失。---
     r"|earnings"
+    # --- 2026-11-25 补：第 43 次漏网（本轮 "boeing 737 max"，首条新闻是
+    #   Reuters "China Southern Airlines unit buy 50 Boeing 737-8 aircraft"，
+    #   南航子公司订购 50 架波音 737-8 客机的航空业新闻，新闻标题里的商业词
+    #   既救回了人名规则、又通过了 gate，冲进热点第 3 位。同 #30（失业救济金
+    #   "$2.1 million"）、#32（年薪 "$323,000"）、#33（票房 "$70
+    #   million"）、#34（铜价 "$12,000"）、#36（会计挪用 "$1.7M"）一样是
+    #   新闻标题里的商业词误放。只加裸词 "boeing"——波音客机是航空器，不
+    #   是跨境卖家可售的实物商品；gate 里的商业词保留，真实商品热搜不受
+    #   影响。---
+    r"|boeing"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 
