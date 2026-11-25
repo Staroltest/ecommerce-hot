@@ -59,15 +59,14 @@
   "stats": "$14,625 Estimated Monthly Revenue. Buy for $14.09, sell for $29.95, profit $15.86.",
   "month": "Updated for December 2026"
  },
- "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=ncNS7PbqJ1WEpdvNhxKsRPCRpqAcjL0t&location=handpicked": {
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=DZbYHqnmAsMl90lC4lg7KEM6DdidUCb0&location=handpicked": {
   "kind": "weekly",
   "rank": 1,
   "niche": "Automotive Accessories",
   "niches": [
-   "Automotive Accessories",
-   "Travel & Digital Nomad Gear"
+   "Automotive Accessories"
   ],
-  "margin": "69.94%",
+  "margin": "69.68%",
   "competition": "low"
  },
  "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=Ejb8jDqoGjPfUWDPgdTxeX4xtoO5VpF6&location=handpicked": {
@@ -82,15 +81,14 @@
   "margin": "63.3%",
   "competition": "low"
  },
- "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=11jufupNbRtCFqbNuZ40yz0cIJStwpjf&location=handpicked": {
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=w7PoewtAYDM9C3DTjgnOVqspJUD2ovd6&location=handpicked": {
   "kind": "weekly",
   "rank": 1,
   "niche": "Beauty & Personal Care",
   "niches": [
-   "Beauty & Personal Care",
-   "Sustainable Fashion & Apparel"
+   "Beauty & Personal Care"
   ],
-  "margin": "74.83%",
+  "margin": "74.39%",
   "competition": "low"
  },
  "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=hoqB81nuPaAwLfGKw3WEA7352Z6wQaUw&location=handpicked": {
@@ -109,10 +107,30 @@
   "niche": "Eco-Friendly Essentials",
   "niches": [
    "Eco-Friendly Essentials",
-   "Fitness & Exercise",
    "Health, Wellness & Recovery"
   ],
   "margin": "78.07%",
+  "competition": "low"
+ },
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=TQWWgxyyENkspGvZoKLmREe9qolk34ow&location=handpicked": {
+  "kind": "weekly",
+  "rank": 1,
+  "niche": "Sustainable Fashion & Apparel",
+  "niches": [
+   "Sustainable Fashion & Apparel",
+   "Seasonal"
+  ],
+  "margin": "72.78%",
+  "competition": "low"
+ },
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=JDX0ro60STJUHTN58AtAzZ4aZYDoPUgk&location=handpicked": {
+  "kind": "weekly",
+  "rank": 1,
+  "niche": "Fitness & Exercise",
+  "niches": [
+   "Fitness & Exercise"
+  ],
+  "margin": "71.93%",
   "competition": "low"
  },
  "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=spdlcOUuBbQsAnKdhjGqN4lCIQIlpcWe&location=handpicked": {
@@ -125,15 +143,15 @@
   "margin": "70.75%",
   "competition": "low"
  },
- "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=dWeVFltU62tqJuPZi8vSzXTx4S5Uotal&location=handpicked": {
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=fhM8HdMV65fbhoyXISI64aB3xO6IztZ3&location=handpicked": {
   "kind": "weekly",
   "rank": 1,
   "niche": "Home Improvement & Decor",
   "niches": [
    "Home Improvement & Decor",
-   "Tools & DIY Hardware"
+   "Office & Productivity"
   ],
-  "margin": "71.44%",
+  "margin": "71.67%",
   "competition": "low"
  },
  "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=vPw9clifVXBWmTE6HcN0RiL4DrlTS8aB&location=handpicked": {
@@ -146,25 +164,16 @@
   "margin": "74.72%",
   "competition": "low"
  },
- "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=xAoWeYT4s2f8L5dKkQhq328Ik01BlH68&location=handpicked": {
-  "kind": "weekly",
-  "rank": 1,
-  "niche": "Office & Productivity",
-  "niches": [
-   "Office & Productivity"
-  ],
-  "margin": "72.69%",
-  "competition": "low"
- },
- "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=9WxPKhPUc6qiCiVwKn5LFTtPF5wJRdLJ&location=handpicked": {
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=9n45Fafq0jyg3k2eoh7RkYgtVxV6UnF2&location=handpicked": {
   "kind": "weekly",
   "rank": 1,
   "niche": "Outdoor & Survival Gear",
   "niches": [
    "Outdoor & Survival Gear",
-   "Sports"
+   "Sports",
+   "Travel & Digital Nomad Gear"
   ],
-  "margin": "70.65%",
+  "margin": "71.15%",
   "competition": "low"
  },
  "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=rtPbzJlIyZ9O5iMPJuanN6UeVKEOjouj&location=handpicked": {
@@ -197,14 +206,14 @@
   "margin": "62.27%",
   "competition": "low"
  },
- "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=UgebAemWdeombeEt6VeGGGcCYErVaP9H&location=handpicked": {
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=dWeVFltU62tqJuPZi8vSzXTx4S5Uotal&location=handpicked": {
   "kind": "weekly",
   "rank": 1,
-  "niche": "Seasonal",
+  "niche": "Tools & DIY Hardware",
   "niches": [
-   "Seasonal"
+   "Tools & DIY Hardware"
   ],
-  "margin": "70.24%",
+  "margin": "69.56%",
   "competition": "low"
  }
 }
