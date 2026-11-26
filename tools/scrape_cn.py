@@ -1082,6 +1082,13 @@ GTRENDS_DENY = re.compile(
     #   "stores open on thanksgiving" 等变体一并拦住；gate 里的 stores 与
     #   "thanksgiving sale" 保留，真实购物季热搜不受影响。---
     r"|open\s+on\s+thanksgiving"
+    # --- 2026-11-26 补：第 49 次漏网（本轮 "oregon coast"，首条新闻是 KGW
+    #   "Cannon Beach man, dog swept by king tide sneaker wave"，海滩突发新闻，
+    #   新闻标题里的 "sneaker wave"（一种海岸大浪现象）误触 gate 里的 sneaker
+    #   商业词而放行，冲进热点第 16 位。地名热搜没有商品、没有需求信号，不是
+    #   选品信号。只加 "oregon coast" 与 "sneaker wave" 两个固定短语；gate
+    #   里的 sneaker 保留，真实运动鞋热搜不受影响。---
+    r"|oregon\s+coast|sneaker\s+wave"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 
