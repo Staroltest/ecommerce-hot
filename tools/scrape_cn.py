@@ -1101,6 +1101,14 @@ GTRENDS_DENY = re.compile(
     #   "X gives a total of $Y to …" 式捐款句式；gate 里的 $+数字保留，真实
     #   价格热搜不受影响。---
     r"|trump\s+account|gives?\s+a\s+total\s+of\s+\$"
+    # --- 2026-11-27 补：第 51 次漏网（本轮 "loveland"，首条新闻是
+    #   Reporter-Herald "Loveland children's museum Black Friday
+    #   membership sale"，本地儿童博物馆黑五会员促销新闻，新闻标题里的
+    #   "Black Friday ... sale" 通过了 gate，冲进热点第 9 位。地名热搜
+    #   没有商品、没有需求信号，不是选品信号。同 #49（"oregon coast"，
+    #   地名热搜）一样是地名热搜的变体。只加地名 "loveland" 固定短语；
+    #   gate 里的 black friday 与 sale 保留，真实购物季热搜不受影响。---
+    r"|loveland"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 
