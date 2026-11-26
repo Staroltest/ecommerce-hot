@@ -91,14 +91,15 @@
   "margin": "74.39%",
   "competition": "low"
  },
- "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=hoqB81nuPaAwLfGKw3WEA7352Z6wQaUw&location=handpicked": {
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=LsSAboSxNeAcC8Z4kkdfwiTacx1RWyjz&location=handpicked": {
   "kind": "weekly",
   "rank": 1,
   "niche": "Cooking & Kitchen Gadgets",
   "niches": [
-   "Cooking & Kitchen Gadgets"
+   "Cooking & Kitchen Gadgets",
+   "Home Improvement & Decor"
   ],
-  "margin": "68.78%",
+  "margin": "66.81%",
   "competition": "low"
  },
  "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=HP5F7PLtTEsrWEQUfTLUPkk8Fs6SWPQQ&location=handpicked": {
@@ -143,17 +144,6 @@
   "margin": "70.75%",
   "competition": "low"
  },
- "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=fhM8HdMV65fbhoyXISI64aB3xO6IztZ3&location=handpicked": {
-  "kind": "weekly",
-  "rank": 1,
-  "niche": "Home Improvement & Decor",
-  "niches": [
-   "Home Improvement & Decor",
-   "Office & Productivity"
-  ],
-  "margin": "71.67%",
-  "competition": "low"
- },
  "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=vPw9clifVXBWmTE6HcN0RiL4DrlTS8aB&location=handpicked": {
   "kind": "weekly",
   "rank": 1,
@@ -162,6 +152,16 @@
    "Jewelry & Watches"
   ],
   "margin": "74.72%",
+  "competition": "low"
+ },
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=fhM8HdMV65fbhoyXISI64aB3xO6IztZ3&location=handpicked": {
+  "kind": "weekly",
+  "rank": 1,
+  "niche": "Office & Productivity",
+  "niches": [
+   "Office & Productivity"
+  ],
+  "margin": "74.01%",
   "competition": "low"
  },
  "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=9n45Fafq0jyg3k2eoh7RkYgtVxV6UnF2&location=handpicked": {
