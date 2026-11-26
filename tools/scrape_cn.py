@@ -1089,6 +1089,18 @@ GTRENDS_DENY = re.compile(
     #   选品信号。只加 "oregon coast" 与 "sneaker wave" 两个固定短语；gate
     #   里的 sneaker 保留，真实运动鞋热搜不受影响。---
     r"|oregon\s+coast|sneaker\s+wave"
+    # --- 2026-11-26 补：第 50 次漏网（本轮 "trump account for kids"，首条新闻是
+    #   Independent Record "Tech billionaire couple gives a total of $22M to
+    #   thousands of Montana children"，富豪夫妇向蒙大拿州儿童的"特朗普账户"
+    #   （政府儿童储蓄账户计划）捐款 $22M，新闻标题里的 "$22M" 被 $+数字规则当成
+    #   商品价格信号，既救回了人名规则（3 词标题命中 GTRENDS_NAME_RE）、又通过
+    #   了 gate，进了首页时间线。同 #35（musk foundation gave away $400
+    #   million）、#20/21（warren buffett 捐款 $5.5 billion）一样是捐款新闻里
+    #   的 $ 金额误放。两处修：(1) 加专名 "trump account"（政府儿童储蓄账户
+    #   计划，不是可售商品）；(2) 加捐款固定短语 "gives a total of $"，覆盖
+    #   "X gives a total of $Y to …" 式捐款句式；gate 里的 $+数字保留，真实
+    #   价格热搜不受影响。---
+    r"|trump\s+account|gives?\s+a\s+total\s+of\s+\$"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 
