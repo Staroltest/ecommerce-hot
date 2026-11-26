@@ -1109,6 +1109,13 @@ GTRENDS_DENY = re.compile(
     #   地名热搜）一样是地名热搜的变体。只加地名 "loveland" 固定短语；
     #   gate 里的 black friday 与 sale 保留，真实购物季热搜不受影响。---
     r"|loveland"
+    # --- 2026-11-27 补：第 52 次漏网（本轮 "fox one"，首条新闻是
+    #   Mashable "black-friday-fox-one-streaming-deal-2026"，Fox 流媒体
+    #   服务的黑五订阅优惠新闻，新闻标题里的 "Black Friday ... deal"
+    #   通过了 gate，冲进热点。流媒体订阅服务不是可售商品、没有选品
+    #   信号。同 #51（"loveland"，地名热搜）一样只加固定短语 "fox one"；
+    #   gate 里的 black friday 与 deal 保留，真实购物季热搜不受影响。---
+    r"|fox\s+one"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 
