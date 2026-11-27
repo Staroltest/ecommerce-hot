@@ -1216,6 +1216,14 @@ def gtrends_verdict(title, news_title="", news_source=""):
     joined = " ".join([title, news_title, news_source])
     if GTRENDS_DENY.search(joined):
         return "deny-word"
+    # 2026-11-27 补：第 55 次漏网（本轮 "sun"，首条新闻是 WMBF
+    #   "FIRST ALERT: Cool and breezy Black Friday, plenty of sun this
+    #   weekend"，天气预报，靠新闻标题里的 "black friday" 通过 gate。
+    #   只拦标题本身就是单字天气词的情况："sun dress" / "sun hat" /
+    #   "sun joe" 等多词商品标题不受影响；新闻标题里提 sun（如太阳能
+    #   产品新闻）也不连累。）
+    if title.strip().lower() in ("sun", "sunny"):
+        return "deny-weather-word"
     # 2026-11-16 补：股票代码类热搜（第 8 次漏网："walmart stock"，Yahoo Finance
     #   沃尔玛 Q3 财报新闻，靠 gate 里的裸词 walmart 放行；第 7 次是
     #   "greg abel berkshire hathaway stock sales"，只拦了 stock sales。
