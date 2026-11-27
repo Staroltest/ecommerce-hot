@@ -1115,6 +1115,18 @@ GTRENDS_DENY = re.compile(
     #   通过了 gate，冲进热点。流媒体订阅服务不是可售商品、没有选品
     #   信号。同 #51（"loveland"，地名热搜）一样只加固定短语 "fox one"；
     #   gate 里的 black friday 与 deal 保留，真实购物季热搜不受影响。---
+    r"|fox\s+one"
+    # --- 2026-11-27 补：第 54 次漏网（本轮 "what time does old navy open on
+    #   black friday"，首条新闻是 Yahoo Shopping "Old Navy's Black Friday
+    #   Sale Has Nearly Everything At Half Off…"，新闻标题里的 "Black Friday
+    #   ... Sale" 通过了 gate，冲进热点第 13 位。黑五当天门店开门时间查询
+    #   没有商品、没有需求信号，不是选品信号。同 #48（"is cvs open on
+    #   thanksgiving"，感恩节门店营业时间）一样是节假日门店营业类热搜的
+    #   变体。只加 "open on black friday" 固定短语——"what time does X open
+    #   on black friday"、"stores open on black friday" 等变体一并拦住；
+    #   gate 里的 black friday 与 sale 保留，真实购物季热搜不受影响。
+    #   另：#52 "fox one" 的注释已写但代码行漏加（本轮核查发现），一并补上。---
+    r"|open\s+on\s+black\s+friday"
     # --- 2026-11-27 补：第 53 次漏网（本轮 "cox"，首条新闻是
     #   Yahoo Finance "Why Charter Communications Stock Is Back In
     #   Focus After $2 Billion Cost Saving Plan"，Charter 收购 Cox
