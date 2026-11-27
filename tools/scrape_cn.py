@@ -1115,7 +1115,15 @@ GTRENDS_DENY = re.compile(
     #   通过了 gate，冲进热点。流媒体订阅服务不是可售商品、没有选品
     #   信号。同 #51（"loveland"，地名热搜）一样只加固定短语 "fox one"；
     #   gate 里的 black friday 与 deal 保留，真实购物季热搜不受影响。---
-    r"|fox\s+one"
+    # --- 2026-11-27 补：第 53 次漏网（本轮 "cox"，首条新闻是
+    #   Yahoo Finance "Why Charter Communications Stock Is Back In
+    #   Focus After $2 Billion Cost Saving Plan"，Charter 收购 Cox
+    #   后的降本计划新闻，新闻标题里的 "$2 Billion" 被 $+数字规则当成
+    #   商品价格信号，既救回了单字标题规则、又通过了 gate，冲进热点。
+    #   企业并购/降本的 $ 金额不是商品价格。同 #50（"trump account"，
+    #   捐款新闻里的 $22M 误放）一样只加固定短语 "cox"；gate 里的
+    #   $+数字保留，真实价格热搜不受影响。---
+    r"|cox"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 
