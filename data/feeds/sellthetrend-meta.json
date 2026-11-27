@@ -69,7 +69,7 @@
   "margin": "69.68%",
   "competition": "low"
  },
- "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=Ejb8jDqoGjPfUWDPgdTxeX4xtoO5VpF6&location=handpicked": {
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=uTmufBYZpQywQeIuSNhqYJmBzr4DRfVM&location=handpicked": {
   "kind": "weekly",
   "rank": 1,
   "niche": "Baby & Parenting Essentials",
@@ -78,7 +78,7 @@
    "Smart Home Electronics & Tech Gadgets",
    "Hobby & Creative Kits"
   ],
-  "margin": "63.3%",
+  "margin": "64.09%",
   "competition": "low"
  },
  "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=w7PoewtAYDM9C3DTjgnOVqspJUD2ovd6&location=handpicked": {
@@ -96,8 +96,7 @@
   "rank": 1,
   "niche": "Cooking & Kitchen Gadgets",
   "niches": [
-   "Cooking & Kitchen Gadgets",
-   "Home Improvement & Decor"
+   "Cooking & Kitchen Gadgets"
   ],
   "margin": "66.81%",
   "competition": "low"
@@ -142,6 +141,17 @@
    "Garden & Patio Essentials"
   ],
   "margin": "70.75%",
+  "competition": "low"
+ },
+ "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=vajvMiKOIEJh82iDoqYn0BgTRCImsJhS&location=handpicked": {
+  "kind": "weekly",
+  "rank": 1,
+  "niche": "Home Improvement & Decor",
+  "niches": [
+   "Home Improvement & Decor",
+   "Tools & DIY Hardware"
+  ],
+  "margin": "69.92%",
   "competition": "low"
  },
  "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=vPw9clifVXBWmTE6HcN0RiL4DrlTS8aB&location=handpicked": {
@@ -204,16 +214,6 @@
    "Phone Accessories"
   ],
   "margin": "62.27%",
-  "competition": "low"
- },
- "https://www.sellthetrend.com/dashboard/products/hand-picked?pid=dWeVFltU62tqJuPZi8vSzXTx4S5Uotal&location=handpicked": {
-  "kind": "weekly",
-  "rank": 1,
-  "niche": "Tools & DIY Hardware",
-  "niches": [
-   "Tools & DIY Hardware"
-  ],
-  "margin": "69.56%",
   "competition": "low"
  }
 }
