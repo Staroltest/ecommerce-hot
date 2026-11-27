@@ -330,6 +330,7 @@ def scrape_sellthetrend():
     单个类目页拉取失败时跳过该类目，不影响其余类目。
     """
     out, seen = [], set()
+    now = datetime.now(CST)
     pat = re.compile(
         r'<h3[^>]*>(?:\s*<b>)?\s*(\d+)\.\s*<a\s+href="([^"]*pid=[^"]*)"[^>]*>(.*?)</a>',
         re.S)
@@ -347,6 +348,10 @@ def scrape_sellthetrend():
                              tzinfo=CST)
         except ValueError:
             pub_m = None
+    if pub_m is not None and pub_m > now:
+        # 月榜常提前翻到下月（如 11 月底已标 "Updated for December 2026"），
+        # 未来日期会虚增新鲜度并长期置顶，钳制到抓取日（2026-11-28 补）。
+        pub_m = now
     cut = len(h)
     for m in re.finditer(r"<h2[^>]*>(.*?)</h2>", h, re.S):
         if "Monthly Winning Products Archive" in clean(m.group(1)):
@@ -420,6 +425,8 @@ def scrape_sellthetrend():
             if jm:
                 pub_w = datetime(int(jm.group(1)), int(jm.group(2)),
                                  int(jm.group(3)), 12, tzinfo=CST)
+        if pub_w is not None and pub_w > now:
+            pub_w = now
         # 第 1 名：锚定在周榜标题之后（标题有两种写法：
         #   "Top 10 Fitness & Exercise Products to Dropship This Week"
         #   或 "Top 10 Automotive Accessories to Dropship This Week"，
@@ -469,7 +476,7 @@ def scrape_sellthetrend():
 #   20 小时内复用本地缓存，不每半小时全量拉）；标题取文章页 <title>
 #   （去掉 " - 蝉妈妈运营圈" 后缀；只取标题，不取正文——文章页在这里就是
 #   条目本身，与卖家精灵博客同理，用户已点头）；时间取 sitemap lastmod；
-#   只收标题含“销量榜/周榜”的文章；标题另存 chanmama-titles.json 缓存，
+#   只收标题含“榜”的文章（销量榜/小店榜/品牌榜/带货视频榜等）；标题另存 chanmama-titles.json 缓存，
 #   已取过的标题不再重复拉——不缓存会让每轮把 7 天内上百篇文章重拉一遍。
 
 TOK_META = {}
@@ -638,8 +645,10 @@ def scrape_chanmama():
     发现用 sitemap-yyq.xml（1MB，20 小时内复用本地缓存，不每半小时
     全量拉）；标题取文章页 <title>（去掉 " - 蝉妈妈运营圈" 后缀；
     只取标题，不取正文——文章页在这里就是条目本身，与卖家精灵博客
-    同理，用户已点头）；时间取 sitemap lastmod；只收标题含“销量榜/
-    周榜”的文章。标题另存 chanmama-titles.json 缓存（{链接：[标题，
+    同理，用户已点头）；时间取 sitemap lastmod；只收标题含“榜”的文章
+    （栏目名常换：销量榜/小店榜/品牌榜/带货视频榜，单字“榜”兜底；
+    2026-11-28 前只收“销量榜/周榜”，栏目改名后连续 10 天 0 条）。
+    标题另存 chanmama-titles.json 缓存（{链接：[标题，
     lastmod]}，超 8 天的清理），已取过的标题不再重复拉——不缓存会
     导致每轮把 7 天内上百篇文章重拉一遍。
     """
@@ -702,7 +711,7 @@ def scrape_chanmama():
             time.sleep(1)
         if len(t) < 6:
             continue
-        if "销量榜" not in t and "周榜" not in t:
+        if "榜" not in t:
             continue
         out.append((t, link, pub))
     if dirty:
