@@ -1145,6 +1145,17 @@ GTRENDS_DENY = re.compile(
     #   捐款新闻里的 $22M 误放）一样只加固定短语 "cox"；gate 里的
     #   $+数字保留，真实价格热搜不受影响。---
     r"|cox"
+    # --- 2026-11-28 补：第 56/57 次漏网（本轮 "mega millions drawing tonight"
+    #   与 "united fidelity bank"，首条新闻分别是 Forbes "Mega Millions
+    #   Jackpot Rises To $673 Million…"（彩票头奖新闻，标题里的 "$673
+    #   Million" 被 $+数字规则当成商品价格信号而放行）与 CNN "Federal
+    #   regulators shut $6 billion Indiana lender…"（银行被接管新闻，标题
+    #   里的 "$6 billion" 同样被 $+数字规则误放）。彩票开奖与银行接管
+    #   都不是选品信号。同 #50（"trump account"，捐款新闻里的 $22M 误放）
+    #   与 #53（"cox"，并购新闻里的 $2 Billion 误放）一样只加固定短语
+    #   "mega millions" 与 "united fidelity bank"；gate 里的 $+数字保留，
+    #   真实价格热搜不受影响。---
+    r"|mega\s+millions|united\s+fidelity\s+bank"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 
