@@ -1156,6 +1156,14 @@ GTRENDS_DENY = re.compile(
     #   "mega millions" 与 "united fidelity bank"；gate 里的 $+数字保留，
     #   真实价格热搜不受影响。---
     r"|mega\s+millions|united\s+fidelity\s+bank"
+    # --- 2026-11-28 补：第 58 次漏网（本轮 "wlfi"，首条新闻是 The Defiant
+    #   "World Liberty-linked wallet swaps WETH and METH for $20M in
+    #   stablecoins"，特朗普家族关联的 World Liberty Financial 代币钱包换仓
+    #   新闻，标题里的 "$20M" 被 $+数字规则当成商品价格信号而放行。加密代币
+    #   换仓不是选品信号。同 #50（"trump account"，捐款新闻里的 $22M 误放）
+    #   与 #53（"cox"，并购新闻里的 $2 Billion 误放）一样只加固定短语
+    #   "wlfi"；gate 里的 $+数字保留，真实价格热搜不受影响。---
+    r"|wlfi"
     r"|spacex|starship|nasa|astronaut|astronauts|rocket\s+launch|space\s+launch|spacecraft|falcon\s+9|falcon\s+heavy|blue\s+origin|stock\s+sales?)\b",
     re.I)
 
